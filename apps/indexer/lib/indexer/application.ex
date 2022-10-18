@@ -6,13 +6,9 @@ defmodule Indexer.Application do
   use Application
 
   alias Indexer.Memory
-  alias Indexer.Prometheus.PendingBlockOperationsCollector
-  alias Prometheus.Registry
 
   @impl Application
   def start(_type, _args) do
-    Registry.register_collector(PendingBlockOperationsCollector)
-
     memory_monitor_options =
       case Application.get_env(:indexer, :memory_limit) do
         nil -> %{}

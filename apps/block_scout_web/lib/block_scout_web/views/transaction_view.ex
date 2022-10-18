@@ -2,7 +2,6 @@ defmodule BlockScoutWeb.TransactionView do
   use BlockScoutWeb, :view
 
   alias BlockScoutWeb.{AccessHelpers, AddressView, BlockView, TabHelpers}
-  alias BlockScoutWeb.Account.AuthController
   alias BlockScoutWeb.Cldr.Number
   alias Explorer.{Chain, CustomContractsHelpers, Repo}
   alias Explorer.Chain.Block.Reward
@@ -12,7 +11,7 @@ defmodule BlockScoutWeb.TransactionView do
   alias Timex.Duration
 
   import BlockScoutWeb.Gettext
-  import BlockScoutWeb.AddressView, only: [from_address_hash: 1, short_token_id: 2, tag_name_to_label: 1]
+  import BlockScoutWeb.AddressView, only: [from_address_hash: 1, short_token_id: 2]
   import BlockScoutWeb.Tokens.Helpers
 
   @tabs ["token-transfers", "internal-transactions", "logs", "raw-trace"]
@@ -31,7 +30,7 @@ defmodule BlockScoutWeb.TransactionView do
 
   defdelegate formatted_timestamp(block), to: BlockView
 
-  def block_number(%Transaction{block_number: nil}), do: gettext("Block Pending")
+  def block_number(%Transaction{block_number: nil}), do: gettext("Pending" )
   def block_number(%Transaction{block: block}), do: [view_module: BlockView, partial: "_link.html", block: block]
   def block_number(%Reward{block: block}), do: [view_module: BlockView, partial: "_link.html", block: block]
 
@@ -393,7 +392,7 @@ defmodule BlockScoutWeb.TransactionView do
   def gas_used_perc(%Transaction{gas_used: nil}), do: nil
 
   def gas_used_perc(%Transaction{gas_used: gas_used, gas: gas}) do
-    if Decimal.compare(gas, 0) == :gt do
+    if Decimal.cmp(gas, 0) == :gt do
       gas_used
       |> Decimal.div(gas)
       |> Decimal.mult(100)

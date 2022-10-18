@@ -379,7 +379,7 @@ export function placeHolderBlock (blockNumber) {
       data-selector="place-holder"
     >
       <div
-        class="tile tile-type-block d-flex align-items-center fade-up"
+        class="tile d-flex align-items-center fade-up white-bg"
       >
         <span class="loading-spinner-small ml-1 mr-4">
           <span class="loading-spinner-block-1"></span>

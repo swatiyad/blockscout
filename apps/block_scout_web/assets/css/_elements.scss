@@ -18,6 +18,8 @@ svg {
 
 dl {
   margin-bottom: 12px;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed #eee;
 
   &:last-child {
     margin-bottom: 0;

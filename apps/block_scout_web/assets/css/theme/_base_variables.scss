@@ -993,3 +993,39 @@ $pre-scrollable-max-height: 340px !default;
 // Printing
 $print-page-size: a3 !default;
 $print-body-min-width: map-get($grid-breakpoints, "lg") !default;
+
+
+.bg-primary {    
+  background-color: $blue!important
+}
+
+.bg-secondary {
+  background-color: $gray-600!important
+}
+
+.bg-success {
+  background-color: $teal!important
+}
+
+.bg-info {
+  background-color: $cyan!important
+}
+
+.bg-warning {
+  background-color: $yellow !important
+}
+
+.bg-danger {
+  
+  background-color: $red!important
+}
+
+.bg-light {
+  
+  background-color:$light!important
+}
+
+.bg-dark {    
+  background-color: $dark !important;
+}
+

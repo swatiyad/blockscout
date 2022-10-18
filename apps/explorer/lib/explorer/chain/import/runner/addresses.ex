@@ -8,7 +8,6 @@ defmodule Explorer.Chain.Import.Runner.Addresses do
   alias Ecto.{Multi, Repo}
   alias Explorer.Chain.{Address, Hash, Import, Transaction}
   alias Explorer.Chain.Import.Runner
-  alias Explorer.Prometheus.Instrumenter
 
   import Ecto.Query, only: [from: 2]
 
@@ -60,21 +59,11 @@ defmodule Explorer.Chain.Import.Runner.Addresses do
 
     multi
     |> Multi.run(:addresses, fn repo, _ ->
-      Instrumenter.block_import_stage_runner(
-        fn -> insert(repo, changes_list_with_defaults, insert_options) end,
-        :addresses,
-        :addresses,
-        :addresses
-      )
+      insert(repo, changes_list_with_defaults, insert_options)
     end)
     |> Multi.run(:created_address_code_indexed_at_transactions, fn repo, %{addresses: addresses}
                                                                    when is_list(addresses) ->
-      Instrumenter.block_import_stage_runner(
-        fn -> update_transactions(repo, addresses, update_transactions_options) end,
-        :addresses,
-        :addresses,
-        :created_address_code_indexed_at_transactions
-      )
+      update_transactions(repo, addresses, update_transactions_options)
     end)
   end
 

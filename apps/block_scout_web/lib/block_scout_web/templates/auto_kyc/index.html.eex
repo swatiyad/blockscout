@@ -1,0 +1,336 @@
+<style>
+
+form h3 {
+  font-size: 40px;
+  /* font-weight: 700; */
+  /* line-height: 42px; */
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: 500;
+}
+input {
+  display: block;
+  height: 40px;
+  width: 100%;
+  /* background-color: rgba(255, 255, 255, 0.05); */
+  /* border-radius: 3px; */
+  outline: none;
+
+  padding: 0 10px;
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 300;
+}
+::placeholder {
+  color: #000000;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+button {
+  margin-top: 50px;
+
+  width: 50%;
+  background-color: #ffffff;
+  color: #080710;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#displayHider{
+
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+
+}
+
+.containers{
+  display:none;
+}
+
+.loader {
+  height: 20px;
+  width: 50px;
+
+  margin: 10px 20px;
+}
+.loader--dot {
+  animation-name: loader;
+  animation-timing-function: ease-in-out;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  height: 10px;
+  width: 10px;
+  border-radius: 100%;
+  background-color: black;
+  position: absolute;
+  border: 2px solid white;
+}
+.loader--dot:first-child {
+  background-color: #8cc759;
+  animation-delay: 0.5s;
+}
+.loader--dot:nth-child(2) {
+  background-color: #8c6daf;
+  animation-delay: 0.4s;
+}
+.loader--dot:nth-child(3) {
+  background-color: #ef5d74;
+  animation-delay: 0.3s;
+}
+.loader--dot:nth-child(4) {
+  background-color: #f9a74b;
+  animation-delay: 0.2s;
+}
+.loader--dot:nth-child(5) {
+  background-color: #60beeb;
+  animation-delay: 0.1s;
+}
+.loader--dot:nth-child(6) {
+  background-color: #fbef5a;
+  animation-delay: 0s;
+}
+
+.loader--text:after {
+  content: "Loading";
+  font-weight: bold;
+  animation-name: loading-text;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes loader {
+  15% {
+    transform: translateX(0);
+  }
+  45% {
+    transform: translateX(100px);
+  }
+  65% {
+    transform: translateX(100px);
+  }
+  95% {
+    transform: translateX(0);
+  }
+}
+@keyframes loading-text {
+  0% {
+    content: "Loading";
+  }
+  25% {
+    content: "Loading.";
+  }
+  50% {
+    content: "Loading..";
+  }
+  75% {
+    content: "Loading...";
+  }
+}
+#imgAdhaar{
+  display:none;
+}
+tr{
+  border:2px solid black !important;
+  font-size:18px !important;
+}
+
+</style>
+
+
+
+
+
+
+
+
+
+
+  <form class="container  mt-5">
+    <h3>ENTER DETAIL BELOW</h3>
+
+    <label for="username"> Enter Adhaar Card Number</label>
+    <input type="number" placeholder="Enter Adhaar Card Number" id="adhaarNum">
+
+    <div class="text-end">
+      <b class="my-5 btn btn-warning " onclick="otpVerify()">Send OTP</b>
+    </div>
+
+    <label for="otp">Enter OTP</label>
+    <input type="number" placeholder="Enter OTP HERE" id="otp">
+
+    <div class="text-end">
+      <b class="my-5 btn btn-success "  onclick="otpSubmit()"  >Verify OTP</b>
+
+
+<div class='containers ' id="loadSelector">
+  <div class='loader '>
+    <div class='loader--dot'></div>
+    <div class='loader--dot'></div>
+    <div class='loader--dot'></div>
+    <div class='loader--dot'></div>
+    <div class='loader--dot'></div>
+    <div class='loader--dot'></div>
+
+  </div>
+</div>
+
+    </div>
+
+    <div  >
+<table id="fetchedRecord" style=" border:2px solid red">  </table>
+
+<img id="imgAdhaar" src="data:image/png;base64,">
+
+    </div>
+
+<div id="displayHider">
+
+    <label for="password"> Enter Pancard Number </label>
+    <input type="text" placeholder="Enter Pan Card Number" id="pan">
+
+    <button> Proceed </button>
+  </div>
+
+
+
+  </form>
+
+<script>
+
+
+var clientID;
+var clientOTP;
+var res;
+async  function otpVerify(){
+ var clientAdhaar = document.getElementById("adhaarNum").value;
+
+console.log(clientAdhaar);
+
+var bearer_token="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY1NzAzOTgyMiwianRpIjoiYTIyZGI4NmEtNWMxMy00MzA4LWFhNDctNzFhYjA1ZTIyNTZiIiwidHlwZSI6ImFjY2VzcyIsImlkZW50aXR5IjoiZGV2Lmpld3JpYUBzdXJlcGFzcy5pbyIsIm5iZiI6MTY1NzAzOTgyMiwiZXhwIjoxOTcyMzk5ODIyLCJ1c2VyX2NsYWltcyI6eyJzY29wZXMiOlsid2FsbGV0Il19fQ.SwZNEfyW7zUlNF184AsickcJ5lsIRen-woZ-7_Sfzhk"
+
+ var url = "https://kyc-api.aadhaarkyc.io/api/v1/aadhaar-v2/generate-otp";
+var bearer = 'Bearer ' + bearer_token;
+var raw = JSON.stringify({
+  "id_number": clientAdhaar
+});
+let response = await fetch("https://kyc-api.aadhaarkyc.io/api/v1/aadhaar-v2/generate-otp", {
+        method: 'POST',
+
+
+        headers: {
+            'Authorization': bearer,
+            'Access-Control-Allow-Origin':'*',
+            'Content-Type': 'application/json'
+        },
+        	body:raw
+    });
+    let res = await response.json();
+    let client_id = res.data.client_id;
+    console.log(client_id);
+    clientID=client_id;
+
+ }
+
+
+
+ async function otpSubmit(){
+
+ var clientOTP = document.getElementById("otp").value;
+
+ document.getElementById("loadSelector").style.display="block";
+
+
+
+
+console.log(clientOTP);
+
+
+var bearer_token="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY1NzAzOTgyMiwianRpIjoiYTIyZGI4NmEtNWMxMy00MzA4LWFhNDctNzFhYjA1ZTIyNTZiIiwidHlwZSI6ImFjY2VzcyIsImlkZW50aXR5IjoiZGV2Lmpld3JpYUBzdXJlcGFzcy5pbyIsIm5iZiI6MTY1NzAzOTgyMiwiZXhwIjoxOTcyMzk5ODIyLCJ1c2VyX2NsYWltcyI6eyJzY29wZXMiOlsid2FsbGV0Il19fQ.SwZNEfyW7zUlNF184AsickcJ5lsIRen-woZ-7_Sfzhk"
+
+
+var bearer = 'Bearer ' + bearer_token;
+
+var raw = JSON.stringify({
+  "client_id": clientID,
+  "otp":clientOTP
+});
+await fetch("https://kyc-api.aadhaarkyc.io/api/v1/aadhaar-v2/submit-otp ", {
+        method: 'POST',
+        headers: {
+           'Authorization': bearer,
+            'Access-Control-Allow-Origin':'*',
+            'Content-Type': 'application/json'
+        },
+        	body:raw
+    }).then(response => response.json())
+  .then( function(response){
+     console.log(response.data);
+     res=response;
+  }
+    )
+  .catch(error => console.log('error', error));
+
+if(res.status_code==200){
+ document.getElementById("loadSelector").style.display="none";
+ document.getElementById("displayHider").style.display="block";
+
+
+
+for (const [key, value] of Object.entries(res.data)) {
+
+    if(key== "profile_image"){
+document.getElementById("imgAdhaar").src+=value;
+document.getElementById("imgAdhaar").style.display="block";
+
+    continue;
+  }
+  if(key== "raw_xml" || key== " Credential" ||  key== "share_code" || key== "mobile_verified"  || key== "face_status" || key== "address" || key== "has_image" || key== "email_hash" || key== "mobile_hash" || key== "zip_data" || key== "Signature"   || key== "reference_id"  || key== "aadhaar_pdf" ){
+    continue;
+
+  }
+
+  document.getElementById("fetchedRecord").innerHTML+=`<tr><td>${key} </td> <td >  ${value}</td></tr>`;
+  console.log(`${key}: ${value}`);
+}
+
+
+for (const [key, value] of Object.entries(res.data.address)) {
+
+console.log("hello " ,key ,": ",  value)
+  document.getElementById("fetchedRecord").innerHTML+=`<tr><td >${key} </td> <td >${value}</td></tr>`;
+  console.log(`${key}: ${value}`);
+}
+
+
+ }else{
+   setTimeout(function(){
+alert(" INVALID OTP || Please Click On  Send OTP ");
+ document.getElementById("loadSelector").style.display="none";
+ },5000)
+
+
+
+ }
+  }
+
+
+</script>

@@ -68,8 +68,6 @@ defmodule Explorer.Chain.Data do
     |> IO.iodata_to_binary()
   end
 
-  def to_string(nil), do: "0x"
-
   @doc """
   Casts `term` to `t:t/0`.
 

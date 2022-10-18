@@ -1,4 +1,4 @@
-<div id="transaction-tabs" class="card-tabs js-card-tabs">
+<div id="transaction-tabs" class="card-tabs js-card-tabs px-2">
   <%= if @show_token_transfers do %>
     <%= link(
           gettext("Token Transfers"),
@@ -7,7 +7,7 @@
         )
       %>
   <% end %>
-  <%= link(
+  <%# <%= link(
         gettext("Internal Transactions"),
         class: "card-tab #{tab_status("internal-transactions", @conn.request_path, @show_token_transfers)}",
         to: AccessHelpers.get_path(@conn, :transaction_internal_transaction_path, :index, @transaction)
@@ -15,7 +15,7 @@
     %>
   <%= link(
         gettext("Logs"),
-        class: "card-tab #{tab_status("logs", @conn.request_path)}",
+        class: "card-tab #{tab_status("logs", @conn.request_path, @show_token_transfers)}",
         to: AccessHelpers.get_path(@conn, :transaction_log_path, :index, @transaction),
         "data-test": "transaction_logs_link"
       )

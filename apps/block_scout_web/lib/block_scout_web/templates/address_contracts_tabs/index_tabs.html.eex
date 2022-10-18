@@ -1,0 +1,47 @@
+<% dark_forest_addresses_list_0_4 = CustomContractsHelpers.get_custom_addresses_list(:dark_forest_addresses) %>
+<% dark_forest_addresses_list_0_5 = CustomContractsHelpers.get_custom_addresses_list(:dark_forest_addresses_v_0_5) %>
+<% dark_forest_addresses_list = dark_forest_addresses_list_0_4 ++ dark_forest_addresses_list_0_5 %>
+<% current_address = "0x" <> Base.encode16(@address.hash.bytes, case: :lower) %>
+<div id="address-tabs" class="card-tabs js-card-tabs px-2">
+
+  <%= if contract?(@address) do %>
+    <%= link(
+        to: AccessHelpers.get_path(@conn, :address_contract_path, :index, @address.hash),
+        class: "card-tab #{tab_status("contracts", @conn.request_path)}") do %>
+        <%= gettext("Code") %>
+      <%= if smart_contract_verified?(@address) do %>
+        <%= cond do %>
+          <% Enum.member?(dark_forest_addresses_list, current_address) -> %>
+            <i class="check_dark_forest_icon">
+              <%= render BlockScoutWeb.IconsView, "_check_dark_forest_icon.html" %>
+            </i>
+          <% true -> %>
+            <i class="fa-regular fa-check-circle"></i>
+        <% end %>
+      <% end %>
+    <% end %>
+  <% end %>
+
+  <%= if has_decompiled_code?(@address) do %>
+    <%= link(
+        to: AccessHelpers.get_path(@conn, :address_decompiled_contract_path, :index, @address.hash),
+        class: "card-tab #{tab_status("decompiled-contracts", @conn.request_path)}") do %>
+        <%= gettext("Decompiled code") %>
+        <i class="fa-regular fa-check-circle"></i>
+    <% end %>
+  <% end %>
+  <%= if smart_contract_with_read_only_functions?(@address) do %>
+    <%= link(
+        gettext("Read Contract"),
+        to: AccessHelpers.get_path(@conn, :address_read_contract_path, :index, @address.hash),
+        class: "card-tab #{tab_status("read-contract", @conn.request_path)}")
+        %>
+  <% end %>
+
+  <%= if smart_contract_with_write_functions?(@address) do %>
+    <%= link(
+        gettext("Write Contract"),
+        to: AccessHelpers.get_path(@conn, :address_write_contract_path, :index, @address.hash),
+        class: "card-tab #{tab_status("write-contract", @conn.request_path)}")
+        %>
+  <% end %>

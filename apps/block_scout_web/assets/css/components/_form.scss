@@ -3,8 +3,8 @@ $form-control-border-color-active: $primary !default;
 
 .form-control {
   border-color: $form-control-border-color;
-  border-radius: 0;
-  font-size: 14px;
+  // border-radius: 0;
+  // font-size: 14px;
 
   &.border-rounded {
     border-radius: 4px;

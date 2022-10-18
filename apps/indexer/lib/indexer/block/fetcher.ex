@@ -29,7 +29,7 @@ defmodule Indexer.Block.Fetcher do
     UncleBlock
   }
 
-  alias Indexer.{Prometheus, Tracer}
+  alias Indexer.Tracer
 
   alias Indexer.Transform.{
     AddressCoinBalances,
@@ -121,9 +121,6 @@ defmodule Indexer.Block.Fetcher do
         _.._ = range
       )
       when callback_module != nil do
-    {fetch_time, fetched_blocks} =
-      :timer.tc(fn -> EthereumJSONRPC.fetch_blocks_by_range(range, json_rpc_named_arguments) end)
-
     with {:blocks,
           {:ok,
            %Blocks{
@@ -131,7 +128,7 @@ defmodule Indexer.Block.Fetcher do
              transactions_params: transactions_params_without_receipts,
              block_second_degree_relations_params: block_second_degree_relations_params,
              errors: blocks_errors
-           }}} <- {:blocks, fetched_blocks},
+           }}} <- {:blocks, EthereumJSONRPC.fetch_blocks_by_range(range, json_rpc_named_arguments)},
          blocks = TransformBlocks.transform_blocks(blocks_params),
          {:receipts, {:ok, receipt_params}} <- {:receipts, Receipts.fetch(state, transactions_params_without_receipts)},
          %{logs: logs, receipts: receipts} = receipt_params,
@@ -183,7 +180,6 @@ defmodule Indexer.Block.Fetcher do
                transactions: %{params: transactions_with_receipts}
              }
            ) do
-      Prometheus.Instrumenter.block_batch_fetch(fetch_time, callback_module)
       result = {:ok, %{inserted: inserted, errors: blocks_errors}}
       update_block_cache(inserted[:blocks])
       update_transactions_cache(inserted[:transactions])
@@ -235,11 +231,7 @@ defmodule Indexer.Block.Fetcher do
         }
       )
 
-    {import_time, result} = :timer.tc(fn -> callback_module.import(state, options_with_broadcast) end)
-
-    no_blocks_to_import = length(options_with_broadcast.blocks.params)
-    Prometheus.Instrumenter.block_import(import_time / no_blocks_to_import, callback_module)
-    result
+    callback_module.import(state, options_with_broadcast)
   end
 
   def async_import_token_instances(%{token_transfers: token_transfers}) do

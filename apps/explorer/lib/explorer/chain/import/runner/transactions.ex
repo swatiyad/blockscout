@@ -10,7 +10,6 @@ defmodule Explorer.Chain.Import.Runner.Transactions do
   alias Ecto.{Multi, Repo}
   alias Explorer.Chain.{Block, Hash, Import, Transaction}
   alias Explorer.Chain.Import.Runner.TokenTransfers
-  alias Explorer.Prometheus.Instrumenter
 
   @behaviour Import.Runner
 
@@ -46,22 +45,10 @@ defmodule Explorer.Chain.Import.Runner.Transactions do
     # Enforce ShareLocks tables order (see docs: sharelocks.md)
     multi
     |> Multi.run(:recollated_transactions, fn repo, _ ->
-      Instrumenter.block_import_stage_runner(
-        fn ->
-          discard_blocks_for_recollated_transactions(repo, changes_list, insert_options)
-        end,
-        :block_referencing,
-        :transactions,
-        :recollated_transactions
-      )
+      discard_blocks_for_recollated_transactions(repo, changes_list, insert_options)
     end)
     |> Multi.run(:transactions, fn repo, _ ->
-      Instrumenter.block_import_stage_runner(
-        fn -> insert(repo, changes_list, insert_options) end,
-        :block_referencing,
-        :transactions,
-        :transactions
-      )
+      insert(repo, changes_list, insert_options)
     end)
   end
 

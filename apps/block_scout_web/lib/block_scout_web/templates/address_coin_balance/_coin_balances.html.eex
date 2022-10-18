@@ -1,4 +1,4 @@
-<div class="tile tile-type-coin-balance fade-up" data-test="coin_balance" data-block-number="<%= to_string(@coin_balance.block_number) %>">
+<div class="tile tile-type-coin-balance fade-up shadow bg-light hover_div" data-test="coin_balance" data-block-number="<%= to_string(@coin_balance.block_number) %>">
   <div class="row justify-content align-items-center">
     <div class="col-md-6 d-flex flex-column mt-3 mt-md-0">
       <%= link(
@@ -29,3 +29,9 @@
     </div>
   </div>
 </div>
+
+<style>
+.hover_div:hover{
+  background: #cbffec!important;
+}
+</style>

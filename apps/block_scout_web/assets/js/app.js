@@ -35,6 +35,3 @@ import './lib/tooltip'
 import './lib/modals'
 import './lib/card_tabs'
 import './lib/ad'
-
-import swal from 'sweetalert2'
-window.Swal = swal

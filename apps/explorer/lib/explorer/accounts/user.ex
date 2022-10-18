@@ -7,7 +7,7 @@ defmodule Explorer.Accounts.User do
 
   import Ecto.Changeset
 
-  alias Bcrypt
+  alias Comeonin.Bcrypt
   alias Ecto.Changeset
   alias Explorer.Accounts.{User, UserContact}
 
@@ -42,7 +42,7 @@ defmodule Explorer.Accounts.User do
 
   defp hash_password(%Changeset{} = changeset) do
     if password = get_change(changeset, :password) do
-      put_change(changeset, :password_hash, Bcrypt.hash_pwd_salt(password))
+      put_change(changeset, :password_hash, Bcrypt.hashpwsalt(password))
     else
       changeset
     end

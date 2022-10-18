@@ -2,12 +2,9 @@
 
 ### Environment
 
-* Deployment type (Manual/Docker/Docker-compose):
 * Elixir & Erlang/OTP versions (`elixir -version`):
-* Node JS version (`node -v`):
 * Operating System:
-* Blockscout Version/branch/commit:
-* Archive node type && version (Erigon/Geth/Nethermind/Ganache/?):
+* Blockscout Version/branch: 
 
 ### Steps to reproduce
 

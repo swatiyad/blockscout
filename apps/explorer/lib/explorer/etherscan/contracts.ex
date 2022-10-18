@@ -7,8 +7,7 @@ defmodule Explorer.Etherscan.Contracts do
 
   import Ecto.Query,
     only: [
-      from: 2,
-      where: 3
+      from: 2
     ]
 
   alias Explorer.{Chain, Repo}
@@ -81,7 +80,7 @@ defmodule Explorer.Etherscan.Contracts do
 
   def append_proxy_info(address), do: address
 
-  def list_verified_contracts(limit, offset, opts) do
+  def list_verified_contracts(limit, offset) do
     query =
       from(
         smart_contract in SmartContract,
@@ -91,29 +90,7 @@ defmodule Explorer.Etherscan.Contracts do
         preload: [:address]
       )
 
-    verified_at_start_timestamp_exist? = Map.has_key?(opts, :verified_at_start_timestamp)
-    verified_at_end_timestamp_exist? = Map.has_key?(opts, :verified_at_end_timestamp)
-
-    query_in_timestamp_range =
-      cond do
-        verified_at_start_timestamp_exist? && verified_at_end_timestamp_exist? ->
-          query
-          |> where([smart_contract], smart_contract.inserted_at >= ^opts.verified_at_start_timestamp)
-          |> where([smart_contract], smart_contract.inserted_at < ^opts.verified_at_end_timestamp)
-
-        verified_at_start_timestamp_exist? ->
-          query
-          |> where([smart_contract], smart_contract.inserted_at >= ^opts.verified_at_start_timestamp)
-
-        verified_at_end_timestamp_exist? ->
-          query
-          |> where([smart_contract], smart_contract.inserted_at < ^opts.verified_at_end_timestamp)
-
-        true ->
-          query
-      end
-
-    query_in_timestamp_range
+    query
     |> Repo.replica().all()
     |> Enum.map(fn smart_contract ->
       Map.put(smart_contract.address, :smart_contract, smart_contract)

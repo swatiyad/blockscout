@@ -46,7 +46,7 @@ defmodule EthereumJSONRPC.ReceiptsTest do
               transaction_index: 17
             }
 
-          EthereumJSONRPC.Nethermind ->
+          EthereumJSONRPC.Parity ->
             %{
               created_contract_address_hash: nil,
               block_hash: nil,

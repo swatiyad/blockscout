@@ -10,7 +10,6 @@ defmodule Explorer.Chain.Import.Runner.Address.CoinBalances do
   alias Ecto.{Changeset, Multi, Repo}
   alias Explorer.Chain.Address.CoinBalance
   alias Explorer.Chain.{Block, Hash, Import, Wei}
-  alias Explorer.Prometheus.Instrumenter
 
   @behaviour Import.Runner
 
@@ -45,12 +44,7 @@ defmodule Explorer.Chain.Import.Runner.Address.CoinBalances do
       |> Map.put(:timestamps, timestamps)
 
     Multi.run(multi, :address_coin_balances, fn repo, _ ->
-      Instrumenter.block_import_stage_runner(
-        fn -> insert(repo, changes_list, insert_options) end,
-        :address_referencing,
-        :coin_balances,
-        :address_coin_balances
-      )
+      insert(repo, changes_list, insert_options)
     end)
   end
 

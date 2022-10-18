@@ -1,20 +1,45 @@
 <section class="container" data-page="<%= String.downcase(@block_type) %>-list">
   <%= render BlockScoutWeb.Advertisement.TextAdView, "index.html", conn: @conn %>
+  <div class="row mb-2">
+      <div class="col-md-6">
+        <h1 class="mb-2 list-title-description">
+          <%= gettext("%{block_type}s", block_type: @block_type) %>
+        </h1>
+      </div>
+      <div class="col-md-6">
+        <div class="list-top-pagination-container-wrapper mt-2">
+          <%= render BlockScoutWeb.CommonComponentsView, "_pagination_container.html", position: "top", cur_page_number: "1", show_pagination_limit: true, data_next_page_button: true, data_prev_page_button: true %>
+        </div>
+      </div>
+  </div>
   <div class="card">
     <div class="card-body" data-async-listing="<%= @current_path %>">
       <%= render BlockScoutWeb.CommonComponentsView, "_channel_disconnected_message.html", text: gettext("Connection Lost, click to load newer blocks") %>
 
-      <h1 class="card-title list-title-description"><%= gettext("%{block_type}s", block_type: @block_type) %></h1>
-
-      <div class="list-top-pagination-container-wrapper">
-        <%= render BlockScoutWeb.CommonComponentsView, "_pagination_container.html", position: "top", cur_page_number: "1", show_pagination_limit: true, data_next_page_button: true, data_prev_page_button: true %>
-      </div>
-
+           <div class="table-responsive">
+            <table class="table table-hover mb-0" style="table-layout: fixed;">
+                  <thead>
+                    <tr class="table-head">
+                      <th scope="col">Block</th>
+                      <th scope="col">Age</th>
+                      <th scope="col">Validator</th>
+                      <th scope="col">Transactions</th>
+                      <th scope="col">Taral Priority Fees</th>
+                      <th scope="col">Taral Burnt Fees</th>
+                      <th scope="col">Gas Limit</th>
+                      <th scope="col">Gas Used</th>
+                      <%# <th scope="col">Status</th> %>
+                    </tr>
+                  </thead>
+            </table>
+         </div>
       <div data-items>
         <%= render BlockScoutWeb.CommonComponentsView, "_tile-loader.html" %>
       </div>
       <div data-empty-response-message style="display: none;">
-          <span><%= gettext "There are no blocks." %></span>
+          <div class="tile tile-muted text-center fs-14">
+            <span><%= gettext "There are no blocks." %></span>
+          </div>
       </div>
 
       <%= render BlockScoutWeb.CommonComponentsView, "_pagination_container.html", position: "bottom", cur_page_number: "1", show_pagination_limit: true, data_next_page_button: true, data_prev_page_button: true %>
@@ -23,3 +48,15 @@
   </div>
   <script defer data-cfasync="false" src="<%= static_path(@conn, "/js/blocks.js") %>"></script>
 </section>
+
+<style>
+@media screen and (min-device-width: 290px) and (max-device-width: 768px){
+.table{
+     width:426% !important;
+
+    }
+    .width100 {
+      width:60px;
+    }
+ }
+</style>

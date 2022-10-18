@@ -5,15 +5,23 @@
   }
   window.onload = ShowLayoutContainer()
 </script>
-<section class="container" data-page="transaction-list">
+<section class="container pt-3" data-page="transaction-list">
   <%= render BlockScoutWeb.Advertisement.TextAdView, "index.html", conn: @conn %>
-  <div class="card">
-    <div class="card-body" data-async-listing="<%= @current_path %>">
-      <h1 class="card-title list-title-description"><%= gettext "Validated Transactions" %></h1>
-      <div class="list-top-pagination-container-wrapper">
-        <%= render BlockScoutWeb.CommonComponentsView, "_rap_pagination_container.html", position: "top", showing_limit: if Chain.transactions_available_count() == Chain.limit_showing_transactions(), do: Chain.limit_showing_transactions(), else: nil %>
+  <div class="row mb-2">
+      <div class="col-md-6">
+        <h1 class="mb-2 list-title-description">
+          <%= gettext "Validated Transactions" %>
+        </h1>
       </div>
+      <div class="col-md-6">
+        <div class="list-top-pagination-container-wrapper mt-1">
+          <%= render BlockScoutWeb.CommonComponentsView, "_rap_pagination_container.html", position: "top", showing_limit: if Chain.transactions_available_count() == Chain.limit_showing_transactions(), do: Chain.limit_showing_transactions(), else: nil %>
+        </div>
+      </div>
+  </div>
 
+  <div class="card">
+    <div class="card-body table-responsive" data-async-listing="<%= @current_path %>">
       <div data-selector="channel-batching-message" class="d-none">
         <div data-selector="reload-button" class="alert alert-info">
           <a href="#" class="alert-link"><span data-selector="channel-batching-count"></span> <%= gettext "More transactions have come in" %></a>
@@ -32,6 +40,23 @@
           </span>
         </div>
       </div>
+          <div class="table-responsive table-hover">
+            <table class="table mb-0 fixed-layout">
+                  <thead>
+                    <tr class="table-head">
+                      <th scope="col">Hash</th>
+                      <th scope="col">Block</th>
+                      <th scope="col">Age</th>
+                      <th scope="col">Method</th>
+                      <th scope="col">From</th>
+                      <th scope="col">To</th>
+                      <th scope="col">Amount</th>
+                      <th scope="col">Transaction</th>
+                      <th scope="col">Status</th>
+                    </tr>
+                  </thead>
+            </table>
+         </div>
 
       <div data-selector="transactions-list" data-items>
         <%= render BlockScoutWeb.CommonComponentsView, "_tile-loader.html" %>
@@ -43,3 +68,12 @@
   <script defer data-cfasync="false" src="<%= static_path(@conn, "/js/validated-transactions.js") %>"></script>
   <script defer data-cfasync="false" src="<%= static_path(@conn, "/js/token-transfers-toggle.js") %>"></script>
 </section>
+
+
+<style>
+@media screen and (min-device-width: 290px) and (max-device-width: 768px){
+.table{
+     width:426% !important;
+    }
+ }
+</style>

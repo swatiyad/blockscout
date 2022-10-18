@@ -1,47 +1,54 @@
 <section
 	class="container"
 	data-page="tokens"
-	data-chain-id="<%= Application.get_env(:block_scout_web, :chain_id) %>"
+	data-chain-id="<%= System.get_env("CHAIN_ID") %>"
 	data-display-token-icons="<%= System.get_env("DISPLAY_TOKEN_ICONS") %>"
 >
   <%= render BlockScoutWeb.Advertisement.TextAdView, "index.html", conn: @conn %>
-  <div class="card">
-    <div class="card-body" data-async-load data-async-listing="<%= @current_path %>" data-no-self-calls>
-	  <h1 class="card-title list-title-description"><%= gettext "Tokens" %></h1>
-
-	<div class="list-top-pagination-container-wrapper tokens-list-search-input-outer-container d-flex" style="float: right;">
-		<label class="tokens-list-search-input-container tokens mr-3">
+	<div class="row mb-2">
+		<div class="col-md-6">
+			<h1 class="mb-2 list-title-description">
+			<%= gettext "Tokens" %>
+			</h1>
+		</div>
+		<div class="col-md-6">
+			<label class="tokens-list-search-input-container tokens ml-3">
 			<input data-search-field="" class="form-control tokens-list-search-input search-input" type="text" name="filter" placeholder="Token name or symbol" id="search-text-input" />
-		</label>
-    	<%= render BlockScoutWeb.CommonComponentsView, "_pagination_container.html", position: "top", cur_page_number: "1", show_pagination_limit: true, data_next_page_button: true, data_prev_page_button: true %>
+			</label>
+			<div class="list-top-pagination-container-wrapper mt-2">
+				<%= render BlockScoutWeb.CommonComponentsView, "_pagination_container.html", position: "top", cur_page_number: "1", show_pagination_limit: true, data_next_page_button: true, data_prev_page_button: true %>
+			</div>
+		</div>
 	</div>
 
+  <div class="card">
+    <div class="card-body" data-async-load data-async-listing="<%= @current_path %>" data-no-self-calls>
     <div class="addresses-table-container">
-      <div class="stakes-table-container">
-	<table>
+      <div class="card-body stakes-table-container table-responsive table-hover">
+	<table class="table">
 	  <thead>
-	    <tr>
-	      <th class="stakes-table-th">
-			<div class="stakes-table-th-content">&nbsp;</div>
+	    <tr class="table-head">
+	      <th>
+
 	      </th>
-		  <th class="stakes-table-th">
-			<div>&nbsp;</div>
+		  <th>
+
 		  </th>
-	      <th class="stakes-table-th">
-			<div class="stakes-table-th-content">Token</div>
+	      <th>
+			Token
 	      </th>
-	      <th class="stakes-table-th">
-			<div class="stakes-table-th-content">Address</div>
+	      <th>
+			Address
 	      </th>
-	      <th class="stakes-table-th">
-			<div class="stakes-table-th-content">
+	      <th>
+
 			Total Supply
-			</div>
+
 	      </th>
-	      <th class="stakes-table-th">
-			<div class="stakes-table-th-content">
+	      <th>
+
 			Holders Count
-			</div>
+
 	      </th>
 	    </tr>
 	  </thead>

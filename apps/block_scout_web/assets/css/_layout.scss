@@ -4,13 +4,206 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+    // background: url(https://tronscan.io/static/media/body_bg.0b5e1c3d.png);
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  background-color: #f5f5f5;
 
   main {
     flex-grow: 1;
-    background-color: #fbfafc;
+    // background-color: #fbfafc;
   }
 }
 
 .logs-hash {
   line-height: 24px !important;
 }
+
+.min_height_376 {
+  min-height: 376px;
+
+}
+
+.btn-copy-icon svg {
+  width: 25px!important;
+  height: 25px!important;
+}
+
+.chart_box {
+  background: #ffffff;
+    padding: 7px;
+    border: 1px solid #84efc7;
+    border-radius: 3px;
+    margin: 0 5px;
+}
+
+.table-head {
+  background-color:#b4e9d5
+}
+.dark-theme-applied .table-head {
+  background-color:#3f426c;
+}
+.dark-theme-applied .border {
+    border: 1px solid #6c757d !important;
+}
+.dark-theme-applied .shadow {
+  box-shadow: 2px 1px 5px #355a83 !important;
+
+}
+.dark-theme-applied .table thead th {  
+  border-bottom: 2px solid #6c757d;
+}
+
+.dark-theme-applied .card-header {
+  background: #3f426c;
+  border-bottom: 1px solid #5b77b9;
+}
+.dark-theme-applied .table {  
+  color: #9eb0c3;
+}
+.dark-theme-applied .layout-container {
+  background-color: #1C1D31;
+  color: #9eb0c3;
+}
+.dark-theme-applied .text-muted {
+  color: #5b77b9;
+}
+.dark-theme-applied .card-tabs {
+  background-color: #3f426c;
+}
+.dark-theme-applied .card-tab.active {
+  background-color: #7e50d0;
+  color: #fff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.dark-theme-applied .chart_box {
+  background: #313355;
+  border: 1px solid #84efc7;
+}
+.dark-theme-applied .dashboard-banner-network-stats-value {
+  color: #fff;
+}
+.dark-theme-applied .limit {
+  color: #888888;
+}
+.dark-theme-applied .white-bg {
+  background-color: #313355;
+}
+.white-bg {
+  background-color: #fff;
+}
+.dark-theme-applied .tile-bottom-contents {
+  background-color:#313355;
+}
+dl:last-child {
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+.dark-theme-applied .bg-light {
+  background-color: #313355 !important;
+}
+.dark-theme-applied dl {
+  border-bottom: 1px dashed #3f426c;
+}
+.deep-shadow {
+  box-shadow: -10px -10px 0px 0px #eee;
+
+}
+.dark-theme-applied .shadow{
+  box-shadow: 2px 1px 5px #313355!important
+}
+.dark-theme-applied .deep-shadow{
+  box-shadow: -10px -10px 0px 0px #313355!important; 
+}
+.truncate_hash {
+  width: 70px;
+  display: inline-block!important;
+}
+.width100 {
+  width: 100px;
+}
+.width150 {
+width: 150px;
+
+}
+.width110 {
+  width: 110px;
+}
+.dark-theme-applied .table-hover tbody tr:hover {
+  color: #fff;
+}
+.dark-theme-applied .media_icon {
+  -webkit-filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
+}
+
+.fixed-layout {
+  table-layout:fixed
+}
+
+@media only screen and (max-width: 600px) {
+.deep-shadow{
+ box-shadow: none;
+} 
+
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 600px) {
+  .deep-shadow {
+    box-shadow: none;
+  }
+
+  .fixed-layout {
+    table-layout: unset
+  }
+
+  .width100 {
+    width: unset;
+  }
+
+  .width150 {
+    width: unset;
+
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1098px) {
+.deep-shadow {
+    box-shadow: none;
+  }
+
+  .fixed-layout {
+    table-layout: unset
+  }
+
+  .width100 {
+    width: unset;
+  }
+
+  .width150 {
+    width: unset;
+
+  }
+
+}
+@media only screen and (min-device-width: 960px) and (max-device-width: 1024px) {
+  .deep-shadow{
+   box-shadow: none;
+  } 
+
+.fixed-layout {
+  table-layout:unset
+  }
+
+  .width100 {
+    width: unset;
+  }
+
+  .width150 {
+    width: unset;
+
+  }
+}
+

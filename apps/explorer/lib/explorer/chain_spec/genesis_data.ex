@@ -66,7 +66,7 @@ defmodule Explorer.ChainSpec.GenesisData do
         case fetch_spec(path) do
           {:ok, chain_spec} ->
             case variant do
-              EthereumJSONRPC.Nethermind ->
+              EthereumJSONRPC.Parity ->
                 Importer.import_emission_rewards(chain_spec)
                 {:ok, _} = Importer.import_genesis_accounts(chain_spec)
 

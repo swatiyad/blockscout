@@ -2,7 +2,7 @@
 
   <% is_proxy = BlockScoutWeb.AddressView.smart_contract_is_proxy?(@address) %>
 
-  <%= render BlockScoutWeb.AddressView, "overview.html", address: @address, is_proxy: is_proxy, conn: @conn, exchange_rate: @exchange_rate, coin_balance_status: @coin_balance_status, counters_path: @counters_path, tags: @tags %>
+  <%= render BlockScoutWeb.AddressView, "overview.html", address: @address, is_proxy: is_proxy, conn: @conn, exchange_rate: @exchange_rate, coin_balance_status: @coin_balance_status, counters_path: @counters_path %>
 
   <section data-page="address-transactions" id="txs">
     <div class="card">
@@ -41,6 +41,24 @@
             <%= render BlockScoutWeb.CommonComponentsView, "_pagination_container.html", position: "top", show_pagination_limit: true, data_next_page_button: true, data_prev_page_button: true %>
           </div>
         </div>
+
+          <div class="table-responsive">
+            <table class="table fixed-layout table-hover" style="width: 100%;margin-bottom: 1rem;background-color: transparent;">
+                  <thead>
+                    <tr class="table-head">
+                      <th scope="col">Hash</th>
+                      <th scope="col">Block</th>
+                      <th scope="col">Age</th>
+                      <th scope="col">Method</th>
+                      <th scope="col">From</th>
+                      <th scope="col">To</th>
+                      <th scope="col">Amount</th>
+                      <th scope="col">Transaction</th>
+                      <th scope="col">Status</th>
+                    </tr>
+                  </thead>
+            </table>
+         </div>
         <div data-selector="channel-batching-message" style="display: none;">
           <div data-selector="reload-transactions-button" class="alert alert-info">
             <a href="#" class="alert-link"><span data-selector="channel-batching-count"></span> <%= gettext "More transactions have come in" %></a>

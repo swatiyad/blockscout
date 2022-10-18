@@ -8,10 +8,11 @@
 <section class="container">
   <% is_proxy = BlockScoutWeb.AddressView.smart_contract_is_proxy?(@address) %>
 
-  <%= render BlockScoutWeb.AddressView, "overview.html", address: @address, is_proxy: is_proxy, conn: @conn, exchange_rate: @exchange_rate, coin_balance_status: @coin_balance_status, counters_path: @counters_path, tags: @tags %>
+  <%= render BlockScoutWeb.AddressView, "overview.html", address: @address, is_proxy: is_proxy, conn: @conn, exchange_rate: @exchange_rate, coin_balance_status: @coin_balance_status, counters_path: @counters_path %>
 
   <div class="card">
     <%= render BlockScoutWeb.AddressView, "_tabs.html", address: @address, is_proxy: is_proxy, conn: @conn %>
+     <%= render BlockScoutWeb.AddressView, "tabs.html", address: @address, is_proxy: is_proxy, conn: @conn %>
     <div class="card-body">
       <%= unless smart_contract_verified do %>
         <%= if minimal_proxy_template do %>
@@ -23,7 +24,7 @@
               <div style="display: inline-block;">
                 <%= render BlockScoutWeb.CommonComponentsView, "_info.html" %>
                 <span> <%= gettext("Contract is not verified. However, we found a verified contract with the same bytecode in Blockscout DB") %> <%= link(
-                  metadata_for_verification.address_hash, 
+                  metadata_for_verification.address_hash,
                   to: address_contract_path(@conn, :index, metadata_for_verification.address_hash)) %>.<br/> <%= gettext("All metadata displayed below is from that contract. In order to verify current contract, click") %> <i><%= gettext("Verify & Publish") %></i> <%= gettext("button") %></span>
               </div>
               <%= link(gettext("Verify & Publish"), to: path, class: "button button-primary button-sm float-right ml-3", "data-test": "verify_and_publish") %>
@@ -83,7 +84,7 @@
               <dd class="col-md-4"><%= target_contract.inserted_at %></dd>
             <% end %>
           </dl>
-        <hr/>
+        <hr class="mt-5 border-0"/>
         <%= if smart_contract_verified && target_contract.constructor_arguments do %>
           <section>
             <div class="d-flex justify-content-between align-items-baseline">
@@ -155,21 +156,27 @@
                   <button type="button" class="btn-line" style="float: left;" id="button" data-clipboard-text="<%= creation_code(@address) %>" aria-label="copy contract creation code">
                     <%= gettext "Copy Contract Creation Code" %>
                   </button>
-                  <%= if !fully_verified do %>
-                    <% path = address_verify_contract_path(@conn, :new, @address.hash) %>
-                    <%= link(
-                          gettext("Verify & Publish"),
-                          to: path,
-                          class: "button button-primary button-sm float-right ml-3",
-                          "data-test": "verify_and_publish"
-                        ) %>
+                  <%= if match?({:selfdestructed, _}, contract_creation_code) do %>
+                    <div class="button button-disabled button-sm float-right ml-3">
+                      <%= gettext("Verify & Publish") %>
+                    </div>
+                  <% else %>
+                    <%= if !fully_verified do %>
+                      <% path = address_verify_contract_path(@conn, :new, @address.hash) %>
+                      <%= link(
+                            gettext("Verify & Publish"),
+                            to: path,
+                            class: "button button-primary button-sm float-right ml-3",
+                            "data-test": "verify_and_publish"
+                          ) %>
+                    <% end %>
                   <% end %>
                 </div>
               </div>
               <div class="tile tile-muted mb-4">
                 <pre class="pre-wrap pre-scrollable"><code class="nohighlight"><%= creation_code(@address) %></code></pre>
               </div>
-            <% end %>    
+            <% end %>
             <%= if fully_verified do %>
               <div class="d-flex justify-content-between align-items-baseline">
                 <h3><%= gettext "Deployed ByteCode" %></h3>
@@ -186,14 +193,20 @@
                   <button type="button" class="btn-line" style="float: left;" id="button" data-clipboard-text="<%= contract_code %>" aria-label="copy contract creation code">
                     <%= gettext "Copy Deployed ByteCode" %>
                   </button>
-                  <%= if !fully_verified and !creation_code(@address) do %>
-                    <% path = address_verify_contract_path(@conn, :new, @address.hash) %>
-                    <%= link(
-                          gettext("Verify & Publish"),
-                          to: path,
-                          class: "button button-primary button-sm float-right ml-3",
-                          "data-test": "verify_and_publish"
-                        ) %>
+                  <%= if match?({:selfdestructed, _}, contract_creation_code) and !creation_code(@address) do %>
+                    <div class="button button-disabled button-sm float-right ml-3">
+                      <%= gettext("Verify & Publish") %>
+                    </div>
+                  <% else %>
+                    <%= if !fully_verified and !creation_code(@address) do %>
+                      <% path = address_verify_contract_path(@conn, :new, @address.hash) %>
+                      <%= link(
+                            gettext("Verify & Publish"),
+                            to: path,
+                            class: "button button-primary button-sm float-right ml-3",
+                            "data-test": "verify_and_publish"
+                          ) %>
+                    <% end %>
                   <% end %>
                 </div>
               </div>

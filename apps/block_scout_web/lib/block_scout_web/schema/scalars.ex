@@ -113,9 +113,4 @@ defmodule BlockScoutWeb.Schema.Scalars do
     value(:reward)
     value(:selfdestruct)
   end
-
-  enum :sort_order do
-    value(:asc)
-    value(:desc)
-  end
 end

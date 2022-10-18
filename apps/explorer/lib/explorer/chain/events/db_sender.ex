@@ -3,7 +3,6 @@ defmodule Explorer.Chain.Events.DBSender do
   Sends events to Postgres.
   """
   alias Explorer.Repo
-  alias Explorer.Utility.EventNotification
 
   def send_data(event_type) do
     payload = encode_payload({:chain_event, event_type})
@@ -12,10 +11,7 @@ defmodule Explorer.Chain.Events.DBSender do
 
   def send_data(event_type, broadcast_type, event_data) do
     payload = encode_payload({:chain_event, event_type, broadcast_type, event_data})
-
-    with {:ok, %{id: event_notification_id}} <- save_event_notification(payload) do
-      send_notify(to_string(event_notification_id))
-    end
+    send_notify(payload)
   end
 
   defp encode_payload(payload) do
@@ -26,11 +22,5 @@ defmodule Explorer.Chain.Events.DBSender do
 
   defp send_notify(payload) do
     Repo.query!("select pg_notify('chain_event', $1::text);", [payload])
-  end
-
-  defp save_event_notification(event_data) do
-    event_data
-    |> EventNotification.new_changeset()
-    |> Repo.insert()
   end
 end

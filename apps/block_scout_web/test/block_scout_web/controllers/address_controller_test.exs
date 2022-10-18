@@ -89,7 +89,8 @@ defmodule BlockScoutWeb.AddressControllerTest do
                "transaction_count" => 0,
                "token_transfer_count" => 0,
                "validation_count" => 0,
-               "gas_usage_count" => 0
+               "gas_usage_count" => 0,
+               "crc_total_worth" => "0"
              } ==
                response
     end

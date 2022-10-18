@@ -3,8 +3,8 @@
   <%= render BlockScoutWeb.BlockView, "overview.html", assigns %>
 
   <section>
-    <div class="card mb-3">
-      <div class="card-tabs js-card-tabs">
+    <div class="card mb-5 shadow border">
+      <div class="card-tabs js-card-tabs px-2">
         <%=
           link(
             gettext("Transactions"),

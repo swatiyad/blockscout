@@ -4,23 +4,37 @@
     "_details.html",
     token: @token,
     counters_path: @counters_path,
-    tags: @tags,
     conn: @conn
   ) %>
 
   <section data-page="token-transfer-list" id="transfers">
     <div class="card">
       <%= render OverviewView, "_tabs.html", assigns %>
-      <div class="card-body" data-async-load data-async-listing="<%= @current_path %>">
-        <h2 class="card-title list-title-description"><%= gettext "Token Transfers" %></h2>
-
+      <div class="card-body table-responsive" data-async-load data-async-listing="<%= @current_path %>">
+      <h2 class="card-title list-title-description"><%= gettext "Token Transfers" %></h2>
         <div class="list-top-pagination-container-wrapper">
           <%= render BlockScoutWeb.CommonComponentsView, "_pagination_container.html", position: "top", cur_page_number: "1", show_pagination_limit: true, data_next_page_button: true, data_prev_page_button: true %>
         </div>
 
-        <button data-error-message class="alert alert-danger col-12 text-left" style="display: none;">
+        <div class="">
+            <table class="table mb-0 table-hover fixed-layout">
+                  <thead>
+                    <tr class="table-head">
+                      <th>Hash</th>
+                      <th>Block</th>
+                      <th>Age</th>
+                      <th>From</th>
+                      <th>To</th>
+                      <th>Stake</th>
+                      <th>Method</th>
+                    </tr>
+                  </thead>
+            </table>
+         </div>
+
+        <div data-error-message class="alert alert-danger" style="display: none;">
           <span href="#" class="alert-link"><%= gettext("Something went wrong, click to reload.") %></span>
-        </button>
+        </div>
 
         <div data-empty-response-message class="tile tile-muted text-center" style="display: none;">
           <span data-selector="empty-transactions-list">
@@ -40,3 +54,11 @@
     <script defer data-cfasync="false" src="<%= static_path(@conn, "/js/token-transfers-toggle.js") %>"></script>
   </section>
 </section>
+
+<style>
+@media screen and (min-device-width: 290px) and (max-device-width: 768px){
+.table{
+     width:426% !important;
+    }
+ }
+</style>

@@ -91,15 +91,11 @@ defmodule Explorer.ExchangeRates.Source.CoinGecko do
 
   @impl Source
   def headers do
-    if api_key() do
-      [{"X-Cg-Pro-Api-Key", "#{api_key()}"}]
-    else
-      []
-    end
+    [{"X-Cg-Pro-Api-Key", "#{api_key()}"}]
   end
 
   defp api_key do
-    Application.get_env(:explorer, ExchangeRates)[:coingecko_api_key] || nil
+    Application.get_env(:explorer, ExchangeRates)[:coingecko_api_key]
   end
 
   def coin_id do
@@ -109,7 +105,7 @@ defmodule Explorer.ExchangeRates.Source.CoinGecko do
   end
 
   def coin_id(symbol) do
-    id_mapping = token_symbol_to_id_mapping_to_get_price(symbol)
+    id_mapping = bridged_token_symbol_to_id_mapping_to_get_price(symbol)
 
     if id_mapping do
       {:ok, id_mapping}
@@ -178,19 +174,7 @@ defmodule Explorer.ExchangeRates.Source.CoinGecko do
   end
 
   defp base_url do
-    if api_key() do
-      base_pro_url()
-    else
-      base_free_url()
-    end
-  end
-
-  defp base_free_url do
-    config(:base_url) || "https://api.coingecko.com/api/v3"
-  end
-
-  defp base_pro_url do
-    config(:base_pro_url) || "https://pro-api.coingecko.com/api/v3"
+    config(:base_url) || "https://pro-api.coingecko.com/api/v3"
   end
 
   defp get_btc_price(currency \\ "usd") do
@@ -216,7 +200,7 @@ defmodule Explorer.ExchangeRates.Source.CoinGecko do
     Application.get_env(:explorer, __MODULE__, [])[key]
   end
 
-  defp token_symbol_to_id_mapping_to_get_price(symbol) do
+  defp bridged_token_symbol_to_id_mapping_to_get_price(symbol) do
     case symbol do
       "UNI" -> "uniswap"
       "SURF" -> "surf-finance"

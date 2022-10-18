@@ -5,28 +5,15 @@ defmodule BlockScoutWeb.Application do
 
   use Application
 
-  alias BlockScoutWeb.API.APILogger
   alias BlockScoutWeb.Counters.BlocksIndexedCounter
   alias BlockScoutWeb.{Endpoint, Prometheus}
-  alias BlockScoutWeb.RealtimeEventHandler
+  alias BlockScoutWeb.{RealtimeEventHandler, StakingEventHandler}
 
   def start(_type, _args) do
     import Supervisor
 
     Prometheus.Instrumenter.setup()
     Prometheus.Exporter.setup()
-
-    APILogger.message(
-      "Current global API rate limit #{inspect(Application.get_env(:block_scout_web, :api_rate_limit)[:global_limit])} reqs/sec"
-    )
-
-    APILogger.message(
-      "Current API rate limit by key #{inspect(Application.get_env(:block_scout_web, :api_rate_limit)[:limit_by_key])} reqs/sec"
-    )
-
-    APILogger.message(
-      "Current API rate limit by IP #{inspect(Application.get_env(:block_scout_web, :api_rate_limit)[:limit_by_ip])} reqs/sec"
-    )
 
     # Define workers and child supervisors to be supervised
     children = [
@@ -35,6 +22,7 @@ defmodule BlockScoutWeb.Application do
       child_spec(Endpoint, []),
       {Absinthe.Subscription, Endpoint},
       {RealtimeEventHandler, name: RealtimeEventHandler},
+      {StakingEventHandler, name: StakingEventHandler},
       {BlocksIndexedCounter, name: BlocksIndexedCounter}
     ]
 

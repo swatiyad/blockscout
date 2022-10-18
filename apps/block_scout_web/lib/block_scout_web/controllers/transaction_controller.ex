@@ -1,8 +1,6 @@
 defmodule BlockScoutWeb.TransactionController do
   use BlockScoutWeb, :controller
 
-  import BlockScoutWeb.Account.AuthController, only: [current_user: 1]
-
   import BlockScoutWeb.Chain,
     only: [
       fetch_page_number: 1,
@@ -11,9 +9,6 @@ defmodule BlockScoutWeb.TransactionController do
       update_page_parameters: 3,
       split_list_by_page: 1
     ]
-
-  import BlockScoutWeb.Models.GetAddressTags, only: [get_address_tags: 2]
-  import BlockScoutWeb.Models.GetTransactionTags, only: [get_transaction_with_addresses_tags: 2]
 
   alias BlockScoutWeb.{
     AccessHelpers,
@@ -163,17 +158,9 @@ defmodule BlockScoutWeb.TransactionController do
             "show_token_transfers.html",
             exchange_rate: Market.get_exchange_rate(Explorer.coin()) || Token.null(),
             block_height: Chain.block_height(),
-            current_path: Controller.current_full_path(conn),
-            current_user: current_user(conn),
+            current_path: current_path(conn),
             show_token_transfers: true,
-            transaction: transaction,
-            from_tags: get_address_tags(transaction.from_address_hash, current_user(conn)),
-            to_tags: get_address_tags(transaction.to_address_hash, current_user(conn)),
-            tx_tags:
-              get_transaction_with_addresses_tags(
-                transaction,
-                current_user(conn)
-              )
+            transaction: transaction
           )
         else
           :not_found ->
@@ -200,18 +187,10 @@ defmodule BlockScoutWeb.TransactionController do
             conn,
             "show_internal_transactions.html",
             exchange_rate: Market.get_exchange_rate(Explorer.coin()) || Token.null(),
-            current_path: Controller.current_full_path(conn),
-            current_user: current_user(conn),
+            current_path: current_path(conn),
             block_height: Chain.block_height(),
             show_token_transfers: Chain.transaction_has_token_transfers?(transaction_hash),
-            transaction: transaction,
-            from_tags: get_address_tags(transaction.from_address_hash, current_user(conn)),
-            to_tags: get_address_tags(transaction.to_address_hash, current_user(conn)),
-            tx_tags:
-              get_transaction_with_addresses_tags(
-                transaction,
-                current_user(conn)
-              )
+            transaction: transaction
           )
         else
           :not_found ->

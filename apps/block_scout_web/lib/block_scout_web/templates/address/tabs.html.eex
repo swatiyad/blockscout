@@ -1,0 +1,74 @@
+<% dark_forest_addresses_list_0_4 = CustomContractsHelpers.get_custom_addresses_list(:dark_forest_addresses) %>
+<% dark_forest_addresses_list_0_5 = CustomContractsHelpers.get_custom_addresses_list(:dark_forest_addresses_v_0_5) %>
+<% dark_forest_addresses_list = dark_forest_addresses_list_0_4 ++ dark_forest_addresses_list_0_5 %>
+<% current_address = "0x" <> Base.encode16(@address.hash.bytes, case: :lower) %>
+<div class="card-tabs js-card-tabs px-2" style="width: max-content; border-radius: 5px; margin: 10px;
+    height: 50px; font-size: 20px; align-items: center; display: flex; background-color: #fff !important;">
+  <%= if contract?(@address) do %>
+    <%= link(
+        to: AccessHelpers.get_path(@conn, :address_contract_path, :index, @address.hash),
+        class: "card-tab fontsize p-3 #{tab_status("contracts", @conn.request_path)}")  do %>
+        <%= gettext("Code") %>
+      <%= if smart_contract_verified?(@address) do %>
+        <%= cond do %>
+          <% Enum.member?(dark_forest_addresses_list, current_address) -> %>
+            <i class="check_dark_forest_icon">
+              <%= render BlockScoutWeb.IconsView, "_check_dark_forest_icon.html" %>
+            </i>
+          <% true -> %>
+            <i class="fa-regular fa-check-circle"></i>
+        <% end %>
+      <% end %>
+    <% end %>
+  <% end %>
+
+  <%= if has_decompiled_code?(@address) do %>
+    <%= link(
+        to: AccessHelpers.get_path(@conn, :address_decompiled_contract_path, :index, @address.hash),
+        class: "card-tab font16 p-3 #{tab_status("decompiled-contracts", @conn.request_path)}") do %>
+        <%= gettext("Decompiled code") %>
+        <i class="fa-regular fa-check-circle"></i>
+    <% end %>
+  <% end %>
+
+   <%= if smart_contract_with_read_only_functions?(@address) do %>
+    <%= link(
+        gettext("Read Contract"),
+        to: AccessHelpers.get_path(@conn, :address_read_contract_path, :index, @address.hash),
+        class: "card-tab font16 p-3 #{tab_status("read-contract", @conn.request_path)}")
+        %>
+  <% end %>
+
+  <%= if @is_proxy do %>
+    <%= link(
+        gettext("Read Proxy"),
+        to: AccessHelpers.get_path(@conn, :address_read_proxy_path, :index, @address.hash),
+        class: "card-tab fontsize p-3 #{tab_status("read-proxy", @conn.request_path)}")
+        %>
+  <% end %>
+
+
+  <%= if smart_contract_with_write_functions?(@address) do %>
+    <%= link(
+        gettext("Write Contract"),
+        to: AccessHelpers.get_path(@conn, :address_write_contract_path, :index, @address.hash),
+        class: "card-tab fontsize p-3 #{tab_status("write-contract", @conn.request_path)}")
+        %>
+  <% end %>
+
+
+
+  <%= if smart_contract_with_write_functions?(@address) && @is_proxy  do %>
+    <%= link(
+        gettext("Write Proxy"),
+        to: AccessHelpers.get_path(@conn, :address_write_proxy_path, :index, @address.hash),
+        class: "card-tab p-3 #{tab_status("write-proxy", @conn.request_path)}")
+        %>
+  <% end %>
+</div>
+
+<style>
+.font16{
+    font-size: 16px;
+}
+</style>

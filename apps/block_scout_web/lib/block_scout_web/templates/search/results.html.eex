@@ -1,51 +1,180 @@
-<section
-    class="container"
-    data-page="search-results"
-    data-chain-id="<%= Application.get_env(:block_scout_web, :chain_id) %>"
-	data-display-token-icons="<%= System.get_env("DISPLAY_TOKEN_ICONS") %>"
->
-  <%= render BlockScoutWeb.Advertisement.TextAdView, "index.html", conn: @conn %>
-  <div class="card">
-    <div class="card-body" data-async-load data-async-listing="<%= @current_path %>">
-      <div class="search-input-container mb-3">
-			<input data-search-field="" class="form-control search-input" type="text" name="filter" value="<%= @conn.params["q"] %>" placeholder="Search" id="search-text-input">
-	  </div>
+  <section
+      class="container"
+      data-page="search-results"
+      data-chain-id="<%= System.get_env("CHAIN_ID") %>"
+    data-display-token-icons="<%= System.get_env("DISPLAY_TOKEN_ICONS") %>"
+  >
 
-    <div class="list-top-pagination-container-wrapper">
-    	<%= render BlockScoutWeb.CommonComponentsView, "_pagination_container.html", position: "top", cur_page_number: "1", show_pagination_limit: true, data_next_page_button: true, data_prev_page_button: true %>
-	</div>
-    <h1 class="card-title list-title-description"><%= gettext "Search Results" %>: <strong class="js-search-results-query-display"><%= @query %></strong></h1>
+<style>
+.bg-setter{
+    background-color: #51b8fd;
+    border-radius: 10px;
+    margin-inline: 10px;
+    padding: 10px;
+}
 
-        <div class="addresses-table-container">
-            <div class="stakes-table-container">
-                <table>
-                    <thead>
-                        <tr>
-                            <th class="stakes-table-th">
-                                <div class="stakes-table-th-content">&nbsp;</div>
-                            </th>
-                            <th class="stakes-table-th">
-			                    <div>&nbsp;</div>
-		                    </th>
-                            <th class="stakes-table-th">
-                                <div class="stakes-table-th-content">Search Result</div>
-                            </th>
-                            <th class="stakes-table-th">
-                                <div class="stakes-table-th-content">Hash</div>
-                            </th>
-                            <th class="stakes-table-th">
-                                <div class="stakes-table-th-content">Category</div>
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody data-items data-selector="search-results-list">
-                        <%= render BlockScoutWeb.CommonComponentsView, "_table-loader.html", columns_num: 5 %>
-                    </tbody>
-                </table>
-            </div>
-        </div>
+
+</style>  
+
+<script>
+
+var cblock=0;
+ var block =0;
+  var userBlock=0;
+
+ async function set (){
+ var web3 = new Web3('https://rpc01.taralityscan.com');
+ cblock =  await web3.eth.getBlockNumber();
+ //console.log(cblock);
+        document.getElementById("currentBlock").innerHTML=cblock;
+    
+}
+
+setInterval(set, 1000);
+
+var seconds;
+var dDisplay;
+var hDisplay;
+var mDisplay;
+var sDisplay;
+
+ var datad = setInterval (function secondsToHms() {
+     
+ userBlock = <%=@query %>;
+//console.log(userBlock,"useerrrrr ");
+block = cblock;
+//console.log(cblock,"cccccuseerrrrr ");
+block=userBlock-block;
+if(block>=0){
+  document.getElementById("remBlock").innerHTML=block;
+}else{
+  document.getElementById("remBlock").innerHTML="validated";
+}
+block=block*5; 
+seconds=block;
+//console.log(seconds,"ssssssscccccuseerrrrr ");
+
+stop();
+var d = Math.floor(seconds / (3600*24));
+var h = Math.floor(seconds % (3600*24) / 3600);
+var m = Math.floor(seconds % 3600 / 60);
+var s = Math.floor(seconds % 60);
+
+ dDisplay = d > 0 ? d + (d == 1 ? " day, " : " days, ") : "0";
+ hDisplay = h > 0 ? h + (h == 1 ? " hour, " : " hours, ") : "0";
+ mDisplay = m > 0 ? m + (m == 1 ? " minute, " : " minutes, ") : "0";
+ sDisplay = s > 0 ? s + (s == 1 ? " second" : " seconds") : "0";
+//console.log( dDisplay + hDisplay + mDisplay + sDisplay);
+
+    document.getElementById("day").innerHTML=dDisplay;
+    document.getElementById("hour").innerHTML=hDisplay;
+    document.getElementById("min").innerHTML=mDisplay;
+    document.getElementById("sec").innerHTML=sDisplay;
+  document.getElementById("UserBlock").innerHTML=<%= @query %>;
+     helo();   
+
+ 
+seconds--;
+  
+},1000)
+
+function stop(){
+  if(dDisplay =="0" && hDisplay =="0" && mDisplay =="0" && sDisplay =="0"){
+        check();
+clearInterval(datad);
+    }
+}
+function helo(){
+    var dt = new Date();
+ dt.setSeconds( dt.getSeconds() + block);
+ console.log(dt,"block time");
+ document.getElementById("estDate").innerHTML="Estimated Target Date: " + dt;       
+}
+
+
+function notify(){
+const notification = new Notification("New messsage From  Rabbit ANAscan", {
+body:"Your Block Has  Been  validated"
+});
+}
+
+function check(){
+  if(dDisplay =="0" && hDisplay =="0" && mDisplay =="0" && sDisplay =="0"){
+
+  if( document.getElementById("one").checked == true){
+
+//console.log(Notification.permission);
+if(Notification.permission == "granted"){
+ notify();
+}else if(Notification.permission !== "denied  "){
+  Notification.requestPermission().then(permission => {
+
+if(Notification.permission == "granted"){
+ notify();
+}
+  });
+}
+  }
+
+  }
+}
+
+
+
+
+</script>
+
+<body onload="secondsToHms();">
+    
+<div  class="container text-center my-5 py-5">
+    <div class="row my-5">
+      <div class="col-sm-6 my-5">
+        <img src="./virtual-reality-ether.svg" height="50%" alt="" srcset="">
+      </div>
+      <div class="col-sm-6">   
+        <div class="row">
+   
+            <!-- <div class="col"><h1 id="day" class="text-primary">XXXX </h1> Days</div> -->
+             <div class="col "><h3 id="day" class="text-primary">XXXX </h3> Days</div>
+            <div class="col "><h3 id="hour" class="text-primary">XXXX </h3> Hours</div>
+            <div class="col "><h3 id="min" class="text-primary">XXXX </h3> Mins</div>
+            <div class="col "><h3 id="sec" class="text-primary">XXXX </h3> Secs</div>
+          </div>
+          <hr>
+          <!-- <h4 class="text-secondary">Estimated Target Date: Fri Nov 14 2025 13:11:41 GMT+0530 (India Standard Time)  </h4> -->
+          <h5 class="text-dark my-5" id="estDate">  </h5>
+
+          <div class="row my-5">
+            <div class="col bg-setter "><p>Countdown For block:</p><b id="UserBlock">CALCULATING</b></div>
+            <div class="col bg-setter "><p> Current Block:</p><b id="currentBlock">CALCULATING</b></div>
+            <div class="col bg-setter "><p>Remaining Block:</p><b id="remBlock">CALCULATING</b></div>
+          </div>
+
+<div class="container">
+<h5>Click on the Notification bell for alert when the block is validated!</h5>
+    <div class="">
+        <input  type="radio" name="radio" id="one" >
+       
+      
+    </div>
+</div>
+
+      </div>
+   
+    </div>
+  </div>
+
+
+</div>
+
+</body>
+
+        
         <%= render BlockScoutWeb.CommonComponentsView, "_pagination_container.html", position: "bottom", cur_page_number: "1", show_pagination_limit: true, data_next_page_button: true, data_prev_page_button: true %>
     </div>
   </div>
   <script defer data-cfasync="false" src="<%= static_path(@conn, "/js/search-results.js") %>"></script>
 </section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.4/web3.min.js" integrity="sha512-oMd9Re3VgJcXuZJn9DN6X7S7JUc7xLYZ2UyZ85Mm/xzaW3lwBr4fV2zjuu/n5jY/Of/2JOx35CTa6zvQNxb31Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+

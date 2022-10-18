@@ -20,7 +20,7 @@
       <%= gettext "To have guaranteed accuracy, use the link above to verify the contract's source code." %>
 
       <%= for {:ok, method_id, text, mapping} <- candidates do %>
-        <hr/>
+        <hr class="mt-5 border-0"/>
         <h3><%= text %>: </h3>
 
         <%= render(BlockScoutWeb.TransactionView, "_decoded_input_body.html", method_id: method_id, text: text, mapping: mapping) %>
@@ -31,7 +31,7 @@
     <% {:error, :contract_verified, candidates} -> %>
       <h3><%= gettext "Potential matches from our contract method database:" %></h3>
       <%= for {:ok, method_id, text, mapping} <- candidates do %>
-        <hr/>
+        <hr class="mt-5 border-0"/>
         <h3><%= text %>: </h3>
         <%= render(BlockScoutWeb.TransactionView, "_decoded_input_body.html", method_id: method_id, text: text, mapping: mapping) %>
       <% end %>

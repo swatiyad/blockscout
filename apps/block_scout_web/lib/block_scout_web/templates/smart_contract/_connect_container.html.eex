@@ -1,9 +1,16 @@
 <div connect-to class="connect-container">
+
     <span style="margin-top: -2px;" class="mr-2">
       <%= render BlockScoutWeb.IconsView, "_inactive_icon.html" %>
     </span>
-     <h2 style="margin-top: -2px;">Disconnected</h2>
-    <button connect-wallet class="button btn-line ml-4">Connect wallet</button>
+    <span><%= link("Login", to: "/login", class: "")%></span>
+
+    <button   connect-wallet class="button btn-danger btn-line ml-4">Connect wallet</button>
+
+
+
+    <button connect-wallet class="button ml-4 bg-success text-white">Connect wallet</button>
+
 </div>
 <div connected-to class="connect-container row hidden">
     <div class="d-flex ml-3">
@@ -12,5 +19,11 @@
       </span>
       <h2 style="margin-top: -2px; min-width: 104px;" class="mr-2">Connected to</h2><h3 connected-to-address></h3>
     </div>
-    <button disconnect-wallet class="button btn-line ml-3">Disconnect wallet</button>
+
+    <%# <button disconnect-wallet class="button btn-line ml-3">Disconnect wallet</button> %>
+
+    <button disconnect-wallet  class="button ml-3 bg-danger text-white">Disconnect wallet</button>
+
 </div>
+
+

@@ -43,10 +43,8 @@ defmodule Explorer.SmartContract.Writer do
       (Helper.payable?(function) || Helper.nonpayable?(function))
   end
 
-  def filter_write_functions(abi) when is_list(abi) do
+  defp filter_write_functions(abi) do
     abi
     |> Enum.filter(&write_function?(&1))
   end
-
-  def filter_write_functions(_), do: []
 end

@@ -3,7 +3,6 @@ defmodule BlockScoutWeb.API.RPC.ContractView do
 
   alias BlockScoutWeb.AddressView
   alias BlockScoutWeb.API.RPC.RPCView
-  alias Ecto.Association.NotLoaded
   alias Explorer.Chain
   alias Explorer.Chain.{Address, DecompiledSmartContract, SmartContract}
 
@@ -33,6 +32,25 @@ defmodule BlockScoutWeb.API.RPC.ContractView do
 
   def render("show.json", %{result: result}) do
     RPCView.render("show.json", data: result)
+  end
+
+  defp prepare_source_code_contract(nil) do
+    %{
+      "Address" => "",
+      "SourceCode" => "",
+      "ABI" => "Contract source code not verified",
+      "ContractName" => "",
+      "CompilerVersion" => "",
+      "DecompiledSourceCode" => "",
+      "DecompilerVersion" => decompiler_version(nil),
+      "OptimizationUsed" => "",
+      "OptimizationRuns" => "",
+      "EVMVersion" => "",
+      "ConstructorArguments" => "",
+      "ExternalLibraries" => "",
+      "FileName" => "",
+      "IsProxy" => "false"
+    }
   end
 
   defp prepare_source_code_contract(address) do
@@ -201,8 +219,6 @@ defmodule BlockScoutWeb.API.RPC.ContractView do
       "OptimizationUsed" => if(contract.optimization, do: "1", else: "0")
     }
   end
-
-  defp latest_decompiled_smart_contract(%NotLoaded{}), do: nil
 
   defp latest_decompiled_smart_contract([]), do: nil
 

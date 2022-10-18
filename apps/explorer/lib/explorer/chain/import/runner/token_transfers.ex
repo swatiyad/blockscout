@@ -9,7 +9,6 @@ defmodule Explorer.Chain.Import.Runner.TokenTransfers do
 
   alias Ecto.{Changeset, Multi, Repo}
   alias Explorer.Chain.{Import, TokenTransfer}
-  alias Explorer.Prometheus.Instrumenter
 
   @behaviour Import.Runner
 
@@ -42,12 +41,7 @@ defmodule Explorer.Chain.Import.Runner.TokenTransfers do
       |> Map.put(:timestamps, timestamps)
 
     Multi.run(multi, :token_transfers, fn repo, _ ->
-      Instrumenter.block_import_stage_runner(
-        fn -> insert(repo, changes_list, insert_options) end,
-        :block_referencing,
-        :token_transfers,
-        :token_transfers
-      )
+      insert(repo, changes_list, insert_options)
     end)
   end
 
@@ -63,7 +57,7 @@ defmodule Explorer.Chain.Import.Runner.TokenTransfers do
     # Enforce TokenTransfer ShareLocks order (see docs: sharelocks.md)
     ordered_changes_list = Enum.sort_by(changes_list, &{&1.transaction_hash, &1.block_hash, &1.log_index})
 
-    {:ok, inserted} =
+    {:ok, _} =
       Import.insert_changes_list(
         repo,
         ordered_changes_list,
@@ -74,8 +68,6 @@ defmodule Explorer.Chain.Import.Runner.TokenTransfers do
         timeout: timeout,
         timestamps: timestamps
       )
-
-    {:ok, inserted}
   end
 
   defp default_on_conflict do

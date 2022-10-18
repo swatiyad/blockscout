@@ -150,9 +150,9 @@ $dashboard-line-color-transactions-dark-theme: $secondary;
       color: $labels-dark !important;
   }
 
-  .tile.tile-type-block {
-		border-left-color: $secondary !important;
-	}
+  // .tile.tile-type-block {
+	// 	border-left-color: $secondary !important;
+	// }
 
   a {
     color: $labels-dark;

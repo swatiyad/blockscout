@@ -5,7 +5,7 @@ defmodule EthereumJSONRPC.GethTest do
 
   alias EthereumJSONRPC.Geth
 
-  @moduletag :no_nethermind
+  @moduletag :no_parity
 
   describe "fetch_internal_transactions/2" do
     # Infura Mainnet does not support debug_traceTransaction, so this cannot be tested expect in Mox
