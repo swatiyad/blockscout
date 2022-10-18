@@ -1,5 +1,5 @@
-$badge-success-color: #15bba6 !default;
-$badge-success-background-color: rgba($badge-success-color, 0.1) !default;
+$badge-success-color: #4caf50 !default;
+$badge-success-background-color: $badge-success-color!default;
 $badge-danger-color: #ed9966 !default;
 $badge-danger-background-color: rgba($badge-danger-color, 0.1) !default;
 $badge-neutral-color: $secondary !default;
@@ -30,7 +30,7 @@ $badge-neutral-background-color: rgba($secondary, .1) !default;
 
   &.badge-success {
     background-color: $badge-success-background-color;
-    color: $badge-success-color;
+    color: #fff;
   }
 
   &.badge-danger {
@@ -42,4 +42,5 @@ $badge-neutral-background-color: rgba($secondary, .1) !default;
     background-color: $badge-neutral-background-color;
     color: $badge-neutral-color;
   }
+ 
 }

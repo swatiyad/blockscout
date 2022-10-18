@@ -12,7 +12,7 @@
 
         <%= render BlockScoutWeb.CommonComponentsView, "_pagination_container.html", position: "top", cur_page_number: "1", show_pagination_limit: true, data_next_page_button: true, data_prev_page_button: true %>
 
-        <div data-empty-response-message class="tile tile-muted text-center" style="display: none;">
+        <div data-empty-response-message class="tile tile-muted text-center m-3" style="display: none;">
           <span><%= gettext "There are no blocks validated by this address." %></span>
         </div>
         <button data-error-message class="alert alert-danger col-12 text-left" style="display: none;">
@@ -20,9 +20,26 @@
             <%= gettext "Something went wrong, click to reload." %>
           </span>
         </button>
+
+        <table class="table mb-0 fixed-layout">
+          <thead>
+            <tr class="table-head">
+              <th class="screenRow">Block</th>
+              <th class="screenRow">Age</th>
+              <th class="screenRow">Txns</th>
+              <th class="screenRow">Validator</th>
+              <th class="screenRow">Gas Used</th>
+              <th class="screenRow">Gas Limit</th>
+              <th class="screenRow">Taral Priority Fees</th>
+              <th class="screenRow">Taral Burnt Fees</th>
+            </tr>
+          </thead>
+        </table>
         <div data-items data-selector="validations-list">
           <%= render BlockScoutWeb.CommonComponentsView, "_tile-loader.html" %>
         </div>
+
+
 
         <%= render BlockScoutWeb.CommonComponentsView, "_pagination_container.html", position: "bottom", cur_page_number: "1", show_pagination_limit: true, data_next_page_button: true, data_prev_page_button: true %>
 

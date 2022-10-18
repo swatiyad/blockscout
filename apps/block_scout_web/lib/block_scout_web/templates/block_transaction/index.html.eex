@@ -4,7 +4,7 @@
 
   <section>
     <div class="card mb-5 shadow border">
-      <div class="card-tabs js-card-tabs px-2">
+      <div class="card-tabs js-card-tabs bg-lighter">
         <%=
           link(
             gettext("Transactions"),
@@ -14,7 +14,7 @@
         %>
       </div>
 
-      <div class="card-body" data-async-load data-async-listing="<%= @current_path %>" id="txs">
+      <div class="card-body overflow-auto" data-async-load data-async-listing="<%= @current_path %>" id="txs">
 
       <%= render BlockScoutWeb.CommonComponentsView, "_pagination_container.html", position: "top", show_pagination_limit: true, data_next_page_button: true, data_prev_page_button: true %>
 
@@ -23,10 +23,26 @@
         </button>
 
         <div data-empty-response-message style="display: none;">
-          <div class="tile tile-muted text-center" data-selector="empty-transactions-list">
+          <div class="tile tile-muted text-center m-3" data-selector="empty-transactions-list">
             <%= gettext "There are no transactions for this block." %>
           </div>
         </div>
+        <!-- Table heading-->
+        <table class="table table-hover mb-0 fixed-layout">
+          <thead>
+            <tr class="table-head">
+              <th class="wideRow">Txn Hash</th>
+              <th class="screenRow">Method</th>
+              <th class="screenRow">Block</th>
+              <th class="screenRow">Age</th>
+              <th class="screenRow">From</th>
+              <th class="" style="width:36px"></th>
+              <th class="screenRow">To</th>
+              <th class="screenRow">Amount</th>
+              <th class="screenRow">Txn Fee</th>
+            </tr>
+          </thead>
+        </table>
 
         <div data-items>
           <%= render BlockScoutWeb.CommonComponentsView, "_tile-loader.html" %>

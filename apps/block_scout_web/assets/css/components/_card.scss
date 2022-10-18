@@ -52,10 +52,11 @@ $card-tab-icon-color-active: #fff !default;
 }
 
 .card-title {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: normal;
   line-height: 1.2rem;
   margin-bottom: 2rem;
+  color: #636363;
 
   &.lg-card-title {
     @media (max-width: 374px) {
@@ -170,7 +171,7 @@ $card-tab-icon-color-active: #fff !default;
 }
 
 .card-chain-blocks {
-  min-height: 165px;
+  min-height: 155px;
   max-height: auto;
   [class*="col-"]:last-child {
     .tile {
@@ -191,8 +192,8 @@ $card-tab-icon-color-active: #fff !default;
 .card-tabs {
   background-color: #fff;
   align-items: center;
-  border-top-left-radius: $card-default-border-radius;
-  border-top-right-radius: $card-default-border-radius;
+  //border-top-left-radius: $card-default-border-radius;
+ // border-top-right-radius: $card-default-border-radius;
   // border-bottom: 1px solid $base-border-color;
   //border-bottom: 1px solid $card-tab-active;
   display: flex;
@@ -207,22 +208,25 @@ $card-tab-icon-color-active: #fff !default;
 .card-tab {
   align-items: center;
   // background-color: $card-background-color;
-  color: #333;
+  color: #6c6868;
   cursor: pointer;
   display: flex;
-  font-size: 16.5px;
+  font-size: 15px;
   font-weight: normal;
   height: 50px;
   padding: 0 25px;
   text-align: center;
-  transition: $transition-cont;
+  //transition: $transition-cont;
+  border-top: 4px solid transparent;
+  border-bottom: 1px solid #e5e1e1;
 
   &:hover {
     // background-color: rgba($card-tab-active, .15);
     background-color: #fff;
-    border-bpttom: 4px solid $card-tab-active ;
+    border-top: 4px solid $card-tab-active ;
     color: $card-tab-active;
     text-decoration: none;
+    border-bottom: 0;
   }
 
   @include media-breakpoint-down(md) {
@@ -237,10 +241,11 @@ $card-tab-icon-color-active: #fff !default;
 
   &.active {
     background-color: white;
-    border-bottom: 4px solid $card-tab-active ;
+    border-top: 4px solid $card-tab-active ;
     color: $card-tab-active;
     cursor: default;
     text-decoration: none;
+    border-bottom: 0;
 
     .fa-check-circle {
       color: $card-tab-icon-color-active;
@@ -296,7 +301,7 @@ $card-tab-icon-color-active: #fff !default;
 
 .write-contract-btn {
   padding: 6px 8px !important;
-  height: 31px !important;
+  // height: 31px !important;
   font-size: 11px;
 }
 
@@ -309,7 +314,7 @@ $card-tab-icon-color-active: #fff !default;
 
 .contract-plus-btn {
   color: $primary;
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .custom-power-input {

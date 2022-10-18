@@ -5,13 +5,13 @@
 <section class="">
   <%= render BlockScoutWeb.Advertisement.TextAdView, "index.html", conn: @conn %>
   <div class="row mb-2">
-    <div class="col-md-6">  
+    <div class="col-md-6">
       <h1 class="mb-2" data-test="detail_type">
         <%= gettext("%{block_type} Details", block_type: block_type(@block)) %>
       </h1>
    </div>
    <div class="col-md-6">
-    <dl class="pagination-container">
+    <div class="pagination-container">
       <ul class="pagination p-2">
         <li class="page-item">
             <a
@@ -44,7 +44,7 @@
             </a>
           </li>
         </ul>
-      </dl>
+      </div>
    </div>
    </div>
 
@@ -70,7 +70,42 @@
               </dt>
               <dd class="col-sm-8 col-lg-8" data-test="block_detail_number">
                 <%= if block_type(@block) == "Block" do %>
-                  <%= @block.number %> <%= if @block.number == 0, do: " - " <> gettext("Genesis Block")%>
+                 <!-- <%= @block.number %> <%= if @block.number == 0, do: " - " <> gettext("Genesis Block")%>-->
+                  <div class="pagination-container d-inline-block">
+                    <ul class="pagination">
+                      <li class="page-item">
+                          <a
+                              <%= if false do %>disabled<% end %>
+                              class="page-link"
+                              href='<%= block_path(@conn, :show, @block.number - 1) %>'
+                              <%= if true do %>data-prev-page-button<% end %>
+                              data-placement="top"
+                              data-toggle="tooltip"
+                              title="<%= gettext "View previous block" %>">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10">
+                                  <path fill-rule="evenodd" d="M2.358 5l3.357 3.358a.959.959 0 1 1-1.357 1.357L.502 5.859c-.076-.042-.153-.08-.217-.144A.949.949 0 0 1 .011 5a.949.949 0 0 1 .274-.715c.064-.064.142-.102.217-.145L4.358.285a.959.959 0 1 1 1.357 1.357L2.358 5z"/>
+                              </svg>
+                          </a>
+                      </li>
+                        <li class="page-item"><a class="page-link no-hover" href data-page-number> <%= @block.number %></a>
+                      </li>
+                      <li class="page-item">
+                        <a
+                          <%= if false do %>disabled<% end %>
+                          class="page-link"
+                          href='<%= block_path(@conn, :show, @block.number + 1) %>'
+                          <%= if true do %>data-next-page-button<% end %>
+                          data-placement="top"
+                          data-toggle="tooltip"
+                          title="<%= gettext "View next block" %>">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10">
+                              <path fill-rule="evenodd" d="M5.715 5.715c-.064.064-.141.102-.217.144L1.642 9.715A.959.959 0 1 1 .285 8.358L3.642 5 .285 1.642A.959.959 0 1 1 1.642.285L5.498 4.14c.075.043.153.081.217.145A.949.949 0 0 1 5.989 5a.949.949 0 0 1-.274.715z"/>
+                          </svg>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+
                 <% else %>
                   <%= link(@block, to: block_path(BlockScoutWeb.Endpoint, :show, @block.number)) %>
                 <% end %>
@@ -99,11 +134,13 @@
                   text: gettext("The hash of the block from which this block was generated.") %>
                   <%= gettext("Parent Hash") %>
                 </dt>
-                <dd class="col-sm-8 col-lg-8"><span class="d-inline-block text-truncate" style="width:90%;"><%= link(
-                                                          @block.parent_hash,
-                                                          class: "transaction__link",
-                                                          to: block_path(@conn, :show, @block.number - 1)
-                                                        ) %></span>
+                <dd class="col-sm-8 col-lg-8">
+                <span class="d-inline-block text-truncate" style="width:90%;">
+                <%= link(
+                        @block.parent_hash,
+                        class: "transaction__link",
+                        to: block_path(@conn, :show, @block.number - 1)
+                      ) %></span>
                     <%= render BlockScoutWeb.CommonComponentsView, "_btn_copy.html",
                       additional_classes: ["btn-copy-icon-small", "btn-copy-icon-custom", "btn-copy-icon-no-borders"],
                       clipboard_text: to_string(@block.parent_hash),
@@ -251,7 +288,7 @@
               </dl>
             <% end %>
             <%= if show_reward?(@block.rewards) do %>
-              <hr class="mt-5 border-0"/>
+
               <%= for block_reward <- @block.rewards do %>
                   <dl class="row">
                     <dt class="col-sm-4 col-lg-4 text-muted">

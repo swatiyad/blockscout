@@ -1,15 +1,16 @@
-$common-link-color: #44C997!default;
+$common-link-color: #42C670!default;
 $blue: #4b89fb !default;
 $success: #34c0ad !default;
 
 body {
   font-family: $font-family;
-  font-size: 15px;
+  font-size: 14px;
 }
 
 h1 {
-  font-size: 26px;
+  font-size: 1.3125rem;
   font-weight: 200;
+  color: #4A4F55;
 }
 
 h2 {
@@ -54,7 +55,7 @@ a {
   &:hover,
   &:focus {
     color: darken($common-link-color, 20%);
-    text-decoration: underline;
+    //text-decoration: underline;
   }
 
   .bg-primary &:hover,
@@ -117,7 +118,7 @@ textarea.form-control {
 }
 
 [data-internal-transaction-type="Delegate Call"] {
-  color: $purple;
+  color: $teal;
 }
 
 [data-internal-transaction-type="Create"] {

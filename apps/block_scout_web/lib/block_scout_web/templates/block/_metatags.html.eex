@@ -11,5 +11,3 @@
 <% else %>
   <%= BlockScoutWeb.LayoutView.render("_default_title.html") %>
 <% end %>
-
-

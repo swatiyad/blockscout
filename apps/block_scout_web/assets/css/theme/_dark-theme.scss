@@ -1,36 +1,37 @@
-$body-dark: #1c1d31; // body background
-$dark-bg: #22223a; // hero shade
-$dark-light-bg: #282945; // pills bg shade
-$dark-light: #313355; // tile light top share
-$labels-dark: #8a8dba; // header nav, labels
-$dark-stakes-banned-background: #3e314c;
+$body-dark: #242424; // body background
+$dark-bg: #242424; // hero shade
+$dark-light-bg: #2A2A2A; // pills bg shade
+$dark-light: #383838; // tile light top share
+$labels-dark: #c6c6c6; // header nav, labels
+$dark-stakes-banned-background: #222222;
+$light-dark:#383838;
 
 // Switcher
-.dark-mode-changer {
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	width: 36px;
-	height: 36px;
-	background: transparent;
-	border: none;
-	cursor: pointer;
-	margin-right: 5px;
-	outline: none !important;
-	box-shadow: none !important;
-	transition: .2s ease-in;
-	&:hover {
-		opacity: .8;
-	}
-	svg path {
-		fill: #828ba0;
-	}
-	&--dark {
-		svg path {
-			fill: $dark-primary;
-		}
-	}
-}
+// .dark-mode-changer {
+// 	display: inline-flex;
+// 	align-items: center;
+// 	justify-content: center;
+// 	width: 36px;
+// 	height: 36px;
+// 	background: transparent;
+// 	border: none;
+// 	cursor: pointer;
+// 	margin-right: 5px;
+// 	outline: none !important;
+// 	box-shadow: none !important;
+// 	transition: .2s ease-in;
+// 	&:hover {
+// 		opacity: .8;
+// 	}
+// 	svg path {
+// 		fill: #828ba0;
+// 	}
+// 	&--dark {
+// 		svg path {
+// 			fill: $dark-primary;
+// 		}
+// 	}
+// }
 
 .dark-theme-applied {
 	color: #fff;
@@ -74,7 +75,8 @@ $dark-stakes-banned-background: #3e314c;
 		}
 	}
 	.navbar.navbar-primary .navbar-toggler .navbar-toggler-icon {
-		filter: invert(1);
+		//filter: invert(1);
+		filter: brightness(0) invert(1);
 	}
 
 	// footer
@@ -166,7 +168,7 @@ $dark-stakes-banned-background: #3e314c;
 			color: $dark-primary;
 		}
 		&.active {
-			background-color: $dark-primary-alternate;
+			background-color: $dark-bg;
 			color: #fff;
 		}
 	}
@@ -184,7 +186,7 @@ $dark-stakes-banned-background: #3e314c;
 		border-top-color: $dark-light;
 		border-bottom-color: $dark-light;
 		border-right-color: $dark-light;
-		background-color: $dark-light;
+		background-color: $dark-light!important;
 		color: $labels-dark;
 		&:not([class^="tile tile-type"]) {
 			border-left-color: $dark-light;
@@ -200,7 +202,7 @@ $dark-stakes-banned-background: #3e314c;
 		}
 	}
 	.tile-bottom-contents {
-		background-color: $dark-light;
+		background-color: $dark-light-bg;
 	}
 	a.tile-title {
 		color: #fff !important;
@@ -295,10 +297,10 @@ $dark-stakes-banned-background: #3e314c;
 
 	// dropdown
 	.dropdown-menu {
-		background-color: $dark-light;
-		border-left-color: $dark-light;
-		border-right-color: $dark-light;
-		border-bottom-color: $dark-light;
+		background-color: $light-dark;
+		border-left-color: $dark-light-bg;
+		border-right-color: $dark-light-bg;
+		border-bottom-color: $dark-light-bg;
 	}
 
 	.dropdown-item {
@@ -334,7 +336,7 @@ $dark-stakes-banned-background: #3e314c;
 	}
 
 	.stakes-td {
-		border-bottom-color: darken($labels-dark, 30);
+		border-bottom-color: $dark-light;
 	}
 
 	.stakes-tr-banned {
@@ -357,7 +359,7 @@ $dark-stakes-banned-background: #3e314c;
 	}
 
 	.table th, .table td {
-		border-top-color: darken($labels-dark, 30);
+		border-top-color: $dark-light;
 	}
 	hr {
 		border-top-color: darken($labels-dark, 30);
@@ -518,7 +520,7 @@ $dark-stakes-banned-background: #3e314c;
 		color: $labels-dark;
 	}
 	.border-bottom {
-		border-bottom-color: darken($labels-dark, 30) !important;
+		border-bottom-color: $dark-light !important;
 	}
 
 	// coin balance history chart
@@ -564,7 +566,7 @@ $dark-stakes-banned-background: #3e314c;
 
 	// dark text
 	.text-dark {
-		color: #fff !important;
+		color: #c6c6c6 !important;
 	}
 
 	// Contract Verification
@@ -576,10 +578,10 @@ $dark-stakes-banned-background: #3e314c;
 		}
 	}
 	.smart-contract-form-group-inner-wrapper .smart-contract-form-group-tooltip {
-		color: $labels-dark;
+		color:#888;
 	}
 	.smart-contract-title {
-		color: #fff;
+		color: $labels-dark;
 	}
 	.smart-contract-form-group-inner-wrapper > label {
 		color: $labels-dark;
@@ -609,7 +611,7 @@ $dark-stakes-banned-background: #3e314c;
 	.form-control {
 		background-color: $dark-bg;
 		border-color: $dark-light;
-		color: #fff;
+		color: #c6c6c6;
 		transition: border-color 0.15s ease-in-out;
 
 		&[readonly] {
@@ -790,13 +792,13 @@ $dark-stakes-banned-background: #3e314c;
 
 	// Decoded data
 	.table.thead-light.table-bordered {
-		color: #fff !important;
+		color: #c6c6c6 !important;
 	}
 	.table-bordered, .table-bordered td, .table-bordered th {
-		border-color: darken($labels-dark, 30);
+		border-color: $light-dark;
 	}
 	.dark-theme-applied .table td, .dark-theme-applied .table th, .dark-theme-applied hr {
-		border-top-color: darken($labels-dark, 30);
+		border-top-color: $light-dark;
 	}
 	.btn-copy-ico svg path {
 		fill: #fff;
@@ -831,7 +833,7 @@ $dark-stakes-banned-background: #3e314c;
 
 	// 'text dark' label
 	.text-dark {
-		color: #fff;
+		color: #c6c6c6;
 	}
 
 	// validator info
@@ -1130,14 +1132,14 @@ $dark-stakes-banned-background: #3e314c;
 }
 
 .dark-theme-applied .dropdown-item {
-	background-color: $dark-light !important;
+	background-color: $dark-light-bg !important;
 	color: #fff !important;
 }
 
 .dark-theme-applied .dropdown-item.active:not(.header), .dark-theme-applied .dropdown-item:not(.header):hover, .dark-theme-applied .dropdown-item:not(.header):focus {
     background-image: none;
     width: 100%;
-    background-color: #3f426c !important;
+    background-color: #2A2A2A !important;
 }
 
 @media (max-width: 991.98px) {
@@ -1146,31 +1148,32 @@ $dark-stakes-banned-background: #3e314c;
 	.dark-theme-applied .navbar.navbar-primary .navbar-nav .nav-link:focus {
 		background-image: none;
 		width: 100%;
-		background-color: #35335d !important;
+		background-color: #242424 !important;
 		color: white;
 		border: none;
+		padding: 5px;
 	}
-	.dark-theme-applied .dropdown-item:hover:before {
-		content: "|";
-		height: 50px;
-		width: 50%;
-		opacity: 1;
-		background: none;
-		right: 17%;
-		color: $dark-primary;
-		position: relative;
-	}
-	.dark-theme-applied .navbar.navbar-primary .navbar-nav .nav-link:hover:before
-	{
-		content: "|";
-		height: 50px;
-		width: 50%;
-		opacity: 1;
-		background: none;
-		left: 24%;
-		top: 14%;
-		color: $dark-primary;
-	}
+	// .dark-theme-applied .dropdown-item:hover:before {
+	// 	content: "|";
+	// 	height: 50px;
+	// 	width: 50%;
+	// 	opacity: 1;
+	// 	background: none;
+	// 	right: 17%;
+	// 	color: $dark-primary;
+	// 	position: relative;
+	// }
+	// .dark-theme-applied .navbar.navbar-primary .navbar-nav .nav-link:hover:before
+	// {
+	// 	content: "|";
+	// 	height: 50px;
+	// 	width: 50%;
+	// 	opacity: 1;
+	// 	background: none;
+	// 	left: 24%;
+	// 	top: 14%;
+	// 	color: $dark-primary;
+	// }
 }
 .dark-theme-applied .confirmations-label:after {
     border-left: .9rem solid $dark-light-bg;
@@ -1183,4 +1186,33 @@ $dark-stakes-banned-background: #3e314c;
 .dark-theme-applied .btn-no-border-link-to-tems {
 	border-color: $dark-primary;
 	color: $dark-primary;
+}
+
+
+body.dark-theme-applied ::-webkit-scrollbar {
+	width: 12px;
+  }
+   
+
+body.dark-theme-applied ::-webkit-scrollbar-track {
+box-shadow: inset 0 0 6px $light-dark; 
+border-radius: 0px;
+}
+
+
+body.dark-theme-applied ::-webkit-scrollbar-thumb {
+border-radius: 0px;
+background: $dark-light-bg;
+}
+
+.modal-footer {
+  border-top-color: darken($labels-dark, 30);
+}
+
+.dark-theme-applied .modal-backdrop {
+  background-color:rgba(#000, 0.8)
+}
+
+.card-tab {
+ border-bottom: 0;
 }

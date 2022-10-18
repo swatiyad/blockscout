@@ -1,3 +1,3 @@
 <div class="bs-label <%= @additional_classes |> Enum.join(" ") %>">
-    <%= @text %>
+    <span data-toggle="tooltip" data-boundary="viewport" data-html="true" title="" data-original-title="<%= @text %>"><%= @text %></span>
 </div>

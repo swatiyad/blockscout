@@ -11,7 +11,7 @@ import '../css/app.scss'
 //
 import 'phoenix_html'
 import 'bootstrap'
-
+import $ from 'jquery'
 // Import local files
 //
 // Local files can be imported directly using relative

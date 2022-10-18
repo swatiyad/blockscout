@@ -1,4 +1,5 @@
-<div class="smart-contract-form-group">
+<div class="col-md-6">
+    <div class="smart-contract-form-group">
     <div class="smart-contract-form-group-inner-wrapper">
         <%= label @f, :compiler_version, gettext("Compiler") %>
         <div class="center-column">
@@ -7,4 +8,5 @@
         </div>
         <div class="smart-contract-form-group-tooltip"><%= raw @tooltip %></div>
     </div>
+</div>
 </div>

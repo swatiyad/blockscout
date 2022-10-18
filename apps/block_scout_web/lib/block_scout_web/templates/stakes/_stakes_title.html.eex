@@ -10,7 +10,7 @@
     <% end %>
     <%= if @show_banned_checkbox do%>
       <div class="stake-stats-container">
-        <span>A validator pool may be inactivated during a staking epoch. If the inactive pool is a current validator, STAKE and any accrued delegator rewards cannot be moved or withdrawn until the current staking epoch is complete. See the <a href="https://www.xdaichain.com/about-xdai/faqs/public-staking-validators-and-delegators#what-is-an-inactive-pool" target="_blank">Inactive Pool FAQs</a> for more information.</span>
+        <span>A validator pool may be inactivated during a staking epoch. If the inactive pool is a current validator, STAKE and any accrued delegator rewards cannot be moved or withdrawn until the current staking epoch is complete. See the <a href="#" target="_blank">Inactive Pool FAQs</a> for more information.</span>
       </div>
     <% end %>
   </div>

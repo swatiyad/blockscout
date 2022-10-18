@@ -1,699 +1,168 @@
-<style>
-  .clearfix:after {
-    content: "";
-    display: block;
-    clear: both;
-    visibility: hidden;
-    height: 0;
-  }
-
-  .form_wrapper {
-    background: rgba(230, 225, 225, 0.322);
-    width: 80%;
-    /* max-width: 100%; */
-    /* padding: 25px; */
-    margin: 3% auto 0;
-    position: relative;
-    z-index: 1;
-    /* -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1); */
-    -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
-    -webkit-transform-origin: 50% 0%;
-    transform-origin: 50% 0%;
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-    -webkit-transition: none;
-    transition: none;
-    -webkit-animation: expand 0.8s 0.6s ease-out forwards;
-    animation: expand 0.8s 0.6s ease-out forwards;
-    opacity: 0;
-  }
-
-  .form_wrapper h2 {
-    font-size: 1.5em;
-    line-height: 1.5em;
-    margin: 0;
-  }
-
-  .form_wrapper .title_container {
-    text-align: center;
-    padding-bottom: 15px;
-  }
-
-  .form_wrapper h3 {
-    font-size: 1.1em;
-    font-weight: normal;
-    line-height: 1.5em;
-    margin: 0;
-  }
-
-  .form_wrapper label {
-    font-size: 12px;
-  }
-
-  .form_wrapper .row {
-    margin: 10px -15px;
-  }
-
-  .form_wrapper .row>div {
-    padding: 0 15px;
-    box-sizing: border-box;
-  }
-
-  .form_wrapper .col_half {
-    width: 50%;
-    float: left;
-  }
-
-  .form_wrapper .input_field {
-    position: relative;
-    margin-bottom: 20px;
-    -webkit-animation: bounce 0.6s ease-out;
-    animation: bounce 0.6s ease-out;
-  }
-
-  .form_wrapper .input_field>span {
-    position: absolute;
-    left: 0;
-    top: 0;
-    color: #333;
-    height: 100%;
-    border-right: 1px solid #cccccc;
-    text-align: center;
-    width: 30px;
-  }
-
-  .form_wrapper .input_field>span>i {
-    padding-top: 10px;
-  }
-
-  .form_wrapper .textarea_field>span>i {
-    padding-top: 10px;
-  }
-
-  .form_wrapper input[type=text],
-  .form_wrapper input[type=email],
-  .form_wrapper input[type=password] {
-    width: 100%;
-    padding: 8px 10px 9px 35px;
-    height: 35px;
-    border: 1px solid #cccccc;
-    box-sizing: border-box;
-    outline: none;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-  }
-
-  .form_wrapper input[type=text]:hover,
-  .form_wrapper input[type=email]:hover,
-  .form_wrapper input[type=password]:hover {
-    background: #fafafa;
-  }
-
-  .form_wrapper input[type=text]:focus,
-  .form_wrapper input[type=email]:focus,
-  .form_wrapper input[type=password]:focus {
-    -webkit-box-shadow: 0 0 2px 1px rgba(255, 169, 0, 0.5);
-    -moz-box-shadow: 0 0 2px 1px rgba(255, 169, 0, 0.5);
-    box-shadow: 0 0 2px 1px rgba(255, 169, 0, 0.5);
-    border: 1px solid #f5ba1a;
-    background: #fafafa;
-  }
-
-  .form_wrapper input[type=submit] {
-    background: #12db1c;
-    height: 35px;
-    line-height: 35px;
-    width: 100%;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    color: #fff;
-    font-size: 1.1em;
-    margin-bottom: 10px;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-  }
-
-  .form_wrapper input[type=submit]:hover {
-    background: #60e10a;
-  }
-
-  .form_wrapper input[type=submit]:focus {
-    background: #0ae12e;
-  }
-
-  .form_wrapper input[type=checkbox],
-  .form_wrapper input[type=radio] {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-  }
-
-  .form_container .row .col_half.last {
-    border-left: 1px solid #cccccc;
-  }
-
-  .checkbox_option label {
-    margin-right: 1em;
-    position: relative;
-  }
-
-  .checkbox_option label:before {
-    content: "";
-    display: inline-block;
-    width: 0.5em;
-    height: 0.5em;
-    margin-right: 0.5em;
-    vertical-align: -2px;
-    border: 2px solid #cccccc;
-    padding: 0.12em;
-    background-color: transparent;
-    background-clip: content-box;
-    transition: all 0.2s ease;
-  }
-
-  .checkbox_option label:after {
-    border-right: 2px solid #000000;
-    border-top: 2px solid #000000;
-    content: "";
-    height: 20px;
-    left: 2px;
-    position: absolute;
-    top: 7px;
-    transform: scaleX(-1) rotate(135deg);
-    transform-origin: left top;
-    width: 7px;
-    display: none;
-  }
-
-  .checkbox_option input:hover+label:before {
-    border-color: #000000;
-  }
-
-  .checkbox_option input:checked+label:before {
-    border-color: #000000;
-  }
-
-  .checkbox_option input:checked+label:after {
-    -moz-animation: check 0.8s ease 0s running;
-    -webkit-animation: check 0.8s ease 0s running;
-    animation: check 0.8s ease 0s running;
-    display: block;
-    width: 7px;
-    height: 20px;
-    border-color: #000000;
-  }
-
-  .radio_option label {
-    margin-right: 1em;
-  }
-
-  .radio_option label:before {
-    content: "";
-    display: inline-block;
-    width: 0.5em;
-    height: 0.5em;
-    margin-right: 0.5em;
-    border-radius: 100%;
-    vertical-align: -3px;
-    border: 2px solid #cccccc;
-    padding: 0.15em;
-    background-color: transparent;
-    background-clip: content-box;
-    transition: all 0.2s ease;
-  }
-
-  .radio_option input:hover+label:before {
-    border-color: #000000;
-  }
-
-  .radio_option input:checked+label:before {
-    background-color: #000000;
-    border-color: #000000;
-  }
-
-  .select_option {
-    position: relative;
-    width: 100%;
-  }
-
-  .select_option select {
-    display: inline-block;
-    width: 100%;
-    height: 35px;
-    padding: 0px 15px;
-    cursor: pointer;
-    color: #7b7b7b;
-    border: 1px solid #cccccc;
-    border-radius: 0;
-    background: #fff;
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    transition: all 0.2s ease;
-  }
-
-  .select_option select::-ms-expand {
-    display: none;
-  }
-
-  .select_option select:hover,
-  .select_option select:focus {
-    color: #000000;
-    background: #fafafa;
-    border-color: #000000;
-    outline: none;
-  }
-
-  .select_arrow {
-    position: absolute;
-    top: calc(50% - 4px);
-    right: 15px;
-    width: 0;
-    height: 0;
-    pointer-events: none;
-    border-width: 8px 5px 0 5px;
-    border-style: solid;
-    border-color: #7b7b7b transparent transparent transparent;
-  }
-
-  .select_option select:hover+.select_arrow,
-  .select_option select:focus+.select_arrow {
-    border-top-color: #000000;
-  }
-
-  .credit {
-    position: relative;
-    z-index: 1;
-    text-align: center;
-    padding: 15px;
-    color: #f5ba1a;
-  }
-
-  .credit a {
-    color: hsl(320, 88%, 54%);
-  }
-
-  @-webkit-keyframes check {
-    0% {
-      height: 0;
-      width: 0;
-    }
-
-    25% {
-      height: 0;
-      width: 7px;
-    }
-
-    50% {
-      height: 20px;
-      width: 7px;
-    }
-  }
-
-  @keyframes check {
-    0% {
-      height: 0;
-      width: 0;
-    }
-
-    25% {
-      height: 0;
-      width: 7px;
-    }
-
-    50% {
-      height: 20px;
-      width: 7px;
-    }
-  }
-
-  @-webkit-keyframes expand {
-    0% {
-      -webkit-transform: scale3d(1, 0, 1);
-      opacity: 0;
-    }
-
-    25% {
-      -webkit-transform: scale3d(1, 1.2, 1);
-    }
-
-    50% {
-      -webkit-transform: scale3d(1, 0.85, 1);
-    }
-
-    75% {
-      -webkit-transform: scale3d(1, 1.05, 1);
-    }
-
-    100% {
-      -webkit-transform: scale3d(1, 1, 1);
-      opacity: 1;
-    }
-  }
-
-  @keyframes expand {
-    0% {
-      -webkit-transform: scale3d(1, 0, 1);
-      transform: scale3d(1, 0, 1);
-      opacity: 0;
-    }
-
-    25% {
-      -webkit-transform: scale3d(1, 1.2, 1);
-      transform: scale3d(1, 1.2, 1);
-    }
-
-    50% {
-      -webkit-transform: scale3d(1, 0.85, 1);
-      transform: scale3d(1, 0.85, 1);
-    }
-
-    75% {
-      -webkit-transform: scale3d(1, 1.05, 1);
-      transform: scale3d(1, 1.05, 1);
-    }
-
-    100% {
-      -webkit-transform: scale3d(1, 1, 1);
-      transform: scale3d(1, 1, 1);
-      opacity: 1;
-    }
-  }
-
-  @-webkit-keyframes bounce {
-    0% {
-      -webkit-transform: translate3d(0, -25px, 0);
-      opacity: 0;
-    }
-
-    25% {
-      -webkit-transform: translate3d(0, 10px, 0);
-    }
-
-    50% {
-      -webkit-transform: translate3d(0, -6px, 0);
-    }
-
-    75% {
-      -webkit-transform: translate3d(0, 2px, 0);
-    }
-
-    100% {
-      -webkit-transform: translate3d(0, 0, 0);
-      opacity: 1;
-    }
-  }
-
-  @keyframes bounce {
-    0% {
-      -webkit-transform: translate3d(0, -25px, 0);
-      transform: translate3d(0, -25px, 0);
-      opacity: 0;
-    }
-
-    75% {
-      -webkit-transform: translate3d(0, 2px, 0);
-      transform: translate3d(0, 2px, 0);
-    }
-
-    100% {
-      -webkit-transform: translate3d(0, 0, 0);
-      transform: translate3d(0, 0, 0);
-      opacity: 1;
-    }
-  }
-
-  @media (max-width: 600px) {
-    .form_wrapper .col_half {
-      width: 100%;
-      float: none;
-    }
-
-    .bottom_row .col_half {
-      width: 50%;
-      float: left;
-    }
-
-    .form_container .row .col_half.last {
-      border-left: none;
-    }
-
-    .remember_me {
-      padding-bottom: 20px;
-    }
-  }
-
-  .image-input {
-    text-aling: center;
-  }
-
-  .image-input input {
-    display: none;
-  }
-
-  .image-input label {
-    display: block;
-    color: #FFF;
-    background: #000;
-    padding: 0.3rem 0.6rem;
-    font-size: 115%;
-    cursor: pointer;
-  }
-
-  .image-input label i {
-    font-size: 125%;
-    margin-right: 0.3rem;
-  }
-
-  .image-input label:hover i {
-    animation: shake 0.35s;
-  }
-
-  .image-input img {
-    max-width: 175px;
-    display: none;
-  }
-
-  .image-input span {
-    display: none;
-    text-align: center;
-    cursor: pointer;
-  }
-
-  @keyframes shake {
-    0% {
-      transform: rotate(0deg);
-    }
-
-    25% {
-      transform: rotate(10deg);
-    }
-
-    50% {
-      transform: rotate(0deg);
-    }
-
-    75% {
-      transform: rotate(-10deg);
-    }
-
-    100% {
-      transform: rotate(0deg);
-    }
-  }
-
-  .upload-setter{
-    border: none;
-    outline: none;
-  }
-  .container {
-  /* height: 100vh;
-  display: flex; */
-  justify-content: center;
-  align-items: center;
-  /* background-color: #A1D5E2; */
-}
-
-.file-uploader {
-  flex: 0 1 400px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  background-color: #fff;
-  border-radius: 5px;
-}
-.file-uploader #file-input {
-  display: none;
-}
-.file-uploader label[for=file-input] {
-  padding: 1em 1.5em;
-  flex: 1 1 auto;
-  text-align: center;
-  color: #FFF;
-  background-color: #1894AC;
-  box-shadow: 1px 0 10px rgba(0, 0, 0, 0.15);
-  border-radius: 5px;
-  cursor: pointer;
-}
-.file-uploader .image-preview {
-  /* margin: 0 0 1rem; */
-  /* min-height: 250px; */
-  /* flex: 1 0 75%; */
-  background-color: #c1c1c1;
-}
-</style>
-
-
 <body>
   <!-- <h1 class="text-center ">KYC FORM</h1> -->
-  <div class="form_wrapper  bg-white ">
-
-    <h1 class="text-center py-3 text-success">  KYC FORM</h1>
-    <div class="container ">
-      <div class="row py-5" style="justify-content: space-between;">
-
-        <div class="col-sm-5 shadow-lg" style="border-radius: 15px;">
-          <div class="form_container ">
-            <div class="title_container">
-
+  <div class="page_min_height pt-5">
+  <form>
+    <div class="container">
+      <div class="row px-3">
+        <div class="col-lg-3 col-sm-12 col-md-4 bg-white py-2 shadow border rounded stickysidebar mb-5 last_in_mobile">
+          <div class="card-body border-0 px-2">
+            <h2 class="card-title">Quick Links</h2>
+            <ul class="side_nav my-3">
+            <li><%= link("KYC Verification", to: "/kycselect")%></li>
+            <li><%= link("Contract Address verification", to: "/#")%></li>
+            <li><%= link("Token Update", to: "/tokenupdate")%></li>
+            <li><%= link("Audit Contract", to: "/auditContract")%></li>
+            </ul>
             </div>
-            <div class="row clearfix">
-              <div class="">
-                <form>
-
-                  <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
-                    <input type="text" name="name" placeholder="Full Name" />
-
-                  </div>
-
-                  <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
-                    <input type="text" name="name" placeholder="Father  Name" required />
-
-                  </div>
-
-
-
-
-
-
-
-
-
-                  <div class="input_field radio_option">
-                    <input type="radio" name="radiogroup1" id="rd1">
-                    <label for="rd1">Male</label>
-                    <input type="radio" name="radiogroup1" id="rd2">
-                    <label for="rd2">Female</label>
-                    Date of
-                      Birth
-                      <input class="mx-5" type="date" name="password" placeholder=" DOB" required />
-                  </div>
-
-                    <div class="input_field"> </i></span>
-                    </div>
-
-                    <div class="input_field"> <span><i aria-hidden="true" class="fa fa-lock"></i></span>
-                      <input type="text" name="password" placeholder=" ZIP CODE" required />
-                    </div>
-
-                  <div class="input_field"> <span><i aria-hidden="true" class="fa fa-lock"></i></span>
-                    <input type="text" name="password" placeholder=" State" required />
-                  </div>
-
-
-                  <div class="input_field"> <span><i aria-hidden="true" class="fa fa-lock"></i></span>
-                    <input type="text" name="password" placeholder=" City" required />
-                  </div>
-                  <div class="input_field"> <span><i aria-hidden="true" class="fa fa-lock"></i></span>
-                    <input type="text" name="password" placeholder=" country" required />
-                  </div>
-                  <div class="select_arrow"></div>
-              </div>
-
-              </form>
-            </div>
+            <div class="card-body border-0 px-2">
+              <div class="card-title">Watch List & Notes</div>
+              <ul class="side_nav my-3">
+              <li><%= link("Watch List", to: "/#")%></li>
+              <li><%= link("Private Name Tag", to: "/#")%></li>
+              <li><%= link("txn Private Notes", to: "/#")%></li>
+              </ul>
           </div>
         </div>
+        <div class="col-lg-9 col-sm-12 col-md-8">
+         <h1 class=""> KYC FORM</h1>
+          <hr class="hor_line"/>
+          <div class="row">
+            <div class="col-xl-12 col-md-6 col-12">
+              <div class="card shadow">
+                <div class="card-header">Personal Details</div>
+                  <div class="card-body row">
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label for="Father's Name">Father's Name</label>
+                        <input type="text" name="name" placeholder="Father Name" class="form-control" require/>
+                      </div>
 
-        <div class="col-sm-5  shadow-lg" style="border-radius: 15px;">
+
+                      <div class="form-group">
+                      <div>
+                          <label for="Dob">Date of Birth</label>
+                      </div>
+                        <input class="form-control" type="date" name="dob" placeholder=" DOB" required />
+                      </div>
+                      <div class="form-group">
+                        <div>
+                          <label for="Gender">Gender</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" name="radiogroup1" type="radio" id="rd1" value="male">
+                          <label class="form-check-label" for="Male">Male</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" id="rd2" value="Female">
+                          <label class="form-check-label" name="radiogroup1" for="Female">Female</label>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="col-lg-6">
+
+                      <div class="form-group">
+                      <div>
+                          <label for="zip">Zip Code</label>
+                      </div>
+                          <input class="form-control" type="text" name="zip" placeholder=" ZIP CODE" required />
+                      </div>
+
+                      <div class="form-group">
+                      <div>
+                          <label for="City">City</label>
+                      </div>
+                        <input class="form-control" type="text" name="City" placeholder=" City" required />
+                      </div>
+
+                      <div class="form-group">
+                      <div>
+                          <label for="Country">Country</label>
+                      </div>
+                        <input class="form-control" type="text" name="password" placeholder="Country" required />
+                      </div>
+                      </div>
 
 
-          <div class="container">
-            <form class="file-uploader">
-
-              <div>
-            <input class="mb-5 mt-3 " type="text" name="email" placeholder="Enter Pan Card Number " required />
-
-              <label for="file-input">Upload Pan
-                Card Photos</label>
-              <input id="file-input" type="file" />
-
+                  </div>
+                </div>
             </div>
-
-
-            <div>
-              <input type="text" class="my-3" name="email" placeholder="Enter Adhaar Card Number" required />
-
-
-                <label for="file-input">Upload
-                  Front Side Adhaar Photo</label>
-                <input class="my-5" id="file-input" type="file" />
-
-
-
-                <label for="file-input">Upload
-                  Adhaar BackSide Photo</label>
-                <input class="my-5" id="file-input" type="file" />
-
-                <label class="my-3" for="file-input">Upload
-                  Adhaar card With Selfie</label>
-                <input id="file-input" type="file" />
-
+            <div class="col-xl-12 col-md-6 col-12">
+              <div class="card mb-4">
+                <div class="card-header">Adhar Card </div>
+                <div class="card-body">
+                  <div class="form-group">
+                    <input class="form-control" type="text" name="adhar" placeholder="Enter Adhar Card Number " required />
+                  </div>
+                  <div class="form-group">
+                    <div class="input-group">
+                      <span class="input-group-text text-muted rounded-0"><i class="fas fa-image"></i></span>
+                      <input type="file" name="" class="d-none">
+                      <input type="text" class="form-control py-4" placeholder="Front Side Adhaar" x-model="fileName">
+                      <button class="btn btn-secondary px-4" type="button"> Browse</button>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="input-group">
+                      <span class="input-group-text text-muted rounded-0"><i class="fas fa-image"></i></span>
+                      <input type="file" name="" class="d-none">
+                      <input type="text" class="form-control py-4" placeholder="Back Side Adhaar" x-model="fileName">
+                      <button class="btn btn-secondary px-4" type="button"> Browse</button>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="input-group">
+                      <span class="input-group-text text-muted rounded-0"><i class="fas fa-image"></i></span>
+                      <input type="file" name="" class="d-none">
+                      <input type="text" class="form-control py-4" placeholder="Adhaar card with selfie" x-model="fileName">
+                      <button class="btn btn-secondary px-4" type="button"> Browse</button>
+                    </div>
+                  </div>
+                </div>
               </div>
 
+              <div class="card">
+                <div class="card-header">Pan Card </div>
+                <div class="card-body">
+                  <div class="form-group">
+                    <input class="form-control" type="text" name="adhar" placeholder="Enter Pan Card Number " required />
+                  </div>
 
-            </form>
+                  <div class="form-group">
+                    <div class="input-group">
+                      <span class="input-group-text text-muted rounded-0"><i class="fas fa-image"></i></span>
+                      <input type="file" name="" class="d-none">
+                      <input type="text" class="form-control py-4 file-upload-wrapper" placeholder="Pan Card">
+                      <button class="btn btn-secondary px-4 file-upload-field" type="button"> Browse</button>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 ">
+              <div class="card">
+                <div class="card-body">
+                  <div class="input_field checkbox_option">
+                    <input type="checkbox" id="cb1">
+                    <label for="cb1">I agree with terms and conditions</label>
+                  </div>
+                  <input class="btn btn-primary" type="submit" value="Register" />
+                </div>
+              </div>
           </div>
-
-
-
-
-
         </div>
-
       </div>
-
     </div>
   </div>
+  </form>
 
-
-
-  </div>
-  </div>
-
-  <div class="container my-5 ">
-    <div class="input_field checkbox_option my-5">
-      <input type="checkbox" id="cb1">
-      <label for="cb1">I agree with terms and conditions</label>
-    </div>
-
-    <input class="button" class=" shadow-lg "
-      style="width:100% ;background-color:rgb(59, 250, 59);color:#f7f6f3; font-weight: 900; padding-block: 8px; border: none  ;"
-      type="submit" value="Register" />
-  </div>
 </body>
+<script>
+$("form").on("change", ".file-upload-field", function(){
+    $(this).parent(".file-upload-wrapper").attr("data-text",         $(this).val().replace(/.*(\/|\\)/, '') );
+});
+</script>
 <style>
 .background-style-setter{
 
@@ -712,9 +181,9 @@ font-family:arial;
 .font_setter{
 font-size:15px;
 }
+
 .font-size-setter{
   font-size:15px;
-
-
 }
+
 </style>

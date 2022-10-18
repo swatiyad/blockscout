@@ -1,4 +1,4 @@
-<div class="card-tabs js-card-tabs px-2">
+<div class="card-tabs js-card-tabs bg-lighter">
   <%= link(
         gettext("Token Transfers"),
         class: "card-tab #{tab_status("token-transfers", @conn.request_path)}",

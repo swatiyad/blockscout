@@ -6,17 +6,17 @@
   <section data-page="address-internal-transactions">
     <div class="card">
       <%= render BlockScoutWeb.AddressView, "_tabs.html", address: @address, is_proxy: is_proxy, conn: @conn %>
-      <div class="card-body" data-async-load data-async-listing="<%= @current_path %>">
+      <div class="card-body overflow-auto p-0" data-async-load data-async-listing="<%= @current_path %>">
         <div data-selector="channel-batching-message" class="d-none">
           <div data-selector="reload-button" class="alert alert-info">
             <a href="#" class="alert-link"><span data-selector="channel-batching-count"></span> <%= gettext "More internal transactions have come in" %></a>
           </div>
         </div>
         <%= render BlockScoutWeb.CommonComponentsView, "_channel_disconnected_message.html", text: gettext("Connection Lost, click to load newer internal transactions") %>
-        <div class="clearfix">
-          <h2 class="card-title float-left"><%= gettext "Internal Transactions" %></h2>
+        <div class="clearfix p-3">
+          <h2 class="card-title float-left mb-0"><%= gettext "Internal Transactions" %></h2>
           <div class="top-pagination-outer-container float-right">
-            <div class="dropdown u-push-sm">
+           <!-- <div class="dropdown u-push-sm">
               <button data-test="filter_dropdown" class="btn-dropdown-line dropdown-toggle" type="button"
                 id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Filter: <%= format_current_filter(@filter) %>
@@ -41,7 +41,7 @@
                   "data-test": "filter_option"
                 ) %>
               </div>
-            </div>
+            </div>-->
             <%= render BlockScoutWeb.CommonComponentsView, "_pagination_container.html", position: "top", cur_page_number: "1", show_pagination_limit: true, data_next_page_button: true, data_prev_page_button: true %>
           </div>
         </div>
@@ -49,8 +49,24 @@
         <button data-error-message class="alert alert-danger col-12 text-left" style="display: none;">
           <span href="#" class="alert-link"><%= gettext("Something went wrong, click to reload.") %></span>
         </button>
+
+        <!--table heading for Internal transfer-->
+        <table class="table fixed-layout table-hover mb-0">
+          <thead>
+            <tr class="table-head">
+              <th class="wideRow">Txn Hash</th>
+              <th class="screenRow">Block</th>
+              <th class="screenRow">Age</th>
+              <th class="screenRow">From</th>
+              <th class="screenRow">Amount</th>
+              <th class="screenRow"> Txn Type</th>
+              <th class="screenRow"> Type Address</th>
+            </tr>
+          </thead>
+        </table>
+
         <div data-empty-response-message style="display: none;">
-          <div class="tile tile-muted text-center">
+          <div class="tile tile-muted text-center m-3">
             <span data-selector="empty-internal-transactions-list"><%= gettext "There are no internal transactions for this address." %></span>
           </div>
         </div>

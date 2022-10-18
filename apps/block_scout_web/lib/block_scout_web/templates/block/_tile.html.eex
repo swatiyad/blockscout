@@ -10,15 +10,15 @@
 
             <tbody class="table-group-divider mb-0">
               <tr>
-                <td>
-          
+                <td class="screenRow">
+
                       <%= if @block_type == "Block" do %>
                         <%= link(
                               class: "tile-label",
                               to: block_path(BlockScoutWeb.Endpoint, :show, @block),
                               "data-selector": "block-number"
                             ) do %>
-                           
+
                          #<%= @block %>
                           <% end %>
                       <% else %>
@@ -32,40 +32,14 @@
                       <% end %>
                 </td>
 
-                <td>
+                <td class="screenRow">
                   <div class="">
                   <span class="mr-2 mr-md-0 order-1">
                           <span data-from-now="<%= @block.timestamp %>"></span>
                   </span>
                   </div>
                 </td>
-
-                <td>
-                    <div class="">
-                          <%= if System.get_env("HIDE_BLOCK_MINER") !== "true" do %>
-                            <div class="text-nowrap text-truncate mt-3 mt-md-0 width100">
-                              <!-- validator -->
-                              <%# <%= gettext "Miner" %>
-                              <%= render BlockScoutWeb.AddressView,
-                                "_link.html",
-                                address: @block.miner,
-                                contract: false,
-                                use_custom_tooltip: false %>
-                            </div>
-                          <% end %>
-                          <%= if show_reward?(@block.rewards) do %>
-                            <div class="text-nowrap text-truncate mt-3 mt-md-0">
-                              <!-- validator reward -->
-                              <%= gettext "Reward" %>
-                              <span class="ml-2">
-                                <%= combined_rewards_value(@block) %>
-                              </span>
-                            </div>
-                          <% end %>
-                        </div>
-                    </div>
-                </td>
-                <td>
+                <td class="screenRow">
                     <div class="">
                     <span>
                        <span class="mr-2 font-weight-bold">
@@ -79,29 +53,33 @@
                     </div>
                 </td>
 
-                <td>
-                    <div class="text-truncate d-flex m-1 text-nowrap width100">
-                        <span>
-                            <span> <%= format_wei_value(%Wei{value: priority_fee}, :ether) %></span>
-                        </span>
+                <td class="screenRow">
+                  <div class="">
+                      <%= if System.get_env("HIDE_BLOCK_MINER") !== "true" do %>
+                        <div class="text-nowrap text-truncate mt-3 mt-md-0 width135">
+                          <!-- validator -->
+                          <%# <%= gettext "Miner" %>
+                          <%= render BlockScoutWeb.AddressView,
+                            "_link.html",
+                            address: @block.miner,
+                            contract: false,
+                            use_custom_tooltip: false %>
+                        </div>
+                      <% end %>
+                      <%= if show_reward?(@block.rewards) do %>
+                        <div class="text-nowrap text-truncate mt-3 mt-md-0">
+                          <!-- validator reward -->
+                          <%= gettext "Reward" %>
+                          <span class="ml-2">
+                            <%= combined_rewards_value(@block) %>
+                          </span>
+                        </div>
+                      <% end %>
                     </div>
+                </div>
                 </td>
 
-                <td>
-                    <div class="text-nowrap text-truncate mt-3 mt-md-0 width100">
-                        <span> <%= format_wei_value(burned_fee, :ether) %> </span>
-                    </div>
-                </td>
-
-                  <td>
-                    <div class="text-truncate d-flex m-1 width100">
-                        <span class="d-flex flex-md-row flex-column mt-3 mt-md-0">
-                                  <span> <%= formatted_gas(@block.gas_limit) %>  </span>
-                        </span>
-                    </div>
-                </td>
-
-                  <td>
+                <td class="screenRow">
                     <div class="text-truncate d-flex m-1 width110">
                         <span>
                              <div class="mr-3 mr-md-0">
@@ -114,7 +92,32 @@
                     </div>
                 </td>
 
-                <%# <td>
+                <td class="screenRow">
+                    <div class="text-truncate d-flex m-1 width100">
+                        <span class="d-flex flex-md-row flex-column mt-3 mt-md-0">
+                                  <span> <%= formatted_gas(@block.gas_limit) %>  </span>
+                        </span>
+                    </div>
+                </td>
+
+                <!-- Taral Priority Fee-->
+                <td class="screenRow">
+                    <div class="text-truncate d-flex m-1 text-nowrap width100">
+                        <span>
+                            <span> <%= format_wei_value(%Wei{value: priority_fee}, :ether) %></span>
+                        </span>
+                    </div>
+                </td>
+
+                <td class="screenRow">
+                    <div class="text-nowrap text-truncate mt-3 mt-md-0">
+                        <span> <%= format_wei_value(burned_fee, :ether) %> </span>
+                    </div>
+                </td>
+
+
+
+                <%# <td class="screenRow">
                     <div class="m-1">
                         <span class=" tile-status-label ml-2 ml-md-0 " data-test="transaction_status">
 
@@ -127,15 +130,14 @@
   </div>
 
 
-
+     <!-- Progress bar
   <div class="row">
-      <!-- Progress bar -->
       <div class="progress">
         <div class="progress-bar" role="progressbar" style="width: <%= formatted_gas(gas, format: "#.#%") %>;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 </div>
 
 <style>
@@ -151,5 +153,3 @@
     }
 }
 </style>
-
-

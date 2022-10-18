@@ -408,7 +408,7 @@ contract Distribution is Ownable, IDistribution {
     /// @dev Pre-initializes the contract after the token is created.
     /// Distributes tokens for Public Offering, Liquidity Fund, and part of Private Offering.
     /// @param _tokenAddress The address of the STAKE token contract.
-    /// @param _initialStakeAmount The sum of initial stakes made on xDai chain before transitioning to POSDAO.
+    /// @param _initialStakeAmount The sum of initial stakes made on ANA chain before transitioning to POSDAO.
     /// This amount must be sent to address(0) because it is excess on Mainnet side.
     function preInitialize(address _tokenAddress, uint256 _initialStakeAmount) external onlyOwner {
         require(!isPreInitialized, "already pre-initialized");

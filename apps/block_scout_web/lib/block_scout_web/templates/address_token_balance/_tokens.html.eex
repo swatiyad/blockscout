@@ -1,6 +1,7 @@
 <div data-token-type="<%= @type %>">
-  <h6 class="dropdown-header" style="margin-left: 5px;">
-    <%= @type %> (<span data-number-of-tokens-by-type="<%= @type %>"><%= Enum.count(@token_balances)%></span>)
+  <h6 class="bs-label my-2 py-2 px-4 d-flex font-weight-bold">
+  Log 20 Token
+    <!--<%= @type %> (<span data-number-of-tokens-by-type="<%= @type %>"><%= Enum.count(@token_balances)%></span>)-->
   </h6>
 
   <%= for {token_balance, bridged_token, token} <- sort_by_usd_value_and_name(@token_balances) do %>
@@ -18,7 +19,7 @@
       %>
       <%= link(
             to: path,
-            class: "dropdown-item"
+            class: "dropdown-item pl-3"
           ) do %>
         <div class="row dropdown-row wh-sp">
           <%= if System.get_env("DISPLAY_TOKEN_ICONS") === "true" do %>
@@ -52,7 +53,7 @@
         </div>
         <div class="row dropdown-row wh-sp">
           <% col_md = if token_balance.token.usd_value, do: "col-md-6", else: "col-md-12" %>
-          <p class="mb-0 <%= col_md %> el-1 ml-5px">
+          <p class="mb-0 <%= col_md %> el-1 ml-2">
             <%= if token_balance.token_type == "ERC-721" && !is_nil(token_balance.token_id) do %>
               1
             <% else %>

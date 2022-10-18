@@ -12,7 +12,7 @@
 			</h1>
 		</div>
 		<div class="col-md-6">
-			<label class="tokens-list-search-input-container tokens ml-3">
+			<label class="tokens-list-search-input-container tokens ml-3 mt-sm-45 white-bg">
 			<input data-search-field="" class="form-control tokens-list-search-input search-input" type="text" name="filter" placeholder="Token name or symbol" id="search-text-input" />
 			</label>
 			<div class="list-top-pagination-container-wrapper mt-2">
@@ -22,40 +22,40 @@
 	</div>
 
   <div class="card">
-    <div class="card-body" data-async-load data-async-listing="<%= @current_path %>" data-no-self-calls>
-    <div class="addresses-table-container">
-      <div class="card-body stakes-table-container table-responsive table-hover">
-	<table class="table">
-	  <thead>
-	    <tr class="table-head">
-	      <th>
+    <div class="card-body p-0" data-async-load data-async-listing="<%= @current_path %>" data-no-self-calls>
+    <div class="">
+      <div class="stakes-table-container table-responsive table-hover">
+			<table class="table">
+			<thead>
+				<tr class="table-head">
+				<th> SN.
 
-	      </th>
-		  <th>
+				</th>
+				<th>
 
-		  </th>
-	      <th>
-			Token
-	      </th>
-	      <th>
-			Address
-	      </th>
-	      <th>
+				</th>
+				<th>
+					Token
+				</th>
+				<th>
+					Address
+				</th>
+				<th>
 
-			Total Supply
+					Total Supply
 
-	      </th>
-	      <th>
+				</th>
+				<th>
 
-			Holders Count
+					Holders Count
 
-	      </th>
-	    </tr>
-	  </thead>
-	  <tbody data-items data-selector="top-tokens-list">
-	    <%= render BlockScoutWeb.CommonComponentsView, "_table-loader.html", columns_num: 6 %>
-	  </tbody>
-	</table>
+				</th>
+				</tr>
+			</thead>
+			<tbody data-items data-selector="top-tokens-list">
+				<%= render BlockScoutWeb.CommonComponentsView, "_table-loader.html", columns_num: 6 %>
+			</tbody>
+			</table>
       </div>
     </div>
 

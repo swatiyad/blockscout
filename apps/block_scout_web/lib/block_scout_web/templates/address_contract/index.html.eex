@@ -27,7 +27,7 @@
                   metadata_for_verification.address_hash,
                   to: address_contract_path(@conn, :index, metadata_for_verification.address_hash)) %>.<br/> <%= gettext("All metadata displayed below is from that contract. In order to verify current contract, click") %> <i><%= gettext("Verify & Publish") %></i> <%= gettext("button") %></span>
               </div>
-              <%= link(gettext("Verify & Publish"), to: path, class: "button button-primary button-sm float-right ml-3", "data-test": "verify_and_publish") %>
+              <%= link(gettext("Verify & Publish"), to: path, class: "btn btn-success  float-right ml-3", "data-test": "verify_and_publish") %>
             </div>
           <% end %>
         <% end %>
@@ -84,13 +84,12 @@
               <dd class="col-md-4"><%= target_contract.inserted_at %></dd>
             <% end %>
           </dl>
-        <hr class="mt-5 border-0"/>
         <%= if smart_contract_verified && target_contract.constructor_arguments do %>
           <section>
             <div class="d-flex justify-content-between align-items-baseline">
               <h3><%= gettext "Constructor Arguments" %></h3>
             </div>
-            <div class="tile tile-muted mb-4">
+            <div class="tile tile-muted mb-4 fs-12">
               <pre class="pre-wrap pre-scrollable"><code class="nohighlight"><%= raw(format_constructor_arguments(target_contract, @conn)) %></code>
               </pre>
             </div>
@@ -125,7 +124,7 @@
               <%= gettext "Copy ABI" %>
             </button>
           </div>
-          <div class="tile tile-muted mb-4">
+          <div class="tile tile-muted mb-4 fs-12">
             <pre class="pre-wrap pre-scrollable"><code class="nohighlight"><%= format_smart_contract_abi(target_contract.abi) %></code>
             </pre>
           </div>
@@ -153,7 +152,7 @@
               <div class="d-flex justify-content-between align-items-baseline">
                 <h3><%= gettext "Contract Creation Code" %></h3>
                 <div class="buttons">
-                  <button type="button" class="btn-line" style="float: left;" id="button" data-clipboard-text="<%= creation_code(@address) %>" aria-label="copy contract creation code">
+                  <button type="button" class="btn-outline" style="float: left;" id="button" data-clipboard-text="<%= creation_code(@address) %>" aria-label="copy contract creation code">
                     <%= gettext "Copy Contract Creation Code" %>
                   </button>
                   <%= if match?({:selfdestructed, _}, contract_creation_code) do %>
@@ -166,21 +165,21 @@
                       <%= link(
                             gettext("Verify & Publish"),
                             to: path,
-                            class: "button button-primary button-sm float-right ml-3",
+                            class: "btn btn-success  float-right ml-3",
                             "data-test": "verify_and_publish"
                           ) %>
                     <% end %>
                   <% end %>
                 </div>
               </div>
-              <div class="tile tile-muted mb-4">
+              <div class="tile tile-muted mb-4 fs-12">
                 <pre class="pre-wrap pre-scrollable"><code class="nohighlight"><%= creation_code(@address) %></code></pre>
               </div>
             <% end %>
             <%= if fully_verified do %>
               <div class="d-flex justify-content-between align-items-baseline">
                 <h3><%= gettext "Deployed ByteCode" %></h3>
-                <button type="button" class="btn-line" style="float: left;" id="button" data-clipboard-text="<%= contract_code %>" aria-label="copy contract creation code">
+                <button type="button" class="btn-outline" style="float: left;" id="button" data-clipboard-text="<%= contract_code %>" aria-label="copy contract creation code">
                   <%= gettext "Copy Deployed ByteCode" %>
                 </button>
               </div>
@@ -190,7 +189,7 @@
                   <h3><%= gettext "Deployed ByteCode" %></h3>
                 </div>
                 <div class="buttons">
-                  <button type="button" class="btn-line" style="float: left;" id="button" data-clipboard-text="<%= contract_code %>" aria-label="copy contract creation code">
+                  <button type="button" class="btn-outline" style="float: left;" id="button" data-clipboard-text="<%= contract_code %>" aria-label="copy contract creation code">
                     <%= gettext "Copy Deployed ByteCode" %>
                   </button>
                   <%= if match?({:selfdestructed, _}, contract_creation_code) and !creation_code(@address) do %>
@@ -203,7 +202,7 @@
                       <%= link(
                             gettext("Verify & Publish"),
                             to: path,
-                            class: "button button-primary button-sm float-right ml-3",
+                            class: "btn btn-success  float-right ml-3",
                             "data-test": "verify_and_publish"
                           ) %>
                     <% end %>
@@ -211,7 +210,7 @@
                 </div>
               </div>
             <% end %>
-          <div class="tile tile-muted">
+          <div class="tile tile-muted fs-12">
             <pre class="pre-wrap pre-scrollable"><code class="nohighlight"><%= contract_code %></code></pre>
           </div>
         <% end %>
@@ -224,7 +223,7 @@
             <div class="d-flex justify-content-between align-items-baseline">
               <h3><%= gettext "External libraries" %></h3>
             </div>
-            <div class="tile tile-muted mb-4">
+            <div class="tile tile-muted mb-4 fs-12">
               <pre class="pre-wrap pre-scrollable"><code class="nohighlight"><%= raw(format_external_libraries(target_contract.external_libraries, @conn)) %></code>
               </pre>
             </div>

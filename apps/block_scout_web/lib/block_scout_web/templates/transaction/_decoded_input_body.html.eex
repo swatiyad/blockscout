@@ -1,32 +1,31 @@
-<div class="table-responsive text-center">
-  <table style="color: black;" summary="<%= gettext "Transaction Inputs" %>" class="table thead-light table-bordered">
-  <%= if !assigns[:error] do %>
-    <tr>
-    <td><%= gettext "Method Id" %></td>
-    <td colspan="3"><code>0x<%= @method_id %></code></td>
-    </tr>
-  <% end %>
-  <tr>
-  <td><%= if assigns[:error], do: gettext("Error"), else: gettext("Call") %></td>
-  <td colspan="3"><code><%= @text %></code></td>
-  </tr>
-  </table>
+
+
+<!-- Textarea -->
+<div class="tx-raw-input" id="input_method">
+  <div class="tile tile-muted py-0" summary="<%= gettext "Transaction Inputs" %>">
+    <div class="pre-wrap mb-0" style="line-height:12px;">
+      <%= if !assigns[:error] do %>
+      <%= gettext "Method Id" %> : <code class="text-teal">0x<%= @method_id %></code>
+      <% end %>
+      <%= if assigns[:error], do: gettext("Error"), else: gettext("Function") %> : <code class="text-teal"><%= @text %></code>
+    </div>
+  </div>
 </div>
 
 <% max_length = get_max_length() %>
 <%= unless Enum.empty?(@mapping) do %>
-  <div class="table-responsive text-center">
-    <table style="color: black; table-layout: fixed;" summary="<%= gettext "Transaction Inputs" %>" class="table thead-light table-bordered">
-      <tr>
-      <th scope="col" style="width: 10%;"><%= gettext "Name" %></th>
-      <th scope="col" style="width: 10%;"><%= gettext "Type" %></th>
+  <div class="table-responsive card mb-0" style="clear:both; display:none"  id="decode_input">
+    <table summary="<%= gettext "Transaction Inputs" %>" class="table fixed-layout mb-0">
+      <tr class="table-head">
+      <th scope="col"><%= gettext "Name" %></th>
+      <th scope="col"><%= gettext "Type" %></th>
       <th scope="col"><%= gettext "Data" %></th>
       <tr>
       <%= for {name, type, value} <- @mapping do %>
         <tr>
           <td><%= name %></td>
           <td><%= type %></td>
-          <td align=left>
+          <td>
             <%= case BlockScoutWeb.ABIEncodedValueView.value_html(type, value, true) do %>
               <% :error -> %>
                 <div class="alert alert-danger">
@@ -52,7 +51,7 @@
                 <% end %>
                 <% value_with_links = BlockScoutWeb.ABIEncodedValueView.value_html(type, value, false)%>
                 <% string = template_to_string(value_with_no_links) %>
-                <pre class="transaction-input-text pre-wrap" style="margin-bottom: 0px;"><code style="line-height: 25px;"><%= if String.length(string) > max_length do %><div data-input-container><% input = trim(max_length, string) %><%= input[:show] %><span data-placeholder-dots>...</span><button type="button" class="btn-line" id="button-expand" aria-label="Expand" button-expand-input><%= gettext "Expand" %></button><span class="more d-none" data-hidden-text><%= input[:hide] %></span><button type="button" class="btn-line d-none" aria-label="Collapse" button-collapse-input><%= gettext "Collapse" %></button></div><% else %><%= value_with_links %><% end %></code></pre>
+                <pre class="transaction-input-text-- pre-wrap--  text-truncate" style="margin-bottom: 0px; width:350px"><code style="line-height: 25px;"><%= if String.length(string) > max_length do %><div data-input-container><% input = trim(max_length, string) %><%= input[:show] %><span data-placeholder-dots>...</span><button type="button" class="btn-line" id="button-expand" aria-label="Expand" button-expand-input><%= gettext "Expand" %></button><span class="more d-none" data-hidden-text><%= input[:hide] %></span><button type="button" class="btn-line d-none" aria-label="Collapse" button-collapse-input><%= gettext "Collapse" %></button></div><% else %><%= value_with_links %><% end %></code></pre>
               <% end %>
           </td>
         </tr>
@@ -60,3 +59,47 @@
     </table>
    </div>
 <% end %>
+
+
+<div>
+   <button class="btn btn-teal btn-sm my-2" id="toggle"><i class="fas fa-cube"></i> Decode Input Data</button>
+   <button class="btn btn-teal btn-sm my-2" style="display:none" id="back_btn"> <i class="fas fa-undo"></i> Switch Back</button>
+</div>
+
+
+
+<script>
+    const targetDiv = document.getElementById("decode_input");
+    const btns = document.getElementById("toggle");
+    const backbtns = document.getElementById ("back_btn");
+    const inputDiv = document.getElementById ("input_method");
+
+    btns.onclick = function () {
+      if (targetDiv.style.display !== "none") {
+        targetDiv.style.display = "none";
+         backbtns.style.display = "none";
+         inputDiv.style.display = "block";
+
+      } else {
+        targetDiv.style.display = "block";
+        backbtns.style.display = "block";
+         btns.style.display = "none";
+         inputDiv.style.display = "none";
+      }
+    };
+
+     back_btn.onclick = function () {
+      if (targetDiv.style.display == "none") {
+        targetDiv.style.display = "block";
+         backbtns.style.display = "none";
+         inputDiv.style.display = "block";
+
+      } else {
+        targetDiv.style.display = "none";
+        backbtns.style.display = "none";
+         btns.style.display = "block";
+         inputDiv.style.display = "block";
+      }
+    };
+
+</script>

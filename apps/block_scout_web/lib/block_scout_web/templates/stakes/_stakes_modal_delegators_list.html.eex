@@ -9,8 +9,8 @@
       </div>
       <%= render BlockScoutWeb.CommonComponentsView, "_modal_close_button.html" %>
       <div class="modal-body">
-        <div class="stakes-table-container">
-          <div class="stakes-table-head">
+        <div class="stakes-table-container container">
+          <div class="stakes-table-head pt-4 border shadow-sm">
             <div class="col-1"></div>
             <div class="<%= if @pool.is_validator, do: "col-2", else: "col-4" %>">
               <%=

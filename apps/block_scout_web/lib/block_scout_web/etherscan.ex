@@ -303,7 +303,7 @@ defmodule BlockScoutWeb.Etherscan do
         "homeContractAddressHash" => "0xb7d311e2eb55f2f68a9440da38e7989210b9a05e",
         "homeDecimals" => "18",
         "homeHolderCount" => 393,
-        "homeName" => "STAKE on xDai",
+        "homeName" => "STAKE on ANA",
         "homeSymbol" => "STAKE",
         "homeTotalSupply" => "1484374.775044204093387391",
         "homeUsdValue" => "18807028.39981006586321824397"
@@ -314,7 +314,7 @@ defmodule BlockScoutWeb.Etherscan do
         "homeContractAddressHash" => "0xd057604a14982fe8d88c5fc25aac3267ea142a08",
         "homeDecimals" => "18",
         "homeHolderCount" => 73,
-        "homeName" => "HOPR Token on xDai",
+        "homeName" => "HOPR Token on ANA",
         "homeSymbol" => "HOPR",
         "homeTotalSupply" => "26600449.86076749062791602",
         "homeUsdValue" => "6638727.472651464170990256943"

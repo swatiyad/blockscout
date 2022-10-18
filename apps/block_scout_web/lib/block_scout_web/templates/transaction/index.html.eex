@@ -21,7 +21,7 @@
   </div>
 
   <div class="card">
-    <div class="card-body table-responsive" data-async-listing="<%= @current_path %>">
+    <div class="card-body table-responsive p-0" data-async-listing="<%= @current_path %>">
       <div data-selector="channel-batching-message" class="d-none">
         <div data-selector="reload-button" class="alert alert-info">
           <a href="#" class="alert-link"><span data-selector="channel-batching-count"></span> <%= gettext "More transactions have come in" %></a>
@@ -34,46 +34,39 @@
       </button>
 
       <div data-empty-response-message style="display: none;">
-        <div class="tile tile-muted text-center">
+        <div class="tile tile-muted text-center m-3">
           <span data-selector="empty-internal-transactions-list">
             <%= gettext "There are no transactions." %>
           </span>
         </div>
       </div>
-          <div class="table-responsive table-hover">
+          <div class="table-hover">
             <table class="table mb-0 fixed-layout">
                   <thead>
                     <tr class="table-head">
-                      <th scope="col">Hash</th>
-                      <th scope="col">Block</th>
-                      <th scope="col">Age</th>
-                      <th scope="col">Method</th>
-                      <th scope="col">From</th>
-                      <th scope="col">To</th>
-                      <th scope="col">Amount</th>
-                      <th scope="col">Transaction</th>
-                      <th scope="col">Status</th>
+                      <th class="wideRow">Txn Hash</th>
+                      <th class="screenRow">Method</th>
+                      <th class="screenRow">Block</th>
+                      <th class="screenRow">Age</th>
+                      <th class="screenRow">From </th>
+                      <th class="" style="width:36px"></th>
+                      <th class="screenRow">To</th>
+                      <th class="screenRow">Amount</th>
+                      <th class="screenRow">Txn Fee</th>
+                      <%# <th class="screenRow">Status</th> %>
                     </tr>
                   </thead>
-            </table>
+                </table>
          </div>
 
       <div data-selector="transactions-list" data-items>
         <%= render BlockScoutWeb.CommonComponentsView, "_tile-loader.html" %>
       </div>
 
-      <%= render BlockScoutWeb.CommonComponentsView, "_rap_pagination_container.html", position: "bottom" %>
+
 
   </div>
+  <div class="col-md-12 py-2"> <%= render BlockScoutWeb.CommonComponentsView, "_rap_pagination_container.html", position: "bottom" %></div>
   <script defer data-cfasync="false" src="<%= static_path(@conn, "/js/validated-transactions.js") %>"></script>
   <script defer data-cfasync="false" src="<%= static_path(@conn, "/js/token-transfers-toggle.js") %>"></script>
 </section>
-
-
-<style>
-@media screen and (min-device-width: 290px) and (max-device-width: 768px){
-.table{
-     width:426% !important;
-    }
- }
-</style>

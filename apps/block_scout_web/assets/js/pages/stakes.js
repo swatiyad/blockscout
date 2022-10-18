@@ -60,7 +60,7 @@ export const initialState = {
   stakingErrorShown: false
 }
 
-// 100 - id of xDai network, 101 - id of xDai test network
+// 100 - id of ANA network, 101 - id of ANA test network
 export const allowedNetworkIds = [1807]
 
 export function reducer (state = initialState, action) {
@@ -354,6 +354,7 @@ if ($stakesPage.length) {
   $stakesTop.on('click', '[disconnect-wallet]', async (_event) => {
     disconnectWalletFromStakingDapp(store)
   })
+
   observer.observe(document.querySelector('[data-selector="stakes-top"]'), { subtree: false, childList: true })
 }
 

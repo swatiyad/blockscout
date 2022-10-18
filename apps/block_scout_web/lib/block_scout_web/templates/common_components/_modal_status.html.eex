@@ -14,7 +14,7 @@
         <p class="modal-status-text" style="<%= if @status == "error", do: "word-break: break-all;" %>"><%= if assigns[:text] do @text end %></p>
         <div class="modal-status-button-wrapper">
           <%= if @status !== "question" do %>
-            <button class="btn-line" type="button" data-dismiss="modal">
+            <button class="btn btn-success btn-block" type="button" data-dismiss="modal">
               <span class="btn-line-text">Ok</span>
             </button>
           <% else %>

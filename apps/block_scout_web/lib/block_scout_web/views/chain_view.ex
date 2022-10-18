@@ -7,6 +7,10 @@ defmodule BlockScoutWeb.ChainView do
   alias BlockScoutWeb.LayoutView
   alias Explorer.Chain.Cache.GasPriceOracle
   alias Explorer.Chain.Supply.TokenBridge
+  alias Explorer.Chain
+  alias Explorer.Chain.{Block, Wei}
+  alias Explorer.Chain.Block.Reward
+  alias Explorer.Counters.{BlockBurnedFeeCounter, BlockPriorityFeeCounter}
 
   defp market_cap(:standard, %{available_supply: available_supply, usd_value: usd_value})
        when is_nil(available_supply) or is_nil(usd_value) do
@@ -98,4 +102,9 @@ defmodule BlockScoutWeb.ChainView do
         nil
     end
   end
+
+  def formatted_gas(gas, format \\ []) do
+    BlockScoutWeb.Cldr.Number.to_string!(gas, format)
+  end
+
 end

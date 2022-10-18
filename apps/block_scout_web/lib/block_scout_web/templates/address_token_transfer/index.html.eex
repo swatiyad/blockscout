@@ -6,19 +6,40 @@
   <section data-page="address-token-transfers" id="transfers">
     <div class="card">
       <%= render BlockScoutWeb.AddressView, "_tabs.html", address: @address, is_proxy: is_proxy, conn: @conn %>
-      <div data-async-load data-async-listing="<%= @current_path %>" class="card-body">
+      <div data-async-load data-async-listing="<%= @current_path %>" class="card-body overflow-auto p-0">
 
         <%= if assigns[:token] do %>
         <h2 class="card-title">
-          <span class="text-muted"><%= gettext "Tokens" %></span> / <%= token_name(@token) %>
+          <span class=""><%= gettext "Tokens" %></span> / <%= token_name(@token) %>
         </h2>
         <% end %>
 
         <%= if !assigns[:token] do %>
-        <div class="clearfix">
-          <h2 class="card-title float-left"><%= gettext "Token Transfers" %></h2>
+        <div class="clearfix p-3">
+          <h5 class="font-weight-normal text-gray float-left my-2"> Latest
+            <span class="" data-test="address_transfer_count">
+              <%= if @conn.request_path |> String.contains?("/token-transfers") do %>
+                <a href="#transfers" class="" data-selector="transfer-count">
+                  <%= if @address.token_transfers_count do %>
+                    <%= Number.Delimit.number_to_delimited(@address.token_transfers_count, precision: 0) %>
+                  <% else %>
+                    <%= render BlockScoutWeb.CommonComponentsView, "_loading_spinner.html", loading_text: gettext("Fetching transfers...") %>
+                  <% end %>
+                </a>
+              <% else %>
+                <a href="<%= AccessHelpers.get_path(@conn, :address_token_transfers_path, :index, @address.hash)%>#transfers" class="" data-selector="transfer-count">
+                  <%= if @address.token_transfers_count do %>
+                    <%= Number.Delimit.number_to_delimited(@address.token_transfers_count, precision: 0) %>
+                  <% else %>
+                    <%= render BlockScoutWeb.CommonComponentsView, "_loading_spinner.html", loading_text: gettext("Fetching transfers...") %>
+                  <% end %>
+                </a>
+              <% end %>
+            </span>
+            <%= gettext("Token Transfers")%>
+         </h5>
           <div class="top-pagination-outer-container float-right">
-            <div class="dropdown u-push-sm">
+            <!--<div class="dropdown u-push-sm">
               <button data-test="filter_dropdown" class="btn-dropdown-line dropdown-toggle" type="button"
                 id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Filter: <%= format_current_filter(@filter) %>
@@ -43,13 +64,13 @@
                   "data-test": "filter_option"
                 ) %>
               </div>
-            </div>
+            </div>-->
             <%= render BlockScoutWeb.CommonComponentsView, "_pagination_container.html", position: "top", cur_page_number: "1", show_pagination_limit: true, data_next_page_button: true, data_prev_page_button: true %>
           </div>
         </div>
         <% end %>
 
-        <div data-empty-response-message class="tile tile-muted text-center" style="display: none;">
+        <div data-empty-response-message class="tile tile-muted text-center m-3" style="display: none;">
           <span><%= gettext "There are no token transfers for this address." %></span>
         </div>
 
@@ -58,6 +79,22 @@
             <%= gettext "Something went wrong, click to reload." %>
           </span>
         </button>
+        <!--table heading for token transfer (/address)-->
+        <table class="table fixed-layout table-hover mb-0">
+          <thead>
+            <tr class="table-head">
+              <th class="wideRow">Txn Hash</th>
+              <th class="screenRow">Method</th>
+              <th class="screenRow">Block</th>
+              <th class="screenRow">Age</th>
+              <th class="screenRow">From</th>
+              <th class="" style="width:36px"></th>
+              <th class="screenRow"> To</th>
+              <th class="screenRow">Amount</th>
+              <th class="screenRow"> Stake</th>
+            </tr>
+          </thead>
+        </table>
 
         <div data-items>
           <%= render BlockScoutWeb.CommonComponentsView, "_tile-loader.html" %>

@@ -1,180 +1,177 @@
-  <section
-      class="container"
-      data-page="search-results"
-      data-chain-id="<%= System.get_env("CHAIN_ID") %>"
-    data-display-token-icons="<%= System.get_env("DISPLAY_TOKEN_ICONS") %>"
-  >
-
-<style>
-.bg-setter{
-    background-color: #51b8fd;
-    border-radius: 10px;
-    margin-inline: 10px;
-    padding: 10px;
-}
 
 
-</style>  
 
 <script>
 
-var cblock=0;
- var block =0;
+  var cblock=0;
+  var block =0;
   var userBlock=0;
 
- async function set (){
- var web3 = new Web3('https://rpc01.taralityscan.com');
- cblock =  await web3.eth.getBlockNumber();
- //console.log(cblock);
-        document.getElementById("currentBlock").innerHTML=cblock;
-    
-}
+  async function set (){
+  var web3 = new Web3('https://rpc01.taralityscan.com');
+  cblock =  await web3.eth.getBlockNumber();
+  //console.log(cblock);
+  document.getElementById("currentBlock").innerHTML=cblock;
 
-setInterval(set, 1000);
+  }
 
-var seconds;
-var dDisplay;
-var hDisplay;
-var mDisplay;
-var sDisplay;
+  setInterval(set, 1000);
 
- var datad = setInterval (function secondsToHms() {
-     
- userBlock = <%=@query %>;
-//console.log(userBlock,"useerrrrr ");
-block = cblock;
-//console.log(cblock,"cccccuseerrrrr ");
-block=userBlock-block;
-if(block>=0){
+  var seconds;
+  var dDisplay;
+  var hDisplay;
+  var mDisplay;
+  var sDisplay;
+
+  var datad = setInterval (function secondsToHms() {
+
+  userBlock = <%=@query %>;
+  //console.log(userBlock,"useerrrrr ");
+  block = cblock;
+  //console.log(cblock,"cccccuseerrrrr ");
+  block=userBlock-block;
+  if(block>=0){
   document.getElementById("remBlock").innerHTML=block;
-}else{
+  }else{
   document.getElementById("remBlock").innerHTML="validated";
-}
-block=block*5; 
-seconds=block;
-//console.log(seconds,"ssssssscccccuseerrrrr ");
 
-stop();
-var d = Math.floor(seconds / (3600*24));
-var h = Math.floor(seconds % (3600*24) / 3600);
-var m = Math.floor(seconds % 3600 / 60);
-var s = Math.floor(seconds % 60);
+  }
+  block=block*5;
+  seconds=block;
+  //console.log(seconds,"ssssssscccccuseerrrrr ");
 
- dDisplay = d > 0 ? d + (d == 1 ? " day, " : " days, ") : "0";
- hDisplay = h > 0 ? h + (h == 1 ? " hour, " : " hours, ") : "0";
- mDisplay = m > 0 ? m + (m == 1 ? " minute, " : " minutes, ") : "0";
- sDisplay = s > 0 ? s + (s == 1 ? " second" : " seconds") : "0";
-//console.log( dDisplay + hDisplay + mDisplay + sDisplay);
+  stop();
+  var d = Math.floor(seconds / (3600*24));
+  var h = Math.floor(seconds % (3600*24) / 3600);
+  var m = Math.floor(seconds % 3600 / 60);
+  var s = Math.floor(seconds % 60);
 
-    document.getElementById("day").innerHTML=dDisplay;
-    document.getElementById("hour").innerHTML=hDisplay;
-    document.getElementById("min").innerHTML=mDisplay;
-    document.getElementById("sec").innerHTML=sDisplay;
+  dDisplay = d > 0 ? d + (d == 1 ? " day " : " days ") : "0";
+  hDisplay = h > 0 ? h + (h == 1 ? " hour " : " hours ") : "0";
+  mDisplay = m > 0 ? m + (m == 1 ? " min " : " mins ") : "0";
+  sDisplay = s > 0 ? s + (s == 1 ? " sec" : " secs") : "0";
+  //console.log( dDisplay + hDisplay + mDisplay + sDisplay);
+
+  document.getElementById("day").innerHTML=dDisplay;
+  document.getElementById("hour").innerHTML=hDisplay;
+  document.getElementById("min").innerHTML=mDisplay;
+  document.getElementById("sec").innerHTML=sDisplay;
   document.getElementById("UserBlock").innerHTML=<%= @query %>;
-     helo();   
+  helo();
 
- 
-seconds--;
-  
-},1000)
+  seconds--;
 
-function stop(){
-  if(dDisplay =="0" && hDisplay =="0" && mDisplay =="0" && sDisplay =="0"){
-        check();
-clearInterval(datad);
+  },1000)
+
+  function stop() {
+    if(dDisplay =="0" && hDisplay =="0" && mDisplay =="0" && sDisplay =="0"){
+    check();
+    clearInterval(datad);
     }
-}
-function helo(){
+  }
+  function helo() {
     var dt = new Date();
- dt.setSeconds( dt.getSeconds() + block);
- console.log(dt,"block time");
- document.getElementById("estDate").innerHTML="Estimated Target Date: " + dt;       
-}
-
-
-function notify(){
-const notification = new Notification("New messsage From  Rabbit ANAscan", {
-body:"Your Block Has  Been  validated"
-});
-}
-
-function check(){
-  if(dDisplay =="0" && hDisplay =="0" && mDisplay =="0" && sDisplay =="0"){
-
-  if( document.getElementById("one").checked == true){
-
-//console.log(Notification.permission);
-if(Notification.permission == "granted"){
- notify();
-}else if(Notification.permission !== "denied  "){
-  Notification.requestPermission().then(permission => {
-
-if(Notification.permission == "granted"){
- notify();
-}
-  });
-}
+    dt.setSeconds( dt.getSeconds() + block);
+    console.log(dt,"block time");
+    document.getElementById("estDate").innerHTML="Estimated Target Date: " + dt;
   }
 
+
+  function notify() {
+    const notification = new Notification("New messsage From  Rabbit ANAscan", {
+    body:"Your Block Has  Been  validated"
+    });
   }
-}
 
+  function check() {
+    if(dDisplay =="0" && hDisplay =="0" && mDisplay =="0" && sDisplay =="0"){
 
+    if( document.getElementById("one").checked == true){
 
+    //console.log(Notification.permission);
+    if(Notification.permission == "granted") {
+      notify();
+      } else if(Notification.permission !== "denied  ") {
+        Notification.requestPermission().then(permission => {
 
+          if(Notification.permission == "granted") {
+          notify();
+         }
+        });
+      }
+     }
+   }
+  }
 </script>
 
+<section
+  class="container-fluid"
+  data-page="search-results"
+  data-chain-id="<%= System.get_env("CHAIN_ID") %>"
+  data-display-token-icons="<%= System.get_env("DISPLAY_TOKEN_ICONS") %>"
+></section>
+
+
 <body onload="secondsToHms();">
-    
-<div  class="container text-center my-5 py-5">
+  <div class="container">
     <div class="row my-5">
-      <div class="col-sm-6 my-5">
-        <img src="./virtual-reality-ether.svg" height="50%" alt="" srcset="">
+      <div class="col-lg-6">
+         <img src="images/search-block-result.png" style="width:93%" class="img-fluid" alt="block result" srcset="">
       </div>
-      <div class="col-sm-6">   
-        <div class="row">
-   
-            <!-- <div class="col"><h1 id="day" class="text-primary">XXXX </h1> Days</div> -->
-             <div class="col "><h3 id="day" class="text-primary">XXXX </h3> Days</div>
-            <div class="col "><h3 id="hour" class="text-primary">XXXX </h3> Hours</div>
-            <div class="col "><h3 id="min" class="text-primary">XXXX </h3> Mins</div>
-            <div class="col "><h3 id="sec" class="text-primary">XXXX </h3> Secs</div>
-          </div>
-          <hr>
+      <div class="col-lg-6">
+        <div class="row pt-4 bg-white p-3 border shadow-sm rounded">
+          <!-- <div class="col"><h1 id="day" class="text-primary">XXXX </h1> Days</div> -->
+          <div class="col "><span id="day" class="text-teal font-24">XXXX </span> </div>
+          <div class="col "><span id="hour" class="text-teal font-24">XXXX </span> </div>
+          <div class="col "><span id="min" class="text-teal font-24">XXXX </span> </div>
+          <div class="col "><span id="sec" class="text-teal font-24">XXXX </span> </div>
+        </div>
+          <hr class="p-0 m-0 hor_line">
           <!-- <h4 class="text-secondary">Estimated Target Date: Fri Nov 14 2025 13:11:41 GMT+0530 (India Standard Time)  </h4> -->
-          <h5 class="text-dark my-5" id="estDate">  </h5>
+          <h2 class="text-dark my-5" id="estDate">  </h2>
 
           <div class="row my-5">
-            <div class="col bg-setter "><p>Countdown For block:</p><b id="UserBlock">CALCULATING</b></div>
-            <div class="col bg-setter "><p> Current Block:</p><b id="currentBlock">CALCULATING</b></div>
-            <div class="col bg-setter "><p>Remaining Block:</p><b id="remBlock">CALCULATING</b></div>
-          </div>
-
-<div class="container">
-<h5>Click on the Notification bell for alert when the block is validated!</h5>
-    <div class="">
-        <input  type="radio" name="radio" id="one" >
-       
-      
-    </div>
-</div>
-
+            <div class="col-md-4 mb-3 mb-md-0">
+              <div class="card h-100 bg-teal text-white p-3 mb-0">
+                <h3 class="text-white mb-0">Countdown For block:</h3>
+                <span class="font-weight-bold text-truncate d-block">
+                  <p class="font-25" id="UserBlock"><em>calculating...</em></p>
+                </span>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3 mb-md-0">
+              <div class="card h-100 bg-teal text-white p-3 mb-0">
+                <h3 class="text-white mb-0">Current Block:</h3>
+                <span class="font-weight-bold text-truncate d-block">
+                  <p id="currentBlock"><em>calculating...</em></p>
+                </span>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3 mb-md-0">
+              <div class="card h-100 bg-teal text-white p-3 mb-0">
+                <h3 class="text-white mb-0">Remaining Block:</h3>
+                <span class="font-weight-bold text-truncate d-block">
+                  <p id="remBlock"><em>calculating...</em></p>
+                </span>
+              </div>
+              </div>
+            </div>
+           <div class="col-lg-12">
+            <div>
+               <input type="checkbox" id="one" data-toggle="toggle" data-on="Enabled" data-off="Disabled">
+               Click on the Notification bell for alert when the block is validated!
+            </div>
+        </div>
       </div>
-   
     </div>
   </div>
-
-
-</div>
-
 </body>
 
-        
-        <%= render BlockScoutWeb.CommonComponentsView, "_pagination_container.html", position: "bottom", cur_page_number: "1", show_pagination_limit: true, data_next_page_button: true, data_prev_page_button: true %>
-    </div>
-  </div>
-  <script defer data-cfasync="false" src="<%= static_path(@conn, "/js/search-results.js") %>"></script>
+
+<%= render BlockScoutWeb.CommonComponentsView, "_pagination_container.html", position: "bottom", cur_page_number: "1", show_pagination_limit: true, data_next_page_button: true, data_prev_page_button: true %>
+</div>
+</div>
+<script defer data-cfasync="false" src="<%= static_path(@conn, "/js/search-results.js") %>"></script>
 </section>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.4/web3.min.js" integrity="sha512-oMd9Re3VgJcXuZJn9DN6X7S7JUc7xLYZ2UyZ85Mm/xzaW3lwBr4fV2zjuu/n5jY/Of/2JOx35CTa6zvQNxb31Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-

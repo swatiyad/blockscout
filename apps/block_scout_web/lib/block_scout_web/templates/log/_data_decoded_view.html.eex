@@ -1,6 +1,6 @@
-<div class="table-responsive text-center">
-    <table style="color: black;table-layout: fixed;" summary="<%= gettext "Log Data" %>" class="table thead-light table-bordered">
-        <tr>
+<div class="table-responsive text-center border rounded">
+    <table summary="<%= gettext "Log Data" %>" class="table layout-fixed">
+        <tr class="table-head">
         <th scope="col" style="width: 110px;"><%= gettext "Name" %></th>
         <th scope="col" style="width: 100px;"><%= gettext "Type" %></th>
         <th scope="col" style="width: 75px;"><%= gettext "Indexed?" %></th>
@@ -11,7 +11,7 @@
             <td><%= name %></td>
             <td><%= type %></td>
             <td><%= indexed? %></td>
-            <td align=left>
+            <td>
             <%= case BlockScoutWeb.ABIEncodedValueView.copy_text(type, value) do %>
                 <% :error -> %>
                     <%= nil %>

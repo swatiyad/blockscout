@@ -1,20 +1,55 @@
-<div class="tile tile-type-token-transfer fade-in">
+<%# <div class="tile tile-type-token-transfer fade-in">
   <div class="row justify-content-end">
     <div class="col-12 col-md-4 col-lg-2 d-flex align-items-center justify-content-start justify-content-lg-center tile-label">
       <%= render(BlockScoutWeb.CommonComponentsView, "_token_transfer_type_display_name.html", type: Chain.get_token_transfer_type(@token_transfer)) %>
-    </div>
+    <%# </div> %>
 
-    <div class="col-12 col-md-8 col-lg-10 d-flex flex-column text-nowrap">
+    <%# <div class="col-12 col-md-8 col-lg-10 d-flex flex-column text-nowrap">
       <%= render BlockScoutWeb.TransactionView, "_link.html", transaction_hash: @token_transfer.transaction_hash %>
-      <span class="text-nowrap">
+      <%# <span class="text-nowrap">
         <%= render BlockScoutWeb.AddressView, "_link.html", address: @token_transfer.from_address, contract: BlockScoutWeb.AddressView.contract?(@token_transfer.from_address), use_custom_tooltip: false %>
-        &rarr;
+        <%# &rarr;
         <%= render BlockScoutWeb.AddressView, "_link.html", address: @token_transfer.to_address, contract: BlockScoutWeb.AddressView.contract?(@token_transfer.to_address), use_custom_tooltip: false %>
-      </span>
+      <%# </span>
 
       <span class="tile-title">
         <%= render BlockScoutWeb.TransactionView, "_total_transfers.html", Map.put(assigns, :transfer, @token_transfer) %>
-      </span>
-    </div>
-  </div>
-</div>
+      <%# </span>
+    <%# </div> %>
+  <%# </div>
+</div>  %>
+
+<table class="table fixed-layout">
+  <%# <thead>
+    <tr class="table-head">
+      <th class="wideRow">Txn Hash</th>
+      <th class="screenRow">Method</th>
+      <th class="screenRow">From</th>
+      <th class="" style="width:66px"></th>
+      <th class="screenRow"> To</th>
+      <th class="screenRow"> Stake</th>
+    </tr>
+  </thead> %>
+  <tbody>
+    <tr>
+
+      <td class="wideRow"><span class="text-truncate d-flex text-success width190"> <%= render BlockScoutWeb.TransactionView, "_link.html", transaction_hash: @token_transfer.transaction_hash %></span></td>
+
+       <td class="screenRow"> <%= render(BlockScoutWeb.CommonComponentsView, "_token_transfer_type_display_name.html", type: Chain.get_token_transfer_type(@token_transfer)) %></td>
+
+      <td class="wideRow"> <span class="text-truncate d-flex text-success width190">
+      <%= render BlockScoutWeb.AddressView, "_link.html", address: @token_transfer.from_address, contract: BlockScoutWeb.AddressView.contract?(@token_transfer.from_address), use_custom_tooltip: false %></span></td>
+
+      <td class="" style="width:66px">
+        <span class="fas fa-arrow-right d-inline-flex align-items-center"></span>
+      </td>
+
+      <td class="wideRow"><span class="text-truncate d-flex text-success width190">
+      <%= render BlockScoutWeb.AddressView, "_link.html", address: @token_transfer.to_address, contract: BlockScoutWeb.AddressView.contract?(@token_transfer.to_address), use_custom_tooltip: false %>
+      </span></td>
+
+       <td class="screenRow"> <%= render BlockScoutWeb.TransactionView, "_total_transfers.html", Map.put(assigns, :transfer, @token_transfer) %></td>
+    </tr>
+
+  </tbody>
+</table>

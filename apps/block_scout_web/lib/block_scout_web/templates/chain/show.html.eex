@@ -1,40 +1,110 @@
+<style>
+.animate-wrap {
+  width: 100%;
+  height: 100%;
+  background: rgb(205,241,209);
+  background: linear-gradient(0deg, rgba(205,241,209,1) 0%, rgba(233,250,238,1) 48%, rgba(220,255,220,1) 100%);
+  border: 1px solid #c6ffd3;
+  box-shadow: 1px 0px 4px #eee;
+}
+.animate-moving-object {
+  position: relative;
+  top: -1px;
+  width: 2rem;
+  height: 1.5rem;
+  background:url(/images/block-bg-slider.svg) no-repeat;
+  animation-name: slider-move;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.dark-theme-applied .animate-wrap {
+  background: rgb(168,168,168);
+  background: linear-gradient(0deg, rgb(47 45 45) 0%, rgb(81 80 80) 48%, rgb(21 21 21) 100%);
+  border: 1px solid #343a40;
+  box-shadow: 1px 0px 4px #343a40;
+}
 
-<div class="container pt-2">
-  <div class="card border shadow rounded">
-    <div class="card-body py-5">
+.block-cards {
+
+  /*margin-right:32px;*/
+  width: calc(25% - 1.1rem);
+  /*width: 330px;*/
+  padding: 1.15rem  1.15rem 0 1.15rem;
+}
+
+.block-cards:nth-child(4) {
+  margin-right:0;
+}
+.block-container {
+  display: flex;
+  justify-content: space-between;
+  flex: 1 1;
+}
+.block-bg-animate-wrap {
+  position: absolute;
+  top: calc(50% - 0.5rem);
+  width: 86%;
+  left:4%;
+  height: 1.5rem;
+  top:40%;
+}
+
+@media screen and (min-device-width: 290px) and (max-device-width: 1024px) {
+  .block-bg-animate-wrap {
+  width: 100%!important;
+}
+}
+
+@media screen and (min-device-width: 290px) and (max-device-width: 991px) {
+.block-cards {
+  width:290px;
+  margin-right:15px;
+}
+}
+
+.dark-theme-applied .dark-theme-applied .pagination-container .pagination a.page-link > svg {
+ -webkit-filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1)
+}
+
+</style>
+<div class="container pt-2 mt-n40">
+  <div class="card border shadow-sm rounded mb-3">
+    <div class="card-body py-4">
       <div class="row">
-        <div class="col-sm-12 col-md-6 col-lg-4 border-right">
+        <div class="col-sm-12 col-md-6 col-lg-4 border-right-sm1">
           <div class="media border-bottom mb-4 pb-4">
-              <img class="mr-3 media_icon" src="images/total-price.svg"  style="width:50px;">
+              <img class="mr-3 media_icon" src="images/analog_icon.svg" width="50" height="40"  style="width:50px;">
               <div class="media-body">
-                <span class="dashboard-banner-network-stats-label">
-                 Total Price
+                <span class="dashboard-banner-network-stats-label text-uppercase">
+                 Analog Price
                 </span>
-                <span class="dashboard-banner-network-stats-value fs-14">
-               $1,474.30 @ 0.06687 BTC (+8.81%)
+                <span class="dashboard-banner-network-stats-value fs-14 text-truncate width160">
+                 $0,00,000 @ 0.00000 BTC (+8.81%)
                 </span>
               </div>
 
           </div>
-          <div class="media  mb-3 pb-3">
-            <img class="mr-3 media_icon" src="images/market-cap.svg" style="width:50px;">
+          <div class="media mb-lg-0 mb-md-4 pb-md-4 pb-lg-0 pb-sm mb-sm border-bottm-sm">
+            <img class="mr-3 media_icon" src="images/market-cap.svg" width="50" height="40" style="width:50px;">
             <div class="media-body" >
-              <span class="dashboard-banner-network-stats-label" >
-                Market Cap
+              <span class="dashboard-banner-network-stats-label text-uppercase">
+                Global Market Cap
               </span>
-              <span class="dashboard-banner-network-stats-value" data-selector="transaction-count">
-             112,25 USD
+              <span class="dashboard-banner-network-stats-value">
+             000,00 USD
               </span>
 
             </div>
           </div>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="col-sm-12 col-md-6 col-lg-4 border-right-sm2">
           <div class="media border-bottom mb-4 pb-4">
-          <img class="mr-3 media_icon" src="images/total-transaction.svg" style="width:50px;">
+          <img class="mr-3 media_icon" src="images/transaction.svg" width="50" height="42"  style="width:50px;height: 42px;">
             <div class="media-body" >
-              <span class="dashboard-banner-network-stats-label" >
-                <%= gettext "Total transactions" %>
+              <span class="dashboard-banner-network-stats-label text-uppercase">
+               Transaction
               </span>
               <span class="dashboard-banner-network-stats-value" data-selector="transaction-count">
                 <%= BlockScoutWeb.Cldr.Number.to_string!(@transaction_estimated_count, format: "#,###") %>
@@ -52,78 +122,126 @@
               <% end %>
             </div>
 
-              <div class="text-right" title="">
-                <p class="text-uppercase text-secondary mb-0">Gas Price</p>
-                <a href="#" class="text-link">1.51 Gwei <span class="text-secondary small">($0.94)</span></a>
-              </div>
+            <div class="text-right" title="">
+              <p class="text-uppercase sub-text mb-0">Gas Price</p>
+              <%= render BlockScoutWeb.ChainView, "gas_price_oracle_legend_item.html", gas_price: @gas_price %>
+              <%= if Map.has_key?(@chart_config, :transactions) do %>
+
+                <% transaction_chart_config = @chart_config.transactions%>
+                <%= if Enum.member?(transaction_chart_config, :transactions_per_day) do %>
+                <!--<div class="dashboard-banner-chart-legend-item tx-per-day">
+                    <span class="dashboard-banner-chart-legend-label">
+                        <%= gettext "Daily Transactions" %>
+                    </span>
+                    <span class="dashboard-banner-chart-legend-value" data-selector="tx_per_day">
+                        <% num_of_transactions = BlockScoutWeb.Cldr.Number.to_string!(Enum.at(@transaction_stats, 0).number_of_transactions, format: "#,###") %>
+                        <%= num_of_transactions %>
+                        <% gas_used = Enum.at(@transaction_stats, 0).gas_used %>
+                        <%= if gas_used && gas_used > 0 do %>
+                          <span
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            data-html="true"
+                            data-template="<div class='tooltip tooltip-inversed-color tooltip-gas-usage' role='tooltip'><div class='arrow'></div><div class='tooltip-inner'></div></div>"
+                            title="<div class='custom-tooltip-header'>Gas used</div><div class='custom-tooltip-description'><b><%= BlockScoutWeb.Cldr.Number.to_string!(gas_used, format: "#,###") %><b></div>">
+                            <i style="color: #333;" class="fa fa-info-circle ml-1"></i>
+                          </span>
+                        <% end %>
+                    </span>
+                </div>-->
+                <% end %>
+              <% end %>
+            </div>
           </div>
 
-          <div class="media mb-3 pb-3">
-            <img class="mr-3 media_icon" src="images/identity.svg" style="width:50px;">
+          <div class="media mb-lg-0 mb-md-4 pb-md-4 pb-lg-0 pb-sm mb-sm border-bottm-sm">
+            <img class="mr-3 media_icon" src="images/block-bg-slider.svg" width="50" height="40" style="width:50px;">
             <div class="media-body">
-              <span class="dashboard-banner-network-stats-label">
-                Total Identities
+              <span class="dashboard-banner-network-stats-label text-uppercase">
+                 <%= gettext "Total blocks" %>
               </span>
-              <span class="dashboard-banner-network-stats-value" data-selector="address-count">
-               11,5252 USD
+              <span class="dashboard-banner-network-stats-value d-inline" data-selector="block-count">
+              <%= BlockScoutWeb.Cldr.Number.to_string!(@block_count, format: "#,###") %>
               </span>
             </div>
-
+            <div class="text-right" title="">
+              <p class="text-uppercase sub-text mb-0"><%= gettext "Average block time" %></p>
+              <%= case @average_block_time do %>
+                <% {:error, :disabled} -> %>
+                  <%= nil %>
+                <% average_block_time -> %>
+                  <span class="dashboard-banner-network-stats-value" data-selector="average-block-time">
+                    <%= Timex.format_duration(average_block_time, Explorer.Counters.AverageBlockTimeDurationFormat) %>
+                  </span>
+              <% end %>
+            </div>
           </div>
         </div>
         <div class="col-sm-12 col-md-12 col-lg-4">
-          <div class='mt-n5' data-page="chain-details">
-                  <div class="">
-                    <div class="dashboard-banner">
-                      <!-- Graph and legend -->
+          <div style='margin-top:-30px' data-page="chain-details">
+            <div class="">
+              <div class="dashboard-banner">
+                <!-- Graph and legend -->
 
-                      <div class="dashboard-banner-network-graph">
-                        <!-- Graph -->
-                        <div class="dashboard-banner-chart">
-                          <button data-chart-error-message class="alert alert-danger col-12 text-left mt-5" style="display: none;">
-                            <span><%= gettext("There was a problem loading the chart.") %></span>
-                          </button>
-                          <canvas data-chart="historyChart"
-
-                                  data-history_chart_paths=
-                                  '{<%= for {{key, value}, x} <- Enum.with_index(@chart_data_paths) do %>
-                                        "<%= key %>":"<%= value %>"
-                                        <%= if x<(map_size(@chart_data_paths)-1) do %>
-                                        ,
-                                        <% end %>
-                                  <% end %>}'
-                                  data-history_chart_config = '<%= @chart_config_json %>'
-                                  width="350" height="152" >
-                          </canvas>
-                        </div>
-                        <!-- Legend -->
-                        <script>
-                        numChartData = <%= Enum.reduce(@chart_config, 0, fn (source, acc) ->
-                                        acc + length(elem(source, 1)) end) %>
-                        document.documentElement.style.setProperty("--numChartData", numChartData);
-                        </script>
-
-                      </div>
-                      <!-- Stats -->
-
+                <!-- Graph -->
+                  <div class="dashboard-banner-chart">
+                  <p class="gray-text">Analog Transaction History last 28 days</p>
+                    <button data-chart-error-message class="alert alert-danger col-12 text-left mt-5" style="display: none;">
+                      <span><%= gettext("There was a problem loading the chart.") %></span>
+                    </button>
+                    <canvas style="margin-top:-35px" data-chart="historyChart"
+                            data-history_chart_paths=
+                            '{<%= for {{key, value}, x} <- Enum.with_index(@chart_data_paths) do %>
+                                  "<%= key %>":"<%= value %>"
+                                  <%= if x<(map_size(@chart_data_paths)-1) do %>
+                                  ,
+                                  <% end %>
+                            <% end %>}'
+                            data-history_chart_config = '<%= @chart_config_json %>'
+                            width="350" height="152">
+                    </canvas>
                   </div>
+                  <!-- Legend -->
+                  <script>
+                  numChartData = <%= Enum.reduce(@chart_config, 0, fn (source, acc) ->
+                                  acc + length(elem(source, 1)) end) %>
+                  document.documentElement.style.setProperty("--numChartData", numChartData);
+                  </script>
+
+                </div>
+                <!-- Stats -->
+
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-<section class="container px-0" >
-                  <%= link(gettext("View More Blocks"), to: blocks_path(BlockScoutWeb.Endpoint, :index), class: "float-right mt-2") %>
-      <h1><%= gettext "Blocks" %></h1>
-  <div class="card-chain-blocks js-ad-dependant-mb-3 mb-4">
-    <div class="" style="position: relative;transition: transform .6s ease; z-index: 2;">
-          <div class="block-bg-animate-wrap" style="position: absolute;top: calc(50% - 0.5rem); width: 92%; left:4%; height: 1rem; top:40%; ">
-                <div class="bg-white" style="width: 100%; height: 100%;">
-                      <%# <div class="slider-move" style="position: relative; width: 3rem; height: 1rem; background: url(https://tronscan.io/static/media/slider.8bc2e0a5.svg); animation-name: slider-move; animation-duration: 3s; animation-iteration-count: infinite; animation-timing-function: linear;"></div> %>
-                </div>
-          </div>
-      <div class="row mt-4" data-selector="chain-block-list" data-url="<%= chain_blocks_path(@conn, :chain_blocks) %>" >
+
+<div class="advertisement_placement mx-auto py-1 px-3">
+  <img class="img-responsive" width= "728" height="90" src="images/announcement.gif"/>
+  <%#= render BlockScoutWeb.Advertisement.BannersAdView, "_banner_728.html", conn: @conn %>
+</div>
+
+<section class="container">
+  <div class="d-flex justify-content-between">
+    <h1 class="pt-1"><%= gettext "Blocks" %></h1>
+    <%= link(gettext(" More"), to: blocks_path(BlockScoutWeb.Endpoint, :index), class: "btn-more") %>
+  </div>
+  <div class="card-chain-blocks js-ad-dependant-mb-3 mb-4 overflow-auto">
+    <div class="" style="position: relative;
+    display: flex;
+    transition: -webkit-transform .6s ease;
+    transition: transform .6s ease;
+    transition: transform .6s ease,-webkit-transform .6s ease;
+    z-index: 2;">
+      <div class="block-bg-animate-wrap">
+        <div class="animate-wrap ">
+          <div class="slider-move animate-moving-object"></div>
+        </div>
+      </div>
+      <div class="block-container" data-selector="chain-block-list" data-url="<%= chain_blocks_path(@conn, :chain_blocks) %>" >
             <button data-selector="error-message" class="alert alert-danger col-12 text-left" style="display: none;">
               <span class="alert-link">
                 <%= gettext "Something went wrong, click to reload." %>
@@ -173,34 +291,31 @@
                 </div>
               </div>
             </div>
-            </div>
+          </div>
       </div>
     </div>
   </div>
 
-
-
-
-  <%= render BlockScoutWeb.Advertisement.BannersAdView, "_banner_728.html", conn: @conn %>
-
-
-<%= link(gettext("View All Transactions"), to: transaction_path(BlockScoutWeb.Endpoint, :index), class: "float-right ") %>
-<h1 class="mb-2"><%= gettext "Transactions" %></h1>
-  <div class="card card-chain-transactions border shadow">
-    <div class="card-body table-responsive table-hover p-0">
+<div class="d-flex justify-content-between">
+  <h1 class="pt-1"><%= gettext "Transactions" %></h1>
+  <%= link(gettext("more"), to: transaction_path(BlockScoutWeb.Endpoint, :index), class: "btn-more") %>
+</div>
+  <div class="card card-chain-transactions border shadow overflow-auto clearfix">
+    <div class="card-body table-hover p-0">
    <div class="">
-        <table class="table mb-0 fixed-layout" style="width: 100%;">
+        <table class="table mb-0 fixed-layout">
               <thead>
                 <tr class="table-head">
-                  <th scope="col">Hash</th>
-                  <th scope="col">Block</th>
-                  <th scope="col">Age</th>
-                  <th scope="col">Method</th>
-                  <th scope="col">From</th>
-                  <th scope="col">To</th>
-                  <th scope="col">Amount</th>
-                  <th scope="col">Transaction</th>
-                  <th scope="col">Status</th>
+                  <th class="wideRow">Txn Hash</th>
+                  <th class="screenRow">Method</th>
+                  <th class="screenRow">Block</th>
+                  <th class="screenRow">Age</th>
+                  <th class="screenRow">From</th>
+                  <th class="" style="width:36px"></th>
+                  <th class="screenRow">To</th>
+                  <th class="screenRow">Amount</th>
+                  <th class="screenRow">Txn Fee</th>
+                  <%# <th class="screenRow">Status</th> %>
                 </tr>
               </thead>
         </table>
@@ -225,6 +340,7 @@
       </span>
     </div>
   </div>
+
 </section>
 
 
@@ -248,14 +364,20 @@ left: 100%;
 .table th,
 .table td {
   padding: 0.75rem;
-  vertical-align: top;
-  border-top: 1px solid #eceeef;
+  vertical-align: baseline;
+  border-top: 1px solid #eceeef!important;
 }
 
-.table thead th {
-  vertical-align: bottom;
-  border-bottom: 1px solid #eceeef;
+.dark-theme-applied .table th,
+.dark-theme-applied .table td {
+  border-top: 1px solid #404040!important;
 }
+
+/*.table thead th {
+  vertical-align: baseline;
+  border-bottom: 1px solid #eceeef;
+
+*/
 
 .table tbody + tbody {
   border-top: 2px solid #eceeef;
@@ -403,14 +525,7 @@ left: 100%;
   border: 0;
 }
 
-.media {
-  display: flex;
-  align-items: flex-start;
-}
 
-.media-body {
-  flex: 1;
-}
 
 @media screen and (min-device-width: 290px) and (max-device-width: 768px){
 .table{

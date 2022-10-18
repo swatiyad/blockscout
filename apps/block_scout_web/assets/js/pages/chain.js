@@ -374,7 +374,7 @@ function bindTransactionErrorMessage (store) {
 export function placeHolderBlock (blockNumber) {
   return `
     <div
-      class="col-lg-3 d-flex fade-up-blocks-chain"
+      class="block-cards fade-up-blocks-chain"
       data-block-number="${blockNumber}"
       data-selector="place-holder"
     >
@@ -387,7 +387,7 @@ export function placeHolderBlock (blockNumber) {
         </span>
         <div>
           <span class="tile-title pr-0 pl-0">${blockNumber}</span>
-          <div class="tile-transactions">${window.localized['Block Processing']}</div>
+          <div class="tile-transactions text-wrap">${window.localized['Block Processing']}</div>
         </div>
       </div>
     </div>

@@ -13,21 +13,22 @@
       </div>
   </div>
   <div class="card">
-    <div class="card-body" data-async-listing="<%= @current_path %>">
+    <div class="card-body overflow-auto p-0" data-async-listing="<%= @current_path %>">
       <%= render BlockScoutWeb.CommonComponentsView, "_channel_disconnected_message.html", text: gettext("Connection Lost, click to load newer blocks") %>
 
-           <div class="table-responsive">
-            <table class="table table-hover mb-0" style="table-layout: fixed;">
+           <div class="">
+            <table class="table table-hover mb-0 fixed-layout">
                   <thead>
                     <tr class="table-head">
-                      <th scope="col">Block</th>
-                      <th scope="col">Age</th>
-                      <th scope="col">Validator</th>
-                      <th scope="col">Transactions</th>
-                      <th scope="col">Taral Priority Fees</th>
-                      <th scope="col">Taral Burnt Fees</th>
-                      <th scope="col">Gas Limit</th>
-                      <th scope="col">Gas Used</th>
+                      <th class="screenRow">Block</th>
+                      <th class="screenRow">Age</th>
+                      <th class="screenRow">Txns</th>
+                      <th class="screenRow">Validator</th>
+                      <th class="screenRow">Gas Used</th>
+                      <th class="screenRow">Gas Limit</th>
+                      <th class="screenRow">Taral Priority Fees</th>
+                      <th class="screenRow">Taral Burnt Fees</th>
+
                       <%# <th scope="col">Status</th> %>
                     </tr>
                   </thead>
@@ -37,7 +38,7 @@
         <%= render BlockScoutWeb.CommonComponentsView, "_tile-loader.html" %>
       </div>
       <div data-empty-response-message style="display: none;">
-          <div class="tile tile-muted text-center fs-14">
+          <div class="tile tile-muted text-center m-3 fs-14">
             <span><%= gettext "There are no blocks." %></span>
           </div>
       </div>

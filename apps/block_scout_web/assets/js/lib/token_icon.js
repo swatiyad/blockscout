@@ -7,15 +7,15 @@ function getTokenIconUrl (chainID, addressHash) {
     case '99':
       chainName = 'poa'
       break
-    case '100':
-      chainName = 'xdai'
+    case '1807':
+      chainName = 'ANA'
       break
     default:
       chainName = null
       break
   }
   if (chainName) {
-    return `https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/${chainName}/assets/${addressHash}/logo.png`
+    return `https://raw.githubusercontent.com/analogchain/explorer/main/assets/blockchain/rabbit/${chainName}/${addressHash}/logo.png`
   } else {
     return null
   }

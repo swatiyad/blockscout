@@ -1,4 +1,4 @@
-<div class="card-tabs js-card-tabs px-2">
+<div class="card-tabs js-card-tabs bg-lighter shadow-sm">
     <%=
     link(
         list_title(:validator),

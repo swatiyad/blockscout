@@ -1,26 +1,39 @@
 <section class="container">
   <%= render BlockScoutWeb.TransactionView, "overview.html", assigns %>
-
   <div class="card">
     <%= render BlockScoutWeb.TransactionView, "_tabs.html", assigns %>
-    <div class="card-body" data-async-load data-async-listing="<%= @current_path %>">
-      <h2 class="card-title list-title-description"><%= gettext "Token Transfers" %></h2>
-
-      <div class="list-top-pagination-container-wrapper">
-        <%= render BlockScoutWeb.CommonComponentsView, "_pagination_container.html", position: "top", show_pagination_limit: true, data_next_page_button: true, data_prev_page_button: true %>
+    <div class="card-body p-0" data-async-load data-async-listing="<%= @current_path %>">
+      <div class="p-3">
+        <h2 class="card-title list-title-description mb-0"><%= gettext "Token Transfers" %></h2>
+        <div class="list-top-pagination-container-wrapper mb-0">
+          <%= render BlockScoutWeb.CommonComponentsView, "_pagination_container.html", position: "top", show_pagination_limit: true, data_next_page_button: true, data_prev_page_button: true %>
+        </div>
       </div>
-
         <button data-error-message class="alert alert-danger col-12 text-left" style="display: none;">
           <span href="#" class="alert-link"><%= gettext("Something went wrong, click to reload.") %></span>
         </button>
+        <!--table heading for token transfer (txn)-->
+        <table class="table fixed-layout table-hover mb-0">
+          <thead>
+            <tr class="table-head">
+              <th class="wideRow">Txn Hash</th>
+              <th class="screenRow">Token Type</th>
+              <th class="screenRow">From</th>
+              <th class="" style="width:36px"></th>
+              <th class="screenRow"> To</th>
+              <th class="screenRow"> Stake</th>
+            </tr>
+          </thead>
+        </table>
+
 
         <div data-empty-response-message style="display: none;">
-          <div class="tile tile-muted text-center" data-selector="empty-logs-list">
+          <div class="tile tile-muted text-center m-3" data-selector="empty-logs-list">
             <%= gettext "There are no token transfers for this transaction" %>
           </div>
         </div>
 
-        <div data-items>
+        <div class="overflow-auto" data-items>
           <%= render BlockScoutWeb.CommonComponentsView, "_tile-loader.html" %>
         </div>
 

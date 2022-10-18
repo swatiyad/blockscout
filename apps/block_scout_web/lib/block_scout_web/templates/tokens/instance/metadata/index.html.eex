@@ -20,8 +20,9 @@
               <%= gettext "Copy Metadata" %>
             </button>
           </div>
-          <div class="tile tile-muted mb-4">
-            <pre class="pre-wrap pre-scrollable"><code class="nohighlight"><%= format_metadata(@token_instance.instance.metadata) %></code>
+          <div class="tile tile-muted mb-4 fs-12">
+            <pre class="pre-wrap pre-scrollable">
+              <code class="nohighlight"><%= format_metadata(@token_instance.instance.metadata) %></code>
             </pre>
           </div>
         </section>

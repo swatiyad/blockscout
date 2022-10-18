@@ -32,8 +32,8 @@ defmodule BlockScoutWeb.TabHelpers do
             tab_name == "internal-transactions" && !show_token_transfers ->
               "active"
 
-            tab_name == "logs" && !show_token_transfers ->
-              "active"
+
+
 
             true ->
               nil

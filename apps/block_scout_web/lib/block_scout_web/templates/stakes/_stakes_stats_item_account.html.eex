@@ -1,10 +1,10 @@
-<div class="stakes-top-stats-item stakes-top-stats-item-address"
+<div class="stakes-top-stats-item-- stakes-top-stats-item-address-- text-muted"
   data-user-address="<%= if @account, do: @account.address %>"
 >
   <span class="stakes-top-stats-value">
     <%= if @account do %>
       <div data-placement="bottom" data-toggle="tooltip" title=<%= @account.address %>>
-        <%= @account.address %>
+        <span class="text-muted mr-2 pr-2"><%= @account.address %></span>
       </div>
       <div class="copy-icon" data-clipboard-text="<%= @account.address %>">
         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
@@ -12,10 +12,10 @@
         </svg>
       </div>
     <% else %>
-      <a target="_blank" data-selector="login-button" class="stakes-top-stats-login">Login</a>
+      <a target="_blank" data-selector="login-button" class="stakes-top-stats-login btn btn-teal">Login</a>
     <% end %>
   </span>
-  <span class="stakes-top-stats-label">
+  <span class="stakes-top-stats-label-- text-success">
     <%
       balance = format_token_amount(@account[:balance], @token, digits: 5, no_tooltip: true, symbol: true)
       balance_full = if @account[:balance] do
@@ -52,6 +52,6 @@
     <% end %>
   </span>
   <%= if @account do %>
-  <button disconnect-wallet class="button btn-full-primary mt-2 mr-4 hidden">Disconnect wallet</button>
+  <button disconnect-wallet class="btn btn-danger mt-2 mr-4 hidden">Disconnect wallet</button>
   <% end %>
 </div>

@@ -1,62 +1,48 @@
-
-
-
-
-
 <!-- Search navbar -->
-<div class="container search-form d-lg-flex d-inline-block pt-3 mb-0 <%= if assigns[:additional_classes] do @additional_classes |> Enum.join(" ") end %>">
-	<div class="input-group rounded shadow mb-4" style="width: 100%;" title='<%= gettext("Search by address, token symbol name, transaction hash, or block number") %>'>
-		<div class="form-control border-0 search-control me auto <%= if assigns[:additional_classes] do @additional_classes |> Enum.join(" ") end %>">
-			<input
-				id="<%= @id %>"
-				class="main-search-autocomplete setinput"
-				data-test="search_input"
-				data-chain-id="<%= System.get_env("CHAIN_ID") %>"
-				data-display-token-icons="<%= System.get_env("DISPLAY_TOKEN_ICONS") %>"
-				type="text"
-				tabindex="1"
-			>
-		</div>
-
-			<select class="form-select border-0 " aria-label="Default select example">
-				tribute specifies the coordinates of an area in an image map.on selected>All Filters</option>
-				<option value="1">Tokens</option>
-				<option value="2">Accounts</option>
-				<option value="3">Hash</option>
-				<option value="3">Blocks</option>
-		   </select>
-
-			<button class="btn btn-teal border">
-				<i class="fas fa-search"></i> Search
-			</button>
-
-	</div>
-	<button class="btn btn-outline-success my-2 my-sm-0 sr-only hidden" type="submit"><%= gettext "Search" %></button>
-</div>
-
-
-
-
 <style>
+input::placeholder {
+    color: #888889!important;
+	font-size:0.9rem!important;
+  }
+input:-moz-placeholder {
+    color: #888889;
+	font-size:0.9rem!important;
+  }
 
-.form-select {
-    width: 10%;
-    padding: 0.375rem 2.25rem 0.375rem 0.75rem;
-    -moz-padding-start: calc(0.75rem - 3px);
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #212529;
-    background-color: #fff;
-    background-image: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e);
-    background-repeat: no-repeat;
-    background-position: right 0.75rem center;
-    background-size: 16px 12px;
-    border: 1px solid #ced4da;
-    border-radius: 0.375rem;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
+input::-moz-placeholder {
+    color: #888889;
+	font-size:0.9rem!important;
+  }
+
+input.nosubmit {
+  border: 1px solid #555;
+  width: 100%;
+  padding: 0 20px 3px 40px;
 }
+
 </style>
+<div class="col-sm-12 col-md-12 col-lg-6 col-md-6 mb-2">
+	<div class="search-form d-lg-flex d-inline-block w-100 <%= if assigns[:additional_classes] do @additional_classes |> Enum.join(" ") end %>">
+		<div class="input-group" title='<%= gettext("Search by Address / Token / Name / Txn Hash / Block") %>'>
+			<div class="form-control form-control-lg search-control me auto px-0 <%= if assigns[:additional_classes] do @additional_classes |> Enum.join(" ") end %>" style="border-color:#71D492">
+				<span style="position: absolute; padding-left: 10px; z-index: 1; top: 10px;"><i class="fa fa-search"></i></span>
+				<input
+					id="<%= @id %>"
+					class="main-search-autocomplete nosubmit"
+					data-test="search_input"
+					data-chain-id="<%= System.get_env("CHAIN_ID") %>"
+					data-display-token-icons="<%= System.get_env("DISPLAY_TOKEN_ICONS") %>"
+					type="text"
+					tabindex="1"
+					style="height:30px"
+				>
+			</div>
+
+			<!-- <div class="input-group-append">
+				<button class="btn btn-teal">
+					<i class="fas fa-search"></i>
+				</button>
+			</div> -->
+		</div>
+	</div>
+</div>

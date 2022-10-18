@@ -1,218 +1,90 @@
-<style>
-
-form h3 {
-  font-size: 40px;
-  /* font-weight: 700; */
-  /* line-height: 42px; */
-  text-align: center;
-}
-
-label {
-  display: block;
-  margin-top: 30px;
-  font-size: 16px;
-  font-weight: 500;
-}
-input {
-  display: block;
-  height: 40px;
-  width: 100%;
-  /* background-color: rgba(255, 255, 255, 0.05); */
-  /* border-radius: 3px; */
-  outline: none;
-
-  padding: 0 10px;
-  margin-top: 8px;
-  font-size: 14px;
-  font-weight: 300;
-}
-::placeholder {
-  color: #000000;
-}
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-/* Firefox */
-input[type=number] {
-  -moz-appearance: textfield;
-}
-
-button {
-  margin-top: 50px;
-
-  width: 50%;
-  background-color: #ffffff;
-  color: #080710;
-  padding: 15px 0;
-  font-size: 18px;
-  font-weight: 600;
-  border-radius: 5px;
-  cursor: pointer;
-}
-#displayHider{
-
-  display: none;
-}
-
-@media only screen and (max-width: 600px) {
-
-}
-
-.containers{
-  display:none;
-}
-
-.loader {
-  height: 20px;
-  width: 50px;
-
-  margin: 10px 20px;
-}
-.loader--dot {
-  animation-name: loader;
-  animation-timing-function: ease-in-out;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  height: 10px;
-  width: 10px;
-  border-radius: 100%;
-  background-color: black;
-  position: absolute;
-  border: 2px solid white;
-}
-.loader--dot:first-child {
-  background-color: #8cc759;
-  animation-delay: 0.5s;
-}
-.loader--dot:nth-child(2) {
-  background-color: #8c6daf;
-  animation-delay: 0.4s;
-}
-.loader--dot:nth-child(3) {
-  background-color: #ef5d74;
-  animation-delay: 0.3s;
-}
-.loader--dot:nth-child(4) {
-  background-color: #f9a74b;
-  animation-delay: 0.2s;
-}
-.loader--dot:nth-child(5) {
-  background-color: #60beeb;
-  animation-delay: 0.1s;
-}
-.loader--dot:nth-child(6) {
-  background-color: #fbef5a;
-  animation-delay: 0s;
-}
-
-.loader--text:after {
-  content: "Loading";
-  font-weight: bold;
-  animation-name: loading-text;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes loader {
-  15% {
-    transform: translateX(0);
-  }
-  45% {
-    transform: translateX(100px);
-  }
-  65% {
-    transform: translateX(100px);
-  }
-  95% {
-    transform: translateX(0);
-  }
-}
-@keyframes loading-text {
-  0% {
-    content: "Loading";
-  }
-  25% {
-    content: "Loading.";
-  }
-  50% {
-    content: "Loading..";
-  }
-  75% {
-    content: "Loading...";
-  }
-}
-#imgAdhaar{
-  display:none;
-}
-tr{
-  border:2px solid black !important;
-  font-size:18px !important;
-}
-
-</style>
-
-
-
-
-
-
-
-
-
-
-  <form class="container  mt-5">
-    <h3>ENTER DETAIL BELOW</h3>
-
-    <label for="username"> Enter Adhaar Card Number</label>
-    <input type="number" placeholder="Enter Adhaar Card Number" id="adhaarNum">
-
-    <div class="text-end">
-      <b class="my-5 btn btn-warning " onclick="otpVerify()">Send OTP</b>
+<div class="container page_min_height">
+  <div class="row px-3">
+    <div class="col-lg-3 col-sm-12 col-md-4 bg-white py-2 shadow border rounded stickysidebar mb-5 last_in_mobile">
+      <div class="card-body border-0 px-2">
+        <h2 class="card-title">Quick Links</h2>
+        <ul class="side_nav my-3">
+        <li><%= link("KYC Verification", to: "/kycselect")%></li>
+        <li><%= link("Contract Address verification", to: "/#")%></li>
+        <li><%= link("Token Update", to: "/tokenupdate")%></li>
+        <li><%= link("Audit Contract", to: "/auditContract")%></li>
+        </ul>
+        </div>
+        <div class="card-body border-0 px-2">
+          <div class="card-title">Watch List & Notes</div>
+          <ul class="side_nav my-3">
+          <li><%= link("Watch List", to: "/#")%></li>
+          <li><%= link("Private Name Tag", to: "/#")%></li>
+          <li><%= link("txn Private Notes", to: "/#")%></li>
+          </ul>
+      </div>
     </div>
 
-    <label for="otp">Enter OTP</label>
-    <input type="number" placeholder="Enter OTP HERE" id="otp">
+    <div class="col-lg-9 col-sm-12 col-md-8">
+      <h1> Auto KYC</h1>
+      <hr class="hor_line"/>
 
-    <div class="text-end">
-      <b class="my-5 btn btn-success "  onclick="otpSubmit()"  >Verify OTP</b>
+      <form class="min_page_height mt-5">
+        <div class="row">
+          <div class="col-md-12 mb-3">
+              <h4>KYC means Know Your Customer and sometimes Know Your Client. KYC or KYC check is the mandatory process of identifying and verifying the client's identity when opening an account and periodically over time. In other words, banks must make sure that their clients are genuinely who they claim to be.</h4>
+          </div>
+          <div class="col-xl-6 col-md-6 col-12">
+            <div class="card shadow">
+              <div class="card-header">Send OTP</div>
+              <div class="card-body">
 
+              <div class="form-group">
+                <label for="username"> Enter Adhaar Card Number</label>
+                <input type="number" class="form-control"  placeholder="Enter Adhaar Card Number" id="adhaarNum">
+              </div>
 
-<div class='containers ' id="loadSelector">
-  <div class='loader '>
-    <div class='loader--dot'></div>
-    <div class='loader--dot'></div>
-    <div class='loader--dot'></div>
-    <div class='loader--dot'></div>
-    <div class='loader--dot'></div>
-    <div class='loader--dot'></div>
+              <div class="text-end">
+                <b class="btn btn-teal" onclick="otpVerify()">Send OTP</b>
+              </div>
 
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6 col-md-6 col-12">
+            <div class="card shadow">
+              <div class="card-header">Verify OTP</div>
+              <div class="card-body">
+                <div class="form-group">
+                  <label for="otp">Enter OTP</label>
+                  <input type="number" class="form-control" placeholder="Enter OTP HERE" id="otp">
+                </div>
+                <div class="">
+                  <b class="btn btn-teal" onclick="otpSubmit()">Verify OTP</b>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class='containers' id="loadSelector">
+              <div class='loader '>
+                <div class='loader--dot'></div>
+                <div class='loader--dot'></div>
+                <div class='loader--dot'></div>
+                <div class='loader--dot'></div>
+                <div class='loader--dot'></div>
+                <div class='loader--dot'></div>
+              </div>
+            </div>
+            <table id="fetchedRecord" class="table table-hover bg-white">  </table>
+            <img class="border" id="imgAdhaar" src="data:image/png;base64,">
+
+            <div id="displayHider">
+              <label for="Pancard"> Enter Pancard Number </label>
+              <input type="text" placeholder="Enter Pan Card Number" id="pan">
+
+              <button class="brn btn-teal mb-5"> Proceed </button>
+            </div>
+        </div>
+      </form>
+    </div>
   </div>
-</div>
-
-    </div>
-
-    <div  >
-<table id="fetchedRecord" style=" border:2px solid red">  </table>
-
-<img id="imgAdhaar" src="data:image/png;base64,">
-
-    </div>
-
-<div id="displayHider">
-
-    <label for="password"> Enter Pancard Number </label>
-    <input type="text" placeholder="Enter Pan Card Number" id="pan">
-
-    <button> Proceed </button>
   </div>
-
-
-
-  </form>
 
 <script>
 
@@ -334,3 +206,148 @@ alert(" INVALID OTP || Please Click On  Send OTP ");
 
 
 </script>
+<style>
+
+form h3 {
+  font-size: 40px;
+  /* font-weight: 700; */
+  /* line-height: 42px; */
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-top: 30px;
+  font-size: 13px;
+  font-weight: 500;
+}
+input {
+  display: block;
+  height: 40px;
+  width: 100%;
+  /* background-color: rgba(255, 255, 255, 0.05); */
+  /* border-radius: 3px; */
+  outline: none;
+
+  padding: 0 10px;
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 300;
+}
+::placeholder {
+  color: #000000;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+#displayHider{
+
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+
+}
+
+.containers{
+  display:none;
+}
+
+.loader {
+  height: 20px;
+  width: 50px;
+
+  margin: 10px 20px;
+}
+.loader--dot {
+  animation-name: loader;
+  animation-timing-function: ease-in-out;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  height: 10px;
+  width: 10px;
+  border-radius: 100%;
+  background-color: black;
+  position: absolute;
+  border: 2px solid white;
+}
+.loader--dot:first-child {
+  background-color: #8cc759;
+  animation-delay: 0.5s;
+}
+.loader--dot:nth-child(2) {
+  background-color: #8c6daf;
+  animation-delay: 0.4s;
+}
+.loader--dot:nth-child(3) {
+  background-color: #ef5d74;
+  animation-delay: 0.3s;
+}
+.loader--dot:nth-child(4) {
+  background-color: #f9a74b;
+  animation-delay: 0.2s;
+}
+.loader--dot:nth-child(5) {
+  background-color: #60beeb;
+  animation-delay: 0.1s;
+}
+.loader--dot:nth-child(6) {
+  background-color: #fbef5a;
+  animation-delay: 0s;
+}
+
+.loader--text:after {
+  content: "Loading";
+  font-weight: bold;
+  animation-name: loading-text;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes loader {
+  15% {
+    transform: translateX(0);
+  }
+  45% {
+    transform: translateX(100px);
+  }
+  65% {
+    transform: translateX(100px);
+  }
+  95% {
+    transform: translateX(0);
+  }
+}
+@keyframes loading-text {
+  0% {
+    content: "Loading";
+  }
+  25% {
+    content: "Loading.";
+  }
+  50% {
+    content: "Loading..";
+  }
+  75% {
+    content: "Loading...";
+  }
+}
+#imgAdhaar{
+  display:none;
+}
+tr{
+  border:2px solid black !important;
+  font-size:18px !important;
+}
+
+</style>

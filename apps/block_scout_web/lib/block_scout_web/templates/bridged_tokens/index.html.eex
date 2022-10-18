@@ -16,16 +16,14 @@
 	  	</div>
 	  </div>
 
-    <div class="addresses-table-container">
+    <div class="">
 		<table class="table">
 		<thead>
 			<tr class="table-head">
 			<th>
 				<div class="stakes-table-th-content">&nbsp;</div>
 			</th>
-			<th>
-				<div>&nbsp;</div>
-			</th>
+
 			<th>
 				<div class="stakes-table-th-content">Token</div>
 			</th>

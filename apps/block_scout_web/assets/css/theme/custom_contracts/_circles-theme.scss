@@ -1,4 +1,4 @@
-$c-primary: #44C997;
+$c-primary: #42C670;
 $c-secondary: #62004A;
 $c-tertiary: #FF8F4B;
 $c-quarternary: #D79FC9;
@@ -7,7 +7,7 @@ $border: #E3E5EB;
 $text: #333;
 $text2: #A4A9B4;
 
-$c-dark-color: #313355;
+$c-dark-color: #2a2a2a;
 $c-dark-color-secondary: #3f426c;
 $c-dark-text-color: #8a8dba;
 
@@ -229,8 +229,8 @@ $c-dark-text-color: #8a8dba;
 
 	.btn-wallet-icon {
 		background-color: transparent !important;
-		border-color: $c-primary !important;
-		color: $c-primary !important;
+		border-color: $border !important;
+		color: $text2 !important;
 	
 		&:hover {
 		  background-color: rgba(125, 34, 68, 0.4) !important;

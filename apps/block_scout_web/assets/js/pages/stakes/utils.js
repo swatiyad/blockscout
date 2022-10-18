@@ -133,7 +133,7 @@ export function isSupportedNetwork (store) {
   if (state.network && state.network.authorized) {
     return true
   }
-  openWarningModal('Unauthorized', 'Please, connect to the xDai Chain.<br /><a href="https://xdaichain.com" target="_blank">Instructions</a>. If you have already connected to, please update MetaMask to the latest version.')
+  openWarningModal('Unauthorized', 'Please, connect to the Analog Chain.<br /><a href="https://rabbit.analogscan.com" target="_blank">Instructions</a>. If you have already connected to, please update MetaMask to the latest version.')
   return false
 }
 

@@ -2,7 +2,7 @@
 <% dark_forest_addresses_list_0_5 = CustomContractsHelpers.get_custom_addresses_list(:dark_forest_addresses_v_0_5) %>
 <% dark_forest_addresses_list = dark_forest_addresses_list_0_4 ++ dark_forest_addresses_list_0_5 %>
 <% current_address = "0x" <> Base.encode16(@address.hash.bytes, case: :lower) %>
-<div class="card-tabs js-card-tabs px-2">
+<div class="card-tabs js-card-tabs bg-lighter">
   <%= link(
         gettext("Transactions"),
         class: "card-tab #{tab_status("transactions", @conn.request_path)}",
@@ -53,24 +53,23 @@
   <% end %>
 
 <%= if contract?(@address) do %>
-  <span class="card-tab">
-        <%= link(
-            gettext("Contracts" ),
-            class: " #{tab_status("contracts-tabs", @conn.request_path)}",
-            to: AccessHelpers.get_path(@conn, :address_contract_path, :index, @address.hash)
-          ) %>
-          <%= if smart_contract_verified?(@address) do %>
-            <%= cond do %>
-              <% Enum.member?(dark_forest_addresses_list, current_address) -> %>
-                <i class="check_dark_forest_icon">
-                  <%= render BlockScoutWeb.IconsView, "_check_dark_forest_icon.html" %>
-                </i>
-              <% true -> %>
-              <img src="https://tronscan.io/static/media/pass.a5215b41.svg" style="width: 1.275rem; height: 1.275rem; margin-left: 4px; margin-top: 2px;">
-            <% end %>
-          <% end %>
+    <%= link(
+      gettext("Contracts" ),
+      class: "card-tab #{tab_status("contracts", @conn.request_path)}",
+      to: AccessHelpers.get_path(@conn, :address_contract_path, :index, @address.hash)
+    ) %>
+
+      <%= if smart_contract_verified?(@address) do %>
+        <%= cond do %>
+          <% Enum.member?(dark_forest_addresses_list, current_address) -> %>
+            <i class="check_dark_forest_icon">
+              <%= render BlockScoutWeb.IconsView, "_check_dark_forest_icon.html" %>
+            </i>
+          <% true -> %>
+            <i class="fa-regular fa-check-circle contract-verfiied-icon text-success"></i>
         <% end %>
-  </span>
+      <% end %>
+    <% end %>
 
    <%= if contract?(@address) do %>
   <%= link(

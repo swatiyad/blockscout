@@ -1,5 +1,44 @@
 <section class="container">
   <%= render BlockScoutWeb.TransactionView, "overview.html", assigns %>
+  <div class="card overflow-auto">
+    <%= render BlockScoutWeb.TransactionView, "_tabs.html", assigns %>
+    <div class="card-body p-0" data-async-load data-async-listing="<%= @current_path %>">
+      <div class="p-3">
+        <h1 class="card-title list-title-description mb-0"><%= gettext "Internal Transactions" %></h1>
+        <div class="list-top-pagination-container-wrapper">
+          <%= render BlockScoutWeb.CommonComponentsView, "_pagination_container.html", position: "top", cur_page_number: "1", show_pagination_limit: true, data_next_page_button: true, data_prev_page_button: true %>
+        </div>
+      </div>
 
+      <button data-error-message class="alert alert-danger col-12 text-left" style="display: none;">
+        <span href="#" class="alert-link"><%= gettext("Something went wrong, click to reload.") %></span>
+      </button>
+       <!--table heading for Internal transfer (txn)-->
+        <table class="table fixed-layout table-hover mb-0">
+          <thead>
+            <tr class="table-head">
+              <th class="wideRow">Txn Hash</th>
+              <th class="screenRow">Block</th>
+              <th class="screenRow">Age</th>
+              <th class="screenRow">From</th>
+              <th class="screenRow">Amount</th>
+              <th class="screenRow"> Txn Type</th>
+              <th class="screenRow"> Type Address</th>
+            </tr>
+          </thead>
+        </table>
+      <div data-empty-response-message style="display: none;">
+        <div class="tile tile-muted text-center" data-selector="empty-logs-list">
+          <%= gettext "There are no internal transactions for this transaction." %>
+        </div>
+      </div>
+
+      <div data-items>
+        <%= render BlockScoutWeb.CommonComponentsView, "_tile-loader.html" %>
+      </div>
+
+      <%= render BlockScoutWeb.CommonComponentsView, "_pagination_container.html", position: "bottom", cur_page_number: "1", show_pagination_limit: true, data_next_page_button: true, data_prev_page_button: true %>
+    </div>
+  </div>
   <script defer data-cfasync="false" src="<%= static_path(@conn, "/js/token-transfers-toggle.js") %>"></script>
  </section>

@@ -11,7 +11,7 @@
     <div class="card">
       <%= render OverviewView, "_tabs.html", assigns %>
 
-    <div class="card-body" data-async-load data-async-listing="<%= @current_path %>">
+    <div class="card-body p-0" data-async-load data-async-listing="<%= @current_path %>">
       <h2 class="card-title list-title-description"><%= gettext "Inventory" %></h2>
 
       <div class="list-top-pagination-container-wrapper">
@@ -23,7 +23,7 @@
         </button>
 
         <div data-empty-response-message style="display: none;">
-          <div class="tile tile-muted text-center" data-selector="empty-token-list">
+          <div class="tile tile-muted text-center m-3" data-selector="empty-token-list">
             <%= gettext "There are no tokens." %>
           </div>
         </div>

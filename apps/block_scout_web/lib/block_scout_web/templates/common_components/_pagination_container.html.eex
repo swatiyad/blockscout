@@ -1,5 +1,5 @@
 <div
-class='pagination-container pb-0 <%= if assigns[:position] == "top" do %>position-top<% end %> <%= if assigns[:position] == "bottom" do %>position-bottom<% end %>'
+class='pagination-container px-2 pb-0 mb-2 <%= if assigns[:position] == "top" do %>position-top<% end %> <%= if assigns[:position] == "bottom" do %>position-bottom<% end %>'
 data-pagination-container>
     <%= if false do %>
     <!-- Pagination limit -->

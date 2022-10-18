@@ -1,110 +1,114 @@
-<footer class="footer"style="background:url(/images/geometic-bg-black.jpg); color:#dee2e6 !important;">
-  <div class="footer-body container">
-    <!-- Logo -->
+<style>
+ .footer {
+    background-image: url(/images/globe_polygon.png);
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:bottom right;
+    }
+</style>
+<footer class="footer pb-0">
+  <div class="footer-overlay">
+    <div class="container">
+          <!-- Logo -->
+      <% other_explorers = other_explorers() %>
+      <% col_size = if Enum.empty?(other_explorers), do: 4, else: 2 %>
 
-    <% other_explorers = other_explorers() %>
-    <% col_size = if Enum.empty?(other_explorers), do: 4, else: 2 %>
-
-    <div class="row justify-content-between">
-      <div class="col-xs-12 col-lg-6">
-      <div class="row">
-      <div class="col-xs-12 col-md-4 col-lg-<%= col_size %> footer-list">
-        <h3>INRx Ecosystem</h3>
-        <ul>
-          <li><a href="<%= issue_link(@conn) %>" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("INRx Network") %></a></li>
-          <li><a href="https://github.com/blockscout/blockscout" rel="noreferrer" class="footer-link"><%= gettext("Calculas Wallet") %></a></li>
-          <li><a href="http://discord.gg/gnosischain" rel="noreferrer" class="footer-link"><%= gettext("Black Pepper") %></a></li>
-          <li><a href="https://forum.poa.network/c/blockscout" rel="noreferrer" class="footer-link"><%= gettext("Warmhole Spall") %></a></li>
-        </ul>
-      </div>
-      <% main_nets = main_nets(other_networks()) %>
-
-      <%= unless Enum.empty?(main_nets) do %>
-        <div class="col-xs-12 col-md-4 col-lg-<%= col_size %> footer-list">
-          <h3><%= gettext("Developers") %></h3>
-          <ul>
-            <li><a href="<%= issue_link(@conn) %>" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("Github") %></a></li>
-            <li><a href="<%= issue_link(@conn) %>" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("Xide Work") %></a></li>
-            <li><a href="<%= issue_link(@conn) %>" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("Documentation") %></a></li>
-            <li><a href="<%= issue_link(@conn) %>" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("Developer Hub") %></a></li>
-            <%= if System.get_env("COIN_NAME") && System.get_env("NETWORK_PATH") && System.get_env("SUBNETWORK") && System.get_env("JSON_RPC") && System.get_env("CHAIN_ID") do %>
-            <li><a class="footer-link js-btn-add-chain-to-mm btn-add-chain-to-mm in-footer" style="cursor: pointer;"><%= gettext("Add") <> " #{System.get_env("SUBNETWORK")}" %></a></li>
-          <% end %>
-                 <%= if Application.get_env(:block_scout_web, BlockScoutWeb.ApiRouter)[:reading_enabled] || Application.get_env(:block_scout_web, :api_url) do %>
-          <li class="nav-item dropdown">
-            <a href="#" role="button" id="navbarAPIsDropdown" class=" footer-link topnav-nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <%# <span class="nav-link-icon">
-                <%= render BlockScoutWeb.IconsView, "_api_icon.html" %
-              </span> %>
-              <%= gettext("APIs") %>
-            </a>
-            <div class="dropdown-menu" aria-labeledby="navbarTransactionsDropdown">
-              <%= link(
-                    gettext("GraphQL"),
-                    class: "dropdown-item #{tab_status("graphiql", @conn.request_path)}",
-                    to: api_url() <> "/graphiql"
-                  ) %>
-              <%= link(
-                    gettext("RPC"),
-                    class: "dropdown-item #{tab_status("api-docs", @conn.request_path)}",
-                    to: api_url() <> api_docs_path(@conn, :index)
-                  ) %>
-              <%= link(
-                    gettext("Eth RPC"),
-                    class: "dropdown-item #{tab_status("eth-rpc-api-docs", @conn.request_path)}",
-                    to: api_url() <> api_docs_path(@conn, :eth_rpc)
-                  ) %>
+      <div class="row justify-content-between">
+        <div class="col-xs-12 col-lg-8">
+          <div class="row">
+            <div class="col-xs-12 col-md-4 col-lg-<%= col_size %> footer-list">
+              <h2> Ecosystem</h2>
+              <ul>
+                <li><a href="https://inrx.network/" rel="noreferrer" class="footer-link text-white" target="_blank"><%= gettext("INRx Network") %></a></li>
+                <li><a href="https://inrxscan.com/" rel="noreferrer" class="footer-link text-white" target="_blank"><%= gettext("INRx Explorer") %></a></li>
+                <li><a href="https://analog.inceptive/" rel="noreferrer" class="footer-link text-white" target="_blank"><%= gettext("Analog Inceptive") %></a></li>
+                <li><a href="https://pepperwallet.io/" rel="noreferrer" class="footer-link text-white" target="_blank"><%= gettext("Pepper Wallet") %></a></li>
+                <li><a href="https://calculas.finance/" rel="noreferrer" class="footer-link text-white" target="_blank"><%= gettext("Calculas Dex") %></a></li>
+                <li><a href="https://xtring.network/" rel="noreferrer" class="footer-link text-white" target="_blank"><%= gettext("Xtring Network") %></a></li>
+              </ul>
             </div>
-          </li>
-          <% end %>
+            <% main_nets = main_nets(other_networks()) %>
+              <%= unless Enum.empty?(main_nets) do %>
+                <div class="col-xs-12 col-md-4 col-lg-<%= col_size %> footer-list">
+                  <h2><%= gettext("Developers") %></h2>
+                  <ul>
+                    <li><a href="<%= issue_link(@conn) %>" rel="noreferrer" class="footer-link text-white text-white" target="_blank"><%= gettext("Github") %></a></li>
+                    <li><a href="https://xide.work" rel="noreferrer" class="footer-link text-white text-white" target="_blank"><%= gettext("Xide Work") %></a></li>
+                    <li><a href="<%= issue_link(@conn) %>" rel="noreferrer" class="footer-link text-white text-white" target="_blank"><%= gettext("Documentation") %></a></li>
+                    <li><a href="<%= issue_link(@conn) %>" rel="noreferrer" class="footer-link text-white text-white" target="_blank"><%= gettext("Developer Hub") %></a></li>
+                    <%= if Application.get_env(:block_scout_web, BlockScoutWeb.ApiRouter)[:reading_enabled] || Application.get_env(:block_scout_web, :api_url) do %>
+                  </ul>
+                </div>
+              <% end %>
+            <% end %>
 
-          </ul>
+            <% test_nets = test_nets(other_networks()) %>
+
+            <%= unless Enum.empty?(test_nets) do %>
+              <div class="col-xs-12 col-md-4 col-lg-<%= col_size %> footer-list">
+                <h2><%= gettext("Foundation") %></h2>
+                <ul>
+                  <li><a href="http://inrx.foundation/" rel="noreferrer" class="footer-link text-white" target="_blank"><%= gettext("INRx Foundation") %></a></li>
+                  <li><a href="http://analog.network/" target="_blank" rel="noreferrer" class="footer-link text-white"><%= gettext("Analog Foundation") %></a></li>
+                  <li><a href="http://deo.foundation/" target="_blank" rel="noreferrer" class="footer-link text-white"><%= gettext("DEO Foundation") %></a></li>
+
+                </ul>
+              </div>
+            <% end %>
+          </div>
         </div>
-      <% end %>
 
-      <% test_nets = test_nets(other_networks()) %>
+        <div class="col-xs-12 col-lg-3">
+          <div class="footer-logo-row">
+            <div class="col-md-12">
+              <%= link to: webapp_url(@conn), class: "footer-brand" do %>
+                <%= if logo_footer() do %>
+                  <img class="footer-logo"  width="236" height="50" src="<%= static_path(@conn, logo_footer()) %>" alt="<%= subnetwork_title() %>" />
+                <% end %>
+                <%= if logo_text() do %>
+                  <span class="logo-text in-footer <%= unless logo_footer(), do: "no-logo" %>"> <%= logo_text() %> </span>
+                <% end %>
+              <% end %>
+            </div>
+          </div>
+          <p class="footer-info-text"><%= gettext("Analog Scan is a decentralised platform for smart contracts that also includes an analytics platform and a block explorer.") %></p>
 
-      <%= unless Enum.empty?(test_nets) do %>
-        <div class="col-xs-12 col-md-4 col-lg-<%= col_size %> footer-list">
-          <h3><%= gettext("About Us") %></h3>
-          <ul>
-            <li><a href="<%= issue_link(@conn) %>" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("Team Info") %></a></li>
-            <li><a href="<%= issue_link(@conn) %>" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("Support Center") %></a></li>
-            <li><a href="<%= issue_link(@conn) %>" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("Privacy Policy") %></a></li>
-            <li><a href="<%= issue_link(@conn) %>" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("Terms of Service") %></a></li>
-          </ul>
         </div>
-      <% end %>
-  </div>
-  </div>
+      </div>
 
-       <div class="col-xs-12 col-lg-3">
-         <div class="row footer-logo-row">
-      <div class="col-md-12">
-        <%= link to: webapp_url(@conn), class: "footer-brand" do %>
-          <%= if logo_footer() do %>
-            <img class="footer-logo" src="<%= static_path(@conn, logo_footer()) %>" alt="<%= subnetwork_title() %>" />
-          <% end %>
-          <%= if logo_text() do %>
-            <span class="logo-text in-footer <%= unless logo_footer(), do: "no-logo" %>"> <%= logo_text() %> </span>
-          <% end %>
+    </div>
+  </div>
+   <div class="col-md-12">
+    <div class="row footer-bottom text-white">
+      <div class="col-md-6 col-8 mb-sm">
+        <!-- Dark mode changer -->
+        <button class="dark-mode-changer btn-sm btn btn-dark" id="dark-mode-changer" data-toggle="tooltip" data-title="Day/Night Mode" data-original-title="" title="">
+          <i class="fas fa-moon"></i>
+        </button>
+        <span class="ml"></span>
+
+
+
+        <%= if System.get_env("COIN_NAME") && System.get_env("NETWORK_PATH") && System.get_env("SUBNETWORK") && System.get_env("JSON_RPC") && System.get_env("CHAIN_ID") do %>
+          <a class="footer-link text-white text-white js-btn-add-chain-to-mm btn-add-chain-to-mm in-footer" style="cursor: pointer;">
+          <!--<%= gettext("Add") <> " #{System.get_env("SUBNETWORK")}" %>  Network</a> -->
+          Add Rabbit Network </a>
         <% end %>
       </div>
-    </div>
-
-        <p class="footer-info-text"><%= gettext("Blockscout is a tool for inspecting and analyzing EVM based blockchains. Blockchain explorer for Ethereum Networks.") %></p>
+      <div class="col-md-6 col-4">
+        <%# <span><i class="fas fa-copyright"></i>  copyright Rabbit Testnet - Analog Blockchain Explorer</span> %>
         <div class="footer-social-icons">
-          <a href="https://github.com/blockscout/blockscout" rel="noreferrer" target="_blank" class="footer-social-icon" title='<%= gettext("Github") %>'>
-            <div class="footer-social-icon-container fontawesome-icon github"></div>
-          </a>
-          <a href="https://www.twitter.com/blockscoutcom/" rel="noreferrer" target="_blank" class="footer-social-icon" title='<%= gettext("Twitter") %>'>
-            <div class="footer-social-icon-container fontawesome-icon twitter"></div>
-          </a>
-          <a href="https://t.me/poa_network" rel="noreferrer" target="_blank" class="footer-social-icon" title='<%= gettext("Telegram") %>'>
-            <div class="footer-social-icon-container fontawesome-icon telegram"></div>
-          </a>
+            <a href="https://github.com/blockscout/blockscout" rel="noreferrer" target="_blank" class="footer-social-icon" title='<%= gettext("Github") %>'>
+              <div class="footer-social-icon-container fontawesome-icon github"></div>
+            </a>
+            <a href="https://www.twitter.com/blockscoutcom/" rel="noreferrer" target="_blank" class="footer-social-icon" title='<%= gettext("Twitter") %>'>
+              <div class="footer-social-icon-container fontawesome-icon twitter"></div>
+            </a>
+            <a href="https://t.me/poa_network" rel="noreferrer" target="_blank" class="footer-social-icon" title='<%= gettext("Telegram") %>'>
+              <div class="footer-social-icon-container fontawesome-icon telegram"></div>
+            </a>
         </div>
       </div>
     </div>
-  </div>
+   </div>
 </footer>

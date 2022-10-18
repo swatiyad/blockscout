@@ -1,7 +1,7 @@
-<div class="chart_box gas-price-oracle">
-    <span class="dashboard-banner-chart-legend-label">
-    <%= gettext "Gas tracker" %>
-    </span>
+<div class="chart_box-- gas-price-oracle">
+   <!-- <span class="dashboard-banner-chart-legend-label">
+    <%= gettext "Gas Price" %>
+    </span>-->
     <div class="dashboard-banner-chart-legend-value-container">
         <% gas_prices_from_oracle = gas_prices() %>
         <%= if gas_prices_from_oracle do %>
@@ -13,7 +13,7 @@
                 data-toggle="tooltip"
                 data-placement="top"
                 data-html="true"
-                data-template="<div class='tooltip tooltip-inversed-color tooltip-gas-tracker' role='tooltip'><div class='arrow'></div><div class='tooltip-inner'></div></div>"
+                data-template="<div class='tooltip tooltip-gas-tracker' role='tooltip'><div class='arrow'></div><div class='tooltip-inner'></div></div>"
                 title="
                 <div class='custom-tooltip header'><%= gettext "Gas tracker" %></div>
                 <div>
@@ -23,21 +23,21 @@
                 </div>
                 "
                 >
-                <span style="display: inline-block; height: 20px; width: 12px;" class="fontawesome-icon info-circle ml-1"></span>
+                <span style="display: inline-block; height: 20px; width: 12px;" class="fa fa-info-circle ml-1 text-info"></span>
                 </span>
             </div>
             </div>
         </span>
         <% else %>
-        <%= if @gas_price do %>
-            <span class="dashboard-banner-chart-legend-value inline ml-2">
-            <span class="gas-price-icon">
-                <%= render BlockScoutWeb.IconsView, "_gas_price_icon.html" %>
-            </span>
-            <%= @gas_price <> " " %>
-            <%= gettext "Gwei" %>
-            </span>
-        <% end %>
+            <%= if @gas_price do %>
+                <span class="dashboard-banner-chart-legend-value inline ml-2">
+                <span class="gas-price-icon">
+                    <%= render BlockScoutWeb.IconsView, "_gas_price_icon.html" %>
+                </span>
+                <%= @gas_price <> " " %>
+                <%= gettext "Gwei" %>
+                </span>
+            <% end %>
         <% end %>
     </div>
 </div>

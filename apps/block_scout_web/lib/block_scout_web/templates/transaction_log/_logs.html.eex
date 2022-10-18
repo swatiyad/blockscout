@@ -1,4 +1,4 @@
-<div data-test="transaction_log" class="tile tile-muted">
+<div data-test="transaction_log" class="well bg-gray">
   <% decoded_result = decode(@log, @transaction) %>
   <%= case decoded_result do %>
     <%= {:error, :contract_not_verified, _cadidates} -> %>

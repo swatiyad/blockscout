@@ -1,330 +1,256 @@
-<style>
-  :root {
-  --background-gradient: linear-gradient(30deg, #f39c12 30%, #f1c40f);
-  --gray: #34495e;
-  --darkgray: #ffffff;
-}
-
-select {
-  /* Reset Select */
-  appearance: none;
-  outline: 0;
-  border: 0;
-  box-shadow: none;
-  /* Personalize */
-  flex: 1;
-  padding: 0 1em;
-  color: rgb(0, 0, 0);
-  background-color: var(--darkgray);
-  background-image: none;
-  cursor: pointer;
-
-}
-/* Remove IE arrow */
-select::-ms-expand {
-  display: none;
-}
-/* Custom Select wrapper */
-.select {
-  position: relative;
-  display: flex;
-  width: 20em;
-  height: 3em;
-  border-radius: .25em;
-  overflow: hidden;
-  border: 0.1px solid black;
-}
-/* Arrow */
-.select::after {
-  content: '\25BC';
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 1em;
-  background-color: #ffffff;
-  transition: .25s all ease;
-  pointer-events: none;
-  /* border: 1px solid black; */
-}
-/* Transition */
-.select:hover::after {
-  color: #59f312;
-}
-.width_setter{
-  width:100%;
-  height: 40px;
-}
-
-</style>
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
-    crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-</head>
-<body>
-  <div class="text-center">
-    <h2>Token Update Application Form</h2>
-<div class="container my-5">
-
-  <div class="">
-    <div class="container">
-      <div class="row  shadow p-3 " style="border-top: 5px solid rgb(12, 226, 12); ">
-        <div class="col-sm-5 ">
-          <h2>Request Type</h2>
-          <p>Please specify the category of your token update application.</p>
+<div class="container">
+      <div class="row px-3">
+        <div class="col-lg-3 col-sm-12 col-md-4 bg-white py-2 shadow border rounded stickysidebar mb-5 last_in_mobile">
+          <div class="card-body border-0 px-2">
+            <h2 class="card-title">Quick Links</h2>
+            <ul class="side_nav my-3">
+            <li><%= link("KYC Verification", to: "/kycselect")%></li>
+            <li><%= link("Contract Address verification", to: "/#")%></li>
+            <li><%= link("Token Update", to: "/tokenupdate")%></li>
+            <li><%= link("Audit Contract", to: "/auditContract")%></li>
+            </ul>
+            </div>
+            <div class="card-body border-0 px-2">
+              <div class="card-title">Watch List & Notes</div>
+              <ul class="side_nav my-3">
+              <li><%= link("Watch List", to: "/#")%></li>
+              <li><%= link("Private Name Tag", to: "/#")%></li>
+              <li><%= link("txn Private Notes", to: "/#")%></li>
+              </ul>
+          </div>
         </div>
-        <div class="col-sm-7 text-start">
-       <p>Choose one </p>
-       <form>
-        <div class="select">
-          <select>
-            <option value="1">New/First Time Token Update</option>
-            <option value="2">Existing Token Info Update</option>
-            <option value="3">Token/Contract Migration</option>
-          </select>
+        <div class="col-lg-9 col-sm-12 col-md-8">
+          <h2>Token Update Application Form</h2>
+          <hr class="hor_line"/>
+          <div class="card">
+            <div class="card-header">
+              Request Type
+            </div>
+            <div class="card-body">
+             <p>Please specify the category of your token update application.</p>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>Choose one </label>
+                    <select class="form-control">
+                      <option value="1">New/First Time Token Update</option>
+                      <option value="2">Existing Token Info Update</option>
+                      <option value="3">Token/Contract Migration</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>Comment/Message</label>
+                    <textarea name="" id=""  class="form-control" cols="50" rows="2"></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              Basic Information
+            </div>
+            <div class="card-body">
+              <p>Kindly check that all the links provided are working and are safe to visit before submitting.</p>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label>  Token Contract Address * </label>
+                      <input class="form-control" type="text" name="" id="">
+                    </div>
+                    <div class="form-group">
+                      <label>  Requester Name* </label>
+                      <input  class="form-control" type="text" name="" id="">
+                    </div>
+                    <div class="form-group">
+                      <label> Requester Email Address * </label>
+                      <input  class="form-control" type="text" name="" id="">
+                    </div>
+                    <div class="form-group">
+                      <label> Project Name* </label>
+                      <input  class="form-control" type="text" name="" id="">
+                    </div>
+                    <div class="form-group">
+                      <label> Official Project Website * </label>
+                      <input  class="form-control" type="text" name="" id="">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label>Official Project Email Address *</label>
+                      <input  class="form-control" type="text" name="" id="">
+                    </div>
+                    <div class="form-group">
+                      <label>Link to download a 32x32 png icon logo *</label>
+                      <input  class="form-control" type="text" name="" id="">
+                    </div>
+                    <div class="form-group">
+                      <label>Project Sector*</label>
+                      <input  class="form-control" type="text" name="" id="">
+                    </div>
+                    <div class="form-group">
+                      <label>Project Description (Max 300 characters)*</label>
+                      <input  class="form-control" type="text" name="" id="">
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              Social Profiles
+            </div>
+            <div class="card-body">
+              <p>Kindly provide us with the links to your official social media pages on these platforms. These are usually the secondary channels which users may use to contact your team.</p>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>  Token Contract Address * </label>
+                    <input class="form-control" type="text" name="" id="">
+                  </div>
+                  <div class="form-group">
+                    <label>  WhitePaper URl </label>
+                    <input  class="form-control" type="text" name="" id="">
+                  </div>
+                  <div class="form-group">
+                    <label> GIthub URl  <i class="fa-brands fa-github-square text-info"></i></label>
+                    <input  class="form-control" type="text" name="" id="">
+                  </div>
+                  <div class="form-group">
+                    <label> Telegram URl <i class="fa-brands fa-telegram text-info"></i> </label>
+                    <input  class="form-control" type="text" name="" id="">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label> Facebook URl <i class="fa-brands fa-facebook text-info"></i> </label>
+                    <input  class="form-control" type="text" name="" id="">
+                  </div>
+                  <div class="form-group">
+                    <label>LInkdin URl <i class="fa-brands fa-linkedin text-info"> </i></label>
+                    <input  class="form-control" type="text" name="" id="">
+                  </div>
+                  <div class="form-group">
+                    <label>Twitter <i class="fa-brands fa-twitter-square text-info"></i>  </label>
+                    <input  class="form-control" type="text" name="" id="">
+                  </div>
+                  <div class="form-group">
+                    <label>discord URl <i class="fa-brands fa-discord text-info"></i></label>
+                    <input  class="form-control" type="text" name="" id="">
+                  </div>
+                </div>
+             </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              Price Data
+            </div>
+            <div class="card-body">
+              <p>Kindly take note that the price data will be obtained through these service providers. By default, price data will be provided by Coinmarketcap while exchanges with trading pairs will be provided by Coingecko. If your token is not listed on either platform, its respective values will not be shown.</p>
+              <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label>  CoinMarketCap Ticker </label>
+                      <input class="form-control" placeholder="https://coinmarketcap.com/currencies/ethereum/" type="text" name="" id="">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label>  CoinGecko Ticker</label>
+                      <input  class="form-control" placeholder="https://www.coingecko.com/en/coins/ethereum" type="text" name="" id="">
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="card">
+
+              <div class="card-header">
+                Others
+              </div>
+              <div class="card-body">
+               <p>Information pertaining to the project’s token sales (ICO/IEO) and/or burn history. Kindly provide links/sources where required.</p>
+               <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>  Public Sale (ICO/IEO) Details (if applicable) </label>
+                    <select name="ctl00$ContentPlaceHolder1$txtTokenIcoInfo" rows="23" cols="20" id="ContentPlaceHolder1_txtTokenIcoInfo" class="form-control" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" aria-invalid="false">
+                      <option>Token Sale Address</option>
+                      <option>Token Sale Start Date</option>
+                      <option>Token Sale End Date</option>
+                      <option>Token Price (in USD and/or ETH)</option>
+                      <option> Public Sale Allocation </option>
+                      <option> Public Sale Vesting Period </option>
+                      <option> IEO Launchpad </option>
+                      <option> Country </option>
+                      <option> Soft Cap / Hard Cap (If any) </option>
+                      <option> Amount Raised: </option>
+                      <option> 11. Token Distribution Date </option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label> Public Sale (ICO/IEO) Details (if applicable) </label>
+
+                    <select name="ctl00$ContentPlaceHolder1$txtTokenPrivateSaleInfo" rows="13" cols="20" id="ContentPlaceHolder1_txtTokenPrivateSaleInfo" class="form-control" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" aria-invalid="false">
+                      <option> Private Sale Token Price (in USD and/or ETH) </option>
+
+                      <option> Private Sale Allocation </option>
+
+                      <option> Private Sale Vesting Period </option>
+
+                      <option> Seed Sale Token Price (in USD and/or ETH)</option>
+
+                      <option> Seed Sale Allocation </option>
+
+                      <option> Seed Sale Vesting Period</option>
+
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label> Burn Events (if applicable)</label>
+                    <select name="ctl00$ContentPlaceHolder1$txtTokenBurnEvents" rows="10" cols="20" id="ContentPlaceHolder1_txtTokenBurnEvents" class="form-control" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" aria-invalid="false">
+                      <option> Announcements Link:
+                          Tx Hash:</option>
+
+                        <option> Announcements Link:
+                          Tx Hash:</option>
+
+                      <option> Announcements Link:
+                          Tx Hash: </option>
+
+                    </select>
+                  </div>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div class="my-3">
-          <p>Comment/Message</p>
-          <textarea name="" id=""  class="width_setter" cols="50" rows="3"></textarea>
-        </div>
-      </form>
-        </div>
+        <div class="card">
+          <div class="card-body">
+            <input type="checkbox" class=" text-start fs-14" id="" required> <span style=" text-align: justify;"> By clicking 'Submit', you are agreeing that you have provided all the details and information required for the token update process. Should any details or information submitted are found to be incomplete, false or fraudulent, we reserve the right to reject your token update request and we are not obliged to disclose or explain our reasons of rejection. If your submission is aptly completed, please expect a reply with further instructions from our team within the next 3-5 business days from date of submission. Please do not submit duplicate submissions within this period of time. </span>
+            <a class="text-danger"> check and agree </a>
 
+            <div class="my-3 d-flex justify-content-end">
+            <script src="https://www.google.com/recaptcha/api.js"></script>
+            <div class="g-recaptcha brochure__form__captcha" data-sitekey="YOUR SITE KEY"></div>
+            </div>
+            <div class="my-4 text-right">
+              <button  class="btn btn-secondary " type="reset"> Reset </button>
+              <button  class="btn btn-primary" type="submit"> Submit </button>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+     </div>
   </div>
-
 </div>
-
-
-<div class="container my-5">
-
-  <div class="">
-    <div class="container">
-      <div class="row  shadow p-3 " style="border-top: 5px solid rgb(12, 226, 12); ">
-        <div class="col-sm-5 ">
-          <h2>Basic Information</h2>
-          <p>Kindly check that all the links provided are working and are safe to visit before submitting.</p>
-        </div>
-        <div class="col-sm-7 text-start">
-       <p>  Token Contract Address * </p>
-
-          <input class="width_setter" type="text" name="" id="">
-          <p>  Requester Name* </p>
-
-          <input  class="width_setter" type="text" name="" id="">
-          <p> Requester Email Address * </p>
-
-          <input  class="width_setter" type="text" name="" id="">
-
-          <p> Project Name* </p>
-
-          <input  class="width_setter" type="text" name="" id="">
-
-          <p> Official Project Website * </p>
-
-          <input  class="width_setter" type="text" name="" id="">
-
-          <p>Official Project Email Address *</p>
-          <input  class="width_setter" type="text" name="" id="">
-
-          <p>Link to download a 32x32 png icon logo *</p>
-          <input  class="width_setter" type="text" name="" id="">
-
-          <p>Project Sector*</p>
-          <input  class="width_setter" type="text" name="" id="">
-
-          <p>Project Description (Max 300 characters)*</p>
-          <input  class="width_setter" type="text" name="" id="">
-
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-</div>
-
-
-
-<div class="container my-5">
-
-  <div class="">
-    <div class="container">
-      <div class="row  shadow p-3 " style="border-top: 5px solid rgb(12, 226, 12); ">
-        <div class="col-sm-5 ">
-          <h2>Social Profiles</h2>
-          <p>Kindly provide us with the links to your official social media pages on these platforms. These are usually the secondary channels which users may use to contact your team.</p>
-        </div>
-        <div class="col-sm-7 text-start">
-       <p>  Token Contract Address * </p>
-
-          <input class="width_setter" type="text" name="" id="">
-          <p>  WhitePaper URl </p>
-
-          <input  class="width_setter" type="text" name="" id="">
-          <p> GIthub URl  <i class="fa-brands fa-github-square"></i></p>
-
-          <input  class="width_setter" type="text" name="" id="">
-
-          <p> Telegram URl <i class="fa-brands fa-telegram"></i> </p>
-
-          <input  class="width_setter" type="text" name="" id="">
-
-          <p> Facebook URl <i class="fa-brands fa-facebook"></i> </p>
-
-          <input  class="width_setter" type="text" name="" id="">
-
-          <p>LInkdin URl <i class="fa-brands fa-linkedin"> </i></p>
-          <input  class="width_setter" type="text" name="" id="">
-
-          <p>Twitter <i class="fa-brands fa-twitter-square"></i>  </p>
-          <input  class="width_setter" type="text" name="" id="">
-
-          <p>discord URl <i class="fa-brands fa-discord"></i></p>
-          <input  class="width_setter" type="text" name="" id="">
-
-
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-</div>
-
-
-<div class="container my-5">
-
-  <div class="">
-    <div class="container">
-      <div class="row  shadow p-3 " style="border-top: 5px solid rgb(12, 226, 12); ">
-        <div class="col-sm-5 ">
-          <h2>Price Data</h2>
-          <p>Kindly take note that the price data will be obtained through these service providers. By default, price data will be provided by Coinmarketcap while exchanges with trading pairs will be provided by Coingecko. If your token is not listed on either platform, its respective values will not be shown.</p>
-        </div>
-        <div class="col-sm-7 text-start">
-       <p>  CoinMarketCap Ticker </p>
-
-          <input class="width_setter" placeholder="https://coinmarketcap.com/currencies/ethereum/" type="text" name="" id="">
-          <p>  CoinGecko Ticker</p>
-
-          <input  class="width_setter" placeholder="https://www.coingecko.com/en/coins/ethereum" type="text" name="" id="">
-
-
-
-
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-</div>
-
-<div class="container my-5">
-
-  <div class="">
-    <div class="container shadow">
-      <div class="row  shadow p-3 " style="border-top: 5px solid rgb(12, 226, 12); ">
-        <div class="col-sm-5 ">
-          <h2>Others</h2>
-          <p>Information pertaining to the project’s token sales (ICO/IEO) and/or burn history. Kindly provide links/sources where required.</p>
-        </div>
-        <div class="col-sm-7 text-start">
-       <p>  Public Sale (ICO/IEO) Details (if applicable) </p>
-
-       <textarea name="ctl00$ContentPlaceHolder1$txtTokenIcoInfo" rows="23" cols="20" id="ContentPlaceHolder1_txtTokenIcoInfo" class="form-control" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" aria-invalid="false">1. *Token Sale Address:
-
-        2. *Token Sale Start Date:
-
-        3. *Token Sale End Date:
-
-        4. *Token Price (in USD and/or ETH):
-
-        5. Public Sale Allocation:
-
-        6. Public Sale Vesting Period:
-
-        7. IEO Launchpad:
-
-        8. Country:
-
-        9. Soft Cap / Hard Cap (If any):
-
-        10. Amount Raised:
-
-        11. Token Distribution Date:
-
-        </textarea>
-
-          <p>
-            Public Sale (ICO/IEO) Details (if applicable)</p>
-
-            <textarea name="ctl00$ContentPlaceHolder1$txtTokenPrivateSaleInfo" rows="13" cols="20" id="ContentPlaceHolder1_txtTokenPrivateSaleInfo" class="form-control" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" aria-invalid="false">1. Private Sale Token Price (in USD and/or ETH):
-
-              2. Private Sale Allocation:
-
-              3. Private Sale Vesting Period:
-
-              4. Seed Sale Token Price (in USD and/or ETH):
-
-              5. Seed Sale Allocation:
-
-              6. Seed Sale Vesting Period:
-
-              </textarea>
-
-              <p>
-                Burn Events (if applicable)</p>
-
-                <textarea name="ctl00$ContentPlaceHolder1$txtTokenBurnEvents" rows="10" cols="20" id="ContentPlaceHolder1_txtTokenBurnEvents" class="form-control" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" aria-invalid="false">1. Announcements Link:
-                  Tx Hash:
-
-               2. Announcements Link:
-                  Tx Hash:
-
-               3. Announcements Link:
-                  Tx Hash:
-
-               </textarea>
-
-        </div>
-
-      </div>
-
-      <div class="my-5">
-
-        <input type="checkbox" class=" text-start" id="customControlValidation1" required> <span style=" text-align: justify;"> By clicking 'Submit', you are agreeing that you have provided all the details and information required for the token update process. Should any details or information submitted are found to be incomplete, false or fraudulent, we reserve the right to reject your token update request and we are not obliged to disclose or explain our reasons of rejection. If your submission is aptly completed, please expect a reply with further instructions from our team within the next 3-5 business days from date of submission. Please do not submit duplicate submissions within this period of time. </span>
-        <p  class="text-danger">Please check and agree</p>
-      </div>
-
-      <script src="https://www.google.com/recaptcha/api.js"></script>
-      <div class="g-recaptcha brochure__form__captcha" data-sitekey="YOUR SITE KEY"></div>
-      <div >
-      <button  class="btn btn-secondary" type="reset"> Reset</button>
-      <button  class="btn btn-primary" type="submit"> submit </button>
-    </div>
-    </div>
-  </div>
-
-
-
-</div>
-
-
-
-  </div>
-</body>

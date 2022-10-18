@@ -1,4 +1,4 @@
-<div class="stakes-top-stats-item">
-  <span class="stakes-top-stats-label"><%= @title %></span>
-  <span class="stakes-top-stats-value"><%= @value %></span>
-</div>
+<dl class="row stakes-top-stats-item--">
+  <dt><span class="col-sm-4 col-lg-4 text-muted stakes-top-stats-label--"><%= @title %></span></dt>
+  <dd><span class="col-sm-8 col-lg-8 stakes-top-stats-value--"><%= @value %></span></dd>
+</dl>

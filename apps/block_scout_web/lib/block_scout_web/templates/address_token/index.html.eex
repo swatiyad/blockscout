@@ -17,13 +17,10 @@
           <%= render BlockScoutWeb.CommonComponentsView, "_pagination_container.html", position: "top", show_pagination_limit: true, data_next_page_button: true, data_prev_page_button: true %>
         </div>
 
-        <div class="stakes-table-container">
-            <table style="width: 100%;">
+        <div class="stakes-table-container card border-top-0">
+            <table class="table table-hover mb-0" style="width: 100%;">
                 <thead>
                     <tr>
-                        <th class="stakes-table-th">
-                            <div class="stakes-table-th-content">&nbsp;</div>
-                        </th>
                         <th class="stakes-table-th">
                             <div>&nbsp;</div>
                         </th>
@@ -61,7 +58,7 @@
         </button>
 
         <div data-empty-response-message style="display: none;">
-          <div class="tile tile-muted text-center" data-selector="empty-token-list">
+          <div class="tile tile-muted text-center m-3" data-selector="empty-token-list">
             <%= gettext "There are no tokens for this address." %>
           </div>
         </div>

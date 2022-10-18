@@ -22,7 +22,7 @@
   <%= render BlockScoutWeb.CommonComponentsView, "_changed_bytecode_warning.html" %>
 <% end %>
 <%= if @action == "write" or (@read_functions_required_wallet && @read_functions_required_wallet != []) do %>
-  <%# <%= render BlockScoutWeb.SmartContractView, "_connect_container.html" %>
+  <%#= render BlockScoutWeb.SmartContractView, "_connect_container.html" %>
 <% end %>
 <%= if @contract_type == "proxy" do %>
 <div class="implementation-container">
@@ -33,8 +33,8 @@
 </div>
 <% end %>
 <%= for {function, counter} <- Enum.with_index(@read_only_functions ++ @read_functions_required_wallet, 1) do %>
-  <div class="py-2 border-bottom" data-function>
-    <div class="py-2 pr-2 text-nowrap" style="font-size: 16px;">
+  <div class="d-flex py-2 border-bottom clearfix" data-function>
+    <div class="py-2 pr-2 text-nowrap">
       <%= counter %>.
       <%= case function["type"] do %>
         <% "fallback" -> %>
@@ -66,7 +66,7 @@
                           @contract_abi
                         end
                     end %>
-        <form class="" data-function-form data-action="<%= if @action == "write", do: :write, else: :read %>" data-type="<%= @contract_type %>" data-url="<%= smart_contract_path(@conn, :show, Address.checksum(@address.hash)) %>" data-contract-address="<%= @address.hash %>" data-contract-abi="<%= function_abi %>" data-implementation-abi="<%= function_abi %>" data-chain-id="<%= Explorer.Chain.Cache.NetVersion.get_version() %>" >
+        <form class="form-inline" data-function-form data-action="<%= if @action == "write", do: :write, else: :read %>" data-type="<%= @contract_type %>" data-url="<%= smart_contract_path(@conn, :show, Address.checksum(@address.hash)) %>" data-contract-address="<%= @address.hash %>" data-contract-abi="<%= function_abi %>" data-implementation-abi="<%= function_abi %>" data-chain-id="<%= Explorer.Chain.Cache.NetVersion.get_version() %>" >
           <input type="hidden" name="function_name" value='<%= function["name"] %>' />
           <input type="hidden" name="method_id" value='<%= function["method_id"] %>' />
 
@@ -74,11 +74,11 @@
             <%= for input <- function["inputs"] do %>
               <div class="form-group pr-3 d-flex" style="margin: 0.5rem 0 !important;">
                 <%= if int?(input["type"]) do %>
-                  <input type="number" name="function_input" class="form-control  address-input-sm"
+                  <input type="number" name="function_input" class="form-control form-control-sm address-input-sm"
                   placeholder='<%= input["name"] %>(<%= input["type"] %>)'
-                  style="width: <%= (String.length(input["name"]) + String.length(input["type"]) + 2) * 7 %>%;"/>
-                  <%# <span data-dropdown-toggle="" data-toggle="dropdown">
-                    <span class="button btn-line button-xs contract-plus-btn-container ml-1">
+                  style="width: <%= (String.length(input["name"]) + String.length(input["type"]) + 2) * 10 %>px;"/>
+                  <span data-dropdown-toggle="" data-toggle="dropdown">
+                     <span class="button btn-line button-xs contract-plus-btn-container ml-1">
                       <i class="fa fa-plus contract-plus-btn"></i>
                     </span>
                     <div class="dropdown-menu exponention-dropdown">
@@ -87,10 +87,10 @@
                       <div class="dropdown-item contract-exponentiation-btn" data-power=18>10<sup>18</sup></div>
                       <div class="dropdown-item contract-exponentiation-btn" data-power><input type="number" name="custom_power" class="form-control form-control-sm address-input-sm ml-1 custom-power-input" />10</div>
                     </div>
-                  </span> %>
+                  </span>
 
                 <% else %>
-                  <input type="text" name="function_input" class="form-control address-input-sm"
+                  <input type="text" name="function_input" class="form-control form-control-sm address-input-sm"
                   placeholder='<%= input["name"] %>(<%= input["type"] %>)'
                   size="<%= String.length(input["name"]) + String.length(input["type"]) + 2 %>" />
                 <% end %>
@@ -142,7 +142,7 @@
                       <span data-conversion-unit data-original-value="<%= output["value"] %>"><%= output["value"] %></span>
                       <span class="py-2 px-2">
                         <input class="wei-ether" type="checkbox" autocomplete="off">
-                        <span class="d-inline-block" data-conversion-text-wei><%= gettext("NAD")%></span>
+                        <span class="d-inline-block" data-conversion-text-wei></span>
                         <span class="d-none" data-conversion-text-eth><%= gettext("ETH")%></span>
                       </span>
                     </div>
@@ -165,13 +165,13 @@
 
 <style>
 .btnclass{
-    background: #20c997;
-    border-radius: 5px;
+    background: #42C670;
+    border-radius: 3px;
     color: white;
-    width: 10%;
+    /*width: 10%;*/
     cursor: pointer;
 }
-.btnclass:hover{
+.btnclass:hover {
   background-color: #1a9365 !important;
 }
 </style>

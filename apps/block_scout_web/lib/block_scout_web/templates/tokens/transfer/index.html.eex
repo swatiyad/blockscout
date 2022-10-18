@@ -10,11 +10,13 @@
   <section data-page="token-transfer-list" id="transfers">
     <div class="card">
       <%= render OverviewView, "_tabs.html", assigns %>
-      <div class="card-body table-responsive" data-async-load data-async-listing="<%= @current_path %>">
-      <h2 class="card-title list-title-description"><%= gettext "Token Transfers" %></h2>
+      <div class="card-body table-responsive p-0" data-async-load data-async-listing="<%= @current_path %>">
+      <div class="clearfix p-3">
+        <h2 class="card-title mb-0 list-title-description"><%= gettext "Token Transfers" %></h2>
         <div class="list-top-pagination-container-wrapper">
           <%= render BlockScoutWeb.CommonComponentsView, "_pagination_container.html", position: "top", cur_page_number: "1", show_pagination_limit: true, data_next_page_button: true, data_prev_page_button: true %>
         </div>
+      </div>
 
         <div class="">
             <table class="table mb-0 table-hover fixed-layout">
@@ -24,6 +26,7 @@
                       <th>Block</th>
                       <th>Age</th>
                       <th>From</th>
+                      <th class="" style="width:36px"></th>
                       <th>To</th>
                       <th>Stake</th>
                       <th>Method</th>
@@ -36,7 +39,7 @@
           <span href="#" class="alert-link"><%= gettext("Something went wrong, click to reload.") %></span>
         </div>
 
-        <div data-empty-response-message class="tile tile-muted text-center" style="display: none;">
+        <div data-empty-response-message class="tile tile-muted text-center m-3" style="display: none;">
           <span data-selector="empty-transactions-list">
             <%= gettext "There are no transfers for this Token." %>
           </span>

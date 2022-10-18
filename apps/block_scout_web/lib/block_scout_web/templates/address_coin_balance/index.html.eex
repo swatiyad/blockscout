@@ -26,8 +26,8 @@
 
         <%= render BlockScoutWeb.CommonComponentsView, "_pagination_container.html", position: "top", cur_page_number: "1", show_pagination_limit: true, data_next_page_button: true, data_prev_page_button: true %>
 
-        <div data-error-message class="alert alert-danger col-12 text-left" style="display: none; padding: 0.75rem 0rem; cursor: pointer;">
-          <span href="#" class="alert alert-danger"><%= gettext("Something went wrong, click to reload.") %></span>
+        <div data-error-message class="alert alert-danger col-12 text-left" style="display: none; padding: 0.75rem 0rem; cursor: pointer; margin:5px">
+          <a href="#" class="alert alert-danger"><%= gettext("Something went wrong, click to reload.") %></a>
         </div>
 
         <div data-empty-response-message style="display: none;">

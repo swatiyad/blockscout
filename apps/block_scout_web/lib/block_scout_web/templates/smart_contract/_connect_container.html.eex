@@ -1,29 +1,31 @@
-<div connect-to class="connect-container">
 
-    <span style="margin-top: -2px;" class="mr-2">
-      <%= render BlockScoutWeb.IconsView, "_inactive_icon.html" %>
-    </span>
-    <span><%= link("Login", to: "/login", class: "")%></span>
-
-    <button   connect-wallet class="button btn-danger btn-line ml-4">Connect wallet</button>
-
-
-
-    <button connect-wallet class="button ml-4 bg-success text-white">Connect wallet</button>
-
-</div>
-<div connected-to class="connect-container row hidden">
+<%# <div connected-to class="connect-container row hidden">
     <div class="d-flex ml-3">
-      <span style="margin-top: -2px;" class="mr-2">
-        <%= render BlockScoutWeb.IconsView, "_active_icon.html" %>
-      </span>
-      <h2 style="margin-top: -2px; min-width: 104px;" class="mr-2">Connected to</h2><h3 connected-to-address></h3>
+      <h5 class="ml-2">Connected to</h5><h5 connected-to-address></h5>
     </div>
+</div> %>
 
-    <%# <button disconnect-wallet class="button btn-line ml-3">Disconnect wallet</button> %>
 
-    <button disconnect-wallet  class="button ml-3 bg-danger text-white">Disconnect wallet</button>
 
+<div class="dropdown" id="connectedDiv"  style="display:none;">
+  <a class="btn btn-teal dropdown-toggle text-decoration-none"  href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Wallet Connected
+  </a>
+
+  <div class="dropdown-menu custom_dropdown">
+    <%= link("KYC Verification", to: "/kycselect" , class: "dropdown-item")%>
+    <%= link("Contract Address verification", to: "/#",class: "dropdown-item")%>
+    <%= link("Token Update", to: "/tokenupdate",class: "dropdown-item")%>
+    <%= link("Audit Contract", to: "/auditContract",class: "dropdown-item")%>
+
+    <div class="dropdown-divider"></div>
+
+    <%= link("Watch List", to: "/#",class: "dropdown-item")%>
+    <%= link("Private Name Tag", to: "/#",class: "dropdown-item")%>
+    <%= link("txn Private Notes", to: "/#",class: "dropdown-item")%>
+     <div class="dropdown-divider"></div>
+     <%= link("Disconnect Wallet", to: "/#",class: "dropdown-item text-danger")%>
+
+
+  </div>
 </div>
-
-
