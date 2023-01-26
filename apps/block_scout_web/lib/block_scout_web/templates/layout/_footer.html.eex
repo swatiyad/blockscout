@@ -1,25 +1,39 @@
+
+<style>
+.footer {
+   background-image: url(/images/backdrop-bg.svg);
+   background-repeat:repeat;
+
+   }
+</style>
+
 <footer class="footer">
   <div class="footer-body container">
-    <!-- Logo -->
-    <div class="row footer-logo-row">
-      <div class="col-md-12">
-        <%= link to: webapp_url(@conn), class: "footer-brand" do %>
-          <%= if logo_footer() do %>
-            <img class="footer-logo" src="<%= static_path(@conn, logo_footer()) %>" alt="<%= subnetwork_title() %>" />
-          <% end %>
-          <%= if logo_text() do %>
-            <span class="logo-text in-footer <%= unless logo_footer(), do: "no-logo" %>"> <%= logo_text() %> </span>
-          <% end %>
-        <% end %>
-      </div>
-    </div>
+
 
     <% other_explorers = other_explorers() %>
-    <% col_size = if Enum.empty?(other_explorers), do: 3, else: 2 %>
+    <% col_size = if Enum.empty?(other_explorers), do: 2, else: 2 %>
 
-    <div class="row">
-      <div class="col-xs-12 col-lg-3">
-        <p class="footer-info-text"><%= gettext("Blockscout is a tool for inspecting and analyzing EVM based blockchains. Blockchain explorer for Ethereum Networks.") %></p>
+
+    <div class="row justify-content-between py-2">
+      <div class="col-xs-12 col-lg-5">
+
+      <!-- Logo -->
+        <div class="row footer-logo-row">
+          <div class="col-md-12">
+            <%= link to: webapp_url(@conn), class: "footer-brand" do %>
+              <%= if logo_footer() do %>
+                <img class="footer-logo" src="<%= static_path(@conn, logo_footer()) %>" alt="<%= subnetwork_title() %>" />
+              <% end %>
+              <%= if logo_text() do %>
+                <span class="logo-text in-footer <%= unless logo_footer(), do: "no-logo" %>"> <%= logo_text() %> </span>
+              <% end %>
+            <% end %>
+          </div>
+        </div>
+
+
+        <p class="text-white"><%= gettext("WYZthScan is a Block Explorer and Analytics Platform for WYZth ") %> <br/> <%= gettext(" chain, a decentralized smart contains platform.") %></p>
         <div class="footer-social-icons">
           <a href="<%= Application.get_env(:block_scout_web, :footer)[:github_link] %>" rel="noreferrer" target="_blank" class="footer-social-icon" title='<%= gettext("Github") %>'>
             <div class="footer-social-icon-container fontawesome-icon github"></div>
@@ -31,11 +45,18 @@
             <div class="footer-social-icon-container fontawesome-icon telegram"></div>
           </a>
         </div>
+        <!-- Dark mode changer -->
+        <button class="dark-mode-changer" id="dark-mode-changer">
+
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16">
+            <path fill="#fff" fill-rule="evenodd" d="M14.88 11.578a.544.544 0 0 0-.599-.166 5.7 5.7 0 0 1-1.924.321c-3.259 0-5.91-2.632-5.91-5.866 0-1.947.968-3.759 2.59-4.849a.534.534 0 0 0-.225-.97A5.289 5.289 0 0 0 8.059 0C3.615 0 0 3.588 0 8s3.615 8 8.059 8c2.82 0 5.386-1.423 6.862-3.806a.533.533 0 0 0-.041-.616z"/>
+          </svg>
+        </button>
       </div>
 
-      <div class="col-xs-12 col-md-4 col-lg-<%= col_size %> footer-list">
+      <div class="col-xs-12 col-md-4 col-lg-<%= col_size %>">
         <h3>BlockScout</h3>
-        <ul>
+        <ul style="list-style: none;margin: 0; padding: 0; line-height: 31px;">
           <li><a href="<%= issue_link(@conn) %>" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("Submit an Issue") %></a></li>
           <li><a href="<%= Application.get_env(:block_scout_web, :footer)[:github_link] %>" rel="noreferrer" class="footer-link"><%= gettext("Contribute") %></a></li>
           <li><a href="<%= Application.get_env(:block_scout_web, :footer)[:chat_link] %>" rel="noreferrer" class="footer-link"><%= gettext("Chat (#blockscout)") %></a></li>
@@ -48,9 +69,9 @@
       <% main_nets = main_nets(other_networks()) %>
 
       <%= unless Enum.empty?(main_nets) do %>
-        <div class="col-xs-12 col-md-4 col-lg-<%= col_size %> footer-list">
+        <div class="col-xs-12 col-md-4 col-lg-<%= col_size %>">
           <h3><%= gettext("Main Networks") %></h3>
-          <ul>
+          <ul style="list-style: none;margin: 0; padding: 0; line-height: 31px;">
             <%= for %{title: title, url: url} <- main_nets do %>
               <li><a href="<%= url %>" rel="norefferer" class="footer-link"> <%= title %> </a></li>
             <% end %>
@@ -61,9 +82,9 @@
       <% test_nets = test_nets(other_networks()) %>
 
       <%= unless Enum.empty?(test_nets) do %>
-        <div class="col-xs-12 col-md-4 col-lg-<%= col_size %> footer-list">
+        <div class="col-xs-12 col-md-4 col-lg-<%= col_size %>">
           <h3><%= gettext("Test Networks") %></h3>
-          <ul>
+          <ul style="list-style: none;margin: 0; padding: 0; line-height: 31px;">
             <%= for %{title: title, url: url} <- test_nets do %>
               <li><a href="<%= url %>" rel="noreferrer" class="footer-link"> <%= title %> </a></li>
             <% end %>
@@ -72,9 +93,9 @@
       <% end %>
 
       <%= unless Enum.empty?(other_explorers) do %>
-        <div class="col-xs-12 col-md-4 col-lg-<%= col_size %> footer-list">
+        <div class="col-xs-12 col-md-4 col-lg-<%= col_size %>">
           <h3><%= gettext("Other Explorers") %></h3>
-          <ul>
+          <ul style="list-style: none;margin: 0; padding: 0; line-height: 31px;">
             <%= for {name, url} <- other_explorers do %>
               <li><a href="<%= url %>" rel="noreferrer" class="footer-link"> <%= name %> </a></li>
             <% end %>

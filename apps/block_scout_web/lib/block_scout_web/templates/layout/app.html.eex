@@ -23,6 +23,7 @@
     <link rel="preload" href="<%= static_path(@conn, "/images/icons/fontawesome/tag.svg") %>" as="image" crossorigin>
     <link rel="preload" href="<%= static_path(@conn, "/css/non-critical.css") %>" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="stylesheet" href="<%= static_path(@conn, "/css/non-critical.css") %>">
+
     <%= render_existing(@view_module, "styles.html", assigns) %>
 
     <link rel="apple-touch-icon" sizes="180x180" href="<%= static_path(@conn, "/apple-touch-icon.png") %>">
@@ -238,7 +239,7 @@
       <% end %>
       <%= render BlockScoutWeb.LayoutView, "_topnav.html", current_user: Conn.get_session(@conn, :current_user), conn: @conn %>
 
-      <main class="js-ad-dependant-pt pt-5">
+      <main class="js-ad-dependant-pt">
         <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
         <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
         <%= @inner_content %>

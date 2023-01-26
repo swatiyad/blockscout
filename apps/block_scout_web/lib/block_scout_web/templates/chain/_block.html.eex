@@ -1,32 +1,59 @@
-<div class="col-lg-3 fade-up-blocks-chain" data-selector="chain-block" data-block-number="<%= @block.number %>">
-  <div class="tile tile-type-block n-p d-flex flex-column">
-    <%= link(
-          @block,
-          class: "tile-title",
-          to: block_path(BlockScoutWeb.Endpoint, :show, @block),
-          "data-selector": "block-number"
-        ) %>
-    <div class="tile-bottom-contents">
-      <div class="tile-transactions">
-        <span class="mr-2"><%= gettext("%{count} Transactions", count: Enum.count(@block.transactions)) %></span>
-        <span class="text-nowrap" data-from-now="<%= @block.timestamp %>"> </span>
-      </div>
-      <%= if System.get_env("HIDE_BLOCK_MINER") !== "true" do %>
-        <div class="text-truncate">
-          <%= gettext "Miner" %>
-          <%= render BlockScoutWeb.AddressView,
-            "_link.html",
-            address: @block.miner,
-            contract: false,
-            use_custom_tooltip: false,
-            custom_classes_tooltip: ["miner-address-tooltip"] %>
+
+<div class="fade-up-blocks-chain--" data-selector="chain-block" data-block-number="<%= @block.number %>">
+  <div class="table-responsive">
+    <table class="table fixed-layout mb-0">
+      <tbody class="table-group-divider">
+      <tr>
+        <td class="sno_col">
+          <span class="btn-icon">
+            <span class="btn-icon-inner">
+            Bk
+            </span>
+          </div>
+        </td>
+        <td>
+          <%= link(
+            @block,
+            class: "tile-title",
+            to: block_path(BlockScoutWeb.Endpoint, :show, @block),
+            "data-selector": "block-number"
+          ) %>
+            <div class="text-nowrap text-green fs-12" data-from-now="<%= @block.timestamp %>"> </div>
         </div>
-      <% end %>
-      <%= if BlockScoutWeb.BlockView.show_reward?(@block.rewards) do %>
-        <div class="text-truncate">
-          <%= gettext "Reward" %> <%= BlockScoutWeb.BlockView.combined_rewards_value(@block) %>
-        </div>
-      <% end %>
-    </div>
+        </td>
+        <td>
+          <%= if System.get_env("HIDE_BLOCK_MINER") !== "true" do %>
+            <div class="d-flex" style="width:340px">
+              <div class="mr-2" style="width:80px"><%= gettext "Fee Reciept" %> </div>
+              <div class="text-truncate" style="width:160px">
+                <%= render BlockScoutWeb.AddressView,
+                  "_link.html",
+                  address: @block.miner,
+                  contract: false,
+                  use_custom_tooltip: false,
+                  custom_classes_tooltip: ["miner-address-tooltip"] %>
+              </div>
+            </div>
+          <% end %>
+          <%= if BlockScoutWeb.BlockView.show_reward?(@block.rewards) do %>
+            <div class="text-truncate width135">
+              <%= gettext "Reward" %> <%= BlockScoutWeb.BlockView.combined_rewards_value(@block) %>
+            </div>
+          <% end %>
+
+          <div class="tile-transactions text-blue">
+            <span class="mr-2"><%= gettext("%{count} Transactions", count: Enum.count(@block.transactions)) %></span>
+          </div>
+        </td>
+        <td class="text-right">
+          <span class="bg-gray p-2">
+            <span class="text-green fs-12">
+            <%= gettext "0.00000 Ana" %>
+            </span>
+          </span>
+        </td>
+      </tr>
+      </tbody>
+    </table>
   </div>
 </div>

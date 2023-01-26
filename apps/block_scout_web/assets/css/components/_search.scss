@@ -21,7 +21,7 @@
         height: 33px !important;
     }
     &.focused-field {
-      border: 1px solid $secondary !important;
+        border: 1px solid $secondary !important;
     }
 }
 
@@ -34,13 +34,14 @@
     padding: 0 !important;
     border: none !important;
     border-radius: 0 !important;
-    background-color: #f5f6fa !important;
+    background-color: #fff !important;
     @media screen and (max-width: 992px) {
         height: auto !important;
     }
 }
 
-.main-search-autocomplete, .main-search-autocomplete-mobile {
+.main-search-autocomplete,
+.main-search-autocomplete-mobile {
     font-size: 14px !important;
     color: #828ba0 !important;
 }
@@ -51,7 +52,7 @@
     font-size: 13px;
     font-weight: 100;
     text-transform: uppercase;
-    color: rgb(33,33,33);
+    color: rgb(33, 33, 33);
     margin-left: auto;
 }
 
@@ -61,8 +62,8 @@
 }
 
 ul[id^='autoComplete_list_'] {
-    margin-left: -39px !important;
-    border-radius: 0px !important;
+    margin-left: -12px !important;
+    border-radius: 0 !important;
     padding: 5px !important;
 }
 
