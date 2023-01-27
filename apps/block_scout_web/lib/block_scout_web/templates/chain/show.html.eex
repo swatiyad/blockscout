@@ -1,150 +1,140 @@
 
 
 <div class="container" style="position:relative; top:-50px;" data-page="chain-details">
-  <div class="card shadow mb-3">
-    <div class="card-body py-3">
-      <div class="">
-        <div class="row">
-          <div class="col-sm-12 col-md-6 col-lg-4 border-right-sm1">
-            <div class="media border-bottom mb-4 pb-4">
-              <img class="mr-3 media_icon" src="images/a-04.svg" width="50" height="40"  style="width:50px;">
-              <div class="media-body">
-                <span class="dashboard-banner-network-stats-label text-uppercase">
-                WYZth Price
-                </span>
-                <span class="dashboard-data fs-14 text-truncate width160">
-                $0,00,000 <span class="sub-text"> @ 0.00000  BTC </span> <span class="text-cyan"> (+8.81%)</span>
-                </span>
-              </div>
+<div class="card shadow mb-3">
+  <div class="card-body py-3">
+    <div class="">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-4 border-right-sm1">
+          <div class="media border-bottom mb-4 pb-4">
+            <img class="mr-3 media_icon" src="images/a-04.svg" width="50" height="40"  style="width:50px;">
+            <div class="media-body">
+              <span class="dashboard-banner-network-stats-label text-uppercase">
+              WYZth Price
+              </span>
+              <span class="dashboard-data fs-14 text-truncate width160">
+              $0,00,000 <span class="sub-text"> @ 0.00000  BTC </span> <span class="text-cyan"> (+8.81%)</span>
+              </span>
             </div>
-            <div class="media">
-              <img class="mr-3 media_icon" src="images/a-02.svg" width="50" height="40"  style="width:50px;">
-              <div class="media-body">
-                <span class="dashboard-banner-network-stats-label text-uppercase">
-                  <%= gettext "Market Cap" %>
-                </span>
-                <span class="dashboard-data">
-                    <%= if Map.has_key?(@chart_config, :market) do %>
+          </div>
+          <div class="media">
+            <img class="mr-3 media_icon" src="images/a-02.svg" width="50" height="40"  style="width:50px;">
+            <div class="media-body">
+              <span class="dashboard-banner-network-stats-label text-uppercase">
+                <%= gettext "Market Cap" %>
+              </span>
+              <span class="dashboard-data">
+                  <%= if Map.has_key?(@chart_config, :market) do %>
 
-                    <%# THE FOLLOWING LINE PREVENTS COPY/PASTE ERRORS %>
-                    <%# Explicity put @chart_config.market in a variable %>
-                    <%# This is done so that when people add a new chart source, x, %>
-                    <%# They wont just access @chart_config.x w/o first checking if x exists%>
-                    <% market_chart_config = @chart_config.market%>
+                  <%# THE FOLLOWING LINE PREVENTS COPY/PASTE ERRORS %>
+                  <%# Explicity put @chart_config.market in a variable %>
+                  <%# This is done so that when people add a new chart source, x, %>
+                  <%# They wont just access @chart_config.x w/o first checking if x exists%>
+                  <% market_chart_config = @chart_config.market%>
 
 
-                    <%= if Enum.member?(@chart_config.market, :market_cap) do %>
-                    <div class="dashboard-banner-chart-legend-item market-cap-per-day">
-                        <div class="d-flex" style="height: 20px; line-height: 20px;">
-                          <% total_market_cap = market_cap(@market_cap_calculation, @exchange_rate) %>
-                          <span style="display: contents;" class="dashboard-banner-chart-legend-value" data-selector="market-cap" data-usd-value="<%= total_market_cap %>">
-                          </span>
-                        </div>
-                    </div>
-                    <% end %>
+                  <%= if Enum.member?(@chart_config.market, :market_cap) do %>
+                  <div class="dashboard-banner-chart-legend-item market-cap-per-day">
+                      <div class="d-flex" style="height: 20px; line-height: 20px;">
+                        <% total_market_cap = market_cap(@market_cap_calculation, @exchange_rate) %>
+                        <span style="display: contents;" class="dashboard-banner-chart-legend-value" data-selector="market-cap" data-usd-value="<%= total_market_cap %>">
+                        </span>
+                      </div>
+                  </div>
                   <% end %>
-                </span>
-                <!--<span class="dashboard-data" data-selector="address-count">
-                  <%= BlockScoutWeb.Cldr.Number.to_string!(@address_count, format: "#,###") %>
-                </span>-->
-              </div>
+                <% end %>
+              </span>
+              <!--<span class="dashboard-data" data-selector="address-count">
+                <%= BlockScoutWeb.Cldr.Number.to_string!(@address_count, format: "#,###") %>
+              </span>-->
             </div>
           </div>
-          <div class="col-sm-12 col-md-12 col-lg-4 border-right-sm2">
-            <div class="media border-bottom mb-4 pb-4">
-              <img class="mr-3 media_icon" src="images/a-03.svg" width="50" height="40"  style="width:50px;">
-              <div class="media-body">
-                <span class="dashboard-banner-network-stats-label text-uppercase">
-                  <%= gettext "transactions" %>
-                </span>
-                <span class="dashboard-data" data-selector="transaction-count">
-                  <%= BlockScoutWeb.Cldr.Number.to_string!(@transaction_estimated_count, format: "#,###") %>
-                </span>
-              </div>
-              <div class="text-right">
-                <%= render BlockScoutWeb.ChainView, "gas_price_oracle_legend_item.html", gas_price: @gas_price %>
-              </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-4 border-right-sm2">
+          <div class="media border-bottom mb-4 pb-4">
+            <img class="mr-3 media_icon" src="images/a-03.svg" width="50" height="40"  style="width:50px;">
+            <div class="media-body">
+              <span class="dashboard-banner-network-stats-label text-uppercase">
+                <%= gettext "transactions" %>
+              </span>
+              <span class="dashboard-data" data-selector="transaction-count">
+                <%= BlockScoutWeb.Cldr.Number.to_string!(@transaction_estimated_count, format: "#,###") %>
+              </span>
             </div>
-            <div class="media">
-              <img class="mr-3 media_icon" src="images/a-01.svg" width="50" height="40"  style="width:50px;">
-              <div class="media-body">
-                <span class="dashboard-banner-network-stats-label text-uppercase">
-                  <%= gettext "Last Finalized block" %>
-                </span>
-                <span class="dashboard-data" data-selector="block-count">
-                  <%= BlockScoutWeb.Cldr.Number.to_string!(@block_count, format: "#,###") %>
-                </span>
-              </div>
-
-              <div class="text-right">
-                <span class="dashboard-banner-network-stats-label text-uppercase">
-                  <%= gettext "Last Safe block" %>
-                </span>
-                <span class="dashboard-data">
-                  0.000000
-                </span>
-              </div>
+            <div class="text-right">
+              <%= render BlockScoutWeb.ChainView, "gas_price_oracle_legend_item.html", gas_price: @gas_price %>
             </div>
-
           </div>
-          <div class="col-sm-12 col-md-12 col-lg-4">
-            <div class="dashboard-banner-chart mt-0">
-            <script>
-              numChartData = <%= Enum.reduce(@chart_config, 0, fn (source, acc) ->
-                              acc + length(elem(source, 1)) end) %>
-              document.documentElement.style.setProperty("--numChartData", numChartData);
-            </script>
-              <button data-chart-error-message class="alert alert-danger col-12 text-left mt-5" style="display: none;">
-                <span><%= gettext("There was a problem loading the chart.") %></span>
-              </button>
-              <p class="mb-0 text-uppercase text-green">WYZth Transaction history in 14 Days</p>
-              <canvas data-chart="historyChart"
-                      data-history_chart_paths=
-                      '{<%= for {{key, value}, x} <- Enum.with_index(@chart_data_paths) do %>
-                            "<%= key %>":"<%= value %>"
-                            <%= if x<(map_size(@chart_data_paths)-1) do %>
-                            ,
-                            <% end %>
-                      <% end %>}'
-                      data-history_chart_config = '<%= @chart_config_json %>'
-                      width="350" height="152">
-              </canvas>
+          <div class="media">
+            <img class="mr-3 media_icon" src="images/a-01.svg" width="50" height="40"  style="width:50px;">
+            <div class="media-body">
+              <span class="dashboard-banner-network-stats-label text-uppercase">
+                <%= gettext "Last Finalized block" %>
+              </span>
+              <span class="dashboard-data" data-selector="block-count">
+                <%= BlockScoutWeb.Cldr.Number.to_string!(@block_count, format: "#,###") %>
+              </span>
             </div>
+
+            <div class="text-right">
+              <span class="dashboard-banner-network-stats-label text-uppercase">
+                <%= gettext "Last Safe block" %>
+              </span>
+              <span class="dashboard-data">
+                0.000000
+              </span>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-4">
+          <div class="dashboard-banner-chart mt-0">
+          <script>
+            numChartData = <%= Enum.reduce(@chart_config, 0, fn (source, acc) ->
+                            acc + length(elem(source, 1)) end) %>
+            document.documentElement.style.setProperty("--numChartData", numChartData);
+          </script>
+
+            <p class="mb-0 text-uppercase text-green">WYZth Transaction history in 14 Days </p>
+            <button data-chart-error-message class="alert alert-dangertext-left" style="display: none;">
+            <span><%= gettext("There was a problem loading the chart.") %></span>
+          </button>
+            <canvas data-chart="historyChart"
+              data-history_chart_paths=
+              '{<%= for {{key, value}, x} <- Enum.with_index(@chart_data_paths) do %>
+                    "<%= key %>":"<%= value %>"
+                    <%= if x<(map_size(@chart_data_paths)-1) do %>
+                    ,
+                    <% end %>
+              <% end %>}'
+              data-history_chart_config = '<%= @chart_config_json %>'
+              width="350" height="152">
+            </canvas>
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
+</div>
 
 <%= render BlockScoutWeb.Advertisement.BannersAdView, "_banner_728.html", conn: @conn %>
 
 <section class="container">
-  <div class="row">
-    <div class="col-lg-6">
-      <div class="card card-chain-blocks js-ad-dependant-mb-3">
-        <div class="card-header bg-light-green">
-          <span style="color:#3e3f06; font-weight:bold">Latest Blocks </span>
-        </div>
-        <div class="card-body px-3 py-2">
-          <div class="row" data-selector="chain-block-list" data-url="<%= chain_blocks_path(@conn, :chain_blocks) %>">
+<div class="row">
+  <div class="col-lg-6">
+    <div class="card card-chain-blocks js-ad-dependant-mb-3">
+      <div class="card-header bg-light-green">
+        <span style="color:#3e3f06; font-weight:bold">Latest Blocks </span>
+      </div>
+      <div class="card-body px-3 py-2 scroll_box">
+        <div class="row" data-selector="chain-block-list" data-url="<%= chain_blocks_path(@conn, :chain_blocks) %>">
             <button data-selector="error-message" class="alert alert-danger col-12 text-left" style="display: none;">
               <span class="alert-link">
                 <%= gettext "Something went wrong, click to reload." %>
               </span>
             </button>
-              <div hidden data-selector="loading-message" class="col-lg-12" >
-                <div data-selector="chain-block">
-                  <div class="tile tile-type-block n-p d-flex flex-column">
-                    <a class="tile-title"><span class="tile-loader tile-label-loader"></span> </a>
-                    <div class="tile-bottom-contents">
-                      <div class="dark-block-loader"></div>
-                      <div class="dark-block-loader"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div hidden data-selector="loading-message" class="col-lg-12" >
+            <div hidden data-selector="loading-message" class="col-lg-12" >
               <div data-selector="chain-block">
                 <div class="tile tile-type-block n-p d-flex flex-column">
                   <a class="tile-title"><span class="tile-loader tile-label-loader"></span> </a>
@@ -154,8 +144,30 @@
                   </div>
                 </div>
               </div>
+            </div>
+            <div hidden data-selector="loading-message" class="col-lg-12" >
+            <div data-selector="chain-block">
+              <div class="tile tile-type-block n-p d-flex flex-column">
+                <a class="tile-title"><span class="tile-loader tile-label-loader"></span> </a>
+                <div class="tile-bottom-contents">
+                  <div class="dark-block-loader"></div>
+                  <div class="dark-block-loader"></div>
+                </div>
               </div>
-              <div hidden data-selector="loading-message" class="col-lg-12" >
+            </div>
+            </div>
+            <div hidden data-selector="loading-message" class="col-lg-12" >
+            <div data-selector="chain-block">
+              <div class="tile tile-type-block n-p d-flex flex-column">
+                <a class="tile-title"><span class="tile-loader tile-label-loader"></span> </a>
+                <div class="tile-bottom-contents">
+                  <div class="dark-block-loader"></div>
+                  <div class="dark-block-loader"></div>
+                </div>
+              </div>
+            </div>
+            </div>
+            <div hidden data-selector="loading-message" class="col-lg-12" >
               <div data-selector="chain-block">
                 <div class="tile tile-type-block n-p d-flex flex-column">
                   <a class="tile-title"><span class="tile-loader tile-label-loader"></span> </a>
@@ -163,33 +175,22 @@
                     <div class="dark-block-loader"></div>
                     <div class="dark-block-loader"></div>
                   </div>
-                </div>
-              </div>
-              </div>
-              <div hidden data-selector="loading-message" class="col-lg-12" >
-                <div data-selector="chain-block">
-                  <div class="tile tile-type-block n-p d-flex flex-column">
-                    <a class="tile-title"><span class="tile-loader tile-label-loader"></span> </a>
-                    <div class="tile-bottom-contents">
-                      <div class="dark-block-loader"></div>
-                      <div class="dark-block-loader"></div>
-                    </div>
-                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="card-footer bg-white text-center">
-          <p class="bg-light-green mb-0 py-2">
-            <%= link(gettext("View All Blocks"), to: blocks_path(BlockScoutWeb.Endpoint, :index), class: "text_green_over") %>
-          </p>
-        </div>
+      </div>
+      <div class="card-footer bg-white text-center">
+          <%= link(gettext("View All Blocks"), to: blocks_path(BlockScoutWeb.Endpoint, :index), class: "btn btn-green btn-block") %>
+
       </div>
     </div>
-    <div class="col-lg-6">
-      <div class="card card-chain-transactions--">
-        <div class="card-header bg-light-green"><span style="color:#3e3f06; font-weight:bold">Latest Transaction </span></div>
-        <div class="card-body px-3 py-2">
+  </div>
+  <div class="col-lg-6">
+    <div class="card card-chain-transactions--">
+      <div class="card-header bg-light-green"><span style="color:#3e3f06; font-weight:bold">Latest Transaction </span></div>
+      <div class="card-body px-3 py-2 scroll_box">
+        <div class="">
           <div data-selector="channel-batching-message" style="display: none;">
             <div data-selector="reload-transactions-button" class="alert alert-info">
               <a href="#" class="alert-link"><span data-selector="channel-batching-count"></span> <%= gettext "More transactions have come in" %></a>
@@ -206,10 +207,37 @@
             </div>
           </span>
         </div>
-        <div class="card-footer bg-white text-center">
-          <p class="bg-light-green mb-0 py-2"><%= link(gettext("View All Transactions"), to: transaction_path(BlockScoutWeb.Endpoint, :index), class: "text_green_over") %> </p>
-        </div>
+      </div>
+      <div class="card-footer bg-white text-center">
+        <%= link(gettext("View All Transactions"), to: transaction_path(BlockScoutWeb.Endpoint, :index), class: "btn btn-green btn-block") %>
       </div>
     </div>
   </div>
+</div>
 </section>
+
+<style>
+
+.scroll_box {
+  height: 400px;
+  width: 100%;
+  overflow-y: auto;
+}
+
+.scroll_box:active::-webkit-scrollbar-thumb,
+.scroll_box:focus::-webkit-scrollbar-thumb,
+.scroll_box:hover::-webkit-scrollbar-thumb {
+  visibility: visible;
+  border-radius: 5px;
+}
+
+.scroll_box::-webkit-scrollbar-thumb {
+  background-color: #ddd;
+  visibility: hidden;
+}
+
+.scroll_box::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+</style>

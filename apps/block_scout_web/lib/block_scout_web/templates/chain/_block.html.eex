@@ -9,12 +9,12 @@
             <span class="btn-icon-inner">
             Bk
             </span>
-          </div>
+          </span>
         </td>
         <td>
           <%= link(
             @block,
-            class: "tile-title",
+            class: "text-blue",
             to: block_path(BlockScoutWeb.Endpoint, :show, @block),
             "data-selector": "block-number"
           ) %>
@@ -36,7 +36,7 @@
             </div>
           <% end %>
           <%= if BlockScoutWeb.BlockView.show_reward?(@block.rewards) do %>
-            <div class="text-truncate width135">
+            <div class="text-truncate width135 text-blue">
               <%= gettext "Reward" %> <%= BlockScoutWeb.BlockView.combined_rewards_value(@block) %>
             </div>
           <% end %>

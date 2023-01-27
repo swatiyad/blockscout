@@ -396,15 +396,23 @@ export function placeHolderBlock(blockNumber) {
         data-selector="place-holder"
       >
         <div
-          class="d-flex align-items-center fade-up"
+          class="fade-up"
         >
-          <span class="loading-spinner-small ml-1 mr-4">
-            <span class="loading-spinner-block-1"></span>
-            <span class="loading-spinner-block-2"></span>
-          </span>
-          <div>
-            <span class="tile-title pr-0 pl-0">${blockNumber}</span>
-            <div class="tile-transactions">${window.localized['Block Processing']}</div>
+         
+          <div class="d-flex align-items-center">
+            <div class="mr-2">
+                <span class="btn-icon">
+                    <span class="btn-icon-inner">
+                    Bk
+                    </span>
+                </span>
+            </div>
+            <div>
+                <span class="tile-title pr-0 pl-0 text-blue">${blockNumber}</span>
+                <br/>
+
+                <span class="tile-transactions">${window.localized['Block Processing']}</span>
+            </div>
           </div>
         </div>
       </div>

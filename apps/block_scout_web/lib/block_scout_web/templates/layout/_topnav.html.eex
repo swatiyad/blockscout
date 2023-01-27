@@ -68,6 +68,10 @@
                     class: "dropdown-item #{tab_status("reorgs", @conn.request_path)}")%>
             </div>
           </li>
+
+
+
+
           <li class="nav-item dropdown">
             <a href="#" role="button" id="navbarTokensDropdown" class="nav-link topnav-nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 
@@ -87,7 +91,43 @@
             </div>
           </li>
         <% end %>
-        <%= if Application.get_env(:block_scout_web, BlockScoutWeb.ApiRouter)[:reading_enabled] || Application.get_env(:block_scout_web, :api_url) do %>
+
+        <li class="nav-item dropdown">
+        <a href="#" role="button" id="navbarTokensDropdown" class="nav-link topnav-nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+          <%= gettext("Resources") %>
+        </a>
+
+      </li>
+
+      <li class="nav-item dropdown">
+      <a href="#" role="button" id="navbarTokensDropdown" class="nav-link topnav-nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+        <%= gettext("More") %>
+      </a>
+
+    </li>
+
+    <li class="nav-item ">
+    <a href="#" class="nav-link topnav-nav-link border-left">
+    <i class="fa fa-user mr-2 text-green"></i>
+
+      <%= gettext("Sign In") %>
+    </a>
+
+  </li>
+
+  <li class="nav-item ">
+  <a href="#" class="nav-link topnav-nav-link border-left">
+<img src="/images/small-logo-icon.png"/ style="width:17px">
+
+
+  </a>
+
+</li>
+
+
+       <!-- <%= if Application.get_env(:block_scout_web, BlockScoutWeb.ApiRouter)[:reading_enabled] || Application.get_env(:block_scout_web, :api_url) do %>
           <li class="nav-item dropdown">
             <a href="#" role="button" id="navbarAPIsDropdown" class="nav-link topnav-nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 
@@ -165,8 +205,8 @@
             <% end %>
           </div>
         </li>
-
-        <%= render BlockScoutWeb.LayoutView, "_account_menu_item.html", conn: @conn, current_user: @current_user %>
+-->
+        <%#= render BlockScoutWeb.LayoutView, "_account_menu_item.html", conn: @conn, current_user: @current_user %>
       </ul>
   </div>
 </nav>
@@ -203,7 +243,7 @@
           <%= render BlockScoutWeb.LayoutView, "_search.html", conn: @conn, id: "main-search-autocomplete", additional_classes: ["mobile-search-hide"] %>
           <%= render BlockScoutWeb.LayoutView, "_account_menu_item.html", conn: @conn, current_user: @current_user %>
         </div>
-        <p class="text-white"> Featured : Curious on WYZth's hottest 🔥 trading pairs? View top pairs and details with <a class="font-weight-bold"> DEX Trading Pairs! </a>
+        <p class="text-white"> Featured : Curious on WYZth's hottest 🔥 trading pairs? View top pairs and details with <a href="#" class="text-blue font-weight-bold"> DEX Trading Pairs! </a>
         </p>
       </div>
     </div>

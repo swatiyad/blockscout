@@ -25,20 +25,17 @@
 <div class="search-form d-lg-flex d-inline-block <%= if assigns[:additional_classes] do @additional_classes |> Enum.join(" ") end %>">
 	<div class="input-group mb-3">
 		<div class="input-group-prepend d-none d-md-block">
-			<span class="input-group-text">
-				<div class="dropdown">
-					<button class="btn btn-sm bg-transparent p-0 dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						All Filter
-					</button>
-					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-						<a class="dropdown-item" href="#">Action</a>
-						<a class="dropdown-item" href="#">Another action</a>
-						<a class="dropdown-item" href="#">Something else here</a>
-					</div>
-				</div>
-			</span>
+
+			<select name="f" class="custom-select custom-arrow-select input-group-text text-left">
+				<option selected="" value="0">All Filters</option>
+				<option value="1">Addresses</option>
+				<option value="2">Tokens</option>
+				<option value="3">Name Tags</option>
+				<option value="4">Labels</option>
+				<option value="5">Websites</option>
+			</select>
 		</div>
-		<div class="form-control search-control-- me auto <%= if assigns[:additional_classes] do @additional_classes |> Enum.join(" ") end %>">
+		<div class="form-control search-control-- me auto height38 <%= if assigns[:additional_classes] do @additional_classes |> Enum.join(" ") end %>">
 			<input
 				id="<%= @id %>"
 				class="main-search-autocomplete"
@@ -52,12 +49,10 @@
 		</div>
 		<div class="input-group-append">
 			<button class="input-group-text bg-brown border-dark rounded-right" id="search-icon">
-				<%= render BlockScoutWeb.IconsView, "_search_icon.html" %>
+				<i class="fa fa-search text-white"></i>
 			</button>
 		</div>
 	</div>
-
-
 
 	<button class="btn btn-outline-success my-2 my-sm-0 sr-only hidden" type="submit"><%= gettext "Search" %></button>
 </div>
