@@ -1,4 +1,5 @@
 import $ from 'jquery'
+// @ts-ignore
 import AutoComplete from '@tarekraafat/autocomplete.js/dist/autoComplete'
 import { getTextAdData, fetchTextAdData } from './ad'
 import { DateTime } from 'luxon'
@@ -13,7 +14,7 @@ const dataSrc = async(query, id) => {
         const searchInput = document
             .getElementById(id)
 
-        searchInput.setAttribute('placeholder', 'Loading...')
+        searchInput && searchInput.setAttribute('placeholder', 'Loading...')
 
         // Fetch External Data Source
         const source = await fetch(
@@ -22,7 +23,7 @@ const dataSrc = async(query, id) => {
         const data = await source.json()
             // Post Loading placeholder text
 
-        searchInput.setAttribute('placeholder', placeHolder)
+        searchInput && searchInput.setAttribute('placeholder', placeHolder)
             // Returns Fetched data
         return data
     } catch (error) {
@@ -101,88 +102,102 @@ const resultItemElement = async(item, data) => {
     appendTokenIcon($tokenIconContainer, chainID, data.value.address_hash, displayTokenIcons, 15)
 }
 const config = (id) => {
-    return {
-        selector: `#${id}`,
-        data: {
-            src: (query) => dataSrc(query, id),
-            cache: false
-        },
-        placeHolder,
-        searchEngine: (query, record) => searchEngine(query, record),
-        threshold: 2,
-        resultsList: {
-            element: (list, data) => resultsListElement(list, data),
-            noResults: true,
-            maxResults: 100,
-            tabSelect: true
-        },
-        resultItem: {
-            element: (item, data) => resultItemElement(item, data),
-            highlight: 'autoComplete_highlight'
-        },
-        query: (input) => {
-            return xss(input)
-        },
-        events: {
-            input: {
-                focus: () => {
-                    if (autoCompleteJS.input.value.length) autoCompleteJS.start()
-                }
-            }
-        }
-    }
-}
-const autoCompleteJS = document.querySelector('#main-search-autocomplete') && new AutoComplete(config('main-search-autocomplete'))
-    // eslint-disable-next-line
-const autoCompleteJSMobile = document.querySelector('#main-search-autocomplete-mobile') && new AutoComplete(config('main-search-autocomplete-mobile'))
-
-const selection = (event) => {
-    const selectionValue = event.detail.selection.value
-
-    if (selectionValue.type === 'contract' || selectionValue.type === 'address' || selectionValue.type === 'label') {
-        window.location = `/address/${selectionValue.address_hash}`
-    } else if (selectionValue.type === 'token') {
-        window.location = `/tokens/${selectionValue.address_hash}`
-    } else if (selectionValue.type === 'transaction') {
-        window.location = `/tx/${selectionValue.tx_hash}`
-    } else if (selectionValue.type === 'block') {
-        window.location = `/blocks/${selectionValue.block_hash}`
-    }
-}
-
-const openOnFocus = (event, type) => {
-    const query = event.target.value
-    if (query) {
-        if (type === 'desktop') {
-            autoCompleteJS.start(query)
-        } else if (type === 'mobile') {
-            autoCompleteJSMobile.start(query)
-        }
-    } else {
-        getTextAdData()
-            .then(({ data: adData, inHouse: _inHouse }) => {
-                if (adData) {
-                    if (type === 'desktop') {
-                        autoCompleteJS.start('###')
-                    } else if (type === 'mobile') {
-                        autoCompleteJSMobile.start('###')
+        return {
+            selector: `#${id}`,
+            data: {
+                src: (query) => dataSrc(query, id),
+                cache: false
+            },
+            placeHolder,
+            searchEngine: (query, record) => searchEngine(query, record),
+            threshold: 2,
+            resultsList: {
+                element: (list, data) => resultsListElement(list, data),
+                noResults: true,
+                maxResults: 100,
+                tabSelect: true
+            },
+            resultItem: {
+                element: (item, data) => resultItemElement(item, data),
+                highlight: 'autoComplete_highlight'
+            },
+            query: (input) => {
+                return xss(input)
+            },
+            events: {
+                input: {
+                    focus: () => {
+                        // @ts-ignore
+                        if (autoCompleteJS && autoCompleteJS.input.value.length) autoCompleteJS.start()
                     }
                 }
-            })
-    }
-}
+            }
+            const autoCompleteJS = document.querySelector('#main-search-autocomplete') && new AutoComplete(config('main-search-autocomplete'))
+                // eslint-disable-next-line
+            const autoCompleteJSMobile = document.querySelector('#main-search-autocomplete-mobile') && new AutoComplete(config('main-search-autocomplete-mobile'))
 
-document.querySelector('#main-search-autocomplete') && document.querySelector('#main-search-autocomplete').addEventListener('selection', function(event) {
-    selection(event)
-})
-document.querySelector('#main-search-autocomplete-mobile') && document.querySelector('#main-search-autocomplete-mobile').addEventListener('selection', function(event) {
-    selection(event)
-})
+            const selection = (event) => {
+                const selectionValue = event.detail.selection.value
 
-document.querySelector('#main-search-autocomplete') && document.querySelector('#main-search-autocomplete').addEventListener('focus', function(event) {
-    openOnFocus(event, 'desktop')
-})
+                if (selectionValue.type === 'contract' || selectionValue.type === 'address' || selectionValue.type === 'label') {
+                    window.location.href = `/address/${selectionValue.address_hash}`
+                } else if (selectionValue.type === 'token') {
+                    window.location.href = `/tokens/${selectionValue.address_hash}`
+                } else if (selectionValue.type === 'transaction') {
+                    window.location.href = `/tx/${selectionValue.tx_hash}`
+                } else if (selectionValue.type === 'block') {
+                    window.location.href = `/blocks/${selectionValue.block_hash}`
+                }
+            }
 
-document.querySelector('#main-search-autocomplete-mobile') && document.querySelector('#main-search-autocomplete-mobile').addEventListener('focus', function(event) {
-    openOnFocus(event, 'mobile')
-})
+            const openOnFocus = (event, type) => {
+                    const query = event.target.value
+                    if (query) {
+                        if (type === 'desktop') {
+                            // @ts-ignore
+                            autoCompleteJS && autoCompleteJS.start(query)
+                        } else if (type === 'mobile') {
+                            // @ts-ignore
+                            autoCompleteJSMobile && autoCompleteJSMobile.start(query)
+                        }
+                    } else {
+                        getTextAdData()
+                            .then(({ data: adData, inHouse: _inHouse }) => {
+                                    if (adData) {
+                                        if (type === 'desktop') {
+                                            // @ts-ignore
+                                            autoCompleteJS && autoCompleteJS.start('###')
+                                        } else if (type === 'mobile') {
+                                            // @ts-ignore
+                                            autoCompleteJSMobile && autoCompleteJSMobile.start('###')
+                                        }
+                                    }
+                                } else {
+                                    getTextAdData()
+                                        .then(({ data: adData, inHouse: _inHouse }) => {
+                                            if (adData) {
+                                                if (type === 'desktop') {
+                                                    autoCompleteJS.start('###')
+                                                } else if (type === 'mobile') {
+                                                    autoCompleteJSMobile.start('###')
+                                                }
+                                            }
+                                        })
+                                }
+                            }
+
+                        const mainSearchAutocompleteObj = document.querySelector('#main-search-autocomplete')
+                        const mainSearchAutocompleteMobileObj = document.querySelector('#main-search-autocomplete-mobile')
+
+                        mainSearchAutocompleteObj && mainSearchAutocompleteObj.addEventListener('selection', function(event) {
+                            selection(event)
+                        })
+                        mainSearchAutocompleteMobileObj && mainSearchAutocompleteMobileObj.addEventListener('selection', function(event) {
+                            selection(event)
+                        })
+                        mainSearchAutocompleteObj && mainSearchAutocompleteObj.addEventListener('focus', function(event) {
+                            openOnFocus(event, 'desktop')
+                        })
+                        mainSearchAutocompleteMobileObj && mainSearchAutocompleteMobileObj.addEventListener('focus', function(event) {
+                            openOnFocus(event, 'mobile')
+                        })

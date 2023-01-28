@@ -50,6 +50,7 @@ function baseReducer(state = initialState, action) {
             }
         case 'RECEIVED_NEW_BLOCK':
             {
+                // @ts-ignore
                 if (!state.blocks.length || state.blocks[0].blockNumber < action.msg.blockNumber) {
                     let pastBlocks
                     if (state.blocks.length < BLOCKS_PER_PAGE) {
@@ -68,6 +69,7 @@ function baseReducer(state = initialState, action) {
                     })
                 } else {
                     return Object.assign({}, state, {
+                        // @ts-ignore
                         blocks: state.blocks.map((block) => block.blockNumber === action.msg.blockNumber ? action.msg : block),
                         blockCount: action.msg.blockNumber + 1
                     })
@@ -182,6 +184,7 @@ let chart
 const elements = {
     '[data-chart="historyChart"]': {
         load() {
+            // @ts-ignore
             chart = window.dashboardChart
         },
         render(_$el, state, oldState) {
@@ -263,48 +266,11 @@ const elements = {
             }
         }
     },
-    '[data-selector="chain-block-list"] [data-selector="error-message"]': {
-        render($el, state, _oldState) {
-            if (state.blocksError) {
-                $el.show()
-            } else {
-                $el.hide()
-            }
-        }
-    },
-    '[data-selector="chain-block-list"] [data-selector="loading-message"]': {
-        render($el, state, _oldState) {
-            showLoader(state.blocksLoading, $el)
-        }
-    },
-    '[data-selector="transactions-list"] [data-selector="error-message"]': {
-        render($el, state, _oldState) {
-            $el.toggle(state.transactionsError)
-        }
-    },
-    '[data-selector="transactions-list"] [data-selector="loading-message"]': {
-        render($el, state, _oldState) {
-            showLoader(state.transactionsLoading, $el)
-        }
-    },
-    '[data-selector="transactions-list"]': {
-        load($el) {
-            return { transactionsPath: $el[0].dataset.transactionsPath }
-        },
-        render($el, state, oldState) {
-            if (oldState.transactions === state.transactions) return
-            const container = $el[0]
-            const newElements = map(state.transactions, ({ transactionHtml }) => $(transactionHtml)[0])
-            listMorph(container, newElements, { key: 'dataset.identifierHash' })
-        }
-    },
-    '[data-selector="channel-batching-count"]': {
-        render($el, state, _oldState) {
-            const $channelBatching = $('[data-selector="channel-batching-message"]')
-            if (!state.transactionsBatch.length) return $channelBatching.hide()
-            $channelBatching.show()
-            $el[0].innerHTML = numeral(state.transactionsBatch.length).format()
-        }
+    render($el, state, oldState) {
+        if (oldState.transactions === state.transactions) return
+        const container = $el[0]
+        const newElements = map(state.transactions, ({ transactionHtml }) => $(transactionHtml)[0])
+        listMorph(container, newElements, { key: 'dataset.identifierHash', horizontal: null })
     }
 }
 
@@ -395,25 +361,16 @@ export function placeHolderBlock(blockNumber) {
         data-block-number="${blockNumber}"
         data-selector="place-holder"
       >
-        <div
-          class="fade-up"
-        >
-         
-          <div class="d-flex align-items-center">
-            <div class="mr-2">
-                <span class="btn-icon">
-                    <span class="btn-icon-inner">
-                    Bk
-                    </span>
-                </span>
-            </div>
-            <div>
-                <span class="tile-title pr-0 pl-0 text-blue">${blockNumber}</span>
-                <br/>
-
-                <span class="tile-transactions">${window.localized['Block Processing']}</span>
-            </div>
-          </div>
+        <span class="loading-spinner-small ml-1 mr-4">
+          <span class="loading-spinner-block-1"></span>
+          <span class="loading-spinner-block-2"></span>
+        </span>
+        <div>
+          <span class="tile-title pr-0 pl-0">${blockNumber}</span>
+          <div class="tile-transactions">${
+            // @ts-ignore
+            window.localized['Block Processing']
+          }</div>
         </div>
       </div>
   
