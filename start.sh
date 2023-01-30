@@ -2,10 +2,10 @@
 #export MIX_ENV=prod\
 sudo chmod -R 777 ../blockscout
 export ETHEREUM_JSONRPC_VARIANT=parity
-export ETHEREUM_JSONRPC_HTTP_URL=https://rpc-mainnet3.wyzthchain.org
-#export ETHEREUM_JSONRPC_WS_URL=ws://rabbit.analog-rpc.com/ws
+export ETHEREUM_JSONRPC_HTTP_URL=https://rabbit.analog-rpc.com/
+export ETHEREUM_JSONRPC_WS_URL=ws://rabbit.analog-rpc.com/ws
 export DATABASE_URL=postgres://taralscan:wyzscan@localhost:5432/blockscout?ssl=false
-# export ETHEREUM_JSONRPC_TRACE_URL=https://rpc-mainnet3.wyzthchain.org
+export ETHEREUM_JSONRPC_TRACE_URL=https://rabbit.analog-rpc.com/
 export ETHEREUM_JSONRPC_TRACE_URL=https://rabbit.analog-rpc.com/
 export NETWORK=Blockchain Explorer
 export SUBNETWORK="WYZth Scan Testnet :"
@@ -74,9 +74,9 @@ export API_RATE_LIMIT_BY_IP=30
 export INDEXER_MEMORY_LIMIT=7
 
 
-# /bin/mix ecto.drop
-# /bin/mix ecto.create 
-# /bin/mix ecto.migrate
+/bin/mix ecto.drop
+/bin/mix ecto.create 
+/bin/mix ecto.migrate
 /bin/mix phx.digest.clean 
 /bin/mix phx.digest
 /bin/mix phx.server

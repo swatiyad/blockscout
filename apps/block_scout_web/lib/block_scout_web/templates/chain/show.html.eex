@@ -1,6 +1,48 @@
 
 
+  <div class="container-fluid bg-green py-5 testtt"  id="show_onhomepage" style="background-image: url(/images/backdrop-bg.svg); background-repeat:no-repeat;">
+  <div class="container mb-4">
+    <h3 class="text-white" style="font-size:21px;font-weight: 400;"> The WYZth Network Explorer </h3>
+    <div class="row">
+
+      <!-- SearchNavbar -->
+      <style>
+      input::placeholder {
+        color: ##a7aa49!important;
+        font-size: 0.9rem!important;
+        }
+      input:-moz-placeholder {
+          color: #a7aa49;
+        font-size: 0.9rem!important;
+        }
+
+      input::-moz-placeholder {
+          color: #a7aa49;
+        font-size: 0.9rem!important;
+        }
+
+      input.nosubmit {
+        border: 1px solid #555;
+        width: 100%;
+        padding: 0 20px 3px 40px;
+      }
+
+      </style>
+      <div class="col-sm-12 col-md-12 col-lg-6 col-md-6 mb-2">
+        <div class="search-form d-inline-block w-100">
+          <%= render BlockScoutWeb.LayoutView, "_search.html", conn: @conn, id: "main-search-autocomplete", additional_classes: ["mobile-search-hide"] %>
+        
+        </div>
+        <p class="text-white"> Featured : Curious on WYZth's hottest 🔥 trading pairs? View top pairs and details with <a href="#" class="text-blue font-weight-bold"> DEX Trading Pairs! </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 <div class="container" style="position:relative; top:-50px;" data-page="chain-details">
+
 <div class="card shadow mb-3">
   <div class="card-body py-3">
     <div class="">
@@ -146,7 +188,7 @@
               </div>
             </div>
             <div hidden data-selector="loading-message" class="col-lg-12" >
-            <div data-selector="chain-block">
+              <div data-selector="chain-block">
               <div class="tile tile-type-block n-p d-flex flex-column">
                 <a class="tile-title"><span class="tile-loader tile-label-loader"></span> </a>
                 <div class="tile-bottom-contents">
@@ -154,18 +196,18 @@
                   <div class="dark-block-loader"></div>
                 </div>
               </div>
-            </div>
+              </div>
             </div>
             <div hidden data-selector="loading-message" class="col-lg-12" >
-            <div data-selector="chain-block">
-              <div class="tile tile-type-block n-p d-flex flex-column">
-                <a class="tile-title"><span class="tile-loader tile-label-loader"></span> </a>
-                <div class="tile-bottom-contents">
-                  <div class="dark-block-loader"></div>
-                  <div class="dark-block-loader"></div>
+              <div data-selector="chain-block">
+                <div class="tile tile-type-block n-p d-flex flex-column">
+                  <a class="tile-title"><span class="tile-loader tile-label-loader"></span> </a>
+                  <div class="tile-bottom-contents">
+                    <div class="dark-block-loader"></div>
+                    <div class="dark-block-loader"></div>
+                  </div>
                 </div>
               </div>
-            </div>
             </div>
             <div hidden data-selector="loading-message" class="col-lg-12" >
               <div data-selector="chain-block">

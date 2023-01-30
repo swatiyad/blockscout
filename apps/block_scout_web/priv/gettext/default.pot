@@ -414,7 +414,7 @@ msgstr ""
 #: lib/block_scout_web/templates/internal_transaction/_tile.html.eex:32
 #: lib/block_scout_web/templates/tokens/transfer/_token_transfer.html.eex:43
 #, elixir-autogen, elixir-format
-msgid "Block #%{number}"
+msgid "%{number}"
 msgstr ""
 
 #: lib/block_scout_web/templates/block/_metatags.html.eex:3

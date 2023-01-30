@@ -22,6 +22,26 @@
           <%= gettext "There are no pending transactions." %>
         </span>
       </div>
+
+      <div class="">
+        <table class="table table-hover mb-0 fixed-layout">
+          <thead>
+            <tr class="table-head">
+            <th class="">Txn Hash</th>
+              <th class="">Method</th>
+              <th class="screenRow">Block</th>
+              <th class="screenRow">Age</th>
+              <th class="">From</th>
+              <th class="" style="width:70px">&nbsp;</th>
+              <th class="">To</th>               
+              <th class="">Value</th>
+              <th class="">Txn Fee</th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+
+      
       <div data-items data-selector="transactions-pending-list">
         <%= render BlockScoutWeb.CommonComponentsView, "_tile-loader.html" %>
       </div>

@@ -22,7 +22,7 @@
 	}
 	</style>
 <!-- Search navbar -->
-<div class="search-form d-lg-flex d-inline-block <%= if assigns[:additional_classes] do @additional_classes |> Enum.join(" ") end %>">
+<div class="search-form home-search d-lg-flex d-inline-block <%= if assigns[:additional_classes] do @additional_classes |> Enum.join(" ") end %>" id="testing">
 	<div class="input-group mb-3">
 		<div class="input-group-prepend d-none d-md-block">
 
