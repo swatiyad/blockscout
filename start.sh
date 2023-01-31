@@ -74,9 +74,9 @@ export API_RATE_LIMIT_BY_IP=30
 export INDEXER_MEMORY_LIMIT=7
 
 
-/bin/mix ecto.drop
-/bin/mix ecto.create 
-/bin/mix ecto.migrate
+# /bin/mix ecto.drop
+# /bin/mix ecto.create 
+# /bin/mix ecto.migrate
 /bin/mix phx.digest.clean 
 /bin/mix phx.digest
 /bin/mix phx.server

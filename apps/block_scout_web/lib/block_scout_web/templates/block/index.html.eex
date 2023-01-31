@@ -25,30 +25,32 @@
         <%= render BlockScoutWeb.CommonComponentsView, "_pagination_container.html", position: "top", cur_page_number: "1", show_pagination_limit: true, data_next_page_button: true, data_prev_page_button: true %>
       </div>
 
-      <div class="">
-        <table class="table table-hover mb-0 fixed-layout">
-              <thead>
-                <tr class="table-head">
-                  <th class="screenRow">Block</th>
-                  <th class="screenRow">Age</th>
-                  <th class="smallRow">Txns</th>
-                  <th class="tb_col_w200">Fee Recipient</th>
-                  <th class="screenRow">Gas Used</th>
-                  <th class="screenRow">Gas Limit</th>
-                  <th class="screenRow">Base Fee</th>
-                  <th class="screenRow">Reward</th>
-                  <th class="screenRow">Burnt Fees (ETH)</th>
-                </tr>
-              </thead>
-        </table>
-      </div>
+      <div class="overflow-auto">
+        <div class="">
+          <table class="table table-hover mb-0 fixed-layout">
+                <thead>
+                  <tr class="table-head">
+                    <th class="screenRow">Block</th>
+                    <th class="screenRow">Age</th>
+                    <th class="smallRow">Txns</th>
+                    <th class="tb_col_w200">Fee Recipient</th>
+                    <th class="screenRow">Gas Used</th>
+                    <th class="screenRow">Gas Limit</th>
+                    <th class="screenRow">Base Fee</th>
+                    <th class="screenRow">Reward</th>
+                    <th class="screenRow">Burnt Fees (ETH)</th>
+                  </tr>
+                </thead>
+          </table>
+        </div>
 
-      <div data-items>
-        <%= render BlockScoutWeb.CommonComponentsView, "_tile-loader.html" %>
-      </div>
+        <div data-items>
+          <%= render BlockScoutWeb.CommonComponentsView, "_tile-loader.html" %>
+        </div>
 
-      <div data-empty-response-message style="display: none;">
-          <span><%= gettext "There are no blocks." %></span>
+        <div data-empty-response-message style="display: none;">
+            <span><%= gettext "There are no blocks." %></span>
+        </div>
       </div>
 
       <%= render BlockScoutWeb.CommonComponentsView, "_pagination_container.html", position: "bottom", cur_page_number: "1", show_pagination_limit: true, data_next_page_button: true, data_prev_page_button: true %>

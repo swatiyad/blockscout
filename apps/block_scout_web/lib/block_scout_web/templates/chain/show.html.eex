@@ -1,43 +1,45 @@
 
 
-  <div class="container-fluid bg-green py-5 testtt"  id="show_onhomepage" style="background-image: url(/images/backdrop-bg.svg); background-repeat:no-repeat;">
-  <div class="container mb-4">
-    <h3 class="text-white" style="font-size:21px;font-weight: 400;"> The WYZth Network Explorer </h3>
-    <div class="row">
+  <div class="container-fluid search_backdrop"  id="show_onhomepage">
+    <div class="search_backdrop_overlay py-5">
+      <div class="container mb-4">
+        <h3 class="text-white" style="font-size:21px;font-weight: 400;"> The WYZth Network Explorer </h3>
+        <div class="row">
 
-      <!-- SearchNavbar -->
-      <style>
-      input::placeholder {
-        color: ##a7aa49!important;
-        font-size: 0.9rem!important;
-        }
-      input:-moz-placeholder {
-          color: #a7aa49;
-        font-size: 0.9rem!important;
-        }
+          <!-- SearchNavbar -->
+          <style>
+          input::placeholder {
+            color: ##a7aa49!important;
+            font-size: 0.9rem!important;
+            }
+          input:-moz-placeholder {
+              color: #a7aa49;
+            font-size: 0.9rem!important;
+            }
 
-      input::-moz-placeholder {
-          color: #a7aa49;
-        font-size: 0.9rem!important;
-        }
+          input::-moz-placeholder {
+              color: #a7aa49;
+            font-size: 0.9rem!important;
+            }
 
-      input.nosubmit {
-        border: 1px solid #555;
-        width: 100%;
-        padding: 0 20px 3px 40px;
-      }
+          input.nosubmit {
+            border: 1px solid #555;
+            width: 100%;
+            padding: 0 20px 3px 40px;
+          }
 
-      </style>
-      <div class="col-sm-12 col-md-12 col-lg-6 col-md-6 mb-2">
-        <div class="search-form d-inline-block w-100">
-          <%= render BlockScoutWeb.LayoutView, "_search.html", conn: @conn, id: "main-search-autocomplete", additional_classes: ["mobile-search-hide"] %>
-        
+          </style>
+          <div class="col-sm-12 col-md-12 col-lg-6 col-md-6 mb-2">
+            <div class="search-form d-inline-block w-100">
+              <%= render BlockScoutWeb.LayoutView, "_search.html", conn: @conn, id: "main-search-autocomplete", additional_classes: ["mobile-search-hide"] %>
+            
+            </div>
+            <p class="text-white"> Featured : Curious on WYZth`s hottest 🔥 trading pairs? View top pairs and details with <a href="#" class="text-blue font-weight-bold"> DEX Trading Pairs! </a>
+            </p>
+          </div>
         </div>
-        <p class="text-white"> Featured : Curious on WYZth's hottest 🔥 trading pairs? View top pairs and details with <a href="#" class="text-blue font-weight-bold"> DEX Trading Pairs! </a>
-        </p>
       </div>
     </div>
-  </div>
 </div>
 
 
@@ -59,7 +61,7 @@
               </span>
             </div>
           </div>
-          <div class="media">
+          <div class="media mb-lg-0 mb-md-4 pb-md-4 pb-lg-0 pb-sm mb-sm border-bottm-sm">
             <img class="mr-3 media_icon" src="images/a-02.svg" width="50" height="40"  style="width:50px;">
             <div class="media-body">
               <span class="dashboard-banner-network-stats-label text-uppercase">
@@ -92,7 +94,7 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-12 col-md-12 col-lg-4 border-right-sm2">
+        <div class="col-sm-12 col-md-6 col-lg-4 border-right-sm2">
           <div class="media border-bottom mb-4 pb-4">
             <img class="mr-3 media_icon" src="images/a-03.svg" width="50" height="40"  style="width:50px;">
             <div class="media-body">
@@ -107,11 +109,11 @@
               <%= render BlockScoutWeb.ChainView, "gas_price_oracle_legend_item.html", gas_price: @gas_price %>
             </div>
           </div>
-          <div class="media">
+          <div class="media mb-lg-0 mb-md-4 pb-md-4 pb-lg-0 pb-sm mb-sm border-bottm-sm">
             <img class="mr-3 media_icon" src="images/a-01.svg" width="50" height="40"  style="width:50px;">
             <div class="media-body">
               <span class="dashboard-banner-network-stats-label text-uppercase">
-                <%= gettext "Last Finalized block" %>
+            Last <span class='hide_on_xs'>Finalized </span>block
               </span>
               <span class="dashboard-data" data-selector="block-count">
                 <%= BlockScoutWeb.Cldr.Number.to_string!(@block_count, format: "#,###") %>
@@ -129,7 +131,7 @@
           </div>
 
         </div>
-        <div class="col-sm-12 col-md-12 col-lg-4">
+        <div class="ccol-sm-12 col-md-12 col-lg-4">
           <div class="dashboard-banner-chart mt-0">
           <script>
             numChartData = <%= Enum.reduce(@chart_config, 0, fn (source, acc) ->
@@ -163,7 +165,7 @@
 <%= render BlockScoutWeb.Advertisement.BannersAdView, "_banner_728.html", conn: @conn %>
 
 <section class="container">
-<div class="row">
+<div class="row home_page_tble">
   <div class="col-lg-6">
     <div class="card card-chain-blocks js-ad-dependant-mb-3">
       <div class="card-header bg-light-green">

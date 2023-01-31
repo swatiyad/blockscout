@@ -5,44 +5,94 @@
 <div class="tile-- tile-type-<%= type_suffix(@transaction) %> fade-in <%= status_class(@transaction) %>" data-test="<%= type_suffix(@transaction) %>" data-identifier-hash="<%= @transaction.hash %>">
   <div class="" data-selector="token-transfers-toggle" data-test="chain_transaction">
   <table class="table fixed-layout mb-0">
-  <tbody class="table-group-divider">
+  <tbody class="table-group-divider validated_txns---">
     <!-- Color Block Transaction -->        
-    <tr>
-    <!--
-    <td>
-      <div class="tile-transaction-type-block">
-        <div>
-          <%= if error_in_internal_tx do %>
-            <%= render BlockScoutWeb.CommonComponentsView, "_i_tooltip_2.html", text: gettext("Error in internal transactions"), additional_classes: ["color-inherit"] %>
-          <% end %>
-          <span class="tile-label" data-test="transaction_type">
-            <%= transaction_display_type(@transaction) %>
-          </span>
-        </div>
-        <span class="tile-status-label ml-2 ml-md-0" data-test="transaction_status">
-          <%= if status_class(@transaction) == "tile-status--pending" do %>
-            <div class="loading-spinner-small">
-              <span class="loading-spinner-block-1"></span>
-              <span class="loading-spinner-block-2"></span>
+    <tr>        
+        <td class="show_for_hompage sno_col">
+          <span class="btn-icon radius-50">
+            <span class="btn-icon-inner">
+            Tx
+            </span>
+          </div>
+        </td>
+        <td class="show_for_hompage">
+          <div class="text-truncate width135">
+            <%= render "_link.html", transaction_hash: @transaction.hash, data_test: "address_hash_link" %>
+            <% method_name = Transaction.get_method_name(@transaction) %>
+            <%= if method_name do %>
+              <%= render BlockScoutWeb.FormView, "_tag.html", text: method_name, additional_classes: ["method", "ml-1"] %>
+            <% end %>
+            <%= if tx_tags.personal_tx_tag && tx_tags.personal_tx_tag.name !== :error do %>
+              <%= render BlockScoutWeb.FormView, "_tag.html", text: tx_tags.personal_tx_tag.name, additional_classes: [tag_name_to_label(tx_tags.personal_tx_tag.name), "ml-1"] %>
+            <% end %>
+            <%= render BlockScoutWeb.AddressView, "_labels.html", tags: tx_tags %>
+          </div>
+          <div>
+            <span class="mr-2 mr-md-0 order-2 text-green fs-12" in-tile data-from-now="<%= block_timestamp(@transaction) %>"></span>
+          </div>
+        </td>
+
+        <td class="show_for_hompage">
+          <div class="d-flex">
+            <div><span class="text-dark mr-2">From</span></div>
+            <div class="text-truncate text-success width135">
+              <%= @transaction |> BlockScoutWeb.AddressView.address_partial_selector(:from, assigns[:current_address]) |> BlockScoutWeb.RenderHelpers.render_partial() %>
+              &rarr;
             </div>
-          <% end %>
-          <%= formatted_result(status) %>
-        </span>
-      </div>
-    </td>
-      -->
-      <!--
-    <td class="sno_col----">
-      <span class="btn-icon radius-50">
-        <span class="btn-icon-inner">
-         Tx
-        </span>
-      </div>
-    </td>-->
+          </div>
+          <div>
+          <div class="d-flex">
+            <div>
+              <span class="text-dark mr-2">To</span>
+            </div>
+            <div class="text-truncate text-success width135">
+              <span>
+                <%= @transaction |> BlockScoutWeb.AddressView.address_partial_selector(:to, assigns[:current_address]) |> BlockScoutWeb.RenderHelpers.render_partial() %>
+              </span>
+            </div>
+          </div>
+        </td>
+        <td class="show_for_hompage text-right">
+          <span class="bg-gray p-2">
+            <span class="text-green fs-12">
+              <%= value(@transaction, include_label: false) %> <%= Explorer.coin_name() %>
+            </span>
+            <!--
+              <span class="ml-0 ml-md-1 text-nowrap">
+                <%= formatted_fee(@transaction, denomination: :ether, include_label: false) %> <%= gettext "TX Fee" %>
+              </span>
+            -->
+          </span>
+        </td>
+     
+ 
+        <!--
+          <td class="hide_for_homepage">
+            <div class="tile-transaction-type-block">
+              <div>
+                <%= if error_in_internal_tx do %>
+                  <%= render BlockScoutWeb.CommonComponentsView, "_i_tooltip_2.html", text: gettext("Error in internal transactions"), additional_classes: ["color-inherit"] %>
+                <% end %>
+                <span class="tile-label" data-test="transaction_type">
+                  <%= transaction_display_type(@transaction) %>
+                </span>
+              </div>
+              <span class="tile-status-label ml-2 ml-md-0" data-test="transaction_status">
+                <%= if status_class(@transaction) == "tile-status--pending" do %>
+                  <div class="loading-spinner-small">
+                    <span class="loading-spinner-block-1"></span>
+                    <span class="loading-spinner-block-2"></span>
+                  </div>
+                <% end %>
+                <%= formatted_result(status) %>
+              </span>
+            </div>
+          </td>
+        -->  
 
       <!-- Transaction Hash  -->
-      <td>
-        <div class="text-truncate">
+      <td class="hide_for_homepage">
+        <div class="text-truncate width135">
           <%= render "_link.html", transaction_hash: @transaction.hash, data_test: "address_hash_link" %>
           <% method_name = Transaction.get_method_name(@transaction) %>
           <%= if method_name do %>
@@ -56,7 +106,7 @@
       </td>
 
       <!-- Method  -->
-      <td>
+      <td class="hide_for_homepage">
         <%= if method_name do %>
         <%= render BlockScoutWeb.FormView, "_tag.html", text: method_name, additional_classes: ["method", "ml-1"] %>
         <% end %>
@@ -68,11 +118,12 @@
       
       
       <!-- Block info -->  
-      <td>        
+        <td class="hide_for_homepage">        
           <span class="">
             <%= @transaction |> block_number() |> BlockScoutWeb.RenderHelpers.render_partial() %>
           </span> 
-          
+             <div class="show_for_hompage">
+    
         <!-- Transaction IN/OUT -->
       
         <%= if from_or_to_address?(@transaction, assigns[:current_address]) do %>
@@ -91,12 +142,12 @@
       </td>
 
       <!-- Age  -->
-      <td>            
+      <td class="hide_for_homepage">            
         <span class="" in-tile data-from-now="<%= block_timestamp(@transaction) %>"></span>
       </td>
 
       <!-- From  -->
-      <td>
+      <td class="hide_for_homepage">
         <div class="">              
           <div class="text-truncate width135">
             <%= @transaction |> BlockScoutWeb.AddressView.address_partial_selector(:from, assigns[:current_address]) |> BlockScoutWeb.RenderHelpers.render_partial() %>
@@ -106,14 +157,14 @@
         <div>           
       </td>  
       
-      <td class="" style="width:70px">
+      <td class="hide_for_homepage" style="width:70px">
       <div class="btn btn-xs btn-teal rounded-circle">
         <span class="fas fa-long-arrow-alt-right"></span>
       </div>
       </td>
       
       <!-- To  -->
-      <td>
+      <td class="hide_for_homepage">
         <div class="">              
           <div class="text-truncate width135">
             <span>
@@ -125,7 +176,7 @@
 
 
       <!-- Value  -->
-      <td class="">        
+      <td class="hide_for_homepage">        
         <span class="">
           <%= value(@transaction, include_label: false) %> <%= Explorer.coin_name() %>
         </span>         
@@ -133,15 +184,15 @@
 
       <!-- Tx Fee  -->
 
-      <td>         
+      <td class="hide_for_homepage">         
         <div class="text-truncate width100">
-          <span class="text-nowrap">
+          <span class="text-nowrap text-green">
             <%= formatted_fee(@transaction, denomination: :ether, include_label: false) %>
           </span>
         </div>    
       </td>
       <!-- Transfer
-      <td>
+      <td class="hide_for_homepage">
         <%= if involves_token_transfers?(@transaction) do %>
           <div class="">
             <% [first_token_transfer | remaining_token_transfers] = @transaction.token_transfers %>
@@ -163,7 +214,7 @@
           <% end %>
         <% end %>
       </td>       
-      -->
+      -->       
       
       </tr>
   </tbody>
