@@ -171,8 +171,8 @@
       <div class="card-header bg-light-green">
         <span style="color:#3e3f06; font-weight:bold">Latest Blocks </span>
       </div>
-      <div class="card-body px-3 py-2 scroll_box">
-        <div class="row" data-selector="chain-block-list" data-url="<%= chain_blocks_path(@conn, :chain_blocks) %>">
+      <div class="card-body px-3 pt-0 pb-2 scroll_box">
+        <div data-selector="chain-block-list" data-url="<%= chain_blocks_path(@conn, :chain_blocks) %>">
             <button data-selector="error-message" class="alert alert-danger col-12 text-left" style="display: none;">
               <span class="alert-link">
                 <%= gettext "Something went wrong, click to reload." %>
@@ -233,7 +233,7 @@
   <div class="col-lg-6">
     <div class="card card-chain-transactions--">
       <div class="card-header bg-light-green"><span style="color:#3e3f06; font-weight:bold">Latest Transaction </span></div>
-      <div class="card-body px-3 py-2 scroll_box">
+      <div class="card-body px-3 pb-2 pt-0 scroll_box">
         <div class="">
           <div data-selector="channel-batching-message" style="display: none;">
             <div data-selector="reload-transactions-button" class="alert alert-info">
