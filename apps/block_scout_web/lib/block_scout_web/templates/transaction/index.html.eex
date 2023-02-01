@@ -32,7 +32,7 @@
           <%= render BlockScoutWeb.CommonComponentsView, "_rap_pagination_container.html", position: "top", showing_limit: if Chain.transactions_available_count() == Chain.limit_showing_transactions(), do: Chain.limit_showing_transactions(), else: nil %>
         </div>
       </div>
-      <div class="overflow-auto">
+      <div class="overflow-auto w-100">
 
         <div data-selector="channel-batching-message" class="d-none">
           <div data-selector="reload-button" class="alert alert-info">

@@ -70,7 +70,123 @@
   font-size: 13px!important;
 }
 
+.dark-theme-applied .dashboard-data {
+  color: #ffffff!important;
+}
+
+.dark-theme-applied .search_backdrop {
+  background: #111111;
+  color: #a9ab3f;
+}
+
+.dark-theme-applied .card {
+  box-shadow:none!important
+}
+
+.card-header {
+  color:#3e3f06; 
+  font-weight:bold;
+}
+.card-footer {
+  background: #fff;
+  color:#333;
+}
+
+.dark-theme-applied .card-header {
+  background: #353434;
+  border-bottom: 1px solid #3e3c3c;
+  color:#eee; 
+  font-weight:bold;
+}
+
+.dark-theme-applied .bg-light-green {
+  background: #353434!important;  
+}
+
+.dark-theme-applied .card-footer {
+  background: #353434;
+  border-bottom: 1px solid #3e3c3c;
+  color:#eee;  
+}
+
+.dark-theme-applied .btn-icon,
+.dark-theme-applied .btn-icon-inner {  
+  color: #eee!important; 
+}
+
+.dark-theme-applied .bg-gray {
+  background-color: #2e2e2e !important;
+}
+
+.dark-theme-applied .btn-green {
+  background: #42442a !important;
+  color: #a9ab3f !important;
+}
+
+.dark-theme-applied .btn-green:hover {
+  background: #545633 !important;
+  color: #fff !important;
+}
+
+.dark-theme-applied .table th,
+.dark-theme-applied .table td {
+   border-top: 1px solid #363a3c !important;
+}
+
+.dark-theme-applied .custom-select {  
+  color: #b3b3b3;
+  border: 1px solid #3d3f42;
+  background:#444;
+}
+
+.dark-theme-applied .dashboard-banner-chart > canvas {
+  filter: brightness(1.3) contrast(0.5);
+}
+
+.dark-theme-applied .border-right-sm1,
+.dark-theme-applied .border-right-sm2  {
+  border-right: 1px solid #424242;
+}
+
+.sub-footer-top-border {
+  border-top:1px solid #919553
+}
+
+.dark-theme-applied .sub-footer-top-border {
+  border-top:1px solid #434435;
+}
+
+.dark-theme-applied .heading_border:after {
+  border-bottom: 1px solid #434435;
+}
+
+.dark-theme-applied .table-head {
+  background-color: #353434;
+}
+.dark-theme-applied .table thead th {
+  border-bottom: 2px solid #3e3e3e;
+}
+
+.dark-theme-applied .table { 
+  color: #bdbdbd;
+}
+
+.dark-theme-applied .page-title:after {  
+  border-bottom: 1px solid #484845;
+}
+
+.dark-theme-applied .label_warning {
+  color: #db9a04;
+  background-color: rgb(82 82 82 / 41%);
+}
+
+.dark-theme-applied .label_brown {
+  color: #919369;
+  background-color: #4c4c46;
+}
+
 @media only screen and (min-device-width: 240px) and (max-device-width: 991px) {
+
   .width_full {
     width: 100%;
   }
@@ -315,7 +431,7 @@ a.footer-link:hover {
   -->
 </div>
 
-<div class="container" style="border-top:1px solid #919553">
+<div class="container sub-footer-top-border">
   <div class="row text-white py-2">
     <div class="col-md-6 col-8 mb-sm">
       <div class="d-flex pt-1">
