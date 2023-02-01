@@ -32,6 +32,7 @@
           <div class="col-sm-12 col-md-12 col-lg-6 col-md-6 mb-2">
             <div class="search-form d-inline-block w-100">
               <%= render BlockScoutWeb.LayoutView, "_search.html", conn: @conn, id: "main-search-autocomplete", additional_classes: ["mobile-search-hide"] %>
+              <%= render BlockScoutWeb.LayoutView, "_search.html", conn: @conn, id: "main-search-autocomplete", additional_classes: ["mobile-search-show"] %>
             
             </div>
             <p class="text-white"> Featured : Curious on WYZth`s hottest 🔥 trading pairs? View top pairs and details with <a href="#" class="text-blue font-weight-bold"> DEX Trading Pairs! </a>

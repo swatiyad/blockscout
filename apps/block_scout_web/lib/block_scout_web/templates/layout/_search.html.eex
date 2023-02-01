@@ -24,7 +24,7 @@
 <!-- Search navbar -->
 <div class="search-form home-search d-lg-flex d-inline-block <%= if assigns[:additional_classes] do @additional_classes |> Enum.join(" ") end %>" id="testing">
 	<div class="input-group mb-3">
-		<div class="input-group-prepend d-none d-md-block">
+		<div class="input-group-prepend">
 
 			<select name="f" class="custom-select custom-arrow-select input-group-text text-left">
 				<option selected="" value="0">All Filters</option>
