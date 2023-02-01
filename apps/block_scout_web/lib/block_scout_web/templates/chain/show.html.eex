@@ -3,8 +3,7 @@
   <div class="container-fluid search_backdrop"  id="show_onhomepage">
     <div class="search_backdrop_overlay py-5">
       <div class="container mb-4">
-        <h3 class="text-white" style="font-size:21px;font-weight: 400;"> The WYZth Network Explorer </h3>
-      
+        <h3 class="text-white" style="font-size:21px;font-weight: 400;"> The WYZth Network Explorer </h3>      
         <div class="row">
 
           <!-- SearchNavbar -->
