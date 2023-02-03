@@ -172,6 +172,7 @@ $dark-stakes-banned-background: #313131;
         border-top-color: $dark-light;
         border-bottom-color: $dark-light;
         border-right-color: $dark-light;
+        border-left-color: $dark-light;
         background-color: $dark-light;
         color: $labels-dark;
         &:not([class^="tile tile-type"]) {
@@ -989,7 +990,7 @@ $dark-stakes-banned-background: #313131;
 .dark-theme-applied .dropdown-item:not(.header):focus {
     background-image: none;
     width: 100%;
-    background-color: #3f426c !important;
+    background-color: #4a4a4a !important;
 }
 
 @media (max-width: 991.98px) {

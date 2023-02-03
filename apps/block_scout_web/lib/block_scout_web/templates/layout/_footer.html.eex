@@ -80,8 +80,10 @@
 }
 
 .dark-theme-applied .card {
-  box-shadow:none!important
+  box-shadow:0 0.5rem 1.2rem hsl(0deg 0% 100% / 4%)!important  ;
+  border: 1px solid #3c3c3c!important;
 }
+
 
 .card-header {
   color:#3e3f06; 
@@ -184,6 +186,33 @@
   color: #919369;
   background-color: #4c4c46;
 }
+
+.chart_area_header .dropdown-toggle::after {
+  display:none
+}
+
+.chart_area_header .btn-light {
+  color: #212529;
+  background-color: #f8f9fa;
+  border-color: #f8f9fa;
+}
+
+.dark-theme-applied .chart_area_header .btn-light {
+  color: #ccc;
+  background-color: #333;
+  border-color: #333;
+}
+
+.dark-theme-applied .custom-arrow-select {
+  background: #222 url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 250 151.717'%3E%3Cpath d='M115.285 147.693L4.025 36.433a13.739 13.739 0 0 1 0-19.431L17.002 4.025a13.74 13.74 0 0 1 19.408-.023l88.591 88.176 88.59-88.176a13.74 13.74 0 0 1 19.408.023l12.977 12.981a13.739 13.739 0 0 1 0 19.431l-111.26 111.256a13.741 13.741 0 0 1-19.432 0z' fill='%2377838f'/%3E%3C/svg%3E") no-repeat right 1rem center;
+  background-size: 8px 15px;
+}
+
+
+
+
+
+
 
 @media only screen and (min-device-width: 240px) and (max-device-width: 991px) {
 
