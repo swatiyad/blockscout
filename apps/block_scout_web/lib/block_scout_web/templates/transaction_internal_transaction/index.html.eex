@@ -14,11 +14,7 @@
         <button data-error-message class="alert alert-danger col-12 text-left" style="display: none;">
           <span href="#" class="alert-link"><%= gettext("Something went wrong, click to reload.") %></span>
         </button>
-        <div data-empty-response-message style="display: none;">
-          <div class="tile tile-muted text-center" data-selector="empty-logs-list">
-            <%= gettext "There are no internal transactions for this transaction." %>
-          </div>
-        </div>
+        
 
         <div class="">
           <table class="table table-hover mb-0 fixed-layout">
@@ -35,6 +31,11 @@
                 </tr>
               </thead>
           </table>
+        </div>
+        <div data-empty-response-message style="display: none;">
+          <div class="tile tile-muted text-center" data-selector="empty-logs-list">
+            <%= gettext "There are no internal transactions for this transaction." %>
+          </div>
         </div>
 
         <div data-items>

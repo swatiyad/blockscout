@@ -7,11 +7,10 @@
 </script>
 <section class="container" data-page="transaction-list">
   <%= render BlockScoutWeb.Advertisement.TextAdView, "index.html", conn: @conn %>
-  <div class="page-title d-flex justify-content-between">
+  <div class="page-title display_flex">
     <div>
       <h1>Transactions </h1>
-    </div>
-   
+    </div>       
   </div>
 
   <div class="mt-2">

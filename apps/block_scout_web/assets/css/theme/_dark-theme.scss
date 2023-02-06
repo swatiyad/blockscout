@@ -1,4 +1,4 @@
-$body-dark: #2a2a2a; // body background
+$body-dark: #0e0b0b; // body background
 $dark-bg: #333; // hero shade
 $dark-light-bg: #242424; // pills bg shade
 $dark-light: #333; // tile light top share
@@ -999,30 +999,30 @@ $dark-stakes-banned-background: #313131;
     .dark-theme-applied .navbar.navbar-primary .navbar-nav .nav-link:focus {
         background-image: none;
         width: 100%;
-        background-color: #35335d !important;
+        background-color: #333 !important;
         color: white;
         border: none;
     }
-    .dark-theme-applied .dropdown-item:hover:before {
-        content: "|";
-        height: 50px;
-        width: 50%;
-        opacity: 1;
-        background: none;
-        right: 17%;
-        color: $dark-primary;
-        position: relative;
-    }
-    .dark-theme-applied .navbar.navbar-primary .navbar-nav .nav-link:hover:before {
-        content: "|";
-        height: 50px;
-        width: 50%;
-        opacity: 1;
-        background: none;
-        left: 24%;
-        top: 14%;
-        color: $dark-primary;
-    }
+    // .dark-theme-applied .dropdown-item:hover:before {
+    //     content: "|";
+    //     height: 50px;
+    //     width: 50%;
+    //     opacity: 1;
+    //     background: none;
+    //     right: 17%;
+    //     color: $dark-primary;
+    //     position: relative;
+    // }
+    // .dark-theme-applied .navbar.navbar-primary .navbar-nav .nav-link:hover:before {
+    //     content: "|";
+    //     height: 50px;
+    //     width: 50%;
+    //     opacity: 1;
+    //     background: none;
+    //     left: 24%;
+    //     top: 14%;
+    //     color: $dark-primary;
+    // }
 }
 
 .dark-theme-applied .confirmations-label:after {
