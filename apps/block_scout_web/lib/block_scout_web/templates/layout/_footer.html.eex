@@ -126,9 +126,11 @@ input.nosubmit {
   .header-searchbar .form-control {
     width:50%!important;
   }
-  .header-searchbar .main-search-autocomplete {
-    width:50%!important;
+ 
   }
+
+  .search-form input:focus {
+    outline:none!important
   }
 </style>
 
@@ -285,22 +287,6 @@ input.nosubmit {
 </footer>
 
 <script>
-
-
-var btn = $('.scrollupbtn');
-$(window).scroll(function() {
-  if ($(window).scrollTop() > 300) {
-    btn.addClass('show');
-  } else {
-    btn.removeClass('show');
-  }
-});
-btn.on('click', function(e) {
-  e.preventDefault();
-  $('html, body').animate({scrollTop:0}, '300');
-});
-
-
 
 var x = document.getElementsByClassName("search_backdrop");
 if (x[0]) {
