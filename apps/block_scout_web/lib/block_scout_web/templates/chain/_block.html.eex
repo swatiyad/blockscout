@@ -24,7 +24,7 @@
         <td>
           <%= if System.get_env("HIDE_BLOCK_MINER") !== "true" do %>
             <div class="d-flex" style="width:340px">
-              <div class="mr-2 text-dark" style="width:90px"><%= gettext "Fee Recipient" %> </div>
+              <div class="mr-2 text-dark hide_fee_reci" style="width:90px"><%= gettext "Fee Recipient" %> </div>
               <div class="text-truncate" style="width:160px">
                 <%= render BlockScoutWeb.AddressView,
                   "_link.html",

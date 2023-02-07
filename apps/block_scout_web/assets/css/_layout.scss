@@ -835,10 +835,10 @@ a {
     .hide_on_xs {
         display: none
     }
-    .dashboard-banner-network-stats-label {
-        font-size: 12px!important;
-        white-space: normal!important;
-    }
+    // .dashboard-banner-network-stats-label {
+    //     font-size: 12px!important;
+    //     white-space: normal!important;
+    // }
     .dashboard-data {
         white-space: normal!important
     }
@@ -858,13 +858,70 @@ a {
     .border-right-sm2 {
         border-right: 0 !important;
     }
+    // .dashboard-data {
+    //     font-size: 0.7375rem!important
+    // }
+    // .dashboard-banner-network-stats-label {
+    //     font-size: 12px!important;
+    //     white-space: normal!important;
+    // }
+}
+
+@media only screen and (min-device-width: 769px) and (max-device-width: 1199px) {
     .dashboard-data {
-        font-size: 0.7375rem!important
+        font-size: .9375rem!important;
+        white-space: normal!important;
+        line-height: 1.5;
     }
     .dashboard-banner-network-stats-label {
-        font-size: 12px!important;
-        white-space: normal!important;
+        color: #a9ab3f!important;
+        display: block;
+        white-space: normal;
+        font-size: 12px;
     }
+    .width135 {
+        width: 105px;
+    }
+}
+
+@media only screen and (min-device-width: 992px) and (max-device-width: 1390px) {
+    .hide_fee_reci {
+        display: none
+    }
+}
+
+@media only screen and (min-device-width: 769px) and (max-device-width: 992px) {
+    .border-right-sm2 {
+        border-right: none!important
+    }
+    .media .media_icon {
+        margin-right: 0!important;
+        width: 30px!important;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    .container {
+        max-width: 100%;
+    }
+}
+
+.scrollupbtn {
+    display: inline-block;
+    background-color: #333;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    text-align: center;
+    position: fixed;
+    bottom: 40px;
+    right: 10px;
+    -webkit-transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+    -o-transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+    transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
 }
 
 .footer-social a {

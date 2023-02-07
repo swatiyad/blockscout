@@ -1,13 +1,12 @@
 <script>
   function ShowLayoutContainer() {
-
     document.getElementsByClassName("layout-container")[0].style.visibility = "visible";
   }
   window.onload = ShowLayoutContainer()
 </script>
 <section class="container" data-page="transaction-list">
   <%= render BlockScoutWeb.Advertisement.TextAdView, "index.html", conn: @conn %>
-  <div class="page-title display_flex">
+  <div class="page-title">
     <div>
       <h1>Transactions </h1>
     </div>       
@@ -16,7 +15,6 @@
   <div class="mt-2">
   <p class="mb-0"><strong class="text-green">Sponsered <img src="/images/sponsered-next-img.png">: </strong> 10 ETH Give Away from MetaWin.<a href="#"> Free to Enter. </a></p>
   </div>
-
 
   <div class="card mt-4">
     <div class="card-body px-3 validated_txns" data-async-listing="<%= @current_path %>">
@@ -32,7 +30,6 @@
         </div>
       </div>
       <div class="overflow-auto w-100">
-
         <div data-selector="channel-batching-message" class="d-none">
           <div data-selector="reload-button" class="alert alert-info">
             <a href="#" class="alert-link"><span data-selector="channel-batching-count"></span> <%= gettext "More transactions have come in" %></a>
@@ -48,7 +45,7 @@
           <table class="table table-hover mb-0 fixed-layout">
               <thead>
                 <tr class="table-head">
-                <th class="">Txn Hash</th>
+                  <th class="">Txn Hash</th>
                   <th class="">Method</th>
                   <th class="screenRow">Block</th>
                   <th class="screenRow">Age</th>

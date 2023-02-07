@@ -285,6 +285,23 @@ input.nosubmit {
 </footer>
 
 <script>
+
+
+var btn = $('.scrollupbtn');
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+
+
+
 var x = document.getElementsByClassName("search_backdrop");
 if (x[0]) {
 //alert('has');
