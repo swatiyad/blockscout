@@ -245,8 +245,8 @@
       <div class="header-searchbar" id="navbar_search">
        
           <div class="col-md-12">
-            <%= render BlockScoutWeb.LayoutView, "_search.html", conn: @conn, id: "main-search-autocomplete", additional_classes: ["mobile-search-hide"] %>
-            <%= render BlockScoutWeb.LayoutView, "_search.html", conn: @conn, id: "main-search-autocomplete", additional_classes: ["mobile-search-show"] %>          
+            <%= render BlockScoutWeb.LayoutView, "_search.html", conn: @conn, id: "main-search-autocomplete", additional_classes: ["mobile-search-hide--"] %>
+            <%#= render BlockScoutWeb.LayoutView, "_search.html", conn: @conn, id: "main-search-autocomplete", additional_classes: ["mobile-search-show"] %>          
           </div>      
        
       </div>
@@ -255,10 +255,7 @@
 </nav>
 
 
-<!--ScrollTop Button-->
-  <a class="scrollupbtn">
-    <i class="fas fa-arrow-up"></i>
-  </a>
+
 
 
 

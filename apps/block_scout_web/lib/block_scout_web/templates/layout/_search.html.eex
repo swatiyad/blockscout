@@ -1,34 +1,3 @@
-<!-- Search navbar -->
-	<style>
-	input::placeholder {
-		color: #a9ab3f!important;
-		font-size:0.9rem!important;
-		font-weight:400;
-		}
-	input:-moz-placeholder {
-		color: #a9ab3f;
-		font-size:0.9rem!important;
-		font-weight:400;
-		}
-	input::-moz-placeholder {
-		color: #a9ab3f;
-		font-size:0.9rem!important;
-		font-weight:400;
-		}
-	input.nosubmit {
-		border: 1px solid #555;
-		width: 100%;
-		padding: 0 20px 3px 40px;
-	}
-
-	.dark-theme-applied  input::placeholder {
-		color: #666!important;
-		font-size:0.9rem!important;
-		font-weight:400;
-		}
-		
-	</style>
-<!-- Search navbar -->
 <div class="search-form home-search d-flex d-inline-block <%= if assigns[:additional_classes] do @additional_classes |> Enum.join(" ") end %>" id="testing">
 	<div class="input-group mb-3">
 		<div class="input-group-prepend">
