@@ -1,4 +1,4 @@
-$body-dark: #0e0b0b; // body background
+$body-dark: #252525; // body background
 $dark-bg: #333; // hero shade
 $dark-light-bg: #242424; // pills bg shade
 $dark-light: #333; // tile light top share
@@ -434,7 +434,7 @@ $dark-stakes-banned-background: #313131;
         color: $labels-dark;
     }
     .border-bottom {
-        border-bottom-color: darken($labels-dark, 30) !important;
+        border-bottom-color: #424242!important;
     }
     // coin balance history chart
     .chartjs-render-monitor[data-chart="coinBalanceHistoryChart"] {

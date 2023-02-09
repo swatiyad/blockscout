@@ -157,6 +157,9 @@ a {
     display: block;
     white-space: nowrap;
 }
+.dark-theme-applied .dashboard-banner-network-stats-label {
+    color: #8c96a5!important;
+}
 
 .fixed-layout {
     table-layout: fixed;
@@ -370,7 +373,7 @@ a {
     left: 0;
     content: "";
     width: 100%;
-    border-bottom: 1px solid #e8ebb5;
+    border-bottom: 1px solid #e7eaf3!important;
 }
 
 .label_warning {
@@ -641,8 +644,9 @@ a {
 }
 
 .dark-theme-applied .card {
+    background-color: #212121!important;
     box-shadow: 0 0.5rem 1.2rem hsl(0deg 0% 100% / 4%)!important;
-    border: 1px solid #3c3c3c!important;
+    border-color: #323232!important;
 }
 
 .card-header {

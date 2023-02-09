@@ -162,8 +162,24 @@
             </td>
 
             <!-- Age  -->
-            <td class="hide_for_homepage">            
-              <span class="" in-tile data-from-now="<%= block_timestamp(@transaction) %>"></span>
+            <td class="hide_for_homepage">  
+              <div class="d-flex">
+                <div class="mr-2 order-2 text-truncate width100" in-tile data-from-now="<%= block_timestamp(@transaction) %>"></div>
+                <%= if from_or_to_address?(@transaction, assigns[:current_address]) do %>
+                  <div class="mr-md-0 order-0 order-md-3">
+                    <%= if @transaction.from_address_hash == assigns[:current_address].hash do %>
+                      <span data-test="transaction_type" class="badge badge-warning tile-badge width44">
+                        <%= gettext "OUT" %>
+                      </span>
+                    <% else %>
+                      <span data-test="transaction_type" class="badge badge-success tile-badge width44">
+                        <%= gettext "IN" %>
+                      </span>
+                    <% end %>
+                  </div>
+                <% end %>
+              </div>          
+             
             </td>
 
             <!-- From  -->
