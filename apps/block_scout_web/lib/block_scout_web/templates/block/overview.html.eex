@@ -5,9 +5,9 @@
   <div class="row">
     <div class="col-md-12 js-ad-dependant-mb-2 mt-4">
       <!-- Block Details -->
-        <dl class="pagination-container">
+        <div class="pagination-container">
           <h1 class="card-title" data-test="detail_type">
-            <%= gettext("%{block_type} Details", block_type: block_type(@block)) %> 
+            <%= gettext("%{block_type} Details", block_type: block_type(@block)) %>
           </h1>
           <ul class="pagination">
             <li class="page-item">
@@ -41,7 +41,7 @@
                 </a>
             </li>
           </ul>
-        </dl>
+        </div>
 
       <div class="card js-ad-dependant-mb-2">
         <div class="card-body fs-14" style="line-height: 32px;">

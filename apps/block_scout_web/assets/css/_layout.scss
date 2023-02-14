@@ -373,7 +373,7 @@ a {
     left: 0;
     content: "";
     width: 100%;
-    border-bottom: 1px solid #e7eaf3!important;
+    border-bottom: 1px solid #e7eaf3;
 }
 
 .label_warning {
@@ -944,7 +944,92 @@ input.nosubmit {
 .autoComplete_wrapper > ul {
     width:105%
   }
-    
+
+
+.card {  
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid #e7eaf3;
+    border-radius: 0.5rem;
+    box-shadow :none
+  }
+  
+  dl {  
+    margin-bottom: 0!important;
+    border-bottom:1px solid #eee;
+    padding:10px 0
+  }
+  dl:last-child {  
+    border-bottom:none!important
+  }
+  
+  .text-grey {
+    color: #ccc;
+  }
+  
+  .icons_btns {
+    color: #77838f;
+    background: rgba(119,131,143,.1);
+    border-color: transparent;
+    font-size: .71531rem;
+    width: 1.75rem;
+    height: 1.75rem;
+    border-radius: 50%;
+    padding: 0!important;
+  }
+  .icons_btns:hover{
+    background: #77838f;
+    color: #fff
+  }
+  
+  .inner_icon {
+    position: relative;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%,-50%);
+  }
+  
+  .custom_drpdwn.dropdown-toggle::after {
+    display:none
+  }
+  
+  .tooltip.show {
+    opacity: 1!important;
+  }
+  
+  .dark-theme-applied dl {
+    border-bottom: 1px solid #303030;
+  }
+  
+  .badge-warning {
+    color: #db9a04!important;
+    background-color: rgba(219,154,4,.2)!important;
+  }
+  
+  .dark-theme-applied .custom_drpdwn.btn-light {
+    color: #ccc;
+    background-color: #333;
+    border-color: #333;
+  }
+  
+  
+  .icon_align {
+    position:relative; 
+    top:-4px;
+    margin-left:10px
+  }
+     
+  @media screen and (min-device-width: 769px) and (max-device-width: 992px)  {   
+  .table {
+    width: 226% !important;
+  }
+  }
+  
+  @media screen and (min-device-width: 993px) and (max-device-width: 1200px)  {   
+    .table {
+      width: 126% !important;
+    }
+    }
 
 
 
@@ -974,9 +1059,9 @@ input.nosubmit {
     .header-searchbar .form-control {
       width:30%!important;
     }
-    .header-searchbar .main-search-autocomplete {
-      width:30%!important;
-    }
+    // .header-searchbar .main-search-autocomplete {
+    //   width:30%!important;
+    // }
     }  
   
     
@@ -1005,9 +1090,8 @@ input.nosubmit {
         width: 426% !important;
     }
     .home_page_tble table {
-        width: 180%!important
+       width: 180%!important;
     }
-   
 }
 
 
@@ -1085,4 +1169,7 @@ input.nosubmit {
         display: none
     }
 }
+
+
+
 

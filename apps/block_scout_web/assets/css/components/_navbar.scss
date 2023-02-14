@@ -117,7 +117,7 @@ $navbar-logo-width: 100% !default;
         padding-left: 38px;
         padding-right: 8px;
         position: relative;
-        width: 100%;
+        // width: 100%;
         z-index: 1;
         &[placeholder] {
             text-overflow: ellipsis !important;

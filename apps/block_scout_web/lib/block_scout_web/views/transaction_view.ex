@@ -449,13 +449,16 @@ defmodule BlockScoutWeb.TransactionView do
         end
 
       contract_creation?(transaction) ->
-        gettext("Contract Creation")
+        gettext("Contract Creation")        
 
       involves_contract?(transaction) ->
-        gettext("Contract Call")
-
+        gettext("📑")
+         # Contract Call 
+ 
       true ->
-        gettext("Transaction")
+        gettext("") 
+        # Transation (hide for now)
+         
     end
   end
 
