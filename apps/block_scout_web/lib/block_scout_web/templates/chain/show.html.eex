@@ -1,18 +1,20 @@
 
 <div class="container-fluid search_backdrop">
   <div class="search_backdrop_overlay py-5">
-    <div class="container mb-4">
-      <h3 class="text-white" style="font-size:21px;font-weight: 400;"> The WYZth Network Explorer </h3>      
+    <div class="container mb-4">         
       <div class="row">          
-        <div class="col-sm-12 col-md-12 col-lg-6 col-md-6 mb-2" id="inner_page_searchbar">
+        <div class="col-sm-12 col-md-12 col-lg-7 col-md-6 mb-2" id="inner_page_searchbar">
+         <h3 class="text-white" style="font-size:21px;font-weight: 400;"> The WYZth Network Explorer </h3>    
           <div class="search-form d-inline-block w-100">
             <%= render BlockScoutWeb.LayoutView, "_search.html", conn: @conn, id: "main-search-autocomplete-mobile", additional_classes: ["mobile-search-hide--"] %>
             <%#= render BlockScoutWeb.LayoutView, "_search.html", conn: @conn, id: "main-search-autocomplete-mobile", additional_classes: ["mobile-search-show"] %>
           
           </div>
-          <p class="text-white"> Featured : Curious on WYZth`s hottest 🔥 trading pairs? View top pairs and details with <a href="#" class="text-blue font-weight-bold"> DEX Trading Pairs! </a>
+          <p class="text-white mt-3"> Featured : Curious on WYZth`s hottest 🔥 trading pairs? View top pairs and details with <a href="#" class="text-blue font-weight-bold"> DEX Trading Pairs! </a>
           </p>
         </div>
+        <div class="col-sm-12 col-md-12 col-lg-5 col-md-6 mb-2 text-center py-3">
+        <img src="/images/advertisement.webp" class="img-fluid rounded"></div>
       </div>
     </div>
   </div>

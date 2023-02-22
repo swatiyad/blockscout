@@ -7,12 +7,12 @@
       <tr>
         <td>
           <div class="text-truncate width135">
-          <%= render BlockScoutWeb.TransactionView, "_link.html", transaction_hash: @internal_transaction.transaction_hash %>
+            <%= render BlockScoutWeb.TransactionView, "_link.html", transaction_hash: @internal_transaction.transaction_hash %>
           </div>
         </td>
 
         <td>
-        <span class="mr-2 mr-md-0 order-1">
+          <span class="mr-2 mr-md-0 order-1">
           <%= link(
             gettext("%{number}", number: to_string(@internal_transaction.block_number)),
             to: block_path(BlockScoutWeb.Endpoint, :show, @internal_transaction.block_number)

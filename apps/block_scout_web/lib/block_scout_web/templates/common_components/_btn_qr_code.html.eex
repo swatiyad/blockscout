@@ -1,15 +1,15 @@
 <span
-    class="overview-title-item--"
+    class="overview-title-item-- add_icon_btns icons_btns"
     data-target="#qrModal"
     data-toggle="modal"
     >
     <span
-        class="btn-qr-icon-- btn icons_btns"
+        class="btn-qr-icon-- btn icons_btns text-secondary pl-2"
         data-toggle="tooltip"
         data-placement="top"
         title='<%= gettext("QR Code") %>'
         aria-label='<%= gettext("Show QR Code") %>'
     >
-    <i class="fa-solid fa-qrcode inner_icon"></i>
+    <i class="fa-solid fa-qrcode"></i>
     </span>
 </span>

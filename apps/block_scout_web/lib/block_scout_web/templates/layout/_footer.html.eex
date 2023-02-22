@@ -21,8 +21,7 @@
 }
 .dark-theme-applied .footer-about-bg {   
     filter: brightness(1);
-    opacity: 0.5;
-    
+    opacity: 0.5;    
 }
 
 .search_backdrop {  
@@ -33,7 +32,7 @@
 
 .search_backdrop_overlay {
   background-image: url(/images/backdrop-bg.svg);
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-position: left center;
 }
 
@@ -47,6 +46,85 @@
   background-image: url(/images/backdrop-bg.svg);
   background-repeat: repeat;
   background-position: left center;
+}
+
+.scroll_box table tr td:first-child {
+  border-top: 1px solid transparent!important;
+}
+
+.header-searchbar select {
+  display:none
+}
+.header-searchbar .form-control {
+  border-radius: .5rem!important;
+  background-color: #F8F9FA
+}
+
+.search_backdrop .search_icon_start {
+  display:none
+}
+
+.search_backdrop .form-control {
+  border: 0!important
+}
+
+.header-searchbar .input-group-append {
+  display:none
+}
+.header-searchbar .autoComplete_wrapper > input {   
+    padding-left: 30px!important;  
+}
+.gasPricePlaceHolder {
+  paddinng-left: 10px
+}
+.home-search {
+  padding: 5px;
+  background: #fff;
+  border-radius: .5rem
+}
+
+.sticky-top {
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+  background: #fff;
+}
+.group-hover {
+    opacity: 0;
+    pointer-events: none;
+}
+.group:hover .group-hover {
+    opacity: 1;
+    pointer-events: all;
+}
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #A9AB3F!important;
+    border-color: #A9AB3F!important;
+    box-shadow: none!important;
+}
+
+.add_icon_btns i {
+    position: relative;
+    top: 25%;    
+}
+
+.custom_pills.nav-pills .nav-link.active {
+    background-color: #a9ab3f;
+    color:#fff!important;
+}
+
+.custom_pills .nav-item {
+    margin: 5px;
+}
+
+.custom_pills .nav-link {   
+    background: #E9ECEF;
+    color:#444!important;
+    font-weight: 600;
+    font-size: 0.8rem;
+    border-radius: 10px;
+    padding: 5px 10px;
 }
 
 </style>
@@ -82,12 +160,6 @@
         <i class="fas fa-cogs mr-1"></i> Preferences
       </button>
 
-
-      <!-- Dark mode changer -->
-
-      <button type="button" class="btn btn-xs btn-lighter text-nowrap dark-mode-changer-btn" id="dark-mode-changer">
-      <i class="fas fa-moon mr-1"></i>
-       </button>
     </div>
 
     <div class="col-6 col-md-4 col-lg-<%= col_size %>">
@@ -138,7 +210,7 @@
         <h3 class="text-white heading_border"><%= gettext("Products & Services") %></h3>
         <ul style="list-style: none;margin: 0; padding: 0; line-height: 31px;">
         <li><a href="<%= Application.get_env(:block_scout_web, :footer)[:chat_link] %>" rel="noreferrer" class="footer-link"><%= gettext("Advertise") %></a></li>
-        <li><a href="<%= Application.get_env(:block_scout_web, :footer)[:chat_link] %>" rel="noreferrer" class="footer-link"><%= gettext("Explorer-as-a-Service (EaaS)") %></a></li>
+        
         <li><a href="<%= Application.get_env(:block_scout_web, :footer)[:chat_link] %>" rel="noreferrer" class="footer-link"><%= gettext("WYZ AMM Dex") %></a></li>
         <li><a href="<%= Application.get_env(:block_scout_web, :footer)[:chat_link] %>" rel="noreferrer" class="footer-link"><%= gettext("WCX Cex") %></a></li>
         <li><a href="<%= Application.get_env(:block_scout_web, :footer)[:chat_link] %>" rel="noreferrer" class="footer-link"><%= gettext("WY wallets") %></a></li>

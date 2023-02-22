@@ -1,34 +1,44 @@
-<div id="transaction-tabs" class="card-tabs js-card-tabs">
+<ul id="transaction-tabs" class="nav nav-pills custom_pills card-tabs-- js-card-tabs--">
   <%= if @show_token_transfers do %>
+  <li class="nav-item">
     <%= link(
           gettext("Token Transfers"),
-          class: "card-tab #{tab_status("token-transfers", @conn.request_path, @show_token_transfers)}",
+          class: "nav-link #{tab_status("token-transfers", @conn.request_path, @show_token_transfers)}",
           to: AccessHelpers.get_path(@conn, :transaction_token_transfer_path, :index, @transaction)
         )
       %>
+    </li>
   <% end %>
+  <li class="nav-item">
   <%= link(
         gettext("Internal Transactions"),
-        class: "card-tab #{tab_status("internal-transactions", @conn.request_path, @show_token_transfers)}",
+        class: "nav-link #{tab_status("internal-transactions", @conn.request_path, @show_token_transfers)}",
         to: AccessHelpers.get_path(@conn, :transaction_internal_transaction_path, :index, @transaction)
       )
     %>
+    </li>
+    <li class="nav-item">
   <%= link(
         gettext("Logs"),
-        class: "card-tab #{tab_status("logs", @conn.request_path)}",
+        class: "nav-link #{tab_status("logs", @conn.request_path)}",
         to: AccessHelpers.get_path(@conn, :transaction_log_path, :index, @transaction),
         "data-test": "transaction_logs_link"
       )
     %>
+    </li>
+    <li class="nav-item">
   <%= link(
       gettext("Raw Trace"),
-      class: "card-tab #{tab_status("raw-trace", @conn.request_path)}",
+      class: "nav-link #{tab_status("raw-trace", @conn.request_path)}",
       to: AccessHelpers.get_path(@conn, :transaction_raw_trace_path, :index, @transaction)
       ) %>
+      </li>
+      <li class="nav-item">
   <%= link(
         gettext("State changes"),
-        class: "card-tab #{tab_status("state", @conn.request_path)}",
+        class: "nav-link #{tab_status("state", @conn.request_path)}",
         to: AccessHelpers.get_path(@conn, :transaction_state_path, :index, @transaction)
       ) 
     %>
-</div>
+    </li>
+</ul>

@@ -3,9 +3,34 @@
 <% test_nets = test_nets(dropdown_nets()) %>
 <% main_nets = dropdown_head_main_nets() %>
 
-<nav class="navbar navbar-dark navbar-expand-lg navbar-primary border-bottom shadow-sm custom_navbar" data-selector="navbar" id="top-navbar">
+<div class="sticky-top border-bottom" id="abc">
+  <div class="container">
+    <div class="row topbar_search align-items-center py-2">
+      <div class="col-lg-6 pl-4">
+          <div class="d-none d-lg-inline-block m text-nowrap fs-12">
+            <span class="text-secondary">WYZth Price :</span> <span class="text-info"> $ 328.04</span>
+            <span data-toggle="tooltip" data-placement="top" data-title="Changes in the last 24 hours" data-original-title="" title="">
+              <span class="text-success"> (+1.27%)</span>
+            </span>
+            <span id="spanGasTooltip" class="ml-1 mr-1"> | <i class="fa fa-gas-pump text-secondary ml-1 "></i> <span class="text-secondary">
+            Gas: </span><a href="/gastracker" class="text-info ml-1"><span>5</span> Gwei</a></span>
+          </div>     
+      </div>
+      <div class="col-lg-6 px-2">
+        <div class="header-searchbar" id="navbar_search">        
+            <div class="col-md-12 p-0">
+              <%= render BlockScoutWeb.LayoutView, "_search.html", conn: @conn, id: "main-search-autocomplete", additional_classes: ["mobile-search-hide--"] %>
+              <%#= render BlockScoutWeb.LayoutView, "_search.html", conn: @conn, id: "main-search-autocomplete", additional_classes: ["mobile-search-show"] %>          
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<nav class="navbar navbar-dark navbar-expand-lg navbar-primary border-bottom shadow-sm custom_navbar" data-selector="navbar" id="top-navbar">  
   <div class="container navbar-container">
-    <div class="d-flex flex-column">
+    <div class="clearfix">
       <%= link to: webapp_url(@conn), class: "navbar-brand", "data-test": "header_logo" do %>
       <%= if logo() do %>
         <img class="navbar-logo" id="navbar-logo" style="width:175px" src="<%= static_path(@conn, logo()) %>" alt="<%= subnetwork_title() %>" />
@@ -16,19 +41,14 @@
       <%= if Application.get_env(:block_scout_web, BlockScoutWeb.Chain)[:enable_testnet_label] do %>
         <%= render BlockScoutWeb.FormView, "_tag.html", text: Application.get_env(:block_scout_web, BlockScoutWeb.Chain)[:testnet_label_text], additional_classes: ["testnet-label", "ml-2"] %>
       <% end %>
-    <% end %>
-    <div id="abc">
-      <div class="d-none d-lg-inline-block m text-nowrap rounded-lg fs-10 bg-light py-1 px-2">
-        <span class="text-dark">WYZth: $328.04</span><span data-toggle="tooltip" data-placement="top" data-title="Changes in the last 24 hours" data-original-title="" title=""><span class="text-success"> (+1.27%)</span></span><span id="spanGasTooltip" class="ml-1 mr-1"> | <a href="/gastracker" class="text-secondary"><i class="fad fa-gas-pump ml-1 "></i> <span class="gasPricePlaceHolder">5</span> Gwei</a></span>
-      </div>     
-    </div>
+    <% end %>  
   </div>
    
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="<%= gettext("Toggle navigation") %>">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="d-flex flex-column topbar_search">
+    <div class="col-md-8">
       <div class="collapse navbar-collapse order-md-2" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto width_full">
           <li class="nav-item">
@@ -110,12 +130,123 @@
               </li>
             <% end %>
 
+
             <li class="nav-item dropdown">
-              <a href="#" role="button" id="navbarTokensDropdown" class="nav-link topnav-nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">         
-                <%= gettext("Resources") %>
-                <span class="fas fa-angle-down mobile_arrow d-none d-sm-inline d-inline d-md-inline d-lg-none d-xl-none"></span>
-              </a>
-          </li>
+                <a href="#" role="button" id="navbarTokensDropdown" class="nav-link topnav-nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <%= gettext("NFTs") %>
+                  <span class="fas fa-angle-down mobile_arrow d-none d-sm-inline d-inline d-md-inline d-lg-none d-xl-none"></span>
+                </a>
+                <div class="dropdown-menu" aria-labeledby="navbarTransactionsDropdown">
+                      <%= link(
+                        gettext("Top NFTs"),
+                        class: "dropdown-item #{tab_status("", @conn.request_path)}",
+                        to: tokens_path(@conn, :index)
+                      ) %>
+
+                      <%= link(
+                        gettext("Latest Trends"),
+                        class: "dropdown-item #{tab_status("tokens", @conn.request_path)}",
+                        to: tokens_path(@conn, :index)
+                      ) %>
+
+                      <%= link(
+                        gettext("Latest Transfers"),
+                        class: "dropdown-item #{tab_status("tokens", @conn.request_path)}",
+                        to: tokens_path(@conn, :index)
+                      ) %>
+
+                      <%= link(
+                        gettext("Latest Mints"),
+                        class: "dropdown-item #{tab_status("tokens", @conn.request_path)}",
+                        to: tokens_path(@conn, :index)
+                      ) %>                  
+                </div>
+              </li>
+
+
+            <li class="nav-item dropdown">
+                <a href="#" role="button" id="navbarTokensDropdown" class="nav-link topnav-nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <%= gettext("Resources") %>
+                  <span class="fas fa-angle-down mobile_arrow d-none d-sm-inline d-inline d-md-inline d-lg-none d-xl-none"></span>
+                </a>
+                <div class="dropdown-menu" aria-labeledby="navbarTransactionsDropdown">
+                <%= link(
+                        gettext("Charts  And Stats"),
+                        class: "dropdown-item #{tab_status("", @conn.request_path)}",
+                        to: tokens_path(@conn, :index)
+                      ) %>
+
+                  <%= link(
+                        gettext("Top Statistics"),
+                        class: "dropdown-item border-bottom  #{tab_status("tokens", @conn.request_path)}",
+                        to: tokens_path(@conn, :index)
+                      ) %>
+
+                      <%= link(
+                        gettext("Directory"),
+                        class: "dropdown-item #{tab_status("tokens", @conn.request_path)}",
+                        to: tokens_path(@conn, :index)
+                      ) %>
+
+                      <%= link(
+                        gettext("Newsletter"),
+                        class: "dropdown-item #{tab_status("tokens", @conn.request_path)}",
+                        to: tokens_path(@conn, :index)
+                      ) %>
+
+                      <%= link(
+                        gettext("Knowledge Base"),
+                        class: "dropdown-item #{tab_status("tokens", @conn.request_path)}",
+                        to: tokens_path(@conn, :index)
+                      ) %>
+                  
+                </div>
+              </li>
+
+          <li class="nav-item dropdown">
+                <a href="#" role="button" id="navbarTokensDropdown" class="nav-link topnav-nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <%= gettext("Developers") %>
+                  <span class="fas fa-angle-down mobile_arrow d-none d-sm-inline d-inline d-md-inline d-lg-none d-xl-none"></span>
+                </a>
+                <div class="dropdown-menu" aria-labeledby="navbarTransactionsDropdown">
+                <%= link(
+                        gettext("API Docmentation"),
+                        class: "dropdown-item border-bottom #{tab_status("", @conn.request_path)}",
+                        to: tokens_path(@conn, :index)
+                      ) %>
+
+                  <%= link(
+                        gettext("Verify Contract"),
+                        class: "dropdown-item #{tab_status("tokens", @conn.request_path)}",
+                        to: tokens_path(@conn, :index)
+                      ) %>
+
+                      <%= link(
+                        gettext("Smart Contract Search"),
+                        class: "dropdown-item #{tab_status("tokens", @conn.request_path)}",
+                        to: tokens_path(@conn, :index)
+                      ) %>
+
+                      <%= link(
+                        gettext("Contract Diff Checker"),
+                        class: "dropdown-item border-bottom #{tab_status("tokens", @conn.request_path)}",
+                        to: tokens_path(@conn, :index)
+                      ) %>
+
+                      <%= link(
+                        gettext("Vyper Online Compiler"),
+                        class: "dropdown-item #{tab_status("tokens", @conn.request_path)}",
+                        to: tokens_path(@conn, :index)
+                      ) %>
+
+                      <%= link(
+                        gettext("Broadcast Transaction"),
+                        class: "dropdown-item #{tab_status("tokens", @conn.request_path)}",
+                        to: tokens_path(@conn, :index)
+                      ) %>
+                  
+                </div>
+              </li>
 
           <li class="nav-item dropdown">
             <a href="#" role="button" id="navbarTokensDropdown" class="nav-link topnav-nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -133,12 +264,19 @@
             </a>
           </li>
 
-          <li class="header-nav-separator mt-lg-2"></li>
+          <!-- Dark mode changer -->  
+          <li class="nav-item d-none d-lg-inline-block">       
+            <button type="button" class="dark-mode-changer-btn nav-link topnav-nav-link  border rounded ml-2  bg-white navbar-image" id="dark-mode-changer">
+              <i class="fas fa-moon mr-1" style="font-size: 1.2rem;"></i>
+            </button>
+          </li>
+
 
           <li class="nav-item d-none d-lg-inline-block">
-            <a href="#" class="nav-link topnav-nav-link label_warning ml-2 py-2 navbar-image">
-              <img src="/images/small-logo-icon.png"/ style="width:17px" class="">
+            <a href="#" class="nav-link topnav-nav-link  border rounded ml-2 py-2 navbar-image">
+              <img src="/images/small-logo-icon.png"/ style="width:16px; height:19px" class="">
             </a>
+          </li>
       
           <li class="nav-item  d-block d-lg-none d-xl-none">
             <a href="#" role="button" id="navbarexpoDropdown" class="nav-link topnav-nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -242,14 +380,8 @@
           <%#= render BlockScoutWeb.LayoutView, "_account_menu_item.html", conn: @conn, current_user: @current_user %>
         </ul>
       </div>
-      <div class="header-searchbar" id="navbar_search">
-       
-          <div class="col-md-12">
-            <%= render BlockScoutWeb.LayoutView, "_search.html", conn: @conn, id: "main-search-autocomplete", additional_classes: ["mobile-search-hide--"] %>
-            <%#= render BlockScoutWeb.LayoutView, "_search.html", conn: @conn, id: "main-search-autocomplete", additional_classes: ["mobile-search-show"] %>          
-          </div>      
-       
-      </div>
+
+      
     </div>
   </div>
 </nav>

@@ -90,14 +90,14 @@
           <% end %>
 
           </td>
-          <td>
-          <%= if !is_nil(@block.base_fee_per_gas) do %>
-            <!-- Burnt Fees -->
+          <!-- Burnt Fees -->
+          <!-- <td>
+         <%= if !is_nil(@block.base_fee_per_gas) do %>            
               <div class="text-truncate width135">
             <span> <%= format_wei_value(burned_fee, :ether) %>  </span>
             </div>
           <% end %>
-          </td>
+          </td>-->
         </tr>
       </tbody>
     </table>

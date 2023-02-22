@@ -3,7 +3,7 @@
 
   <div class="page-title display_flex">
     <div>
-      <h1>Blocks</h1>
+      <h1> Blocks</h1>
     </div>
     <div>
     <span class="custom_label custom_label_sm label_brown text-dark text-center rounded-lg"><%= gettext="Network Utilization :" %> 000.0000</span>
@@ -15,7 +15,67 @@
   <div class="mt-2">
     <p class="mb-0"><strong>Featured: </strong> Bridging tokens between Ethereum, Layer 2 and other chains? Browse through the Blockscan <a href="#"> bridges list. </a></p>
   <div>
-  <div class="card mt-3">
+  <div id="ContentPlaceHolder1_divStats" class="row my-3">
+    <div class="col-sm-6 col-lg-3">    
+      <a class="card group text-secondary text-decoration-none mb-0" href="#">
+        <div class="card-body py-3">
+          <div class="d-flex justify-content-between align-items-center mb-1">
+            <p class="fs-14 mb-0 text-uppercase">Network Utilization (24H)</p>
+            <i class="fa-solid fa-arrow-up-right-from-square group-hover"></i>
+          </div>
+          <div>
+            <span class="font18 text-dark">54.4%</span>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-sm-6 col-lg-3">
+      <a class="card group text-secondary text-decoration-none mb-0" href="#">
+        <div class="card-body py-3">
+          <div class="d-flex justify-content-between align-items-center mb-1">
+            <p class="fs-14 mb-0 text-uppercase ">Last Safe Block</p>
+            <i class="fa-solid fa-arrow-up-right-from-square group-hover"></i>
+          </div>
+          <div>
+            <span class="font18 text-dark">16675184</span>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-sm-6 col-lg-3">
+      <a class="card group text-secondary text-decoration-none mb-0" href="#">
+        <div class="card-body py-3">
+          <div class="d-flex justify-content-between align-items-center mb-1">
+            <p class="font14 mb-0 text-uppercase">Average Gas Price (24h)</p>
+            <i class="fa-solid fa-arrow-up-right-from-square group-hover"></i>
+          </div>
+          <div>
+            <span class="font18 text-dark">
+            37.171212039 Gwei
+            </span>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-sm-6 col-lg-3">
+      <a class="card group text-secondary text-decoration-none mb-0" target="_blank" href="#">
+        <div class="card-body py-3">
+          <div class="d-flex justify-content-between align-items-center mb-1">
+            <p class="fs-14 mb-0 text-uppercase">Burnt Fees 🔥</p>              
+              <i class="fa-solid fa-arrow-up-right-from-square group-hover"></i>
+          </div>
+          <div>
+            <span class="font18 text-dark">2,927,518.91 ETH</span>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="card mt-2">
     <div class="card-body px-3" data-async-listing="<%= @current_path %>">
       <%= render BlockScoutWeb.CommonComponentsView, "_channel_disconnected_message.html", text: gettext("Connection Lost, click to load newer blocks") %>
 
@@ -28,19 +88,19 @@
       <div class="overflow-auto w-100">
         <div class="">
           <table class="table table-hover mb-0 fixed-layout">
-                <thead>
-                  <tr class="table-head">
-                    <th class="screenRow">Block</th>
-                    <th class="screenRow">Age</th>
-                    <th class="smallRow">Txns</th>
-                    <th class="tb_col_w200">Fee Recipient</th>
-                    <th class="screenRow">Gas Used</th>
-                    <th class="screenRow">Gas Limit</th>
-                    <th class="screenRow">Base Fee</th>
-                    <th class="screenRow">Reward</th>
-                    <th class="screenRow">Burnt Fees (ETH)</th>
-                  </tr>
-                </thead>
+            <thead>
+              <tr class="table-head">
+                <th class="screenRow">Block</th>
+                <th class="screenRow">Age</th>
+                <th class="smallRow">Txns</th>
+                <th class="tb_col_w200">Fee Recipient</th>
+                <th class="screenRow">Gas Used</th>
+                <th class="screenRow">Gas Limit</th>
+                <th class="screenRow">Base Fee</th>
+                <th class="screenRow">Reward</th>
+                <!--<th class="screenRow">Burnt Fees (ETH)</th>-->
+              </tr>
+            </thead>
           </table>
         </div>
 

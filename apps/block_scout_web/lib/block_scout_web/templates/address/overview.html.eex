@@ -8,7 +8,7 @@
   <div class="row js-ad-dependant-mb-2 js-ad-dependant-mb-5-reverse">
     <!-- Address details -->
       <div class="col-md-12 js-ad-dependant-mb-2">
-        <div class="py-3">
+        <div class="page-title">
           <%= cond do %>
             <% Enum.member?(dark_forest_addresses_list_0_4, current_address) -> %>
               <%= render BlockScoutWeb.AddressView, "_custom_view_df_title.html", title: "zkSnark space warfare (v0.4)" %>
@@ -26,12 +26,12 @@
               <%= nil %>
           <% end %>
           <span class="card-title lg-card-title mb-2-desktop">
-            <div class="title-with-label"><%= address_title(@address) %> <%= gettext "Details" %> :</div>
+            <div class="title-with-label"><%= address_title(@address) %></div>
             <%= render BlockScoutWeb.AddressView, "_labels.html", address_hash: @address.hash, tags: @tags %>           
           </span> 
-          <span class="card-title lg-card-title mb-2-desktop title-with-label text-secondary <%= if BlockScoutWeb.AddressView.contract?(@address) do %>contract-address<% end %>" data-test="address_detail_hash"><%= @address %></span>
+          <span class="card-title lg-card-title mb-2-desktop title-with-label text-secondary fs-16 <%= if BlockScoutWeb.AddressView.contract?(@address) do %>contract-address<% end %>" data-test="address_detail_hash"><%= @address %></span>
           <!-- buttons -->
-            <span class="ml-2 overview-title-buttons--">
+            <span class="ml-2 overview-title-buttons-- add_icon_btns">
               <%= render BlockScoutWeb.CommonComponentsView, "_btn_copy.html",
                 id: "tx-raw-input",
                 additional_classes: ["overview-title-item-- btn icons_btns"],
@@ -41,12 +41,17 @@
               <%= render BlockScoutWeb.CommonComponentsView, "_btn_qr_code.html" %>
             </span>
           </div>
+
+         <div>
+          <p class="text-secondary pt-2 fs-14">  
+            <strong>Featured:</strong> Wallet-to-wallet instant messaging via <a href="#">Blockscan Chat</a>
+          </p>
+         </div>
           <div class="card-- js-ad-dependant-mb-2 mb-5">
             <div class="card-body-- fs-14" style="line-height: 31px;">
               <div class="row">
                 <div class="col-lg-6">
-                  <div class="card">
-                  
+                  <div class="card mt-3">                  
                     <div class="card-header py-2 px-4">Overview</div>                 
                       <div class="card-body py-0 px-4">                    
                       <!-- Verify in other explorers -->
@@ -155,7 +160,7 @@
                         <dt class="col-sm-4 col-lg-4">
                           <%= render BlockScoutWeb.CommonComponentsView, "_i_tooltip_2.html",
                           text: gettext("Address balance in") <> " " <> Explorer.coin_name() <> " " <> gettext("doesn't include ERC20, ERC721, ERC1155 tokens).") %>
-                          <%= gettext("Balance") %>
+                          <%= gettext("WYZth Balance") %>
                         </dt>
                         <dd data-selector="current-coin-balance" class="col-sm-8 col-md-8 col-lg-8" data-test="address_balance">
                           <%= balance(@address) %>
@@ -244,7 +249,7 @@
                     </div>
                 </div>                
                 <div class="col-lg-6">
-                  <div class="card">
+                  <div class="card mt-3">
                     <div class="card-header py-2 px-4">More Info</div> 
                     <div class="card-body py-0 px-4">        
                     <!-- Gas used -->

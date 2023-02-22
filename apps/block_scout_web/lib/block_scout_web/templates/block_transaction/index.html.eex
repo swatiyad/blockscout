@@ -2,17 +2,19 @@
 
   <%= render BlockScoutWeb.BlockView, "overview.html", assigns %>
 
-  <section>
-    <div class="card mb-3">
-      <div class="card-tabs js-card-tabs">
+  <section>    
+      <div class="nav nav-pills custom_pills card-tabs-- js-card-tabs--">
+        <li class="item-item">
         <%=
           link(
             gettext("Transactions"),
-            class: "card-tab #{tab_status("transactions", @conn.request_path)}",
+            class: "nav-link #{tab_status("transactions", @conn.request_path)}",
             to: block_transaction_path(@conn, :index, @conn.params["block_hash_or_number"])
             )
         %>
+        </li>
       </div>
+      <div class="card mt-3 mb-3">
 
       <div class="card-body" data-async-load data-async-listing="<%= @current_path %>" id="txs">
 

@@ -12,12 +12,12 @@ function showAd() {
     if (domainName === 'blockscout.com' || domainName.endsWith('.blockscout.com')) {
         $('.js-ad-dependant-mb-2').addClass('mb-2')
         $('.js-ad-dependant-mb-3').addClass('mb-3')
-        $('.js-ad-dependant-mb-5-reverse').removeClass('mb-5')
+        $('.js-ad-dependant-mb-5-reverse').removeClass('mb-2')
         return true
     } else {
         $('.js-ad-dependant-mb-2').removeClass('mb-2')
         $('.js-ad-dependant-mb-3').removeClass('mb-3')
-        $('.js-ad-dependant-mb-5-reverse').addClass('mb-5')
+        $('.js-ad-dependant-mb-5-reverse').addClass('mb-2')
         return false
     }
 }

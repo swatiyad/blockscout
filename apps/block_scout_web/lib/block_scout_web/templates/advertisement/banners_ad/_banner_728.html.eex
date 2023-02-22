@@ -4,3 +4,6 @@
     <div class="coinzilla" data-zone="C-26660bf627543e46851"></div>
 </div>
 <script defer data-cfasync="false" src="<%= static_path(@conn, "/js/banner.js") %>"></script>
+<div class="text-center mb-4">
+    <img src="/images/banner-ad.png" class="img-responsive">
+</div>
