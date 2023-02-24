@@ -55,8 +55,8 @@
                 </div>
             </td>
             <td class="show_for_hompage text-right">
-              <span class="bg-gray p-2">
-                <span class="text-green fs-12">
+              <span class="border rounded-sm p-1">
+                <span class="fs-12">
                   <%= value(@transaction, include_label: false) %> <%= Explorer.coin_name() %>
                 </span>
                 <!--
@@ -90,37 +90,35 @@
               </div>
             </td>
             -->
+            <td class="hide_for_homepage" style="width:40px">
+              <span class="tile-status-label ml-md-0" data-test="transaction_status">
+                <%= if status_class(@transaction) == "tile-status--pending" do %>
+                  <span class="text-warning" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Txn is pending"><strong><i class="fa fa-clock"></i></strong></span>
+                <% end %>
+
+                <%= if status_class(@transaction) == "tile-status--success" do %>
+                  <span class="text-muted" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Txn is successful"><strong><i class="fa fa-check-circle"></i></strong></span>
+                <% end %>
+
+                <%= if status_class(@transaction) == "tile-status--awaiting-internal-transactions" do %>
+                <span class="text-danger" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Internal Transaction"><strong><i class="fa fa-exclamation-circle"></i></strong></span>
+                <% end %>
+
+                <%= if status_class(@transaction) == "tile-status--error--awaiting-internal-transactions" do %>
+                <span class="text-danger" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Error: Internal Transaction"><strong><i class="fa fa-exclamation-circle"></i></strong></span>
+                <% end %>
+
+                <%= if status_class(@transaction) == "tile-status--error--reason" do %>
+                <span class="text-danger" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Error in Txn"><strong><i class="fa fa-exclamation-circle"></i></strong></span>
+                <% end %>
+              </span>
+            </td>
             
             <!-- Transaction Hash  -->
-            <td class="hide_for_homepage">
-              <div class="d-flex">
-                <div class="mr-2">
-                  <span class="tile-status-label ml-md-0" data-test="transaction_status">
-                    <%= if status_class(@transaction) == "tile-status--pending" do %>
-                      <span class="text-warning" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Txn is pending"><strong><i class="fa fa-clock"></i></strong></span>
-                    <% end %>
-
-                    <%= if status_class(@transaction) == "tile-status--success" do %>
-                      <span class="text-success" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Txn is successful"><strong><i class="fa fa-check-circle"></i></strong></span>
-                    <% end %>
-
-                    <%= if status_class(@transaction) == "tile-status--awaiting-internal-transactions" do %>
-                    <span class="text-danger" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Internal Transaction"><strong><i class="fa fa-exclamation-circle"></i></strong></span>
-                    <% end %>
-
-                    <%= if status_class(@transaction) == "tile-status--error--awaiting-internal-transactions" do %>
-                    <span class="text-danger" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Error: Internal Transaction"><strong><i class="fa fa-exclamation-circle"></i></strong></span>
-                    <% end %>
-
-                    <%= if status_class(@transaction) == "tile-status--error--reason" do %>
-                    <span class="text-danger" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Error in Txn"><strong><i class="fa fa-exclamation-circle"></i></strong></span>
-                    <% end %>
-                  </span>
-                </div>      
-                <div class="text-truncate d-flex text-success width135">
-                  <%= render "_link.html", transaction_hash: @transaction.hash, data_test: "address_hash_link" %>
-                </div>
-              </div>
+            <td class="hide_for_homepage">                             
+              <div class="text-truncate d-flex text-success width135">
+                <%= render "_link.html", transaction_hash: @transaction.hash, data_test: "address_hash_link" %>
+              </div>             
             
               <div class="text-truncate width135">       
                 <% method_name = Transaction.get_method_name(@transaction) %>        
@@ -130,7 +128,7 @@
             <!-- Method  -->
             <td class="hide_for_homepage">
               <%= if method_name do %>
-              <%= render BlockScoutWeb.FormView, "_tag.html", text: method_name, additional_classes: ["method", "ml-1"] %>
+              <%= render BlockScoutWeb.FormView, "_tag.html", text: method_name, additional_classes: ["method", "ml-0"] %>
               <% end %>
               <%= if tx_tags.personal_tx_tag && tx_tags.personal_tx_tag.name !== :error do %>
                 <%= render BlockScoutWeb.FormView, "_tag.html", text: tx_tags.personal_tx_tag.name, additional_classes: [tag_name_to_label(tx_tags.personal_tx_tag.name), "ml-1"] %>
@@ -151,11 +149,11 @@
               <%= if from_or_to_address?(@transaction, assigns[:current_address]) do %>
                 <span class="mr-2 mr-md-0 ">
                   <%= if @transaction.from_address_hash == assigns[:current_address].hash do %>
-                    <span data-test="transaction_type" class="badge badge-danger tile-badge">
+                    <span data-test="transaction_type" class="badge badge-warning tile-badge border-opacity-25 text-yellow-600">
                       <%= gettext "OUT" %>
                     </span>
                   <% else %>
-                    <span data-test="transaction_type" class="badge badge-success tile-badge">
+                    <span data-test="transaction_type" class="badge badge-success tile-badge border-opacity-25 text-yellow-600">
                       <%= gettext "IN" %>
                     </span>
                   <% end %>

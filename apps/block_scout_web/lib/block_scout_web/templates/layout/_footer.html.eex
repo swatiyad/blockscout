@@ -48,10 +48,6 @@
   background-position: left center;
 }
 
-.scroll_box table tr td:first-child {
-  border-top: 1px solid transparent!important;
-}
-
 .header-searchbar select {
   display:none
 }
@@ -60,7 +56,7 @@
   background-color: #F8F9FA
 }
 
-.search_backdrop .search_icon_start {
+.search_backdrop  .search_icon_start {
   display:none
 }
 
@@ -74,57 +70,26 @@
 .header-searchbar .autoComplete_wrapper > input {   
     padding-left: 30px!important;  
 }
-.gasPricePlaceHolder {
-  paddinng-left: 10px
-}
-.home-search {
-  padding: 5px;
-  background: #fff;
-  border-radius: .5rem
+ .dark-theme-applied .bs-label {   
+    border: 1px solid #5a5a5a!important;
 }
 
-.sticky-top {
-  position: sticky;
-  top: 0;
-  z-index: 1020;
-  background: #fff;
-}
-.group-hover {
-    opacity: 0;
-    pointer-events: none;
-}
-.group:hover .group-hover {
-    opacity: 1;
-    pointer-events: all;
-}
-.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
-    color: #fff;
-    background-color: #A9AB3F!important;
-    border-color: #A9AB3F!important;
-    box-shadow: none!important;
+.theme-button {
+  background: url(/images/sun.jpg);
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
 }
 
-.add_icon_btns i {
-    position: relative;
-    top: 25%;    
+.dark-theme-applied .theme-button {
+  background: url(/images/moon.png)!important;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
 }
 
-.custom_pills.nav-pills .nav-link.active {
-    background-color: #a9ab3f;
-    color:#fff!important;
-}
-
-.custom_pills .nav-item {
-    margin: 5px;
-}
-
-.custom_pills .nav-link {   
-    background: #E9ECEF;
-    color:#444!important;
-    font-weight: 600;
-    font-size: 0.8rem;
-    border-radius: 10px;
-    padding: 5px 10px;
+.dark-theme-applied .border {
+  border: 1px solid #46484a !important;
 }
 
 </style>

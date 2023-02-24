@@ -20,7 +20,8 @@
           <table class="table table-hover mb-0 fixed-layout">
               <thead>
                 <tr class="table-head">
-                <th class="">Txn Hash</th>                 
+                 
+                  <th class="">Txn Hash</th>                 
                   <th class="screenRow">Block</th>
                   <th class="screenRow">Age</th>
                   <th class="">From</th>

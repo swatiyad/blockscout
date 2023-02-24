@@ -15,6 +15,65 @@
   <div class="mt-2">
   <p class="mb-0"><strong class="text-green">Sponsered <img src="/images/sponsered-next-img.png">: </strong> 10 ETH Give Away from MetaWin.<a href="#"> Free to Enter. </a></p>
   </div>
+  <div class="row my-3">
+    <div class="col-sm-6 col-lg-3">    
+      <a class="card group text-secondary text-decoration-none mb-0" href="#">
+        <div class="card-body py-3">
+          <div class="d-flex justify-content-between align-items-center mb-1">
+            <p class="fs-14 mb-0 text-uppercase">Transactions (24H)</p>
+            <i class="fa-solid fa-arrow-up-right-from-square group-hover"></i>
+          </div>
+          <div>
+            <span class="font18 text-dark">000000 <span class="fs-12"> (0.29%) </span></span>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-sm-6 col-lg-3">
+      <a class="card group text-secondary text-decoration-none mb-0" href="#">
+        <div class="card-body py-3">
+          <div class="d-flex justify-content-between align-items-center mb-1">
+            <p class="fs-14 mb-0 text-uppercase ">Pending Transactions (Last 1H)</p>
+            <i class="fa-solid fa-arrow-up-right-from-square group-hover"></i>
+          </div>
+          <div>
+            <span class="font18 text-dark">00000 <span class="fs-12"> (Average) </span></span>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-sm-6 col-lg-3">
+      <a class="card group text-secondary text-decoration-none mb-0" href="#">
+        <div class="card-body py-3">
+          <div class="d-flex justify-content-between align-items-center mb-1">
+            <p class="font14 mb-0 text-uppercase">Network Transactions Fee (24H)</p>
+            <i class="fa-solid fa-arrow-up-right-from-square group-hover"></i>
+          </div>
+          <div>
+            <span class="font18 text-dark">
+            00.00000 <span class="fs-12"> (0.56%) </span>
+            </span>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-sm-6 col-lg-3">
+      <a class="card group text-secondary text-decoration-none mb-0" target="_blank" href="#">
+        <div class="card-body py-3">
+          <div class="d-flex justify-content-between align-items-center mb-1">
+            <p class="fs-14 mb-0 text-uppercase">Average Transaction Fee</p>              
+              <i class="fa-solid fa-arrow-up-right-from-square group-hover"></i>
+          </div>
+          <div>
+            <span class="font18 text-dark">0,000 USD <span class="fs-12">(8.59%) </span></span>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
 
   <div class="card mt-4">
     <div class="card-body px-3 validated_txns" data-async-listing="<%= @current_path %>">
@@ -22,7 +81,7 @@
       <div class="d-flex justify-content-between">
         <!--<h1 class="card-title list-title-description"><%= gettext "Validated Transactions" %></h1>-->
         <div>
-          <p><span class="sub-text">More than > 0000.0000 transactions found <br/> (Showing the last 500k records)</span></p>
+          <p>More than > 0000.0000 transactions found <br/> (Showing the last 500k records)</p>
         </div>
 
         <div class="list-top-pagination-container-wrapper">
@@ -45,6 +104,7 @@
           <table class="table table-hover mb-0 fixed-layout">
               <thead>
                 <tr class="table-head">
+                  <th style="width:40px"> <i class="fa-regular fa-circle-question text-muted"></i></th>
                   <th class="">Txn Hash</th>
                   <th class="">Method</th>
                   <th class="screenRow">Block</th>

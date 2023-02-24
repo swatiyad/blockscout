@@ -15,7 +15,7 @@
     <div class="card-body px-3 validated_txns" data-async-listing="<%= @current_path %>">
         <!--<h1 class="card-title list-title-description"><%= gettext "Pending Transactions" %></h1>-->
         <div class="d-flex justify-content-between">     
-          <div><p><span class="sub-text">More than > 0000.0000 transactions found <br/> (Showing the last 500k records)</span></p></div>
+          <div><p>More than > 0000.0000 transactions found <br/> (Showing the last 500k records)</p></div>
           <div class="list-top-pagination-container-wrapper">
           <%= render BlockScoutWeb.CommonComponentsView, "_pagination_container.html", position: "top", cur_page_number: "1", show_pagination_limit: true, data_next_page_button: true, data_prev_page_button: true %>
         </div>
@@ -42,7 +42,8 @@
           <table class="table table-hover mb-0 fixed-layout">
             <thead>
               <tr class="table-head">
-              <th class="">Txn Hash</th>
+              <th style="width:40px"> <i class="fa-regular fa-circle-question text-muted"></i></th>
+              <th class="">Transaction Hash</th>
                 <th class="">Method</th>
                 <th class="screenRow">Block</th>
                 <th class="screenRow">Age</th>

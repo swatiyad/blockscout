@@ -46,8 +46,8 @@
           </div>
         </td>
         <td class="text-right">
-          <span class="bg-gray p-2">
-            <span class="text-green fs-12">
+          <span class="p-1 border rounded-sm">
+            <span class="fs-12">
             <%= gettext "0.00000 Ana" %>
             </span>
           </span>

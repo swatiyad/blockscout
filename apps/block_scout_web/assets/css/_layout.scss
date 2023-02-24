@@ -209,7 +209,7 @@ a {
 
 .custom-arrow-select {
     background: #fff url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 250 151.717'%3E%3Cpath d='M115.285 147.693L4.025 36.433a13.739 13.739 0 0 1 0-19.431L17.002 4.025a13.74 13.74 0 0 1 19.408-.023l88.591 88.176 88.59-88.176a13.74 13.74 0 0 1 19.408.023l12.977 12.981a13.739 13.739 0 0 1 0 19.431l-111.26 111.256a13.741 13.741 0 0 1-19.432 0z' fill='%2377838f'/%3E%3C/svg%3E") no-repeat right 1rem center;
-    background-size: 8px 15px;
+    background-size: 10px 15px;
 }
 
 .custom-select {
@@ -361,7 +361,7 @@ a {
 }
 
 .page-title {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     // color: #a9ab3f;
     line-height: 2rem;
     padding: 20px 0;
@@ -370,9 +370,9 @@ a {
 }
 
 .page-title h1 {
-    font-size: 1.5rem;
-    // color: #a9ab3f;
+    font-size: 1.3rem;
     line-height: 2rem;
+    font-weight: 500;
 }
 
 .page-title:after {
@@ -589,9 +589,9 @@ a {
     border: 0;
 }
 
-.table-head {
-    background-color: #f4f5e7;
-}
+// .table-head {
+//     background-color: #f4f5e7;
+// }
 
 .btn-teal {
     color: #00c9a7;
@@ -658,9 +658,12 @@ a {
 }
 
 .card-header {
-    color: #3e3f06;
-    font-weight: bold;
+    color: #111b36;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    font-size: 13px;
 }
+
 .card-header:first-child {
     border-radius: .75rem .75rem 0 0;
 }
@@ -745,9 +748,9 @@ a {
     background-color: #353434;
 }
 
-.dark-theme-applied .table thead th {
-    border-bottom: 2px solid #3e3e3e;
-}
+// .dark-theme-applied .table thead th {
+//     border-bottom: 2px solid #3e3e3e;
+// }
 
 .dark-theme-applied .table {
     color: #bdbdbd;
@@ -979,8 +982,8 @@ input.nosubmit {
   
   dl {  
     margin-bottom: 0!important;
-    border-bottom:1px solid #eee;
-    padding:10px 0
+    // border-bottom:1px solid #eee;
+    padding:5px 0;
   }
   dl:last-child {  
     border-bottom:none!important
@@ -1033,13 +1036,132 @@ input.nosubmit {
     background-color: #333;
     border-color: #333;
   }
-  
-  
+    
   .icon_align {
     position:relative; 
-    top:-4px;
-    margin-left:10px
+    top:0;
+    margin-left:10px;
   }
+
+  .table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid transparent!important;
+    font-size: 13px;
+}
+
+  .dark-theme-applied .home-search {
+    background: #333;
+}
+.dark-theme-applied .header-searchbar .home-search {
+    background: transparent!important;
+}
+
+.dark-theme-applied .sticky-top {
+   background: #1c1c1c;
+}
+.dark-theme-applied .header-searchbar .form-control {
+    border-radius: .5rem!important;
+    background-color: #333;
+}
+
+
+
+.gasPricePlaceHolder {
+    paddinng-left: 10px
+  }
+  .home-search {
+    padding: 5px;
+    background: #fff;
+    border-radius: .5rem
+  }
+  
+  .sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+    background: #fff;
+  }
+  .group-hover {
+      opacity: 0;
+      pointer-events: none;
+  }
+  .group:hover .group-hover {
+      opacity: 1;
+      pointer-events: all;
+  }
+  .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
+      color: #fff;
+      background-color: #A9AB3F!important;
+      border-color: #A9AB3F!important;
+      box-shadow: none!important;
+  }
+  
+  .add_icon_btns i {
+      position: relative;
+      top: 25%;    
+  }
+  
+  .custom_pills.nav-pills .nav-link.active {
+      background-color: #a9ab3f;
+      color:#fff!important;
+  }
+  
+  .custom_pills .nav-item {
+      margin: 5px;
+  }
+  
+  .custom_pills .nav-link {   
+      background: #E9ECEF;
+      color:#444!important;
+      font-weight: 600;
+      font-size: 0.8rem;
+      border-radius: 10px;
+      padding: 5px 10px;
+      letter-spacing: 0.3px;
+  }
+  
+  .bg-opacity-15 {
+      opacity: .15;
+  }
+  
+  .border-opacity-25 {
+      opacity: 0.25;
+  }
+  .text-yellow-600 {
+      color: #cc9a06!important;
+  }
+  .border-warning {
+      border-color: #f7c7385e!important;
+  }
+  .border-success {
+      border: 1px solid #15bba647 !important;
+  }
+  
+  .tooltip.bs-tooltip-left .arrow::before {
+      border-top-color: rgba(43, 86, 151, 0);
+      border-bottom-color: rgba(18, 22, 28, 0);
+  }
+  
+  .btn {
+    border-radius: .375rem!important;
+  }
+  
+  .divider_hr {
+    margin:20px 0;
+    border-color:#ebebeb;
+  }
+  
+  .cursor-pointer{
+    cursor: pointer;
+  }
+  
+  .dark-theme-applied .custom_pills .nav-link {
+      background: #393b3c;
+      color: #e1dfdf!important;    
+  }
+
+
+
      
   @media screen and (min-device-width: 769px) and (max-device-width: 992px)  {   
   .table {
