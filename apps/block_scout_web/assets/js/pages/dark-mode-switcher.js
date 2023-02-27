@@ -1,8 +1,7 @@
 import $ from 'jquery'
 import Cookies from 'js-cookie'
 
-$('.dark-mode-changer-btn').on('click', function() {
-    $(this).find('.fa-moon,.fa-sun').toggleClass('fa-moon').toggleClass('fa-sun')
+$('.dark-mode-changer-btn').on('click', function() {   
     if (Cookies.get('chakra-ui-color-mode') === 'dark') {
         Cookies.set('chakra-ui-color-mode', 'light')
        
