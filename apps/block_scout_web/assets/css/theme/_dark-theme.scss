@@ -46,7 +46,7 @@ $dark-stakes-banned-background: #313131;
         }
     }
     .navbar-brand .navbar-logo {
-        filter: brightness(0) invert(1);
+        filter: brightness(40) contrast(2);
     }
     .navbar.navbar-primary .navbar-nav .nav-link {
         color: $labels-dark;
