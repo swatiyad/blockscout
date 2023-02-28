@@ -838,7 +838,7 @@ a {
     filter: brightness(2.7) contrast(1.1);  
   }
 
-.scrollupbtn {
+#scrollupbtn {
     display: inline-block;
     background-color: #333;
     width: 45px;
@@ -854,6 +854,26 @@ a {
     opacity: 0;
     visibility: hidden;
     z-index: 1000;
+}
+
+#scrollupbtn i {
+    font-size: 2em;
+    line-height: 50px;
+    color: #ffffff;
+}
+
+#scrollupbtn:hover {
+    cursor: pointer;
+    background-color: #333333;
+}
+
+#scrollupbtn:active {
+    background-color: #555555;
+}
+
+#scrollupbtn.show {
+    opacity: 1;
+    visibility: visible;
 }
 
 .footer-social a {
@@ -1308,7 +1328,7 @@ input.nosubmit {
 
 @media screen and (min-width: 1200px) {
     .container {
-        max-width: 1450px !important;
+        max-width: 1400px !important;
     }
 }
 

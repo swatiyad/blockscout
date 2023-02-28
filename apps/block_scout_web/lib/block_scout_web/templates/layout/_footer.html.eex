@@ -117,14 +117,12 @@
       </div>
 
       <div class="footer-about-bg"></div>
-
       <p class="text-white">
       <%= gettext("WYZthScan is a Block Explorer and Analytics Platform for WYZth ") %>  <%= gettext(" chain, a decentralized smart contains platform.") %></p>
 
       <button type="button" class="btn btn-xs btn-lighter text-nowrap mr-2">
         <i class="fas fa-cogs mr-1"></i> Preferences
       </button>
-
     </div>
 
     <div class="col-6 col-md-4 col-lg-<%= col_size %>">
@@ -136,7 +134,6 @@
         <li><a href="<%= issue_link(@conn) %>" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("Careers") %><sup class="join">Join Us</sup></a></li>
         <li><a href="<%= issue_link(@conn) %>" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("Terms of Service") %></a></li>
         <li><a href="<%= issue_link(@conn) %>" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("Bug Bounty") %></a></li>
-
         <!--<li><a href="<%= issue_link(@conn) %>" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("Submit an Issue") %></a></li>
         <li><a href="<%= Application.get_env(:block_scout_web, :footer)[:github_link] %>" rel="noreferrer" class="footer-link"><%= gettext("Contribute") %></a></li>
         <li><a href="<%= Application.get_env(:block_scout_web, :footer)[:chat_link] %>" rel="noreferrer" class="footer-link"><%= gettext("Chat (#blockscout)") %></a></li>
@@ -148,7 +145,6 @@
     </div>
 
     <% test_nets = test_nets(other_networks()) %>
-
     <%= unless Enum.empty?(test_nets) do %>
       <div class="col-6 col-md-4 col-lg-<%= col_size %>">
         <h3 class="text-white heading_border"><%= gettext("Resources") %></h3>
@@ -169,7 +165,6 @@
 
 
     <% main_nets = main_nets(other_networks()) %>
-
     <%= unless Enum.empty?(main_nets) do %>
       <div class="col-6 col-md-4 col-lg-<%= col_size %>">
         <h3 class="text-white heading_border"><%= gettext("Products & Services") %></h3>
@@ -242,8 +237,12 @@
   </div>
 </footer>
 
-<script>
+<!-- Scroll top-->
+<a id="scrollupbtn" class="">
+  <i class="fas fa-arrow-up"></i>
+</a>
 
+<script>
 var x = document.getElementsByClassName("search_backdrop");
 if (x[0]) {
 //alert('has');
@@ -253,5 +252,19 @@ document.getElementById("abc").style.display ="none";
 //alert('not has');
 document.getElementById("navbar_search").style.display ="block";
 }
+
+var btn = $('#scrollupbtn');
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
 
 </script>
