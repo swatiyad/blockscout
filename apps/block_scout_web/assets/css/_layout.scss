@@ -128,6 +128,9 @@ a {
     border-bottom: 1px solid #dee2e6 !important;
 }
 
+.dark-theme-applied .border-bottm-sm {
+    border-bottom: 1px solid #424242!important;
+}
 .radius-50 {
     border-radius: 50%;
 }
@@ -238,6 +241,7 @@ a {
     background-color: #e4e6cc!important;
     border: 1px solid #e4e6cc!important;
     font-weight: 400!important;
+    height: 26px!important;
 }
 
 .page-link:focus {
@@ -245,8 +249,8 @@ a {
 }
 
 .pagination-container .pagination .page-link:not(.no-hover):hover {
-    background-color: #a9ab3f;
-    border: 1px solid #a9ab3f;
+    background-color: #a9ab3f!important;
+    border: 1px solid #a9ab3f!important;
     color: #333!important;
 }
 

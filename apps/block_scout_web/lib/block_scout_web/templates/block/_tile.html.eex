@@ -2,7 +2,7 @@
 <% priority_fee = if !is_nil(@block.base_fee_per_gas), do: BlockPriorityFeeCounter.fetch(@block.hash), else: nil %>
 <div class="tile-- tile-type-<%= String.downcase(@block_type) %> fade-up--" data-selector="block-tile" data-block-number="<%= to_string(@block.number) %>" data-block-hash="<%= @block.hash %>">
   <div class="">
-    <table class="table fixed-layout mb-0">
+    <table class="table fixed-layout mb-0">    
       <tbody class="table-group-divider">
         <tr>
           <td>

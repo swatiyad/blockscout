@@ -52,15 +52,7 @@
                 <% end %>
                 <%= render BlockScoutWeb.AddressView, "_labels.html", tags: @tx_tags %>             
             </div>            
-            <%= if status == :pending do %>
-              <div class="tile tile-muted d-flex justify-content-center align-items-center mb-4">
-                <div class="loading-spinner">
-                  <span class="loading-spinner-block-1"></span>
-                  <span class="loading-spinner-block-2"></span>
-                </div>
-                <%= gettext("This transaction is pending confirmation.") %>
-              </div>
-            <% end %>
+         
             <div class="d-flex flex-row">
               <%= if show_tenderly_link?() do %>
                 <div class="mr-4 mb-4">
@@ -95,6 +87,17 @@
               </div>
 
             </div>
+          </div>
+          <div>
+               <%= if status == :pending do %>
+                  <div class="tile tile-muted d-flex justify-content-center align-items-center mb-4">
+                    <div class="loading-spinner">
+                      <span class="loading-spinner-block-1"></span>
+                      <span class="loading-spinner-block-2"></span>
+                    </div>
+                    <%= gettext("This transaction is pending confirmation.") %>
+                </div>
+              <% end %>
           </div>
             <p class="text-secondary pt-2 fs-14"> Featured : Curious on WYZth`s hottest 🔥 trading pairs? View top pairs and details with 
             <a href="#" class="text-blue font-weight-bold"> DEX Trading Pairs! </a>

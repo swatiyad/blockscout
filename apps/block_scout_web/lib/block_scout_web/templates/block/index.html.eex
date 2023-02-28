@@ -5,22 +5,38 @@
     <div>
       <h1> Blocks</h1>
     </div>
-    <div>
-    <span class="custom_label custom_label_sm label_brown text-dark text-center rounded-lg"><%= gettext="Network Utilization :" %> 000.0000</span>
-    <span class="custom_label custom_label_sm label_warning text-dark text-center rounded-lg"> 🔥  <%= gettext="Burnt Fees: " %> 00.000000
-      <a href="#" class="text-brown border-left ml-2 pl-2"><%= gettext="Dashboard" %></a>
-     </span>
-    </div>
+    <div class="d-flex">
+      <div class="dropdown">
+        <button class="btn btn-primary btn-xs dropdown-toggle fs-12" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Exchange
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item py-0" href="#">Action</a>
+          <a class="dropdown-item py-0" href="#">Another action</a>
+          <a class="dropdown-item py-0" href="#">Something else here</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="btn btn-primary btn-xs dropdown-toggle ml-2 fs-12" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Gaming
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item py-0" href="#">Action</a>
+          <a class="dropdown-item py-0" href="#">Another action</a>
+          <a class="dropdown-item py-0" href="#">Something else here</a>
+        </div>
+      </div>
+    </div> 
   </div>
   <div class="mt-2">
     <p class="mb-0"><strong>Featured: </strong> Bridging tokens between Ethereum, Layer 2 and other chains? Browse through the Blockscan <a href="#"> bridges list. </a></p>
   <div>
   <div class="row my-3">
-    <div class="col-sm-6 col-lg-3">    
-      <a class="card group text-secondary text-decoration-none mb-0" href="#">
+    <div class="col-sm-6 col-lg-3 mb-2">    
+      <a class="card group text-decoration-none mb-0" href="#">
         <div class="card-body py-3">
           <div class="d-flex justify-content-between align-items-center mb-1">
-            <p class="fs-14 mb-0 text-uppercase">Network Utilization (24H)</p>
+            <p class="fs-14 mb-0 text-uppercase text-secondary">Network Utilization (24H)</p>
             <i class="fa-solid fa-arrow-up-right-from-square group-hover"></i>
           </div>
           <div>
@@ -30,11 +46,11 @@
       </a>
     </div>
 
-    <div class="col-sm-6 col-lg-3">
-      <a class="card group text-secondary text-decoration-none mb-0" href="#">
+    <div class="col-sm-6 col-lg-3 mb-2">
+      <a class="card group text-decoration-none mb-0" href="#">
         <div class="card-body py-3">
           <div class="d-flex justify-content-between align-items-center mb-1">
-            <p class="fs-14 mb-0 text-uppercase ">Last Safe Block</p>
+            <p class="fs-14 mb-0 text-uppercase text-secondary">Last Safe Block</p>
             <i class="fa-solid fa-arrow-up-right-from-square group-hover"></i>
           </div>
           <div>
@@ -44,31 +60,31 @@
       </a>
     </div>
 
-    <div class="col-sm-6 col-lg-3">
-      <a class="card group text-secondary text-decoration-none mb-0" href="#">
+    <div class="col-sm-6 col-lg-3 mb-2">
+      <a class="card group text-decoration-none mb-0" href="#">
         <div class="card-body py-3">
           <div class="d-flex justify-content-between align-items-center mb-1">
-            <p class="font14 mb-0 text-uppercase">Average Gas Price (24h)</p>
+            <p class="font14 mb-0 text-uppercase text-secondary">Average Gas Price (24h)</p>
             <i class="fa-solid fa-arrow-up-right-from-square group-hover"></i>
           </div>
           <div>
             <span class="font18 text-dark">
-            37.171212039 Gwei
+              37.171212039 Gwei
             </span>
           </div>
         </div>
       </a>
     </div>
 
-    <div class="col-sm-6 col-lg-3">
-      <a class="card group text-secondary text-decoration-none mb-0" target="_blank" href="#">
+    <div class="col-sm-6 col-lg-3 mb-2">
+      <a class="card group text-decoration-none mb-0" target="_blank" href="#">
         <div class="card-body py-3">
           <div class="d-flex justify-content-between align-items-center mb-1">
-            <p class="fs-14 mb-0 text-uppercase">Burnt Fees 🔥</p>              
-              <i class="fa-solid fa-arrow-up-right-from-square group-hover"></i>
+            <p class="fs-14 mb-0 text-uppercase text-secondary">Total Transaformation</p>              
+            <i class="fa-solid fa-arrow-up-right-from-square group-hover"></i>
           </div>
           <div>
-            <span class="font18 text-dark">2,927,518.91 ETH</span>
+            <span class="font18 text-dark">2,927,518.91 </span>
           </div>
         </div>
       </a>

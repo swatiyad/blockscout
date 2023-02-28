@@ -211,13 +211,13 @@
 
 <div class="container sub-footer-top-border">
   <div class="row text-white py-2">
-    <div class="col-md-6 col-8 mb-sm">
+    <div class="col-md-6 col-6 mb-sm">
       <div class="d-flex pt-1">
         <div>WYZthScan &copy; 2023 </div>
         <div class="ml-2"><span class="text-danger ms-2"> <i class="fa fa-heart"></i> </span></div>
       </div>
     </div>
-    <div class="col-md-6 col-4">
+    <div class="col-md-6 col-6">
       <div class="footer-social float-right">
         
         <a href="#" rel="noreferrer" target="_blank" title="twitter"> 

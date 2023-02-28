@@ -20,8 +20,25 @@
             <%= gettext "Something went wrong, click to reload." %>
           </span>
         </button>
-        <div data-items data-selector="validations-list">
-          <%= render BlockScoutWeb.CommonComponentsView, "_tile-loader.html" %>
+        <div class="overflow-auto">
+          <table class="table table-hover mb-0 fixed-layout">
+            <thead>
+              <tr class="table-head">
+                <th class="screenRow">Block</th>
+                <th class="screenRow">Age</th>
+                <th class="smallRow">Txns</th>
+                <th class="tb_col_w200">Fee Recipient</th>
+                <th class="screenRow">Gas Used</th>
+                <th class="screenRow">Gas Limit</th>
+                <th class="screenRow">Base Fee</th>
+                <th class="screenRow">Reward</th>
+                <!--<th class="screenRow">Burnt Fees (ETH)</th>-->
+              </tr>
+            </thead>
+          </table>
+          <div data-items data-selector="validations-list">
+            <%= render BlockScoutWeb.CommonComponentsView, "_tile-loader.html" %>
+          </div>
         </div>
 
         <%= render BlockScoutWeb.CommonComponentsView, "_pagination_container.html", position: "bottom", cur_page_number: "1", show_pagination_limit: true, data_next_page_button: true, data_prev_page_button: true %>

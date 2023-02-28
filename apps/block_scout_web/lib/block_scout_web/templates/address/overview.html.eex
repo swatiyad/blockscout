@@ -77,8 +77,8 @@
           <div class="card-- js-ad-dependant-mb-2 mb-5">
             <div class="card-body-- fs-14" style="line-height: 31px;">
               <div class="row">
-                <div class="col-lg-4">
-                  <div class="card mt-3">                  
+                <div class="col-lg-4 mt-3">
+                  <div class="card">                  
                     <div class="card-header py-2 px-4">Overview</div>                 
                       <div class="card-body py-0 px-4">                    
                       <!-- Verify in other explorers -->
@@ -275,8 +275,8 @@
                       </div>
                     </div>
                 </div>                
-                <div class="col-lg-4">
-                  <div class="card mt-3">
+                <div class="col-lg-4 mt-3">
+                  <div class="card">
                     <div class="card-header py-2 px-4">More Info</div> 
                     <div class="card-body py-0 px-4">        
                     <!-- Gas used -->
@@ -330,8 +330,8 @@
                   </div>
                 </div>
                 
-                <div class="col-lg-4">
-                  <div class="card mt-3">
+                <div class="col-lg-4 mt-3">
+                  <div class="card">
                     <div class="card-header py-2 px-4">Multi Chain</div> 
                     <div class="card-body py-0 px-4">
                     <p class="pt-3 mb-0">MULTICHAIN ADDRESSES</p>

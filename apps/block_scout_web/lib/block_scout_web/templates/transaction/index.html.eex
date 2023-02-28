@@ -6,17 +6,41 @@
 </script>
 <section class="container" data-page="transaction-list">
   <%= render BlockScoutWeb.Advertisement.TextAdView, "index.html", conn: @conn %>
-  <div class="page-title">
+  <div class="page-title display_flex">
     <div>
       <h1>Transactions </h1>
-    </div>       
+    </div>  
+    <div>
+    <div class="d-flex">
+     <div class="dropdown">
+      <button class="btn btn-primary btn-xs dropdown-toggle fs-12" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Exchange
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item py-0" href="#">Action</a>
+        <a class="dropdown-item py-0" href="#">Another action</a>
+        <a class="dropdown-item py-0" href="#">Something else here</a>
+      </div>
+    </div>
+    <div class="dropdown">
+        <button class="btn btn-primary btn-xs dropdown-toggle ml-2 fs-12" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Gaming
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item py-0" href="#">Action</a>
+          <a class="dropdown-item py-0" href="#">Another action</a>
+          <a class="dropdown-item py-0" href="#">Something else here</a>
+        </div>
+      </div>
+    </div>
+   </div>     
   </div>
 
   <div class="mt-2">
   <p class="mb-0"><strong class="text-green">Sponsered <img src="/images/sponsered-next-img.png">: </strong> 10 ETH Give Away from MetaWin.<a href="#"> Free to Enter. </a></p>
   </div>
-  <div class="row my-3">
-    <div class="col-sm-6 col-lg-3">    
+  <div class="row my-3 ">
+    <div class="col-sm-6 col-lg-3 mb-2">    
       <a class="card group text-secondary text-decoration-none mb-0" href="#">
         <div class="card-body py-3">
           <div class="d-flex justify-content-between align-items-center mb-1">
@@ -30,7 +54,7 @@
       </a>
     </div>
 
-    <div class="col-sm-6 col-lg-3">
+    <div class="col-sm-6 col-lg-3 mb-2">
       <a class="card group text-secondary text-decoration-none mb-0" href="#">
         <div class="card-body py-3">
           <div class="d-flex justify-content-between align-items-center mb-1">
@@ -44,7 +68,7 @@
       </a>
     </div>
 
-    <div class="col-sm-6 col-lg-3">
+    <div class="col-sm-6 col-lg-3 mb-2">
       <a class="card group text-secondary text-decoration-none mb-0" href="#">
         <div class="card-body py-3">
           <div class="d-flex justify-content-between align-items-center mb-1">
@@ -60,7 +84,7 @@
       </a>
     </div>
 
-    <div class="col-sm-6 col-lg-3">
+    <div class="col-sm-6 col-lg-3 mb-2">
       <a class="card group text-secondary text-decoration-none mb-0" target="_blank" href="#">
         <div class="card-body py-3">
           <div class="d-flex justify-content-between align-items-center mb-1">
@@ -76,8 +100,7 @@
   </div>
 
   <div class="card mt-4">
-    <div class="card-body px-3 validated_txns" data-async-listing="<%= @current_path %>">
-    
+    <div class="card-body px-3 validated_txns" data-async-listing="<%= @current_path %>">    
       <div class="d-flex justify-content-between">
         <!--<h1 class="card-title list-title-description"><%= gettext "Validated Transactions" %></h1>-->
         <div>
