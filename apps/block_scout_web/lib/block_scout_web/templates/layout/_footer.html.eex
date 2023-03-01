@@ -100,13 +100,17 @@
 .logo_custom_img .logo_img {
   background: url(/images/wyz-logo.svg);
   background-size: contain;
-  background-repeat: no-repeat;  
+  background-repeat: no-repeat;
+  width: 189px;
+  height: 40px;
 }
 
 .dark-theme-applied .logo_custom_img .logo_img {
   background: url(/images/wyz-logo_darktheme.png);
   background-size: contain;
-  background-repeat: no-repeat;  
+  background-repeat: no-repeat; 
+  width: 176px;
+  height: 32px; 
 }
 
 
@@ -138,14 +142,14 @@
   content: "\f185";
   font-family: "Font Awesome 6 Free";
 	font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .dark-theme-applied .dark-mode-changer-btn::before {  
   content: "\f186";
   font-family: "Font Awesome 6 Free";
 	font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .dark-theme-applied .dark-mode-changer-btn:hover:before {  
@@ -157,7 +161,15 @@
     background-color: #a9ab3f;
 }
 
+.dark-theme-applied .tooltip .arrow:before {
+    border-top-color: transparent!important;
+    border-bottom-color: transparent!important;
+}
 
+.dark-theme-applied .bs-tooltip-left .arrow::before,
+.dark-theme-applied .bs-tooltip-auto[x-placement^=left] .arrow::before {   
+    border-left-color: #a9ab3f!important;
+}
 
 
 </style>
