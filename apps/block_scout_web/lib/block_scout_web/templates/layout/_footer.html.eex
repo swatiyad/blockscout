@@ -92,6 +92,49 @@
   border: 1px solid #46484a !important;
 }
 
+
+.navbar-image {
+  padding: 6px 10px!important;   
+}
+
+.logo_custom_img .logo_img {
+  background: url(/images/wyz-logo.svg);
+  background-size: contain;
+  background-repeat: no-repeat;  
+}
+
+.dark-theme-applied .logo_custom_img .logo_img {
+  background: url(/images/wyz-logo_darktheme.svg);
+  background-size: contain;
+  background-repeat: no-repeat;  
+}
+
+
+.navbar-image .media_bg_icon {
+  background: url(/images/small-logo-icon.png);
+  background-size: contain;
+  background-repeat: no-repeat;  
+}
+
+.dark-theme-applied .navbar-image .media_bg_icon {
+  background: url(/images/small-logo-icon-dark.png);
+  background-size: contain;
+  background-repeat: no-repeat;  
+}
+
+.dashboard_home .media_bg_icon {
+    background: url(/images/small-logo-icon.png);  
+    background-size: contain;
+    background-position: 27% 4%;
+    background-repeat: no-repeat;
+}
+
+.dark-theme-applied .dashboard_home .media_bg_icon{
+    background: url(/images/small-logo-icon-dark.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+} 
+
 </style>
 
 <footer class="footer pb-0 pt-0 footer_backdrop">

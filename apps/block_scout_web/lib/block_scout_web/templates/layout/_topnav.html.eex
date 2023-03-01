@@ -30,8 +30,10 @@
 
   <nav class="navbar navbar-dark navbar-expand-lg navbar-primary border-bottom shadow-sm custom_navbar" data-selector="navbar" id="top-navbar">  
     <div class="container navbar-container">
-      <div class="clearfix">
-        <%= link to: webapp_url(@conn), class: "navbar-brand", "data-test": "header_logo" do %>
+      <div class="clearfix logo_custom_img">
+        <div class="logo_img" style="width: 169px; height: 40px"></div>
+
+       <!-- <%= link to: webapp_url(@conn), class: "navbar-brand", "data-test": "header_logo" do %>
         <%= if logo() do %>
           <img class="navbar-logo" id="navbar-logo" style="width:175px" src="<%= static_path(@conn, logo()) %>" alt="<%= subnetwork_title() %>" />
         <% end %>
@@ -42,6 +44,7 @@
           <%= render BlockScoutWeb.FormView, "_tag.html", text: Application.get_env(:block_scout_web, BlockScoutWeb.Chain)[:testnet_label_text], additional_classes: ["testnet-label", "ml-2"] %>
         <% end %>
       <% end %>  
+      -->
     </div>
    
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="<%= gettext("Toggle navigation") %>">
@@ -260,15 +263,15 @@
 
           <!-- Dark mode changer -->  
           <li class="nav-item d-none d-lg-inline-block">       
-            <button type="button" class="dark-mode-changer-btn nav-link topnav-nav-link  border rounded ml-2  bg-white navbar-image" id="dark-mode-changer">
+            <button type="button" class="dark-mode-changer-btn nav-link topnav-nav-link  border rounded ml-2  bg-white" id="dark-mode-changer">
               <i class="fas fa-moon mr-1" style="font-size: 1.2rem;"></i>
             </button>
           </li>
 
 
           <li class="nav-item d-none d-lg-inline-block">
-            <a href="#" class="nav-link topnav-nav-link  border rounded ml-2 py-2 navbar-image">
-              <img src="/images/small-logo-icon.png"/ style="width:16px; height:19px" class="">
+            <a href="#" class="nav-link topnav-nav-link  border rounded ml-2 navbar-image">
+              <div class="media_bg_icon" style="width: 23px; height: 23px"></div>
             </a>
           </li>
       

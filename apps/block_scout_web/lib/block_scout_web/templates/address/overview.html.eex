@@ -332,9 +332,9 @@
                 
                 <div class="col-lg-4 mt-3">
                   <div class="card">
-                    <div class="card-header py-2 px-4">Multi Chain</div> 
+                    <div class="card-header pt-0 pb-2 px-4">Multi Chain</div> 
                     <div class="card-body py-0 px-4">
-                    <p class="pt-3 mb-0">MULTICHAIN ADDRESSES</p>
+                    <p class="pt-2 mb-0">MULTICHAIN ADDRESSES</p>
                     <a href="#">2 Address found via Blockscan</a>  
                     <img src="/images/blockscan_img.webp">
                     </div>
