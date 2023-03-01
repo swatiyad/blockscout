@@ -30,21 +30,20 @@
 
   <nav class="navbar navbar-dark navbar-expand-lg navbar-primary border-bottom shadow-sm custom_navbar" data-selector="navbar" id="top-navbar">  
     <div class="container navbar-container">
-      <div class="clearfix logo_custom_img">
-        <div class="logo_img"></div>
-
-       <!-- <%= link to: webapp_url(@conn), class: "navbar-brand", "data-test": "header_logo" do %>
-        <%= if logo() do %>
-          <img class="navbar-logo" id="navbar-logo" style="width:175px" src="<%= static_path(@conn, logo()) %>" alt="<%= subnetwork_title() %>" />
-        <% end %>
-        <%= if logo_text() do %>
-          <span class="logo-text <%= unless logo(), do: "no-logo" %>"> <%= logo_text() %> </span>
-        <% end %>
-        <%= if Application.get_env(:block_scout_web, BlockScoutWeb.Chain)[:enable_testnet_label] do %>
-          <%= render BlockScoutWeb.FormView, "_tag.html", text: Application.get_env(:block_scout_web, BlockScoutWeb.Chain)[:testnet_label_text], additional_classes: ["testnet-label", "ml-2"] %>
-        <% end %>
-      <% end %>  
-      -->
+      <div class="clearfix logo_custom_img">     
+        <a href="/"> <div class="logo_img"></div> </a>
+        <!-- <%= link to: webapp_url(@conn), class: "navbar-brand", "data-test": "header_logo" do %>
+          <%= if logo() do %>
+            <img class="navbar-logo" id="navbar-logo" style="width:175px" src="<%= static_path(@conn, logo()) %>" alt="<%= subnetwork_title() %>" />
+          <% end %>
+          <%= if logo_text() do %>
+            <span class="logo-text <%= unless logo(), do: "no-logo" %>"> <%= logo_text() %> </span>
+          <% end %>
+          <%= if Application.get_env(:block_scout_web, BlockScoutWeb.Chain)[:enable_testnet_label] do %>
+            <%= render BlockScoutWeb.FormView, "_tag.html", text: Application.get_env(:block_scout_web, BlockScoutWeb.Chain)[:testnet_label_text], additional_classes: ["testnet-label", "ml-2"] %>
+          <% end %>
+        <% end %>  
+        -->
     </div>
    
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="<%= gettext("Toggle navigation") %>">
@@ -253,7 +252,6 @@
 
         
           <li class="header-nav-separator mt-lg-2"></li>
-
           <li class="nav-item ">
             <a href="#" class="nav-link topnav-nav-link">
               <i class="fa fa-user-circle mr-2 text-green"></i>
@@ -264,7 +262,6 @@
           <!-- Dark mode changer -->  
           <li class="nav-item d-none d-lg-inline-block">       
             <button type="button" class="dark-mode-changer-btn nav-link topnav-nav-link border rounded ml-2 bg-white text-green" style="padding: 3px 10px;" id="dark-mode-changer">
-
             </button>
           </li>
 
