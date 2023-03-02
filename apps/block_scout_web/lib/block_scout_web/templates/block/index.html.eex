@@ -5,29 +5,9 @@
     <div>
       <h1> Blocks</h1>
     </div>
-    <div class="d-flex">
-      <div class="dropdown">
-        <button class="btn btn-primary btn-xs dropdown-toggle fs-12" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Exchange
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item py-0" href="#">Action</a>
-          <a class="dropdown-item py-0" href="#">Another action</a>
-          <a class="dropdown-item py-0" href="#">Something else here</a>
-        </div>
-      </div>
-      <div class="dropdown">
-        <button class="btn btn-primary btn-xs dropdown-toggle ml-2 fs-12" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Gaming
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item py-0" href="#">Action</a>
-          <a class="dropdown-item py-0" href="#">Another action</a>
-          <a class="dropdown-item py-0" href="#">Something else here</a>
-        </div>
-      </div>
-    </div> 
+    
   </div>
+  <!--
   <div class="mt-2">
     <p class="mb-0"><strong>Featured: </strong> Bridging tokens between Ethereum, Layer 2 and other chains? Browse through the Blockscan <a href="#"> bridges list. </a></p>
   <div>
@@ -90,6 +70,7 @@
       </a>
     </div>
   </div>
+  -->
 
   <div class="card mt-2">
     <div class="card-body px-3" data-async-listing="<%= @current_path %>">

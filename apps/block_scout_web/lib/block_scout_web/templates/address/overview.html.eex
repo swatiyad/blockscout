@@ -42,42 +42,17 @@
                 <%= render BlockScoutWeb.CommonComponentsView, "_btn_qr_code.html" %>
               </span>
             </div>
-
-            <div class="d-flex">
-              <div class="dropdown">
-                <button class="btn btn-primary btn-xs dropdown-toggle fs-12" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Exchange
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item py-0" href="#">Action</a>
-                  <a class="dropdown-item py-0" href="#">Another action</a>
-                  <a class="dropdown-item py-0" href="#">Something else here</a>
-                </div>
-              </div>
-
-              <div class="dropdown">
-                <button class="btn btn-primary btn-xs dropdown-toggle ml-2 fs-12" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Gaming
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item py-0" href="#">Action</a>
-                  <a class="dropdown-item py-0" href="#">Another action</a>
-                  <a class="dropdown-item py-0" href="#">Something else here</a>
-                </div>
-              </div>
-            </div>
-
         </div>
 
-        <div>
+         <div>
           <p class="text-secondary pt-3 fs-14">  
             <strong>Featured:</strong> Wallet-to-wallet instant messaging via <a href="#">Blockscan Chat</a>
-          </p>
+          </p>         
          </div>
           <div class="card-- js-ad-dependant-mb-2 mb-5">
             <div class="card-body-- fs-14" style="line-height: 31px;">
               <div class="row">
-                <div class="col-lg-4 mt-3">
+                <div class="col-lg-6 mt-3">
                   <div class="card">                  
                     <div class="card-header py-2 px-4">Overview</div>                 
                       <div class="card-body py-0 px-4">                    
@@ -275,7 +250,7 @@
                       </div>
                     </div>
                 </div>                
-                <div class="col-lg-4 mt-3">
+                <div class="col-lg-6 mt-3">
                   <div class="card">
                     <div class="card-header py-2 px-4">More Info</div> 
                     <div class="card-body py-0 px-4">        
@@ -330,16 +305,7 @@
                   </div>
                 </div>
                 
-                <div class="col-lg-4 mt-3">
-                  <div class="card">
-                    <div class="card-header pt-0 pb-2 px-4">Multi Chain</div> 
-                    <div class="card-body pt-0 pb-2 px-4">
-                    <p class="pt-2 mb-0">MULTICHAIN ADDRESSES</p>
-                    <a href="#">2 Address found via Blockscan</a>  
-                    <img src="/images/blockscan_img.webp">
-                    </div>
-                  </div>
-                </div>
+               
 
               </div>          
           </div>

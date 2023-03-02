@@ -7,15 +7,15 @@
     </div>  
   </div>
 
-  <div class="mt-2">
+  <!--<div class="mt-2">
     <p class="mb-0"><strong class="text-green">Sponsered <img src="/images/sponsered-next-img.png">: </strong> 10 ETH Give Away from MetaWin.<a href="#"> Free to Enter. </a></p>
-  </div>
+  </div>-->
 
-  <div class="card mt-4">
+  <div class="card">
     <div class="card-body px-3 validated_txns" data-async-listing="<%= @current_path %>">
         <!--<h1 class="card-title list-title-description"><%= gettext "Pending Transactions" %></h1>-->
         <div class="d-flex justify-content-between">     
-          <div><p>More than > 0000.0000 transactions found <br/> (Showing the last 500k records)</p></div>
+          <div><p class="text-secondary fs-14">A  total of 000 pending txns found</p></div>
           <div class="list-top-pagination-container-wrapper">
           <%= render BlockScoutWeb.CommonComponentsView, "_pagination_container.html", position: "top", cur_page_number: "1", show_pagination_limit: true, data_next_page_button: true, data_prev_page_button: true %>
         </div>
@@ -42,8 +42,8 @@
           <table class="table table-hover mb-0 fixed-layout">
             <thead>
               <tr class="table-head">
-              <th style="width:40px"> <i class="fa-regular fa-circle-question text-muted"></i></th>
-              <th class="">Transaction Hash</th>
+              <th style="width:40px"> </th>
+              <th class="">Txn Hash</th>
                 <th class="">Method</th>
                 <th class="screenRow">Block</th>
                 <th class="screenRow">Age</th>
@@ -55,16 +55,12 @@
               </tr>
             </thead>
           </table>
-        </div>
-
-        
+        </div>        
         <div data-items data-selector="transactions-pending-list">
           <%= render BlockScoutWeb.CommonComponentsView, "_tile-loader.html" %>
         </div>
       </div>
-
       <%= render BlockScoutWeb.CommonComponentsView, "_pagination_container.html", position: "bottom", cur_page_number: "1", show_pagination_limit: true, data_next_page_button: true, data_prev_page_button: true %>
-
     </div>
   </div>
   <script defer data-cfasync="false" src="<%= static_path(@conn, "/js/pending-transactions.js") %>"></script>

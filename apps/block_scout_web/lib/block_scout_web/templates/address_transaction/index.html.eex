@@ -4,12 +4,12 @@
 
   <%= render BlockScoutWeb.AddressView, "overview.html", address: @address, is_proxy: is_proxy, conn: @conn, exchange_rate: @exchange_rate, coin_balance_status: @coin_balance_status, counters_path: @counters_path, tags: @tags %>
 
-  <section data-page="address-transactions" id="txs">    
-      <%= render BlockScoutWeb.AddressView, "_tabs.html", address: @address, is_proxy: is_proxy, conn: @conn %>
+  <section data-page="address-transactions" id="txs"> 
       <div class="card mt-3">
-      <div class="card-body px-0 py-3" data-async-listing="<%= @current_path %>">
+      <%= render BlockScoutWeb.AddressView, "_tabs.html", address: @address, is_proxy: is_proxy, conn: @conn %>
+      <div class="card-body py-0 px-2" data-async-listing="<%= @current_path %>">        
         <%= render BlockScoutWeb.CommonComponentsView, "_channel_disconnected_message.html", text: gettext("Connection Lost, click to load newer transactions") %>
-        <div class="clearfix mb-2 py-1 px-3">
+        <div class="clearfix mb-2 py-1">
 
         <h5 class="float-left mb-2 font-weight-normal text-gray"  data-test="address_transaction_count">
         <span> <i class="fa-solid fa-arrow-down-wide-short"></i> Latest from a total of </span>
@@ -75,8 +75,8 @@
           <table class="table table-hover mb-0 fixed-layout">
             <thead>
               <tr class="table-head">
-                <th style="width:40px"> <i class="fa-regular fa-circle-question text-muted"></i></th>
-                <th class="">Transaction Hash</th>
+                <th style="width:40px"> </th>
+                <th class="">Txn Hash</th>
                 <th class="">Method</th>
                 <th class="screenRow">Block</th>
                 <th class="screenRow">Age</th>

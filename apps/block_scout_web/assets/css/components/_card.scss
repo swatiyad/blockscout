@@ -317,6 +317,9 @@ $card-tab-icon-color-active: #fff !default;
 }
 
 .nav-pills .nav-link.active {
-    background-color: $primary;
-    color: #fff!important;
+    // background-color: $primary;
+    border-bottom: 2px solid $primary;
+    background-color: transparent;
+    border-radius: 0!important;
+    
 }

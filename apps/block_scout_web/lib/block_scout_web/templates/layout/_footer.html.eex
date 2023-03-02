@@ -48,31 +48,6 @@
   background-position: left center;
 }
 
-.header-searchbar select {
-  display:none
-}
-.header-searchbar .form-control {
-  border-radius: .5rem!important;
-  background-color: #F8F9FA
-}
-
-.search_backdrop  .search_icon_start {
-  display:none
-}
-
-.search_backdrop .form-control {
-  border: 0!important
-}
-
-.header-searchbar .input-group-append {
-  display:none
-}
-.header-searchbar .autoComplete_wrapper > input {   
-    padding-left: 30px!important;  
-}
- .dark-theme-applied .bs-label {   
-    border: 1px solid #5a5a5a!important;
-}
 
 .theme-button {
   background: url(/images/sun.jpg);
@@ -138,38 +113,6 @@
     background-size: contain;
     background-repeat: no-repeat;
 } 
-.dark-mode-changer-btn::before {
-  content: "\f185";
-  font-family: "Font Awesome 6 Free";
-	font-weight: 400;
-  font-size: 18px;
-}
-
-.dark-theme-applied .dark-mode-changer-btn::before {  
-  content: "\f186";
-  font-family: "Font Awesome 6 Free";
-	font-weight: 400;
-  font-size: 18px;
-}
-
-.dark-theme-applied .dark-mode-changer-btn:hover:before {  
-  background: transparent!important
-}
-
-.dark-theme-applied .navbar.navbar-primary .navbar-nav .nav-link.active:before,
-.dark-theme-applied .navbar.navbar-primary .navbar-nav .nav-link:hover:before {
-    background-color: #a9ab3f;
-}
-
-.dark-theme-applied .tooltip .arrow:before {
-    border-top-color: transparent!important;
-    border-bottom-color: transparent!important;
-}
-
-.dark-theme-applied .bs-tooltip-left .arrow::before,
-.dark-theme-applied .bs-tooltip-auto[x-placement^=left] .arrow::before {   
-    border-left-color: #a9ab3f!important;
-}
 
 
 </style>
