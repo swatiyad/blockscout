@@ -36,14 +36,14 @@
                 <%= render BlockScoutWeb.CommonComponentsView, "_btn_copy.html",
                   id: "tx-raw-input",
                   additional_classes: ["overview-title-item-- btn icons_btns"],
-                  clipboard_text: @address,
+                  clipboard_text: @address,                  
                   aria_label: gettext("Copy Address"),
                   title: gettext("Copy Address") %>               
                 <%= render BlockScoutWeb.CommonComponentsView, "_btn_qr_code.html" %>
               </span>
             </div>
         </div>
-
+        
          <div>
           <p class="text-secondary pt-3 fs-14">  
             <strong>Featured:</strong> Wallet-to-wallet instant messaging via <a href="#">Blockscan Chat</a>

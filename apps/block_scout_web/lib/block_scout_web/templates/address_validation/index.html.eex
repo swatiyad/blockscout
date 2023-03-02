@@ -6,7 +6,7 @@
   <section data-page="blocks-validated">
       <div class="card mt-3 mb-2">
       <%= render BlockScoutWeb.AddressView, "_tabs.html", address: @address, is_proxy: is_proxy, conn: @conn %>
-      <div data-async-listing="<%= @current_path %>" class="card-body py-0 px-2">
+      <div data-async-listing="<%= @current_path %>" class="card-body pt-0 px-2">
         <%= render BlockScoutWeb.CommonComponentsView, "_channel_disconnected_message.html", text: gettext("Connection Lost, click to load newer validations") %>
         <div class="d-flex justify-content-between">
         <h2 class="card-title mb-2"><%=gettext("Blocks Validated")%></h2>
