@@ -162,12 +162,12 @@
               text: gettext("The SHA256 hash of the block.") %>
               <%= gettext("Hash") %>
             </dt>
-            <dd class="col-sm-9 col-lg-10"><%= to_string(@block.hash) %>
+            <dd class="col-sm-9 col-lg-10"><%= to_string(@block.hash) %>            
                 <%= render BlockScoutWeb.CommonComponentsView, "_btn_copy.html",
                   additional_classes: ["btn-copy-icon-small", "btn-copy-icon-custom", "btn-copy-icon-no-borders"],
                   clipboard_text: to_string(@block.hash),
                   aria_label: gettext("Copy Hash"),
-                  title: gettext("Copy Hash") %>
+                  title: gettext("Copy Hash") %>                 
             </dd>
           </dl>
           <%= unless @block.number == 0 do %>
