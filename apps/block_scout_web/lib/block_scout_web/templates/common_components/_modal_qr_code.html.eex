@@ -1,7 +1,7 @@
 <div class="modal fade" id="qrModal" tabindex="-1" role="dialog" aria-labelledby="qrModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-sm" role="document">
+  <div class="modal-dialog modal-sm" role="document" style="width:320px">
     <div class="modal-content">
-      <div class="modal-header">
+      <div class="modal-header py-2">
         <h2 class="modal-title" id="qrModalLabel"><%= gettext "QR Code" %></h2>
         <button type="button" class="close" data-dismiss="modal" aria-label="<%= gettext("Close") %>">
           <span aria-hidden="true">&times;</span>
@@ -9,10 +9,7 @@
       </div>
       <div class="modal-body">
         <img src="data:image/png;base64, <%= @qr_code %>" class="qr-code" alt="qr_code" title="<%= @title %>" />
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-dismiss="modal"><%= gettext "Close" %></button>
-      </div>
+      </div>      
     </div>
   </div>
 </div>
