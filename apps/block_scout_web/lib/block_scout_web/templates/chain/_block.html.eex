@@ -48,7 +48,7 @@
         <td class="text-right">
           <span class="p-1 border rounded-sm">
             <span class="fs-12">
-            <%= gettext "0.00000 Ana" %>
+            <%= gettext "0.00000" %>  <%= Explorer.coin_name() %>
             </span>
           </span>
         </td>
