@@ -3,11 +3,10 @@
 <% sub_network = Keyword.get(Application.get_env(:block_scout_web, BlockScoutWeb.Chain), :subnetwork) %>
 <input id="js-subnetwork" class="d-none" value="<%= sub_network %>" />
 <input id="js-json-rpc" class="d-none" value="<%= Application.get_env(:block_scout_web, :json_rpc) %>" />
-<li>
+
     <a 
-        class="footer-link js-btn-add-chain-to-mm btn-add-chain-to-mm in-footer"
+        class="btn btn-xs btn-lighter text-nowrap mr-2"
         style="cursor: pointer;"
     >
         <%= gettext("Add") <> " #{sub_network}" %>
     </a>
-</li>
