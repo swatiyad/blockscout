@@ -35,7 +35,8 @@
               WYZth Price
               </span>
               <span class="dashboard-data fs-14 text-truncate width160">
-              $0,00,000 <span class="sub-text"> @ 0.00000  BTC </span> <span class="text-cyan"> (+8.81%)</span>
+              <!-- <span id="price_usd"></span> -->
+              $20
               </span>
             </div>
           </div>
@@ -46,24 +47,27 @@
                 <%= gettext "Market Cap" %>
               </span>
               <span class="dashboard-data">
+
+              $1,000,000,000
                   <%= if Map.has_key?(@chart_config, :market) do %>
 
                   <%# THE FOLLOWING LINE PREVENTS COPY/PASTE ERRORS %>
                   <%# Explicity put @chart_config.market in a variable %>
                   <%# This is done so that when people add a new chart source, x, %>
                   <%# They wont just access @chart_config.x w/o first checking if x exists%>
-                  <% market_chart_config = @chart_config.market%>
+                  <!--<% market_chart_config = @chart_config.market%>
 
 
                   <%= if Enum.member?(@chart_config.market, :market_cap) do %>
-                  <div class="dashboard-banner-chart-legend-item market-cap-per-day">
-                      <div class="d-flex" style="height: 20px; line-height: 20px;">
-                        <% total_market_cap = market_cap(@market_cap_calculation, @exchange_rate) %>
-                        <span style="display: contents;" class="dashboard-banner-chart-legend-value" data-selector="market-cap" data-usd-value="<%= total_market_cap %>">
-                        </span>
-                      </div>
-                  </div>
+                    <div class="dashboard-banner-chart-legend-item market-cap-per-day">
+                        <div class="d-flex" style="height: 20px; line-height: 20px;">
+                          <% total_market_cap = market_cap(@market_cap_calculation, @exchange_rate) %>
+                          <span style="display: contents;" class="dashboard-banner-chart-legend-value" data-selector="market-cap" data-usd-value="<%= total_market_cap %>">
+                          </span>
+                        </div>
+                    </div>
                   <% end %>
+                -->
                 <% end %>
               </span>
               <!--<span class="dashboard-data" data-selector="address-count">

@@ -268,6 +268,20 @@
 </a>
 
 <script>
+
+
+
+# function fetchPrice() {
+#   fetch("http://139.59.8.33:2083/USDT_WYZTH").then(d=>d.json()).then((price)=>{
+#     console.log(price);
+#     document.getElementById("price_usd").innerText = "$"+(Math.round(price.message.USDT_WYZTH*100)/100);
+#   })
+#   window.onload=fetchPrice();
+# }
+
+
+
+
 var x = document.getElementsByClassName("search_backdrop");
 if (x[0]) {
 //alert('has');
@@ -278,18 +292,5 @@ document.getElementById("abc").style.display ="none";
 document.getElementById("navbar_search").style.display ="block";
 }
 
-var btn = $('#scrollupbtn');
-$(window).scroll(function() {
-  if ($(window).scrollTop() > 300) {
-    btn.addClass('show');
-  } else {
-    btn.removeClass('show');
-  }
-});
-
-btn.on('click', function(e) {
-  e.preventDefault();
-  $('html, body').animate({scrollTop:0}, '300');
-});
 
 </script>
