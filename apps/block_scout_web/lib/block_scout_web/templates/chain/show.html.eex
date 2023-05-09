@@ -112,8 +112,8 @@
             </div>
           </div>
 
-        </div>
-        <div class="ccol-sm-12 col-md-12 col-lg-4">
+        </div>        
+        <div class="col-sm-12 col-md-12 col-lg-4">
           <div class="dashboard-banner-chart mt-0">
           <script>
             numChartData = <%= Enum.reduce(@chart_config, 0, fn (source, acc) ->
@@ -123,7 +123,7 @@
 
           <div class="d-flex justify-content-between align-items-center chart_area_header">
             <p class="mb-0 text-green">WYZth Transaction history in 14 Days</p>
-            <div class="position-relative float-right z-index-2">
+         <!--   <div class="position-relative float-right z-index-2">
             <div class="dropdown">
                 <button class="btn btn-light btn-xs dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <i class="fa fa-ellipsis-v"></i>
@@ -132,23 +132,24 @@
                   <a class="dropdown-item" href="#">View Detailed Chart</a>   
                 </div>
               </div>            
-            </div>
-          </div>
+            </div>-->
+          </div>      
+
            
-          <button data-chart-error-message class="alert alert-dangertext-left" style="display: none;">
+       <button data-chart-error-message class="alert alert-dangertext-left" style="display: none;">
             <span><%= gettext("There was a problem loading the chart.") %></span>
           </button>
-            <canvas data-chart="historyChart"
-              data-history_chart_paths=
-              '{<%= for {{key, value}, x} <- Enum.with_index(@chart_data_paths) do %>
-                    "<%= key %>":"<%= value %>"
-                    <%= if x<(map_size(@chart_data_paths)-1) do %>
-                    ,
-                    <% end %>
-              <% end %>}'
-              data-history_chart_config = '<%= @chart_config_json %>'
-              width="350" height="152">
-            </canvas>
+          <canvas data-chart="historyChart"
+          data-history_chart_paths=
+          '{<%= for {{key, value}, x} <- Enum.with_index(@chart_data_paths) do %>
+                "<%= key %>":"<%= value %>"
+                <%= if x<(map_size(@chart_data_paths)-1) do %>
+                ,
+                <% end %>
+          <% end %>}'
+          data-history_chart_config = '<%= @chart_config_json %>'
+          width="350" height="250">
+  </canvas>
           </div>
         </div>
       </div>
@@ -230,7 +231,7 @@
       <div class="card-body px-3 pb-2 pt-0 scroll_box">
         <div class="">
           <div data-selector="channel-batching-message" style="display: none;">
-            <div data-selector="reload-transactions-button" class="alert alert-info">
+            <div data-selector="reload-transactions-button" class="alert alert-info mt-2">
               <a href="#" class="alert-link"><span data-selector="channel-batching-count"></span> <%= gettext "More transactions have come in" %></a>
             </div>
           </div>

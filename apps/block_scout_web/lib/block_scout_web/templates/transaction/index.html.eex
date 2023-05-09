@@ -6,7 +6,7 @@
 </script>
 <section class="container" data-page="transaction-list">
   <%= render BlockScoutWeb.Advertisement.TextAdView, "index.html", conn: @conn %>
-  <div class="page-title display_flex">
+  <div class="page-title display_flex border-bottom">
     <div>
       <h1>Transactions </h1>
     </div>  

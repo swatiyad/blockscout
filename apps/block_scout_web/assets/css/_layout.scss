@@ -603,6 +603,7 @@ a {
 
 .navbar-expand-lg .navbar-nav .dropdown-menu {
     width: 200px;
+    transition: ease-out 0.3s;
 }
 
 .scroll_box .hide_for_homepage {
@@ -1234,7 +1235,7 @@ input.nosubmit {
   }
   
   .table-head {
-    background-color: #f6f8fb;
+    background-color: #f4f5e7;
   }
   
   dl {

@@ -1,6 +1,6 @@
 import $ from 'jquery'
 import Cookies from 'js-cookie'
-import { Chart, LineController, LineElement, PointElement, LinearScale, TimeScale, Title, Tooltip } from 'chart.js'
+import { Chart, LineController, LineElement, PointElement, LinearScale, TimeScale, Title, Tooltip, Colors } from 'chart.js'
 import 'chartjs-adapter-luxon'
 import humps from 'humps'
 import numeral from 'numeral'
@@ -9,7 +9,9 @@ import { formatUsdValue } from '../lib/currency'
 import sassVariables from '../../css/export-vars-to-js.module.scss'
 
 Chart.defaults.font.family = 'Nunito, "Helvetica Neue", Arial, sans-serif,"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"'
-Chart.register(LineController, LineElement, PointElement, LinearScale, TimeScale, Title, Tooltip)
+Chart.register(LineController, LineElement, PointElement, LinearScale, TimeScale, Title, Tooltip, Colors)
+Chart.defaults.borderColor = 'transparent';
+
 
 const grid = {
   display: false,
@@ -44,15 +46,17 @@ function getMarketCapChartColor () {
 function xAxe (fontColor) {
   return {
     grid,
-    type: 'time',
+    type: 'time',    
     time: {
-      unit: 'day',
+      unit: 'week',
       tooltipFormat: 'DD',
-      stepSize: 14
+      // stepSize: 15
     },
     ticks: {
-      color: fontColor
-    }
+      color: fontColor,
+      display: true,
+      maxTicksLimit: 4
+    },     
   }
 }
 
@@ -73,7 +77,7 @@ const config = {
   type: 'line',
   responsive: true,
   data: {
-    datasets: []
+    datasets: []    
   },
   options: {
     layout: {
@@ -83,19 +87,20 @@ const config = {
       intersect: false,
       mode: 'index'
     },
-    scales: {
+    scales: {    
       x: xAxe(sassVariables.dashboardBannerChartAxisFontColor),
       price: {
         position: 'left',
         grid,
         ticks: {
-          beginAtZero: true,
+          beginAtZero: false,
           callback: (value, _index, _values) => `$${numeral(value).format('0,0.00')}`,
           maxTicksLimit: 4,
           color: sassVariables.dashboardBannerChartAxisFontColor
-        }
+        },
+        // borderColor: 'transparent',
       },
-      marketCap: {
+      marketCap: { 
         position: 'right',
         grid,
         ticks: {
@@ -106,6 +111,7 @@ const config = {
         }
       },
       numTransactions: {
+        display: false,  
         position: 'right',
         grid,
         ticks: {
@@ -121,6 +127,9 @@ const config = {
       title: {
         display: true,
         color: sassVariables.dashboardBannerChartAxisFontColor
+      },
+      Colors:{
+        enabled:false        
       },
       tooltip: {
         mode: 'index',
@@ -213,8 +222,7 @@ class MarketHistoryChart {
       cubicInterpolationMode: 'monotone',
       pointRadius: 0,
       backgroundColor: priceLineColor,
-      borderColor: priceLineColor
-      // lineTension: 0
+      borderColor: priceLineColor      
     }
     if (dataConfig.market === undefined || dataConfig.market.indexOf('price') === -1) {
       this.price.hidden = true
@@ -231,7 +239,7 @@ class MarketHistoryChart {
       pointRadius: 0,
       backgroundColor: mcapLineColor,
       borderColor: mcapLineColor
-      // lineTension: 0
+      // lineTension: 0           
     }
     if (dataConfig.market === undefined || dataConfig.market.indexOf('market_cap') === -1) {
       this.marketCap.hidden = true
@@ -249,8 +257,11 @@ class MarketHistoryChart {
       fill: false,
       pointRadius: 0,
       backgroundColor: getTxChartColor(),
-      borderColor: getTxChartColor()
-      // lineTension: 0
+      // borderColor: getTxChartColor(),
+      borderColor: 'rgba(0, 0, 0, 1)',
+      borderWidth:1,
+      //  lineTension: 0     
+      
     }
 
     if (dataConfig.transactions === undefined || dataConfig.transactions.indexOf('transactions_per_day') === -1) {
@@ -281,7 +292,7 @@ class MarketHistoryChart {
     } else {
       window.sessionStorage.setItem(isChartLoadedKey, true)
     }
-
+    
     this.chart = new Chart(el, config)
   }
 

@@ -70,8 +70,8 @@ textarea.form-control {
 
 .contract-address {
     display: inline-block;
-    text-decoration: underline;
-    text-decoration-style: dashed;
+    // text-decoration: underline;
+    // text-decoration-style: dashed;
     &:hover {
         text-decoration-style: none;
     }

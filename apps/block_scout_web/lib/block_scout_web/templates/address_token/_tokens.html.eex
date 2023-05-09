@@ -50,7 +50,7 @@
       "_link.html",
       address: address,
       contract: false,
-      use_custom_tooltip: false,
+      use_custom_tooltip: false,  
       no_tooltip: true
     end
     %>

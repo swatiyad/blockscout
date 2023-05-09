@@ -413,11 +413,11 @@
         </div>
          <div class="card js-ad-dependant-mb-3 mt-4 fs-15">
           <div class="card-body">
-          <div style="display:none"  id="decode_input">        
+          <div style="display:none" id="decode_input">        
           
             <!--
             <dl class="row py-2">
-                <dt class="col-sm-3 col-lg-2  text-muted fs-15">
+                <dt class="col-sm-3 col-lg-2 text-muted fs-15">
                   Click for details     
                 </dt>
                 <dd class="col-sm-9 col-lg-10">

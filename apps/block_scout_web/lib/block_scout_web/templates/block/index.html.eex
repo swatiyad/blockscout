@@ -1,7 +1,7 @@
 <section class="container" data-page="<%= String.downcase(@block_type) %>-list">
   <%= render BlockScoutWeb.Advertisement.TextAdView, "index.html", conn: @conn %>
 
-  <div class="page-title display_flex">
+  <div class="page-title display_flex pt-2 pb-0">
     <div>
       <h1> Blocks</h1>
     </div>
@@ -73,10 +73,10 @@
   -->
 
   <div class="card mt-2">
-    <div class="card-body px-3" data-async-listing="<%= @current_path %>">
+    <div class="card-body px-3 pt-3" data-async-listing="<%= @current_path %>">
       <%= render BlockScoutWeb.CommonComponentsView, "_channel_disconnected_message.html", text: gettext("Connection Lost, click to load newer blocks") %>
 
-      <p class="card-title list-title-description text-green fs-14">Total of 0.000000000 <%= gettext("%{block_type}s", block_type: @block_type) %> </p>
+      <p class="card-title list-title-description text-green fs-14 mb-4">Total of 0.000000000 <%= gettext("%{block_type}s", block_type: @block_type) %> </p>
 
       <div class="list-top-pagination-container-wrapper">
         <%= render BlockScoutWeb.CommonComponentsView, "_pagination_container.html", position: "top", cur_page_number: "1", show_pagination_limit: true, data_next_page_button: true, data_prev_page_button: true %>

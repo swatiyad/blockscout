@@ -113,6 +113,69 @@
   background-repeat: no-repeat;
 } 
 
+.metamask_btn {
+  color: #f8f9fa;
+  background: rgba(248, 249, 250, 0.1);
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 5px;
+}
+.metamask_btn img {
+  width:15px;
+  margin-right:2px;
+}
+.metamask_btn:hover {
+  color: #333!important;
+  background:#fff;
+  
+}
+
+a.metamask_btn {
+  color: #f8f9fa!important;
+  font-size: 12px  
+}
+
+
+.dropdown-menu.animated {
+  -webkit-animation-duration: 0.55s;
+  animation-duration: 0.55s;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+}
+
+@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu{  display:block; opacity: 0;  visibility: hidden; transition:.3s; margin-top:0;  }
+	.navbar .dropdown-menu.fade-down{ top:80%; transform: rotateX(-75deg); transform-origin: 0% 0%; }
+	.navbar .dropdown-menu.fade-up{ top:180%;  }
+	.navbar .nav-item:hover .dropdown-menu{ transition: .3s; opacity:1; visibility:visible; top:100%; transform: rotateX(0deg); }
+}
+
+
+.nav-item .dropdown-menu {
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+  top: 35px;
+}
+
+.topnav-nav-link.dropdown-toggle:after {
+  display: inline-block;
+  font-family: "Font Awesome 6 Free"!important;
+  font-size: 65%;
+  font-weight: 900;
+  content: "\f107";
+  margin-left: .5rem;
+  transition: .3s ease;
+  border:none;
+  margin-top: 3px;
+}
+
+.pagination-container .pagination .page-link {
+  padding: 0 12px;
+  font-size: 13px;
+  border-radius: 5px
+}
+
+
 
 
 
@@ -271,13 +334,6 @@
 
 
 
-# function fetchPrice() {
-#   fetch("http://139.59.8.33:2083/USDT_WYZTH").then(d=>d.json()).then((price)=>{
-#     console.log(price);
-#     document.getElementById("price_usd").innerText = "$"+(Math.round(price.message.USDT_WYZTH*100)/100);
-#   })
-#   window.onload=fetchPrice();
-# }
 
 
 

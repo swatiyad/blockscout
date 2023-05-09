@@ -5,8 +5,8 @@
 <input id="js-json-rpc" class="d-none" value="<%= Application.get_env(:block_scout_web, :json_rpc) %>" />
 
     <a 
-        class="footer-link js-btn-add-chain-to-mm btn-add-chain-to-mm in-footer"
+        class="metamask_btn text-decoration-none"
         style="cursor: pointer;"
     >
-        <%= gettext("Add") <> " #{sub_network}" %>
+        <img src="/images/metamask-fox .svg" width="15" /><%= gettext("Add") <> " #{sub_network}" %>
     </a>

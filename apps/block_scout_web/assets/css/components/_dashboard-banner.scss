@@ -5,7 +5,7 @@ $dashboard-line-color-price: lighten($dashboard-banner-gradient-end, 5%) !defaul
 $dashboard-line-color-price-dark-theme: lighten($dashboard-banner-gradient-end, 5%) !default;
 $dashboard-line-color-market: $secondary !default;
 $dashboard-line-color-market-dark-theme: $secondary !default;
-$dashboard-line-color-transactions: $warning !default;
+$dashboard-line-color-transactions: $secondary !default;
 $dashboard-line-color-transactions-dark-theme: $warning !default;
 $dashboard-stats-item-label-color: #fff !default;
 $dashboard-stats-item-value-color: rgba(#fff, 0.8) !default;
@@ -58,9 +58,9 @@ $dashboard-banner-chart-axis-font-color-alt: #333;
 
 .dashboard-banner-chart {
     flex-grow: 1;
-    margin: 15px 0 20px 0;
+    margin: 15px 0 5px 0;
     position: relative;
-    min-height: 100px;
+    min-height: 140px;
     height: calc(100% - 86px);
     @include media-breakpoint-down(md) {
         flex-grow: 0;
@@ -115,7 +115,7 @@ $dashboard-banner-chart-axis-font-color-alt: #333;
         }
         &.price-per-day {
             &::before {
-                background-color: $dashboard-line-color-price;
+                background-color: $dashboard-line-color-price;                
             }
         }
         &.gas-price-oracle {
