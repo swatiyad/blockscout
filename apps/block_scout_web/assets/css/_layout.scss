@@ -1328,6 +1328,11 @@ input.nosubmit {
 
 
 @media screen and (min-device-width: 290px) and (max-device-width: 768px) {
+
+    .topnav-nav-link.dropdown-toggle:after {
+      position: absolute;
+      right: 0;
+    }
     .mb-sm {
         margin-bottom: 15px;
     }

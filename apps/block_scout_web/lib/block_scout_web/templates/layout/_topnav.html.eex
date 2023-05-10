@@ -273,7 +273,7 @@
           <li class="nav-item  d-block d-lg-none d-xl-none">
             <a href="#" role="button" id="navbarexpoDropdown" class="nav-link topnav-nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <%= gettext("Explorers") %>
-              <span class="fas fa-chevron-down mobile_arrow"></span>
+             
             </a>
             <div class="dropdown-menu fade-up" aria-labeledby="navbarTransactionsDropdown">
               <%= link(
