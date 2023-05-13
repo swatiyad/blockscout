@@ -38,44 +38,44 @@
       </div>
       
       <div class="search-input-container mb-3">
-        <input data-search-field="" class="form-control search-input" type="text" name="search" value="<%= @conn.params["search"] %>" placeholder="<%= gettext "Contract name or address" %>" id="search-text-input">
+        <input data-search-field="" class="form-control search-input rounded-sm" type="text" name="search" value="<%= @conn.params["search"] %>" placeholder="<%= gettext "Contract name or address" %>" id="search-text-input">
       </div>
 
       <button data-error-message class="alert alert-danger col-12 text-left" style="display: none;">
         <span href="#" class="alert-link"><%= gettext("Something went wrong, click to reload.") %></span>
       </button>
 
-      <div class="addresses-table-container">
-        <div class="stakes-table-container">
-          <table>
+      <div>
+        <div>
+          <table class="table table-hover mb-0 fixed-layout">
             <thead>
-              <tr>
-                <th class="stakes-table-th">
-                  <div class="stakes-table-th-content"><%= gettext "Address" %></div>
+              <tr class="table-head">
+                <th>
+                  <div><%= gettext "Address" %></div>
                 </th>
-                <th class="stakes-table-th">
-                  <div class="stakes-table-th-content"><%= gettext "Balance" %></div>
+                <th>
+                  <div><%= gettext "Balance" %></div>
                 </th>
-                <th class="stakes-table-th">
-                  <div class="stakes-table-th-content"><%= gettext "Txns" %></div>
+                <th>
+                  <div><%= gettext "Txns" %></div>
                 </th>
-                <th class="stakes-table-th">
-                  <div class="stakes-table-th-content"><%= gettext "Compiler" %></div>
+                <th>
+                  <div><%= gettext "Compiler" %></div>
                 </th>
-                <th class="stakes-table-th">
-                  <div class="stakes-table-th-content"><%= gettext "Version" %></div>
+                <th>
+                  <div><%= gettext "Version" %></div>
                 </th>
-                <th class="stakes-table-th">
-                  <div class="stakes-table-th-content"><%= gettext "Optimization" %></div>
+                <th>
+                  <div><%= gettext "Optimization" %></div>
                 </th>
-                <th class="stakes-table-th">
-                  <div class="stakes-table-th-content"><%= gettext "Constructor args" %></div>
+                <th>
+                  <div><%= gettext "Constructor args" %></div>
                 </th>
-                <th class="stakes-table-th">
-                  <div class="stakes-table-th-content"><%= gettext "Verified" %></div>
+                <th>
+                  <div><%= gettext "Verified" %></div>
                 </th>
-                <th class="stakes-table-th">
-                  <div class="stakes-table-th-content"><%= gettext "Market cap" %></div>
+                <th>
+                  <div><%= gettext "Market cap" %></div>
                 </th>
               </tr>
             </thead>

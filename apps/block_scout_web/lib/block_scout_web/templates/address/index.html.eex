@@ -1,7 +1,7 @@
 <section class="container">
   <%= render BlockScoutWeb.Advertisement.TextAdView, "index.html", conn: @conn %>
 
-  <h1 class="card-title list-title-description my-4"><%= Explorer.coin_name() %> <%= gettext "Addresses" %></h1>
+  <h1 class="card-title list-title-description my-4">Top Accounts by <%= Explorer.coin_name() %> Balnce </h1>
   <div class="card">
     <div class="card-body pt-3" data-async-load data-async-listing="<%= @current_path %>">
      
@@ -15,29 +15,29 @@
 	  <thead>
 	    <tr class="table-head">
 	     <th>
-			<div class="table-head-content">
-			SNo.
+			<div>
+			Rank
 			</div>
 	      </th>
 	     <th>
-			<div class="table-head-content">
+			<div>
 			Address
 			</div>
 	      </th>
 	     <th>
-			<div class="table-head-content">
+			<div>
 			Balance
 			</div>
 	      </th>
 		  <%= if balance_percentage_enabled?(@total_supply) do %>
 			<th class="table-head">
-				<div class="table-head-content">
+				<div>
 					Percentage
 				</div>
 			</th>
 		  <% end %>
 	     <th>
-			<div class="table-head-content">
+			<div>
 			Txn Count
 			</div>
 	      </th>
