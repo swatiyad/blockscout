@@ -1,12 +1,14 @@
-<input id="js-chain-id" class="d-none" value="<%= Application.get_env(:block_scout_web, :chain_id) %>" />
-<input id="js-coin-name" class="d-none" value="<%= Explorer.coin_name() %>" />
-<% sub_network = Keyword.get(Application.get_env(:block_scout_web, BlockScoutWeb.Chain), :subnetwork) %>
-<input id="js-subnetwork" class="d-none" value="<%= sub_network %>" />
-<input id="js-json-rpc" class="d-none" value="<%= Application.get_env(:block_scout_web, :json_rpc) %>" />
 
-    <a 
-        class="metamask_btn text-decoration-none"
-        style="cursor: pointer;"
-    >
-        <img src="/images/metamask-fox .svg" width="15" /><%= gettext("Add") <> " #{sub_network}" %>
-    </a>
+    <input id="js-chain-id" class="d-none" value="<%= Application.get_env(:block_scout_web, :chain_id) %>" />
+    <input id="js-coin-name" class="d-none" value="<%= Explorer.coin_name() %>" />
+    <% sub_network = Keyword.get(Application.get_env(:block_scout_web, BlockScoutWeb.Chain), :subnetwork) %>
+    <input id="js-subnetwork" class="d-none" value="<%= sub_network %>" />
+    <input id="js-json-rpc" class="d-none" value="<%= Application.get_env(:block_scout_web, :json_rpc) %>" />
+    
+        <a 
+            class="metamask_btn text-decoration-none  js-btn-add-chain-to-mm btn-add-chain-to-mm in-footer pl-2"
+            style="cursor: pointer;"
+        >
+        <img src="/images/metamask-fox .svg" width="15" /> <%= gettext("Add") <> " #{sub_network}" %>
+        </a>
+    
