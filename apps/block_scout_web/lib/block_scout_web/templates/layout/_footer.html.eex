@@ -175,7 +175,8 @@ a.metamask_btn {
   border-radius: 5px
 }
 .dark-mode-changer-btn::before {
-  content: " \002600";   
+  content: " \002600";
+  font-family:  unset;!important 
     font-weight: 400;
   font-size: 22px; 
   color:#db9a23
