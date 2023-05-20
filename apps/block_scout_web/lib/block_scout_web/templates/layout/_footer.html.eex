@@ -174,10 +174,21 @@ a.metamask_btn {
   font-size: 13px;
   border-radius: 5px
 }
+.dark-mode-changer-btn::before {
+  content: " \002600";   
+    font-weight: 400;
+  font-size: 22px; 
+  color:#db9a23
+}
 
-
-
-
+.dark-theme-applied .dark-mode-changer-btn::before {  
+  content: "\f186";
+  font-family: "Font Awesome 6 Free";
+    font-weight: 400;
+  font-size: 18px;
+  padding: 3px 0;
+  color: #fff;
+}
 
 </style>
 
@@ -216,20 +227,13 @@ a.metamask_btn {
     <div class="col-6 col-md-4 col-lg-<%= col_size %>">
       <h3 class="text-white heading_border">Company</h3>
       <ul style="list-style: none;margin: 0; padding: 0; line-height: 31px;">
-        <li><a href="https://t.me/officialwyzth" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("About Us") %></a></li>
+        <li><a href="https://wyzth.org/" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("About Us") %></a></li>
         <li><a href="https://t.me/officialwyzth" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("Contact Us") %></a></li>
         
         <li><a href="https://wyzth.org/careers" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("Careers") %>
         <sup class="join">Join Us</sup></a></li>
         <li><a href="https://wyzth.org/community" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("Terms of Service") %></a></li>
-        <li><a href="#" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("Bug Bounty") %></a></li>
-        <!--<li><a href="#" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("Submit an Issue") %></a></li>
-        <li><a href="#" rel="noreferrer" class="footer-link"><%= gettext("Contribute") %></a></li>
-        <li><a href="#" rel="noreferrer" class="footer-link"><%= gettext("Chat (#blockscout)") %></a></li>
-        <%= if Application.get_env(:block_scout_web, :footer)[:enable_forum_link] do %>
-          <li><a href="#" rel="noreferrer" class="footer-link"><%= gettext("Forum") %></a></li>
-        <% end %>
-        <%= render BlockScoutWeb.LayoutView, "_add_chain_to_mm.html" %>-->
+       
       </ul>
     </div>
 
@@ -257,7 +261,7 @@ a.metamask_btn {
         <h3 class="text-white heading_border"><%= gettext("Products & Services") %></h3>
         <ul style="list-style: none;margin: 0; padding: 0; line-height: 31px;">
         
-        <li><a href="#" rel="noreferrer" class="footer-link"><%= gettext("WYZth Wallet") %></a></li>
+        <li><a href="https://wyscale.com/" target="_blank" rel="noreferrer" class="footer-link"><%= gettext("WYscale") %></a></li>
 
         <!--Absinthe<%= for %{title: title, url: url} <- main_nets do %>
           <li><a href="<%= url %>" rel="norefferer" class="footer-link"> <%= title %> </a></li>

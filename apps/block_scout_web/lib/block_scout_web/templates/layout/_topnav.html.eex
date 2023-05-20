@@ -260,7 +260,7 @@
 
           <!-- Dark mode changer -->  
           <li class="nav-item d-none d-lg-inline-block">       
-            <button type="button" class="dark-mode-changer-btn nav-link topnav-nav-link border rounded ml-2 bg-white text-green" style="padding: 3px 10px;" id="dark-mode-changer">
+            <button type="button" class="dark-mode-changer-btn nav-link topnav-nav-link border rounded ml-2 bg-white text-green" style="padding: 0 10px;" id="dark-mode-changer">
             </button>
           </li>
 

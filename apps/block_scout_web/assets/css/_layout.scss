@@ -1199,18 +1199,6 @@ input.nosubmit {
       background: #393b3c;
       color: #e1dfdf!important;    
   }
-
-
-.dark-mode-changer-btn::before {
-    content: " 🌞";    
-  }
-  
-  .dark-theme-applied .dark-mode-changer-btn::before {  
-    content: "\f186";
-    font-family: "Font Awesome 6 Free";
-      font-weight: 400;
-    font-size: 18px;
-  }
   
   .dark-theme-applied .dark-mode-changer-btn:hover:before {  
     background: transparent!important
