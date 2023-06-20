@@ -5,5 +5,5 @@
 </div>
 <script defer data-cfasync="false" src="<%= static_path(@conn, "/js/banner.js") %>"></script>
 <div class="text-center mb-4">
-    <img src="/images/banner-ad.png" class="img-responsive">
+    <img src="/images/banner-ad.png"  class="img-responsive">
 </div>
