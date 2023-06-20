@@ -59,7 +59,7 @@
 .dark-theme-applied .theme-button {
   background: url(/images/moon.png)!important;
   width: 20px;
-  height: 20px;
+  height: 20px;https://wyzthscan.co.in/
   background-repeat: no-repeat;
 }
 
@@ -243,7 +243,7 @@ a.metamask_btn {
       <div class="col-6 col-md-4 col-lg-<%= col_size %>">
         <h3 class="text-white heading_border"><%= gettext("Resources") %></h3>
         <ul style="list-style: none;margin: 0; padding: 0; line-height: 31px;">
-          <li><a href="https://wyscale.com/" target="_blank" rel="noreferrer" class="footer-link"><%= gettext("API Documentation") %></a></li>         
+          <li><a href="https://docs.wyzth.org/docs/Overview" target="_blank" rel="noreferrer" class="footer-link"><%= gettext("API Documentation") %></a></li>         
           <li><a href="https://newsletter.thecoinweekly.com/" target="_blank" rel="noreferrer" class="footer-link"><%= gettext("Newsletter") %></a></li>
        
           <!--

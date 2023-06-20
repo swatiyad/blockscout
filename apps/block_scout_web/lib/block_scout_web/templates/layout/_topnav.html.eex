@@ -188,17 +188,8 @@
                         to: tokens_path(@conn, :index)
                       ) %>
 
-                      <%= link(
-                        gettext("Newsletter"),
-                        class: "dropdown-item #{tab_status("dummy", @conn.request_path)}",
-                        to: tokens_path(@conn, :index)
-                      ) %>
-
-                      <%= link(
-                        gettext("Knowledge Base"),
-                        class: "dropdown-item #{tab_status("dummy", @conn.request_path)}",
-                        to: tokens_path(@conn, :index)
-                      ) %>
+                   
+                      <a class="dropdown-item" target="_blank" href="https://docs.wyzth.org/docs/Overview"> API Documentation</a>
                   
                 </div>
               </li>
