@@ -105,7 +105,7 @@
 
 
                   <%= link(gettext("Verified contracts"),
-                    to: verified_contracts_path(@conn, :index),
+                   to: verified_contracts_path(@conn, :index),
                     class: "dropdown-item #{tab_status("verified-contracts", @conn.request_path)}")%>
                 </div>
               </li>

@@ -2,25 +2,26 @@
 #export MIX_ENV=prod\
 sudo chmod -R 777 ../blockscout
 export ETHEREUM_JSONRPC_VARIANT=parity
-export ETHEREUM_JSONRPC_HTTP_URL=https://rabbit.analog-rpc.com/
-export ETHEREUM_JSONRPC_WS_URL=ws://rabbit.analog-rpc.com/ws
-export DATABASE_URL=postgres://taralscan:wyzscan@localhost:5432/blockscout?ssl=false
-export ETHEREUM_JSONRPC_TRACE_URL=https://rabbit.analog-rpc.com/
-export ETHEREUM_JSONRPC_TRACE_URL=https://rabbit.analog-rpc.com/
-export NETWORK=Blockchain Explorer
-export SUBNETWORK="WYZth Scan Testnet :"
+export ETHEREUM_JSONRPC_HTTP_URL=https://rpc-mainnet.wyzthchain.org 
+export ETHEREUM_JSONRPC_WS_URL=ws://rpc-mainnet.wyzthchain.com/ws
+export DATABASE_URL=postgres://postgres:wyzscan@localhost:5432/blockscout?ssl=false
+export ETHEREUM_JSONRPC_TRACE_URL=https://rpc-mainnet.wyzthchain.org 
+export NETWORK=Tarality Blockchain Explorer
+export SUBNETWORK="WYZth Scan"
 export LOGO=/images/wyz-logo.svg
 export LOGO_FOOTER=/images/wyz-footer-logo.svg
 #export ETHEREUM_JSONRPC_TRANSPORT=http
+#export ETHEREUM_JSONRPC_TRANSPORT=http
 export NETWORK_PATH=/
 export API_PATH=/
-export BLOCKSCOUT_HOST=rabbit.analogscan.com
+export BLOCKSCOUT_HOST=
 export BLOCKSCOUT_PROTOCOL=https
-export SECRET_KEY_BASE=BASE=E/sdFN0JBURFmltKF+2BLp8JRqzPEJy9a3kwfDN7DooykJuAo3BKT0W7YFQ42d2/
+SECRET_KEY_BASE=BASE=E/sdFN0JBURFmltKF+2BLp8JRqzPEJy9a3kwfDN7DooykJuAo3BKT0W7YFQ42d2/
 # export CHECK_ORIGIN=false
 # export PORT=4000
-export COIN=Ana
-export COIN_NAME=Ana
+export COIN=WYZ
+export COIN_NAME=WYZ
+
 export BLOCKSCOUT_VERSION=v4.1.5-beta
 export RELEASE_LINK=https://github.com/blockscout/blockscout/releases/tag/v4.1.5-beta
 
@@ -46,13 +47,12 @@ export CACHE_TOKEN_EXCHANGE_RATE_PERIOD=3600000
 export ENABLE_SOURCIFY_INTEGRATION=true 
 export SOURCIFY_SERVER_URL=https://sourcify.dev/server
 export SOURCIFY_REPO_URL=https://repo.sourcify.dev/contracts/
-#export CHAIN_ID=303
-export CHAIN_ID=1807
+export CHAIN_ID=303
 export DISPLAY_TOKEN_ICONS=true
 export RE_CAPTCHA_SECRET_KEY=6Ldd_O8hAAAAAG1yA9GmQYunRTpp40TOX_A8sa2y
 export RE_CAPTCHA_CLIENT_KEY=6Ldd_O8hAAAAANk3zRRCYpKTzUO4RcX9Pxv9n8_R
 export JSON_RPC=https://rpc-mainnet3.wyzthchain.org
-export ADMIN_PANEL_ENABLED=true
+#export ADMIN_PANEL_ENABLED=true
 # export METADATA_CONTRACT=
 export VALIDATORS_CONTRACT=0x874967F5Fe0b75Ee6592D981E5E47a2D11E3E2Bf
 export POS_STAKING_CONTRACT=0xBb1cB38f61777bdFd9dfcB84e559E592D8809fDA
