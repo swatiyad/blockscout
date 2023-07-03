@@ -202,14 +202,14 @@
                 <div class="dropdown-menu fade-up" aria-labeledby="navbarTransactionsDropdown">
                 <%= link(
                         gettext("API Docmentation"),
-                        class: "dropdown-item border-bottom #{tab_status("dummy", @conn.request_path)}",
-                        to: tokens_path(@conn, :index)
+                       class: "dropdown-item #{tab_status("api-docs", @conn.request_path)}",
+                    to: api_url() <> api_docs_path(@conn, :index)
                       ) %>
 
                   <%= link(
                         gettext("Verify Contract"),
-                        class: "dropdown-item #{tab_status("dummy", @conn.request_path)}",
-                        to: tokens_path(@conn, :index)
+                        class: "dropdown-item #{tab_status("contract-verify", @conn.request_path)}",
+                        to: "/contract-verify"
                       ) %>
 
                       <%= link(

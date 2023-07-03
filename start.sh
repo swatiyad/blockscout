@@ -1,11 +1,11 @@
 #!/bin/bash
 #export MIX_ENV=prod\
 sudo chmod -R 777 ../blockscout
-export ETHEREUM_JSONRPC_VARIANT=parity
-export ETHEREUM_JSONRPC_HTTP_URL=https://rpc-mainnet.wyzthchain.org 
-export ETHEREUM_JSONRPC_WS_URL=ws://rpc-mainnet.wyzthchain.com/ws
+export ETHEREUM_JSONRPC_VARIANT=besu
+export ETHEREUM_JSONRPC_HTTP_URL=http://ec2-52-66-146-60.ap-south-1.compute.amazonaws.com/
+export ETHEREUM_JSONRPC_WS_URL=ws://ec2-52-66-146-60.ap-south-1.compute.amazonaws.com/ws
 export DATABASE_URL=postgres://postgres:wyzscan@localhost:5432/blockscout?ssl=false
-export ETHEREUM_JSONRPC_TRACE_URL=https://rpc-mainnet.wyzthchain.org 
+export ETHEREUM_JSONRPC_TRACE_URL=http://ec2-52-66-146-60.ap-south-1.compute.amazonaws.com/ 
 export NETWORK=Tarality Blockchain Explorer
 export SUBNETWORK="WYZth Scan"
 export LOGO=/images/wyz-logo.svg
