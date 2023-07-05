@@ -172,8 +172,8 @@
                 <div class="dropdown-menu fade-up" aria-labeledby="navbarTransactionsDropdown">
                 <%= link(
                         gettext("Charts  And Stats"),
-                        class: "dropdown-item #{tab_status("dummy", @conn.request_path)}",
-                        to: tokens_path(@conn, :index)
+                        class: "dropdown-item #{tab_status("charts", @conn.request_path)}",
+                        to: "/charts"
                       ) %>
 
                   <%= link(

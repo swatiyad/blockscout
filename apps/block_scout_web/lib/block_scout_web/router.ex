@@ -92,6 +92,13 @@ end
   scope "/", BlockScoutWeb do
   pipe_through :browser
   get "/charts", ChartController, :index
+   get("/charts/tx", ChartController, :tx)
+   get("/charts/blocksize", ChartController, :blocksize)
+   get("/charts/bep2etxns", ChartController, :bep2etxns)
+ get("/charts/gasused", ChartController, :blocktime)  
+  get("/charts/gasprice", ChartController, :gasprice)
+   get("/charts/gaslimit", ChartController, :gaslimit)
+   get("/charts/uniqueaddress", ChartController, :uniqueaddress)
 end
 
 
