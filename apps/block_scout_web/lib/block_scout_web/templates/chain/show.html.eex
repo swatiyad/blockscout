@@ -14,7 +14,7 @@
           </p>
         </div>
         <div class="col-sm-12 col-md-12 col-lg-5 col-md-6 mb-2 text-center py-3">
-        <a href="https://wyscale.com/" target="_blank"><img src="/images/header-advertisement.gif"  class="img-fluid rounded"></a></div>
+        <a href="https://wyscale.com/" target="_blank"><img src="/images/header-advertisement.gif"  class="rounded"></a></div>
       </div>
     </div>
   </div>
