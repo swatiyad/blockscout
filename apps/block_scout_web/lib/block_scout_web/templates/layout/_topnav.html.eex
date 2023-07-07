@@ -178,8 +178,8 @@
 
                   <%= link(
                         gettext("Top Statistics"),
-                        class: "dropdown-item border-bottom  #{tab_status("dummy", @conn.request_path)}",
-                        to: tokens_path(@conn, :index)
+                        class: "dropdown-item border-bottom  #{tab_status("statistics", @conn.request_path)}",
+                        to: "/statistics"
                       ) %>
 
                       <%= link(
@@ -227,7 +227,7 @@
                       <%= link(
                         gettext("Vyper Online Compiler"),
                         class: "dropdown-item #{tab_status("dummy", @conn.request_path)}",
-                        to: tokens_path(@conn, :index)
+                        to: "vyper-verification"
                       ) %>
 
                       <%= link(

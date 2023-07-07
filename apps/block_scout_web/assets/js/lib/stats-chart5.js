@@ -6,19 +6,19 @@ const chartOptions = {
       type: 'area',
     },
     title: {
-      text: 'ERC-20 Daily Token Transfer Chart',
+      text: 'Gas Price Chart',
     },
     xAxis: {
       categories: [],
     },
     yAxis: {
       title: {
-        text: 'Transactions',
+        text: 'Gas Price per Day',
       },
     },
     series: [
       {
-        name: 'History',
+        name: 'Gas Price',
         data: [],
       },
     ],
@@ -27,7 +27,7 @@ const chartOptions = {
 
   export const fetchApi = async () => {
     try {
-      const response = await axios.get('http://localhost:3000/api/average-gas-price');
+      const response = await axios.get('https://wyzthscan.org/node-api/average-gas-price');
       const data = response.data.data; // Assuming the response contains the desired data
       const categories = [];
       const values = [];

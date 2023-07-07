@@ -1,0 +1,129 @@
+<section data-page="contract-verification-choose-type" class="container new-smart-contract-container card mt-30">
+
+<div data-selector="channel-disconnected-message" style="display: none;">
+  <div data-selector="reload-button" class="alert alert-danger" style="padding: 0.75rem 0rem; cursor: pointer;">
+    <span href="#" class="alert alert-danger">Connection Lost</span>
+  </div>
+</div>
+  <div class="new-smart-contract-form">
+      <h1 class="smart-contract-title">Vyper Smart Contract Verification</h1>
+<form action="/verify_smart_contract/contract_verifications" method="post"><input name="_csrf_token" type="hidden" value="Ow8HMRIkJSZYFh9cUXQhbDs5NQANJj9fN7BZzMmTjwx28CG4Pvxh9pJ9">
+<div class="smart-contract-form-group">
+    <div class="smart-contract-form-group-inner-wrapper">
+<label for="smart_contract_address_hash">Contract Address</label>
+    <div class="center-column">
+<input aria-describedby="contract-address-help-block" class="form-control border-rounded" id="smart_contract_address_hash" name="smart_contract[address_hash]" type="text">
+
+    </div>
+    <div class="smart-contract-form-group-tooltip">The 0x address supplied on contract creation.</div>
+    </div>
+</div>
+<div class="smart-contract-form-group">
+    <div class="smart-contract-form-group-inner-wrapper">
+<label for="smart_contract_name">Contract Name</label>
+        <div class="center-column">
+<input aria-describedby="contract-name-help-block" class="form-control border-rounded" data-test="contract_name" id="smart_contract_name_1" name="smart_contract[name]" type="text" value="Vyper_contract">
+
+        </div>
+        <div class="smart-contract-form-group-tooltip">Must match the name specified in the code.</div>
+    </div>
+</div>
+<div class="smart-contract-form-group">
+    <div class="smart-contract-form-group-inner-wrapper">
+<label for="smart_contract_compiler_version">Compiler</label>
+        <div class="center-column">
+<select aria-describedby="compiler-help-block" class="form-control border-rounded" id="smart_contract_compiler_version_1" name="smart_contract[compiler_version]"><option selected="" value="latest">latest</option><option value="v0.3.9">v0.3.9</option><option value="v0.3.8">v0.3.8</option><option value="v0.3.7">v0.3.7</option><option value="v0.3.6">v0.3.6</option><option value="v0.3.5">v0.3.5</option><option value="v0.3.4">v0.3.4</option><option value="v0.3.3">v0.3.3</option><option value="v0.3.2">v0.3.2</option><option value="v0.3.1">v0.3.1</option><option value="v0.3.0">v0.3.0</option><option value="v0.2.16">v0.2.16</option><option value="v0.2.15">v0.2.15</option><option value="v0.2.14">v0.2.14</option><option value="v0.2.13">v0.2.13</option><option value="v0.2.12">v0.2.12</option><option value="v0.2.11">v0.2.11</option><option value="v0.2.8">v0.2.8</option><option value="v0.2.7">v0.2.7</option><option value="v0.2.6">v0.2.6</option><option value="v0.2.5">v0.2.5</option><option value="v0.2.4">v0.2.4</option><option value="v0.2.3">v0.2.3</option><option value="v0.2.2">v0.2.2</option><option value="v0.2.1">v0.2.1</option><option value="v0.2.0">v0.2.0</option><option value="v0.1.0-beta.16">v0.1.0-beta.16</option><option value="v0.1.0-beta.17">v0.1.0-beta.17</option></select>
+
+        </div>
+        <div class="smart-contract-form-group-tooltip"></div>
+    </div>
+</div>
+
+        <div class="smart-contract-form-group">
+          <div class="smart-contract-form-group-inner-wrapper">
+<label for="smart_contract_contract_source_code">Enter the Vyper Contract Code</label>
+            <div class="center-column">
+<textarea aria-describedby="contract-source-code-help-block" class="form-control border-rounded monospace" id="smart_contract_contract_source_code-1" name="smart_contract[contract_source_code]" rows="3"></textarea>
+
+            </div>
+            <div class="smart-contract-form-group-tooltip"></div>
+          </div>
+        </div>
+<div class="smart-contract-form-group constructor-arguments" style="display: block">
+    <div class="smart-contract-form-group-inner-wrapper">
+<label for="smart_contract_constructor_arguments">ABI-encoded Constructor Arguments (if required by the contract)</label>
+        <div class="center-column">
+<textarea aria-describedby="contract-constructor-arguments-help-block" class="form-control border-rounded monospace" id="smart_contract_constructor_arguments" name="smart_contract[constructor_arguments]" rows="3"></textarea>
+
+        </div>
+        <div class="smart-contract-form-group-tooltip">Add arguments in <a href="https://solidity.readthedocs.io/en/develop/abi-spec.html" target="_blank">ABI hex encoded form</a>. Constructor arguments are written right to left, and will be found at the end of the input created bytecode. They may also be <a href="https://abi.hashex.org/" target="_blank">parsed here.</a></div>
+    </div>
+</div>
+        <div class="d-none">
+          <input type="text" id="verification_type" name="verification_type" value="vyper">
+        </div>
+
+        <div class="smart-contract-form-buttons">
+          <button class="position-absolute w-118 btn-full-primary d-none mr-2" disabled="true" id="loading" name="button" type="button">
+<span class="loading-spinner-small mr-2">
+    <span class="loading-spinner-block-1"></span>
+    <span class="loading-spinner-block-2"></span>
+</span>
+Loading...
+
+          </button>
+<button class="btn-full-primary mr-2" data-button-loading="animation" data-submit-button="" type="submit" onclick="addressSubmitHAndler()">Verify &amp; publish</button>
+<input class="btn-line mr-2 js-smart-contract-form-reset" type="reset" value="Reset">
+<a class="btn-no-border" href="/">Cancel</a>
+        </div>
+</form>
+    </div>
+    <script defer data-cfasync="false" src="<%= static_path(@conn, "/js/verification-form.js") %>"></script>
+</section>
+    
+<script>
+
+ function addressSubmitHAndler(){
+  let inputVal = document.querySelector(".addrs-input-verification").value
+   let contract = document.querySelector("#w3review").value
+
+   if(inputVal.startsWith("0x")){
+   fetch('http://localhost:4000/api?module=contract&action=verify_vyper_contract', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/x-www-form-urlencoded'
+  },
+  body: new URLSearchParams({
+    contractSourceCode: contract,
+    name: 'Vyper_contract',
+    addressHash: inputVal,
+    compilerVersion: 'v0.2.12'
+  })
+})
+  .then(response => response.json())
+  .then(data => {
+    console.log(data,"data")
+    if(data.status=='0'){
+     document.querySelector(".error").style.color = "red";
+    document.querySelector(".error").innerHtml = "Something went wrong."   
+    }else{
+        document.querySelector(".error").style.color = "green";
+    document.querySelector(".error").innerHtml = "Contract Verified."   
+    }
+  })
+  .catch(error => {
+    // Handle any errors here
+    console.error(error);
+    document.querySelector(".error").style.color = "red";
+    document.querySelector(".error").innerHtml = "Something went wrong."
+  });
+   }else{
+    alert("Invalid Address.")
+   } 
+  }
+  function reset(){
+    document.querySelector(".addrs-input-verification").value = "";
+    document.querySelector("#w3review").value = ""
+  }
+    </script>
+</section>

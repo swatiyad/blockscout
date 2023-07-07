@@ -44,6 +44,7 @@ const appJs =
       'stats-chart3':'./js/lib/stats-chart3.js',
       'stats-chart4':'./js/lib/stats-chart4.js',
       'stats-chart5':'./js/lib/stats-chart5.js',
+      'statistics':'./js/lib/statistics.js',
       'chain': './js/pages/chain.js',
       'blocks': './js/pages/blocks.js',
       'address': './js/pages/address.js',

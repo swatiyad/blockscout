@@ -2,7 +2,7 @@
 
    <script defer src="<%= static_path(@conn, "/js/stats-chart5.js") %>"></script>
  <div class="card">
-<div id="chartContainer5">5</div>
+<div id="chartContainer5"></div>
 </div>
 
 

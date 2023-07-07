@@ -18,7 +18,7 @@ const chartOptions = {
     },
     series: [
       {
-        name: 'History',
+        name: 'Blocks',
         data: [],
       },
     ],
@@ -27,7 +27,7 @@ const chartOptions = {
 
   export const fetchApi = async () => {
     try {
-      const response = await axios.get('http://localhost:3000/api/average-block-size');
+      const response = await axios.get('https://wyzthscan.org/node-api/average-block-size');
       const data = response.data.data; // Assuming the response contains the desired data
       const categories = [];
       const values = [];

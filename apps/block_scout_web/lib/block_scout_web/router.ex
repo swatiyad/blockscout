@@ -102,6 +102,17 @@ end
 end
 
 
+  scope "/", BlockScoutWeb do
+  pipe_through :browser
+  get "/statistics", StatisticsController, :index
+  
+end
+
+  scope "/", BlockScoutWeb do
+  pipe_through :browser
+  get "/vyper-verification", VyperContractVerificationController, :index
+  
+end
 
 
 
