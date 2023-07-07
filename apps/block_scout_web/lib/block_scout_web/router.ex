@@ -77,6 +77,45 @@ defmodule BlockScoutWeb.Router do
     end
   end
 
+
+
+  scope "/", BlockScoutWeb do
+  pipe_through :browser
+  get "/hello", HelloController, :index
+end
+
+  scope "/", BlockScoutWeb do
+  pipe_through :browser
+  get "/contract-verify", ContractVerifyController, :index
+end
+
+  scope "/", BlockScoutWeb do
+  pipe_through :browser
+  get "/charts", ChartController, :index
+   get("/charts/tx", ChartController, :tx)
+   get("/charts/blocksize", ChartController, :blocksize)
+   get("/charts/bep2etxns", ChartController, :bep2etxns)
+ get("/charts/gasused", ChartController, :blocktime)  
+  get("/charts/gasprice", ChartController, :gasprice)
+   get("/charts/gaslimit", ChartController, :gaslimit)
+   get("/charts/uniqueaddress", ChartController, :uniqueaddress)
+end
+
+
+  scope "/", BlockScoutWeb do
+  pipe_through :browser
+  get "/statistics", StatisticsController, :index
+  
+end
+
+  scope "/", BlockScoutWeb do
+  pipe_through :browser
+  get "/vyper-verification", VyperContractVerificationController, :index
+  
+end
+
+
+
   if Application.compile_env(:block_scout_web, WebRouter)[:enabled] do
     forward("/", BlockScoutWeb.WebRouter)
   else
@@ -84,6 +123,10 @@ defmodule BlockScoutWeb.Router do
       pipe_through(:browser)
 
       forward("/", APIDocsController, :index)
+      
     end
   end
 end
+
+
+

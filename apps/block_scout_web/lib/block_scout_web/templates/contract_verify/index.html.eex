@@ -1,0 +1,32 @@
+<section data-page="contract-verification-choose-type" class="container new-smart-contract-container card mt-30">
+ 
+
+  <div class="new-smart-contract-form">
+      <h1 class="title-head text-center mb-40"><%= gettext "New Smart Contract Verification" %></h1>
+
+      <div style="display:flex; justify-content:center; flex-direction:column; align-items:center">
+      <input type="text" class="w-50 width_full_new rounded mb-40 p-10 addrs-input-verification" placeholder="Enter the contract address to be verified (0x..)"/>
+      <div class="d-flex justify-content-center">
+      <button class="input-group-text bg-brown border-dark rounded text-white address-submit-btn m-2" onclick="addressSubmitHAndler()" >Proceed</button>
+       <button class="input-group-text bg-brown border-dark rounded text-white address-submit-btn m-2" id="reset-1" onclick="reset()" >Reset</button>
+      </div>
+      </div>
+
+    </div>
+    <script defer data-cfasync="false" src="<%= static_path(@conn, "/js/verification-form.js") %>"></script>
+    <script>
+
+ function addressSubmitHAndler(){
+  let inputVal = document.querySelector(".addrs-input-verification").value
+   if(inputVal.startsWith("0x")){
+    window.location.href= `https://wyzthscan.org/address/${inputVal}/contracts#address-tabs`
+   }else{
+    alert("Invalid Address.")
+   }
+  
+  }
+  function reset(){
+    document.querySelector(".addrs-input-verification").value=""
+  }
+    </script>
+</section>

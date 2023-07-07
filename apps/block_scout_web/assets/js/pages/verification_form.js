@@ -365,3 +365,6 @@ function initializeDropzone () {
     })
   }
 }
+function hello(event){
+  console.log("hello")
+}

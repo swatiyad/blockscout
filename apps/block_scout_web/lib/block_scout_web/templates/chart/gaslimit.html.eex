@@ -1,0 +1,17 @@
+<section data-page="contract-verification-choose-type" class="container new-smart-contract-container mt-30">
+  <script defer src="<%= static_path(@conn, "/js/stats-chart3.js") %>"></script>
+ 
+ <div class="card">
+<div id="chartContainer3"></div>
+
+</div>
+
+
+</section>
+
+<script>
+
+</script>
+
+
+

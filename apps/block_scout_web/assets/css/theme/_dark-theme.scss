@@ -874,7 +874,7 @@ $dark-stakes-banned-background: #313131;
     .button-primary {
         background: $dark-primary;
         border-color: $dark-primary;
-        color: #fff;
+        color: #fff !important;
         &:hover {
             background: darken($dark-primary, 6);
             border-color: darken($dark-primary, 6);

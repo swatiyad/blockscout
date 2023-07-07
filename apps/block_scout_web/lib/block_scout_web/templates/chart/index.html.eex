@@ -1,0 +1,61 @@
+<section data-page="contract-verification-choose-type" class="container new-smart-contract-container card mt-30">
+<h2>WyzthScan Charts & Statistics</h2>
+
+<div class="row ">
+<div class="col-lg-4 col-md-6 col-sm-12 p-20">
+<a href="/charts/tx">
+<div class="chart-blocscout-title">Daily Transaction Chart</div>
+
+<img src="/images/chart/transactionhistory.svg" class="img-fluid"/>
+</a>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-12 p-20">
+<a href="/charts/bep2etxns">
+<div class="chart-blocscout-title">ERC-20 Daily Token Transfer Chart</div>
+<img src="/images/chart/transactionhistory.svg" class="img-fluid"/>
+</a>
+</div>
+
+<div class="col-lg-4 col-md-6 col-sm-12 p-20">
+<a href="/charts/blocksize">
+<div class="chart-blocscout-title">Average Block Size Chart</div>
+<img src="/images/chart/blocksize.svg" class="img-fluid"/>
+</a>
+</div>
+
+<div class="col-lg-4 col-md-6 col-sm-12 p-20">
+<a href="/charts/gasprice">
+<div class="chart-blocscout-title">Average Gas Price Chart</div>
+<img src="/images/chart/gasprice.svg" class="img-fluid"/>
+</a>
+</div>
+
+<div class="col-lg-4 col-md-6 col-sm-12 p-20">
+<a href="/charts/gaslimit">
+<div class="chart-blocscout-title">Average Gas Limit Chart</div>
+<img src="/images/chart/gaslimit.svg" class="img-fluid"/>
+</a>
+</div>
+
+<div class="col-lg-4 col-md-6 col-sm-12 p-20">
+<a href="/charts/gasused">
+<div class="chart-blocscout-title">Daily Gas Used Chart</div>
+<img src="/images/chart/gasused.svg" class="img-fluid"/>
+<a/>
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+</section>
+
+
+

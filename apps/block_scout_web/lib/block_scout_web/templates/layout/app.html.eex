@@ -306,7 +306,7 @@
     <%= if @view_module == Elixir.BlockScoutWeb.ChainView do %>
 
       <script defer data-cfasync="false" src="<%= static_path(@conn, "/js/chain.js") %>"></script>
-      <script defer data-cfasync="false" src="<%= static_path(@conn, "/js/highcharts.js") %>"></script>
+      <script defer data-cfasync="true" src="<%= static_path(@conn, "/js/highcharts.js") %>"></script>
       <script defer data-cfasync="false" src="<%= static_path(@conn, "/js/chart-loader.js") %>"></script>
 
 
