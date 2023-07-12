@@ -10,7 +10,7 @@
       <div class="overview-container">
         <div class="row">
           <div class="col-12 col-md-6">
-            <div class="card">
+            <div class="card" style="min-height:435.5px">
               <div class="stats-card-header">
                 Transactions
                 <span class="hash-tag"
@@ -19,109 +19,12 @@
                   ></span
                 >
               </div>
-              <div id="ContentPlaceHolder1_Div1a_body" class="card-body">
-                <div class="media align-items-center mb-1">
-                  <div class="media-body">Top WYZth Sender</div>
-                  <div class="text-right">Total WYZTH</div>
-                </div>
-                <div class="media align-items-center mb-1">
-                  <div class="media-body">
-                    <span
-                      class="hash-tag text-truncate"
-                      data-toggle="tooltip"
-                      title=""
-                      data-original-title="0x8894e0a0c962cb723c1976a4421c95949be2d4e3"
-                      ><a
-                        href="/address/0x8894e0a0c962cb723c1976a4421c95949be2d4e3"
-                        >Binance: Hot Wallet 6</a
-                      ></span
-                    >
-                  </div>
-                  <div class="text-secondary text-right">
-                    <i class="fab fa-binance text-secondary mr-1"></i
-                    >73,665.22141748
-                  </div>
-                </div>
-                <hr class="pb-1 hr" />
-                <div class="media align-items-center mb-1">
-                  <div class="media-body">Top WYZTH Receiver</div>
-                  <div class="text-right">Total WYZTH</div>
-                </div>
-                <div class="media align-items-center mb-1">
-                  <div class="media-body">
-                    <i
-                      class="far fa-file-alt text-secondary mr-1"
-                      data-toggle="tooltip"
-                      title=""
-                      data-original-title="Contract"
-                    ></i
-                    ><span
-                      class="hash-tag text-truncate"
-                      data-toggle="tooltip"
-                      title=""
-                      data-original-title="0x10ed43c718714eb63d5aa57b78b54704e256024e"
-                      ><a
-                        href="/address/0x10ed43c718714eb63d5aa57b78b54704e256024e"
-                        >PancakeSwap: Router v2</a
-                      ></span
-                    >
-                  </div>
-                  <div class="text-secondary text-right">
-                    <i class="fab fa-binance text-secondary mr-1"></i
-                    >179,460.660329791
-                  </div>
-                </div>
-                <hr class="pb-1 hr" />
-                <div class="media align-items-center mb-1">
-                  <div class="media-body">Top Txn Count Sent</div>
-                  <div class="text-right">Total Txn</div>
-                </div>
-                <div class="media align-items-center mb-1">
-                  <div class="media-body">
-                    <span
-                      class="hash-tag text-truncate"
-                      data-toggle="tooltip"
-                      title=""
-                      data-original-title="0xe93685f3bba03016f02bd1828badd6195988d950"
-                      ><a
-                        href="/address/0xe93685f3bba03016f02bd1828badd6195988d950"
-                        >Layer Zero: Executor</a
-                      ></span
-                    >
-                  </div>
-                  <div class="text-secondary text-right">110,218</div>
-                </div>
-                <hr class="pb-1 hr" />
-                <div class="media align-items-center mb-1">
-                  <div class="media-body">Top Txn Count Received</div>
-                  <div class="text-right">Total Txn</div>
-                </div>
-                <div class="media align-items-center mb-1">
-                  <div class="media-body">
-                    <i
-                      class="far fa-file-alt text-secondary mr-1"
-                      data-toggle="tooltip"
-                      title=""
-                      data-original-title="Contract"
-                    ></i
-                    ><span
-                      class="hash-tag text-truncate"
-                      data-toggle="tooltip"
-                      title=""
-                      data-original-title="0x55d398326f99059ff775485246999027b3197955"
-                      ><a
-                        href="/address/0x55d398326f99059ff775485246999027b3197955"
-                        >BUSD-T Stablecoin</a
-                      ></span
-                    >
-                  </div>
-                  <div class="text-secondary text-right">852,159</div>
-                </div>
-              </div>
+
+              <div id="ContentPlaceHolder1_Div1a_body_1" class="card-body"></div>
             </div>
           </div>
           <div class="col-12 col-md-6">
-            <div class="card">
+            <div class="card" style="min-height:435.5px">
               <div class="stats-card-header">
                 Tokens
                 <span class="hash-tag"
@@ -130,115 +33,19 @@
                   ></span
                 >
               </div>
-              <div id="ContentPlaceHolder1_Div1a_body" class="card-body">
-                <div class="media align-items-center mb-1">
-                  <div class="media-body">Top Tokens</div>
-                  <div class="text-right">Total WYZTH</div>
-                </div>
-                <div class="media align-items-center mb-1">
-                  <div class="media-body">
-                    <span
-                      class="hash-tag text-truncate"
-                      data-toggle="tooltip"
-                      title=""
-                      data-original-title="0x8894e0a0c962cb723c1976a4421c95949be2d4e3"
-                      ><a
-                        href="/address/0x8894e0a0c962cb723c1976a4421c95949be2d4e3"
-                        >Binance: Hot Wallet 6</a
-                      ></span
-                    >
-                  </div>
-                  <div class="text-secondary text-right">
-                    <i class="fab fa-binance text-secondary mr-1"></i
-                    >73,665.22141748
-                  </div>
-                </div>
-                <hr class="pb-1 hr" />
-                <div class="media align-items-center mb-1">
-                  <div class="media-body">Top WYZTH Receiver</div>
-                  <div class="text-right">Total WYZTH</div>
-                </div>
-                <div class="media align-items-center mb-1">
-                  <div class="media-body">
-                    <i
-                      class="far fa-file-alt text-secondary mr-1"
-                      data-toggle="tooltip"
-                      title=""
-                      data-original-title="Contract"
-                    ></i
-                    ><span
-                      class="hash-tag text-truncate"
-                      data-toggle="tooltip"
-                      title=""
-                      data-original-title="0x10ed43c718714eb63d5aa57b78b54704e256024e"
-                      ><a
-                        href="/address/0x10ed43c718714eb63d5aa57b78b54704e256024e"
-                        >PancakeSwap: Router v2</a
-                      ></span
-                    >
-                  </div>
-                  <div class="text-secondary text-right">
-                    <i class="fab fa-binance text-secondary mr-1"></i
-                    >179,460.660329791
-                  </div>
-                </div>
-                <hr class="pb-1 hr" />
-                <div class="media align-items-center mb-1">
-                  <div class="media-body">Top Txn Count Sent</div>
-                  <div class="text-right">Total Txn</div>
-                </div>
-                <div class="media align-items-center mb-1">
-                  <div class="media-body">
-                    <span
-                      class="hash-tag text-truncate"
-                      data-toggle="tooltip"
-                      title=""
-                      data-original-title="0xe93685f3bba03016f02bd1828badd6195988d950"
-                      ><a
-                        href="/address/0xe93685f3bba03016f02bd1828badd6195988d950"
-                        >Layer Zero: Executor</a
-                      ></span
-                    >
-                  </div>
-                  <div class="text-secondary text-right">110,218</div>
-                </div>
-                <hr class="pb-1 hr" />
-                <div class="media align-items-center mb-1">
-                  <div class="media-body">Top Txn Count Received</div>
-                  <div class="text-right">Total Txn</div>
-                </div>
-                <div class="media align-items-center mb-1">
-                  <div class="media-body">
-                    <i
-                      class="far fa-file-alt text-secondary mr-1"
-                      data-toggle="tooltip"
-                      title=""
-                      data-original-title="Contract"
-                    ></i
-                    ><span
-                      class="hash-tag text-truncate"
-                      data-toggle="tooltip"
-                      title=""
-                      data-original-title="0x55d398326f99059ff775485246999027b3197955"
-                      ><a
-                        href="/address/0x55d398326f99059ff775485246999027b3197955"
-                        >BUSD-T Stablecoin</a
-                      ></span
-                    >
-                  </div>
-                  <div class="text-secondary text-right">852,159</div>
-                </div>
-              </div>
+              <div id="ContentPlaceHolder1_Div1a_body_2" class="card-body">
+              
             </div>
           </div>
         </div>
       </div>
+      </div>
       <div class="transact-container">
-      <div class="row">
-      <div class="col-12">
+        <div class="row">
+            <div class="col-12">
                 <div class="card">
                 <h3 class="p-10">Top Transactions</h3>
-                    <div class="table-responsive">
+                    <div class="table-responsive tb-width">
                         <table class="table">
                             <thead>
                               <tr>
@@ -252,19 +59,17 @@
                            
                             </tbody>
                           </table>
-                    </div>
-                </div>
-            </div>
-
-            
-      </div>
-      </div>
-    
-      </div>
+                      </div>
+                  </div>
+              </div>    
+          </div>
+        </div>
+        
+  
       <div class="tok-container">
         <div class="card">
         <h2 class="p-10">Top Tokens</h2>
-                    <div class="table-responsive">
+                    <div class="table-responsive tb-width">
                         <table class="table">
                             <thead>
                               <tr>

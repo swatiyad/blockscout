@@ -113,6 +113,24 @@ end
   get "/vyper-verification", VyperContractVerificationController, :index
   
 end
+  scope "/", BlockScoutWeb do
+  pipe_through :browser
+  get "/diff-checker", DiffCheckerController, :index
+  
+end
+
+  scope "/", BlockScoutWeb do
+  pipe_through :browser
+  get "/top-nft", NftDataController, :index 
+   get "/latest-nft-transactions", NftDataController, :nft_token_transfer 
+   get "/latest-mint", NftDataController, :nft_mint 
+end
+
+  scope "/", BlockScoutWeb do
+  pipe_through :browser
+  get "/pushTx", BroadcastTransactionController, :index
+  
+end
 
 
 

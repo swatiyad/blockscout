@@ -20,6 +20,7 @@ const chartOptions = {
       {
        
         data: [],
+        color:"#bdc54a80"
       },
     ],
   };

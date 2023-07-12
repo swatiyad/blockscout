@@ -1,0 +1,68 @@
+<section data-page="contract-verification-choose-type" class="container new-smart-contract-container card mt-30">
+<script defer src="<%= static_path(@conn, "/js/diff-checker.js") %>"></script>
+<div class="container mb-5">
+<div class="d-flex justify-content-between align-items-center border-bottom py-3">
+<div class="mb-1 mb-md-0">
+<h1 class="h4 mb-0">
+Contract Diff Checker
+</h1>
+</div>
+<nav aria-label="breadcrumb">
+<ol class="breadcrumb small p-0 mb-0" id="olBreadCrumb"><li class="breadcrumb-item active" aria-current="page">Contract Diff Checker</li></ol>
+</nav>
+</div>
+</div>
+<div class="container space-1 space-bottom-2">
+
+<div id="ContentPlaceHolder1_divSummary" class="row mx-gutters-sm-1 mb-3">
+<input name="ctl00$ContentPlaceHolder1$hdnContContAddres1" type="hidden" id="ContentPlaceHolder1_hdnContContAddres1">
+<input name="ctl00$ContentPlaceHolder1$hdnContContAddres2" type="hidden" id="ContentPlaceHolder1_hdnContContAddres2">
+<div class="col-md-12">
+</div>
+<div class="col-lg-6 mb-4 mb-lg-0 contAddress">
+<label>Contract Address 1</label>
+<div class="input-group input-group-sm mb-4">
+<input id="txtContAddres1" type="text" class="form-control" placeholder="Enter Contract Address 1 and Press Enter" aria-label="Enter Contract Address 1 and Press Enter">
+<div class="input-group-append">
+<button class="btn btn-primary txtContAddresbtn1" type="button">Lookup</button>
+</div>
+</div>
+<div class="card p-4">
+<div id="ContentPlaceHolder1_divBlankConent1" class="text-center w-lg-75 w-xl-50 mx-auto space-1">
+<img id="empty-nodata-state-1" width="75" class="mb-3" src="../images/svg/components/empty-nodata-state.svg" alt="">
+<pre class="mb-0 src-1">Please enter a contract address above to load the contract details and source code.</pre>
+</div>
+</div>
+</div>
+<div class="col-lg-6 contAddress">
+<label>Contract Address 2</label>
+<div class="input-group input-group-sm mb-4">
+<input id="txtContAddres2" type="text" class="form-control" placeholder="Contract Address 2" aria-label="Contract Address 2">
+<div class="input-group-append">
+<button class="btn btn-primary txtContAddresbtn2" type="button">Lookup</button>
+</div>
+</div>
+<div class="card p-4">
+<div id="ContentPlaceHolder1_divBlankConent2" class="text-center w-lg-75 w-xl-50 mx-auto space-1">
+ <img id="empty-nodata-state-2" width="75" class="mb-3" src="../images/svg/components/empty-nodata-state.svg" alt="">
+<pre class="mb-0 src-2">Please enter a contract address above to load the contract details and source code.</pre>
+</div>
+</div>
+</div>
+<div class="top d-none">
+<strong>Context size (optional):</strong>
+<input type="text" id="contextSize" value="">
+</div>
+<div class="col-12 mt-4">
+<div class="card diffoutputDiv" style="display:none">
+<pre id="diffoutput"  class="table-responsive m-4"></pre>
+</div>
+</div>
+<div class="col-12 text-center d-flex justify-content-center mt-4">
+<button type="button" class="btn btn-sm btn-secondary divDiff" style="display:none;">Compare Difference</button>
+<button type="button" class="btn btn-sm btn-secondary btnback" style="display:none;">Back</button>
+</div>
+</div>
+</div>
+</section>
+

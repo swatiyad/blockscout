@@ -139,26 +139,20 @@
                 <div class="dropdown-menu fade-up" aria-labeledby="navbarTransactionsDropdown">
                       <%= link(
                         gettext("Top NFTs"),
-                        class: "dropdown-item #{tab_status("dummy", @conn.request_path)}",
-                        to: tokens_path(@conn, :index)
-                      ) %>
-
-                      <%= link(
-                        gettext("Latest Trends"),
-                        class: "dropdown-item #{tab_status("dummy", @conn.request_path)}",
-                        to: tokens_path(@conn, :index)
+                        class: "dropdown-item #{tab_status("top-nft", @conn.request_path)}",
+                        to: "/top-nft"
                       ) %>
 
                       <%= link(
                         gettext("Latest Transfers"),
-                        class: "dropdown-item #{tab_status("dummy", @conn.request_path)}",
-                        to: tokens_path(@conn, :index)
+                        class: "dropdown-item #{tab_status("latest-nft-transactions", @conn.request_path)}",
+                        to: "/latest-nft-transactions"
                       ) %>
 
                       <%= link(
                         gettext("Latest Mints"),
-                        class: "dropdown-item #{tab_status("dummy", @conn.request_path)}",
-                        to: tokens_path(@conn, :index)
+                        class: "dropdown-item #{tab_status("latest-mints", @conn.request_path)}",
+                        to: "/latest-mint"
                       ) %>                  
                 </div>
               </li>
@@ -220,8 +214,8 @@
 
                       <%= link(
                         gettext("Contract Diff Checker"),
-                        class: "dropdown-item border-bottom #{tab_status("dummy", @conn.request_path)}",
-                        to: tokens_path(@conn, :index)
+                        class: "dropdown-item border-bottom #{tab_status("contract-diff-checker", @conn.request_path)}",
+                        to: "/diff-checker"
                       ) %>
 
                       <%= link(
@@ -232,8 +226,8 @@
 
                       <%= link(
                         gettext("Broadcast Transaction"),
-                        class: "dropdown-item #{tab_status("dummy", @conn.request_path)}",
-                        to: tokens_path(@conn, :index)
+                        class: "dropdown-item #{tab_status("Broadcast-Transaction", @conn.request_path)}",
+                        to: "/pushTx"
                       ) %>
                   
                 </div>
