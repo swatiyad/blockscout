@@ -20,6 +20,7 @@ const chartOptions = {
       {
         name: 'Blocks',
         data: [],
+        color:"#bdc54a80"
       },
     ],
   };
