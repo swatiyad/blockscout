@@ -181,11 +181,11 @@ document.addEventListener("DOMContentLoaded", async function () {
 </div>`
   document.querySelector("#ContentPlaceHolder1_Div1a_body_1").innerHTML = trans;
   document.querySelector("#ContentPlaceHolder1_Div1a_body_2").innerHTML = token;
-  const topsender = await axios.get(`http://localhost:3000/node-api/topsender`);
-  const maxRecieverCount = await axios.get( `http://localhost:3000/node-api/max-count-reciever`);
-  const maxSendCount = await axios.get(`http://localhost:3000/node-api/max-count-sender`);
-  const api = await axios.get(`http://localhost:3000/node-api/top-stats-data`);
-  const TopTokenApi = await axios.get(`http://localhost:3000/node-api/token-data`);
+  const topsender = await axios.get(`https://wyzthscan.org/node-api/topsender`);
+  const maxRecieverCount = await axios.get( `https://wyzthscan.org/node-api/max-count-reciever`);
+  const maxSendCount = await axios.get(`https://wyzthscan.org/node-api/max-count-sender`);
+  const api = await axios.get(`https://wyzthscan.org/node-api/top-stats-data`);
+  const TopTokenApi = await axios.get(`https://wyzthscan.org/node-api/token-data`);
 
   const apiData = api.data;
   const topSenderData = topsender?.data;
@@ -366,7 +366,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 token =`<div>
 <div class="media align-items-center mb-1">
 <div class="media-body">Top Tokens</div>
-<div class="text-right">Total Transfer</div>
+<div class="text-right"> Transfer Amount</div>
 </div>
 <div class="media align-items-center mb-1">
 <div class="media-body">
