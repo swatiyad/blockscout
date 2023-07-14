@@ -20,6 +20,7 @@ const chartOptions = {
       {
         name:"Tokens",
         data: [],
+        color:"#bdc54a80"
       },
     ],
   };

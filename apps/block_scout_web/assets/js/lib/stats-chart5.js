@@ -20,6 +20,7 @@ const chartOptions = {
       {
         name: 'Gas Price',
         data: [],
+        color:"#bdc54a80"
       },
     ],
   };

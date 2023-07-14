@@ -1,0 +1,73 @@
+<section class="container">
+<script defer src="<%= static_path(@conn, "/js/nft-data.js") %>"></script>
+<div class="card-body pt-0 px-2">  
+    
+<div data-selector="channel-disconnected-message" style="display: none;">
+  <div data-selector="reload-button" class="alert alert-danger" style="padding: 0.75rem 0rem; cursor: pointer;">
+    <span href="#" class="alert alert-danger">Connection Lost, click to load newer transactions</span>
+  </div>
+</div>
+        <div class="clearfix mb-2 py-1">
+       
+          <div class="top-pagination-outer-container float-right">         
+            <div class="dropdown">
+              <button data-test="filter_dropdown" class="btn btn-light btn-xs dropdown-toggle custom_drpdwn" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fa fa-ellipsis-v"></i> 
+              </button>
+              <div class="dropdown-menu dropdown-menu-right filter--" aria-labelledby="dropdownMenu2">
+<a class="address__link-- address__link--active dropdown-item" data-test="filter_option" href="/address/0xa074247827085cae48de2722c558daa6dc09339b/transactions">All</a>
+<a class="address__link address__link--active dropdown-item" data-test="filter_option" href="/address/0xa074247827085cae48de2722c558daa6dc09339b/transactions?filter=to">To</a>
+<a class="address__link address__link--active dropdown-item" data-test="filter_option" href="/address/0xa074247827085cae48de2722c558daa6dc09339b/transactions?filter=from">From</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div data-selector="channel-batching-message" style="display: none;">
+          <div data-selector="reload-transactions-button" class="alert alert-info mt-2">
+            <a href="#" class="alert-link"><span data-selector="channel-batching-count"></span> More transactions have come in</a>
+          </div>
+        </div>
+        <button data-error-message="" class="alert alert-danger col-12 text-left" style="display: none;">
+          <span href="#" class="alert-link">Something went wrong, click to reload.</span>
+        </button>
+
+        <div class="overflow-auto w-100">   
+        <h2>Latest NFT Transfers</h2>        
+          <table class="table table-hover mb-0 fixed-layout">
+            <thead>
+              <tr class="table-head">
+               
+          <th class="">Txn Hash</th>
+          <th class="">Method</th>
+          <th class="">Block</th>
+          <th class="">Age</th>
+          <th class="">From</th>
+          
+          <th class="">To</th>               
+          <th class="">Token</th>
+          <th class="">Amount</th>
+                
+            </thead>
+          </table>
+
+          <div data-items="">
+
+
+
+
+
+          
+</div>
+
+        </div>
+
+        <div data-empty-response-message="" style="display: none;">
+          <div class="tile tile-muted text-center" data-selector="empty-transactions-list">
+There are no transactions for this address.
+          </div>
+        </div>
+        <div id = "latest-nft-transactions"></div>
+
+
+      </section>

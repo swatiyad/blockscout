@@ -19,6 +19,7 @@ const chartOptions = {
     series: [
       {
         data: [],
+        color:"#bdc54a80"
       },
     ],
   };

@@ -20,6 +20,7 @@ const chartOptions = {
       {
         name: 'Gas Used',
         data: [],
+        color:"#bdc54a80"
       },
     ],
   };

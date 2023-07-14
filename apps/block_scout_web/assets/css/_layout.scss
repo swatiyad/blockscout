@@ -159,6 +159,10 @@ a {
     -ms-flex-align: start;
     align-items: flex-start;
 }
+.tb-width{
+
+    height:400px
+}
 
 .media-body {
     -webkit-box-flex: 1;
@@ -320,6 +324,11 @@ a {
     min-height: 1px;
     padding: 0.75rem;
   }
+  .src-2,.src-1{
+    max-height: 500px;
+    overflow: auto;
+    text-align: start;
+  }
   .media {
     display: -ms-flexbox;
     display: flex;
@@ -330,7 +339,17 @@ a {
     -ms-flex: 1;
     flex: 1;
   }
+  #diffoutput{
+    max-height:500px;
+    overflow: auto;
 
+  }
+  #txtSearchContract-1{
+    height:50px
+  }
+  #heroSubscribeButton{
+    height:50px
+  }
 
 
 .footer-link {
@@ -1547,12 +1566,17 @@ input.nosubmit {
     .width135 {
         width: 105px;
     }
+    .tb-width{
+        max-width:1200px;
+
+    }
 }
 
 @media screen and (min-width: 1200px) {
     .container {
         max-width: 1400px !important;
     }
+ 
 }
 
 @media only screen and (min-device-width: 992px) and (max-device-width: 1390px) {
