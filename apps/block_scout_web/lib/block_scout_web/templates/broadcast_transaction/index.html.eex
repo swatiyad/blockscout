@@ -2,15 +2,13 @@
 <script defer src="<%= static_path(@conn, "/js/broadcast-transaction.js") %>"></script>
 <h2>Broadcast Raw Transaction </h2>
 <p class="mb-0 pb-4">This page allows you to paste a Signed Raw Transaction in hex format (i.e. characters 0-9, a-f) and broadcast it over the WYZTHScan network.</p>
-<div> </div>
- 
-    
-     
+<div class="err-msg"> </div>  
+<div class="success-msg"> </div>  
       <div class="js-form-message mb-3">
       <textarea name="rawTxhast" rows="8" cols="20" id="ContentPlaceHolder1_txtRawTx" class="form-control rawTxInput w-100" required="" data-error-class="u-has-error" data-success-class="u-has-success" placeholder="Enter signed transaction hex (0x..)" data-msg="Please enter signed transaction hex"></textarea>
       </div>
       <div class="text-md-right">
-      <input type="submit" name="ctl00$ContentPlaceHolder1$btnSubmit" value="Send Transaction" id="ContentPlaceHolder1_btnSubmit" onclick="send()" class="btn btn-sm btn-primary"/>
+      <input type="submit" name="ctl00$ContentPlaceHolder1$btnSubmit" value="Send Transaction" id="ContentPlaceHolder1_btnSubmit"  class="btn btn-sm btn-primary"/>
       </div>
      
 </section>

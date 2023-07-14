@@ -1,0 +1,258 @@
+   <div id="ContentPlaceHolder1_exchangewalletdiv " class="container mt-30">
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <div class="card h-100">
+            <div class="card-body text-center p-8">
+              <figure class="u-avatar mx-auto mb-3">
+                <a href="/directory/Exchanges"
+                  ><img src="/images/directory/icon-exchange.svg" alt="" style="width:70px"
+                /></a>
+              </figure>
+              <h2 class="h5 mb-0">
+                <a class="text-dark" href="/directory/Exchanges">Exchanges</a>
+              </h2>
+              <p class="mb-2">Places to buy and sell cryptocurrencies</p>
+              <p class="mb-0">
+                <a
+                  href="/directory/Exchanges/Crypto_Exchanges"
+                  class="btn btn-sm btn-soft-primary my-1"
+                  >Crypto Exchanges</a
+                >&nbsp;<a
+                  href="/directory/Exchanges/DEX"
+                  class="btn btn-sm btn-soft-primary my-1"
+                  >DEX</a
+                >&nbsp;<a
+                  href="/directory/Exchanges/Fiat_Exchanges"
+                  class="btn btn-sm btn-soft-primary my-1"
+                  >Fiat Exchanges</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card h-100">
+            <div class="card-body text-center p-8">
+              <figure class="u-avatar mx-auto mb-3">
+                <a href="/directory/Wallet"
+                  ><img src="/images/directory/icon-wallet.svg" style="width:70px" alt=""
+                /></a>
+              </figure>
+              <h2 class="h5 mb-0">
+                <a class="text-dark" href="/directory/Wallet">Wallet</a>
+              </h2>
+              <p class="mb-2">Used to receive and spend cryptoassets</p>
+              <p class="mb-0">
+                <a
+                  href="/directory/Wallet/GUI_Wallets"
+                  class="btn btn-sm btn-soft-primary my-1"
+                  >GUI Wallets</a
+                >&nbsp;<a
+                  href="/directory/Wallet/Hardware_Wallets"
+                  class="btn btn-sm btn-soft-primary my-1"
+                  >Hardware Wallets</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card h-100">
+            <div class="card-body text-center p-8">
+              <figure class="u-avatar mx-auto mb-3">
+                <a href="/directory/Listing_And_Prices"
+                  ><img src="/images/directory/icon-ico.svg" style="width:70px" alt=""
+                /></a>
+              </figure>
+              <h2 class="h5 mb-0">
+                <a class="text-dark" href="/directory/Listing_And_Prices"
+                  >Listing And Prices</a
+                >
+              </h2>
+              <p class="mb-2">Listing and Prices for Projects and Tokens</p>
+              <p class="mb-0">
+                <a
+                  href="/directory/Listing_And_Prices/Benchmark_Listing"
+                  class="btn btn-sm btn-soft-primary my-1"
+                  >Benchmark Listing</a
+                >&nbsp;<a
+                  href="/directory/Listing_And_Prices/Price_Watch"
+                  class="btn btn-sm btn-soft-primary my-1"
+                  >Price Watch</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card h-100">
+            <div class="card-body text-center p-8">
+              <figure class="u-avatar mx-auto mb-3">
+                <a href="/directory/News_And_Forums"
+                  ><img src="/images/directory/icon-newsforum.svg" style="width:70px" alt=""
+                /></a>
+              </figure>
+              <h2 class="h5 mb-0">
+                <a class="text-dark" href="/directory/News_And_Forums"
+                  >News and Forums</a
+                >
+              </h2>
+              <p class="mb-2">Get close to the community</p>
+              <p class="mb-0">
+                <a
+                  href="/directory/News_And_Forums/Crypto_News"
+                  class="btn btn-sm btn-soft-primary my-1"
+                  >Crypto News</a
+                >&nbsp;<a
+                  href="/directory/News_And_Forums/Forums"
+                  class="btn btn-sm btn-soft-primary my-1"
+                  >Forums</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card h-100">
+            <div class="card-body text-center p-8">
+              <figure class="u-avatar mx-auto mb-3">
+                <a href="/directory/Events"
+                  ><img src="/images/directory/icon-events.svg" style="width:70px" alt=""
+                /></a>
+              </figure>
+              <h2 class="h5 mb-0">
+                <a class="text-dark" href="/directory/Events">Events</a>
+              </h2>
+              <p class="mb-2">Find the events near you</p>
+              <p class="mb-0">
+                <a
+                  href="/directory/Events/Upcoming_Events"
+                  class="btn btn-sm btn-soft-primary my-1"
+                  >Upcoming Events</a
+                >&nbsp;<a
+                  href="/directory/Events/Past_Events"
+                  class="btn btn-sm btn-soft-primary my-1"
+                  >Past Events</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card h-100">
+            <div class="card-body text-center p-8">
+              <figure class="u-avatar mx-auto mb-3">
+                <a href="/directory/Learning_Resources"
+                  ><img src="/images/directory/icon-learning.svg" style="width:70px" alt=""
+                /></a>
+              </figure>
+              <h2 class="h5 mb-0">
+                <a class="text-dark" href="/directory/Learning_Resources"
+                  >Learning Resources</a
+                >
+              </h2>
+              <p class="mb-2">Learn more about blockchain basics</p>
+              <p class="mb-0">
+                <a
+                  href="/directory/Learning_Resources/Blockchain"
+                  class="btn btn-sm btn-soft-primary my-1"
+                  >Blockchain</a
+                >&nbsp;<a
+                  href="/directory/Learning_Resources/Ethereum"
+                  class="btn btn-sm btn-soft-primary my-1"
+                  >Ethereum</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card h-100">
+            <div class="card-body text-center p-8">
+              <figure class="u-avatar mx-auto mb-3">
+                <a href="/directory/Smart_Contracts"
+                  ><img src="/images/directory/icon-smartcontract.svg" style="width:70px" alt=""
+                /></a>
+              </figure>
+              <h2 class="h5 mb-0">
+                <a class="text-dark" href="/directory/Smart_Contracts"
+                  >Smart Contracts</a
+                >
+              </h2>
+              <p class="mb-2">For more advanced users</p>
+              <p class="mb-0">
+                <a
+                  href="/directory/Smart_Contracts/Services"
+                  class="btn btn-sm btn-soft-primary my-1"
+                  >Services</a
+                >&nbsp;<a
+                  href="/directory/Smart_Contracts/Smart_Contracts_Audit_And_Security"
+                  class="btn btn-sm btn-soft-primary my-1"
+                  >Smart Contracts Audit and Security</a
+                >&nbsp;<a
+                  href="/directory/Smart_Contracts/Smart_Contracts_Factory"
+                  class="btn btn-sm btn-soft-primary my-1"
+                  >Smart Contracts Factory</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card h-100">
+            <div class="card-body text-center p-8">
+              <figure class="u-avatar mx-auto mb-3">
+                <a href="/directory/Mining"
+                  ><img src="/images/directory/icon-mining.svg" style="width:70px" alt=""
+                /></a>
+              </figure>
+              <h2 class="h5 mb-0">
+                <a class="text-dark" href="/directory/Mining">Mining</a>
+              </h2>
+              <p class="mb-2">Join a pool and start mining</p>
+              <p class="mb-0">
+                <a
+                  href="/directory/Mining/Mining_Pools"
+                  class="btn btn-sm btn-soft-primary my-1"
+                  >Mining Pools</a
+                >&nbsp;<a
+                  href="/directory/Mining/Mining_Talk"
+                  class="btn btn-sm btn-soft-primary my-1"
+                  >Mining Talk</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card h-100">
+            <div class="card-body text-center p-8">
+              <figure class="u-avatar mx-auto mb-3">
+                <a href="/directory/Others"
+                  ><img src="/images/directory/icon-others.svg" style="width:70px" alt=""
+                /></a>
+              </figure>
+              <h2 class="h5 mb-0">
+                <a class="text-dark" href="/directory/Others">Others</a>
+              </h2>
+              <p class="mb-2">Extra resources</p>
+              <p class="mb-0">
+                <a
+                  href="/directory/Others/Career"
+                  class="btn btn-sm btn-soft-primary my-1"
+                  >Career</a
+                >&nbsp;<a
+                  href="/directory/Others/Grant"
+                  class="btn btn-sm btn-soft-primary my-1"
+                  >Grant</a
+                >&nbsp;<a
+                  href="/directory/Others/Tools"
+                  class="btn btn-sm btn-soft-primary my-1"
+                  >Tools</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>

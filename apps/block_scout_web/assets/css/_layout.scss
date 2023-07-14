@@ -327,6 +327,7 @@ a {
   .src-2,.src-1{
     max-height: 500px;
     overflow: auto;
+    text-align: start;
   }
   .media {
     display: -ms-flexbox;
@@ -338,7 +339,17 @@ a {
     -ms-flex: 1;
     flex: 1;
   }
+  #diffoutput{
+    max-height:500px;
+    overflow: auto;
 
+  }
+  #txtSearchContract-1{
+    height:50px
+  }
+  #heroSubscribeButton{
+    height:50px
+  }
 
 
 .footer-link {

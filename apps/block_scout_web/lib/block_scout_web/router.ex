@@ -132,6 +132,21 @@ end
   
 end
 
+  scope "/", BlockScoutWeb do
+  pipe_through :browser
+  get "/contract-search", SearchContractController, :index 
+end
+
+
+  scope "/", BlockScoutWeb do
+  pipe_through :browser
+  get "/directories", DirectoriesController, :index
+  get "/directories/dex", DirectoriesController, :dex
+   get "/directories/fiat-exchanges", DirectoriesController, :fiat_exchanges
+   get "/directories/gui-wallets", DirectoriesController, :gui_wallets
+    get "/directories/benchmark-listing", DirectoriesController, :benchmark_listing
+end
+
 
 
   if Application.compile_env(:block_scout_web, WebRouter)[:enabled] do

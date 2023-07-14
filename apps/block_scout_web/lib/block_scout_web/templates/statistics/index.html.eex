@@ -47,7 +47,7 @@
                 <h3 class="p-10">Top Transactions</h3>
                     <div class="table-responsive tb-width">
                         <table class="table">
-                            <thead>
+                            <thead class="table-head" >
                               <tr>
                                 <th>Blocks</th>
                                 <th>From Address</th>
@@ -71,7 +71,7 @@
         <h2 class="p-10">Top Tokens</h2>
                     <div class="table-responsive tb-width">
                         <table class="table">
-                            <thead>
+                            <thead class="table-head">
                               <tr>
                                 <th>Symbol</th>
                                 <th>Name</th>

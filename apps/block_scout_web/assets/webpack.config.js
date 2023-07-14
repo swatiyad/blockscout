@@ -48,6 +48,7 @@ const appJs =
       'diff-checker':'./js/lib/diff-checker.js',
       'nft-data':'./js/lib/nft-data.js',
       'broadcast-transaction':'./js/lib/broadcast-transaction.js',
+      'contract-search':'./js/lib/contract-search.js',
       'chain': './js/pages/chain.js',
       'blocks': './js/pages/blocks.js',
       'address': './js/pages/address.js',

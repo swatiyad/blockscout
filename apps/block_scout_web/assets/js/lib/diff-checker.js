@@ -12,7 +12,7 @@ document.querySelector('.txtContAddresbtn1').onclick = async function() {
   const val1 = document.querySelector('#txtContAddres1').value;
   const sourceDest = document.querySelector('.src-1');
   const divdiff = document.querySelector('.divDiff');
- const sourceCode =  await axios.get(`http://localhost:3000/node-api/getSourceCode?address=${val1}`);
+ const sourceCode =  await axios.get(`https://wyzthscan.org/node-api/getSourceCode?address=${val1}`);
  const code = sourceCode.data.data;
  
  if(code.length==0){
@@ -40,10 +40,9 @@ document.querySelector('.txtContAddresbtn2').onclick = async function() {
   const val2 = document.querySelector('#txtContAddres2').value;
   const sourceDest2 = document.querySelector('.src-2');
   const divdiff = document.querySelector('.divDiff');
- const sourceCode2 =  await axios.get(`http://localhost:3000/node-api/getSourceCode?address=${val2}`);
+ const sourceCode2 =  await axios.get(`https://wyzthscan.org/node-api/getSourceCode?address=${val2}`);
  const code = sourceCode2.data.data;
  if(code.length==0){
-
   sourceDest2.textContent = "Contract Address does not exists.";
   sourceDest2.style.color="red"
  }else{
