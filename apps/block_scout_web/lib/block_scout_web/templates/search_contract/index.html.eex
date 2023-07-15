@@ -104,7 +104,7 @@ Search
               </div>
             </div>
 
-            <div class="contract-list-search text-center"></div>
+            <div class="contract-list-search text-center py-2"></div>
             
             <div id="ContentPlaceHolder1_pageRecords">
               <form
