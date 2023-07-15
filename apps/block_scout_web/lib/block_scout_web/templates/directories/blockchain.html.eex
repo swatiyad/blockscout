@@ -1,0 +1,342 @@
+   <Section class="container mt-30 mb-3">
+   <div id="ContentPlaceHolder1_exchangewalletdiv">
+    <h1 class="mx-1">Blockchain</h1>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/binance.png"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://research.binance.com/"
+                  target="_blank"
+                  rel="nofollow noopener"
+                  class="fs-5 link-dark"
+                  >Binance Research</a
+                >
+                <div>
+                  <p>
+                    Binance Research provides institutional-grade analysis,
+                    in-depth insights, and unbiased information to all
+                    participants in the digital asset industry.
+                  </p>
+                </div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://research.binance.com/"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://research.binance.com/"
+                    ><i class="fas fa-globe btn-icon__inner"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/cointelligence.png?v=1"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://www.cointelligence.com/"
+                  target="_blank"
+                  rel="nofollow noopener"
+                  class="fs-5 link-dark"
+                  >Cointelligence Academy</a
+                >
+                <div>
+                  <p>
+                    Cointelligence Academy provides free and paid online courses
+                    about blockchain and cryptocurrency topics, ranging from the
+                    basics to advanced courses in trading, tokenization, smart
+                    contracts, and more.
+                  </p>
+                </div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://www.cointelligence.com/"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://www.cointelligence.com/"
+                    ><i class="fas fa-globe btn-icon__inner"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/cryptopulsed.png"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://cryptopulsed.com/"
+                  target="_blank"
+                  rel="nofollow noopener"
+                  class="fs-5 link-dark"
+                  >Cryptopulsed</a
+                >
+                <div>
+                  <p>
+                    Community curated directory of crypto resources, tools and
+                    services
+                  </p>
+                </div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://cryptopulsed.com/"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://cryptopulsed.com/"
+                    ><i class="fas fa-globe btn-icon__inner"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/ethereum.png"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://www.defiglobal.net/"
+                  target="_blank"
+                  rel="nofollow noopener"
+                  class="fs-5 link-dark"
+                  >DeFi Global (DFG) by Chris Blec</a
+                >
+                <div>
+                  <p>
+                    DFG’s core belief is that all human beings should be able to
+                    participate in the DeFi revolution on Ethereum, Bitcoin or
+                    any other decentralized blockchain without needing to trust
+                    a bank, a software developer, or anyone at all. My mission
+                    is to educate and inform non-developer users so that they
+                    can properly protect their&nbsp;interests in this brave new
+                    DeFi world.
+                  </p>
+                </div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://www.defiglobal.net/"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://www.defiglobal.net/"
+                    ><i class="fas fa-globe btn-icon__inner"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/experfy.jpg"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://www.experfy.com/training/courses/blockchain-for-finance-professionals"
+                  target="_blank"
+                  rel="nofollow noopener"
+                  class="fs-5 link-dark"
+                  >Experfy : Blockchain for Finance Professionals</a
+                >
+                <div>
+                  <p>
+                    This course provides you with a solid, overall,
+                    understanding of blockchain technology and how it relates to
+                    the finance industry. Together we cover the most essential
+                    areas and use-cases regarding blockchain technology, how
+                    it's disrupting the finance industry and how it can also
+                    generate new opportunities.
+                  </p>
+                </div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://www.experfy.com/training/courses/blockchain-for-finance-professionals"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://www.experfy.com/training/courses/blockchain-for-finance-professionals"
+                    ><i class="fas fa-globe btn-icon__inner"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/b9lab.png"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://academy.b9lab.com/courses/course-v1:B9lab+CTO-FREE-1+2017-12/about"
+                  target="_blank"
+                  rel="nofollow noopener"
+                  class="fs-5 link-dark"
+                  >Introduction to Blockchain for Technical Executives</a
+                >
+                <div>
+                  <p>
+                    B9Lab Academy : Introduction to Blockchain for Technical
+                    Executives
+                  </p>
+                </div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://academy.b9lab.com/courses/course-v1:B9lab+CTO-FREE-1+2017-12/about"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://academy.b9lab.com/courses/course-v1:B9lab+CTO-FREE-1+2017-12/about"
+                    ><i class="fas fa-globe btn-icon__inner"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/udacity.jpg"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://www.udacity.com/course/blockchain-developer-nanodegree--nd1309"
+                  target="_blank"
+                  rel="nofollow noopener"
+                  class="fs-5 link-dark"
+                  >Udacity Blockchain Developer: Fundamentals</a
+                >
+                <div>
+                  <p>
+                    Demand for blockchain developers is skyrocketing. In this
+                    program, you'll work with the Bitcoin and Ethereum
+                    protocols, build projects for real-world application, and
+                    gain the essential skills for a career in this dynamic
+                    space.
+                  </p>
+                </div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://www.udacity.com/course/blockchain-developer-nanodegree--nd1309"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://www.udacity.com/course/blockchain-developer-nanodegree--nd1309"
+                    ><i class="fas fa-globe btn-icon__inner"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>

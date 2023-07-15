@@ -1,12 +1,12 @@
-<section class="container mt-30 mb-3">
- <div id="ContentPlaceHolder1_exchangewalletdiv">
- <h1 class="mx-1">BenchMark Listing </h1>
+<section class = "container mt-30 mb-3">
+      <div id="ContentPlaceHolder1_exchangewalletdiv">
+      <h1>Smart Contracts Factory</h1>
       <div class="card mb-1">
         <div class="card-body">
           <div class="d-flex gap-3">
             <div>
               <img
-                src="/images/resources/icobench.png?v=1"
+                src="/images/resources/autominter1_40.png"
                 class="u-avatar mt-1"
                 alt=""
               />
@@ -16,729 +16,55 @@
             >
               <div>
                 <a
-                  href="https://icobench.com/"
+                  href="https://everspace.app/"
                   class="fs-5 link-dark"
                   rel="nofollow"
                   target="_blank"
                   data-bs-toggle="tooltip"
-                  >ICObench</a
+                  >AutoMinter</a
                 >
                 <div>
                   <p>
-                    ICObench is an ICO rating platform supported by investors
-                    and financial experts.
+                    AutoMinter is a decentralized no-code NFT collection
+                    generation platform.
                   </p>
                 </div>
               </div>
               <ul class="list-inline mb-0 text-nowrap">
                 <li class="list-inline-item">
                   <a
-                    href="https://icobench.com/"
+                    href="https://everspace.app/"
                     data-bs-placement="top"
                     data-bs-toggle="tooltip"
                     class="btn btn-sm btn-secondary rounded-circle"
                     rel="nofollow"
                     target="_blank"
-                    aria-label="[Website] https://icobench.com/"
-                    ><i class="fas fa-globe"></i
-                  ></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card mb-1">
-        <div class="card-body">
-          <div class="d-flex gap-3">
-            <div>
-              <img
-                src="/images/resources/icoalert.png?v=1"
-                class="u-avatar mt-1"
-                alt=""
-              />
-            </div>
-            <div
-              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
-            >
-              <div>
-                <a
-                  href="https://www.icoalert.com/"
-                  class="fs-5 link-dark"
-                  rel="nofollow"
-                  target="_blank"
-                  data-bs-toggle="tooltip"
-                  >ICO Alert</a
-                >
-                <div>
-                  <p>
-                    The trusted, comprehensive ICO Discovery Platform - Become
-                    Your Own Venture Capitalist
-                  </p>
-                </div>
-              </div>
-              <ul class="list-inline mb-0 text-nowrap">
-                <li class="list-inline-item">
-                  <a
-                    href="https://www.icoalert.com/"
-                    data-bs-placement="top"
-                    data-bs-toggle="tooltip"
-                    class="btn btn-sm btn-secondary rounded-circle"
-                    rel="nofollow"
-                    target="_blank"
-                    aria-label="[Website] https://www.icoalert.com/"
-                    ><i class="fas fa-globe"></i
-                  ></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card mb-1">
-        <div class="card-body">
-          <div class="d-flex gap-3">
-            <div>
-              <img
-                src="/images/resources/icodrops.png?v=1"
-                class="u-avatar mt-1"
-                alt=""
-              />
-            </div>
-            <div
-              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
-            >
-              <div>
-                <a
-                  href="https://icodrops.com"
-                  class="fs-5 link-dark"
-                  rel="nofollow"
-                  target="_blank"
-                  data-bs-toggle="tooltip"
-                  >ICO Drops</a
-                >
-                <div>
-                  <p>
-                    ICO Drops is an independent ICO (Token Sale) database and is
-                    not affiliated with any ICO project or company. Our Interest
-                    Level does not constitute financial or investment advice.
-                  </p>
-                </div>
-              </div>
-              <ul class="list-inline mb-0 text-nowrap">
-                <li class="list-inline-item">
-                  <a
-                    href="https://icodrops.com"
-                    data-bs-placement="top"
-                    data-bs-toggle="tooltip"
-                    class="btn btn-sm btn-secondary rounded-circle"
-                    rel="nofollow"
-                    target="_blank"
-                    aria-label="[Website] https://icodrops.com"
-                    ><i class="fas fa-globe"></i
-                  ></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card mb-1">
-        <div class="card-body">
-          <div class="d-flex gap-3">
-            <div>
-              <img
-                src="/images/resources/cointelligence.png?v=1"
-                class="u-avatar mt-1"
-                alt=""
-              />
-            </div>
-            <div
-              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
-            >
-              <div>
-                <a
-                  href="https://www.cointelligence.com/content/ico_list/"
-                  class="fs-5 link-dark"
-                  rel="nofollow"
-                  target="_blank"
-                  data-bs-toggle="tooltip"
-                  >Cointelligence</a
-                >
-                <div>
-                  <p>
-                    Cointelligence is a platform for monitoring and analyzing
-                    real-time crypto-economy market data.
-                  </p>
-                </div>
-              </div>
-              <ul class="list-inline mb-0 text-nowrap">
-                <li class="list-inline-item">
-                  <a
-                    href="https://www.cointelligence.com/content/ico_list/"
-                    data-bs-placement="top"
-                    data-bs-toggle="tooltip"
-                    class="btn btn-sm btn-secondary rounded-circle"
-                    rel="nofollow"
-                    target="_blank"
-                    aria-label="[Website] https://www.cointelligence.com/content/ico_list/"
-                    ><i class="fas fa-globe"></i
-                  ></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card mb-1">
-        <div class="card-body">
-          <div class="d-flex gap-3">
-            <div>
-              <img
-                src="/images/resources/cryptoindonesia.png?v=1"
-                class="u-avatar mt-1"
-                alt=""
-              />
-            </div>
-            <div
-              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
-            >
-              <div>
-                <a
-                  href="https://www.cryptocoinindonesia.com/"
-                  class="fs-5 link-dark"
-                  rel="nofollow"
-                  target="_blank"
-                  data-bs-toggle="tooltip"
-                  >Cryptocoin Indonesia</a
-                >
-                <div>
-                  <p>
-                    Cryptocoin Indonesia is ICO listing that only listing ICOs
-                    that already manual verified by Cryptocoin Indonesia.
-                  </p>
-                </div>
-              </div>
-              <ul class="list-inline mb-0 text-nowrap">
-                <li class="list-inline-item">
-                  <a
-                    href="https://www.cryptocoinindonesia.com/"
-                    data-bs-placement="top"
-                    data-bs-toggle="tooltip"
-                    class="btn btn-sm btn-secondary rounded-circle"
-                    rel="nofollow"
-                    target="_blank"
-                    aria-label="[Website] https://www.cryptocoinindonesia.com/"
-                    ><i class="fas fa-globe"></i
-                  ></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card mb-1">
-        <div class="card-body">
-          <div class="d-flex gap-3">
-            <div>
-              <img
-                src="/images/resources/cryptodiffer.png?v=1"
-                class="u-avatar mt-1"
-                alt=""
-              />
-            </div>
-            <div
-              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
-            >
-              <div>
-                <a
-                  href="https://cryptodiffer.com/"
-                  class="fs-5 link-dark"
-                  rel="nofollow"
-                  target="_blank"
-                  data-bs-toggle="tooltip"
-                  >CryptoDiffer</a
-                >
-                <div><p>Aggregator of top ICO experts opinions.&nbsp;</p></div>
-              </div>
-              <ul class="list-inline mb-0 text-nowrap">
-                <li class="list-inline-item">
-                  <a
-                    href="https://cryptodiffer.com/"
-                    data-bs-placement="top"
-                    data-bs-toggle="tooltip"
-                    class="btn btn-sm btn-secondary rounded-circle"
-                    rel="nofollow"
-                    target="_blank"
-                    aria-label="[Website] https://cryptodiffer.com/"
-                    ><i class="fas fa-globe"></i
-                  ></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card mb-1">
-        <div class="card-body">
-          <div class="d-flex gap-3">
-            <div>
-              <img
-                src="/images/resources/icofinch.png?v=1"
-                class="u-avatar mt-1"
-                alt=""
-              />
-            </div>
-            <div
-              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
-            >
-              <div>
-                <a
-                  href="https://icofinch.com/"
-                  class="fs-5 link-dark"
-                  rel="nofollow"
-                  target="_blank"
-                  data-bs-toggle="tooltip"
-                  >ICO Finch</a
-                >
-                <div>
-                  <p>
-                    Discover, analyze and monitor new ICOs with ICO Finch. ICO
-                    Ratings, clean calendar, profiles, bookmarks and more.
-                  </p>
-                </div>
-              </div>
-              <ul class="list-inline mb-0 text-nowrap">
-                <li class="list-inline-item">
-                  <a
-                    href="https://icofinch.com/"
-                    data-bs-placement="top"
-                    data-bs-toggle="tooltip"
-                    class="btn btn-sm btn-secondary rounded-circle"
-                    rel="nofollow"
-                    target="_blank"
-                    aria-label="[Website] https://icofinch.com/"
-                    ><i class="fas fa-globe"></i
-                  ></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card mb-1">
-        <div class="card-body">
-          <div class="d-flex gap-3">
-            <div>
-              <img
-                src="/images/resources/icohotlist.png?v=1"
-                class="u-avatar mt-1"
-                alt=""
-              />
-            </div>
-            <div
-              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
-            >
-              <div>
-                <a
-                  href="https://www.icohotlist.com/"
-                  class="fs-5 link-dark"
-                  rel="nofollow"
-                  target="_blank"
-                  data-bs-toggle="tooltip"
-                  >ICO Hot List</a
-                >
-                <div>
-                  <p>
-                    ICO Hot List is an independently curated catalog of the most
-                    promising active and upcoming Initial Coin Offerings.
-                  </p>
-                </div>
-              </div>
-              <ul class="list-inline mb-0 text-nowrap">
-                <li class="list-inline-item">
-                  <a
-                    href="https://www.icohotlist.com/"
-                    data-bs-placement="top"
-                    data-bs-toggle="tooltip"
-                    class="btn btn-sm btn-secondary rounded-circle"
-                    rel="nofollow"
-                    target="_blank"
-                    aria-label="[Website] https://www.icohotlist.com/"
-                    ><i class="fas fa-globe"></i
-                  ></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card mb-1">
-        <div class="card-body">
-          <div class="d-flex gap-3">
-            <div>
-              <img
-                src="/images/resources/icopools.png?v=1"
-                class="u-avatar mt-1"
-                alt=""
-              />
-            </div>
-            <div
-              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
-            >
-              <div>
-                <a
-                  href="https://icopools.io/en/"
-                  class="fs-5 link-dark"
-                  rel="nofollow"
-                  target="_blank"
-                  data-bs-toggle="tooltip"
-                  >ICO Pools</a
-                >
-                <div>
-                  <p>
-                    ICOPOOLS.io - TOP of ICO pools. Service collects data from
-                    ICO pools about LIVE deals and represents it in a useful
-                    table form with all the sorting options needed. The data is
-                    updated every hour.
-                  </p>
-                </div>
-              </div>
-              <ul class="list-inline mb-0 text-nowrap">
-                <li class="list-inline-item">
-                  <a
-                    href="https://icopools.io/en/"
-                    data-bs-placement="top"
-                    data-bs-toggle="tooltip"
-                    class="btn btn-sm btn-secondary rounded-circle"
-                    rel="nofollow"
-                    target="_blank"
-                    aria-label="[Website] https://icopools.io/en/"
-                    ><i class="fas fa-globe"></i
-                  ></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card mb-1">
-        <div class="card-body">
-          <div class="d-flex gap-3">
-            <div>
-              <img
-                src="/images/resources/icotoplist.png"
-                class="u-avatar mt-1"
-                alt=""
-              />
-            </div>
-            <div
-              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
-            >
-              <div>
-                <a
-                  href="https://icotoplist.com"
-                  class="fs-5 link-dark"
-                  rel="nofollow"
-                  target="_blank"
-                  data-bs-toggle="tooltip"
-                  >ICO Toplist</a
-                >
-                <div>
-                  <p>
-                    ICO Toplist is an ICO listing and rating service and
-                    database of whitepapers and airdrops
-                  </p>
-                </div>
-              </div>
-              <ul class="list-inline mb-0 text-nowrap">
-                <li class="list-inline-item">
-                  <a
-                    href="https://icotoplist.com"
-                    data-bs-placement="top"
-                    data-bs-toggle="tooltip"
-                    class="btn btn-sm btn-secondary rounded-circle"
-                    rel="nofollow"
-                    target="_blank"
-                    aria-label="[Website] https://icotoplist.com"
-                    ><i class="fas fa-globe"></i
-                  ></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card mb-1">
-        <div class="card-body">
-          <div class="d-flex gap-3">
-            <div>
-              <img
-                src="/images/resources/icocheck.png?v=1"
-                class="u-avatar mt-1"
-                alt=""
-              />
-            </div>
-            <div
-              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
-            >
-              <div>
-                <a
-                  href="https://www.ico-check.com/"
-                  class="fs-5 link-dark"
-                  rel="nofollow"
-                  target="_blank"
-                  data-bs-toggle="tooltip"
-                  >ICO-Check</a
-                >
-                <div>
-                  <p>
-                    ICO-Check is a cryptocurrency ICO website featuring an
-                    extensive and well-researched list of the ongoing and
-                    upcoming initial coin offerings.
-                  </p>
-                </div>
-              </div>
-              <ul class="list-inline mb-0 text-nowrap">
-                <li class="list-inline-item">
-                  <a
-                    href="https://www.ico-check.com/"
-                    data-bs-placement="top"
-                    data-bs-toggle="tooltip"
-                    class="btn btn-sm btn-secondary rounded-circle"
-                    rel="nofollow"
-                    target="_blank"
-                    aria-label="[Website] https://www.ico-check.com/"
-                    ><i class="fas fa-globe"></i
-                  ></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card mb-1">
-        <div class="card-body">
-          <div class="d-flex gap-3">
-            <div>
-              <img
-                src="/images/resources/icomarks.png?v=1"
-                class="u-avatar mt-1"
-                alt=""
-              />
-            </div>
-            <div
-              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
-            >
-              <div>
-                <a
-                  href="https://icomarks.com/"
-                  class="fs-5 link-dark"
-                  rel="nofollow"
-                  target="_blank"
-                  data-bs-toggle="tooltip"
-                  >ICOmarks</a
-                >
-                <div>
-                  <p>
-                    ICOmaks is a rating and statistical platform for ICO
-                    projects. We have a large number of convenient tools for
-                    researching the most promising projects for investment.
-                  </p>
-                </div>
-              </div>
-              <ul class="list-inline mb-0 text-nowrap">
-                <li class="list-inline-item">
-                  <a
-                    href="https://icomarks.com/"
-                    data-bs-placement="top"
-                    data-bs-toggle="tooltip"
-                    class="btn btn-sm btn-secondary rounded-circle"
-                    rel="nofollow"
-                    target="_blank"
-                    aria-label="[Website] https://icomarks.com/"
-                    ><i class="fas fa-globe"></i
-                  ></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card mb-1">
-        <div class="card-body">
-          <div class="d-flex gap-3">
-            <div>
-              <img
-                src="/images/resources/icoscoming.png?v=1"
-                class="u-avatar mt-1"
-                alt=""
-              />
-            </div>
-            <div
-              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
-            >
-              <div>
-                <a
-                  href="https://www.icoscoming.com/"
-                  class="fs-5 link-dark"
-                  rel="nofollow"
-                  target="_blank"
-                  data-bs-toggle="tooltip"
-                  >ICOsComing</a
-                >
-                <div>
-                  <p>
-                    About Live ICO &amp; Upcoming ICOs in Market, Month Wise
-                    Listings!
-                  </p>
-                </div>
-              </div>
-              <ul class="list-inline mb-0 text-nowrap">
-                <li class="list-inline-item">
-                  <a
-                    href="https://www.icoscoming.com/"
-                    data-bs-placement="top"
-                    data-bs-toggle="tooltip"
-                    class="btn btn-sm btn-secondary rounded-circle"
-                    rel="nofollow"
-                    target="_blank"
-                    aria-label="[Website] https://www.icoscoming.com/"
-                    ><i class="fas fa-globe"></i
-                  ></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card mb-1">
-        <div class="card-body">
-          <div class="d-flex gap-3">
-            <div>
-              <img
-                src="/images/resources/neironix.png?v=1"
-                class="u-avatar mt-1"
-                alt=""
-              />
-            </div>
-            <div
-              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
-            >
-              <div>
-                <a
-                  href="https://neironix.io/"
-                  class="fs-5 link-dark"
-                  rel="nofollow"
-                  target="_blank"
-                  data-bs-toggle="tooltip"
-                  >Neironix</a
-                >
-                <div>
-                  <p>
-                    Rating analytical agency for assessing investment risks in
-                    the blockchain economy the main aim of which is to provide
-                    to investors necessary analytical data and effective
-                    decision-making tools.
-                  </p>
-                </div>
-              </div>
-              <ul class="list-inline mb-0 text-nowrap">
-                <li class="list-inline-item">
-                  <a
-                    href="https://neironix.io/"
-                    data-bs-placement="top"
-                    data-bs-toggle="tooltip"
-                    class="btn btn-sm btn-secondary rounded-circle"
-                    rel="nofollow"
-                    target="_blank"
-                    aria-label="[Website] https://neironix.io/"
-                    ><i class="fas fa-globe"></i
-                  ></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card mb-1">
-        <div class="card-body">
-          <div class="d-flex gap-3">
-            <div>
-              <img
-                src="/images/resources/safariico_40.png"
-                class="u-avatar mt-1"
-                alt=""
-              />
-            </div>
-            <div
-              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
-            >
-              <div>
-                <a
-                  href="https://saferico.com/"
-                  class="fs-5 link-dark"
-                  rel="nofollow"
-                  target="_blank"
-                  data-bs-toggle="tooltip"
-                  >SaferIco</a
-                >
-                <div>
-                  <p>
-                    SaferICO aims to be a top-notch smart contract development
-                    and security service provider. The company Audited more than
-                    +200 smart contracts, and we provide ICO services too like
-                    developing smart contracts and publishing ICO.
-                  </p>
-                </div>
-              </div>
-              <ul class="list-inline mb-0 text-nowrap">
-                <li class="list-inline-item">
-                  <a
-                    href="https://saferico.com/"
-                    data-bs-placement="top"
-                    data-bs-toggle="tooltip"
-                    class="btn btn-sm btn-secondary rounded-circle"
-                    rel="nofollow"
-                    target="_blank"
-                    aria-label="[Website] https://saferico.com/"
+                    aria-label="[Website] https://everspace.app/"
                     ><i class="fas fa-globe"></i
                   ></a>
                 </li>
                 <li class="list-inline-item">
                   <a
-                    href="mailto:admin@saferico.com"
+                    href="mailto:nharpa@autominter.com"
                     data-bs-placement="top"
                     data-bs-toggle="tooltip"
                     class="btn btn-sm btn-secondary rounded-circle"
                     rel="nofollow"
                     target="_blank"
-                    aria-label="[Email] mailto:admin@saferico.com"
+                    aria-label="[Email] mailto:nharpa@autominter.com"
                     ><i class="fa fa-envelope"></i
                   ></a>
                 </li>
                 <li class="list-inline-item">
                   <a
-                    href="https://twitter.com/ico_sfi"
+                    href="https://twitter.com/autominter"
                     data-bs-toggle="tooltip"
                     data-bs-placement="top"
                     class="btn btn-sm btn-secondary rounded-circle"
                     rel="nofollow"
                     target="_blank"
-                    aria-label="[Twitter] https://twitter.com/ico_sfi"
+                    aria-label="[Twitter] https://twitter.com/autominter"
                     ><i class="fab fa-twitter"></i
-                  ></a>
-                </li>
-                <li class="list-inline-item">
-                  <a
-                    href="https://github.com/Saferico"
-                    data-bs-toggle="tooltip"
-                    data-bs-placement="top"
-                    class="btn btn-sm btn-secondary rounded-circle"
-                    rel="nofollow"
-                    target="_blank"
-                    aria-label="[Github] https://github.com/Saferico"
-                    ><i class="fab fa-github"></i
                   ></a>
                 </li>
               </ul>
@@ -751,7 +77,7 @@
           <div class="d-flex gap-3">
             <div>
               <img
-                src="/images/resources/topicolist.png?v=1"
+                src="/images/resources/bankex.png"
                 class="u-avatar mt-1"
                 alt=""
               />
@@ -761,33 +87,30 @@
             >
               <div>
                 <a
-                  href="https://topicolist.com"
+                  href="https://bankex.com/"
                   class="fs-5 link-dark"
                   rel="nofollow"
                   target="_blank"
                   data-bs-toggle="tooltip"
-                  >Top ICO List</a
+                  >BANKEX</a
                 >
                 <div>
                   <p>
-                    Top ICO List is curated by ICO analysts to bring you the
-                    best new ICO coins that are active, upcoming or in
-                    discounted pre ICO. Best choice for quality ICOs. Browse the
-                    ICO listings to discover our top initial coin offering
-                    picks.
+                    BANKEX will create smart contracts of any complexity for
+                    your projects in the Solidity language.
                   </p>
                 </div>
               </div>
               <ul class="list-inline mb-0 text-nowrap">
                 <li class="list-inline-item">
                   <a
-                    href="https://topicolist.com"
+                    href="https://bankex.com/"
                     data-bs-placement="top"
                     data-bs-toggle="tooltip"
                     class="btn btn-sm btn-secondary rounded-circle"
                     rel="nofollow"
                     target="_blank"
-                    aria-label="[Website] https://topicolist.com"
+                    aria-label="[Website] https://bankex.com/"
                     ><i class="fas fa-globe"></i
                   ></a>
                 </li>
@@ -801,7 +124,7 @@
           <div class="d-flex gap-3">
             <div>
               <img
-                src="/images/resources/trackico.png?v=1"
+                src="/images/resources/blockide.jpg"
                 class="u-avatar mt-1"
                 alt=""
               />
@@ -811,31 +134,462 @@
             >
               <div>
                 <a
-                  href="https://www.trackico.io/"
+                  href="https://www.blockide.com/"
                   class="fs-5 link-dark"
                   rel="nofollow"
                   target="_blank"
                   data-bs-toggle="tooltip"
-                  >Track ICO</a
+                  >BlockIDE</a
                 >
                 <div>
                   <p>
-                    TrackICO - a platform that was established to provide its
-                    users reliable information about the best Initial Coin
-                    Offering projects and help ICOs attract more investors.
+                    BlockIDE is an integrated development environment that
+                    enables people with no blockchain development experience to
+                    create smart contracts on any blockchain.
                   </p>
                 </div>
               </div>
               <ul class="list-inline mb-0 text-nowrap">
                 <li class="list-inline-item">
                   <a
-                    href="https://www.trackico.io/"
+                    href="https://www.blockide.com/"
                     data-bs-placement="top"
                     data-bs-toggle="tooltip"
                     class="btn btn-sm btn-secondary rounded-circle"
                     rel="nofollow"
                     target="_blank"
-                    aria-label="[Website] https://www.trackico.io/"
+                    aria-label="[Website] https://www.blockide.com/"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/coinlaunch.png"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://coinlaunch.market/coincreator/"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >CoinLaunch</a
+                >
+                <div>
+                  <p>
+                    CoinLaunch, a free and easy to use Coin Creator that enables
+                    anyone with little to no experience in cryptocurrencies the
+                    ability to create their own Ethereum-based ICO (ERC20
+                    tokens).
+                  </p>
+                </div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://coinlaunch.market/coincreator/"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://coinlaunch.market/coincreator/"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/confideal.png"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://confideal.io/"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >Confideal</a
+                >
+                <div>
+                  <p>
+                    Confideal is a service that helps you create smart contracts
+                    on Ethereum blockchain. With the smart contracts that our
+                    service helps you create, you can receive payments, pay for
+                    goods and services, purchase property, and carry out other
+                    types of transactions.
+                  </p>
+                </div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://confideal.io/"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://confideal.io/"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/createmytoken.png"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://www.createmytoken.com/"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >Create My Token</a
+                >
+                <div>
+                  <p>
+                    Create My Token is a Smart Contract Factory for ERC20 and
+                    BEP20 Tokens allowing anyone to generate ERC20 tokens as
+                    well as to generate BEP20 tokens in a matter of minutes!
+                  </p>
+                </div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://www.createmytoken.com/"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://www.createmytoken.com/"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/mintable.jpg"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://mintable.app/"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >Mintable</a
+                >
+                <div>
+                  <p>Mintable creates ERC-721 smart contracts for users.</p>
+                </div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://mintable.app/"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://mintable.app/"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/mywish.jpg"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://mywish.io/"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >MyWish</a
+                >
+                <div>
+                  <p>
+                    MyWish is a platform for creating smart contracts without
+                    programming skills. The following contracts are available:
+                    Token, Crowdsale, Will, Deffered payment, etc.
+                  </p>
+                </div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://mywish.io/"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://mywish.io/"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/openlaw.jpg"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://openlaw.io"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >OpenLaw</a
+                >
+                <div>
+                  <p>
+                    A legal layer on top of blockchain that stitches together
+                    legal agreements with smart contracts
+                  </p>
+                </div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://openlaw.io"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://openlaw.io"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/openzeppelin.png"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://openzeppelin.org/"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >Openzeppelin</a
+                >
+                <div>
+                  <p>
+                    OpenZeppelin is an open framework of reusable and secure
+                    smart contracts in the Solidity language.
+                  </p>
+                </div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://openzeppelin.org/"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://openzeppelin.org/"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/poanetwork.jpg"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://wizard.poa.network/"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >POA Network Token Wizard</a
+                >
+                <div>
+                  <p>
+                    Token Wizard is a client side tool to create token and
+                    crowdsale contracts in five steps. It helps you to publish
+                    contracts on the Ethereum network, verify them in Etherscan,
+                    create a crowdsale page with stats.
+                  </p>
+                </div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://wizard.poa.network/"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://wizard.poa.network/"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/tokengen.png"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://tokengen.io/"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >Tokengen</a
+                >
+                <div>
+                  <p>
+                    TokenGen provides an intuitive user interface allowing
+                    individuals and businesses to easily generate smart
+                    contracts for the token economy i.e. tokens, crowdsales,
+                    etc.
+                  </p>
+                </div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://tokengen.io/"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://tokengen.io/"
                     ><i class="fas fa-globe"></i
                   ></a>
                 </li>

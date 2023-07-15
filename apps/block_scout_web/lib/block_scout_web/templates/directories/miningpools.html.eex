@@ -1,12 +1,12 @@
 <section class="container mt-30 mb-3">
- <div id="ContentPlaceHolder1_exchangewalletdiv">
- <h1 class="mx-1">BenchMark Listing </h1>
+   <div id="ContentPlaceHolder1_exchangewalletdiv">
+   <h1 class="class="px-1">Mining Pools</h1>
       <div class="card mb-1">
         <div class="card-body">
           <div class="d-flex gap-3">
             <div>
               <img
-                src="/images/resources/icobench.png?v=1"
+                src="/images/miningpools/2miners.png"
                 class="u-avatar mt-1"
                 alt=""
               />
@@ -16,30 +16,143 @@
             >
               <div>
                 <a
-                  href="https://icobench.com/"
+                  href="https://eth.2miners.com/"
                   class="fs-5 link-dark"
                   rel="nofollow"
                   target="_blank"
                   data-bs-toggle="tooltip"
-                  >ICObench</a
+                  >2miners</a
                 >
-                <div>
-                  <p>
-                    ICObench is an ICO rating platform supported by investors
-                    and financial experts.
-                  </p>
-                </div>
               </div>
               <ul class="list-inline mb-0 text-nowrap">
                 <li class="list-inline-item">
                   <a
-                    href="https://icobench.com/"
+                    href="https://eth.2miners.com/"
                     data-bs-placement="top"
                     data-bs-toggle="tooltip"
                     class="btn btn-sm btn-secondary rounded-circle"
                     rel="nofollow"
                     target="_blank"
-                    aria-label="[Website] https://icobench.com/"
+                    aria-label="[Website] https://eth.2miners.com/"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="https://2miners.zendesk.com/hc/en-us"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Helpdesk] https://2miners.zendesk.com/hc/en-us"
+                    ><i class="far fa-life-ring"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="https://2miners.zendesk.com/hc/en-us/requests/new"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Ticketing] https://2miners.zendesk.com/hc/en-us/requests/new"
+                    ><i class="fa fa-ticket-alt"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/miningpools/antpool.png"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://www.antpool.com/"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >Antpool</a
+                >
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://www.antpool.com/"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://www.antpool.com/"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="https://twitter.com/BITMAINtech"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Twitter] https://twitter.com/BITMAINtech"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/ethereum.png"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://cominers.org/"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >Cominers</a
+                >
+                <div><p>Mining Pool</p></div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://cominers.org/"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://cominers.org/"
                     ><i class="fas fa-globe"></i
                   ></a>
                 </li>
@@ -53,7 +166,7 @@
           <div class="d-flex gap-3">
             <div>
               <img
-                src="/images/resources/icoalert.png?v=1"
+                src="/images/miningpools/dwarfpool.png"
                 class="u-avatar mt-1"
                 alt=""
               />
@@ -63,684 +176,51 @@
             >
               <div>
                 <a
-                  href="https://www.icoalert.com/"
+                  href="https://dwarfpool.com/"
                   class="fs-5 link-dark"
                   rel="nofollow"
                   target="_blank"
                   data-bs-toggle="tooltip"
-                  >ICO Alert</a
+                  >Dwarfpool</a
                 >
-                <div>
-                  <p>
-                    The trusted, comprehensive ICO Discovery Platform - Become
-                    Your Own Venture Capitalist
-                  </p>
-                </div>
               </div>
               <ul class="list-inline mb-0 text-nowrap">
                 <li class="list-inline-item">
                   <a
-                    href="https://www.icoalert.com/"
+                    href="https://dwarfpool.com/"
                     data-bs-placement="top"
                     data-bs-toggle="tooltip"
                     class="btn btn-sm btn-secondary rounded-circle"
                     rel="nofollow"
                     target="_blank"
-                    aria-label="[Website] https://www.icoalert.com/"
-                    ><i class="fas fa-globe"></i
-                  ></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card mb-1">
-        <div class="card-body">
-          <div class="d-flex gap-3">
-            <div>
-              <img
-                src="/images/resources/icodrops.png?v=1"
-                class="u-avatar mt-1"
-                alt=""
-              />
-            </div>
-            <div
-              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
-            >
-              <div>
-                <a
-                  href="https://icodrops.com"
-                  class="fs-5 link-dark"
-                  rel="nofollow"
-                  target="_blank"
-                  data-bs-toggle="tooltip"
-                  >ICO Drops</a
-                >
-                <div>
-                  <p>
-                    ICO Drops is an independent ICO (Token Sale) database and is
-                    not affiliated with any ICO project or company. Our Interest
-                    Level does not constitute financial or investment advice.
-                  </p>
-                </div>
-              </div>
-              <ul class="list-inline mb-0 text-nowrap">
-                <li class="list-inline-item">
-                  <a
-                    href="https://icodrops.com"
-                    data-bs-placement="top"
-                    data-bs-toggle="tooltip"
-                    class="btn btn-sm btn-secondary rounded-circle"
-                    rel="nofollow"
-                    target="_blank"
-                    aria-label="[Website] https://icodrops.com"
-                    ><i class="fas fa-globe"></i
-                  ></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card mb-1">
-        <div class="card-body">
-          <div class="d-flex gap-3">
-            <div>
-              <img
-                src="/images/resources/cointelligence.png?v=1"
-                class="u-avatar mt-1"
-                alt=""
-              />
-            </div>
-            <div
-              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
-            >
-              <div>
-                <a
-                  href="https://www.cointelligence.com/content/ico_list/"
-                  class="fs-5 link-dark"
-                  rel="nofollow"
-                  target="_blank"
-                  data-bs-toggle="tooltip"
-                  >Cointelligence</a
-                >
-                <div>
-                  <p>
-                    Cointelligence is a platform for monitoring and analyzing
-                    real-time crypto-economy market data.
-                  </p>
-                </div>
-              </div>
-              <ul class="list-inline mb-0 text-nowrap">
-                <li class="list-inline-item">
-                  <a
-                    href="https://www.cointelligence.com/content/ico_list/"
-                    data-bs-placement="top"
-                    data-bs-toggle="tooltip"
-                    class="btn btn-sm btn-secondary rounded-circle"
-                    rel="nofollow"
-                    target="_blank"
-                    aria-label="[Website] https://www.cointelligence.com/content/ico_list/"
-                    ><i class="fas fa-globe"></i
-                  ></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card mb-1">
-        <div class="card-body">
-          <div class="d-flex gap-3">
-            <div>
-              <img
-                src="/images/resources/cryptoindonesia.png?v=1"
-                class="u-avatar mt-1"
-                alt=""
-              />
-            </div>
-            <div
-              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
-            >
-              <div>
-                <a
-                  href="https://www.cryptocoinindonesia.com/"
-                  class="fs-5 link-dark"
-                  rel="nofollow"
-                  target="_blank"
-                  data-bs-toggle="tooltip"
-                  >Cryptocoin Indonesia</a
-                >
-                <div>
-                  <p>
-                    Cryptocoin Indonesia is ICO listing that only listing ICOs
-                    that already manual verified by Cryptocoin Indonesia.
-                  </p>
-                </div>
-              </div>
-              <ul class="list-inline mb-0 text-nowrap">
-                <li class="list-inline-item">
-                  <a
-                    href="https://www.cryptocoinindonesia.com/"
-                    data-bs-placement="top"
-                    data-bs-toggle="tooltip"
-                    class="btn btn-sm btn-secondary rounded-circle"
-                    rel="nofollow"
-                    target="_blank"
-                    aria-label="[Website] https://www.cryptocoinindonesia.com/"
-                    ><i class="fas fa-globe"></i
-                  ></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card mb-1">
-        <div class="card-body">
-          <div class="d-flex gap-3">
-            <div>
-              <img
-                src="/images/resources/cryptodiffer.png?v=1"
-                class="u-avatar mt-1"
-                alt=""
-              />
-            </div>
-            <div
-              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
-            >
-              <div>
-                <a
-                  href="https://cryptodiffer.com/"
-                  class="fs-5 link-dark"
-                  rel="nofollow"
-                  target="_blank"
-                  data-bs-toggle="tooltip"
-                  >CryptoDiffer</a
-                >
-                <div><p>Aggregator of top ICO experts opinions.&nbsp;</p></div>
-              </div>
-              <ul class="list-inline mb-0 text-nowrap">
-                <li class="list-inline-item">
-                  <a
-                    href="https://cryptodiffer.com/"
-                    data-bs-placement="top"
-                    data-bs-toggle="tooltip"
-                    class="btn btn-sm btn-secondary rounded-circle"
-                    rel="nofollow"
-                    target="_blank"
-                    aria-label="[Website] https://cryptodiffer.com/"
-                    ><i class="fas fa-globe"></i
-                  ></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card mb-1">
-        <div class="card-body">
-          <div class="d-flex gap-3">
-            <div>
-              <img
-                src="/images/resources/icofinch.png?v=1"
-                class="u-avatar mt-1"
-                alt=""
-              />
-            </div>
-            <div
-              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
-            >
-              <div>
-                <a
-                  href="https://icofinch.com/"
-                  class="fs-5 link-dark"
-                  rel="nofollow"
-                  target="_blank"
-                  data-bs-toggle="tooltip"
-                  >ICO Finch</a
-                >
-                <div>
-                  <p>
-                    Discover, analyze and monitor new ICOs with ICO Finch. ICO
-                    Ratings, clean calendar, profiles, bookmarks and more.
-                  </p>
-                </div>
-              </div>
-              <ul class="list-inline mb-0 text-nowrap">
-                <li class="list-inline-item">
-                  <a
-                    href="https://icofinch.com/"
-                    data-bs-placement="top"
-                    data-bs-toggle="tooltip"
-                    class="btn btn-sm btn-secondary rounded-circle"
-                    rel="nofollow"
-                    target="_blank"
-                    aria-label="[Website] https://icofinch.com/"
-                    ><i class="fas fa-globe"></i
-                  ></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card mb-1">
-        <div class="card-body">
-          <div class="d-flex gap-3">
-            <div>
-              <img
-                src="/images/resources/icohotlist.png?v=1"
-                class="u-avatar mt-1"
-                alt=""
-              />
-            </div>
-            <div
-              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
-            >
-              <div>
-                <a
-                  href="https://www.icohotlist.com/"
-                  class="fs-5 link-dark"
-                  rel="nofollow"
-                  target="_blank"
-                  data-bs-toggle="tooltip"
-                  >ICO Hot List</a
-                >
-                <div>
-                  <p>
-                    ICO Hot List is an independently curated catalog of the most
-                    promising active and upcoming Initial Coin Offerings.
-                  </p>
-                </div>
-              </div>
-              <ul class="list-inline mb-0 text-nowrap">
-                <li class="list-inline-item">
-                  <a
-                    href="https://www.icohotlist.com/"
-                    data-bs-placement="top"
-                    data-bs-toggle="tooltip"
-                    class="btn btn-sm btn-secondary rounded-circle"
-                    rel="nofollow"
-                    target="_blank"
-                    aria-label="[Website] https://www.icohotlist.com/"
-                    ><i class="fas fa-globe"></i
-                  ></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card mb-1">
-        <div class="card-body">
-          <div class="d-flex gap-3">
-            <div>
-              <img
-                src="/images/resources/icopools.png?v=1"
-                class="u-avatar mt-1"
-                alt=""
-              />
-            </div>
-            <div
-              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
-            >
-              <div>
-                <a
-                  href="https://icopools.io/en/"
-                  class="fs-5 link-dark"
-                  rel="nofollow"
-                  target="_blank"
-                  data-bs-toggle="tooltip"
-                  >ICO Pools</a
-                >
-                <div>
-                  <p>
-                    ICOPOOLS.io - TOP of ICO pools. Service collects data from
-                    ICO pools about LIVE deals and represents it in a useful
-                    table form with all the sorting options needed. The data is
-                    updated every hour.
-                  </p>
-                </div>
-              </div>
-              <ul class="list-inline mb-0 text-nowrap">
-                <li class="list-inline-item">
-                  <a
-                    href="https://icopools.io/en/"
-                    data-bs-placement="top"
-                    data-bs-toggle="tooltip"
-                    class="btn btn-sm btn-secondary rounded-circle"
-                    rel="nofollow"
-                    target="_blank"
-                    aria-label="[Website] https://icopools.io/en/"
-                    ><i class="fas fa-globe"></i
-                  ></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card mb-1">
-        <div class="card-body">
-          <div class="d-flex gap-3">
-            <div>
-              <img
-                src="/images/resources/icotoplist.png"
-                class="u-avatar mt-1"
-                alt=""
-              />
-            </div>
-            <div
-              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
-            >
-              <div>
-                <a
-                  href="https://icotoplist.com"
-                  class="fs-5 link-dark"
-                  rel="nofollow"
-                  target="_blank"
-                  data-bs-toggle="tooltip"
-                  >ICO Toplist</a
-                >
-                <div>
-                  <p>
-                    ICO Toplist is an ICO listing and rating service and
-                    database of whitepapers and airdrops
-                  </p>
-                </div>
-              </div>
-              <ul class="list-inline mb-0 text-nowrap">
-                <li class="list-inline-item">
-                  <a
-                    href="https://icotoplist.com"
-                    data-bs-placement="top"
-                    data-bs-toggle="tooltip"
-                    class="btn btn-sm btn-secondary rounded-circle"
-                    rel="nofollow"
-                    target="_blank"
-                    aria-label="[Website] https://icotoplist.com"
-                    ><i class="fas fa-globe"></i
-                  ></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card mb-1">
-        <div class="card-body">
-          <div class="d-flex gap-3">
-            <div>
-              <img
-                src="/images/resources/icocheck.png?v=1"
-                class="u-avatar mt-1"
-                alt=""
-              />
-            </div>
-            <div
-              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
-            >
-              <div>
-                <a
-                  href="https://www.ico-check.com/"
-                  class="fs-5 link-dark"
-                  rel="nofollow"
-                  target="_blank"
-                  data-bs-toggle="tooltip"
-                  >ICO-Check</a
-                >
-                <div>
-                  <p>
-                    ICO-Check is a cryptocurrency ICO website featuring an
-                    extensive and well-researched list of the ongoing and
-                    upcoming initial coin offerings.
-                  </p>
-                </div>
-              </div>
-              <ul class="list-inline mb-0 text-nowrap">
-                <li class="list-inline-item">
-                  <a
-                    href="https://www.ico-check.com/"
-                    data-bs-placement="top"
-                    data-bs-toggle="tooltip"
-                    class="btn btn-sm btn-secondary rounded-circle"
-                    rel="nofollow"
-                    target="_blank"
-                    aria-label="[Website] https://www.ico-check.com/"
-                    ><i class="fas fa-globe"></i
-                  ></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card mb-1">
-        <div class="card-body">
-          <div class="d-flex gap-3">
-            <div>
-              <img
-                src="/images/resources/icomarks.png?v=1"
-                class="u-avatar mt-1"
-                alt=""
-              />
-            </div>
-            <div
-              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
-            >
-              <div>
-                <a
-                  href="https://icomarks.com/"
-                  class="fs-5 link-dark"
-                  rel="nofollow"
-                  target="_blank"
-                  data-bs-toggle="tooltip"
-                  >ICOmarks</a
-                >
-                <div>
-                  <p>
-                    ICOmaks is a rating and statistical platform for ICO
-                    projects. We have a large number of convenient tools for
-                    researching the most promising projects for investment.
-                  </p>
-                </div>
-              </div>
-              <ul class="list-inline mb-0 text-nowrap">
-                <li class="list-inline-item">
-                  <a
-                    href="https://icomarks.com/"
-                    data-bs-placement="top"
-                    data-bs-toggle="tooltip"
-                    class="btn btn-sm btn-secondary rounded-circle"
-                    rel="nofollow"
-                    target="_blank"
-                    aria-label="[Website] https://icomarks.com/"
-                    ><i class="fas fa-globe"></i
-                  ></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card mb-1">
-        <div class="card-body">
-          <div class="d-flex gap-3">
-            <div>
-              <img
-                src="/images/resources/icoscoming.png?v=1"
-                class="u-avatar mt-1"
-                alt=""
-              />
-            </div>
-            <div
-              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
-            >
-              <div>
-                <a
-                  href="https://www.icoscoming.com/"
-                  class="fs-5 link-dark"
-                  rel="nofollow"
-                  target="_blank"
-                  data-bs-toggle="tooltip"
-                  >ICOsComing</a
-                >
-                <div>
-                  <p>
-                    About Live ICO &amp; Upcoming ICOs in Market, Month Wise
-                    Listings!
-                  </p>
-                </div>
-              </div>
-              <ul class="list-inline mb-0 text-nowrap">
-                <li class="list-inline-item">
-                  <a
-                    href="https://www.icoscoming.com/"
-                    data-bs-placement="top"
-                    data-bs-toggle="tooltip"
-                    class="btn btn-sm btn-secondary rounded-circle"
-                    rel="nofollow"
-                    target="_blank"
-                    aria-label="[Website] https://www.icoscoming.com/"
-                    ><i class="fas fa-globe"></i
-                  ></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card mb-1">
-        <div class="card-body">
-          <div class="d-flex gap-3">
-            <div>
-              <img
-                src="/images/resources/neironix.png?v=1"
-                class="u-avatar mt-1"
-                alt=""
-              />
-            </div>
-            <div
-              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
-            >
-              <div>
-                <a
-                  href="https://neironix.io/"
-                  class="fs-5 link-dark"
-                  rel="nofollow"
-                  target="_blank"
-                  data-bs-toggle="tooltip"
-                  >Neironix</a
-                >
-                <div>
-                  <p>
-                    Rating analytical agency for assessing investment risks in
-                    the blockchain economy the main aim of which is to provide
-                    to investors necessary analytical data and effective
-                    decision-making tools.
-                  </p>
-                </div>
-              </div>
-              <ul class="list-inline mb-0 text-nowrap">
-                <li class="list-inline-item">
-                  <a
-                    href="https://neironix.io/"
-                    data-bs-placement="top"
-                    data-bs-toggle="tooltip"
-                    class="btn btn-sm btn-secondary rounded-circle"
-                    rel="nofollow"
-                    target="_blank"
-                    aria-label="[Website] https://neironix.io/"
-                    ><i class="fas fa-globe"></i
-                  ></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card mb-1">
-        <div class="card-body">
-          <div class="d-flex gap-3">
-            <div>
-              <img
-                src="/images/resources/safariico_40.png"
-                class="u-avatar mt-1"
-                alt=""
-              />
-            </div>
-            <div
-              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
-            >
-              <div>
-                <a
-                  href="https://saferico.com/"
-                  class="fs-5 link-dark"
-                  rel="nofollow"
-                  target="_blank"
-                  data-bs-toggle="tooltip"
-                  >SaferIco</a
-                >
-                <div>
-                  <p>
-                    SaferICO aims to be a top-notch smart contract development
-                    and security service provider. The company Audited more than
-                    +200 smart contracts, and we provide ICO services too like
-                    developing smart contracts and publishing ICO.
-                  </p>
-                </div>
-              </div>
-              <ul class="list-inline mb-0 text-nowrap">
-                <li class="list-inline-item">
-                  <a
-                    href="https://saferico.com/"
-                    data-bs-placement="top"
-                    data-bs-toggle="tooltip"
-                    class="btn btn-sm btn-secondary rounded-circle"
-                    rel="nofollow"
-                    target="_blank"
-                    aria-label="[Website] https://saferico.com/"
+                    aria-label="[Website] https://dwarfpool.com/"
                     ><i class="fas fa-globe"></i
                   ></a>
                 </li>
                 <li class="list-inline-item">
                   <a
-                    href="mailto:admin@saferico.com"
+                    href="mailto:admin@dwarfpool.com"
                     data-bs-placement="top"
                     data-bs-toggle="tooltip"
                     class="btn btn-sm btn-secondary rounded-circle"
                     rel="nofollow"
                     target="_blank"
-                    aria-label="[Email] mailto:admin@saferico.com"
+                    aria-label="[Email] mailto:admin@dwarfpool.com"
                     ><i class="fa fa-envelope"></i
                   ></a>
                 </li>
                 <li class="list-inline-item">
                   <a
-                    href="https://twitter.com/ico_sfi"
+                    href="https://twitter.com/DwarfPool"
                     data-bs-toggle="tooltip"
                     data-bs-placement="top"
                     class="btn btn-sm btn-secondary rounded-circle"
                     rel="nofollow"
                     target="_blank"
-                    aria-label="[Twitter] https://twitter.com/ico_sfi"
+                    aria-label="[Twitter] https://twitter.com/DwarfPool"
                     ><i class="fab fa-twitter"></i
                   ></a>
                 </li>
-                <li class="list-inline-item">
-                  <a
-                    href="https://github.com/Saferico"
-                    data-bs-toggle="tooltip"
-                    data-bs-placement="top"
-                    class="btn btn-sm btn-secondary rounded-circle"
-                    rel="nofollow"
-                    target="_blank"
-                    aria-label="[Github] https://github.com/Saferico"
-                    ><i class="fab fa-github"></i
-                  ></a>
-                </li>
               </ul>
             </div>
           </div>
@@ -751,7 +231,7 @@
           <div class="d-flex gap-3">
             <div>
               <img
-                src="/images/resources/topicolist.png?v=1"
+                src="/images/resources/ethereum.png"
                 class="u-avatar mt-1"
                 alt=""
               />
@@ -761,33 +241,24 @@
             >
               <div>
                 <a
-                  href="https://topicolist.com"
+                  href="https://eth.solopool.org/"
                   class="fs-5 link-dark"
                   rel="nofollow"
                   target="_blank"
                   data-bs-toggle="tooltip"
-                  >Top ICO List</a
+                  >Eth.solopool.org</a
                 >
-                <div>
-                  <p>
-                    Top ICO List is curated by ICO analysts to bring you the
-                    best new ICO coins that are active, upcoming or in
-                    discounted pre ICO. Best choice for quality ICOs. Browse the
-                    ICO listings to discover our top initial coin offering
-                    picks.
-                  </p>
-                </div>
               </div>
               <ul class="list-inline mb-0 text-nowrap">
                 <li class="list-inline-item">
                   <a
-                    href="https://topicolist.com"
+                    href="https://eth.solopool.org/"
                     data-bs-placement="top"
                     data-bs-toggle="tooltip"
                     class="btn btn-sm btn-secondary rounded-circle"
                     rel="nofollow"
                     target="_blank"
-                    aria-label="[Website] https://topicolist.com"
+                    aria-label="[Website] https://eth.solopool.org/"
                     ><i class="fas fa-globe"></i
                   ></a>
                 </li>
@@ -801,7 +272,7 @@
           <div class="d-flex gap-3">
             <div>
               <img
-                src="/images/resources/trackico.png?v=1"
+                src="/images/miningpools/ethermine.png"
                 class="u-avatar mt-1"
                 alt=""
               />
@@ -811,32 +282,564 @@
             >
               <div>
                 <a
-                  href="https://www.trackico.io/"
+                  href="https://ethermine.org/"
                   class="fs-5 link-dark"
                   rel="nofollow"
                   target="_blank"
                   data-bs-toggle="tooltip"
-                  >Track ICO</a
+                  >Ethermine</a
                 >
-                <div>
-                  <p>
-                    TrackICO - a platform that was established to provide its
-                    users reliable information about the best Initial Coin
-                    Offering projects and help ICOs attract more investors.
-                  </p>
-                </div>
               </div>
               <ul class="list-inline mb-0 text-nowrap">
                 <li class="list-inline-item">
                   <a
-                    href="https://www.trackico.io/"
+                    href="https://ethermine.org/"
                     data-bs-placement="top"
                     data-bs-toggle="tooltip"
                     class="btn btn-sm btn-secondary rounded-circle"
                     rel="nofollow"
                     target="_blank"
-                    aria-label="[Website] https://www.trackico.io/"
+                    aria-label="[Website] https://ethermine.org/"
                     ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="https://twitter.com/etherchain_org"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Twitter] https://twitter.com/etherchain_org"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/miningpools/ethfans.png"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://pool.ethfans.org/"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >Ethfans</a
+                >
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://pool.ethfans.org/"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://pool.ethfans.org/"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="mailto:pool@ethfans.org"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Email] mailto:pool@ethfans.org"
+                    ><i class="fa fa-envelope"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/miningpools/f2pool.png"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://www.f2pool.com/"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >F2pool</a
+                >
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://www.f2pool.com/"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://www.f2pool.com/"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="mailto:support@f2pool.com"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Email] mailto:support@f2pool.com"
+                    ><i class="fa fa-envelope"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/hashon.png"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://ethash.ninja/"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >HashOn</a
+                >
+                <div><p>The high-performance Ethereum mining pool</p></div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://ethash.ninja/"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://ethash.ninja/"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/mining_blue.png"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://maxhash.org/"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >MaxHash</a
+                >
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://maxhash.org/"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://maxhash.org/"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="mailto:support@maxhash.org"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Email] mailto:support@maxhash.org"
+                    ><i class="fa fa-envelope"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="https://maxhash.org/#contact"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Helpdesk] https://maxhash.org/#contact"
+                    ><i class="far fa-life-ring"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/miningpools/nanopool.png"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://eth.nanopool.org/"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >Nanopool</a
+                >
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://eth.nanopool.org/"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://eth.nanopool.org/"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="mailto:eth.nanopool@gmail.com"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Email] mailto:eth.nanopool@gmail.com"
+                    ><i class="fa fa-envelope"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="https://twitter.com/nanopool_org"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Twitter] https://twitter.com/nanopool_org"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/miningpools/onionpool.png"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="http://www.onionpool.com/"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >Onionpool</a
+                >
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="http://www.onionpool.com/"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] http://www.onionpool.com/"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="mailto:webmaster@bethemister.com"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Email] mailto:webmaster@bethemister.com"
+                    ><i class="fa fa-envelope"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/sparkpool3.png"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://eth.sparkpool.com"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >SparkPool</a
+                >
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://eth.sparkpool.com"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://eth.sparkpool.com"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="mailto:support@sparkpool.com"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Email] mailto:support@sparkpool.com"
+                    ><i class="fa fa-envelope"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="https://support.sparkpool.com/hc/en-us"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Helpdesk] https://support.sparkpool.com/hc/en-us"
+                    ><i class="far fa-life-ring"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="https://support.sparkpool.com/hc/en-us/requests/new"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Ticketing] https://support.sparkpool.com/hc/en-us/requests/new"
+                    ><i class="fa fa-ticket-alt"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="https://twitter.com/sparkpool_eth"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Twitter] https://twitter.com/sparkpool_eth"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/miningpools/suprnova.png"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://eth.suprnova.cc/"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >Suprnova</a
+                >
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://eth.suprnova.cc/"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://eth.suprnova.cc/"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="https://www.twitter.com/SuprnovaPools"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Twitter] https://www.twitter.com/SuprnovaPools"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/whalesburg.jpg"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://whalesburg.com/"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >Whalesburg</a
+                >
+                <div><p>Profit Switching Ethash Mining Pool</p></div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://whalesburg.com/"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://whalesburg.com/"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="https://twitter.com/whalesburg"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Twitter] https://twitter.com/whalesburg"
+                    ><i class="fab fa-twitter"></i
                   ></a>
                 </li>
               </ul>
@@ -845,4 +848,5 @@
         </div>
       </div>
     </div>
+
 </section>

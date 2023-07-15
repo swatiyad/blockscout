@@ -1,0 +1,1232 @@
+<section class="container mt-30">
+ <div id="ContentPlaceHolder1_exchangewalletdiv">
+ <h1 class="mx-1"> Services </h2>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/ambisafe.png?v=1"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://ambisafe.com/"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >Ambisafe</a
+                >
+                <div>
+                  <p>
+                    Global blockchain services company and Initial Coin Offering
+                    solutions provider
+                  </p>
+                </div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://ambisafe.com/"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://ambisafe.com/"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/bitcoinprbuzz.png"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://bitcoinprbuzz.com/"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >Bitcoin PR Buzz</a
+                >
+                <div>
+                  <p>
+                    Bitcoin PR Buzz is a cryptocurrency marketing agency with 9+
+                    years experience, 900+ clients &amp; 1500+ published press
+                    releases. Our PR distribution services include guaranteed
+                    publication of press releases &amp; featured articles on
+                    over 300 mainstream news outlets. We genuinely enjoy working
+                    with innovative crypto &amp; blockchain projects, and we are
+                    excited to apply our unique expertise, partnerships &amp;
+                    experience, to help you reach an audience that truly matters
+                    to your business!
+                  </p>
+                </div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://bitcoinprbuzz.com/"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://bitcoinprbuzz.com/"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/blockchainx2_40.png"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://www.blockchainx.tech/"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >BlockchainX</a
+                >
+                <div>
+                  <p>
+                    BlockchainX help tech start-ups, businesses, and
+                    entrepreneurs build innovative blockchain projects and turn
+                    their visions into reality.
+                  </p>
+                </div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://www.blockchainx.tech/"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://www.blockchainx.tech/"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/blocksoftlab.png?v=1"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://blocksoft.biz/"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >BlockSoftLab</a
+                >
+                <div>
+                  <p>
+                    Enjoy the secure turnkey ICO platform and all kinds of
+                    blockchain solutions and services we provide.
+                  </p>
+                </div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://blocksoft.biz/"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://blocksoft.biz/"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/chainwise.png?v=1"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://www.chainwisegroup.com/"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >CHAINWISE Group</a
+                >
+                <div>
+                  <p>
+                    CHAINWISE Group offers a wide range of services within the
+                    blockchain ecosystem we are building such as token services,
+                    solutions, marketing, and enterprise consulting. Our token
+                    services include but are not limited to STOs/Tokenised
+                    Assets, ICOs, and Fundraising. We offer proven experience
+                    across all fields combined with expert level consulting to
+                    provide support constantly exceeding expectations.
+                  </p>
+                </div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://www.chainwisegroup.com/"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://www.chainwisegroup.com/"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/coinbound.png"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://coinbound.io/"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >Coinbound</a
+                >
+                <div>
+                  <p>
+                    Coinbound is a cryptocurrency marketing agency that manages
+                    influencer and PR marketing campaigns for top crypto brands
+                    like eToro, OKEx, ShapeShift, and Kraken.
+                  </p>
+                </div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://coinbound.io/"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://coinbound.io/"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/coinpresso.png"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://coinpresso.io/"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >Coinpresso</a
+                >
+                <div>
+                  <p>
+                    Coinpresso is a crypto advertising agency that specializes
+                    in a full spectrum of crypto marketing services including
+                    SEO, PR, Content, App Search Optimisation, and Web
+                    Development.
+                  </p>
+                </div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://coinpresso.io/"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://coinpresso.io/"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/crebaco.png"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://www.crebaco.org/"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >CREBACO Global Inc</a
+                >
+                <div>
+                  <p>
+                    CREBACO is a research and intelligence firm focused on
+                    blockchain and crypto industry which works at makiing the
+                    industry a scam free and safer space.
+                  </p>
+                </div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://www.crebaco.org/"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://www.crebaco.org/"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/crynet.png?v=1"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://crynet.io/"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >Crynet Agency</a
+                >
+                <div>
+                  <p>
+                    Full-service marketing agency with representatives in 3
+                    continents. Crynet offers a wide range of support services
+                    for ICOs and Blockchain Driven Business.
+                  </p>
+                </div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://crynet.io/"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://crynet.io/"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/crypticocean_40.png"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://crypticocean.com/"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >Cryptic Ocean</a
+                >
+                <div>
+                  <p>
+                    Our goal is to help companies adopt new technologies and
+                    simplify complicated issues that arise during technology
+                    evolution.
+                  </p>
+                </div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://crypticocean.com/"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://crypticocean.com/"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/cryptoapis.png?v=1"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://cryptoapis.io/"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >Crypto APIs</a
+                >
+                <div>
+                  <p>
+                    "Unifying the way developers interact with Blockchains &amp;
+                    Crypto Exchanges. Crypto APIs is a trusted API provider for
+                    crypto applications &amp; DApps. We provide
+                    interoperability, through a coherent and advanced
+                    integration with our all-in-one platform with REST API &amp;
+                    WebSockets."
+                  </p>
+                </div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://cryptoapis.io/"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://cryptoapis.io/"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/cryptokenmedia.png?v=1"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://cryptoken.media/"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >Cryptoken Media</a
+                >
+                <div>
+                  <p>
+                    Full-service digital marketing agency specialized in crypto,
+                    blockchain &amp; ICO projects.
+                  </p>
+                </div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://cryptoken.media/"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://cryptoken.media/"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/furucombo.png"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://furucombo.app/"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >Furucombo</a
+                >
+                <div>
+                  <p>
+                    Save time, save steps, infinite DeFi combinations. Build
+                    your own DeFi legos into one transaction without knowing how
+                    to code.
+                  </p>
+                </div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://furucombo.app/"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://furucombo.app/"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/guerrillabuzz.png"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://guerrillabuzz.com/"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >GuerrillaBuzz</a
+                >
+                <div>
+                  <p>
+                    As a non-traditional boutique growth agency, GuerrillaBuzz
+                    has been disrupting the blockchain marketing and PR
+                    landscape since 2018.
+                  </p>
+                </div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://guerrillabuzz.com/"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://guerrillabuzz.com/"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/lionadvus_40.png"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://www.lionadv.us/"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >Lion ADV</a
+                >
+                <div>
+                  <p>
+                    Lion ADV offers professional services for anyone looking for
+                    a boost in marketing their social &amp; digital media or
+                    crypto needs.
+                  </p>
+                </div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://www.lionadv.us/"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://www.lionadv.us/"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="mailto:office@lionadv.us"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Email] mailto:office@lionadv.us"
+                    ><i class="fa fa-envelope"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/listatoken.png?v=1"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://listatoken.com/"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >List a Token</a
+                >
+                <div><p>Exchange listing and market making</p></div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://listatoken.com/"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://listatoken.com/"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/mena.png?v=1"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://menasoftware.com/"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >MENA Software</a
+                >
+                <div>
+                  <p>
+                    MENA Software provides a wide range of services, but
+                    focusing on blockchain development &amp; smart contract,
+                    plus security audits. With a team of experienced security
+                    professionals &amp; blockchain developers, you are in safe
+                    hands.
+                  </p>
+                </div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://menasoftware.com/"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://menasoftware.com/"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/newalchemy.png?v=1"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://newalchemy.io/"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >New Alchemy</a
+                >
+                <div>
+                  <p>
+                    Blockchain technology, ICO advisory, and capital solutions
+                    for the tokenized future.
+                  </p>
+                </div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://newalchemy.io/"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://newalchemy.io/"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/phenom.jpg"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://airdrop.phenom.team/"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >Phenom Airdrop</a
+                >
+                <div>
+                  <p>
+                    An application to send ERC20 tokens to Ethereum wallet list
+                    (up to 100). With Phenom Airdrop decentralized application
+                    you can easily create ERC20 tokens, interact and send them
+                    to dozens of addresses in a couple of clicks. Airdrops are
+                    commonly used as a marketing strategy and can increase
+                    awareness of your project and attract new supporters. Try it
+                    out, this solution makes the process of Airdrop intuitive as
+                    it should be.
+                  </p>
+                </div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://airdrop.phenom.team/"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://airdrop.phenom.team/"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/rocknblock.png"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://rocknblock.io/"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >Rock'n'Block</a
+                >
+                <div>
+                  <p>
+                    Smart contracts of any complexity on Ethereum blockchain.
+                    From custom token creation to decentralized exchange on a
+                    turn-key basis.
+                  </p>
+                </div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://rocknblock.io/"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://rocknblock.io/"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="https://twitter.com/RocknBlockDev"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Twitter] https://twitter.com/RocknBlockDev"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/tokenget.png?v=1"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://tokenget.com/"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >TokenGet</a
+                >
+                <div>
+                  <p>
+                    The most advanced ICO &amp; STO platform used by 50+
+                    projects raising over 1 Billion USD by using the most secure
+                    software in the market.
+                  </p>
+                </div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://tokenget.com/"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://tokenget.com/"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/tokenmarket.png?v=1"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://tokenmarket.net/ico-advisory"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >Tokenmarket ICO Advisory</a
+                >
+                <div>
+                  <p>
+                    TokenMarket provides a platform for organizing blockchain
+                    token or virtual currency sales.
+                  </p>
+                </div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://tokenmarket.net/ico-advisory"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://tokenmarket.net/ico-advisory"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/tokenrush.png?v=1"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://tokenrush.io/"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >TokenRush</a
+                >
+                <div><p>Biggest Community Building Platform for ICOs</p></div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://tokenrush.io/"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://tokenrush.io/"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/yapglobal.png?v=1"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://yapglobal.com/"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >YAP Global</a
+                >
+                <div>
+                  <p>
+                    YAP Global is a PR firm focused on helping blockchain and
+                    cryptocurrency startups tell their stories.
+                  </p>
+                </div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://yapglobal.com/"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://yapglobal.com/"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/zeeve.jpg"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://www.zeeve.io/"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >Zeeve</a
+                >
+                <div>
+                  <p>
+                    A platform for developing enterprise-grade blockchain
+                    applications. Fully automated deployments and blockchain
+                    infra management.
+                  </p>
+                </div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://www.zeeve.io/"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://www.zeeve.io/"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>

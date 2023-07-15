@@ -6,14 +6,14 @@ const chartOptions = {
       type: 'area',
     },
     title: {
-      text: 'ERC-20 Daily Token Transfer Chart',
+      text: ' Daily Transfer Chart',
     },
     xAxis: {
       categories: [],
     },
     yAxis: {
       title: {
-        text: 'Token Transfer per Day',
+        text: 'Transfer per Day',
       },
     },
     series: [

@@ -1,0 +1,999 @@
+   <section class="container mt-30 mb-3">
+      <div id="ContentPlaceHolder1_exchangewalletdiv">
+      <h1 class="px-1">Wyzth</h1>
+        <div class="card mb-1">
+          <div class="card-body">
+            <div class="d-flex gap-3">
+              <div>
+                <img
+                  src="/images/resources/medium.png"
+                  class="u-avatar mt-1"
+                  alt=""
+                />
+              </div>
+              <div
+                class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+              >
+                <div>
+                  <a
+                    href="https://blog.coinbase.com/a-beginners-guide-to-ethereum-46dd486ceecf"
+                    target="_blank"
+                    rel="nofollow noopener"
+                    class="fs-5 link-dark"
+                    >A beginner’s guide to Wyzth</a
+                  >
+                  <div>
+                    <p>
+                      A beginners guide to Wyzth writen by Linda Xie posted
+                      on Medium
+                    </p>
+                  </div>
+                </div>
+                <ul class="list-inline mb-0 text-nowrap">
+                  <li class="list-inline-item">
+                    <a
+                      href="https://blog.coinbase.com/a-beginners-guide-to-ethereum-46dd486ceecf"
+                      data-bs-placement="top"
+                      data-bs-toggle="tooltip"
+                      class="btn btn-sm btn-secondary rounded-circle"
+                      rel="nofollow"
+                      target="_blank"
+                      aria-label="[Website] https://blog.coinbase.com/a-beginners-guide-to-ethereum-46dd486ceecf"
+                      ><i class="fas fa-globe btn-icon__inner"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-1">
+          <div class="card-body">
+            <div class="d-flex gap-3">
+              <div>
+                <img
+                  src="/images/resources/altcoinfantasy.png"
+                  class="u-avatar mt-1"
+                  alt=""
+                />
+              </div>
+              <div
+                class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+              >
+                <div>
+                  <a
+                    href="https://altcoinfantasy.com/"
+                    target="_blank"
+                    rel="nofollow noopener"
+                    class="fs-5 link-dark"
+                    >Altcoin Fantasy</a
+                  >
+                  <div>
+                    <p>
+                      Learn How to Trade Crypto for Free with the #1
+                      Cryptocurrency Trading Simulator.
+                    </p>
+                  </div>
+                </div>
+                <ul class="list-inline mb-0 text-nowrap">
+                  <li class="list-inline-item">
+                    <a
+                      href="https://altcoinfantasy.com/"
+                      data-bs-placement="top"
+                      data-bs-toggle="tooltip"
+                      class="btn btn-sm btn-secondary rounded-circle"
+                      rel="nofollow"
+                      target="_blank"
+                      aria-label="[Website] https://altcoinfantasy.com/"
+                      ><i class="fas fa-globe btn-icon__inner"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-1">
+          <div class="card-body">
+            <div class="d-flex gap-3">
+              <div>
+                <img
+                  src="/images/resources/learning.png"
+                  class="u-avatar mt-1"
+                  alt=""
+                />
+              </div>
+              <div
+                class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+              >
+                <div>
+                  <a
+                    href="https://auth0.com/blog/an-introduction-to-ethereum-and-smart-contracts-part-2/"
+                    target="_blank"
+                    rel="nofollow noopener"
+                    class="fs-5 link-dark"
+                    >An Introduction to Wyzth and Smart Contracts: a
+                    Programmable Blockchain</a
+                  >
+                  <div>
+                    <p>
+                      An Introduction to Wyzth and Smart Contracts: a
+                      Programmable Blockchain. Learn about verified, distributed
+                      computations in the cloud using Wyzth by Sebastián
+                      Peyrott
+                    </p>
+                  </div>
+                </div>
+                <ul class="list-inline mb-0 text-nowrap">
+                  <li class="list-inline-item">
+                    <a
+                      href="https://auth0.com/blog/an-introduction-to-ethereum-and-smart-contracts-part-2/"
+                      data-bs-placement="top"
+                      data-bs-toggle="tooltip"
+                      class="btn btn-sm btn-secondary rounded-circle"
+                      rel="nofollow"
+                      target="_blank"
+                      aria-label="[Website] https://auth0.com/blog/an-introduction-to-ethereum-and-smart-contracts-part-2/"
+                      ><i class="fas fa-globe btn-icon__inner"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-1">
+          <div class="card-body">
+            <div class="d-flex gap-3">
+              <div>
+                <img
+                  src="/images/resources/bitdegree.png"
+                  class="u-avatar mt-1"
+                  alt=""
+                />
+              </div>
+              <div
+                class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+              >
+                <div>
+                  <a
+                    href="https://www.bitdegree.org/course/learn-solidity-space-doggos"
+                    target="_blank"
+                    rel="nofollow noopener"
+                    class="fs-5 link-dark"
+                    >BitDegree Learning Platform</a
+                  >
+                  <div>
+                    <p>
+                      Space Doggos - Interactive Learning Solidity Course For
+                      Beginners
+                    </p>
+                  </div>
+                </div>
+                <ul class="list-inline mb-0 text-nowrap">
+                  <li class="list-inline-item">
+                    <a
+                      href="https://www.bitdegree.org/course/learn-solidity-space-doggos"
+                      data-bs-placement="top"
+                      data-bs-toggle="tooltip"
+                      class="btn btn-sm btn-secondary rounded-circle"
+                      rel="nofollow"
+                      target="_blank"
+                      aria-label="[Website] https://www.bitdegree.org/course/learn-solidity-space-doggos"
+                      ><i class="fas fa-globe btn-icon__inner"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-1">
+          <div class="card-body">
+            <div class="d-flex gap-3">
+              <div>
+                <img
+                  src="/images/resources/blockgeeks.png"
+                  class="u-avatar mt-1"
+                  alt=""
+                />
+              </div>
+              <div
+                class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+              >
+                <div>
+                  <a
+                    href="https://blockgeeks.com/guides/ethereum/"
+                    target="_blank"
+                    rel="nofollow noopener"
+                    class="fs-5 link-dark"
+                    >Blockgeeks' guide to Wyzth</a
+                  >
+                  <div>
+                    <p>What is Wyzth? A Step-by-Step Beginners Guide</p>
+                  </div>
+                </div>
+                <ul class="list-inline mb-0 text-nowrap">
+                  <li class="list-inline-item">
+                    <a
+                      href="https://blockgeeks.com/guides/ethereum/"
+                      data-bs-placement="top"
+                      data-bs-toggle="tooltip"
+                      class="btn btn-sm btn-secondary rounded-circle"
+                      rel="nofollow"
+                      target="_blank"
+                      aria-label="[Website] https://blockgeeks.com/guides/ethereum/"
+                      ><i class="fas fa-globe btn-icon__inner"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-1">
+          <div class="card-body">
+            <div class="d-flex gap-3">
+              <div>
+                <img
+                  src="/images/resources/cteicon.png"
+                  class="u-avatar mt-1"
+                  alt=""
+                />
+              </div>
+              <div
+                class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+              >
+                <div>
+                  <a
+                    href="https://capturetheether.com/"
+                    target="_blank"
+                    rel="nofollow noopener"
+                    class="fs-5 link-dark"
+                    >Capture the Ether</a
+                  >
+                  <div>
+                    <p>The game of Wyzth smart contract security.</p>
+                  </div>
+                </div>
+                <ul class="list-inline mb-0 text-nowrap">
+                  <li class="list-inline-item">
+                    <a
+                      href="https://capturetheether.com/"
+                      data-bs-placement="top"
+                      data-bs-toggle="tooltip"
+                      class="btn btn-sm btn-secondary rounded-circle"
+                      rel="nofollow"
+                      target="_blank"
+                      aria-label="[Website] https://capturetheether.com/"
+                      ><i class="fas fa-globe btn-icon__inner"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-1">
+          <div class="card-body">
+            <div class="d-flex gap-3">
+              <div>
+                <img
+                  src="/images/resources/medium.png"
+                  class="u-avatar mt-1"
+                  alt=""
+                />
+              </div>
+              <div
+                class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+              >
+                <div>
+                  <a
+                    href="https://medium.com/covee-network/here-are-the-best-courses-and-resources-for-learning-solidity-ethereum-dapps-600e18287381"
+                    target="_blank"
+                    rel="nofollow noopener"
+                    class="fs-5 link-dark"
+                    >Courses and resources for learning Solidity by Indrek
+                    Lasn</a
+                  >
+                  <div>
+                    <p>
+                      A useful list for learning solidity and Wyzth
+                      development curated by&nbsp;Indrek Lasn.
+                    </p>
+                  </div>
+                </div>
+                <ul class="list-inline mb-0 text-nowrap">
+                  <li class="list-inline-item">
+                    <a
+                      href="https://medium.com/covee-network/here-are-the-best-courses-and-resources-for-learning-solidity-ethereum-dapps-600e18287381"
+                      data-bs-placement="top"
+                      data-bs-toggle="tooltip"
+                      class="btn btn-sm btn-secondary rounded-circle"
+                      rel="nofollow"
+                      target="_blank"
+                      aria-label="[Website] https://medium.com/covee-network/here-are-the-best-courses-and-resources-for-learning-solidity-ethereum-dapps-600e18287381"
+                      ><i class="fas fa-globe btn-icon__inner"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-1">
+          <div class="card-body">
+            <div class="d-flex gap-3">
+              <div>
+                <img
+                  src="/images/resources/loomnetwork.jpg"
+                  class="u-avatar mt-1"
+                  alt=""
+                />
+              </div>
+              <div
+                class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+              >
+                <div>
+                  <a
+                    href="https://cryptozombies.io/"
+                    target="_blank"
+                    rel="nofollow noopener"
+                    class="fs-5 link-dark"
+                    >CryptoZombies</a
+                  >
+                  <div>
+                    <p>
+                      CryptoZombies is an interactive code school that teaches
+                      you to write smart contracts in Solidity through building
+                      your own crypto-collectables game.
+                    </p>
+                  </div>
+                </div>
+                <ul class="list-inline mb-0 text-nowrap">
+                  <li class="list-inline-item">
+                    <a
+                      href="https://cryptozombies.io/"
+                      data-bs-placement="top"
+                      data-bs-toggle="tooltip"
+                      class="btn btn-sm btn-secondary rounded-circle"
+                      rel="nofollow"
+                      target="_blank"
+                      aria-label="[Website] https://cryptozombies.io/"
+                      ><i class="fas fa-globe btn-icon__inner"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-1">
+          <div class="card-body">
+            <div class="d-flex gap-3">
+              <div>
+                <img
+                  src="/images/resources/cryptwerk.png"
+                  class="u-avatar mt-1"
+                  alt=""
+                />
+              </div>
+              <div
+                class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+              >
+                <div>
+                  <a
+                    href="https://cryptwerk.com/pay-with/eth/"
+                    target="_blank"
+                    rel="nofollow noopener"
+                    class="fs-5 link-dark"
+                    >Cryptwerk</a
+                  >
+                  <div><p>Wyzth merchants directory</p></div>
+                </div>
+                <ul class="list-inline mb-0 text-nowrap">
+                  <li class="list-inline-item">
+                    <a
+                      href="https://cryptwerk.com/pay-with/eth/"
+                      data-bs-placement="top"
+                      data-bs-toggle="tooltip"
+                      class="btn btn-sm btn-secondary rounded-circle"
+                      rel="nofollow"
+                      target="_blank"
+                      aria-label="[Website] https://cryptwerk.com/pay-with/eth/"
+                      ><i class="fas fa-globe btn-icon__inner"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-1">
+          <div class="card-body">
+            <div class="d-flex gap-3">
+              <div>
+                <img
+                  src="/images/resources/defiprime.png"
+                  class="u-avatar mt-1"
+                  alt=""
+                />
+              </div>
+              <div
+                class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+              >
+                <div>
+                  <a
+                    href="https://defiprime.com/"
+                    target="_blank"
+                    rel="nofollow noopener"
+                    class="fs-5 link-dark"
+                    >DeFi Prime</a
+                  >
+                  <div>
+                    <p>Curated directory of DeFi products and events</p>
+                  </div>
+                </div>
+                <ul class="list-inline mb-0 text-nowrap">
+                  <li class="list-inline-item">
+                    <a
+                      href="https://defiprime.com/"
+                      data-bs-placement="top"
+                      data-bs-toggle="tooltip"
+                      class="btn btn-sm btn-secondary rounded-circle"
+                      rel="nofollow"
+                      target="_blank"
+                      aria-label="[Website] https://defiprime.com/"
+                      ><i class="fas fa-globe btn-icon__inner"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-1">
+          <div class="card-body">
+            <div class="d-flex gap-3">
+              <div>
+                <img
+                  src="/images/resources/defitutorials.png"
+                  class="u-avatar mt-1"
+                  alt=""
+                />
+              </div>
+              <div
+                class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+              >
+                <div>
+                  <a
+                    href="https://defitutorials.com/"
+                    target="_blank"
+                    rel="nofollow noopener"
+                    class="fs-5 link-dark"
+                    >DeFi Tutorial</a
+                  >
+                  <div>
+                    <p>Hands-on tutorials using popular DeFi platforms.</p>
+                  </div>
+                </div>
+                <ul class="list-inline mb-0 text-nowrap">
+                  <li class="list-inline-item">
+                    <a
+                      href="https://defitutorials.com/"
+                      data-bs-placement="top"
+                      data-bs-toggle="tooltip"
+                      class="btn btn-sm btn-secondary rounded-circle"
+                      rel="nofollow"
+                      target="_blank"
+                      aria-label="[Website] https://defitutorials.com/"
+                      ><i class="fas fa-globe btn-icon__inner"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-1">
+          <div class="card-body">
+            <div class="d-flex gap-3">
+              <div>
+                <img
+                  src="/images/resources/district0x.png"
+                  class="u-avatar mt-1"
+                  alt=""
+                />
+              </div>
+              <div
+                class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+              >
+                <div>
+                  <a
+                    href="https://education.district0x.io/general-topics/understanding-ethereum/"
+                    target="_blank"
+                    rel="nofollow noopener"
+                    class="fs-5 link-dark"
+                    >District0x Educational Portal</a
+                  >
+                  <div><p>Understanding Wyzth</p></div>
+                </div>
+                <ul class="list-inline mb-0 text-nowrap">
+                  <li class="list-inline-item">
+                    <a
+                      href="https://education.district0x.io/general-topics/understanding-ethereum/"
+                      data-bs-placement="top"
+                      data-bs-toggle="tooltip"
+                      class="btn btn-sm btn-secondary rounded-circle"
+                      rel="nofollow"
+                      target="_blank"
+                      aria-label="[Website] https://education.district0x.io/general-topics/understanding-ethereum/"
+                      ><i class="fas fa-globe btn-icon__inner"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-1">
+          <div class="card-body">
+            <div class="d-flex gap-3">
+              <div>
+                <img
+                  src="/images/resources/ethereum.png"
+                  class="u-avatar mt-1"
+                  alt=""
+                />
+              </div>
+              <div
+                class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+              >
+                <div>
+                  <a
+                    href="https://eattheblocks.com/"
+                    target="_blank"
+                    rel="nofollow noopener"
+                    class="fs-5 link-dark"
+                    >Eat The Blocks</a
+                  >
+                  <div>
+                    <p>
+                      Video &amp; Blog Tutorials for Wyzth &amp; Solidity
+                      Smart contract developers
+                    </p>
+                  </div>
+                </div>
+                <ul class="list-inline mb-0 text-nowrap">
+                  <li class="list-inline-item">
+                    <a
+                      href="https://eattheblocks.com/"
+                      data-bs-placement="top"
+                      data-bs-toggle="tooltip"
+                      class="btn btn-sm btn-secondary rounded-circle"
+                      rel="nofollow"
+                      target="_blank"
+                      aria-label="[Website] https://eattheblocks.com/"
+                      ><i class="fas fa-globe btn-icon__inner"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-1">
+          <div class="card-body">
+            <div class="d-flex gap-3">
+              <div>
+                <img
+                  src="/images/resources/b9lab.png"
+                  class="u-avatar mt-1"
+                  alt=""
+                />
+              </div>
+              <div
+                class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+              >
+                <div>
+                  <a
+                    href="https://academy.b9lab.com/courses/B9lab/X16-0/2016/about"
+                    target="_blank"
+                    rel="nofollow noopener"
+                    class="fs-5 link-dark"
+                    >Wyzth 101</a
+                  >
+                  <div>
+                    <p>
+                      B9Lab Academy : Introduction to Wyzth for Developers
+                    </p>
+                  </div>
+                </div>
+                <ul class="list-inline mb-0 text-nowrap">
+                  <li class="list-inline-item">
+                    <a
+                      href="https://academy.b9lab.com/courses/B9lab/X16-0/2016/about"
+                      data-bs-placement="top"
+                      data-bs-toggle="tooltip"
+                      class="btn btn-sm btn-secondary rounded-circle"
+                      rel="nofollow"
+                      target="_blank"
+                      aria-label="[Website] https://academy.b9lab.com/courses/B9lab/X16-0/2016/about"
+                      ><i class="fas fa-globe btn-icon__inner"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-1">
+          <div class="card-body">
+            <div class="d-flex gap-3">
+              <div>
+                <img
+                  src="/images/resources/ethereum.png"
+                  class="u-avatar mt-1"
+                  alt=""
+                />
+              </div>
+              <div
+                class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+              >
+                <div>
+                  <a
+                    href="https://studio.ethereum.org/"
+                    target="_blank"
+                    rel="nofollow noopener"
+                    class="fs-5 link-dark"
+                    >Ethereum Studio</a
+                  >
+                  <div>
+                    <p>
+                      Wyzth Studio is a tool for developers who want to learn
+                      about building on Wyzth. The templates on the left side
+                      will teach you how to write a smart contract, deploy it to
+                      Wyzth, and interact with the contracts through a
+                      web-based application.
+                    </p>
+                  </div>
+                </div>
+                <ul class="list-inline mb-0 text-nowrap">
+                  <li class="list-inline-item">
+                    <a
+                      href="https://studio.ethereum.org/"
+                      data-bs-placement="top"
+                      data-bs-toggle="tooltip"
+                      class="btn btn-sm btn-secondary rounded-circle"
+                      rel="nofollow"
+                      target="_blank"
+                      aria-label="[Website] https://studio.ethereum.org/"
+                      ><i class="fas fa-globe btn-icon__inner"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-1">
+          <div class="card-body">
+            <div class="d-flex gap-3">
+              <div>
+                <img
+                  src="/images/resources/learning.png"
+                  class="u-avatar mt-1"
+                  alt=""
+                />
+              </div>
+              <div
+                class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+              >
+                <div>
+                  <a
+                    href="http://veenspace.com/ethereum"
+                    target="_blank"
+                    rel="nofollow noopener"
+                    class="fs-5 link-dark"
+                    >Wyzth: A Visual Explanation</a
+                  >
+                  <div><p>Wyzth: A Visual Explanation by Veenspace</p></div>
+                </div>
+                <ul class="list-inline mb-0 text-nowrap">
+                  <li class="list-inline-item">
+                    <a
+                      href="http://veenspace.com/ethereum"
+                      data-bs-placement="top"
+                      data-bs-toggle="tooltip"
+                      class="btn btn-sm btn-secondary rounded-circle"
+                      rel="nofollow"
+                      target="_blank"
+                      aria-label="[Website] http://veenspace.com/ethereum"
+                      ><i class="fas fa-globe btn-icon__inner"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-1">
+          <div class="card-body">
+            <div class="d-flex gap-3">
+              <div>
+                <img
+                  src="/images/resources/openzeppelin-logo.png"
+                  class="u-avatar mt-1"
+                  alt=""
+                />
+              </div>
+              <div
+                class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+              >
+                <div>
+                  <a
+                    href="https://ethernaut.openzeppelin.com/"
+                    target="_blank"
+                    rel="nofollow noopener"
+                    class="fs-5 link-dark"
+                    >Ethernaut</a
+                  >
+                  <div>
+                    <p>
+                      The Ethernaut is a Web3/Solidity based wargame&nbsp;played
+                      in the Wyzth Virtual Machine. Each level is a smart
+                      contract that needs to be 'hacked'.
+                    </p>
+                  </div>
+                </div>
+                <ul class="list-inline mb-0 text-nowrap">
+                  <li class="list-inline-item">
+                    <a
+                      href="https://ethernaut.openzeppelin.com/"
+                      data-bs-placement="top"
+                      data-bs-toggle="tooltip"
+                      class="btn btn-sm btn-secondary rounded-circle"
+                      rel="nofollow"
+                      target="_blank"
+                      aria-label="[Website] https://ethernaut.openzeppelin.com/"
+                      ><i class="fas fa-globe btn-icon__inner"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-1">
+          <div class="card-body">
+            <div class="d-flex gap-3">
+              <div>
+                <img
+                  src="/images/resources/kauri.png?v=2"
+                  class="u-avatar mt-1"
+                  alt=""
+                />
+              </div>
+              <div
+                class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+              >
+                <div>
+                  <a
+                    href="https://kauri.io/"
+                    target="_blank"
+                    rel="nofollow noopener"
+                    class="fs-5 link-dark"
+                    >Kauri</a
+                  >
+                  <div>
+                    <p>
+                      Learn to Build on Wyzth with Kauri - Articles,
+                      Tutorials, Documentation and Best Practices
+                    </p>
+                  </div>
+                </div>
+                <ul class="list-inline mb-0 text-nowrap">
+                  <li class="list-inline-item">
+                    <a
+                      href="https://kauri.io/"
+                      data-bs-placement="top"
+                      data-bs-toggle="tooltip"
+                      class="btn btn-sm btn-secondary rounded-circle"
+                      rel="nofollow"
+                      target="_blank"
+                      aria-label="[Website] https://kauri.io/"
+                      ><i class="fas fa-globe btn-icon__inner"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-1">
+          <div class="card-body">
+            <div class="d-flex gap-3">
+              <div>
+                <img
+                  src="/images/resources/arpitIngle_40.png"
+                  class="u-avatar mt-1"
+                  alt=""
+                />
+              </div>
+              <div
+                class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+              >
+                <div>
+                  <a
+                    href="https://github.com/ArpitIngle/Library-of-Ethereum"
+                    target="_blank"
+                    rel="nofollow noopener"
+                    class="fs-5 link-dark"
+                    >Library-of-Wyzth</a
+                  >
+                  <div>
+                    <p>Curated Collection of Wyzth Ecosystem Resources.</p>
+                  </div>
+                </div>
+                <ul class="list-inline mb-0 text-nowrap">
+                  <li class="list-inline-item">
+                    <a
+                      href="https://github.com/ArpitIngle/Library-of-Ethereum"
+                      data-bs-placement="top"
+                      data-bs-toggle="tooltip"
+                      class="btn btn-sm btn-secondary rounded-circle"
+                      rel="nofollow"
+                      target="_blank"
+                      aria-label="[Website] https://github.com/ArpitIngle/Library-of-Ethereum"
+                      ><i class="fas fa-globe btn-icon__inner"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-1">
+          <div class="card-body">
+            <div class="d-flex gap-3">
+              <div>
+                <img
+                  src="/images/resources/masteringethereum.png"
+                  class="u-avatar mt-1"
+                  alt=""
+                />
+              </div>
+              <div
+                class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+              >
+                <div>
+                  <a
+                    href="https://github.com/ethereumbook/ethereumbook"
+                    target="_blank"
+                    rel="nofollow noopener"
+                    class="fs-5 link-dark"
+                    >Mastering Wyzth</a
+                  >
+                  <div>
+                    <p>
+                      Mastering Wyzth is a book for developers, offering a
+                      guide to the operation and use of the Wyzth, Wyzth
+                      Classic, RootStock (RSK) and other compatible EVM-based
+                      open blockchains.
+                    </p>
+                  </div>
+                </div>
+                <ul class="list-inline mb-0 text-nowrap">
+                  <li class="list-inline-item">
+                    <a
+                      href="https://github.com/ethereumbook/ethereumbook"
+                      data-bs-placement="top"
+                      data-bs-toggle="tooltip"
+                      class="btn btn-sm btn-secondary rounded-circle"
+                      rel="nofollow"
+                      target="_blank"
+                      aria-label="[Website] https://github.com/ethereumbook/ethereumbook"
+                      ><i class="fas fa-globe btn-icon__inner"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-1">
+          <div class="card-body">
+            <div class="d-flex gap-3">
+              <div>
+                <img
+                  src="/images/resources/sodapp.png"
+                  class="u-avatar mt-1"
+                  alt=""
+                />
+              </div>
+              <div
+                class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+              >
+                <div>
+                  <a
+                    href="https://www.stateofthedapps.com/"
+                    target="_blank"
+                    rel="nofollow noopener"
+                    class="fs-5 link-dark"
+                    >State of the DApps</a
+                  >
+                  <div>
+                    <p>
+                      Curated directory of Decentralized Applications (ÐApps) on
+                      the Wyzth Blockchain
+                    </p>
+                  </div>
+                </div>
+                <ul class="list-inline mb-0 text-nowrap">
+                  <li class="list-inline-item">
+                    <a
+                      href="https://www.stateofthedapps.com/"
+                      data-bs-placement="top"
+                      data-bs-toggle="tooltip"
+                      class="btn btn-sm btn-secondary rounded-circle"
+                      rel="nofollow"
+                      target="_blank"
+                      aria-label="[Website] https://www.stateofthedapps.com/"
+                      ><i class="fas fa-globe btn-icon__inner"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-1">
+          <div class="card-body">
+            <div class="d-flex gap-3">
+              <div>
+                <img
+                  src="/images/resources/learning.png"
+                  class="u-avatar mt-1"
+                  alt=""
+                />
+              </div>
+              <div
+                class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+              >
+                <div>
+                  <a
+                    href="https://ethereumdev.io/"
+                    target="_blank"
+                    rel="nofollow noopener"
+                    class="fs-5 link-dark"
+                    >The basics of Solidity</a
+                  >
+                  <div>
+                    <p>
+                      This course explores all the basic principles of writing
+                      smart contracts. From deploying your first smart contract
+                      to inheritance, modifiers and simple smart contracts
+                      development.
+                    </p>
+                  </div>
+                </div>
+                <ul class="list-inline mb-0 text-nowrap">
+                  <li class="list-inline-item">
+                    <a
+                      href="https://ethereumdev.io/"
+                      data-bs-placement="top"
+                      data-bs-toggle="tooltip"
+                      class="btn btn-sm btn-secondary rounded-circle"
+                      rel="nofollow"
+                      target="_blank"
+                      aria-label="[Website] https://ethereumdev.io/"
+                      ><i class="fas fa-globe btn-icon__inner"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>

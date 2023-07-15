@@ -178,8 +178,8 @@
 
                       <%= link(
                         gettext("Directory"),
-                        class: "dropdown-item #{tab_status("dummy", @conn.request_path)}",
-                        to: tokens_path(@conn, :index)
+                        class: "dropdown-item #{tab_status("Directory", @conn.request_path)}",
+                        to: "/directories"
                       ) %>
 
                    
@@ -208,8 +208,8 @@
 
                       <%= link(
                         gettext("Smart Contract Search"),
-                        class: "dropdown-item #{tab_status("dummy", @conn.request_path)}",
-                        to: tokens_path(@conn, :index)
+                        class: "dropdown-item #{tab_status("contract-search", @conn.request_path)}",
+                        to: "/contract-search"
                       ) %>
 
                       <%= link(
@@ -220,8 +220,8 @@
 
                       <%= link(
                         gettext("Vyper Online Compiler"),
-                        class: "dropdown-item #{tab_status("dummy", @conn.request_path)}",
-                        to: "vyper-verification"
+                        class: "dropdown-item #{tab_status("vyper-verification", @conn.request_path)}",
+                        to: "/vyper-verification"
                       ) %>
 
                       <%= link(

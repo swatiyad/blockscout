@@ -1,12 +1,13 @@
 <section class="container mt-30 mb-3">
+
  <div id="ContentPlaceHolder1_exchangewalletdiv">
- <h1 class="mx-1">BenchMark Listing </h1>
+ <h1 class="px-1">Tools</h1>
       <div class="card mb-1">
         <div class="card-body">
           <div class="d-flex gap-3">
             <div>
               <img
-                src="/images/resources/icobench.png?v=1"
+                src="/images/resources/ethereum.png"
                 class="u-avatar mt-1"
                 alt=""
               />
@@ -16,30 +17,30 @@
             >
               <div>
                 <a
-                  href="https://icobench.com/"
+                  href="https://buidler.dev/"
                   class="fs-5 link-dark"
                   rel="nofollow"
                   target="_blank"
                   data-bs-toggle="tooltip"
-                  >ICObench</a
+                  >Buidler by Nomic Labs</a
                 >
                 <div>
                   <p>
-                    ICObench is an ICO rating platform supported by investors
-                    and financial experts.
+                    Buidler is a task runner for Ethereum smart contract
+                    developers.
                   </p>
                 </div>
               </div>
               <ul class="list-inline mb-0 text-nowrap">
                 <li class="list-inline-item">
                   <a
-                    href="https://icobench.com/"
+                    href="https://buidler.dev/"
                     data-bs-placement="top"
                     data-bs-toggle="tooltip"
                     class="btn btn-sm btn-secondary rounded-circle"
                     rel="nofollow"
                     target="_blank"
-                    aria-label="[Website] https://icobench.com/"
+                    aria-label="[Website] https://buidler.dev/"
                     ><i class="fas fa-globe"></i
                   ></a>
                 </li>
@@ -53,7 +54,7 @@
           <div class="d-flex gap-3">
             <div>
               <img
-                src="/images/resources/icoalert.png?v=1"
+                src="/images/resources/bulktoken.png?v=2"
                 class="u-avatar mt-1"
                 alt=""
               />
@@ -63,30 +64,30 @@
             >
               <div>
                 <a
-                  href="https://www.icoalert.com/"
+                  href="http://bulktokensending.online"
                   class="fs-5 link-dark"
                   rel="nofollow"
                   target="_blank"
                   data-bs-toggle="tooltip"
-                  >ICO Alert</a
+                  >Bulk token sending</a
                 >
                 <div>
                   <p>
-                    The trusted, comprehensive ICO Discovery Platform - Become
-                    Your Own Venture Capitalist
+                    Allow conducting Airdrop very quickly. CSV import and bulk
+                    sending is available.
                   </p>
                 </div>
               </div>
               <ul class="list-inline mb-0 text-nowrap">
                 <li class="list-inline-item">
                   <a
-                    href="https://www.icoalert.com/"
+                    href="http://bulktokensending.online"
                     data-bs-placement="top"
                     data-bs-toggle="tooltip"
                     class="btn btn-sm btn-secondary rounded-circle"
                     rel="nofollow"
                     target="_blank"
-                    aria-label="[Website] https://www.icoalert.com/"
+                    aria-label="[Website] http://bulktokensending.online"
                     ><i class="fas fa-globe"></i
                   ></a>
                 </li>
@@ -100,7 +101,7 @@
           <div class="d-flex gap-3">
             <div>
               <img
-                src="/images/resources/icodrops.png?v=1"
+                src="/images/resources/chainstack.png"
                 class="u-avatar mt-1"
                 alt=""
               />
@@ -110,31 +111,30 @@
             >
               <div>
                 <a
-                  href="https://icodrops.com"
+                  href="https://chainstack.com/"
                   class="fs-5 link-dark"
                   rel="nofollow"
                   target="_blank"
                   data-bs-toggle="tooltip"
-                  >ICO Drops</a
+                  >Chainstack</a
                 >
                 <div>
                   <p>
-                    ICO Drops is an independent ICO (Token Sale) database and is
-                    not affiliated with any ICO project or company. Our Interest
-                    Level does not constitute financial or investment advice.
+                    Chainstack allows anyone to launch its own Ethereum node
+                    within minutes.
                   </p>
                 </div>
               </div>
               <ul class="list-inline mb-0 text-nowrap">
                 <li class="list-inline-item">
                   <a
-                    href="https://icodrops.com"
+                    href="https://chainstack.com/"
                     data-bs-placement="top"
                     data-bs-toggle="tooltip"
                     class="btn btn-sm btn-secondary rounded-circle"
                     rel="nofollow"
                     target="_blank"
-                    aria-label="[Website] https://icodrops.com"
+                    aria-label="[Website] https://chainstack.com/"
                     ><i class="fas fa-globe"></i
                   ></a>
                 </li>
@@ -148,7 +148,7 @@
           <div class="d-flex gap-3">
             <div>
               <img
-                src="/images/resources/cointelligence.png?v=1"
+                src="/images/resources/ethereum.png"
                 class="u-avatar mt-1"
                 alt=""
               />
@@ -158,30 +158,30 @@
             >
               <div>
                 <a
-                  href="https://www.cointelligence.com/content/ico_list/"
+                  href="https://solidifier.coina.ge/"
                   class="fs-5 link-dark"
                   rel="nofollow"
                   target="_blank"
                   data-bs-toggle="tooltip"
-                  >Cointelligence</a
+                  >Coinage Solidifier</a
                 >
                 <div>
                   <p>
-                    Cointelligence is a platform for monitoring and analyzing
-                    real-time crypto-economy market data.
+                    Takes solidity code and flattens it into a concatenated
+                    version ready for Etherscan's verification tool.
                   </p>
                 </div>
               </div>
               <ul class="list-inline mb-0 text-nowrap">
                 <li class="list-inline-item">
                   <a
-                    href="https://www.cointelligence.com/content/ico_list/"
+                    href="https://solidifier.coina.ge/"
                     data-bs-placement="top"
                     data-bs-toggle="tooltip"
                     class="btn btn-sm btn-secondary rounded-circle"
                     rel="nofollow"
                     target="_blank"
-                    aria-label="[Website] https://www.cointelligence.com/content/ico_list/"
+                    aria-label="[Website] https://solidifier.coina.ge/"
                     ><i class="fas fa-globe"></i
                   ></a>
                 </li>
@@ -195,7 +195,7 @@
           <div class="d-flex gap-3">
             <div>
               <img
-                src="/images/resources/cryptoindonesia.png?v=1"
+                src="/images/resources/cryptoview.png"
                 class="u-avatar mt-1"
                 alt=""
               />
@@ -205,30 +205,33 @@
             >
               <div>
                 <a
-                  href="https://www.cryptocoinindonesia.com/"
+                  href="https://www.cryptoview.com/"
                   class="fs-5 link-dark"
                   rel="nofollow"
                   target="_blank"
                   data-bs-toggle="tooltip"
-                  >Cryptocoin Indonesia</a
+                  >CryptoView</a
                 >
                 <div>
                   <p>
-                    Cryptocoin Indonesia is ICO listing that only listing ICOs
-                    that already manual verified by Cryptocoin Indonesia.
+                    CryptoView is a trading and portfolio management platform
+                    with multi-exchange support. An all-in-one integrated
+                    interface that combines portfolio management, trading,
+                    market data, news sources, calendar and other useful trading
+                    tools, under one secured account.
                   </p>
                 </div>
               </div>
               <ul class="list-inline mb-0 text-nowrap">
                 <li class="list-inline-item">
                   <a
-                    href="https://www.cryptocoinindonesia.com/"
+                    href="https://www.cryptoview.com/"
                     data-bs-placement="top"
                     data-bs-toggle="tooltip"
                     class="btn btn-sm btn-secondary rounded-circle"
                     rel="nofollow"
                     target="_blank"
-                    aria-label="[Website] https://www.cryptocoinindonesia.com/"
+                    aria-label="[Website] https://www.cryptoview.com/"
                     ><i class="fas fa-globe"></i
                   ></a>
                 </li>
@@ -242,7 +245,7 @@
           <div class="d-flex gap-3">
             <div>
               <img
-                src="/images/resources/cryptodiffer.png?v=1"
+                src="/images/resources/dappnode.png"
                 class="u-avatar mt-1"
                 alt=""
               />
@@ -252,25 +255,33 @@
             >
               <div>
                 <a
-                  href="https://cryptodiffer.com/"
+                  href="https://www.dappnode.io/"
                   class="fs-5 link-dark"
                   rel="nofollow"
                   target="_blank"
                   data-bs-toggle="tooltip"
-                  >CryptoDiffer</a
+                  >DAppNode</a
                 >
-                <div><p>Aggregator of top ICO experts opinions.&nbsp;</p></div>
+                <div>
+                  <p>
+                    More than 70 % of Ethereum nodes are hosted in VPS's. With
+                    DAppNode any user can maintain their own nodes in their
+                    machines contributing to hardware decentralization, jumping
+                    into a real p2p economy and taking control back of their
+                    privacy and data
+                  </p>
+                </div>
               </div>
               <ul class="list-inline mb-0 text-nowrap">
                 <li class="list-inline-item">
                   <a
-                    href="https://cryptodiffer.com/"
+                    href="https://www.dappnode.io/"
                     data-bs-placement="top"
                     data-bs-toggle="tooltip"
                     class="btn btn-sm btn-secondary rounded-circle"
                     rel="nofollow"
                     target="_blank"
-                    aria-label="[Website] https://cryptodiffer.com/"
+                    aria-label="[Website] https://www.dappnode.io/"
                     ><i class="fas fa-globe"></i
                   ></a>
                 </li>
@@ -284,7 +295,7 @@
           <div class="d-flex gap-3">
             <div>
               <img
-                src="/images/resources/icofinch.png?v=1"
+                src="/images/resources/ethlookup2.png"
                 class="u-avatar mt-1"
                 alt=""
               />
@@ -294,30 +305,37 @@
             >
               <div>
                 <a
-                  href="https://icofinch.com/"
+                  href="https://chrome.google.com/webstore/detail/etheraddresslookup/pdknmigbbbhmllnmgdfalmedcmcefdfn"
                   class="fs-5 link-dark"
                   rel="nofollow"
                   target="_blank"
                   data-bs-toggle="tooltip"
-                  >ICO Finch</a
+                  >Ether Address Lookup</a
                 >
                 <div>
                   <p>
-                    Discover, analyze and monitor new ICOs with ICO Finch. ICO
-                    Ratings, clean calendar, profiles, bookmarks and more.
+                    Automatically adds links to strings that look like Ethereum
+                    addresses so you can quickly look them up on your favorite
+                    block explorer. Prevents you from interacting with known
+                    phishing domains by wiping the DOM and displaying text
+                    notifying you. The blacklists found in this repo serve both
+                    the EAL Chrome Extension &amp; MetaMask Chrome Extension. We
+                    use a Levenshtein distance algorithm to detect similar URLs,
+                    so if you encounter an erroneously-blocked website, please
+                    add it to the whitelist.
                   </p>
                 </div>
               </div>
               <ul class="list-inline mb-0 text-nowrap">
                 <li class="list-inline-item">
                   <a
-                    href="https://icofinch.com/"
+                    href="https://chrome.google.com/webstore/detail/etheraddresslookup/pdknmigbbbhmllnmgdfalmedcmcefdfn"
                     data-bs-placement="top"
                     data-bs-toggle="tooltip"
                     class="btn btn-sm btn-secondary rounded-circle"
                     rel="nofollow"
                     target="_blank"
-                    aria-label="[Website] https://icofinch.com/"
+                    aria-label="[Website] https://chrome.google.com/webstore/detail/etheraddresslookup/pdknmigbbbhmllnmgdfalmedcmcefdfn"
                     ><i class="fas fa-globe"></i
                   ></a>
                 </li>
@@ -331,7 +349,7 @@
           <div class="d-flex gap-3">
             <div>
               <img
-                src="/images/resources/icohotlist.png?v=1"
+                src="/images/resources/ethereum.png"
                 class="u-avatar mt-1"
                 alt=""
               />
@@ -341,30 +359,25 @@
             >
               <div>
                 <a
-                  href="https://www.icohotlist.com/"
+                  href="https://github.com/LimeChain/etherlime/blob/master/docs/source/cli/flattener.rst"
                   class="fs-5 link-dark"
                   rel="nofollow"
                   target="_blank"
                   data-bs-toggle="tooltip"
-                  >ICO Hot List</a
+                  >Etherlime Flattener</a
                 >
-                <div>
-                  <p>
-                    ICO Hot List is an independently curated catalog of the most
-                    promising active and upcoming Initial Coin Offerings.
-                  </p>
-                </div>
+                <div><p>Solidity smart contract flattener by Etherlime</p></div>
               </div>
               <ul class="list-inline mb-0 text-nowrap">
                 <li class="list-inline-item">
                   <a
-                    href="https://www.icohotlist.com/"
+                    href="https://github.com/LimeChain/etherlime/blob/master/docs/source/cli/flattener.rst"
                     data-bs-placement="top"
                     data-bs-toggle="tooltip"
                     class="btn btn-sm btn-secondary rounded-circle"
                     rel="nofollow"
                     target="_blank"
-                    aria-label="[Website] https://www.icohotlist.com/"
+                    aria-label="[Website] https://github.com/LimeChain/etherlime/blob/master/docs/source/cli/flattener.rst"
                     ><i class="fas fa-globe"></i
                   ></a>
                 </li>
@@ -378,7 +391,7 @@
           <div class="d-flex gap-3">
             <div>
               <img
-                src="/images/resources/icopools.png?v=1"
+                src="/images/resources/ethereum.png"
                 class="u-avatar mt-1"
                 alt=""
               />
@@ -388,32 +401,31 @@
             >
               <div>
                 <a
-                  href="https://icopools.io/en/"
+                  href="https://github.com/GoodforGod/java-etherscan-api"
                   class="fs-5 link-dark"
                   rel="nofollow"
                   target="_blank"
                   data-bs-toggle="tooltip"
-                  >ICO Pools</a
+                  >Etherscan Java API implementation by GoodforGod</a
                 >
                 <div>
                   <p>
-                    ICOPOOLS.io - TOP of ICO pools. Service collects data from
-                    ICO pools about LIVE deals and represents it in a useful
-                    table form with all the sorting options needed. The data is
-                    updated every hour.
+                    Etherscan Java API implementation. Library supports all
+                    available EtherScan API calls for all available Ethereum
+                    Networks.
                   </p>
                 </div>
               </div>
               <ul class="list-inline mb-0 text-nowrap">
                 <li class="list-inline-item">
                   <a
-                    href="https://icopools.io/en/"
+                    href="https://github.com/GoodforGod/java-etherscan-api"
                     data-bs-placement="top"
                     data-bs-toggle="tooltip"
                     class="btn btn-sm btn-secondary rounded-circle"
                     rel="nofollow"
                     target="_blank"
-                    aria-label="[Website] https://icopools.io/en/"
+                    aria-label="[Website] https://github.com/GoodforGod/java-etherscan-api"
                     ><i class="fas fa-globe"></i
                   ></a>
                 </li>
@@ -427,7 +439,7 @@
           <div class="d-flex gap-3">
             <div>
               <img
-                src="/images/resources/icotoplist.png"
+                src="/images/resources/ethereum.png"
                 class="u-avatar mt-1"
                 alt=""
               />
@@ -437,30 +449,30 @@
             >
               <div>
                 <a
-                  href="https://icotoplist.com"
+                  href="https://abi.hashex.org/"
                   class="fs-5 link-dark"
                   rel="nofollow"
                   target="_blank"
                   data-bs-toggle="tooltip"
-                  >ICO Toplist</a
+                  >HashEx</a
                 >
                 <div>
                   <p>
-                    ICO Toplist is an ICO listing and rating service and
-                    database of whitepapers and airdrops
+                    Online ABI Encoding Service for Solidity Smart Contracts by
+                    HashEx
                   </p>
                 </div>
               </div>
               <ul class="list-inline mb-0 text-nowrap">
                 <li class="list-inline-item">
                   <a
-                    href="https://icotoplist.com"
+                    href="https://abi.hashex.org/"
                     data-bs-placement="top"
                     data-bs-toggle="tooltip"
                     class="btn btn-sm btn-secondary rounded-circle"
                     rel="nofollow"
                     target="_blank"
-                    aria-label="[Website] https://icotoplist.com"
+                    aria-label="[Website] https://abi.hashex.org/"
                     ><i class="fas fa-globe"></i
                   ></a>
                 </li>
@@ -474,7 +486,7 @@
           <div class="d-flex gap-3">
             <div>
               <img
-                src="/images/resources/icocheck.png?v=1"
+                src="/images/resources/ethereum.png"
                 class="u-avatar mt-1"
                 alt=""
               />
@@ -484,31 +496,37 @@
             >
               <div>
                 <a
-                  href="https://www.ico-check.com/"
+                  href="http://remix.ethereum.org"
                   class="fs-5 link-dark"
                   rel="nofollow"
                   target="_blank"
                   data-bs-toggle="tooltip"
-                  >ICO-Check</a
+                  >Remix</a
                 >
                 <div>
                   <p>
-                    ICO-Check is a cryptocurrency ICO website featuring an
-                    extensive and well-researched list of the ongoing and
-                    upcoming initial coin offerings.
+                    Remix is a powerful, open source tool that helps you write
+                    Solidity contracts straight from the browser. Written in
+                    JavaScript, Remix supports both usage in the browser and
+                    locally. Remix also supports testing, debugging and
+                    deploying of smart contracts and much more. Our Remix
+                    project with all its features is available at
+                    remix.ethereum.org and more information can be found in
+                    these docs. Our IDE tool is available at our GitHub
+                    repository.
                   </p>
                 </div>
               </div>
               <ul class="list-inline mb-0 text-nowrap">
                 <li class="list-inline-item">
                   <a
-                    href="https://www.ico-check.com/"
+                    href="http://remix.ethereum.org"
                     data-bs-placement="top"
                     data-bs-toggle="tooltip"
                     class="btn btn-sm btn-secondary rounded-circle"
                     rel="nofollow"
                     target="_blank"
-                    aria-label="[Website] https://www.ico-check.com/"
+                    aria-label="[Website] http://remix.ethereum.org"
                     ><i class="fas fa-globe"></i
                   ></a>
                 </li>
@@ -522,7 +540,7 @@
           <div class="d-flex gap-3">
             <div>
               <img
-                src="/images/resources/icomarks.png?v=1"
+                src="/images/resources/rotki.png"
                 class="u-avatar mt-1"
                 alt=""
               />
@@ -532,31 +550,31 @@
             >
               <div>
                 <a
-                  href="https://icomarks.com/"
+                  href="https://rotki.com/"
                   class="fs-5 link-dark"
                   rel="nofollow"
                   target="_blank"
                   data-bs-toggle="tooltip"
-                  >ICOmarks</a
+                  >Rotki</a
                 >
                 <div>
                   <p>
-                    ICOmaks is a rating and statistical platform for ICO
-                    projects. We have a large number of convenient tools for
-                    researching the most promising projects for investment.
+                    Opensource asset analytics, tracking, management, and tax
+                    reporting application that enables you to take ownership of
+                    your financial data.
                   </p>
                 </div>
               </div>
               <ul class="list-inline mb-0 text-nowrap">
                 <li class="list-inline-item">
                   <a
-                    href="https://icomarks.com/"
+                    href="https://rotki.com/"
                     data-bs-placement="top"
                     data-bs-toggle="tooltip"
                     class="btn btn-sm btn-secondary rounded-circle"
                     rel="nofollow"
                     target="_blank"
-                    aria-label="[Website] https://icomarks.com/"
+                    aria-label="[Website] https://rotki.com/"
                     ><i class="fas fa-globe"></i
                   ></a>
                 </li>
@@ -570,7 +588,7 @@
           <div class="d-flex gap-3">
             <div>
               <img
-                src="/images/resources/icoscoming.png?v=1"
+                src="/images/resources/smartdec.png"
                 class="u-avatar mt-1"
                 alt=""
               />
@@ -580,30 +598,33 @@
             >
               <div>
                 <a
-                  href="https://www.icoscoming.com/"
+                  href="https://tool.smartdec.net/"
                   class="fs-5 link-dark"
                   rel="nofollow"
                   target="_blank"
                   data-bs-toggle="tooltip"
-                  >ICOsComing</a
+                  >SmartCheck</a
                 >
                 <div>
                   <p>
-                    About Live ICO &amp; Upcoming ICOs in Market, Month Wise
-                    Listings!
+                    SmartCheck automatically checks Smart Contracts for
+                    vulnerabilities and bad practices – it highlights them in
+                    the code and gives a detailed explanation of the problem. We
+                    already use it in our security audits. SmartCheck engine is
+                    now open source
                   </p>
                 </div>
               </div>
               <ul class="list-inline mb-0 text-nowrap">
                 <li class="list-inline-item">
                   <a
-                    href="https://www.icoscoming.com/"
+                    href="https://tool.smartdec.net/"
                     data-bs-placement="top"
                     data-bs-toggle="tooltip"
                     class="btn btn-sm btn-secondary rounded-circle"
                     rel="nofollow"
                     target="_blank"
-                    aria-label="[Website] https://www.icoscoming.com/"
+                    aria-label="[Website] https://tool.smartdec.net/"
                     ><i class="fas fa-globe"></i
                   ></a>
                 </li>
@@ -617,7 +638,7 @@
           <div class="d-flex gap-3">
             <div>
               <img
-                src="/images/resources/neironix.png?v=1"
+                src="/images/resources/ethereum.png"
                 class="u-avatar mt-1"
                 alt=""
               />
@@ -627,32 +648,27 @@
             >
               <div>
                 <a
-                  href="https://neironix.io/"
+                  href="https://www.npmjs.com/package/sol-profiler"
                   class="fs-5 link-dark"
                   rel="nofollow"
                   target="_blank"
                   data-bs-toggle="tooltip"
-                  >Neironix</a
+                  >sol-profiler</a
                 >
                 <div>
-                  <p>
-                    Rating analytical agency for assessing investment risks in
-                    the blockchain economy the main aim of which is to provide
-                    to investors necessary analytical data and effective
-                    decision-making tools.
-                  </p>
+                  <p>Lists Down Solidity Smart Contract Methods Attributes</p>
                 </div>
               </div>
               <ul class="list-inline mb-0 text-nowrap">
                 <li class="list-inline-item">
                   <a
-                    href="https://neironix.io/"
+                    href="https://www.npmjs.com/package/sol-profiler"
                     data-bs-placement="top"
                     data-bs-toggle="tooltip"
                     class="btn btn-sm btn-secondary rounded-circle"
                     rel="nofollow"
                     target="_blank"
-                    aria-label="[Website] https://neironix.io/"
+                    aria-label="[Website] https://www.npmjs.com/package/sol-profiler"
                     ><i class="fas fa-globe"></i
                   ></a>
                 </li>
@@ -666,7 +682,7 @@
           <div class="d-flex gap-3">
             <div>
               <img
-                src="/images/resources/safariico_40.png"
+                src="/images/resources/ethereum.png"
                 class="u-avatar mt-1"
                 alt=""
               />
@@ -676,118 +692,29 @@
             >
               <div>
                 <a
-                  href="https://saferico.com/"
+                  href="https://www.npmjs.com/package/sol-verifier"
                   class="fs-5 link-dark"
                   rel="nofollow"
                   target="_blank"
                   data-bs-toggle="tooltip"
-                  >SaferIco</a
+                  >Sol-Verifier</a
                 >
                 <div>
                   <p>
-                    SaferICO aims to be a top-notch smart contract development
-                    and security service provider. The company Audited more than
-                    +200 smart contracts, and we provide ICO services too like
-                    developing smart contracts and publishing ICO.
+                    An NPM Package to Verify Solidity Contracts on Etherscan
                   </p>
                 </div>
               </div>
               <ul class="list-inline mb-0 text-nowrap">
                 <li class="list-inline-item">
                   <a
-                    href="https://saferico.com/"
+                    href="https://www.npmjs.com/package/sol-verifier"
                     data-bs-placement="top"
                     data-bs-toggle="tooltip"
                     class="btn btn-sm btn-secondary rounded-circle"
                     rel="nofollow"
                     target="_blank"
-                    aria-label="[Website] https://saferico.com/"
-                    ><i class="fas fa-globe"></i
-                  ></a>
-                </li>
-                <li class="list-inline-item">
-                  <a
-                    href="mailto:admin@saferico.com"
-                    data-bs-placement="top"
-                    data-bs-toggle="tooltip"
-                    class="btn btn-sm btn-secondary rounded-circle"
-                    rel="nofollow"
-                    target="_blank"
-                    aria-label="[Email] mailto:admin@saferico.com"
-                    ><i class="fa fa-envelope"></i
-                  ></a>
-                </li>
-                <li class="list-inline-item">
-                  <a
-                    href="https://twitter.com/ico_sfi"
-                    data-bs-toggle="tooltip"
-                    data-bs-placement="top"
-                    class="btn btn-sm btn-secondary rounded-circle"
-                    rel="nofollow"
-                    target="_blank"
-                    aria-label="[Twitter] https://twitter.com/ico_sfi"
-                    ><i class="fab fa-twitter"></i
-                  ></a>
-                </li>
-                <li class="list-inline-item">
-                  <a
-                    href="https://github.com/Saferico"
-                    data-bs-toggle="tooltip"
-                    data-bs-placement="top"
-                    class="btn btn-sm btn-secondary rounded-circle"
-                    rel="nofollow"
-                    target="_blank"
-                    aria-label="[Github] https://github.com/Saferico"
-                    ><i class="fab fa-github"></i
-                  ></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card mb-1">
-        <div class="card-body">
-          <div class="d-flex gap-3">
-            <div>
-              <img
-                src="/images/resources/topicolist.png?v=1"
-                class="u-avatar mt-1"
-                alt=""
-              />
-            </div>
-            <div
-              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
-            >
-              <div>
-                <a
-                  href="https://topicolist.com"
-                  class="fs-5 link-dark"
-                  rel="nofollow"
-                  target="_blank"
-                  data-bs-toggle="tooltip"
-                  >Top ICO List</a
-                >
-                <div>
-                  <p>
-                    Top ICO List is curated by ICO analysts to bring you the
-                    best new ICO coins that are active, upcoming or in
-                    discounted pre ICO. Best choice for quality ICOs. Browse the
-                    ICO listings to discover our top initial coin offering
-                    picks.
-                  </p>
-                </div>
-              </div>
-              <ul class="list-inline mb-0 text-nowrap">
-                <li class="list-inline-item">
-                  <a
-                    href="https://topicolist.com"
-                    data-bs-placement="top"
-                    data-bs-toggle="tooltip"
-                    class="btn btn-sm btn-secondary rounded-circle"
-                    rel="nofollow"
-                    target="_blank"
-                    aria-label="[Website] https://topicolist.com"
+                    aria-label="[Website] https://www.npmjs.com/package/sol-verifier"
                     ><i class="fas fa-globe"></i
                   ></a>
                 </li>
@@ -801,7 +728,7 @@
           <div class="d-flex gap-3">
             <div>
               <img
-                src="/images/resources/trackico.png?v=1"
+                src="/images/resources/vscodesolceditor.png"
                 class="u-avatar mt-1"
                 alt=""
               />
@@ -811,31 +738,294 @@
             >
               <div>
                 <a
-                  href="https://www.trackico.io/"
+                  href="https://marketplace.visualstudio.com/items?itemName=tintinweb.solidity-visual-auditor"
                   class="fs-5 link-dark"
                   rel="nofollow"
                   target="_blank"
                   data-bs-toggle="tooltip"
-                  >Track ICO</a
+                  >Solidity Visual Auditor</a
                 >
                 <div>
                   <p>
-                    TrackICO - a platform that was established to provide its
-                    users reliable information about the best Initial Coin
-                    Offering projects and help ICOs attract more investors.
+                    This VSCode extension contributes security-centric syntax
+                    and semantic highlighting, a detailed class outline and
+                    advanced Solidity code insights to Visual Studio Code
                   </p>
                 </div>
               </div>
               <ul class="list-inline mb-0 text-nowrap">
                 <li class="list-inline-item">
                   <a
-                    href="https://www.trackico.io/"
+                    href="https://marketplace.visualstudio.com/items?itemName=tintinweb.solidity-visual-auditor"
                     data-bs-placement="top"
                     data-bs-toggle="tooltip"
                     class="btn btn-sm btn-secondary rounded-circle"
                     rel="nofollow"
                     target="_blank"
-                    aria-label="[Website] https://www.trackico.io/"
+                    aria-label="[Website] https://marketplace.visualstudio.com/items?itemName=tintinweb.solidity-visual-auditor"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/ethereum.png"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://blog.jubb.xyz/post/solt-release/"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >Solt Solidity Tool</a
+                >
+                <div>
+                  <p>
+                    Formerly&nbsp;<code>solc-sjw</code>, the project quickly
+                    outgrew the basic usage of writing Solidity standard json
+                    output for your smart contracts and has been renamed as a
+                    result with a more streamlined set of commands and options
+                    to suit all your Solidity contract verification from the
+                    command line, no matter the project’s structure or framework
+                    you’re using to develop with.
+                  </p>
+                </div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://blog.jubb.xyz/post/solt-release/"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://blog.jubb.xyz/post/solt-release/"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/tenderly.png"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://tenderly.dev/"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >Tenderly</a
+                >
+                <div>
+                  <p>
+                    Real-time monitoring, alerting and troubleshooting for Smart
+                    Contracts.
+                  </p>
+                </div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://tenderly.dev/"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://tenderly.dev/"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/truffle.jpg"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://truffleframework.com/"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >Truffle Framework</a
+                >
+                <div>
+                  <p>
+                    Sweet tools for smart contracts. The Truffle Suite gets
+                    developers from idea to dapp as comfortably as possible.
+                    Truffle: A world-class development environment, testing
+                    framework and asset pipeline for blockchains using the EVM,
+                    aiming to make life as a developer easier. Ganache: A
+                    personal blockchain for Ethereum development you can use to
+                    deploy contracts, develop your applications, and run tests.
+                    Drizzle: A collection of front-end libraries that make
+                    writing dapp front-ends easier and more predictable. The
+                    core of Drizzle is based on a Redux store, so you have
+                    access to the spectacular development tools around Redux. We
+                    take care of synchronizing your contract data, transaction
+                    data and more.
+                  </p>
+                </div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://truffleframework.com/"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://truffleframework.com/"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/sentinal.png"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://uppward.sentinelprotocol.io/"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >UPPward by Sentinel Protocol</a
+                >
+                <div>
+                  <p>
+                    The UPPward Extensions for the Chrome and Firefox browsers
+                    use threat intelligence data in the Threat Reputation
+                    Database to alert investors of potential phishing scams and
+                    to flag suspicious wallet addresses. Users of the UPPward
+                    browser extensions can contribute to the community by
+                    reporting malicious activities they encounter. Once a report
+                    has been received, the case would be reviewed and verified
+                    by the Sentinels. Together, we can make the digital world a
+                    safer place."
+                  </p>
+                </div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://uppward.sentinelprotocol.io/"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://uppward.sentinelprotocol.io/"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/walletconnect.png"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://walletconnect.org/"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >WalletConnect</a
+                >
+                <div>
+                  <p>
+                    WalletConnect is an open protocol for connecting desktop
+                    Dapps to mobile Wallets using end-to-end encryption by
+                    scanning a QR code. Opening up a whole world of Dapps that
+                    were once only available to Metamask. The user can interact
+                    with any Dapp without comprising their private keys and will
+                    be notified to sign any transaction requests on their
+                    mobile.
+                  </p>
+                </div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://walletconnect.org/"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://walletconnect.org/"
                     ><i class="fas fa-globe"></i
                   ></a>
                 </li>
@@ -845,4 +1035,5 @@
         </div>
       </div>
     </div>
+
 </section>

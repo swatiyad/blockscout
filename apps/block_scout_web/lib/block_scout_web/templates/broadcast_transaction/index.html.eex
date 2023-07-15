@@ -1,4 +1,4 @@
-<section data-page="contract-verification-choose-type" class="container new-smart-contract-container card mt-30 p-2 pb-4">
+<section data-page="contract-verification-choose-type" class="container card mt-30 p-2 pb-4">
 <script defer src="<%= static_path(@conn, "/js/broadcast-transaction.js") %>"></script>
 <h2>Broadcast Raw Transaction </h2>
 <p class="mb-0 pb-4">This page allows you to paste a Signed Raw Transaction in hex format (i.e. characters 0-9, a-f) and broadcast it over the WYZTHScan network.</p>

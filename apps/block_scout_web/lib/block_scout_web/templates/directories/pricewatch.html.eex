@@ -1,12 +1,12 @@
-<section class="container mt-30 mb-3">
- <div id="ContentPlaceHolder1_exchangewalletdiv">
- <h1 class="mx-1">BenchMark Listing </h1>
+<section class="container mt-30">
+<div id="ContentPlaceHolder1_exchangewalletdiv">
+<h2>Price Watch</h2>
       <div class="card mb-1">
         <div class="card-body">
           <div class="d-flex gap-3">
             <div>
               <img
-                src="/images/resources/icobench.png?v=1"
+                src="/images/resources/coingecko.png?v=1"
                 class="u-avatar mt-1"
                 alt=""
               />
@@ -16,30 +16,30 @@
             >
               <div>
                 <a
-                  href="https://icobench.com/"
+                  href="https://www.coingecko.com"
                   class="fs-5 link-dark"
                   rel="nofollow"
                   target="_blank"
                   data-bs-toggle="tooltip"
-                  >ICObench</a
+                  >CoinGecko</a
                 >
                 <div>
                   <p>
-                    ICObench is an ICO rating platform supported by investors
-                    and financial experts.
+                    Cryptocurrency valuation and ranking website that helps you
+                    quantitatively evaluate and rank your coins.
                   </p>
                 </div>
               </div>
               <ul class="list-inline mb-0 text-nowrap">
                 <li class="list-inline-item">
                   <a
-                    href="https://icobench.com/"
+                    href="https://www.coingecko.com"
                     data-bs-placement="top"
                     data-bs-toggle="tooltip"
                     class="btn btn-sm btn-secondary rounded-circle"
                     rel="nofollow"
                     target="_blank"
-                    aria-label="[Website] https://icobench.com/"
+                    aria-label="[Website] https://www.coingecko.com"
                     ><i class="fas fa-globe"></i
                   ></a>
                 </li>
@@ -53,7 +53,7 @@
           <div class="d-flex gap-3">
             <div>
               <img
-                src="/images/resources/icoalert.png?v=1"
+                src="/images/resources/coinmarketcap.png?v=1"
                 class="u-avatar mt-1"
                 alt=""
               />
@@ -63,30 +63,27 @@
             >
               <div>
                 <a
-                  href="https://www.icoalert.com/"
+                  href="https://coinmarketcap.com/"
                   class="fs-5 link-dark"
                   rel="nofollow"
                   target="_blank"
                   data-bs-toggle="tooltip"
-                  >ICO Alert</a
+                  >Coinmarketcap</a
                 >
                 <div>
-                  <p>
-                    The trusted, comprehensive ICO Discovery Platform - Become
-                    Your Own Venture Capitalist
-                  </p>
+                  <p>Cryptocurrency market cap rankings, charts, and more!</p>
                 </div>
               </div>
               <ul class="list-inline mb-0 text-nowrap">
                 <li class="list-inline-item">
                   <a
-                    href="https://www.icoalert.com/"
+                    href="https://coinmarketcap.com/"
                     data-bs-placement="top"
                     data-bs-toggle="tooltip"
                     class="btn btn-sm btn-secondary rounded-circle"
                     rel="nofollow"
                     target="_blank"
-                    aria-label="[Website] https://www.icoalert.com/"
+                    aria-label="[Website] https://coinmarketcap.com/"
                     ><i class="fas fa-globe"></i
                   ></a>
                 </li>
@@ -100,7 +97,7 @@
           <div class="d-flex gap-3">
             <div>
               <img
-                src="/images/resources/icodrops.png?v=1"
+                src="/images/resources/cryptocompare.png?v=1"
                 class="u-avatar mt-1"
                 alt=""
               />
@@ -110,31 +107,31 @@
             >
               <div>
                 <a
-                  href="https://icodrops.com"
+                  href="https://www.cryptocompare.com/"
                   class="fs-5 link-dark"
                   rel="nofollow"
                   target="_blank"
                   data-bs-toggle="tooltip"
-                  >ICO Drops</a
+                  >CryptoCompare</a
                 >
                 <div>
                   <p>
-                    ICO Drops is an independent ICO (Token Sale) database and is
-                    not affiliated with any ICO project or company. Our Interest
-                    Level does not constitute financial or investment advice.
+                    CryptoCompare is an interactive platform where you can
+                    discuss the latest Crypto trends and monitor all markets
+                    streaming in real time
                   </p>
                 </div>
               </div>
               <ul class="list-inline mb-0 text-nowrap">
                 <li class="list-inline-item">
                   <a
-                    href="https://icodrops.com"
+                    href="https://www.cryptocompare.com/"
                     data-bs-placement="top"
                     data-bs-toggle="tooltip"
                     class="btn btn-sm btn-secondary rounded-circle"
                     rel="nofollow"
                     target="_blank"
-                    aria-label="[Website] https://icodrops.com"
+                    aria-label="[Website] https://www.cryptocompare.com/"
                     ><i class="fas fa-globe"></i
                   ></a>
                 </li>
@@ -148,7 +145,7 @@
           <div class="d-flex gap-3">
             <div>
               <img
-                src="/images/resources/cointelligence.png?v=1"
+                src="/images/resources/baserank.png"
                 class="u-avatar mt-1"
                 alt=""
               />
@@ -158,30 +155,90 @@
             >
               <div>
                 <a
-                  href="https://www.cointelligence.com/content/ico_list/"
+                  href="https://baserank.io/"
                   class="fs-5 link-dark"
                   rel="nofollow"
                   target="_blank"
                   data-bs-toggle="tooltip"
-                  >Cointelligence</a
+                  >Baserank</a
                 >
                 <div>
                   <p>
-                    Cointelligence is a platform for monitoring and analyzing
-                    real-time crypto-economy market data.
+                    Crypto Asset Research Platform. Reliable place to find
+                    relevant information about crypto assets.
                   </p>
                 </div>
               </div>
               <ul class="list-inline mb-0 text-nowrap">
                 <li class="list-inline-item">
                   <a
-                    href="https://www.cointelligence.com/content/ico_list/"
+                    href="https://baserank.io/"
                     data-bs-placement="top"
                     data-bs-toggle="tooltip"
                     class="btn btn-sm btn-secondary rounded-circle"
                     rel="nofollow"
                     target="_blank"
-                    aria-label="[Website] https://www.cointelligence.com/content/ico_list/"
+                    aria-label="[Website] https://baserank.io/"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="https://twitter.com/baserank1"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Twitter] https://twitter.com/baserank1"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/bnc.png?v=2"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://bravenewcoin.com/"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >Brave New Coin</a
+                >
+                <div>
+                  <p>
+                    Bitcoin price &amp; Crypto Market Cap for over 500
+                    cryptocurrencies &amp; tokens for global financial market
+                    makers.
+                  </p>
+                </div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://bravenewcoin.com/"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://bravenewcoin.com/"
                     ><i class="fas fa-globe"></i
                   ></a>
                 </li>
@@ -195,7 +252,7 @@
           <div class="d-flex gap-3">
             <div>
               <img
-                src="/images/resources/cryptoindonesia.png?v=1"
+                src="/images/resources/coin360.png?v=2"
                 class="u-avatar mt-1"
                 alt=""
               />
@@ -205,30 +262,30 @@
             >
               <div>
                 <a
-                  href="https://www.cryptocoinindonesia.com/"
+                  href="https://coin360.com/"
                   class="fs-5 link-dark"
                   rel="nofollow"
                   target="_blank"
                   data-bs-toggle="tooltip"
-                  >Cryptocoin Indonesia</a
+                  >COIN360</a
                 >
                 <div>
                   <p>
-                    Cryptocoin Indonesia is ICO listing that only listing ICOs
-                    that already manual verified by Cryptocoin Indonesia.
+                    A simple and clear visualization of the crypto market
+                    live-updated 24/7. Follow the market as it changes.
                   </p>
                 </div>
               </div>
               <ul class="list-inline mb-0 text-nowrap">
                 <li class="list-inline-item">
                   <a
-                    href="https://www.cryptocoinindonesia.com/"
+                    href="https://coin360.com/"
                     data-bs-placement="top"
                     data-bs-toggle="tooltip"
                     class="btn btn-sm btn-secondary rounded-circle"
                     rel="nofollow"
                     target="_blank"
-                    aria-label="[Website] https://www.cryptocoinindonesia.com/"
+                    aria-label="[Website] https://coin360.com/"
                     ><i class="fas fa-globe"></i
                   ></a>
                 </li>
@@ -242,7 +299,7 @@
           <div class="d-flex gap-3">
             <div>
               <img
-                src="/images/resources/cryptodiffer.png?v=1"
+                src="/images/resources/coincap.png?v=1"
                 class="u-avatar mt-1"
                 alt=""
               />
@@ -252,25 +309,27 @@
             >
               <div>
                 <a
-                  href="https://cryptodiffer.com/"
+                  href="https://coincap.io/"
                   class="fs-5 link-dark"
                   rel="nofollow"
                   target="_blank"
                   data-bs-toggle="tooltip"
-                  >CryptoDiffer</a
+                  >Coincap</a
                 >
-                <div><p>Aggregator of top ICO experts opinions.&nbsp;</p></div>
+                <div>
+                  <p>The Realtime Market Data Resource for Digital Assets</p>
+                </div>
               </div>
               <ul class="list-inline mb-0 text-nowrap">
                 <li class="list-inline-item">
                   <a
-                    href="https://cryptodiffer.com/"
+                    href="https://coincap.io/"
                     data-bs-placement="top"
                     data-bs-toggle="tooltip"
                     class="btn btn-sm btn-secondary rounded-circle"
                     rel="nofollow"
                     target="_blank"
-                    aria-label="[Website] https://cryptodiffer.com/"
+                    aria-label="[Website] https://coincap.io/"
                     ><i class="fas fa-globe"></i
                   ></a>
                 </li>
@@ -284,7 +343,7 @@
           <div class="d-flex gap-3">
             <div>
               <img
-                src="/images/resources/icofinch.png?v=1"
+                src="/images/resources/coincodex.png"
                 class="u-avatar mt-1"
                 alt=""
               />
@@ -294,30 +353,31 @@
             >
               <div>
                 <a
-                  href="https://icofinch.com/"
+                  href="https://coincodex.com/"
                   class="fs-5 link-dark"
                   rel="nofollow"
                   target="_blank"
                   data-bs-toggle="tooltip"
-                  >ICO Finch</a
+                  >CoinCodex</a
                 >
                 <div>
                   <p>
-                    Discover, analyze and monitor new ICOs with ICO Finch. ICO
-                    Ratings, clean calendar, profiles, bookmarks and more.
+                    CoinCodex is your window into the world of cryptocurrency,
+                    gathering data from more than 180 exchanges to bring you
+                    real-time prices and historical charts for over 5,000 coins.
                   </p>
                 </div>
               </div>
               <ul class="list-inline mb-0 text-nowrap">
                 <li class="list-inline-item">
                   <a
-                    href="https://icofinch.com/"
+                    href="https://coincodex.com/"
                     data-bs-placement="top"
                     data-bs-toggle="tooltip"
                     class="btn btn-sm btn-secondary rounded-circle"
                     rel="nofollow"
                     target="_blank"
-                    aria-label="[Website] https://icofinch.com/"
+                    aria-label="[Website] https://coincodex.com/"
                     ><i class="fas fa-globe"></i
                   ></a>
                 </li>
@@ -331,7 +391,7 @@
           <div class="d-flex gap-3">
             <div>
               <img
-                src="/images/resources/icohotlist.png?v=1"
+                src="/images/resources/coinpanda.png"
                 class="u-avatar mt-1"
                 alt=""
               />
@@ -341,30 +401,33 @@
             >
               <div>
                 <a
-                  href="https://www.icohotlist.com/"
+                  href="https://coinpanda.io/"
                   class="fs-5 link-dark"
                   rel="nofollow"
                   target="_blank"
                   data-bs-toggle="tooltip"
-                  >ICO Hot List</a
+                  >Coinpanda</a
                 >
                 <div>
                   <p>
-                    ICO Hot List is an independently curated catalog of the most
-                    promising active and upcoming Initial Coin Offerings.
+                    A simple and intuitive crypto portfolio tracker and tax
+                    calculator. Connect all your exchanges and wallets directly.
+                    Support for 100+ exchanges and 6500+ cryptocurrencies.
+                    Export ready to file tax forms like Form 8949, Schedule D
+                    and RF-1159B.
                   </p>
                 </div>
               </div>
               <ul class="list-inline mb-0 text-nowrap">
                 <li class="list-inline-item">
                   <a
-                    href="https://www.icohotlist.com/"
+                    href="https://coinpanda.io/"
                     data-bs-placement="top"
                     data-bs-toggle="tooltip"
                     class="btn btn-sm btn-secondary rounded-circle"
                     rel="nofollow"
                     target="_blank"
-                    aria-label="[Website] https://www.icohotlist.com/"
+                    aria-label="[Website] https://coinpanda.io/"
                     ><i class="fas fa-globe"></i
                   ></a>
                 </li>
@@ -378,7 +441,7 @@
           <div class="d-flex gap-3">
             <div>
               <img
-                src="/images/resources/icopools.png?v=1"
+                src="/images/resources/coinriders_40.png"
                 class="u-avatar mt-1"
                 alt=""
               />
@@ -388,32 +451,90 @@
             >
               <div>
                 <a
-                  href="https://icopools.io/en/"
+                  href="https://coinriders.com/"
                   class="fs-5 link-dark"
                   rel="nofollow"
                   target="_blank"
                   data-bs-toggle="tooltip"
-                  >ICO Pools</a
+                  >Coinriders</a
                 >
                 <div>
                   <p>
-                    ICOPOOLS.io - TOP of ICO pools. Service collects data from
-                    ICO pools about LIVE deals and represents it in a useful
-                    table form with all the sorting options needed. The data is
-                    updated every hour.
+                    Coinriders provides financial analysis and accurate coins
+                    price.
                   </p>
                 </div>
               </div>
               <ul class="list-inline mb-0 text-nowrap">
                 <li class="list-inline-item">
                   <a
-                    href="https://icopools.io/en/"
+                    href="https://coinriders.com/"
                     data-bs-placement="top"
                     data-bs-toggle="tooltip"
                     class="btn btn-sm btn-secondary rounded-circle"
                     rel="nofollow"
                     target="_blank"
-                    aria-label="[Website] https://icopools.io/en/"
+                    aria-label="[Website] https://coinriders.com/"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="https://twitter.com/Coinriders1"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Twitter] https://twitter.com/Coinriders1"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/coinsportfolio.png"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://coinsportfolio.net/en"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >CoinsPortfolio</a
+                >
+                <div>
+                  <p>
+                    Crypto Coins Portfolio provides real-time top cryptocurrency
+                    rates, market cap. Watch your favorite coin only on
+                    CoinsPortolio.Net
+                  </p>
+                </div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://coinsportfolio.net/en"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://coinsportfolio.net/en"
                     ><i class="fas fa-globe"></i
                   ></a>
                 </li>
@@ -427,7 +548,7 @@
           <div class="d-flex gap-3">
             <div>
               <img
-                src="/images/resources/icotoplist.png"
+                src="/images/resources/cointracker.png?v=1"
                 class="u-avatar mt-1"
                 alt=""
               />
@@ -437,30 +558,31 @@
             >
               <div>
                 <a
-                  href="https://icotoplist.com"
+                  href="https://www.cointracker.io/"
                   class="fs-5 link-dark"
                   rel="nofollow"
                   target="_blank"
                   data-bs-toggle="tooltip"
-                  >ICO Toplist</a
+                  >Cointracker</a
                 >
                 <div>
                   <p>
-                    ICO Toplist is an ICO listing and rating service and
-                    database of whitepapers and airdrops
+                    Connect your cryptocurrency wallets and exchanges. Track
+                    your portfolio performance. Get your crypto taxes done in
+                    minutes. Supports all top exchanges and over 2,500 coins.
                   </p>
                 </div>
               </div>
               <ul class="list-inline mb-0 text-nowrap">
                 <li class="list-inline-item">
                   <a
-                    href="https://icotoplist.com"
+                    href="https://www.cointracker.io/"
                     data-bs-placement="top"
                     data-bs-toggle="tooltip"
                     class="btn btn-sm btn-secondary rounded-circle"
                     rel="nofollow"
                     target="_blank"
-                    aria-label="[Website] https://icotoplist.com"
+                    aria-label="[Website] https://www.cointracker.io/"
                     ><i class="fas fa-globe"></i
                   ></a>
                 </li>
@@ -474,7 +596,7 @@
           <div class="d-flex gap-3">
             <div>
               <img
-                src="/images/resources/icocheck.png?v=1"
+                src="/images/resources/coinwink.png"
                 class="u-avatar mt-1"
                 alt=""
               />
@@ -484,31 +606,30 @@
             >
               <div>
                 <a
-                  href="https://www.ico-check.com/"
+                  href="https://coinwink.com/"
                   class="fs-5 link-dark"
                   rel="nofollow"
                   target="_blank"
                   data-bs-toggle="tooltip"
-                  >ICO-Check</a
+                  >Coinwink</a
                 >
                 <div>
                   <p>
-                    ICO-Check is a cryptocurrency ICO website featuring an
-                    extensive and well-researched list of the ongoing and
-                    upcoming initial coin offerings.
+                    Coinwink is fast, reliable, privacy-focused, open-source
+                    crypto alerts and portfolio management web app.
                   </p>
                 </div>
               </div>
               <ul class="list-inline mb-0 text-nowrap">
                 <li class="list-inline-item">
                   <a
-                    href="https://www.ico-check.com/"
+                    href="https://coinwink.com/"
                     data-bs-placement="top"
                     data-bs-toggle="tooltip"
                     class="btn btn-sm btn-secondary rounded-circle"
                     rel="nofollow"
                     target="_blank"
-                    aria-label="[Website] https://www.ico-check.com/"
+                    aria-label="[Website] https://coinwink.com/"
                     ><i class="fas fa-globe"></i
                   ></a>
                 </li>
@@ -522,7 +643,7 @@
           <div class="d-flex gap-3">
             <div>
               <img
-                src="/images/resources/icomarks.png?v=1"
+                src="/images/resources/covesting.png?v=1"
                 class="u-avatar mt-1"
                 alt=""
               />
@@ -532,31 +653,34 @@
             >
               <div>
                 <a
-                  href="https://icomarks.com/"
+                  href="https://ci.covesting.io/"
                   class="fs-5 link-dark"
                   rel="nofollow"
                   target="_blank"
                   data-bs-toggle="tooltip"
-                  >ICOmarks</a
+                  >Crypto Intelligence Portal</a
                 >
                 <div>
                   <p>
-                    ICOmaks is a rating and statistical platform for ICO
-                    projects. We have a large number of convenient tools for
-                    researching the most promising projects for investment.
+                    The Crypto Intelligence Portal is created to be a robust
+                    educational resource and knowledge base built by traders for
+                    traders, featuring latest market news, unique content
+                    created by leading crypto experts aimed at educating the
+                    community, trading ideas, and the ability to discuss latest
+                    market developments.
                   </p>
                 </div>
               </div>
               <ul class="list-inline mb-0 text-nowrap">
                 <li class="list-inline-item">
                   <a
-                    href="https://icomarks.com/"
+                    href="https://ci.covesting.io/"
                     data-bs-placement="top"
                     data-bs-toggle="tooltip"
                     class="btn btn-sm btn-secondary rounded-circle"
                     rel="nofollow"
                     target="_blank"
-                    aria-label="[Website] https://icomarks.com/"
+                    aria-label="[Website] https://ci.covesting.io/"
                     ><i class="fas fa-globe"></i
                   ></a>
                 </li>
@@ -570,7 +694,7 @@
           <div class="d-flex gap-3">
             <div>
               <img
-                src="/images/resources/icoscoming.png?v=1"
+                src="/images/resources/cryptoalerting.png"
                 class="u-avatar mt-1"
                 alt=""
               />
@@ -580,30 +704,31 @@
             >
               <div>
                 <a
-                  href="https://www.icoscoming.com/"
+                  href="https://cryptocurrencyalerting.com/"
                   class="fs-5 link-dark"
                   rel="nofollow"
                   target="_blank"
                   data-bs-toggle="tooltip"
-                  >ICOsComing</a
+                  >Cryptocurrency Alerting</a
                 >
                 <div>
                   <p>
-                    About Live ICO &amp; Upcoming ICOs in Market, Month Wise
-                    Listings!
+                    A no-nonsense cryptocurrency alerting tool. Get notified
+                    when important stuff happens in crypto - such as coin
+                    listings, price fluctuations and wallet txns.
                   </p>
                 </div>
               </div>
               <ul class="list-inline mb-0 text-nowrap">
                 <li class="list-inline-item">
                   <a
-                    href="https://www.icoscoming.com/"
+                    href="https://cryptocurrencyalerting.com/"
                     data-bs-placement="top"
                     data-bs-toggle="tooltip"
                     class="btn btn-sm btn-secondary rounded-circle"
                     rel="nofollow"
                     target="_blank"
-                    aria-label="[Website] https://www.icoscoming.com/"
+                    aria-label="[Website] https://cryptocurrencyalerting.com/"
                     ><i class="fas fa-globe"></i
                   ></a>
                 </li>
@@ -617,7 +742,7 @@
           <div class="d-flex gap-3">
             <div>
               <img
-                src="/images/resources/neironix.png?v=1"
+                src="/images/resources/defipulse.png"
                 class="u-avatar mt-1"
                 alt=""
               />
@@ -627,32 +752,30 @@
             >
               <div>
                 <a
-                  href="https://neironix.io/"
+                  href="https://defipulse.com/"
                   class="fs-5 link-dark"
                   rel="nofollow"
                   target="_blank"
                   data-bs-toggle="tooltip"
-                  >Neironix</a
+                  >DeFi Pulse</a
                 >
                 <div>
                   <p>
-                    Rating analytical agency for assessing investment risks in
-                    the blockchain economy the main aim of which is to provide
-                    to investors necessary analytical data and effective
-                    decision-making tools.
+                    Top DeFi tools tracked and ranked by value locked<br />
+                    &nbsp;
                   </p>
                 </div>
               </div>
               <ul class="list-inline mb-0 text-nowrap">
                 <li class="list-inline-item">
                   <a
-                    href="https://neironix.io/"
+                    href="https://defipulse.com/"
                     data-bs-placement="top"
                     data-bs-toggle="tooltip"
                     class="btn btn-sm btn-secondary rounded-circle"
                     rel="nofollow"
                     target="_blank"
-                    aria-label="[Website] https://neironix.io/"
+                    aria-label="[Website] https://defipulse.com/"
                     ><i class="fas fa-globe"></i
                   ></a>
                 </li>
@@ -666,7 +789,7 @@
           <div class="d-flex gap-3">
             <div>
               <img
-                src="/images/resources/safariico_40.png"
+                src="/images/resources/deltaapp.png"
                 class="u-avatar mt-1"
                 alt=""
               />
@@ -676,69 +799,106 @@
             >
               <div>
                 <a
-                  href="https://saferico.com/"
+                  href="https://delta.app/"
                   class="fs-5 link-dark"
                   rel="nofollow"
                   target="_blank"
                   data-bs-toggle="tooltip"
-                  >SaferIco</a
+                  >Delta - Crypto Portfolio App</a
                 >
                 <div>
                   <p>
-                    SaferICO aims to be a top-notch smart contract development
-                    and security service provider. The company Audited more than
-                    +200 smart contracts, and we provide ICO services too like
-                    developing smart contracts and publishing ICO.
+                    Delta is the ultimate crypto portfolio tracker app. Keep
+                    track of +6000 assets. Use the free app to get the latest
+                    coin prices and market charts in your local currency and
+                    get&nbsp;alerts + news updates to make sure you don't miss
+                    out on your next crypto investment.
                   </p>
                 </div>
               </div>
               <ul class="list-inline mb-0 text-nowrap">
                 <li class="list-inline-item">
                   <a
-                    href="https://saferico.com/"
+                    href="https://delta.app/"
                     data-bs-placement="top"
                     data-bs-toggle="tooltip"
                     class="btn btn-sm btn-secondary rounded-circle"
                     rel="nofollow"
                     target="_blank"
-                    aria-label="[Website] https://saferico.com/"
+                    aria-label="[Website] https://delta.app/"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/dropstab_40.png?v=2"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://dropstab.com/"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >DropsTab</a
+                >
+                <div>
+                  <p>
+                    DropsTab is an independent market cap website and is not
+                    affiliated with any project or company. There is no
+                    financial or investment advice.
+                  </p>
+                </div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://dropstab.com/"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://dropstab.com/"
                     ><i class="fas fa-globe"></i
                   ></a>
                 </li>
                 <li class="list-inline-item">
                   <a
-                    href="mailto:admin@saferico.com"
+                    href="mailto:support@dropstab.com"
                     data-bs-placement="top"
                     data-bs-toggle="tooltip"
                     class="btn btn-sm btn-secondary rounded-circle"
                     rel="nofollow"
                     target="_blank"
-                    aria-label="[Email] mailto:admin@saferico.com"
+                    aria-label="[Email] mailto:support@dropstab.com"
                     ><i class="fa fa-envelope"></i
                   ></a>
                 </li>
                 <li class="list-inline-item">
                   <a
-                    href="https://twitter.com/ico_sfi"
+                    href="https://twitter.com/dropstab_com"
                     data-bs-toggle="tooltip"
                     data-bs-placement="top"
                     class="btn btn-sm btn-secondary rounded-circle"
                     rel="nofollow"
                     target="_blank"
-                    aria-label="[Twitter] https://twitter.com/ico_sfi"
+                    aria-label="[Twitter] https://twitter.com/dropstab_com"
                     ><i class="fab fa-twitter"></i
-                  ></a>
-                </li>
-                <li class="list-inline-item">
-                  <a
-                    href="https://github.com/Saferico"
-                    data-bs-toggle="tooltip"
-                    data-bs-placement="top"
-                    class="btn btn-sm btn-secondary rounded-circle"
-                    rel="nofollow"
-                    target="_blank"
-                    aria-label="[Github] https://github.com/Saferico"
-                    ><i class="fab fa-github"></i
                   ></a>
                 </li>
               </ul>
@@ -751,7 +911,7 @@
           <div class="d-flex gap-3">
             <div>
               <img
-                src="/images/resources/topicolist.png?v=1"
+                src="/images/resources/etherwisdom.png?v=1"
                 class="u-avatar mt-1"
                 alt=""
               />
@@ -761,33 +921,31 @@
             >
               <div>
                 <a
-                  href="https://topicolist.com"
+                  href="https://etherwisdom.com/ethereum"
                   class="fs-5 link-dark"
                   rel="nofollow"
                   target="_blank"
                   data-bs-toggle="tooltip"
-                  >Top ICO List</a
+                  >Etherwisdom</a
                 >
                 <div>
                   <p>
-                    Top ICO List is curated by ICO analysts to bring you the
-                    best new ICO coins that are active, upcoming or in
-                    discounted pre ICO. Best choice for quality ICOs. Browse the
-                    ICO listings to discover our top initial coin offering
-                    picks.
+                    Real time price and data feed for Ethereum, Tokens &amp;
+                    Cryptocurrencies. News about the latest Crowdsales &amp;
+                    ICOs
                   </p>
                 </div>
               </div>
               <ul class="list-inline mb-0 text-nowrap">
                 <li class="list-inline-item">
                   <a
-                    href="https://topicolist.com"
+                    href="https://etherwisdom.com/ethereum"
                     data-bs-placement="top"
                     data-bs-toggle="tooltip"
                     class="btn btn-sm btn-secondary rounded-circle"
                     rel="nofollow"
                     target="_blank"
-                    aria-label="[Website] https://topicolist.com"
+                    aria-label="[Website] https://etherwisdom.com/ethereum"
                     ><i class="fas fa-globe"></i
                   ></a>
                 </li>
@@ -801,7 +959,7 @@
           <div class="d-flex gap-3">
             <div>
               <img
-                src="/images/resources/trackico.png?v=1"
+                src="/images/resources/icostats.png?v=1"
                 class="u-avatar mt-1"
                 alt=""
               />
@@ -811,31 +969,221 @@
             >
               <div>
                 <a
-                  href="https://www.trackico.io/"
+                  href="https://icostats.com/"
                   class="fs-5 link-dark"
                   rel="nofollow"
                   target="_blank"
                   data-bs-toggle="tooltip"
-                  >Track ICO</a
+                  >ICO Stats</a
                 >
                 <div>
                   <p>
-                    TrackICO - a platform that was established to provide its
-                    users reliable information about the best Initial Coin
-                    Offering projects and help ICOs attract more investors.
+                    Track &amp; compare performance of ICOs. Displays detailed
+                    stats like ROI since ICO, ROI vs ETH since ICO, and charts
+                    for comparing the historical performance of ICOs.
                   </p>
                 </div>
               </div>
               <ul class="list-inline mb-0 text-nowrap">
                 <li class="list-inline-item">
                   <a
-                    href="https://www.trackico.io/"
+                    href="https://icostats.com/"
                     data-bs-placement="top"
                     data-bs-toggle="tooltip"
                     class="btn btn-sm btn-secondary rounded-circle"
                     rel="nofollow"
                     target="_blank"
-                    aria-label="[Website] https://www.trackico.io/"
+                    aria-label="[Website] https://icostats.com/"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/nomics.png"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://nomics.com/"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >Nomics</a
+                >
+                <div>
+                  <p>
+                    Cryptoasset data company delivering professional-grade
+                    market data APIs to institutional crypto investors &amp;
+                    exchanges.
+                  </p>
+                </div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://nomics.com/"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://nomics.com/"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/onchainfx.png?v=1"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://onchainfx.com/"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >Onchainfx</a
+                >
+                <div>
+                  <p>
+                    Cryptoasset metrics &amp; rankings for investors. Compare
+                    market-caps accounting for total eventual supply; plus
+                    filters, screening, historical price lookup, &amp; more
+                  </p>
+                </div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://onchainfx.com/"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://onchainfx.com/"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/spot.png?v=1"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://spot.so/"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >Spot</a
+                >
+                <div>
+                  <p>
+                    Spot is a cryptocurrency portfolio &amp; market tracking
+                    app.
+                  </p>
+                </div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://spot.so/"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://spot.so/"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/tokenstats.png?v=1"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://tokenstats.io/"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >Tokenstats</a
+                >
+                <div>
+                  <p>
+                    TokenStats is a comprehensive up-to-date catalog of crypto
+                    assets and tokens.
+                  </p>
+                </div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://tokenstats.io/"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://tokenstats.io/"
                     ><i class="fas fa-globe"></i
                   ></a>
                 </li>
@@ -845,4 +1193,5 @@
         </div>
       </div>
     </div>
+
 </section>

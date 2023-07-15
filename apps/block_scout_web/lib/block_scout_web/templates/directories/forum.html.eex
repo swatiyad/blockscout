@@ -1,0 +1,98 @@
+<section class="container mt-30">
+<h1 class="my-2 mx-1">Forum</h1>
+       <div class="card mb-1">
+      <div class="card-body">
+        <div class="d-flex gap-3">
+          <div>
+            <img
+              src="/images/resources/ethereum.png?v=1"
+              class="u-avatar mt-1"
+              alt=""
+            />
+          </div>
+          <div
+            class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+          >
+            <div>
+              <a
+                href="#"
+                class="fs-5 link-dark"
+                rel="nofollow"
+                target="_blank"
+                data-bs-toggle="tooltip"
+                >Telegram</a
+              >
+              <div>
+                <p>
+                  Telegram forum for various topic related to the WYZTHScan
+                  ecosystem
+                </p>
+              </div>
+            </div>
+            <ul class="list-inline mb-0 text-nowrap">
+              <li class="list-inline-item">
+                <a
+                  href="#"
+                  data-bs-placement="top"
+                  data-bs-toggle="tooltip"
+                  class="btn btn-sm btn-secondary rounded-circle"
+                  rel="nofollow"
+                  target="_blank"
+                  aria-label=""
+                  ><i class="fas fa-globe"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card mb-1">
+      <div class="card-body">
+        <div class="d-flex gap-3">
+          <div>
+            <img
+              src="/images/resources/ethereum.png?v=1"
+              class="u-avatar mt-1"
+              alt=""
+            />
+          </div>
+          <div
+            class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+          >
+            <div>
+              <a
+                href="#"
+                class="fs-5 link-dark"
+                rel="nofollow"
+                target="_blank"
+                data-bs-toggle="tooltip"
+                >Discord</a
+              >
+              <div>
+                <p>
+                  Chat and ask questions with WYZTHScan developers at Discord.
+                </p>
+              </div>
+            </div>
+            <ul class="list-inline mb-0 text-nowrap">
+              <li class="list-inline-item">
+                <a
+                  href="#"
+                  data-bs-placement="top"
+                  data-bs-toggle="tooltip"
+                  class="btn btn-sm btn-secondary rounded-circle"
+                  rel="nofollow"
+                  target="_blank"
+                  aria-label=""
+                  ><i class="fas fa-globe"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+</section>
