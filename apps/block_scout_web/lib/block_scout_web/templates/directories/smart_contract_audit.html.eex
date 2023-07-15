@@ -1,0 +1,1444 @@
+<section class="container mt-30">
+<div id="ContentPlaceHolder1_exchangewalletdiv">
+<h1 class="px-1">Smart Contracts Audit and Security</h1>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/ackee-blockchain_40.png"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://ackeeblockchain.com/"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >Ackee Blockchain</a
+                >
+                <div>
+                  <p>
+                    Ackee Blockchain is a team of auditors and white hat hackers
+                    who perform security audits and assessments for Ethereum and
+                    Solana.
+                  </p>
+                </div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://ackeeblockchain.com/"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://ackeeblockchain.com/"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="mailto:hello@ackeeblockchain.com"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Email] mailto:hello@ackeeblockchain.com"
+                    ><i class="fa fa-envelope"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="https://github.com/Ackee-Blockchain"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Github] https://github.com/Ackee-Blockchain"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/blockchainconsilium.png"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://www.blockchainconsilium.com/"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >Blockchain Consilium</a
+                >
+                <div>
+                  <p>
+                    Blockchain Consilium is a Smart Contract Security Auditor
+                    that specializes in DeFi (Decentralized Finance), NFT
+                    (Non-Fungible Tokens), ERC20 Tokens and Crowdsale smart
+                    contract auditing. With 96 audits completed and $2.55Bn+
+                    secured, Blockchain Consilium offers an unmatched experience
+                    of professional smart contract auditing services.
+                  </p>
+                </div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://www.blockchainconsilium.com/"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://www.blockchainconsilium.com/"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="https://twitter.com/BlockchainAudit"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Twitter] https://twitter.com/BlockchainAudit"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/blockchainlabnz.png"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://www.blockchainlabs.nz/"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >Blockchain Labs NZ</a
+                >
+                <div>
+                  <p>
+                    Over the last two years Blockchain Labs security &amp; audit
+                    team have worked with a wide range of token/DApp projects
+                    performing security audits, defect analysis, gas
+                    optimization, best practice, and architecture advice to
+                    ensure robust smart contracts and platforms pre and
+                    post-ICO.
+                  </p>
+                </div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://www.blockchainlabs.nz/"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://www.blockchainlabs.nz/"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/blocksecteam.png"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://www.blocksecteam.com/"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >BlockSec</a
+                >
+                <div><p>Securing the DeFi ecosystem</p></div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://www.blocksecteam.com/"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://www.blocksecteam.com/"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/blocksoft.jpg"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://blocksoft.biz/"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >BlockSoftLab</a
+                >
+                <div>
+                  <p>
+                    Code is Law. And bad code can indulge corrupt behavior. At
+                    BlockSoftLab we audit Smart Contracts: detect
+                    vulnerabilities and fix defects in order to ensure they
+                    fully comply with the business logic.
+                  </p>
+                </div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://blocksoft.biz/"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://blocksoft.biz/"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/bloqchain.png"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://thebloqchain.com/audit/"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >Bloqchain Audit</a
+                >
+                <div>
+                  <p>
+                    Bloqchain Science builds secure decentralized systems within
+                    your enterprise using blockchain-based ledgers, identity
+                    solutions, streaming money, tokenization, and smart
+                    contracts creation and audit. &nbsp;Our AuditScience
+                    business line is based on our blockchain security expertise.
+                    10% of Crowdfunding Money have been hacked or Stollen.
+                    Investment funds only consider digital asset offerings if
+                    the smart contracts have been audited. Our engineers have
+                    been audited more than $500 million in digital assets.
+                  </p>
+                </div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://thebloqchain.com/audit/"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://thebloqchain.com/audit/"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/byterocket.png"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://byterocket.com/"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >Byterocket</a
+                >
+                <div>
+                  <p>
+                    Ready for Lift-Off? Professional smart contract audits and
+                    expert software development by experienced engineers,
+                    turning your problems into solutions. Start today!
+                  </p>
+                </div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://byterocket.com/"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://byterocket.com/"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="https://twitter.com/byterocket"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Twitter] https://twitter.com/byterocket"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="https://github.com/byterocket"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Github] https://github.com/byterocket"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/callisto_40.png"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://audits.callisto.network/"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >Callisto Network</a
+                >
+                <div>
+                  <p>
+                    Full service security audit for Solidity Smart contracts and
+                    DApps. Review the architecture of your smart contract,
+                    detect vulnerabilities, and ensure full compliance with the
+                    business logic.
+                  </p>
+                </div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://audits.callisto.network/"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://audits.callisto.network/"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="https://twitter.com/CallistoAudits"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Twitter] https://twitter.com/CallistoAudits"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="https://github.com/CallistoSecurity/Smart-contract-auditing"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Github] https://github.com/CallistoSecurity/Smart-contract-auditing"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/certik.png"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://certik.org"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >CertiK</a
+                >
+                <div>
+                  <p>
+                    CertiK is a blockchain and smart contract verification
+                    platform founded by Yale and Columbia University professors
+                    and former senior software engineers from Google and
+                    Facebook. CertiK aims at using DeepSpec techniques to build
+                    certified smart contracts and blockchain ecosystems that are
+                    bug-free and hacker-resistant.
+                  </p>
+                </div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://certik.org"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://certik.org"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/chainsecurity_1.png"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://chainsecurity.com/"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >Chainsecurity</a
+                >
+                <div>
+                  <p>
+                    ChainSecurity develops tools and provides services to ensure
+                    every blockchain project is secure.
+                  </p>
+                </div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://chainsecurity.com/"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://chainsecurity.com/"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/chainsulting.png"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://chainsulting.de/"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >Chainsulting</a
+                >
+                <div>
+                  <p>
+                    Chainsulting is a business consulting company in the fields
+                    of Security Token Sales, Blockchain, DLT, Crowdfunding,
+                    e-payment and more. Chainsulting assists companies during
+                    and after their crowdfunding, which also includes smart
+                    contract code audits. With over 50 Clients worldwide
+                    Chainsulting is one of the leader in the field of Blockchain
+                    development and security.
+                  </p>
+                </div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://chainsulting.de/"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://chainsulting.de/"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/chaitin.png"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://www.chaitin.cn/en/blockchain"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >Chaitin</a
+                >
+                <div>
+                  <p>
+                    Providing professional security auditing and penetration
+                    testing services for exchanges, blockchains, contracts,
+                    wallets, mining pools and other blockchain projects.
+                  </p>
+                </div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://www.chaitin.cn/en/blockchain"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://www.chaitin.cn/en/blockchain"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/cmbsc.png"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="http://safe.cmcm.com/"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >CM Blockchain Security Center</a
+                >
+                <div>
+                  <p>
+                    As part of list company Cheetah Mobile(NYSE:CMCM), CM
+                    Blockchain Security Center dedicate to provide security
+                    solution to blockchain industry, which ranges from the
+                    security of smart contract, Wallet, public chain, exchange,
+                    etc.
+                  </p>
+                </div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="http://safe.cmcm.com/"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] http://safe.cmcm.com/"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/coinbae.png"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://coinbae.org/audit/"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >Coinbae</a
+                >
+                <div>
+                  <p>
+                    Coinbae focuses on fast, reliable, and affordable smart
+                    contract audits for new and experienced projects.
+                  </p>
+                </div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://coinbae.org/audit/"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://coinbae.org/audit/"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/coinfabrik.jpg"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://www.coinfabrik.com/"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >Coinfabrik</a
+                >
+                <div>
+                  <p>
+                    Security flaws, errors and inefficiencies can cost you a lot
+                    when deploying Smart Contracts to the Blockchain. We help
+                    companies optimize their Smart Contract’s code.
+                  </p>
+                </div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://www.coinfabrik.com/"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://www.coinfabrik.com/"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/coinmercenary.jpg"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://www.coinmercenary.com/"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >CoinMercenary</a
+                >
+                <div>
+                  <p>
+                    We help stakeholders confirm the logic, quality, and
+                    security of their Ethereum smart contracts using our
+                    comprehensive and standardized smart contract audit process.
+                    Our smart contract audits combine compliance, security, a
+                    comprehensive checklist of known pitfalls and attack
+                    vectors, Solidity design patterns and best practices.
+                  </p>
+                </div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://www.coinmercenary.com/"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://www.coinmercenary.com/"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/coinspect.png"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://www.coinspect.com/"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >Coinspect</a
+                >
+                <div>
+                  <p>
+                    Coinspect is a team of professionals with more than 20 years
+                    of information security experience working in decentralized
+                    systems security since 2014. Coinspect has contributed to
+                    protect key decentralized technologies and services &nbsp;by
+                    auditing, reporting vulnerabilities, and proposing
+                    improvements for new blockchain implementations, smart
+                    contracts, dapps, mobile apps, hardware wallets, smart
+                    contract compilers, DeFi systems, and exchanges.
+                  </p>
+                </div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://www.coinspect.com/"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://www.coinspect.com/"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/composablesecurity.png"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://composable-security.com/"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >Composable Security</a
+                >
+                <div>
+                  <p>
+                    They've already helped dozens of projects keep their
+                    products and systems secure. They believe that&nbsp;security
+                    should be adapted to each stage of development, security
+                    should be composable to the best suits visionary needs.
+                  </p>
+                </div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://composable-security.com/"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://composable-security.com/"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="mailto:info@composable-security.com"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Email] mailto:info@composable-security.com"
+                    ><i class="fa fa-envelope"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/diligence.png"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://diligence.consensys.net/"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >ConsenSys Diligence</a
+                >
+                <div>
+                  <p>
+                    As one of the oldest teams in the space, ConsenSys Diligence
+                    is at the cutting edge of offensive cryptography, blockchain
+                    technology, and cryptoeconomic incentive analysis.
+                  </p>
+                </div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://diligence.consensys.net/"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://diligence.consensys.net/"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/cyfrin_40.png"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://www.cyfrin.io/"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >Cyfrin</a
+                >
+                <div>
+                  <p>
+                    Cyfrin is smart contract auditing company focused on scaling
+                    all of web3 security.&nbsp;
+                  </p>
+                </div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://www.cyfrin.io/"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://www.cyfrin.io/"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="mailto:audits@cyfrin.io"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Email] mailto:audits@cyfrin.io"
+                    ><i class="fa fa-envelope"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="https://twitter.com/CyfrinAudits"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Twitter] https://twitter.com/CyfrinAudits"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/cystack_40.png"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://cystack.net/"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >CyStack</a
+                >
+                <div>
+                  <p>
+                    CyStack is a cybersecurity company in Vietnam. They have
+                    provide security audit for Cellframe quantum-resistant
+                    layer-1 network and many other smart contracts.&nbsp;
+                  </p>
+                </div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://cystack.net/"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://cystack.net/"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="https://twitter.com/cystacksecurity"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Twitter] https://twitter.com/cystacksecurity"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="https://github.com/cystack"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Github] https://github.com/cystack"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/decenter.jpg"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://www.decenter.com/"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >Decenter</a
+                >
+                <div>
+                  <p>
+                    Decenter is a team of experienced blockchain developers with
+                    a proven track record in building complex Ethereum-based
+                    DApps, such as MelonMail, Cryptographics, Cryptage, and
+                    Etherships. Their smart contract audits service provides you
+                    with an in-depth analysis of every aspect of a smart
+                    contract, including security testing, business logic review
+                    and gas usage optimization, all done through meticulous
+                    manual code review based on the latest best practices in the
+                    blockchain industry.
+                  </p>
+                </div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://www.decenter.com/"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://www.decenter.com/"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="https://twitter.com/DecenterTeam"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Twitter] https://twitter.com/DecenterTeam"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="https://github.com/DecenterApps/"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Github] https://github.com/DecenterApps/"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/etherauthority_40.png"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://etherauthority.io/"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >EtherAuthority</a
+                >
+                <div>
+                  <p>
+                    EtherAuthority aims to be a top-notch smart contract
+                    development and security service provider. The company is of
+                    Indian origin serving since 2018.
+                  </p>
+                </div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://etherauthority.io/"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://etherauthority.io/"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="mailto:contact@etherauthority.io"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Email] mailto:contact@etherauthority.io"
+                    ><i class="fa fa-envelope"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="https://twitter.com/Ether_Authority"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Twitter] https://twitter.com/Ether_Authority"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="https://github.com/EtherAuthority"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Github] https://github.com/EtherAuthority"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/experfy.jpg"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://www.experfy.com/hire/smart-contract-audits"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >Experfy : Smart Contract Audit</a
+                >
+                <div>
+                  <p>
+                    Experfy&nbsp;provides comprehensive and standardized audits
+                    of smart contracts through rigorous independent reviews.
+                    First, the smart contract is verified against our library of
+                    known issues that we have seen come up in dozens of reviews.
+                    Second, Experfy validate that your contract is performing
+                    the logic it was intended to and there are no security
+                    issues.&nbsp;
+                  </p>
+                </div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://www.experfy.com/hire/smart-contract-audits"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://www.experfy.com/hire/smart-contract-audits"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-1">
+        <div class="card-body">
+          <div class="d-flex gap-3">
+            <div>
+              <img
+                src="/images/resources/hacken2.png"
+                class="u-avatar mt-1"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+            >
+              <div>
+                <a
+                  href="https://hub.hacken.io/"
+                  class="fs-5 link-dark"
+                  rel="nofollow"
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  >Hacken</a
+                >
+                <div>
+                  <p>
+                    Hacken team analyses the smart contract’s functionality and
+                    performs all necessary checks against known vulnerabilities.
+                    Basic security audit includes manual codebase audit by
+                    Hacken consultants and automated tools security audit.
+                  </p>
+                </div>
+              </div>
+              <ul class="list-inline mb-0 text-nowrap">
+                <li class="list-inline-item">
+                  <a
+                    href="https://hub.hacken.io/"
+                    data-bs-placement="top"
+                    data-bs-toggle="tooltip"
+                    class="btn btn-sm btn-secondary rounded-circle"
+                    rel="nofollow"
+                    target="_blank"
+                    aria-label="[Website] https://hub.hacken.io/"
+                    ><i class="fas fa-globe"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</section>

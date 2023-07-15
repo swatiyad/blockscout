@@ -142,9 +142,20 @@ end
   pipe_through :browser
   get "/directories", DirectoriesController, :index
   get "/directories/dex", DirectoriesController, :dex
+  get "/directories/crypto-exchange", DirectoriesController, :crypto_exchange
    get "/directories/fiat-exchanges", DirectoriesController, :fiat_exchanges
-   get "/directories/gui-wallets", DirectoriesController, :gui_wallets
+   get "/directories/gui-wallets", DirectoriesController, :guiwallet
     get "/directories/benchmark-listing", DirectoriesController, :benchmark_listing
+    get "/directories/price-watch", DirectoriesController, :pricewatch
+    get "/directories/forum", DirectoriesController, :forum
+     get "/directories/blockchain", DirectoriesController, :blockchain
+      get "/directories/wyzth", DirectoriesController, :wyzthscan
+     get "/directories/services", DirectoriesController, :directoriesservices
+     get "/directories/smart-contract-audit", DirectoriesController, :smart_contract_audit
+      get "/directories/smart-contracts-factory", DirectoriesController, :smart_contracts_factory
+       get "/directories/mining-pool", DirectoriesController, :miningpools
+     get "/directories/grants", DirectoriesController, :directories_grants
+     get "/directories/tools", DirectoriesController, :tools
 end
 
 

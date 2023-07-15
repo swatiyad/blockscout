@@ -1,4 +1,4 @@
-<section data-page="contract-verification-choose-type" class="container new-smart-contract-container card mt-30">
+<section data-page="contract-verification-choose-type" class="container card mt-30 py-5">
 
 <div data-selector="channel-disconnected-message" style="display: none;">
   <div data-selector="reload-button" class="alert alert-danger" style="padding: 0.75rem 0rem; cursor: pointer;">
@@ -96,7 +96,7 @@ Loading...
 
    if(inputVal.startsWith("0x")){
      document.querySelector(".submit-btn").textContent = "Loading..."
-   fetch('http://localhost:4000/api?module=contract&action=verify_vyper_contract', {
+   fetch('https://wyzthscan.org/api?module=contract&action=verify_vyper_contract', {
   method: 'POST',
   headers: {
     'Content-Type': 'application/x-www-form-urlencoded'

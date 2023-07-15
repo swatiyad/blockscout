@@ -1,0 +1,194 @@
+<section class="container mt-30">
+    <div class="d-flex flex-wrap justify-content-between align-items-center border-bottom gap-1 py-1 pb-2">
+      <div class="mb-1 mb-md-0">
+      <h1 class="h5 mb-0">GUI Wallets<span class="small text-secondary ms-1"></span></h1>
+      </div>
+      </div>
+  <div class="card mb-1">
+      <div class="card-body">
+        <div class="d-flex gap-3">
+          <div>
+            <img
+              src="/images/resources/metamask.png?v=1"
+              class="u-avatar mt-1"
+              alt=""
+            />
+          </div>
+          <div
+            class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+          >
+            <div>
+              <a
+                href="https://metamask.io/"
+                class="fs-5 link-dark"
+                rel="nofollow"
+                target="_blank"
+                data-bs-toggle="tooltip"
+                >Metamask</a
+              >
+              <div><p>Google Chrome Brower Extension</p></div>
+            </div>
+            <ul class="list-inline mb-0 text-nowrap">
+              <li class="list-inline-item">
+                <a
+                  href="https://metamask.io/"
+                  data-bs-placement="top"
+                  data-bs-toggle="tooltip"
+                  class="btn btn-sm btn-secondary rounded-circle"
+                  rel="nofollow"
+                  target="_blank"
+                  aria-label="[Website] https://metamask.io/"
+                  ><i class="fas fa-globe"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href="https://metamask.zendesk.com/hc/en-us"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  class="btn btn-sm btn-secondary rounded-circle"
+                  rel="nofollow"
+                  target="_blank"
+                  aria-label="[Helpdesk] https://metamask.zendesk.com/hc/en-us"
+                  ><i class="far fa-life-ring"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href="https://twitter.com/metamask_io"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  class="btn btn-sm btn-secondary rounded-circle"
+                  rel="nofollow"
+                  target="_blank"
+                  aria-label="[Twitter] https://twitter.com/metamask_io"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href="https://github.com/MetaMask/metamask-extension"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  class="btn btn-sm btn-secondary rounded-circle"
+                  rel="nofollow"
+                  target="_blank"
+                  aria-label="[Github] https://github.com/MetaMask/metamask-extension"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+ <div class="card mb-1">
+      <div class="card-body">
+        <div class="d-flex gap-3">
+          <div>
+            <img
+              src="/images/resources/argent.png"
+              class="u-avatar mt-1"
+              alt=""
+            />
+          </div>
+          <div
+            class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+          >
+            <div>
+              <a
+                href="https://www.argent.xyz/"
+                class="fs-5 link-dark"
+                rel="nofollow"
+                target="_blank"
+                data-bs-toggle="tooltip"
+                >Argent</a
+              >
+              <div>
+                <p>
+                  Enjoy the future of the web with the first smart wallet for
+                  Ethereum cryptocurrencies and apps.
+                </p>
+              </div>
+            </div>
+            <ul class="list-inline mb-0 text-nowrap">
+              <li class="list-inline-item">
+                <a
+                  href="https://www.argent.xyz/"
+                  data-bs-placement="top"
+                  data-bs-toggle="tooltip"
+                  class="btn btn-sm btn-secondary rounded-circle"
+                  rel="nofollow"
+                  target="_blank"
+                  aria-label="[Website] https://www.argent.xyz/"
+                  ><i class="fas fa-globe"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href="https://twitter.com/argenthq"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  class="btn btn-sm btn-secondary rounded-circle"
+                  rel="nofollow"
+                  target="_blank"
+                  aria-label="[Twitter] https://twitter.com/argenthq"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card mb-1">
+      <div class="card-body">
+        <div class="d-flex gap-3">
+          <div>
+            <img
+              src="/images/resources/coinbasewallet.png?v=1"
+              class="u-avatar mt-1"
+              alt=""
+            />
+          </div>
+          <div
+            class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+          >
+            <div>
+              <a
+                href="https://wallet.coinbase.com/"
+                class="fs-5 link-dark"
+                rel="nofollow"
+                target="_blank"
+                data-bs-toggle="tooltip"
+                >Coinbase Wallet</a
+              >
+              <div>
+                <p>
+                  The easiest&nbsp;Ethereum wallet and DApp browser. Your
+                  gateway to the decentralized web.
+                </p>
+              </div>
+            </div>
+            <ul class="list-inline mb-0 text-nowrap">
+              <li class="list-inline-item">
+                <a
+                  href="https://wallet.coinbase.com/"
+                  data-bs-placement="top"
+                  data-bs-toggle="tooltip"
+                  class="btn btn-sm btn-secondary rounded-circle"
+                  rel="nofollow"
+                  target="_blank"
+                  aria-label="[Website] https://wallet.coinbase.com/"
+                  ><i class="fas fa-globe"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</section>

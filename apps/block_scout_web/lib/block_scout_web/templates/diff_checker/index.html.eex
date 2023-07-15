@@ -1,4 +1,4 @@
-<section data-page="contract-verification-choose-type" class="container new-smart-contract-container card mt-30">
+<section data-page="contract-verification-choose-type" class="container card mt-30">
 <script defer src="<%= static_path(@conn, "/js/diff-checker.js") %>"></script>
 <div class="container mb-5">
 <div class="d-flex justify-content-between align-items-center border-bottom py-3">

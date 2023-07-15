@@ -344,13 +344,49 @@ a {
     overflow: auto;
 
   }
-  #txtSearchContract-1{
+  #txtSearchContract-1,  #txtSearchContract-2{
     height:50px
   }
-  #heroSubscribeButton{
+  #heroSubscribeButton,  #heroSubscribeButton-2{
     height:50px
   }
 
+  
+  .wrapper-cc {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    animation: fadeIn 1000ms ease;
+    -webkit-animation: fadeIn 1000ms ease;
+    
+  }
+  
+  .wrapper-cc-h1 {
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 0;
+    line-height: 1;
+    font-weight: 700;
+  }
+
+  @keyframes fadeIn {
+    from {top: 20%; opacity: 0;}
+    to {top: 100; opacity: 1;}
+    
+  }
+  
+  @-webkit-keyframes fadeIn {
+    from {top: 20%; opacity: 0;}
+    to {top: 100; opacity: 1;}
+    
+  }
+  
+  .dot-cc {
+    color: #4FEBFE;
+  }
+  
 
 .footer-link {
     color: #dcdbdd!important;
@@ -1220,6 +1256,9 @@ input.nosubmit {
     color: #6c757e!important;
     // font-size: 13px;
 }
+.Output_section_contract_search{
+    display: none;
+}
 
   .dark-theme-applied .home-search {
     background: #333;
@@ -1239,7 +1278,7 @@ input.nosubmit {
 
 
 .gasPricePlaceHolder {
-    paddinng-left: 10px
+    padding-left: 10px
   }
   .home-search {
     padding: 5px;
@@ -1262,7 +1301,7 @@ input.nosubmit {
       pointer-events: all;
   }
   .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
-      color: #fff;
+      color: #fff !important;
       background-color: #A9AB3F!important;
       border-color: #A9AB3F!important;
       box-shadow: none!important;

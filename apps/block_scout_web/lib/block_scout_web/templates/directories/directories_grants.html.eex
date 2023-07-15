@@ -1,0 +1,50 @@
+<section class="container mt-30 mb-3">
+<h1 class="px-1">Grants</h1>
+  <div class="card mb-1">
+      <div class="card-body">
+        <div class="d-flex gap-3">
+          <div>
+            <img
+              src="/images/resources/ethereum.png"
+              class="u-avatar mt-1"
+              alt=""
+            />
+          </div>
+          <div
+            class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+          >
+            <div>
+              <a
+                href="https://blog.ethereum.org/2018/03/07/announcing-beneficiaries-ethereum-foundation-grants/"
+                target="_blank"
+                rel="nofollow noopener"
+                class="fs-5 link-dark"
+                >Wyzth Foundation Grants</a
+              >
+              <div>
+                <p>
+                  The Wyzth project seeks to support useful dapps and smart
+                  contracts on the Ethereum blockchain, and the goal of the
+                  Ethereum Foundation is to empower developers with
+                  best-in-class R&amp;D, developer experience, and education.
+                </p>
+              </div>
+            </div>
+            <ul class="list-inline mb-0 text-nowrap">
+              <li class="list-inline-item">
+                <a
+                  href="#"
+                  data-bs-placement="top"
+                  data-bs-toggle="tooltip"
+                  class="btn btn-sm btn-secondary rounded-circle"
+                  rel="nofollow"
+                  target="_blank"
+                 
+                  ><i class="fas fa-globe btn-icon__inner"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div></section>

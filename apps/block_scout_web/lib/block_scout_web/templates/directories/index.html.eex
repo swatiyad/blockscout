@@ -9,20 +9,20 @@
                 /></a>
               </figure>
               <h2 class="h5 mb-0">
-                <a class="text-dark" href="/directory/Exchanges">Exchanges</a>
+                <a class="text-dark" href="/directories/dex">Exchanges</a>
               </h2>
               <p class="mb-2">Places to buy and sell cryptocurrencies</p>
               <p class="mb-0">
                 <a
-                  href="/directory/Exchanges/Crypto_Exchanges"
+                  href="/directories/crypto-exchange"
                   class="btn btn-sm btn-soft-primary my-1"
                   >Crypto Exchanges</a
                 >&nbsp;<a
-                  href="/directory/Exchanges/DEX"
+                  href="/directories/dex"
                   class="btn btn-sm btn-soft-primary my-1"
                   >DEX</a
                 >&nbsp;<a
-                  href="/directory/Exchanges/Fiat_Exchanges"
+                  href="/directories/fiat-exchanges"
                   class="btn btn-sm btn-soft-primary my-1"
                   >Fiat Exchanges</a
                 >
@@ -39,19 +39,16 @@
                 /></a>
               </figure>
               <h2 class="h5 mb-0">
-                <a class="text-dark" href="/directory/Wallet">Wallet</a>
+                <a class="text-dark" href="/directories/gui-wallets">Wallet</a>
               </h2>
               <p class="mb-2">Used to receive and spend cryptoassets</p>
               <p class="mb-0">
                 <a
-                  href="/directory/Wallet/GUI_Wallets"
+                  href="/directories/gui-wallets"
                   class="btn btn-sm btn-soft-primary my-1"
                   >GUI Wallets</a
-                >&nbsp;<a
-                  href="/directory/Wallet/Hardware_Wallets"
-                  class="btn btn-sm btn-soft-primary my-1"
-                  >Hardware Wallets</a
                 >
+                
               </p>
             </div>
           </div>
@@ -65,18 +62,18 @@
                 /></a>
               </figure>
               <h2 class="h5 mb-0">
-                <a class="text-dark" href="/directory/Listing_And_Prices"
+                <a class="text-dark" href="/directories/benchmark-listing"
                   >Listing And Prices</a
                 >
               </h2>
               <p class="mb-2">Listing and Prices for Projects and Tokens</p>
               <p class="mb-0">
                 <a
-                  href="/directory/Listing_And_Prices/Benchmark_Listing"
+                  href="/directories/benchmark-listing"
                   class="btn btn-sm btn-soft-primary my-1"
                   >Benchmark Listing</a
                 >&nbsp;<a
-                  href="/directory/Listing_And_Prices/Price_Watch"
+                  href="/directories/price-watch"
                   class="btn btn-sm btn-soft-primary my-1"
                   >Price Watch</a
                 >
@@ -88,7 +85,7 @@
           <div class="card h-100">
             <div class="card-body text-center p-8">
               <figure class="u-avatar mx-auto mb-3">
-                <a href="/directory/News_And_Forums"
+                <a href="https://www.thecoinweekly.com/" target="_blank"
                   ><img src="/images/directory/icon-newsforum.svg" style="width:70px" alt=""
                 /></a>
               </figure>
@@ -100,11 +97,12 @@
               <p class="mb-2">Get close to the community</p>
               <p class="mb-0">
                 <a
-                  href="/directory/News_And_Forums/Crypto_News"
+                  href="https://www.thecoinweekly.com/"
                   class="btn btn-sm btn-soft-primary my-1"
+                  target="_blank"
                   >Crypto News</a
                 >&nbsp;<a
-                  href="/directory/News_And_Forums/Forums"
+                  href="/directories/forum"
                   class="btn btn-sm btn-soft-primary my-1"
                   >Forums</a
                 >
@@ -121,18 +119,14 @@
                 /></a>
               </figure>
               <h2 class="h5 mb-0">
-                <a class="text-dark" href="/directory/Events">Events</a>
+                <a class="text-dark" href="https://www.thecoinweekly.com/events">Events</a>
               </h2>
               <p class="mb-2">Find the events near you</p>
               <p class="mb-0">
                 <a
-                  href="/directory/Events/Upcoming_Events"
+                  href="https://www.thecoinweekly.com/events"
                   class="btn btn-sm btn-soft-primary my-1"
                   >Upcoming Events</a
-                >&nbsp;<a
-                  href="/directory/Events/Past_Events"
-                  class="btn btn-sm btn-soft-primary my-1"
-                  >Past Events</a
                 >
               </p>
             </div>
@@ -142,25 +136,25 @@
           <div class="card h-100">
             <div class="card-body text-center p-8">
               <figure class="u-avatar mx-auto mb-3">
-                <a href="/directory/Learning_Resources"
+                <a href="#"
                   ><img src="/images/directory/icon-learning.svg" style="width:70px" alt=""
                 /></a>
               </figure>
               <h2 class="h5 mb-0">
-                <a class="text-dark" href="/directory/Learning_Resources"
+                <a class="text-dark" href="#"
                   >Learning Resources</a
                 >
               </h2>
               <p class="mb-2">Learn more about blockchain basics</p>
               <p class="mb-0">
                 <a
-                  href="/directory/Learning_Resources/Blockchain"
+                  href="/directories/blockchain"
                   class="btn btn-sm btn-soft-primary my-1"
                   >Blockchain</a
                 >&nbsp;<a
-                  href="/directory/Learning_Resources/Ethereum"
+                  href="/directories/wyzth"
                   class="btn btn-sm btn-soft-primary my-1"
-                  >Ethereum</a
+                  >Wyzth</a
                 >
               </p>
             </div>
@@ -170,27 +164,27 @@
           <div class="card h-100">
             <div class="card-body text-center p-8">
               <figure class="u-avatar mx-auto mb-3">
-                <a href="/directory/Smart_Contracts"
+                <a href="/directories/services"
                   ><img src="/images/directory/icon-smartcontract.svg" style="width:70px" alt=""
                 /></a>
               </figure>
               <h2 class="h5 mb-0">
-                <a class="text-dark" href="/directory/Smart_Contracts"
+                <a class="text-dark" href="/directories/services"
                   >Smart Contracts</a
                 >
               </h2>
               <p class="mb-2">For more advanced users</p>
               <p class="mb-0">
                 <a
-                  href="/directory/Smart_Contracts/Services"
+                  href="/directories/services"
                   class="btn btn-sm btn-soft-primary my-1"
                   >Services</a
                 >&nbsp;<a
-                  href="/directory/Smart_Contracts/Smart_Contracts_Audit_And_Security"
+                  href="/directories/smart-contract-audit"
                   class="btn btn-sm btn-soft-primary my-1"
                   >Smart Contracts Audit and Security</a
                 >&nbsp;<a
-                  href="/directory/Smart_Contracts/Smart_Contracts_Factory"
+                  href="/directories/smart-contracts-factory"
                   class="btn btn-sm btn-soft-primary my-1"
                   >Smart Contracts Factory</a
                 >
@@ -202,17 +196,17 @@
           <div class="card h-100">
             <div class="card-body text-center p-8">
               <figure class="u-avatar mx-auto mb-3">
-                <a href="/directory/Mining"
+                <a href="/directories/mining-pool"
                   ><img src="/images/directory/icon-mining.svg" style="width:70px" alt=""
                 /></a>
               </figure>
               <h2 class="h5 mb-0">
-                <a class="text-dark" href="/directory/Mining">Mining</a>
+                <a class="text-dark" href="/directories/mining-pool">Mining</a>
               </h2>
               <p class="mb-2">Join a pool and start mining</p>
               <p class="mb-0">
                 <a
-                  href="/directory/Mining/Mining_Pools"
+                  href="/directories/mining-pool"
                   class="btn btn-sm btn-soft-primary my-1"
                   >Mining Pools</a
                 >&nbsp;<a
@@ -228,25 +222,25 @@
           <div class="card h-100">
             <div class="card-body text-center p-8">
               <figure class="u-avatar mx-auto mb-3">
-                <a href="/directory/Others"
+                <a href="#"
                   ><img src="/images/directory/icon-others.svg" style="width:70px" alt=""
                 /></a>
               </figure>
               <h2 class="h5 mb-0">
-                <a class="text-dark" href="/directory/Others">Others</a>
+                <a class="text-dark" href="#">Others</a>
               </h2>
               <p class="mb-2">Extra resources</p>
               <p class="mb-0">
                 <a
-                  href="/directory/Others/Career"
+                  href="https://wyzth.org/careers"
                   class="btn btn-sm btn-soft-primary my-1"
                   >Career</a
                 >&nbsp;<a
-                  href="/directory/Others/Grant"
+                  href="/directories/grants"
                   class="btn btn-sm btn-soft-primary my-1"
                   >Grant</a
                 >&nbsp;<a
-                  href="/directory/Others/Tools"
+                  href="/directories/tools"
                   class="btn btn-sm btn-soft-primary my-1"
                   >Tools</a
                 >
