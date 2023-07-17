@@ -11,7 +11,7 @@
 </div>
 <div class="col-lg-4 col-md-6 col-sm-12 p-20">
 <a href="/charts/bep2etxns">
-<div class="chart-blocscout-title"> Daily Transfer Chart</div>
+<div class="chart-blocscout-title">Daily Transfer Chart</div>
 <img src="/images/chart/transactionhistory.svg" class="img-fluid"/>
 </a>
 </div>
