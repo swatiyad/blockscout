@@ -181,11 +181,14 @@ document.addEventListener("DOMContentLoaded", async function () {
 </div>`
   document.querySelector("#ContentPlaceHolder1_Div1a_body_1").innerHTML = trans;
   document.querySelector("#ContentPlaceHolder1_Div1a_body_2").innerHTML = token;
-  const topsender = await axios.get(`https://wyzthscan.org/node-api/topsender`);
-  const maxRecieverCount = await axios.get( `https://wyzthscan.org/node-api/max-count-reciever`);
-  const maxSendCount = await axios.get(`https://wyzthscan.org/node-api/max-count-sender`);
-  const api = await axios.get(`https://wyzthscan.org/node-api/top-stats-data`);
-  const TopTokenApi = await axios.get(`https://wyzthscan.org/node-api/token-data`);
+  const [topsender, maxRecieverCount, maxSendCount, api, TopTokenApi] =
+  await Promise.all([
+    axios.get("https://wyzthscan.org/node-api/topsender"),
+    axios.get("https://wyzthscan.org/node-api/max-count-reciever"),
+    axios.get("https://wyzthscan.org/node-api/max-count-sender"),
+    axios.get("https://wyzthscan.org/node-api/top-stats-data"),
+    axios.get("https://wyzthscan.org/node-api/token-data"),
+  ]);
 
   const apiData = api.data;
   const topSenderData = topsender?.data;

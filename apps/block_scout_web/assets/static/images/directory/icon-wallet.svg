@@ -1,73 +1,40 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120.5 113.2">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: #bdc5d1;
-        opacity: 0.5;
-      }
-
-      .cls-2, .cls-8 {
-        fill: #fff;
-      }
-
-      .cls-2, .cls-6 {
-        stroke: #bdc5d1;
-      }
-
-      .cls-2, .cls-3, .cls-5, .cls-6 {
-        stroke-linecap: round;
-        stroke-linejoin: round;
-      }
-
-      .cls-2, .cls-3, .cls-5, .cls-6, .cls-7 {
-        stroke-miterlimit: 10;
-        stroke-width: 3px;
-      }
-
-      .cls-3, .cls-5, .cls-6 {
-        fill: none;
-      }
-
-      .cls-3 {
-        stroke: #3498db;
-      }
-
-      .cls-4, .cls-7 {
-        fill: #3498db;
-      }
-
-      .cls-5, .cls-7 {
-        stroke: #fff;
-      }
-
-      .cls-9 {
-        fill: #eee;
-      }
-
-      .cls-10 {
-        fill: #bbb;
-      }
-    </style>
-  </defs>
-  <g id="icon-59" transform="translate(0.7 -3.4)">
-    <path id="Path_1" data-name="Path 1" class="cls-1" d="M18.5,41.3H17.1a8.493,8.493,0,0,0-8.5,8.5V99.2a8.493,8.493,0,0,0,8.5,8.5h93.5a8.493,8.493,0,0,0,8.5-8.5V49.9a8.493,8.493,0,0,0-8.5-8.5h-6.2"/>
-    <path id="Path_2" data-name="Path 2" class="cls-2" d="M10.9,30.5H9.5A8.493,8.493,0,0,0,1,39V88.4a8.493,8.493,0,0,0,8.5,8.5H103a8.493,8.493,0,0,0,8.5-8.5V39a8.493,8.493,0,0,0-8.5-8.5H96.8"/>
-    <path id="Path_3" data-name="Path 3" class="cls-2" d="M12.6,38,9.8,15.5,90.3,4.9l1.9,14.5"/>
-    <path id="Path_4" data-name="Path 4" class="cls-3" d="M15.6,42.1V19.4H96.8V42.1"/>
-    <path id="Path_5" data-name="Path 5" class="cls-1" d="M93.6,40.8V29.9a5.618,5.618,0,0,1-5.5-5.8V24h-56v.1a5.683,5.683,0,0,1-5.5,5.8V40.8"/>
-    <path id="Path_6" data-name="Path 6" class="cls-4" d="M89.8,43.5V33a5.484,5.484,0,0,1-5.5-5.5v-.1h-56v.1A5.484,5.484,0,0,1,22.8,33V43.5"/>
-    <path id="Path_7" data-name="Path 7" class="cls-5" d="M67.4,43.5a11.793,11.793,0,0,0-22.4,0"/>
-    <line id="Line_1" data-name="Line 1" class="cls-6" x1="91.9" transform="translate(10.3 42.1)"/>
-    <path id="Path_8" data-name="Path 8" class="cls-2" d="M40.8,97V81.8L.8,66.9V88.5a8.386,8.386,0,0,0,8.4,8.4H40.8Z"/>
-    <circle id="Ellipse_1" data-name="Ellipse 1" class="cls-1" cx="26.3" cy="26.3" r="26.3" transform="translate(57.8 56.8)"/>
-    <circle id="Ellipse_2" data-name="Ellipse 2" class="cls-7" cx="26.3" cy="26.3" r="26.3" transform="translate(65.7 62.5)"/>
-    <g id="ethereum" transform="translate(80.133 70.073)">
-      <path id="Path_1-2" data-name="Path 1" class="cls-8" d="M125.426,0V-.2l-.26,26.727.26.26,11.9-7.035Z" transform="translate(-112.897)"/>
-      <path id="Path_2-2" data-name="Path 2" class="cls-8" d="M11.9,0,0,19.748l11.9,7.035V0Z"/>
-      <path id="Path_3-2" data-name="Path 3" class="cls-8" d="M126.532,243.619l-.146.179v9.134l.146.428,11.909-16.772Z" transform="translate(-114.004 -216.431)"/>
-      <path id="Path_4-2" data-name="Path 4" class="cls-8" d="M11.9,253.357v-9.74L0,236.585Z" transform="translate(0 -216.429)"/>
-      <path id="Path_5-2" data-name="Path 5" class="cls-9" d="M127.961,166.6l12.048-7.035-12.048-5.41Z" transform="translate(-115.579 -139.828)"/>
-      <path id="Path_6-2" data-name="Path 6" class="cls-10" d="M0,159.568,11.9,166.6V154.158Z" transform="translate(0 -139.827)"/>
-    </g>
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.3.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 120.5 113.2" style="enable-background:new 0 0 120.5 113.2;" xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:0.5;fill:#BDC5D1;enable-background:new    ;}
+	.st1{fill:#FFFFFF;stroke:#BDC5D1;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:#959814;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st3{fill:#959814;}
+	.st4{fill:none;stroke:#FFFFFF;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st5{fill:none;stroke:#BDC5D1;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st6{fill:#959814;stroke:#FFFFFF;stroke-width:3;stroke-miterlimit:10;}
+	.st7{fill:#FFFFFF;}
+	.st8{fill:#EEEEEE;}
+	.st9{fill:#BBBBBB;}
+</style>
+<path id="Path_1" class="st0" d="M19.2,37.9h-1.4c-4.7,0-8.5,3.8-8.5,8.5c0,0,0,0,0,0v49.4c0,4.7,3.8,8.5,8.5,8.5c0,0,0,0,0,0h93.5
+	c4.7,0,8.5-3.8,8.5-8.5c0,0,0,0,0,0V46.5c0-4.7-3.8-8.5-8.5-8.5c0,0,0,0,0,0h-6.2"/>
+<path id="Path_2" class="st1" d="M11.6,27.1h-1.4c-4.7,0-8.5,3.8-8.5,8.5c0,0,0,0,0,0V85c0,4.7,3.8,8.5,8.5,8.5c0,0,0,0,0,0h93.5
+	c4.7,0,8.5-3.8,8.5-8.5c0,0,0,0,0,0V35.6c0-4.7-3.8-8.5-8.5-8.5c0,0,0,0,0,0h-6.2"/>
+<path id="Path_3" class="st1" d="M13.3,34.6l-2.8-22.5L91,1.5L92.9,16"/>
+<path id="Path_4" class="st2" d="M16.3,38.7V16h81.2v22.7"/>
+<path id="Path_5" class="st0" d="M94.3,37.4V26.5c-3.1-0.1-5.6-2.6-5.5-5.7c0,0,0,0,0-0.1v-0.1h-56v0.1c0.1,3.1-2.4,5.7-5.5,5.8
+	v10.9"/>
+<path id="Path_6" class="st3" d="M90.5,40.1V29.6c-3,0-5.5-2.4-5.5-5.5c0,0,0,0,0,0V24H29v0.1c0,3-2.4,5.5-5.5,5.5c0,0,0,0,0,0v10.5
+	"/>
+<path id="Path_7" class="st4" d="M68.1,40.1c-2-6.2-8.7-9.5-14.9-7.5c-3.6,1.2-6.3,4-7.5,7.5"/>
+<line id="Line_1" class="st5" x1="102.9" y1="38.7" x2="11" y2="38.7"/>
+<path id="Path_8" class="st1" d="M41.5,93.6V78.4l-40-14.9v21.6c0,4.6,3.7,8.4,8.4,8.4c0,0,0,0,0,0L41.5,93.6L41.5,93.6z"/>
+<circle id="Ellipse_1" class="st0" cx="84.8" cy="79.7" r="26.3"/>
+<circle id="Ellipse_2" class="st6" cx="92.7" cy="85.4" r="26.3"/>
+<g id="ethereum" transform="translate(80.133 70.073)">
+	<path id="Path_1-2" class="st7" d="M13.2-3.4v-0.2L13,23.1l0.3,0.3l11.9-7L13.2-3.4z"/>
+	<path id="Path_2-2" class="st7" d="M12.6-3.4L0.7,16.3l11.9,7V-3.4z"/>
+	<path id="Path_3-2" class="st7" d="M13.2,23.8L13.1,24v9.1l0.1,0.4l11.9-16.8L13.2,23.8z"/>
+	<path id="Path_4-2" class="st7" d="M12.6,33.5v-9.7l-11.9-7L12.6,33.5z"/>
+	<path id="Path_5-2" class="st8" d="M13.1,23.4l12-7l-12-5.4V23.4z"/>
+	<path id="Path_6-2" class="st9" d="M0.7,16.3l11.9,7V10.9L0.7,16.3z"/>
+</g>
 </svg>
