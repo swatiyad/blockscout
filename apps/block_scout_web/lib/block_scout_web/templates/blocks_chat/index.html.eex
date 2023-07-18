@@ -1,0 +1,16 @@
+
+  
+  <div class="container">
+  <script defer src="<%= static_path(@conn, "/js/blocks-chat.js") %>"></script>
+    <h1>Blockscan Chat</h1>
+    <div id="messageContainer"></div>
+    <div class="input-container">
+      <input type="text" id="messageInput" placeholder="Type your message...">
+      <button id="sendButton">Send</button>
+    </div>
+    <div class="functionality-container">
+      <button id="unreadCountButton">Check Unread Message Count</button>
+      <button id="markAsReadButton">Mark All Messages as Read</button>
+      <button id="retrieveMessagesButton">Retrieve Chat Messages</button>
+    </div>
+  </div>

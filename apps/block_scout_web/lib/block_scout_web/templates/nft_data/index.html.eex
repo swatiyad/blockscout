@@ -7,22 +7,7 @@
     <span href="#" class="alert alert-danger">Connection Lost, click to load newer transactions</span>
   </div>
 </div>
-        <div class="clearfix mb-2 py-1">
        
-          <div class="top-pagination-outer-container float-right">         
-            <div class="dropdown">
-              <button data-test="filter_dropdown" class="btn btn-light btn-xs dropdown-toggle custom_drpdwn" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="fa fa-ellipsis-v"></i> 
-              </button>
-              <div class="dropdown-menu dropdown-menu-right filter--" aria-labelledby="dropdownMenu2">
-<a class="address__link-- address__link--active dropdown-item" data-test="filter_option" href="/address/0xa074247827085cae48de2722c558daa6dc09339b/transactions">All</a>
-<a class="address__link address__link--active dropdown-item" data-test="filter_option" href="/address/0xa074247827085cae48de2722c558daa6dc09339b/transactions?filter=to">To</a>
-<a class="address__link address__link--active dropdown-item" data-test="filter_option" href="/address/0xa074247827085cae48de2722c558daa6dc09339b/transactions?filter=from">From</a>
-              </div>
-            </div>
-
-          </div>
-        </div>
         <div data-selector="channel-batching-message" style="display: none;">
           <div data-selector="reload-transactions-button" class="alert alert-info mt-2">
             <a href="#" class="alert-link"><span data-selector="channel-batching-count"></span> More transactions have come in</a>
@@ -31,8 +16,8 @@
         <button data-error-message="" class="alert alert-danger col-12 text-left" style="display: none;">
           <span href="#" class="alert-link">Something went wrong, click to reload.</span>
         </button>
-
-        <div class="overflow-auto w-100">   
+        <div class="stakes-table-container">
+        <div class=" w-100">   
         <h2>Top NFT</h2>       
           <table class="table table-hover mb-0 fixed-layout">
             <thead>
@@ -64,5 +49,5 @@ There are no transactions for this address.
         </div>
         <div id = "top-nft"></div>
       </div>
-
+      </div>
       </section>

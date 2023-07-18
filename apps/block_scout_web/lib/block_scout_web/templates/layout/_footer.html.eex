@@ -219,9 +219,9 @@ a.metamask_btn {
       <p class="text-white">
       <%= gettext("WYZthScan is a Block Explorer and Analytics Platform for WYZth ") %>  <%= gettext(" chain, a decentralized smart contains platform.") %></p>
 
-      <button type="button" class="btn btn-xs btn-lighter text-nowrap mr-2">
+      <a type="button" class="btn btn-xs btn-lighter text-nowrap mr-2" href="/preferences" style="color:#fff !important">
         <i class="fas fa-cogs mr-1"></i> Preferences
-      </button>
+      </a>
       <%= render BlockScoutWeb.LayoutView, "_add_chain_to_mm.html" %>
     </div>
 
@@ -233,7 +233,7 @@ a.metamask_btn {
         
         <li><a href="https://wyzth.org/careers" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("Careers") %>
         <sup class="join">Join Us</sup></a></li>
-        <li><a href="https://wyzth.org/community" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("Terms of Service") %></a></li>
+        <li><a href="terms-of-service" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("Terms of Service") %></a></li>
        
       </ul>
     </div>

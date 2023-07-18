@@ -1,0 +1,171 @@
+<div class="container space-bottom-2">
+  <div class="w-md-75 w-lg-50 text-center mx-md-auto space-top-2 py-3">
+    <h1 class="h3">Site Preferences</h1>
+    <p>This page allows you to set up your browsing experience such as language, advanced view etc. on BscScan</p>
+    </div>
+    <div class="row">
+  <div class="w-md-75 w-lg-50 mx-md-auto col-md-6 col-12">
+    <div class="card mb-3">
+      <div class="card-body p-4">
+        <form method="post" action="./settings" id="ctl00">
+          <div class="aspNetHidden">
+            <input
+              type="hidden"
+              name="__VIEWSTATE"
+              id="__VIEWSTATE"
+              value="+Qhg0TjopJQwql3hapiQMdFebyAorS6C2dL5twl8fcrin8NFkQQIlszxArvYb8i4Gd0C3dIrW7x0AM2z8v7aWX15csOQT3u2K/s6Pob4Pl6Uuo0m03GEtoj7joVhpgXk3pJ6w+4xri2+jFm2GikVL2Y2QuYxvXI5YneiTvKVLo10if7OL8aHEDgV5orvyMuOXqzQoIslXj98k8so/ev1MNhAIzIbTAXvorcInAsoVFWZvbx7BpxKFPShFh6yqxKmAddJIXE9LSYZ8UmB8ryq/crEgP7VgGPPiD9QM3OiLSAbOQlfI9019KrnAAR8BN2K9kYmJ5PdNU31bUmrODnKZCO5nCSQ5Q+CKU87GjtkHUHy7kl2dqBKvKVs0kjjLxZhRvMF/RJ/15OYcLE6qnnogeVDsQ2weI/8JGVcReG9VnB7bFF58+E9mveVFTuGyLTUQye/YlMXAWX86U9w0QBgD5nzB8erFB2SBIWFULXvpLfloUVmPDxa9xfyIQ6AdRoP+qpeTNhcdiXslVnWgR98DwW4qbSboNN1j7XC7VvJvsVDOX1tLa8JRlwDYX+O5nRuHVUYoMjh7FZ5qoPijKYnwCH9salmWtpxAc2uvg4tt2sxFGjdmV6LGHq9n70m9S2rVTGnL1MAXRwv+Gni+BPDRLp0eYBC+hn1Dd/UBkQk2r08sgoEcaRH4ZVEFEskpNYecWKsEB4IbeodZyyjWZjmb+Z0Moj5WAaWfuZ9+fL6dNREsF4FAd6BGZivXAdemFzOKDQVECEcQ4HFrrEhylTPFdeAqF9szA37A+RpTEJWgtwvMnwkHtMFIaAV49oW22HkyqSEiLsj925UHvgk2tqt94dY+5wILa0BPyJq72OVI4ZwShaoSyQa96+OuPrCv5FGWwqP4BdueJRUUJ1/uTIietRo35vXWd34ywSkvI9FiYsPn5HsnCCoen3a0e0j4tXGUV7ynAMnzZOrNqBCw2A7fhxhzrXpKFRuTT7ult8JQj6y3fWPBLEt0IgBqR2IbPDZLdQ+YJgTIemHVy72Z3/ArSLkfDKuk17GGBII1G7vKDuKTN+aot15ghJew2cpFmZ5S3xovNLCwhFBlsNRgPIXwVyuw/5/r8vUi5sxCi4//ukiW5N83dlYw11IBURiUv0Zg9I7sk9RgTzTxTuCKlyHS0c+CGwL3K78smPHK1Wxqn07Id9Lb0DL5nQebNeduj90LPMkKZ5jBbYmoewyf2BOusl1Ah5lH8hKBEjVbf8bYSmpiEG8kOAIroKOZfEZLOuVETQDEQsRKowt/tIwbSn5zVrGWrIiJFqz8rHEMlLNB0I6yqTr0jBuFuyu9GkpZwwqMBiKrhkhPlOu1ltlNA83fbWIiabMr5srVPviR1XdID1ssUqEI/5Ojma0saKrUrWedAz13EinvrsavcBRSeUYAr/nT9wcL7iDohatopIwfsKy09XHQ245uNIMJMEll78DaaREAlhy8ZgWWn4jjyAiXK2n6/7uBh2HPqpoJfHpjzeeteidsji7J1Cqgu8uTtUsXKqqf0n5W/aRJ9HzYlM4sJm6BDxZRy4FO8vGY21bPzWQVZO8+je5wAicV99fDHDytc1FGDJJPyVlX2WuGJHqFKWwC6cL4xNuQO8G4WA9xjRsjSy/w1/kxr+hAnaamXjseVvCJ4sx8I0vMilGP1HkeSLT0gtUCaLMp9Mb9nEYlWNmLQpPzjtajBpsw17OmSC14jEBsis2YCXzsxh+2nRNmwoXFV6bPCOxTz3LL8OfY4EpDERa1Ue85ym1n2cuKDWt+TPBICzGPhOAp1A9xB178FxQSRMjTNPXFvPPooIhoj5Vpz7lm3YBPoI+5Rww4STm3+35r5npxOoQrMfWBcr8ixScM9hdOsnw22fSvQlgUrYPte+sfkl+7JwPjDb0HD3p66ddTkxwEgV+6Yw+WZnnJlG4sEe4HF5y6M86y0uAZ6ftT/Jx9LaOV4jdVb2oaDXzW9BzISURO4qvx8YF0D+DCI3wW+F2ypYCiy1pK8lk5Zs92dh4RcQjcAsSCFRZHsq2Uxr8zjpvXOU6g0lR4hUdljRPl7GCMzpcP6TNf/MzBa2KQACn1tAGNYMxcLNBDLVpCXKlCvaBp8lJutqegbe7u+7YZJp/nwzo2or7WytlWbk1w9fVg/t6vZAekR/3iLAYX8Ww1xJfSl07Sitx2dj6WC/jSHdLddU2VCY5Kzy03nEI2QGiAYciCPtxc/xcZNaR50rCjje61TEyQlsrnr8MJ9pNlsuEFXdLEIinOHdtud9zULxkXlDSj1rD4m2oPMShy+uum6KswM5uXn3ZVQ2nDC/Q5+8hisNDdK1/eYKgV+99pz6GCnqo0kW8EHyXZjHeZqiWf+SxvyNV/mroSNrHT1TxCM8z3DLRMOKOip2X1wWyEo3J64VjMDLftpYuHmlvTfbX3s/gNmqZJaDrQbSvsNLxZUqWPQ2mUqdeaB7/oApGD20qxN8LPmKP722I7g0CWKGFlLMzn7QhItJSwPd+L+5iY4T/0uYxU65Wg06w0iXMPFsZsjApQhpqsTcaK+CeslzWUm4Ft++RbBAgi5Ei1w=="
+            />
+          </div>
+          <div class="aspNetHidden">
+            <input
+              type="hidden"
+              name="__VIEWSTATEGENERATOR"
+              id="__VIEWSTATEGENERATOR"
+              value="451EDC50"
+            />
+            <input
+              type="hidden"
+              name="__EVENTVALIDATION"
+              id="__EVENTVALIDATION"
+              value="ghZ/vfEPcuAvWC9uMydP4XPymTM/cSXUiJV9FHQwx6mu5vGKLGLuL7ujCPcX4U9F0C5xZWvBh9kMHbbnxI+PgCKj9NqIj2qAUGvyhCsS2+euYq75ggbd6mvi/uSWMaUkW2pWl/ra5KY18uyx2zdSooQ/Uym0P8cIr1d19tBdXAd13+7bdh3B+iW8JX3duoJIb3IE0lzTJ0AoHktN01H9e67qQa9JLoq/boW21WBvBBLL2Jfaecu4kS7JSCD7vxQcONyOhmWVz0kaWZg5zYgB56CLSKpaKZJpXSXYaYIPs8fkPx7QBgt5eYZuo+tTK2Usxp1apxuNHWAZ1YFJnPJWyKzEC+x+ytqgA5hxqFjcy0GoMS6Dv+6lg1wiMS7BRvtZ5gt4onUDenRn7CpCA+rUMA7y/g1OOG1LtXx7JdfjCLi+xlpSyKKVHPCcmcqP3PXYCyibgg3bakYPjB+6hHa8VC4ONvWe6qxhElFHWKAGwsnyYZlCQZht0ykc5jqyfegBjWy4UfY1ozw2Ij5HZAxpRvtzQskpux3/zYMhpCAk68d3f3zOfgI2U+jm229znsVSDFfqS4cDJkLT+WzaA09LbX/8OkFL8uFM+wrWZBiVIzcL/iifgT4LB6eXvonY8HstIPZVnuuluOHQzwDr2yoRmBvG0yPvcapUYhdStz9hdrubjGsQimI00HcOYxFGq4ttcJYs5wDURz85BYBOyz7VuEC1aTmnVEUAscf/hziVFm9faZhNLOCP9sVGKqsCQ3czxhBhP1bnFebRJAAytHz05kg3Y9FQI+ysMWS5nodm3z0ngJ0mutMVO5N1Z9CpYU05etDpWT1Q6JQLORHjE+lL/tv4CzLWRCY2n5i3gnIrqFuMxfhD+A676OafvaVSZ+O1+ErKdX1ol6KqTaRcyn/7zdAoa1yKNmAybKwrzsxm459qlA0ODzWiTRAYzKACyohCSrjyerWPj3Em+y9whgl7wFk+GyjqMHuyv/E8T1VIuKvUfOaZZ4I2X1a52cW4Kl2thu4N3iy5P5wyK9Kkl1/qhA=="
+            />
+          </div>
+
+          <div class="media align-items-center">
+            <label class="media-body text-secondary mb-0" for="checkboxSwitch">
+              <h3 class="h6 font-weight-bold mb-1">Advanced Mode</h3>
+              <span
+                >Show transactions and blocks details in full. Useful for
+                developers to debug in single view. Will also display all revert
+                error messages from smart contracts (Caution recommended when
+                interacting with error messages that direct you to perform
+                additional steps or visit external sites)</span
+              >
+            </label>
+            <label class="checkbox-switch ml-3 mb-0">
+              <input
+                name="ctl00$ContentPlaceHolder1$chkAdvanceMode"
+                type="checkbox"
+                id="ContentPlaceHolder1_chkAdvanceMode"
+                class="checkbox-switch__input"
+              />
+              <span class="checkbox-switch__slider"></span>
+            </label>
+          </div>
+
+          <hr />
+
+          <div class="media align-items-center">
+            <label class="media-body text-secondary mb-0" for="checkboxSwitch1">
+              <h3 class="h6 font-weight-bold mb-1">Disqus Comments</h3>
+              <span
+                >Enable Disqus comments tab (Note: This affect all Disqus
+                comments on BscScan)</span
+              >
+            </label>
+            <label class="checkbox-switch ml-3 mb-0">
+              <input
+                name="ctl00$ContentPlaceHolder1$chkDisqus"
+                type="checkbox"
+                id="ContentPlaceHolder1_chkDisqus"
+                class="checkbox-switch__input"
+                checked="checked"
+              />
+              <span class="checkbox-switch__slider"></span>
+            </label>
+          </div>
+
+          <hr />
+
+          <div class="media align-items-center">
+            <label class="media-body text-secondary mb-0">
+              <h3 class="h6 font-weight-bold mb-1">Language</h3>
+              <span
+                >Choose desired language, you can always update from your
+                setting page</span
+              >
+            </label>
+            <select
+              name="ctl00$ContentPlaceHolder1$ddLang"
+              id="ContentPlaceHolder1_ddLang"
+              class="custom-select-1 custom-select-xs font-size-base ml-3 pb-1"
+            >
+              <option selected="selected" value="en">English</option>
+              <option value="zh-CN">中文 (CN)</option>
+            </select>
+          </div>
+
+          <hr />
+
+          <div class="media align-items-center">
+            <label class="media-body text-secondary mb-0">
+              <h3 class="h6 font-weight-bold mb-1">
+                Currency <span class="badge badge-success ml-1">New</span>
+              </h3>
+              <span>Choose desired currency</span>
+            </label>
+            <select
+              name="ctl00$ContentPlaceHolder1$ddCurrency"
+              id="ContentPlaceHolder1_ddCurrency"
+              class="custom-select-1 custom-select-xs font-size-base ml-3 pb-1"
+            >
+              <option value="USD">United States Dollar</option>
+              <option selected="selected" value="AUD">Australia Dollar</option>
+              <option value="BND">Brunei Darussalam Dollar</option>
+              <option value="BRL">Brazil Real</option>
+              <option value="CAD">Canada Dollar</option>
+              <option value="CHF">Switzerland Franc</option>
+              <option value="CNY">China Yuan Renminbi</option>
+              <option value="DKK">Denmark Krone</option>
+              <option value="EUR">Euro</option>
+              <option value="GBP">United Kingdom Pound</option>
+              <option value="HKD">Hong Kong Dollar</option>
+              <option value="IDR">Indonesia Rupiah</option>
+              <option value="ILS">Israel Shekel</option>
+              <option value="INR">India Rupee</option>
+              <option value="IRR">Iran Rial</option>
+              <option value="JPY">Japan Yen</option>
+              <option value="KPW">Korea (North) Won</option>
+              <option value="KRW">Korea (South) Won</option>
+              <option value="LKR">Sri Lanka Rupee</option>
+              <option value="MXN">Mexico Peso</option>
+              <option value="MYR">Malaysia Ringgit</option>
+              <option value="NGN">Nigeria Naira</option>
+              <option value="NOK">Norway Krone</option>
+              <option value="NZD">New Zealand</option>
+              <option value="PHP">Philippines Peso</option>
+              <option value="PKR">Pakistan Rupee</option>
+              <option value="QAR">Qatar Riyal</option>
+              <option value="RSD">Serbia Dinar</option>
+              <option value="RUB">Russia Ruble</option>
+              <option value="SAR">Saudi Arabia Riyal</option>
+              <option value="SEK">Sweden Krona</option>
+              <option value="SGD">Singapore</option>
+              <option value="THB">Thailand Baht</option>
+              <option value="TRY">Turkey Lira</option>
+              <option value="TWD">Taiwan New Dollar</option>
+              <option value="UAH">Ukraine Hryvnia</option>
+              <option value="VEF">Venezuela Bolivar</option>
+              <option value="VND">Viet Nam Dong</option>
+              <option value="ZAR">South Africa Rand</option>
+            </select>
+          </div>
+
+          <hr />
+          <div class="text-right">
+            <input
+              type="submit"
+              name="ctl00$ContentPlaceHolder1$btnSubmit"
+              value="Save Preferences"
+              onclick="clearGlobalValue();"
+              id="ContentPlaceHolder1_btnSubmit"
+              class="btn btn-xs btn-primary"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+    <p class="font-size-1">* Site preferences are saved as browser cookies.</p>
+  </div>
+</div>
+</div>
