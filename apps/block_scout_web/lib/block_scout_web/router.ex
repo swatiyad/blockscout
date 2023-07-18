@@ -118,7 +118,11 @@ end
   get "/diff-checker", DiffCheckerController, :index
   
 end
-
+  scope "/", BlockScoutWeb do
+  pipe_through :browser
+  get "/preferences", PreferencesController, :index
+  
+end
   scope "/", BlockScoutWeb do
   pipe_through :browser
   get "/top-nft", NftDataController, :index 
@@ -157,6 +161,18 @@ end
      get "/directories/grants", DirectoriesController, :directories_grants
      get "/directories/tools", DirectoriesController, :tools
 end
+
+  scope "/", BlockScoutWeb do
+  pipe_through :browser
+  get "/terms-of-service", TermsOfServiceController, :index 
+end
+
+  scope "/", BlockScoutWeb do
+  pipe_through :browser
+  get "/chat", BlocksChatController, :index 
+   post "/node-api/send-message", BlocksChatController, :send_message 
+end
+
 
 
 

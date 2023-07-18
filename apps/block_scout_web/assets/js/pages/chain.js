@@ -401,7 +401,7 @@ export function placeHolderBlock(blockNumber) {
          
           <div class="d-flex align-items-center">
             <div class="mr-2">
-                <span class="btn-icon">
+                <span class="btn-icon radius-50">
                     <span class="btn-icon-inner">
                     Bk
                     </span>

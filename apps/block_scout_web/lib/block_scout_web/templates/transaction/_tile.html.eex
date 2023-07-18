@@ -28,7 +28,7 @@
                 <%= render BlockScoutWeb.AddressView, "_labels.html", tags: tx_tags %>
               </div>
               <div>
-                <span class="mr-2 mr-md-0 order-2 text-green fs-12" in-tile data-from-now="<%= block_timestamp(@transaction) %>"></span>
+                <span class="mr-2 mr-md-0 order-2 text-gray-over fs-12" in-tile data-from-now="<%= block_timestamp(@transaction) %>"></span>
               </div>
             </td>
 

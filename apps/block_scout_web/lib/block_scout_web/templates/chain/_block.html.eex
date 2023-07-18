@@ -5,7 +5,7 @@
       <tbody class="table-group-divider">
       <tr>
         <td class="sno_col">
-          <span class="btn-icon">
+          <span class="btn-icon radius-50">
             <span class="btn-icon-inner">
             Bk
             </span>
@@ -18,7 +18,7 @@
             to: block_path(BlockScoutWeb.Endpoint, :show, @block),
             "data-selector": "block-number"
           ) %>
-            <div class="text-nowrap text-green fs-12" data-from-now="<%= @block.timestamp %>"> </div>
+            <div class="text-nowrap text_gray_over fs-12" data-from-now="<%= @block.timestamp %>"> </div>
         </div>
         </td>
         <td>

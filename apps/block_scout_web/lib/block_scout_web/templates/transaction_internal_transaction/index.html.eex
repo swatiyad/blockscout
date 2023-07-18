@@ -1,9 +1,9 @@
 <section class="container">
   <%= render BlockScoutWeb.TransactionView, "overview.html", assigns %>  
   
-  <div class="card mt-3">
+  <div class="card mt-3" style="display:none">
     <%= render BlockScoutWeb.TransactionView, "_tabs.html", assigns %>
-    <div class="card-body px-3" data-async-load data-async-listing="<%= @current_path %>">
+    <div class="card-body px-3"  data-async-load data-async-listing="<%= @current_path %>">
       <h1 class="card-title list-title-description"><%= gettext "Internal Transactions" %></h1>
 
       <div class="list-top-pagination-container-wrapper">

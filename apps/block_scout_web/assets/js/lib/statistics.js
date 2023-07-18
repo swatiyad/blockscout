@@ -3,181 +3,197 @@ document.addEventListener("DOMContentLoaded", async function () {
   const tableBody = document.getElementById("tableBody");
   const topToken = document.getElementById("top-token");
 
-  let trans = `<div>
-    <div class="media align-items-center mb-1">
-      <div class="media-body">Top WYZth Sender</div>
-      <div class="text-right">Total WYZth</div>
-    </div>
-    <div class="media align-items-center mb-1">
-      <div class="media-body">
-        <span
-          class="hash-tag text-truncate"
-          data-toggle="tooltip"
-          title=""
-          data-original-title="0x...000"
-          ><a
-            href="/address/0x...000"
-            >0x...000</a
-          ></span
-        >
-      </div>
-      <div class="text-secondary text-right">
-        <i class="fab fa-binance text-secondary mr-1"></i
-        >0
-      </div>
-    </div>
-    <hr class="pb-1 hr" />
-    <div class="media align-items-center mb-1">
-      <div class="media-body">Top WYZTH Receiver</div>
-      <div class="text-right">Total WYZTH</div>
-    </div>
-    <div class="media align-items-center mb-1">
-      <div class="media-body">
-        <i
-          class="far fa-file-alt text-secondary mr-1"
-          data-toggle="tooltip"
-          title=""
-          data-original-title="Contract"
-        ></i
-        ><span
-          class="hash-tag text-truncate"
-          data-toggle="tooltip"
-          title=""
-          data-original-title="0x...000"
-          ><a
-            href="/address/0x...000"
-            >0x...000</a
-          ></span
-        >
-      </div>
-      <div class="text-secondary text-right">
-        <i class="fab fa-binance text-secondary mr-1"></i
-        >0
-      </div>
-    </div>
-    <hr class="pb-1 hr" />
-    <div class="media align-items-center mb-1">
-      <div class="media-body">Top Txn Count Sent</div>
-      <div class="text-right">Total Txn</div>
-    </div>
-    <div class="media align-items-center mb-1">
-      <div class="media-body">
-        <span
-          class="hash-tag text-truncate"
-          data-toggle="tooltip"
-          title=""
-          data-original-title="0x00"
-          ><a
-            href=/address/0x000
-            >0x...000</a
-          ></span
-        >
-      </div>
-      <div class="text-secondary text-right">0</div>
-    </div>
-    <hr class="pb-1 hr" />
-    <div class="media align-items-center mb-1">
-      <div class="media-body">Top Txn Count Received</div>
-      <div class="text-right">Total Txn</div>
-    </div>
-    <div class="media align-items-center mb-1">
-      <div class="media-body">
-        <i
-          class="far fa-file-alt text-secondary mr-1"
-          data-toggle="tooltip"
-          title=""
-          data-original-title="Contract"
-        ></i
-        ><span
-          class="hash-tag text-truncate"
-          data-toggle="tooltip"
-          title=""
-          data-original-title="0x000"
-          ><a
-            href=/address/0x000
-            >0x000</a
-          ></span
-        >
-      </div>
-      <div class="text-secondary text-right">0</div>
-    </div>
-    </div>
-  </div>`;
+//   let trans = `<div>
+//     <div class="media align-items-center mb-1">
+//       <div class="media-body">Top WYZth Sender</div>
+//       <div class="text-right">Total WYZth</div>
+//     </div>
+//     <div class="media align-items-center mb-1">
+//       <div class="media-body">
+//         <span
+//           class="hash-tag text-truncate"
+//           data-toggle="tooltip"
+//           title=""
+//           data-original-title="0x...000"
+//           ><a
+//             href="/address/0x...000"
+//             >0x...000</a
+//           ></span
+//         >
+//       </div>
+//       <div class="text-secondary text-right">
+//         <i class="fab fa-binance text-secondary mr-1"></i
+//         >0
+//       </div>
+//     </div>
+//     <hr class="pb-1 hr" />
+//     <div class="media align-items-center mb-1">
+//       <div class="media-body">Top WYZTH Receiver</div>
+//       <div class="text-right">Total WYZTH</div>
+//     </div>
+//     <div class="media align-items-center mb-1">
+//       <div class="media-body">
+//         <i
+//           class="far fa-file-alt text-secondary mr-1"
+//           data-toggle="tooltip"
+//           title=""
+//           data-original-title="Contract"
+//         ></i
+//         ><span
+//           class="hash-tag text-truncate"
+//           data-toggle="tooltip"
+//           title=""
+//           data-original-title="0x...000"
+//           ><a
+//             href="/address/0x...000"
+//             >0x...000</a
+//           ></span
+//         >
+//       </div>
+//       <div class="text-secondary text-right">
+//         <i class="fab fa-binance text-secondary mr-1"></i
+//         >0
+//       </div>
+//     </div>
+//     <hr class="pb-1 hr" />
+//     <div class="media align-items-center mb-1">
+//       <div class="media-body">Top Txn Count Sent</div>
+//       <div class="text-right">Total Txn</div>
+//     </div>
+//     <div class="media align-items-center mb-1">
+//       <div class="media-body">
+//         <span
+//           class="hash-tag text-truncate"
+//           data-toggle="tooltip"
+//           title=""
+//           data-original-title="0x00"
+//           ><a
+//             href=/address/0x000
+//             >0x...000</a
+//           ></span
+//         >
+//       </div>
+//       <div class="text-secondary text-right">0</div>
+//     </div>
+//     <hr class="pb-1 hr" />
+//     <div class="media align-items-center mb-1">
+//       <div class="media-body">Top Txn Count Received</div>
+//       <div class="text-right">Total Txn</div>
+//     </div>
+//     <div class="media align-items-center mb-1">
+//       <div class="media-body">
+//         <i
+//           class="far fa-file-alt text-secondary mr-1"
+//           data-toggle="tooltip"
+//           title=""
+//           data-original-title="Contract"
+//         ></i
+//         ><span
+//           class="hash-tag text-truncate"
+//           data-toggle="tooltip"
+//           title=""
+//           data-original-title="0x000"
+//           ><a
+//             href=/address/0x000
+//             >0x000</a
+//           ></span
+//         >
+//       </div>
+//       <div class="text-secondary text-right">0</div>
+//     </div>
+//     </div>
+//   </div>`;
 
-  let token =`<div>
-  <div class="media align-items-center mb-1">
-    <div class="media-body">Top Tokens</div>
-    <div class="text-right">Total Transfer</div>
-  </div>
-  <div class="media align-items-center mb-1">
-    <div class="media-body">
-      <span
-        class="hash-tag text-truncate"
-        data-toggle="tooltip"
-        title=""
-        data-original-title="0x000"
-        ><a
-          href="/address/0x0000"
-          >0x000</a
-        ></span
-      >
-    </div>
-    <div class="text-secondary text-right">
-      <i class="fab fa-binance text-secondary mr-1"></i
-      >0
-    </div>
-  </div>
-  <hr class="pb-1 hr" />
-  <div class="media align-items-center mb-1">
-    <div class="media-body">Top Unique Sender</div>
-    <div class="text-right"></div>
-  </div>
-  <div class="media align-items-center mb-1">
-    <div class="media-body">
-      <i
-        class="far fa-file-alt text-secondary mr-1"
-        data-toggle="tooltip"
-        title=""
-        data-original-title="Contract"
-      ></i
-      ><span
-        class="hash-tag text-truncate"
-        data-toggle="tooltip"
-        title=""
-        data-original-title="0x000"
-        ><a
-          href="/address/0x000"
-          >0x00.000</a
-        ></span
-      >
-    </div>
-    <div class="text-secondary text-right">
-      <i class="fab fa-binance text-secondary mr-1"></i
-      >
-    </div>
-  </div>
-  <hr class="pb-1 hr" />
-  <div class="media align-items-center mb-1">
-    <div class="media-body">Top Unique Reciever</div>
-    <div class="text-right"></div>
-  </div>
-  <div class="media align-items-center mb-1">
-    <div class="media-body">
-      <span
-        class="hash-tag text-truncate"
-        data-toggle="tooltip"
-        title=""
-        data-original-title="0x000"
-        ><a
-          href="/address/0x000"
-          >0x000</a
-        ></span
-      >
-    </div>
-    <div class="text-secondary text-right"></div>
-  </div>
+//   let token =`<div>
+//   <div class="media align-items-center mb-1">
+//     <div class="media-body">Top Tokens</div>
+//     <div class="text-right">Total Transfer</div>
+//   </div>
+//   <div class="media align-items-center mb-1">
+//     <div class="media-body">
+//       <span
+//         class="hash-tag text-truncate"
+//         data-toggle="tooltip"
+//         title=""
+//         data-original-title="0x000"
+//         ><a
+//           href="/address/0x0000"
+//           >0x000</a
+//         ></span
+//       >
+//     </div>
+//     <div class="text-secondary text-right">
+//       <i class="fab fa-binance text-secondary mr-1"></i
+//       >0
+//     </div>
+//   </div>
+//   <hr class="pb-1 hr" />
+//   <div class="media align-items-center mb-1">
+//     <div class="media-body">Top Unique Sender</div>
+//     <div class="text-right"></div>
+//   </div>
+//   <div class="media align-items-center mb-1">
+//     <div class="media-body">
+//       <i
+//         class="far fa-file-alt text-secondary mr-1"
+//         data-toggle="tooltip"
+//         title=""
+//         data-original-title="Contract"
+//       ></i
+//       ><span
+//         class="hash-tag text-truncate"
+//         data-toggle="tooltip"
+//         title=""
+//         data-original-title="0x000"
+//         ><a
+//           href="/address/0x000"
+//           >0x00.000</a
+//         ></span
+//       >
+//     </div>
+//     <div class="text-secondary text-right">
+//       <i class="fab fa-binance text-secondary mr-1"></i
+//       >
+//     </div>
+//   </div>
+//   <hr class="pb-1 hr" />
+//   <div class="media align-items-center mb-1">
+//     <div class="media-body">Top Unique Reciever</div>
+//     <div class="text-right"></div>
+//   </div>
+//   <div class="media align-items-center mb-1">
+//     <div class="media-body">
+//       <span
+//         class="hash-tag text-truncate"
+//         data-toggle="tooltip"
+//         title=""
+//         data-original-title="0x000"
+//         ><a
+//           href="/address/0x000"
+//           >0x000</a
+//         ></span
+//       >
+//     </div>
+//     <div class="text-secondary text-right"></div>
+//   </div>
  
-  </div>
+//   </div>
+// </div>`
+
+
+let trans= 
+`<div>
+<div class="table-content-loader my-1 loader-height"></div>
+<div class="table-content-loader my-1 loader-height"></div>
+<div class="table-content-loader my-1 loader-height"></div>
+<div class="table-content-loader my-1 loader-height"></div>
+</div>`
+let token= 
+`<div>
+<div class="table-content-loader my-1 loader-height"></div>
+<div class="table-content-loader my-1 loader-height"></div>
+<div class="table-content-loader my-1 loader-height"></div>
+<div class="table-content-loader my-1 loader-height"></div>
 </div>`
   document.querySelector("#ContentPlaceHolder1_Div1a_body_1").innerHTML = trans;
   document.querySelector("#ContentPlaceHolder1_Div1a_body_2").innerHTML = token;

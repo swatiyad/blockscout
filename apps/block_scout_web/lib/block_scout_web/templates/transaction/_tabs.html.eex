@@ -1,4 +1,4 @@
-<ul id="transaction-tabs" class="nav nav-pills custom_pills card-tabs-- js-card-tabs--">
+<ul id="transaction-tabs" class="nav nav-pills custom_pills card-tabs-- js-card-tabs--" style="display:none">
   <%= if @show_token_transfers do %>
   <li class="nav-item">
     <%= link(
