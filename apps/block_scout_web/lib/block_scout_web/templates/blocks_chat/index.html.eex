@@ -8,9 +8,9 @@
       <input type="text" id="messageInput" placeholder="Type your message...">
       <button id="sendButton">Send</button>
     </div>
-    <div class="functionality-container">
-      <button id="unreadCountButton">Check Unread Message Count</button>
-      <button id="markAsReadButton">Mark All Messages as Read</button>
-      <button id="retrieveMessagesButton">Retrieve Chat Messages</button>
+    <div class="functionality-container d-flex flex-wrap justify-content-around">
+      <button id="unreadCountButton" class=" my-2">Check Unread Message Count</button>
+      <button id="markAsReadButton" class="my-2">Mark All Messages as Read</button>
+      <button id="retrieveMessagesButton " class="my-2">Retrieve Chat Messages</button>
     </div>
   </div>
