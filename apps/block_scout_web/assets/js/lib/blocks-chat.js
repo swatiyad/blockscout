@@ -1,4 +1,6 @@
 import axios from "axios";
+import Web3 from "web3";
+
 
 const messageContainer = document.getElementById('messageContainer');
 const messageInput = document.getElementById('messageInput');
@@ -7,15 +9,28 @@ const unreadCountButton = document.getElementById('unreadCountButton');
 const markAsReadButton = document.getElementById('markAsReadButton');
 const retrieveMessagesButton = document.getElementById('retrieveMessagesButton');
 
-const localhost = `http://localhost:3000/node-api`
+const localhost = `https://wyzthscan.org/node-api`
+if (typeof window.ethereum !== 'undefined') {
+  const web3 = new Web3(window.ethereum);
+
+function displayMessage(sender, message) {
+  const messageElement = document.createElement('div');
+  messageElement.classList.add('message');
+  messageElement.textContent = `${sender}: ${message}`;
+  messageContainer.appendChild(messageElement);
+}
 
 // Function to send a message
-async function sendMessage(message, replyToId) {
+async function sendChatMessage( message,to,replyToId) {
   try {
-    const response = await axios.post(`${localhost}/send-message`, {
+    const url = `${localhost}/send-message`;
+    const params = {
       message: message,
-      replyToId: replyToId
-    });
+      replyToId: replyToId,
+      to:to
+    };
+
+    const response = await axios.get(url, { params });
 
     if (response.status === 200) {
       console.log('Message sent successfully.');
@@ -48,7 +63,8 @@ async function getUnreadMessageCount(address) {
 // Function to mark all messages as read for a given address
 async function markAllMessagesAsRead(address) {
   try {
-    const response = await axios.post(`${localhost}/mark-as-read/${address}`);
+    const url = `${localhost}/mark-as-read/${address}`;
+    const response = await axios.get(url);
 
     if (response.status === 200) {
       console.log('All messages marked as read.');
@@ -60,6 +76,7 @@ async function markAllMessagesAsRead(address) {
   }
 }
 
+
 // Function to retrieve chat messages for a wallet
 async function retrieveChatMessages(startId, offset, ctype) {
   try {
@@ -68,7 +85,7 @@ async function retrieveChatMessages(startId, offset, ctype) {
     if (response.status === 200) {
       const messages = response.data.messages;
       console.log('Retrieved chat messages:', messages);
-      // Display the retrieved messages in the chat container
+      
       messages.forEach(message => {
         displayMessage(message.sender, message.text);
       });
@@ -84,30 +101,43 @@ async function retrieveChatMessages(startId, offset, ctype) {
 sendButton.addEventListener('click', function () {
   const message = messageInput.value.trim();
   if (message !== '') {
-    sendMessage(message);
+    const toAddress = '0xf2B86DBCd6cfDA88Afd03cc090dfcA5e008251C9'; // Replace with the recipient's address
+    const replyToId = 0; // Replace with the replytoid (if applicable)
+    sendChatMessage(message, toAddress, replyToId);
   }
 });
 
 // Event listener for pressing Enter key in the input field
-messageInput.addEventListener('keydown', function (event) {
+messageInput.addEventListener('keydown', async function (event) {
   if (event.key === 'Enter') {
     event.preventDefault();
     const message = messageInput.value.trim();
     if (message !== '') {
-      sendMessage(message);
+      const accounts = await web3.eth.getAccounts();
+      const walletAddress = accounts[0];
+  const address = walletAddress;
+      const toAddress = address; 
+      const replyToId = 0; 
+      sendChatMessage(message, toAddress, replyToId);
     }
   }
 });
 
 // Event listener for getting unread message count
-unreadCountButton.addEventListener('click', function () {
-  const address = '0x...'; // Replace with the desired address
+unreadCountButton.addEventListener('click',async function () {
+  await window.ethereum.request({ method: 'eth_requestAccounts' });
+
+      const accounts = await web3.eth.getAccounts();
+      const walletAddress = accounts[0];
+  const address = walletAddress; // Replace with the desired address
   getUnreadMessageCount(address);
 });
 
 // Event listener for marking all messages as read
-markAsReadButton.addEventListener('click', function () {
-  const address = '0xf2B86DBCd6cfDA88Afd03cc090dfcA5e008251C9'; // Replace with the desired address
+markAsReadButton.addEventListener('click',async function () {
+  const accounts = await web3.eth.getAccounts();
+  const walletAddress = accounts[0];
+const address = walletAddress;
   markAllMessagesAsRead(address);
 });
 
@@ -118,3 +148,4 @@ retrieveMessagesButton.addEventListener('click', function () {
   const ctype = 0; // Replace with the desired message type
   retrieveChatMessages(startId, offset, ctype);
 });
+}

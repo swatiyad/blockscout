@@ -165,3 +165,93 @@ $(function () {
     $placeHolder.classList.add('d-none')
   })
 })
+
+
+// function getAddressHashFromURL() {
+//   var url = window.location.href;
+
+// // Split the URL by '/'
+// var urlParts = url.split('/');
+
+// // The address hash should be the last part of the URL
+// var addressHash = urlParts[urlParts.length - 1];
+
+// return addressHash;
+// }
+
+// function getLastPartFromURL() {
+//   var url = window.location.href;
+//   var stateIndex = url.lastIndexOf("/state");
+//   var disqusIndex = url.lastIndexOf("/disqus");
+
+//   if (stateIndex !== -1 && stateIndex === url.length - "/state".length) {
+//       var lastPart = url.substr(stateIndex + "/state".length);
+//       return lastPart;
+//   } else if (disqusIndex !== -1 && disqusIndex === url.length - "/disqus".length) {
+//       var lastPart = url.substr(disqusIndex + "/disqus".length);
+//       return lastPart;
+//   } else {
+//       return "";
+//   }
+// }
+
+// document.addEventListener("DOMContentLoaded",function () {
+// document.querySelector(".state_page_second").style.display ="flex"
+
+// const address = getAddressHashFromURL();
+// console.log(address,"address",window.location.href);
+// var lastPart = getLastPartFromURL();
+
+// if (lastPart === "disqus") {
+//     // Your code for handling "/disqus" case here
+//     console.log("URL contains /disqus");
+// } else if (lastPart === "state") {
+//     // Your code for handling "/state" case here
+//     document.querySelector("#tab-4-id a").classList.remove("active");
+//     document.querySelector("#tab-5-id a").classList.add("active");
+//     document.querySelector("#tab-6-id a").classList.remove("active");
+// } else {
+//     // Your code for handling other cases (empty string) here
+//     console.log("URL does not match /state or /disqus");
+// }
+// })
+
+
+// const tab4 = document.querySelector("#tab-4-id");
+// const tab5 = document.querySelector("#tab-5-id");
+// const tab6 = document.querySelector("#tab-6-id");
+
+
+// tab4.onclick = function() {
+// document.querySelector("#tab-4-id a").classList.add("active");
+// document.querySelector("#tab-5-id a").classList.remove("active");
+// document.querySelector("#tab-6-id a").classList.remove("active");
+// var addressHash = getAddressHashFromURL();
+// console.log(addressHash,"addressHash")
+// window.location.href = `http://localhost:4000/tx/${addressHash}`
+
+// }
+
+// tab5.onclick = function() {
+// console.log("hello12")
+// document.querySelector("#tab-4-id a").classList.remove("active");
+// document.querySelector("#tab-5-id a").classList.add("active");
+// document.querySelector("#tab-6-id a").classList.remove("active");
+// document.querySelector("#transaction_detail_id").style.display=="none !important";
+// var addressHash = getAddressHashFromURL();
+// console.log(addressHash,"addressHash")
+// window.location.href = `http://localhost:4000/tx/${addressHash}/state`
+// if(last!=""){
+//   document.querySelector("#tab-5-id a").classList.add("active");
+// }
+// }
+
+// tab6.onclick = function() {
+// document.querySelector("#tab-4-id a").classList.remove("active");
+// document.querySelector("#tab-5-id a").classList.remove("active");
+// document.querySelector("#tab-6-id a").classList.add("active");
+// var addressHash = getAddressHashFromURL();
+// console.log(addressHash,"addressHash")
+// console.log("Address Hash:", addressHash);
+// window.location.href = `http://localhost:4000/tx/${addressHash}/discus`
+// }

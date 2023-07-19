@@ -222,7 +222,7 @@ a {
     color: #77838f;
     background: rgba(119, 131, 143, .1);
     border-color: transparent;
-    font-weight:bolder;
+    font-weight:900;
 }
 .loader-height{
     height: 50px !important;
@@ -387,10 +387,11 @@ a {
   #sendButton {
     padding: 5px 10px;
     margin-left: 10px;
-    background-color: #4caf50;
+    background-color: #7b8e43;
     color: white;
     border: none;
     cursor: pointer;
+    border-radius:10px
   }
   
   .functionality-container {
@@ -401,13 +402,13 @@ a {
   
   .functionality-container button {
     padding: 5px 10px;
-    background-color: #007bff;
+    background-color: #7b8e43;
     color: white;
     border: none;
     cursor: pointer;
+    border-radius:10px
   }
   
-
   
   .wrapper-cc {
     position: absolute;

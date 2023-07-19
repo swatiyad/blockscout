@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                 <td class="hide_for_hompage">
                   <div class="text-truncate width135">
                     <a
-                      class="text-truncate text-blue"
+                      class="text-truncate text-bgreenlue"
                       data-test="transaction_hash_link"
                       href="/address/0x${Buffer.from(detail.contract_address_hash).toString("hex")}"
                       >0x${Buffer.from(detail.contract_address_hash).toString("hex")}</a
@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", async function () {
               <td class="hide_for_homepage">
                 <div class="text-truncate d-flex text-success">
                   <a
-                    class="text-truncate text-blue"
+                    class="text-truncate text-green"
                     data-test="transaction_hash_link"
                     href="/tx/0x${Buffer.from(detail.transaction_hash).toString("hex")}"
                     >0x${Buffer.from(detail.transaction_hash).toString("hex")}</a
@@ -146,11 +146,11 @@ document.addEventListener("DOMContentLoaded", async function () {
                           data-custom-class=""
                         >
                           <span
-                            class="d-none d-md-none d-xl-inline text-blue"
+                            class="d-none d-md-none d-xl-inline text-green"
                             >0x${Buffer.from(detail.from_address_hash).toString("hex")}</span
                           >
                           <span
-                            class="d-md-inline-block d-xl-none text-blue"
+                            class="d-md-inline-block d-xl-none text-green"
                             >0x${Buffer.from(detail.from_address_hash).toString("hex")}</span
                           >
                         </span>
@@ -180,11 +180,11 @@ document.addEventListener("DOMContentLoaded", async function () {
                           data-custom-class=""
                         >
                           <span
-                            class="d-none d-md-none d-xl-inline text-blue"
+                            class="d-none d-md-none d-xl-inline text-green"
                             >0x${Buffer.from(detail.to_address_hash).toString("hex")}</span
                           >
                           <span
-                            class="d-md-inline-block d-xl-none text-blue"
+                            class="d-md-inline-block d-xl-none text-green"
                             >0x${Buffer.from(detail.to_address_hash).toString("hex")}</span
                           >
                         </span>
@@ -243,7 +243,7 @@ document.addEventListener("DOMContentLoaded", async function () {
               <td class="hide_for_hompage">
                 <div class="text-truncate width135">
                   <a
-                    class="text-truncate text-blue"
+                    class="text-truncate text-green"
                     data-test="transaction_hash_link"
                     href="/address/0x${Buffer.from(detail.contract_address_hash).toString("hex")}"
                     >0x${Buffer.from(detail.contract_address_hash).toString("hex")}</a

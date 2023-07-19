@@ -151,6 +151,10 @@ defmodule BlockScoutWeb.WebRouter do
         only: [:index],
         as: :state
       )
+       resources("/disqus", DisqusController,
+        only: [:index],
+        as: :state
+      )
     end
 
     resources("/accounts", AddressController, only: [:index])

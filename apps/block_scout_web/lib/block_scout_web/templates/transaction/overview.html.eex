@@ -27,11 +27,26 @@
 <% {:ok, created_from_address} = if to_address_hash, do: Chain.hash_to_address(to_address_hash), else: {:ok, nil} %>
 <% created_from_address_hash_str = if from_address_hash(created_from_address), do: "0x" <> Base.encode16(from_address_hash(created_from_address).bytes, case: :lower), else: nil %>
 <%= render BlockScoutWeb.Advertisement.TextAdView, "index.html", conn: @conn %>
-<section class="fs-14" data-page="transaction-details" data-page-transaction-hash="<%= @transaction %>">
+<section class="fs-14" data-page="transaction-details" id="transaction_detail_id" data-page-transaction-hash="<%= @transaction %>">
+
+
   <div class="row">
-    <div class="col-md-12">
+
+   <!-- <ul id="transaction-tabs " class="nav nav-pills custom_pills card-tabs-- js-card-tabs-- my-2 state_page_second"   >
+
+      <li class="nav-item" id="tab-4-id">
+    <a class="nav-link active"  href="#">Overview</a>
+        </li>  
+          <li class="nav-item" id="tab-5-id">
+     <a class="nav-link" href="#">State</a>
+        </li>
+          <li class="nav-item" id="tab-6-id">
+    <a class="nav-link " href="#">Comment</a>
+        </li>
+    </ul> -->
+    <div class="col-md-12 transaction_display_id">
       <!-- Transaction Details -->     
-          <div class="page-title display_flex">   
+          <div class="page-title display_flex" >   
             <%= cond do %>
               <% Enum.member?(circles_addresses_list, address_hash_str) -> %>
                 <div class="custom-dapp-header-container">
@@ -64,6 +79,9 @@
             </div>
             
             <div class="d-flex">
+      
+<button class="btn btn-primary btn-xs fs-12 dropdown btn-go-back mb-2 mx-2" style="height:30px"><i class="fa fa-arrow-left px-1" aria-hidden="true"></i>Go Back</button>
+
               <div class="dropdown">
                 <button class="btn btn-primary btn-xs dropdown-toggle fs-12" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Exchange
@@ -99,7 +117,7 @@
                 </div>
               <% end %>
           </div>
-          <p class=""> A Web3 Crypto Mutual Fund, start with as low as $50 on <a href="https://wyscale.com/" target="_blank" class="text-blue font-weight-bold">  WYscale </a>
+          <p class=""> A Web3 Crypto Mutual Fund, start with as low as $50 on <a href="https://wyscale.com/" target="_blank" class="text-green font-weight-bold">  WYscale </a>
           </p>
           <div class="card js-ad-dependant-mb-3 mt-4 fs-15">
           <div class="card-body">
@@ -577,8 +595,8 @@
               <%= gettext "More Details:" %>
             </dt>
             <dd class="col-sm-9 col-lg-10">
-              <div class="fs-14 text-blue cursor-pointer" id="toggle"> <i class="fa fa-plus mr-2"></i> Click to show more</div>
-              <div class="fs-14 text-blue cursor-pointer" style="display:none" id="back_btn">  <i class="fa fa-minus mr-2"></i> Click to show less</div>
+              <div class="fs-14 text-green cursor-pointer" id="toggle"> <i class="fa fa-plus mr-2"></i> Click to show more</div>
+              <div class="fs-14 text-green cursor-pointer" style="display:none" id="back_btn">  <i class="fa fa-minus mr-2"></i> Click to show less</div>
             </dd>
         </dl>
       </div>
@@ -611,6 +629,7 @@
     const btns = document.getElementById("toggle");
     const backbtns = document.getElementById ("back_btn");
     const inputDiv = document.getElementById ("input_method");
+     const btnGoBack = document.querySelector(".btn-go-back");
 
     btns.onclick = function () {
       if (targetDiv.style.display !== "none") {
@@ -639,6 +658,11 @@
          inputDiv.style.display = "block";
       }
     };
+    btnGoBack.onclick = function(){
+      window.history.back();
+    }
+
+
 
 </script>
 
