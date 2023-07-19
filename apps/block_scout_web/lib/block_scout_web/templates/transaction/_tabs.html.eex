@@ -1,6 +1,6 @@
-<ul id="transaction-tabs" class="nav nav-pills custom_pills card-tabs-- js-card-tabs--" style="display:none">
+<ul id="transaction-tabs" class="nav nav-pills custom_pills card-tabs-- js-card-tabs-- id="transactions_tab_id" style="display:none !important">
   <%= if @show_token_transfers do %>
-  <li class="nav-item">
+  <li class="nav-item" >
     <%= link(
           gettext("Token Transfers"),
           class: "nav-link #{tab_status("token-transfers", @conn.request_path, @show_token_transfers)}",

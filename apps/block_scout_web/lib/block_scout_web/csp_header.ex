@@ -13,7 +13,7 @@ defmodule BlockScoutWeb.CSPHeader do
 
     Controller.put_secure_browser_headers(conn, %{
       "content-security-policy" => "\
-        connect-src 'self' #{config[:mixpanel_url]} #{config[:amplitude_url]} #{websocket_endpoints(conn)} wss://*.bridge.walletconnect.org/ https://request-global.czilladx.com/ https://raw.githubusercontent.com/trustwallet/assets/ https://registry.walletconnect.org/data/wallets.json http://ec2-52-66-146-60.ap-south-1.compute.amazonaws.com/ http://localhost:3000 https://rpc-mainnet3.wyzthchain.org/ https://chatapi.blockscan.com/ https://*.poa.network;\
+        connect-src 'self' #{config[:mixpanel_url]} #{config[:amplitude_url]} #{websocket_endpoints(conn)} wss://*.bridge.walletconnect.org/ https://request-global.czilladx.com/ https://raw.githubusercontent.com/trustwallet/assets/ https://registry.walletconnect.org/data/wallets.json http://ec2-52-66-146-60.ap-south-1.compute.amazonaws.com/ http://localhost:3000 https://rpc-mainnet3.wyzthchain.org/ https://https-wyzthscan-org.disqus.com/embed.js https://chatapi.blockscan.com/ https://*.poa.network;\
         default-src 'self';\
         script-src 'self' 'unsafe-inline' 'unsafe-eval' https://coinzillatag.com https://www.google.com https://www.gstatic.com;\
         style-src 'self' 'unsafe-inline' 'unsafe-eval' https://fonts.googleapis.com;\

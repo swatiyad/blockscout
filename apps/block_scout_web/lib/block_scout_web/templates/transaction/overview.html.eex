@@ -27,11 +27,25 @@
 <% {:ok, created_from_address} = if to_address_hash, do: Chain.hash_to_address(to_address_hash), else: {:ok, nil} %>
 <% created_from_address_hash_str = if from_address_hash(created_from_address), do: "0x" <> Base.encode16(from_address_hash(created_from_address).bytes, case: :lower), else: nil %>
 <%= render BlockScoutWeb.Advertisement.TextAdView, "index.html", conn: @conn %>
-<section class="fs-14" data-page="transaction-details" data-page-transaction-hash="<%= @transaction %>">
+<section class="fs-14" data-page="transaction-details" id="transaction_detail_id" data-page-transaction-hash="<%= @transaction %>">
+
+<ul id="transaction-tabs" class="nav nav-pills custom_pills card-tabs-- js-card-tabs-- my-2">
+
+  <li class="nav-item" id="tab-1-id">
+<a class="nav-link active" id="overview_id" href="javascript:void(0)">Overview</a>
+    </li>  
+      <li class="nav-item" id="tab-2-id">
+ <a class="nav-link" href="javascript:void(0)">State</a>
+    </li>
+      <li class="nav-item" id="tab-3-id">
+<a class="nav-link " href="javascript:void(0)">Comment</a>
+    </li>
+</ul>
+
   <div class="row">
     <div class="col-md-12">
       <!-- Transaction Details -->     
-          <div class="page-title display_flex">   
+          <div class="page-title display_flex" >   
             <%= cond do %>
               <% Enum.member?(circles_addresses_list, address_hash_str) -> %>
                 <div class="custom-dapp-header-container">

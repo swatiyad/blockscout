@@ -1,8 +1,23 @@
 <section class="container">
+<div class="container">
+<ul id="transaction-tabs" class="nav nav-pills custom_pills card-tabs-- js-card-tabs-- my-2">
+
+  <li class="nav-item" id="tab-1-id">
+<a class="nav-link active" id="overview_id" href="javascript:void(0)">Overview</a>
+    </li>  
+      <li class="nav-item" id="tab-2-id">
+ <a class="nav-link" href="javascript:void(0)">State</a>
+    </li>
+      <li class="nav-item" id="tab-3-id">
+<a class="nav-link " href="javascript:void(0)">Comment</a>
+    </li>
+</ul>
+</div>
+
   <%= render BlockScoutWeb.TransactionView, "overview.html", assigns %>  
   
-  <div class="card mt-3" style="display:none">
-    <%= render BlockScoutWeb.TransactionView, "_tabs.html", assigns %>
+  <div class="card mt-3">
+      <!-- <%= render BlockScoutWeb.TransactionView, "_tabs.html", assigns %> -->
     <div class="card-body px-3"  data-async-load data-async-listing="<%= @current_path %>">
       <h1 class="card-title list-title-description"><%= gettext "Internal Transactions" %></h1>
 
@@ -50,3 +65,53 @@
   </div>
   <script defer data-cfasync="false" src="<%= static_path(@conn, "/js/token-transfers-toggle.js") %>"></script>
 </section>
+
+   <script>
+        function getAddressHashFromURL() {
+               var url = window.location.href;
+
+            // Split the URL by '/'
+            var urlParts = url.split('/');
+
+            // The address hash should be the last part of the URL
+            var addressHash = urlParts[urlParts.length - 1];
+
+            return addressHash;
+        }
+
+        // Get references to the tab elements
+        const tab1 = document.querySelector("#tab-1-id");
+        const tab2 = document.querySelector("#tab-2-id");
+        const tab3 = document.querySelector("#tab-3-id");
+
+        // Click event listeners for the tabs
+        tab1.onclick = function() {
+            document.querySelector("#tab-1-id a").classList.add("active");
+            document.querySelector("#tab-2-id a").classList.remove("active");
+            document.querySelector("#tab-3-id a").classList.remove("active");
+             var addressHash = getAddressHashFromURL();
+             window.location.href = `/tx/${addressHash}`
+        console.log("Address Hash:", addressHash);
+        }
+
+        tab2.onclick = function() {
+            document.querySelector("#tab-1-id a").classList.remove("active");
+            document.querySelector("#tab-2-id a").classList.add("active");
+            document.querySelector("#tab-3-id a").classList.remove("active");
+             document.querySelector("#transaction_detail_id").style.display=="none !important";
+             var addressHash = getAddressHashFromURL();
+             window.location.href = `/tx/${addressHash}/state`
+        console.log("Address Hash:", addressHash);
+        }
+
+        tab3.onclick = function() {
+            document.querySelector("#tab-1-id a").classList.remove("active");
+            document.querySelector("#tab-2-id a").classList.remove("active");
+            document.querySelector("#tab-3-id a").classList.add("active");
+             var addressHash = getAddressHashFromURL();
+        console.log("Address Hash:", addressHash);
+        }
+
+        // Get and log the address hash from the URL
+       
+    </script>
