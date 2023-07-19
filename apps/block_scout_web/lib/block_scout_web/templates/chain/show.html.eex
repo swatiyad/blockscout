@@ -4,13 +4,13 @@
     <div class="container mb-4">         
       <div class="row">          
         <div class="col-sm-12 col-md-12 col-lg-7 col-md-6 mb-2" id="inner_page_searchbar">
-         <h3 class="text-white" style="font-size:21px;font-weight: 400;"> The WYZth Network Explorer </h3>    
+         <h3 class="text-white" style="font-size:21px;font-weight: 400;"> The XUV Network Explorer </h3>    
           <div class="search-form d-inline-block w-100">
             <%= render BlockScoutWeb.LayoutView, "_search.html", conn: @conn, id: "main-search-autocomplete-mobile", additional_classes: ["mobile-search-hide--"] %>
             <%#= render BlockScoutWeb.LayoutView, "_search.html", conn: @conn, id: "main-search-autocomplete-mobile", additional_classes: ["mobile-search-show"] %>
           
           </div>
-          <p class="text-white mt-3"> A Web3 Crypto Mutual Fund, start with as low as $50 on <a href="https://wyscale.com/" target="_blank" class="text-blue font-weight-bold">  WYscale </a>
+          <p class="text-white mt-3"> A Web3 Crypto Mutual Fund, start with as low as $50 on <a href="/" target="_blank" class="text-blue font-weight-bold">  XUV </a>
           </p>
         </div>
         <div class="col-sm-12 col-md-12 col-lg-5 col-md-6 mb-2 text-center py-3">
@@ -28,11 +28,11 @@
       <div class="row">
         <div class="col-sm-12 col-md-6 col-lg-4 border-right-sm1">
           <div class="media border-bottom mb-4 pb-4 dashboard_home">
-            <!--<img class="mr-3 media_icon" src="images/a-04.svg" width="50" height="40"  style="width:50px;">-->
-            <div class="media_bg_icon mr-3" style="width: 32px; height: 32px; margin-left: 8px; margin-top: 5px;"></div>
+          <!--<img class="mr-3 media_icon" src="images/a-04.svg" width="50" height="40"  style="width:50px;">-->
+            <div class="media_bg_icon mr-3" style="width: 32px; height: 32px; margin-left: 8px; margin-top: 5px;"></div>            
             <div class="media-body">
               <span class="dashboard-banner-network-stats-label text-uppercase">
-              WYZth Price
+              XUV Price
               </span>
               <span class="dashboard-data fs-14 text-truncate width160">
               <!-- <span id="price_usd"></span> -->
@@ -122,7 +122,7 @@
           </script>
 
           <div class="d-flex justify-content-between align-items-center chart_area_header">
-            <p class="mb-0 text-green">WYZth Transaction history in 14 Days</p>
+            <p class="mb-0">Transaction history in 14 Days</p>
          <!--   <div class="position-relative float-right z-index-2">
             <div class="dropdown">
                 <button class="btn btn-light btn-xs dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -164,7 +164,7 @@
 <div class="row home_page_tble">
   <div class="col-lg-6">
     <div class="card card-chain-blocks js-ad-dependant-mb-3">
-      <div class="card-header bg-light-green">
+      <div class="card-header">
         <span>Latest Blocks </span>
       </div>
       <div class="card-body px-3 pt-0 pb-2 scroll_box">      
@@ -221,13 +221,13 @@
         </div>
       </div>
       <div class="card-footer  text-center">
-          <%= link(gettext("View All Blocks"), to: blocks_path(BlockScoutWeb.Endpoint, :index), class: "btn btn-green btn-block") %>
+          <%= link(gettext("View All Blocks"), to: blocks_path(BlockScoutWeb.Endpoint, :index), class: "btn btn-light btn-block fs-12") %>
       </div>
     </div>
   </div>
   <div class="col-lg-6">
     <div class="card card-chain-transactions--">
-      <div class="card-header bg-light-green">Latest Transaction</div>
+      <div class="card-header">Latest Transaction</div>
       <div class="card-body px-3 pb-2 pt-0 scroll_box">
         <div class="">
           <div data-selector="channel-batching-message" style="display: none;">
@@ -248,7 +248,7 @@
         </div>
       </div>
       <div class="card-footer  text-center">
-        <%= link(gettext("View All Transactions"), to: transaction_path(BlockScoutWeb.Endpoint, :index), class: "btn btn-green btn-block") %>
+        <%= link(gettext("View All Transactions"), to: transaction_path(BlockScoutWeb.Endpoint, :index), class: "btn btn-light btn-block fs-12") %>
       </div>
     </div>
   </div>

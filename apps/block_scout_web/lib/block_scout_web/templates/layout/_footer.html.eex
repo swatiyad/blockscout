@@ -24,8 +24,8 @@
     opacity: 0.5;    
 }
 
-.search_backdrop {  
-  background-image: linear-gradient(to right, #746305, #756e15, #767a24, #778532, #779041);
+.search_backdrop {
+  background: #121e1d;
   width: 100%;
   color: #fff;
 }
@@ -37,13 +37,13 @@
 }
 
 .footer_backdrop {  
-  background-image: linear-gradient(to right, #746305, #756e15, #767a24, #778532, #779041);
+  background-image: linear-gradient(to right top, #38b292, #32b796, #2bbc99, #22c29d, #14c7a1);
   width: 100%;
   color: #fff;
 }
 
 .footer_overlay {
-  background-image: url(/images/backdrop-bg.svg);
+  background: #121e1d;
   background-repeat: repeat;
   background-position: left center;
 }
@@ -73,7 +73,7 @@
 }
 
 .logo_custom_img .logo_img {
-  background: url(/images/wyz-logo.svg);
+  background: url(/images/xuv-logo.png);
   background-size: contain;
   background-repeat: no-repeat;
   width: 189px;
@@ -81,7 +81,7 @@
 }
 
 .dark-theme-applied .logo_custom_img .logo_img {
-  background: url(/images/wyz-logo_darktheme.png);
+  background: url(/images/xuv-logo.png);
   background-size: contain;
   background-repeat: no-repeat; 
   width: 176px;
@@ -191,6 +191,18 @@ a.metamask_btn {
   color: #fff;
 }
 
+
+
+.btn-success {
+  background-color: #22AA86!important;
+  color: #fff!important;
+  border-color: #22AA86!important;
+}
+
+.media_icon {
+  filter:grayscale(1)
+}
+
 </style>
 
 <footer class="footer pb-0 pt-0 footer_backdrop">
@@ -217,7 +229,7 @@ a.metamask_btn {
 
       <div class="footer-about-bg"></div>
       <p class="text-white">
-      <%= gettext("WYZthScan is a Block Explorer and Analytics Platform for WYZth ") %>  <%= gettext(" chain, a decentralized smart contains platform.") %></p>
+      <%= gettext("XUV Scan is a Block Explorer and Analytics Platform for WYZth ") %>  <%= gettext(" chain, a decentralized smart contains platform.") %></p>
 
       <a type="button" class="btn btn-xs btn-lighter text-nowrap mr-2" href="/preferences" style="color:#fff !important">
         <i class="fas fa-cogs mr-1"></i> Preferences
@@ -228,10 +240,10 @@ a.metamask_btn {
     <div class="col-6 col-md-4 col-lg-<%= col_size %>">
       <h3 class="text-white heading_border">Company</h3>
       <ul style="list-style: none;margin: 0; padding: 0; line-height: 31px;">
-        <li><a href="https://wyzth.org/" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("About Us") %></a></li>
-        <li><a href="https://t.me/officialwyzth" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("Contact Us") %></a></li>
+        <li><a href="#" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("About Us") %></a></li>
+        <li><a href="#" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("Contact Us") %></a></li>
         
-        <li><a href="https://wyzth.org/careers" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("Careers") %>
+        <li><a href="#" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("Careers") %>
         <sup class="join">Join Us</sup></a></li>
         <li><a href="terms-of-service" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("Terms of Service") %></a></li>
        
@@ -243,8 +255,8 @@ a.metamask_btn {
       <div class="col-6 col-md-4 col-lg-<%= col_size %>">
         <h3 class="text-white heading_border"><%= gettext("Resources") %></h3>
         <ul style="list-style: none;margin: 0; padding: 0; line-height: 31px;">
-          <li><a href="https://docs.wyzth.org/docs/Overview" target="_blank" rel="noreferrer" class="footer-link"><%= gettext("API Documentation") %></a></li>         
-          <li><a href="https://newsletter.thecoinweekly.com/" target="_blank" rel="noreferrer" class="footer-link"><%= gettext("Newsletter") %></a></li>
+          <li><a href="#" target="_blank" rel="noreferrer" class="footer-link"><%= gettext("API Documentation") %></a></li>         
+          <li><a href="#" target="_blank" rel="noreferrer" class="footer-link"><%= gettext("Newsletter") %></a></li>
        
           <!--
           <%= for %{title: title, url: url} <- test_nets do %>
@@ -297,24 +309,24 @@ a.metamask_btn {
   <div class="row text-white py-2">
     <div class="col-md-6 col-6 mb-sm">
       <div class="d-flex pt-1">
-        <div>WYZthScan &copy; 2023 </div>
+        <div>XUV Scan &copy; 2023 </div>
         <div class="ml-2"><span class="text-danger ms-2"> <i class="fa fa-heart"></i> </span></div>
       </div>
     </div>
     <div class="col-md-6 col-6">
       <div class="footer-social float-right"> 
       
-        <a href="https://t.me/officialwyzth" rel="noreferrer" target="_blank" title="medium">
+        <a href="#" rel="noreferrer" target="_blank" title="medium">
           <i class="fab fa-telegram"></i>
         </a>    
-        <a href="https://instagram.com/officialwyzth" rel="noreferrer" target="_blank" title="reddit">
+        <a href="#" rel="noreferrer" target="_blank" title="reddit">
           <i class="fab fa-instagram"></i>
         </a>     
     
-        <a href="https://www.linkedin.com/company/wyzth/" rel="noreferrer" target="_blank" title="facebook">
+        <a href="#" rel="noreferrer" target="_blank" title="facebook">
           <i class="fab fa-linkedin"></i>
         </a>
-        <a href="https://twitter.com/wyzthofficial" rel="noreferrer" target="_blank" title="twitter"> 
+        <a href="#" rel="noreferrer" target="_blank" title="twitter"> 
           <i class="fab fa-twitter"></i>
         </a>
 

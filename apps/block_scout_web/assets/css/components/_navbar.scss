@@ -1,6 +1,6 @@
 // Default variables
 $header-background-color: #fff !default;
-$header-links-color: #828ba0 !default;
+$header-links-color: #666 !default;
 $header-links-color-active: #333 !default;
 $header-icon-color: $header-links-color !default;
 $header-icon-color-hover: $secondary !default;
@@ -27,7 +27,7 @@ $navbar-logo-width: 100% !default;
         .nav-link {
             outline: none;
             align-items: center;
-            color: $header-links-color;
+            color: $header-links-color!important;
             display: flex;
             font-size: 14px;
             position: relative;

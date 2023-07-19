@@ -18,7 +18,7 @@
 <i class="fa fa-file-lines fs-4" style="font-size:40px"></i>
 </span>
 </div>
-<p class="fs-base mb-4">Search Smart Contract source codes on WyzthScan and filter by contract &amp; deployer addresses, creation date, block number and more.</p>
+<p class="fs-base mb-4">Search Smart Contract source codes on XUV Scan and filter by contract &amp; deployer addresses, creation date, block number and more.</p>
 <form class="mb-3">
 <div class="search-panel-container d-flex">
 <div class="flex-grow-1 position-relative auto-search-max-height ">

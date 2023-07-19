@@ -7,7 +7,7 @@
     <div class="row topbar_search align-items-center py-2">
       <div class="col-lg-6 pl-4">
           <div class="d-none d-lg-inline-block m text-nowrap fs-12">
-            <span class="text-secondary"> WYZth Price :</span> <span class="text-info"> $20</span>
+            <span class="text-secondary"> XUV Price :</span> <span class="text-info"> $20</span>
             <span data-toggle="tooltip" data-placement="top" data-title="Changes in the last 24 hours" data-original-title="" title="">
               <span class="text-success d-none"> (+1.27%)</span>
             </span>
@@ -271,11 +271,7 @@
           </li>
 
 
-          <li class="nav-item d-none d-lg-inline-block">
-            <a href="#" class="nav-link topnav-nav-link  border rounded ml-2 navbar-image">
-              <div class="media_bg_icon" style="width: 18px; height: 21px"></div>
-            </a>
-          </li>
+          
       
           <li class="nav-item  d-block d-lg-none d-xl-none">
             <a href="#" role="button" id="navbarexpoDropdown" class="nav-link topnav-nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
