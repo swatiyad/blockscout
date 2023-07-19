@@ -263,6 +263,7 @@ a.metamask_btn {
         <ul style="list-style: none;margin: 0; padding: 0; line-height: 31px;">
         
         <li><a href="https://wyscale.com/" target="_blank" rel="noreferrer" class="footer-link"><%= gettext("WYscale") %></a></li>
+        <li><a href="/chat" target="_blank" rel="noreferrer" class="footer-link"><%= gettext("Chat") %></a></li>
 
         <!--Absinthe<%= for %{title: title, url: url} <- main_nets do %>
           <li><a href="<%= url %>" rel="norefferer" class="footer-link"> <%= title %> </a></li>

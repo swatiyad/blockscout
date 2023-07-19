@@ -14,7 +14,7 @@
         <td>
           <%= link(
             @block,
-            class: "text-blue",
+            class: "text-green",
             to: block_path(BlockScoutWeb.Endpoint, :show, @block),
             "data-selector": "block-number"
           ) %>
@@ -36,13 +36,13 @@
             </div>
           <% end %>
          <!-- <%= if BlockScoutWeb.BlockView.show_reward?(@block.rewards) do %>
-          <div class="text-truncate width135 text-blue">
+          <div class="text-truncate width135 text-green">
             <%= gettext "Reward" %> <%= BlockScoutWeb.BlockView.combined_rewards_value(@block) %>
           </div>
           <% end %>  
           -->       
 
-          <div class="tile-transactions text-blue">
+          <div class="tile-transactions text-green">
             <span class="mr-2"><%= gettext("%{count} txns", count: Enum.count(@block.transactions)) %></span>
           </div>
         </td>

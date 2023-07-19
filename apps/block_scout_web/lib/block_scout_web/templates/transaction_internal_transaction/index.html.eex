@@ -1,5 +1,5 @@
 <section class="container">
-<div class="container">
+<div class="card my-1 p-1">
 <ul id="transaction-tabs" class="nav nav-pills custom_pills card-tabs-- js-card-tabs-- my-2">
 
   <li class="nav-item" id="tab-1-id">
@@ -18,8 +18,8 @@
   
   <div class="card mt-3">
       <!-- <%= render BlockScoutWeb.TransactionView, "_tabs.html", assigns %> -->
-    <div class="card-body px-3"  data-async-load data-async-listing="<%= @current_path %>">
-      <h1 class="card-title list-title-description"><%= gettext "Internal Transactions" %></h1>
+    <div class="card-body px-3" style="display:none"  data-async-load data-async-listing="<%= @current_path %>">
+      <h1 class="card-title list-title-description" ><%= gettext "Internal Transactions" %></h1>
 
       <div class="list-top-pagination-container-wrapper">
         <%= render BlockScoutWeb.CommonComponentsView, "_pagination_container.html", position: "top", cur_page_number: "1", show_pagination_limit: true, data_next_page_button: true, data_prev_page_button: true %>
@@ -32,7 +32,7 @@
         </button>
         
 
-        <div class="">
+        <div class="" style="display:none">
           <table class="table table-hover mb-0 fixed-layout">
               <thead>
                 <tr class="table-head">
@@ -49,8 +49,8 @@
               </thead>
           </table>
         </div>
-        <div data-empty-response-message style="display: none;">
-          <div class="tile tile-muted text-center" data-selector="empty-logs-list">
+        <div data-empty-response-message " style="display:none">
+          <div class="tile tile-muted text-center" data-selector="empty-logs-list" style="display:none">
             <%= gettext "There are no internal transactions for this transaction." %>
           </div>
         </div>
@@ -79,19 +79,52 @@
             return addressHash;
         }
 
+            function getLastPartFromURL() {
+    var url = window.location.href;
+    var stateIndex = url.lastIndexOf("/state");
+    var disqusIndex = url.lastIndexOf("/disqus");
+
+    if (stateIndex !== -1 && stateIndex === url.length - "/state".length) {
+        var lastPart = url.substr(stateIndex + "/state".length);
+        return lastPart;
+    } else if (disqusIndex !== -1 && disqusIndex === url.length - "/disqus".length) {
+        var lastPart = url.substr(disqusIndex + "/disqus".length);
+        return lastPart;
+    } else {
+        return "";
+    }
+}
+
+
         // Get references to the tab elements
         const tab1 = document.querySelector("#tab-1-id");
         const tab2 = document.querySelector("#tab-2-id");
         const tab3 = document.querySelector("#tab-3-id");
+        document.addEventListener("DOMContentLoaded", async function () {
+          document.querySelector(".state_page_second").style.display ="none"
+           document.querySelector("#transaction_detail_id").style.display ="none" 
+           var lastPart = getLastPartFromURL();
+
+    if (lastPart === "disqus") {
+        // Your code for handling "/disqus" case here
+        console.log("URL contains /disqus");
+    } else if (lastPart === "state") {
+        // Your code for handling "/state" case here
+        console.log("URL contains /state");
+    } else {
+        // Your code for handling other cases (empty string) here
+        console.log("URL does not match /state or /disqus");
+    }
+        })
 
         // Click event listeners for the tabs
         tab1.onclick = function() {
             document.querySelector("#tab-1-id a").classList.add("active");
             document.querySelector("#tab-2-id a").classList.remove("active");
             document.querySelector("#tab-3-id a").classList.remove("active");
+            
              var addressHash = getAddressHashFromURL();
              window.location.href = `/tx/${addressHash}`
-        console.log("Address Hash:", addressHash);
         }
 
         tab2.onclick = function() {
@@ -101,7 +134,6 @@
              document.querySelector("#transaction_detail_id").style.display=="none !important";
              var addressHash = getAddressHashFromURL();
              window.location.href = `/tx/${addressHash}/state`
-        console.log("Address Hash:", addressHash);
         }
 
         tab3.onclick = function() {
@@ -110,8 +142,9 @@
             document.querySelector("#tab-3-id a").classList.add("active");
              var addressHash = getAddressHashFromURL();
         console.log("Address Hash:", addressHash);
+        window.location.href = `/tx/${addressHash}/disqus`
         }
 
-        // Get and log the address hash from the URL
+     
        
     </script>

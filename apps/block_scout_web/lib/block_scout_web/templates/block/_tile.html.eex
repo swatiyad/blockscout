@@ -8,7 +8,7 @@
           <td>
             <%= if @block_type == "Block" do %>
             <%= link(
-                  class: "text-blue",
+                  class: "text-green",
                   to: block_path(BlockScoutWeb.Endpoint, :show, @block),
                   "data-selector": "block-number"
                 ) do %>
@@ -16,7 +16,7 @@
               <% end %>
           <% else %>
             <%= link(
-                  class: "text-blue",
+                  class: "text-green",
                   to: block_path(BlockScoutWeb.Endpoint, :show, @block.hash),
                   "data-selector": "block-number"
                 ) do %>
