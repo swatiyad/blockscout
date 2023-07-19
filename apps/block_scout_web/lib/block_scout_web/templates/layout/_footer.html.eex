@@ -59,7 +59,7 @@
 .dark-theme-applied .theme-button {
   background: url(/images/moon.png)!important;
   width: 20px;
-  height: 20px;https://wyzthscan.co.in/
+  height: 20px;
   background-repeat: no-repeat;
 }
 
@@ -89,26 +89,26 @@
 }
 
 .navbar-image .media_bg_icon {
-  background: url(/images/small-logo-icon.png);
+  background: url(/images/xuv-icon.png);
   background-size: contain;
   background-repeat: no-repeat;  
 }
 
 .dark-theme-applied .navbar-image .media_bg_icon {
-  background: url(/images/small-logo-icon-dark.png);
+  background: url(/images/xuv-icon.png);
   background-size: contain;
   background-repeat: no-repeat;  
 }
 
 .dashboard_home .media_bg_icon {
-    background: url(/images/small-logo-icon.png);  
+    background: url(/images/xuv-icon.png);  
     background-size: contain;
     background-position: 27% 4%;
     background-repeat: no-repeat;
 }
 
 .dark-theme-applied .dashboard_home .media_bg_icon{
-  background: url(/images/small-logo-icon-dark.png);
+  background: url(/images/xuv-icon.png);
   background-size: contain;
   background-repeat: no-repeat;
 } 
@@ -229,7 +229,7 @@ a.metamask_btn {
 
       <div class="footer-about-bg"></div>
       <p class="text-white">
-      <%= gettext("XUV Scan is a Block Explorer and Analytics Platform for WYZth ") %>  <%= gettext(" chain, a decentralized smart contains platform.") %></p>
+      <%= gettext("XUV Scan is a Block Explorer and Analytics Platform for XUV Scan ") %>  <%= gettext(" chain, a decentralized smart contains platform.") %></p>
 
       <a type="button" class="btn btn-xs btn-lighter text-nowrap mr-2" href="/preferences" style="color:#fff !important">
         <i class="fas fa-cogs mr-1"></i> Preferences
@@ -274,7 +274,10 @@ a.metamask_btn {
         <h3 class="text-white heading_border"><%= gettext("Products & Services") %></h3>
         <ul style="list-style: none;margin: 0; padding: 0; line-height: 31px;">
         
-        <li><a href="https://wyscale.com/" target="_blank" rel="noreferrer" class="footer-link"><%= gettext("WYscale") %></a></li>
+        <li><a href="#" target="_blank" rel="noreferrer" class="footer-link"><%= gettext("Product & services 1") %></a></li>
+        <li><a href="#" target="_blank" rel="noreferrer" class="footer-link"><%= gettext("Product 2") %></a></li>
+        <li><a href="#" target="_blank" rel="noreferrer" class="footer-link"><%= gettext("Product 3") %></a></li>
+    
 
         <!--Absinthe<%= for %{title: title, url: url} <- main_nets do %>
           <li><a href="<%= url %>" rel="norefferer" class="footer-link"> <%= title %> </a></li>

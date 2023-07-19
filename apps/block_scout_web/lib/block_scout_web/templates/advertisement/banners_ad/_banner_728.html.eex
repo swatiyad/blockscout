@@ -5,5 +5,5 @@
 </div>
 <script defer data-cfasync="false" src="<%= static_path(@conn, "/js/banner.js") %>"></script>
 <div class="text-center mb-4">
-<a href="https://wyscale.com/" target="_blank"> <img src="/images/banner-advertisement1.png"  class="img-responsive"></a>
+<a href="#" target="_blank"> <img src="/images/banner-advertisement1.png"  class="img-responsive"></a>
 </div>
