@@ -182,6 +182,10 @@ a.metamask_btn {
   color: #fff;
 }
 
+.mw-100 {
+  max-width: 100px !important;
+}
+
 </style>
 
 <footer class="footer pb-0 pt-0 footer_backdrop">

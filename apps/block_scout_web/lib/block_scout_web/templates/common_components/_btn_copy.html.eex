@@ -2,7 +2,7 @@
         aria-label='<%= @aria_label %>'
         data-clipboard-text='<%= @clipboard_text %>'
         id='<%= if assigns[:id] do @id end %>'
-        class="btn-copy-icon-- cpyqr_outer_btn text-secondary fs-14 <%= if assigns[:additional_classes] do @additional_classes |> Enum.join(" ") end %>" 
+        class="btn-copy-icon-- cpyqr_outer_btn text-secondary fs-14 text-center <%= if assigns[:additional_classes] do @additional_classes |> Enum.join(" ") end %>" 
         data-placement='top'
         data-toggle='tooltip'
         title='<%= @title %>'

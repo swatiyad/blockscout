@@ -104,7 +104,7 @@ defmodule BlockScoutWeb.AddressView do
     if contract?(address) do
       gettext("Contract Address")
     else
-      gettext("Address")
+      gettext("Contract")
     end
   end
 
