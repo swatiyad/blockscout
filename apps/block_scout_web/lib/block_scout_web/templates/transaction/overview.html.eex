@@ -99,7 +99,7 @@
                 </div>
               <% end %>
           </div>
-          <p class=""> A Web3 Crypto Mutual Fund, start with as low as $50 on <a href="/" target="_blank" class="text-blue font-weight-bold">  XUV </a>
+          <p class=""> A Web3 Crypto Mutual Fund, start with as low as $50 on <a href="/" target="_blank" class="text-blue font-weight-bold">  <%= gettext( " %{subnetwork}", subnetwork: BlockScoutWeb.LayoutView.subnetwork_title()) %> </a>
           </p>
           <div class="card js-ad-dependant-mb-3 mt-4 fs-15">
           <div class="card-body">

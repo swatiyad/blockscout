@@ -162,7 +162,7 @@
                         <dt class="col-sm-6 col-lg-6 text-muted">
                           <%= render BlockScoutWeb.CommonComponentsView, "_i_tooltip_2.html",
                           text: gettext("Address balance in") <> " " <> Explorer.coin_name() <> " " <> gettext("doesn't include ERC20, ERC721, ERC1155 tokens).") %>
-                          <%= gettext("WYZth Balance") %>
+                          <%= gettext("Balance") %>
                         </dt>
                         <dd data-selector="current-coin-balance" class="col-sm-6 col-md-6 col-lg-6" data-test="address_balance">
                           <%= balance(@address) %>

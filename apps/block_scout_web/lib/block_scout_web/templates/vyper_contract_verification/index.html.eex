@@ -96,7 +96,7 @@ Loading...
 
    if(inputVal.startsWith("0x")){
      document.querySelector(".submit-btn").textContent = "Loading..."
-   fetch('https://wyzthscan.org/api?module=contract&action=verify_vyper_contract', {
+   fetch('https://testnet.xuvscan.com/api?module=contract&action=verify_vyper_contract', {
   method: 'POST',
   headers: {
     'Content-Type': 'application/x-www-form-urlencoded'

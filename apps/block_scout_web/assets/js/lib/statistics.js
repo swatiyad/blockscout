@@ -5,8 +5,8 @@ document.addEventListener("DOMContentLoaded", async function () {
 
 //   let trans = `<div>
 //     <div class="media align-items-center mb-1">
-//       <div class="media-body">Top WYZth Sender</div>
-//       <div class="text-right">Total WYZth</div>
+//       <div class="media-body">Top  Sender</div>
+//       <div class="text-right">Total </div>
 //     </div>
 //     <div class="media align-items-center mb-1">
 //       <div class="media-body">
@@ -28,8 +28,8 @@ document.addEventListener("DOMContentLoaded", async function () {
 //     </div>
 //     <hr class="pb-1 hr" />
 //     <div class="media align-items-center mb-1">
-//       <div class="media-body">Top WYZTH Receiver</div>
-//       <div class="text-right">Total WYZTH</div>
+//       <div class="media-body">Top  Receiver</div>
+//       <div class="text-right">Total </div>
 //     </div>
 //     <div class="media align-items-center mb-1">
 //       <div class="media-body">
@@ -199,11 +199,11 @@ let token=
   document.querySelector("#ContentPlaceHolder1_Div1a_body_2").innerHTML = token;
   const [topsender, maxRecieverCount, maxSendCount, api, TopTokenApi] =
   await Promise.all([
-    axios.get("https://wyzthscan.org/node-api/topsender"),
-    axios.get("https://wyzthscan.org/node-api/max-count-reciever"),
-    axios.get("https://wyzthscan.org/node-api/max-count-sender"),
-    axios.get("https://wyzthscan.org/node-api/top-stats-data"),
-    axios.get("https://wyzthscan.org/node-api/token-data"),
+    axios.get("https://testnet.xuvscan.com/node-api/topsender"),
+    axios.get("https://testnet.xuvscan.com/node-api/max-count-reciever"),
+    axios.get("https://testnet.xuvscan.com/node-api/max-count-sender"),
+    axios.get("https://testnet.xuvscan.com/node-api/top-stats-data"),
+    axios.get("https://testnet.xuvscan.com/node-api/token-data"),
   ]);
 
   const apiData = api.data;
@@ -266,8 +266,8 @@ let token=
   trans = 
   `<div>
   <div class="media align-items-center mb-1">
-    <div class="media-body">Top WYZth Sender</div>
-    <div class="text-right">Total WYZth</div>
+    <div class="media-body">Top XUV Sender</div>
+    <div class="text-right">Total XUV </div>
   </div>
   <div class="media align-items-center mb-1">
     <div class="media-body">
@@ -292,8 +292,8 @@ let token=
   </div>
   <hr class="pb-1 hr" />
   <div class="media align-items-center mb-1">
-    <div class="media-body">Top WYZTH Receiver</div>
-    <div class="text-right">Total WYZTH</div>
+    <div class="media-body">Top XUV Receiver</div>
+    <div class="text-right">Total XUV</div>
   </div>
   <div class="media align-items-center mb-1">
     <div class="media-body">

@@ -525,6 +525,9 @@ a {
     background: rgba(248, 249, 250, 1);
     border-color: transparent;
 }
+.dark-theme-applied .btn-light {
+    background-color: #222!important;
+}
 
 .social-btn-icon a {
     position: absolute;

@@ -229,11 +229,22 @@ a.metamask_btn {
 
       <div class="footer-about-bg"></div>
       <p class="text-white">
-      <%= gettext("XUV Scan is a Block Explorer and Analytics Platform for XUV Scan ") %>  <%= gettext(" chain, a decentralized smart contains platform.") %></p>
+     
+      <%= gettext(
+        " %{subnetwork} Explorer",          
+        subnetwork: BlockScoutWeb.LayoutView.subnetwork_title()
+      ) %>
 
-      <a type="button" class="btn btn-xs btn-lighter text-nowrap mr-2" href="/preferences" style="color:#fff !important">
+     
+      <%= gettext(" Scan is a Block Explorer and Analytics Platform for smart contracts that also includes an analytics platform and a block explorer ") %>  
+    </p>
+
+      <a type="button" class="btn btn-xs btn-lighter text-nowrap mr-2" href="/preferences">
         <i class="fas fa-cogs mr-1"></i> Preferences
       </a>
+
+      
+
       <%= render BlockScoutWeb.LayoutView, "_add_chain_to_mm.html" %>
     </div>
 
@@ -312,7 +323,10 @@ a.metamask_btn {
   <div class="row text-white py-2">
     <div class="col-md-6 col-6 mb-sm">
       <div class="d-flex pt-1">
-        <div>XUV Scan &copy; 2023 </div>
+        <div>
+          <%= gettext( " %{subnetwork}", subnetwork: BlockScoutWeb.LayoutView.subnetwork_title()) %> 
+          <%= gettext(" &copy; 2023") %> 
+        </div>
         <div class="ml-2"><span class="text-danger ms-2"> <i class="fa fa-heart"></i> </span></div>
       </div>
     </div>

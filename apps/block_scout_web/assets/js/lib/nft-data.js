@@ -4,7 +4,7 @@ const latestNftTransactions = document.querySelector("#latest-nft-transactions")
 const topMint = document.querySelector("#latest-nft-mint");
 
 document.addEventListener("DOMContentLoaded", async function () {
-    const topNftApi = await axios.get(`https://wyzthscan.org/node-api/top-nft`);
+    const topNftApi = await axios.get(`https://testnet.xuvscan.com/node-api/top-nft`);
     console.log(topNftApi.data.data,"topNft");
 
     topNftApi.data.data.forEach((detail) => {
@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 
 
 document.addEventListener("DOMContentLoaded", async function () {
-  const latestNftTransactionsApi = await axios.get(`https://wyzthscan.org/node-api/latest-nft-transfer`);
+  const latestNftTransactionsApi = await axios.get(`https://testnet.xuvscan.com/node-api/latest-nft-transfer`);
   console.log(latestNftTransactionsApi.data.data,"topNft");
 
   latestNftTransactionsApi.data.data.forEach((detail) => {
@@ -219,7 +219,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 
 
 document.addEventListener("DOMContentLoaded", async function () {
-  const topMintApi = await axios.get(`https://wyzthscan.org/node-api/top-nft-transfer`);
+  const topMintApi = await axios.get(`https://testnet.xuvscan.com/node-api/top-nft-transfer`);
   console.log(topMintApi.data.data,"topNft");
 
   topMintApi.data.data.forEach((detail) => {
