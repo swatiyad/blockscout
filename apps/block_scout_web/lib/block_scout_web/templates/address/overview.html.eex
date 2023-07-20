@@ -27,7 +27,7 @@
                 <%= nil %>
             <% end %>
             <span class="card-title lg-card-title mb-2-desktop">
-              <div class="title-with-label"><%= address_title(@address) %></div>
+              <div class="title-with-label">  <%= address_title(@address) %></div>
               <%= render BlockScoutWeb.AddressView, "_labels.html", address_hash: @address.hash, tags: @tags %>           
             </span> 
             <span class="card-title lg-card-title mb-2-desktop title-with-label text-secondary fs-16 <%= if BlockScoutWeb.AddressView.contract?(@address) do %>contract-address<% end %>" data-test="address_detail_hash"><%= @address %></span>
