@@ -183,7 +183,7 @@
                       ) %>
 
                    
-                      <a class="dropdown-item" target="_blank" href="https://docs.wyzth.org/docs/Overview"> API Documentation</a>
+                      <a class="dropdown-item" target="_blank" href="#"> API Documentation</a>
                   
                 </div>
               </li>
@@ -242,13 +242,13 @@
                       <%= link(
                         gettext("Mainnet"),
                         class: "dropdown-item #{tab_status("mainnet", @conn.request_path)}",
-                        to: "https://wyzthscan.org/"
+                        to: "#"
                       ) %>
 
                       <%= link(
                         gettext("Testnet"),
                         class: "dropdown-item #{tab_status("testnet", @conn.request_path)}",
-                        to: "https://testnet.wyzthscan.org/"
+                        to: "#"
                       ) %>
                 
                 </div>
