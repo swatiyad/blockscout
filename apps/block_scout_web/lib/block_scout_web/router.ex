@@ -163,6 +163,7 @@ end
      get "/directories/smart-contract-audit", DirectoriesController, :smart_contract_audit
       get "/directories/smart-contracts-factory", DirectoriesController, :smart_contracts_factory
        get "/directories/mining-pool", DirectoriesController, :miningpools
+       get "/directories/mining-talk", DirectoriesController, :mining
      get "/directories/grants", DirectoriesController, :directories_grants
      get "/directories/tools", DirectoriesController, :tools
 end

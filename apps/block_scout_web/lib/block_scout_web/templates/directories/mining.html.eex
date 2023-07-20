@@ -1,0 +1,262 @@
+<section class="container mt-30 mb-3">
+  <div id="ContentPlaceHolder1_exchangewalletdiv">
+    <h1 class="px-1">Mining-talk</h1>
+    <div class="card mb-1">
+      <div class="card-body">
+        <div class="d-flex gap-3">
+          <div>
+            <img
+              src="/images/resources/discussion.png"
+              class="u-avatar mt-1"
+              alt=""
+            />
+          </div>
+          <div
+            class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+          >
+            <div>
+              <a
+                href="https://forums.anandtech.com/threads/ethereum-gpu-mining.2463816/"
+                target="_blank"
+                rel="nofollow noopener"
+                class="fs-5 link-dark"
+                >Anand Tech Forum</a
+              >
+              <div><p>Ethereum GPU mining forum and discussions</p></div>
+            </div>
+            <ul class="list-inline mb-0 text-nowrap">
+              <li class="list-inline-item">
+                <a
+                  href="https://forums.anandtech.com/threads/ethereum-gpu-mining.2463816/"
+                  data-bs-placement="top"
+                  data-bs-toggle="tooltip"
+                  class="btn btn-sm btn-secondary rounded-circle"
+                  rel="nofollow"
+                  target="_blank"
+                  aria-label="[Website] https://forums.anandtech.com/threads/ethereum-gpu-mining.2463816/"
+                  ><i class="fas fa-globe btn-icon__inner"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card mb-1">
+      <div class="card-body">
+        <div class="d-flex gap-3">
+          <div>
+            <img
+              src="/images/resources/cryptocompare.jpg"
+              class="u-avatar mt-1"
+              alt=""
+            />
+          </div>
+          <div
+            class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+          >
+            <div>
+              <a
+                href="https://www.cryptocompare.com/mining/guides/how-to-mine-ethereum-the-easy-way-an-ethereum-mining-contract/"
+                target="_blank"
+                rel="nofollow noopener"
+                class="fs-5 link-dark"
+                >Crypto Compare</a
+              >
+              <div>
+                <p>
+                  How to mine Ethereum "the Easy Way" - an Ethereum Mining
+                  Contract?
+                </p>
+              </div>
+            </div>
+            <ul class="list-inline mb-0 text-nowrap">
+              <li class="list-inline-item">
+                <a
+                  href="https://www.cryptocompare.com/mining/guides/how-to-mine-ethereum-the-easy-way-an-ethereum-mining-contract/"
+                  data-bs-placement="top"
+                  data-bs-toggle="tooltip"
+                  class="btn btn-sm btn-secondary rounded-circle"
+                  rel="nofollow"
+                  target="_blank"
+                  aria-label="[Website] https://www.cryptocompare.com/mining/guides/how-to-mine-ethereum-the-easy-way-an-ethereum-mining-contract/"
+                  ><i class="fas fa-globe btn-icon__inner"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card mb-1">
+      <div class="card-body">
+        <div class="d-flex gap-3">
+          <div>
+            <img
+              src="/images/resources/ethereum.png"
+              class="u-avatar mt-1"
+              alt=""
+            />
+          </div>
+          <div
+            class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+          >
+            <div>
+              <a
+                href="https://forum.ethereum.org/categories/mining"
+                target="_blank"
+                rel="nofollow noopener"
+                class="fs-5 link-dark"
+                >Ethereum.org</a
+              >
+              <div>
+                <p>Ethereum.org forum for mining forum and discussions.</p>
+              </div>
+            </div>
+            <ul class="list-inline mb-0 text-nowrap">
+              <li class="list-inline-item">
+                <a
+                  href="https://forum.ethereum.org/categories/mining"
+                  data-bs-placement="top"
+                  data-bs-toggle="tooltip"
+                  class="btn btn-sm btn-secondary rounded-circle"
+                  rel="nofollow"
+                  target="_blank"
+                  aria-label="[Website] https://forum.ethereum.org/categories/mining"
+                  ><i class="fas fa-globe btn-icon__inner"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card mb-1">
+      <div class="card-body">
+        <div class="d-flex gap-3">
+          <div>
+            <img
+              src="/images/resources/discussion.png"
+              class="u-avatar mt-1"
+              alt=""
+            />
+          </div>
+          <div
+            class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+          >
+            <div>
+              <a
+                href="https://platinumwealth.co.za/forum/Thread-How-to-build-an-Ethereum-mining-rig"
+                target="_blank"
+                rel="nofollow noopener"
+                class="fs-5 link-dark"
+                >Platinium Wealth Forum</a
+              >
+              <div>
+                <p>How to build an Ethereum Mining Rig by Platinium Wealth</p>
+              </div>
+            </div>
+            <ul class="list-inline mb-0 text-nowrap">
+              <li class="list-inline-item">
+                <a
+                  href="https://platinumwealth.co.za/forum/Thread-How-to-build-an-Ethereum-mining-rig"
+                  data-bs-placement="top"
+                  data-bs-toggle="tooltip"
+                  class="btn btn-sm btn-secondary rounded-circle"
+                  rel="nofollow"
+                  target="_blank"
+                  aria-label="[Website] https://platinumwealth.co.za/forum/Thread-How-to-build-an-Ethereum-mining-rig"
+                  ><i class="fas fa-globe btn-icon__inner"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card mb-1">
+      <div class="card-body">
+        <div class="d-flex gap-3">
+          <div>
+            <img
+              src="/images/resources/reddit.png"
+              class="u-avatar mt-1"
+              alt=""
+            />
+          </div>
+          <div
+            class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+          >
+            <div>
+              <a
+                href="https://www.reddit.com/r/EtherMining/"
+                target="_blank"
+                rel="nofollow noopener"
+                class="fs-5 link-dark"
+                >r/EtherMining</a
+              >
+              <div><p>Reddit for Ether Mining</p></div>
+            </div>
+            <ul class="list-inline mb-0 text-nowrap">
+              <li class="list-inline-item">
+                <a
+                  href="https://www.reddit.com/r/EtherMining/"
+                  data-bs-placement="top"
+                  data-bs-toggle="tooltip"
+                  class="btn btn-sm btn-secondary rounded-circle"
+                  rel="nofollow"
+                  target="_blank"
+                  aria-label="[Website] https://www.reddit.com/r/EtherMining/"
+                  ><i class="fas fa-globe btn-icon__inner"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card mb-1">
+      <div class="card-body">
+        <div class="d-flex gap-3">
+          <div>
+            <img
+              src="/images/resources/discussion.png"
+              class="u-avatar mt-1"
+              alt=""
+            />
+          </div>
+          <div
+            class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+          >
+            <div>
+              <a
+                href="https://forums.redflagdeals.com/ethereum-mining-guides-2102212/"
+                target="_blank"
+                rel="nofollow noopener"
+                class="fs-5 link-dark"
+                >Red Flag Deals Forum</a
+              >
+              <div>
+                <p>Ethereum mining guides and discussions on Redflagdeals</p>
+              </div>
+            </div>
+            <ul class="list-inline mb-0 text-nowrap">
+              <li class="list-inline-item">
+                <a
+                  href="https://forums.redflagdeals.com/ethereum-mining-guides-2102212/"
+                  data-bs-placement="top"
+                  data-bs-toggle="tooltip"
+                  class="btn btn-sm btn-secondary rounded-circle"
+                  rel="nofollow"
+                  target="_blank"
+                  aria-label="[Website] https://forums.redflagdeals.com/ethereum-mining-guides-2102212/"
+                  ><i class="fas fa-globe btn-icon__inner"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
