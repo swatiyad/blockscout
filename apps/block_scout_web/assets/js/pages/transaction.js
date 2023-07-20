@@ -34,60 +34,49 @@ export function reducer (state = initialState, action) {
 
 // My commit
 function getAddressHashFromURL(url) {
-  var urlParts = url.split('/');
-  var lastPart = urlParts[urlParts.length - 1];
-
-  var stateIndex = lastPart.indexOf("/state");
-  var disqusIndex = lastPart.indexOf("/disqus");
-
-  if (stateIndex !== -1) {
-
-    var addressHash = lastPart.substring(0, stateIndex);
-    return addressHash;
-  } else if (disqusIndex !== -1) {
-   
-    var addressHash = lastPart.substring(0, disqusIndex);
-    return addressHash;
+  var regex = /\/tx\/(0x[0-9a-fA-F]+)/;
+  var match = url.match(regex);
+  
+  if (match) {
+    return match[1];
   } else {
-
-    return lastPart;
+    return null;
   }
 }
 
-
-function getLastPartFromURL() {
-   var url = window.location.href;
-    var stateIndex = url.lastIndexOf("/state");
-     var disqusIndex = url.lastIndexOf("/disqus");
-
-if (stateIndex !== -1 && stateIndex === url.length - "/state".length) {
-var lastPart = url.substr(stateIndex + "/state".length);
-return lastPart;
-} else if (disqusIndex !== -1 && disqusIndex === url.length - "/disqus".length) {
-var lastPart = url.substr(disqusIndex + "/disqus".length);
-return lastPart;
-} else {
-return "";
-}
+function getLastPartFromURL(url) {
+  if (url.endsWith("/state")) {
+    return "state";
+  } else if (url.endsWith("/disqus")) {
+    return "disqus";
+  } else {
+    return "";
+  }
 }
 // Get references to the tab elements
-const tab1 = document.querySelector("#tab-1-id");
-const tab2 = document.querySelector("#tab-2-id");
-const tab3 = document.querySelector("#tab-3-id");
+const tab1 = document.querySelector(".tab-1-id");
+const tab2 = document.querySelector(".tab-2-id");
+const tab3 = document.querySelector(".tab-3-id");
 window.onload =  async function () {
-  const addressHash = getAddressHashFromURL();
-console.log(addressHash,"onLoad");
+  let url = window.location.href;
+  // const addressHash = getAddressHashFromURL(url);
 
-var lastPart = getLastPartFromURL();
+
+var lastPart = getLastPartFromURL(url);
 
 if (lastPart === "disqus") {
+
 document.querySelector(".nav-link1").classList.remove("active");
 document.querySelector(".nav-link2").classList.remove("active")
-document.querySelector(".nav-link3").classList.add("active")
+document.querySelector(".nav-link3").classList.add("active");
+
 } else if (lastPart === "state") {
+
   document.querySelector(".nav-link1").classList.remove("active");
   document.querySelector(".nav-link2").classList.add("active")
-  document.querySelector(".nav-link3").classList.remove("active")
+  document.querySelector(".nav-link3").classList.remove("active") 
+  document.querySelector(".transaction_display_id").style.display == "none";
+
 } else {
   document.querySelector(".nav-link1").classList.add("active");
   document.querySelector(".nav-link2").classList.remove("active")
@@ -101,7 +90,7 @@ document.querySelector("#tab-1-id .nav-link1").classList.add("active");
 document.querySelector("#tab-2-id .nav-link2").classList.remove("active");
 document.querySelector("#tab-3-id .nav-link3").classList.remove("active");
 
-var url = window.location.href;
+let url = window.location.href;
 const addressHash = getAddressHashFromURL(url)
 
 window.location.href = `/tx/${addressHash}`
@@ -111,8 +100,8 @@ tab2.onclick = function() {
 document.querySelector("#tab-1-id .nav-link1").classList.remove("active");
 document.querySelector("#tab-2-id .nav-link2").classList.add("active");
 document.querySelector("#tab-3-id .nav-link3").classList.remove("active");
-document.querySelector("#transaction_detail_id").style.display=="none !important";
-var url = window.location.href;
+document.querySelector(".transaction_detail_id").style.display=="none";
+let url = window.location.href;
 const addressHash = getAddressHashFromURL(url)
 window.location.href = `/tx/${addressHash}/state`
 }
@@ -121,7 +110,7 @@ tab3.onclick = function() {
 document.querySelector("#tab-1-id .nav-link1").classList.remove("active");
 document.querySelector("#tab-2-id .nav-link2").classList.remove("active");
 document.querySelector("#tab-3-id .nav-link3").classList.add("active");
-var url = window.location.href;
+let url = window.location.href;
 const addressHash = getAddressHashFromURL(url)
 window.location.href = `/tx/${addressHash}/disqus`
 }

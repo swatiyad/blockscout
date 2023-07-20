@@ -321,6 +321,6 @@
     <%= if @view_module in [Elixir.BlockScoutWeb.AddressContractVerificationViaMultiPartFilesView, Elixir.BlockScoutWeb.AddressContractVerificationViaJsonView, Elixir.BlockScoutWeb.AddressContractVerificationViaStandardJsonInputView] do %>
       <script defer data-cfasync="false" src="<%= static_path(@conn, "/js/dropzone.js") %>"></script>
     <% end %>
-    <script id="dsq-count-scr" src="//https-wyzthscan-org.disqus.com/count.js" async></script>
+    <script id="dsq-count-scr" src="https://https-wyzthscan-org.disqus.com/count.js" async></script>
   </body>
 </html>

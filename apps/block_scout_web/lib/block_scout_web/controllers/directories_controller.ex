@@ -43,6 +43,9 @@ defmodule BlockScoutWeb.DirectoriesController do
    def miningpools(conn, _params) do
     render(conn, "miningpools.html")
   end
+   def mining(conn, _params) do
+    render(conn, "mining.html")
+  end
    def directories_grants(conn, _params) do
     render(conn, "directories_grants.html")
   end

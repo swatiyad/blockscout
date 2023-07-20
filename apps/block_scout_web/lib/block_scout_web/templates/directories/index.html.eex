@@ -4,29 +4,30 @@
           <div class="card h-100">
             <div class="card-body text-center p-8">
               <figure class="u-avatar mx-auto mb-3">
-                <a href="/directory/Exchanges"
+                <a href="#"
                   ><img src="/images/directory/icon-exchange.svg" alt="" style="width:70px"
                 /></a>
               </figure>
               <h2 class="h5 mb-0">
-                <a class="text-dark" href="/directories/dex">Exchanges</a>
+                <a class="text-dark" href="#">Exchanges</a>
               </h2>
               <p class="mb-2">Places to buy and sell cryptocurrencies</p>
               <p class="mb-0">
                 <a
-                  href="/directories/crypto-exchange"
+                  href="#"
                   class="btn btn-sm btn-soft-primary my-1"
                   >Crypto Exchanges</a
                 >&nbsp;<a
-                  href="/directories/dex"
+                  href="#"
                   class="btn btn-sm btn-soft-primary my-1"
                   >DEX</a
                 >&nbsp;<a
-                  href="/directories/fiat-exchanges"
+                  href="#"
                   class="btn btn-sm btn-soft-primary my-1"
                   >Fiat Exchanges</a
                 >
               </p>
+              <div><span style="border:1px solid #96982b; padding:5px;position:relative;top:15px; border-radius:10px; color:#96982b">Coming Soon</span></div>
             </div>
           </div>
         </div>
@@ -209,8 +210,9 @@
                   href="/directories/mining-pool"
                   class="btn btn-sm btn-soft-primary my-1"
                   >Mining Pools</a
-                >&nbsp;<a
-                  href="/directory/Mining/Mining_Talk"
+                >&nbsp;
+                <a
+                  href="/directories/mining-talk"
                   class="btn btn-sm btn-soft-primary my-1"
                   >Mining Talk</a
                 >
