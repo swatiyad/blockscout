@@ -48,21 +48,21 @@ function xAxe (fontColor) {
     grid,
     type: 'time',    
     time: {
-      unit: 'week',
+      unit: 'day',
       tooltipFormat: 'DD',
-      // stepSize: 15
+       stepSize: 15
     },
     ticks: {
       color: fontColor,
       display: true,
-      maxTicksLimit: 4
+      maxTicksLimit: 3
     },     
   }
 }
 
 const padding = {
-  left: 20,
-  right: 20
+  left: 0,
+  right: 0
 }
 
 const legend = {
@@ -90,6 +90,7 @@ const config = {
     scales: {    
       x: xAxe(sassVariables.dashboardBannerChartAxisFontColor),
       price: {
+        display: false, 
         position: 'left',
         grid,
         ticks: {
@@ -111,13 +112,13 @@ const config = {
         }
       },
       numTransactions: {
-        display: false,  
-        position: 'right',
+        display: true,  
+        position: 'left',
         grid,
         ticks: {
-          beginAtZero: true,
+          // beginAtZero: false,
           callback: (value, _index, _values) => formatValue(value),
-          maxTicksLimit: 4,
+          maxTicksLimit: 3,
           color: sassVariables.dashboardBannerChartAxisFontColor
         }
       }
@@ -182,7 +183,7 @@ function getTxHistoryData (transactionHistory) {
   const prevDayStr = data[0].x
   const prevDay = DateTime.fromISO(prevDayStr)
   let curDay = prevDay.plus({ days: 1 })
-  curDay = curDay.toISODate()
+  curDay = curDay.toISODate() 
   data.unshift({ x: curDay, y: null })
 
   setDataToLocalStorage('txHistoryData', data)
