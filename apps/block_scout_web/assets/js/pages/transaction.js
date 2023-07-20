@@ -32,6 +32,104 @@ export function reducer (state = initialState, action) {
   }
 }
 
+// My commit
+function getAddressHashFromURL(url) {
+  var urlParts = url.split('/');
+  var lastPart = urlParts[urlParts.length - 1];
+
+  var stateIndex = lastPart.indexOf("/state");
+  var disqusIndex = lastPart.indexOf("/disqus");
+
+  if (stateIndex !== -1) {
+
+    var addressHash = lastPart.substring(0, stateIndex);
+    return addressHash;
+  } else if (disqusIndex !== -1) {
+   
+    var addressHash = lastPart.substring(0, disqusIndex);
+    return addressHash;
+  } else {
+
+    return lastPart;
+  }
+}
+
+
+function getLastPartFromURL() {
+   var url = window.location.href;
+    var stateIndex = url.lastIndexOf("/state");
+     var disqusIndex = url.lastIndexOf("/disqus");
+
+if (stateIndex !== -1 && stateIndex === url.length - "/state".length) {
+var lastPart = url.substr(stateIndex + "/state".length);
+return lastPart;
+} else if (disqusIndex !== -1 && disqusIndex === url.length - "/disqus".length) {
+var lastPart = url.substr(disqusIndex + "/disqus".length);
+return lastPart;
+} else {
+return "";
+}
+}
+// Get references to the tab elements
+const tab1 = document.querySelector("#tab-1-id");
+const tab2 = document.querySelector("#tab-2-id");
+const tab3 = document.querySelector("#tab-3-id");
+window.onload =  async function () {
+  const addressHash = getAddressHashFromURL();
+console.log(addressHash,"onLoad");
+
+var lastPart = getLastPartFromURL();
+
+if (lastPart === "disqus") {
+document.querySelector(".nav-link1").classList.remove("active");
+document.querySelector(".nav-link2").classList.remove("active")
+document.querySelector(".nav-link3").classList.add("active")
+} else if (lastPart === "state") {
+  document.querySelector(".nav-link1").classList.remove("active");
+  document.querySelector(".nav-link2").classList.add("active")
+  document.querySelector(".nav-link3").classList.remove("active")
+} else {
+  document.querySelector(".nav-link1").classList.add("active");
+  document.querySelector(".nav-link2").classList.remove("active")
+  document.querySelector(".nav-link3").classList.remove("active")
+}
+};
+
+// Click event listeners for the tabs
+tab1.onclick = function() {
+document.querySelector("#tab-1-id .nav-link1").classList.add("active");
+document.querySelector("#tab-2-id .nav-link2").classList.remove("active");
+document.querySelector("#tab-3-id .nav-link3").classList.remove("active");
+
+var url = window.location.href;
+const addressHash = getAddressHashFromURL(url)
+
+window.location.href = `/tx/${addressHash}`
+}
+
+tab2.onclick = function() {
+document.querySelector("#tab-1-id .nav-link1").classList.remove("active");
+document.querySelector("#tab-2-id .nav-link2").classList.add("active");
+document.querySelector("#tab-3-id .nav-link3").classList.remove("active");
+document.querySelector("#transaction_detail_id").style.display=="none !important";
+var url = window.location.href;
+const addressHash = getAddressHashFromURL(url)
+window.location.href = `/tx/${addressHash}/state`
+}
+
+tab3.onclick = function() {
+document.querySelector("#tab-1-id .nav-link1").classList.remove("active");
+document.querySelector("#tab-2-id .nav-link2").classList.remove("active");
+document.querySelector("#tab-3-id .nav-link3").classList.add("active");
+var url = window.location.href;
+const addressHash = getAddressHashFromURL(url)
+window.location.href = `/tx/${addressHash}/disqus`
+}
+
+// My commit
+
+
+
 const elements = {
   '[data-selector="block-number"]': {
     load ($el) {

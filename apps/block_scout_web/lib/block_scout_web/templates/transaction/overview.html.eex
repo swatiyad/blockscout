@@ -32,18 +32,20 @@
 
   <div class="row">
 
-   <!-- <ul id="transaction-tabs " class="nav nav-pills custom_pills card-tabs-- js-card-tabs-- my-2 state_page_second"   >
+ <div class="card my-1 p-1">
+<ul id="transaction-tabs" class="nav nav-pills custom_pills card-tabs-- js-card-tabs-- my-2">
 
-      <li class="nav-item" id="tab-4-id">
-    <a class="nav-link active"  href="#">Overview</a>
-        </li>  
-          <li class="nav-item" id="tab-5-id">
-     <a class="nav-link" href="#">State</a>
-        </li>
-          <li class="nav-item" id="tab-6-id">
-    <a class="nav-link " href="#">Comment</a>
-        </li>
-    </ul> -->
+  <li class="nav-item" id="tab-1-id">
+<button class="nav-link nav-link1 active" id="overview_id"  >Overview</button>
+    </li>  
+      <li class="nav-item" id="tab-2-id">
+ <button class="nav-link nav-link2" >State</button>
+    </li>
+      <li class="nav-item" id="tab-3-id">
+<button class="nav-link nav-link3" >Comment</button>
+    </li>
+</ul>
+</div>
     <div class="col-md-12 transaction_display_id">
       <!-- Transaction Details -->     
           <div class="page-title display_flex" >   
@@ -616,20 +618,15 @@
       </div>
     </div>
   <% end %>
-  <script defer data-cfasync="false" src="<%= static_path(@conn, "/js/transaction.js") %>"></script>
-</section>
-
-
-
-
-
-
-<script>
+  <script>
     const targetDiv = document.getElementById("decode_input");
     const btns = document.getElementById("toggle");
     const backbtns = document.getElementById ("back_btn");
     const inputDiv = document.getElementById ("input_method");
      const btnGoBack = document.querySelector(".btn-go-back");
+
+
+      
 
     btns.onclick = function () {
       if (targetDiv.style.display !== "none") {
@@ -665,4 +662,15 @@
 
 
 </script>
+  
+  <script defer data-cfasync="false" src="<%= static_path(@conn, "/js/transaction.js") %>"></script>
+  
+</section>
+
+
+
+
+
+
+
 
