@@ -1,6 +1,24 @@
 <section class="container mt-30 mb-3">
+
    <div id="ContentPlaceHolder1_exchangewalletdiv">
    <h1 class="class="px-1">Mining Pools</h1>
+   <div class="card px-3 py-2 mb-3">
+<h2>Mining Pool Addresses</h2>
+<div class="d-flex justify-content-between flex-wrap">
+<span aria-label="Copy Address" data-clipboard-text="0xAAdeF877d9F5441e643B48dBB54B974d36D887C6" id="tx-raw-input" class="btn-copy-icon-- cpyqr_outer_btn text-secondary fs-14 text-center overview-title-item-- btn icons_btns" data-placement="top" data-toggle="tooltip" title="" style="" data-original-title="Copy Address">
+0xAAdeF8...6D887C6<i class="fa-regular fa-copy inner_icon-- px-1"></i>
+    </span>
+    <span aria-label="Copy Address" data-clipboard-text="0x84461d6d6501acf0Da8bC5f765E0615CbCeeC5eE" id="tx-raw-input" class="btn-copy-icon-- cpyqr_outer_btn text-secondary fs-14 text-center overview-title-item-- btn icons_btns" data-placement="top" data-toggle="tooltip" title="" style="" data-original-title="Copy Address">
+    0x84461...CeeC5eE<i class="fa-regular fa-copy inner_icon-- px-1"></i>
+    </span>
+    <span aria-label="Copy Address" data-clipboard-text="0x9daCbc5D2C60c64fcb31f75bb6A4c31f4fA270Ac" id="tx-raw-input" class="btn-copy-icon-- cpyqr_outer_btn text-secondary fs-14 text-center overview-title-item-- btn icons_btns" data-placement="top" data-toggle="tooltip" title="" style="" data-original-title="Copy Address">
+    0x9daCb...fA270Ac<i class="fa-regular fa-copy inner_icon-- px-1"></i>
+    </span>
+    <span aria-label="Copy Address" data-clipboard-text="0x8888a994323bE6c3fe1bF4b715588149296d30C7" id="tx-raw-input" class="btn-copy-icon-- cpyqr_outer_btn text-secondary fs-14 text-center overview-title-item-- btn icons_btns" data-placement="top" data-toggle="tooltip" title="" style="" data-original-title="Copy Address">
+    0x8888a...96d30C7<i class="fa-regular fa-copy inner_icon-- px-1"></i>
+    </span>
+</div>
+</div>
       <div class="card mb-1">
         <div class="card-body">
           <div class="d-flex gap-3">
