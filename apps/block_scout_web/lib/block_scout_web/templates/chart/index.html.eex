@@ -1,4 +1,4 @@
-<section data-page="contract-verification-choose-type" class="container new-smart-contract-container card mt-30">
+<section data-page="contract-verification-choose-type" class="container card mt-30">
 <h2>WyzthScan Charts & Statistics</h2>
 
 <div class="row ">
@@ -56,6 +56,3 @@
 
 
 </section>
-
-
-

@@ -63,6 +63,7 @@ window.onload =  async function () {
 
 
 var lastPart = getLastPartFromURL(url);
+console.log(lastPart,"lastPart")
 
 if (lastPart === "disqus") {
 
@@ -75,7 +76,7 @@ document.querySelector(".nav-link3").classList.add("active");
   document.querySelector(".nav-link1").classList.remove("active");
   document.querySelector(".nav-link2").classList.add("active")
   document.querySelector(".nav-link3").classList.remove("active") 
-  document.querySelector(".transaction_display_id").style.display == "none";
+  // document.querySelector(".transaction_display_id").style.display == "none";
 
 } else {
   document.querySelector(".nav-link1").classList.add("active");
@@ -86,31 +87,33 @@ document.querySelector(".nav-link3").classList.add("active");
 
 // Click event listeners for the tabs
 tab1.onclick = function() {
-document.querySelector("#tab-1-id .nav-link1").classList.add("active");
-document.querySelector("#tab-2-id .nav-link2").classList.remove("active");
-document.querySelector("#tab-3-id .nav-link3").classList.remove("active");
+  // alert("hello1")
+document.querySelector(".nav-link1").classList.add("active");
+document.querySelector(".nav-link2").classList.remove("active");
+document.querySelector(".nav-link3").classList.remove("active");
 
-let url = window.location.href;
+const url = window.location.href;
 const addressHash = getAddressHashFromURL(url)
 
 window.location.href = `/tx/${addressHash}`
 }
 
 tab2.onclick = function() {
-document.querySelector("#tab-1-id .nav-link1").classList.remove("active");
-document.querySelector("#tab-2-id .nav-link2").classList.add("active");
-document.querySelector("#tab-3-id .nav-link3").classList.remove("active");
-document.querySelector(".transaction_detail_id").style.display=="none";
+//  alert("hello2")
+document.querySelector(".nav-link1").classList.remove("active");
+document.querySelector(".nav-link2").classList.add("active");
+document.querySelector(".nav-link3").classList.remove("active");
 let url = window.location.href;
 const addressHash = getAddressHashFromURL(url)
 window.location.href = `/tx/${addressHash}/state`
 }
 
 tab3.onclick = function() {
-document.querySelector("#tab-1-id .nav-link1").classList.remove("active");
-document.querySelector("#tab-2-id .nav-link2").classList.remove("active");
-document.querySelector("#tab-3-id .nav-link3").classList.add("active");
-let url = window.location.href;
+  // alert("hello3")
+document.querySelector(".nav-link1").classList.remove("active");
+document.querySelector(".nav-link2").classList.remove("active");
+document.querySelector(".nav-link3").classList.add("active");
+const url = window.location.href;
 const addressHash = getAddressHashFromURL(url)
 window.location.href = `/tx/${addressHash}/disqus`
 }

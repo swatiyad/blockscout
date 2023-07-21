@@ -1,14 +1,35 @@
 
 <div class="container-fluid search_backdrop">
+<div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://https-wyzthscan-org.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
   <div class="search_backdrop_overlay py-5">
-    <div class="container mb-4">         
-      <div class="row">          
+    <div class="container mb-4">
+      <div class="row">
         <div class="col-sm-12 col-md-12 col-lg-7 col-md-6 mb-2" id="inner_page_searchbar">
-         <h3 class="text-white" style="font-size:21px;font-weight: 400;"> The WYZth Network Explorer </h3>    
+         <h3 class="text-white" style="font-size:21px;font-weight: 400;"> The WYZth Network Explorer </h3>
           <div class="search-form d-inline-block w-100">
             <%= render BlockScoutWeb.LayoutView, "_search.html", conn: @conn, id: "main-search-autocomplete-mobile", additional_classes: ["mobile-search-hide--"] %>
             <%#= render BlockScoutWeb.LayoutView, "_search.html", conn: @conn, id: "main-search-autocomplete-mobile", additional_classes: ["mobile-search-show"] %>
-          
+
           </div>
           <p class="text-white mt-3"> A Web3 Crypto Mutual Fund, start with as low as $50 on <a href="https://wyscale.com/" target="_blank" class="text-green font-weight-bold">  WYscale </a>
           </p>
@@ -17,14 +38,14 @@
         <a href="https://wyscale.com/" target="_blank">
         <span class="position-absolute bg-white text-dark shadow-sm rounded-sm fs-12 px-1" style="left: 71%; top: 0.5rem;">Ad</span>
         <img src="/images/header-advertisement.gif"  class="rounded"></a></div>
-      </div> 
+      </div>
     </div>
   </div>
 </div>
 
 
 <div class="container" style="position:relative; top:-50px;" data-page="chain-details">
-<div class="card shadow mb-3">
+<div class="card shadow">
   <div class="card-body px-md-2 py-3">
     <div class="">
       <div class="row">
@@ -57,7 +78,7 @@
                   <%# Explicity put @chart_config.market in a variable %>
                   <%# This is done so that when people add a new chart source, x, %>
                   <%# They wont just access @chart_config.x w/o first checking if x exists%>
-                  
+
                 <% end %>
               </span>
               <!--<span class="dashboard-data" data-selector="address-count">
@@ -85,7 +106,7 @@
             <img class="mr-3 media_icon" src="images/a-01.svg" width="50" height="40"  style="width:50px;">
             <div class="media-body">
               <span class="dashboard-banner-network-stats-label text-uppercase">
-                Last <span class='hide_on_xs'>Finalized </span>block
+                <span class='hide_on_xs'>Last Finalized </span>block
               </span>
               <span class="dashboard-data" data-selector="block-count">
                 <%= BlockScoutWeb.Cldr.Number.to_string!(@block_count, format: "#,###") %>
@@ -94,7 +115,8 @@
 
             <div class="text-right">
               <span class="dashboard-banner-network-stats-label text-uppercase">
-                <%= gettext "Wallet Addresses" %>
+                <%= gettext "Wallet" %>
+                <span class='hide_on_xs'>Addresses </span>
               </span>
               <span class="dashboard-data">
                 <%= BlockScoutWeb.Cldr.Number.to_string!(@address_count, format: "#,###") %>
@@ -102,7 +124,7 @@
             </div>
           </div>
 
-        </div>        
+        </div>
         <div class="col-sm-12 col-md-12 col-lg-4">
           <div class="dashboard-banner-chart mt-0">
           <script>
@@ -119,13 +141,13 @@
                 <i class="fa fa-ellipsis-v"></i>
                 </button>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item" href="#">View Detailed Chart</a>   
+                  <a class="dropdown-item" href="#">View Detailed Chart</a>
                 </div>
-              </div>            
+              </div>
             </div>-->
-          </div>      
+          </div>
 
-           
+
        <button data-chart-error-message class="alert alert-dangertext-left" style="display: none;">
             <span><%= gettext("There was a problem loading the chart.") %></span>
           </button>
@@ -148,7 +170,7 @@
 </div>
 </div>
 
-<%= render BlockScoutWeb.Advertisement.BannersAdView, "_banner_728.html", conn: @conn %>
+<div style="margin-top:-70px"><%= render BlockScoutWeb.Advertisement.BannersAdView, "_banner_728.html", conn: @conn %></div>
 
 <section class="container">
 <div class="row home_page_tble">
@@ -157,7 +179,7 @@
       <div class="card-header bg-light-green">
         <span>Latest Blocks </span>
       </div>
-      <div class="card-body px-3 pt-0 pb-2 scroll_box">      
+      <div class="card-body px-3 pt-0 pb-2 scroll_box">
         <div data-selector="chain-block-list" data-url="<%= chain_blocks_path(@conn, :chain_blocks) %>">
             <button data-selector="error-message" class="alert alert-danger col-12 text-left" style="display: none;">
               <span class="alert-link">

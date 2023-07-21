@@ -1,13 +1,13 @@
 <div class="container space-bottom-2">
   <div class="w-md-75 w-lg-50 text-center mx-md-auto space-top-2 py-3">
     <h1 class="h3">Site Preferences</h1>
-    <p>This page allows you to set up your browsing experience such as language, advanced view etc. on BscScan</p>
+    <p>This page allows you to set up your browsing experience such as language, advanced view etc. on Wyzthscan</p>
     </div>
     <div class="row">
   <div class="w-md-75 w-lg-50 mx-md-auto col-md-6 col-12">
     <div class="card mb-3">
       <div class="card-body p-4">
-        <form method="post" action="./settings" id="ctl00">
+
           <div class="aspNetHidden">
             <input
               type="hidden"
@@ -55,12 +55,12 @@
 
           <hr />
 
-          <div class="media align-items-center">
+        <div class="media align-items-center">
             <label class="media-body text-secondary mb-0" for="checkboxSwitch1">
               <h3 class="h6 font-weight-bold mb-1">Disqus Comments</h3>
               <span
                 >Enable Disqus comments tab (Note: This affect all Disqus
-                comments on BscScan)</span
+                comments on Wyzthscan)</span
               >
             </label>
             <label class="checkbox-switch ml-3 mb-0">
@@ -77,7 +77,7 @@
 
           <hr />
 
-          <div class="media align-items-center">
+        <!--  <div class="media align-items-center">
             <label class="media-body text-secondary mb-0">
               <h3 class="h6 font-weight-bold mb-1">Language</h3>
               <span
@@ -95,9 +95,9 @@
             </select>
           </div>
 
-          <hr />
+          <hr /> -->
 
-          <div class="media align-items-center">
+         <!-- <div class="media align-items-center">
             <label class="media-body text-secondary mb-0">
               <h3 class="h6 font-weight-bold mb-1">
                 Currency <span class="badge badge-success ml-1">New</span>
@@ -151,21 +151,35 @@
             </select>
           </div>
 
-          <hr />
+          <hr /> -->
           <div class="text-right">
             <input
               type="submit"
               name="ctl00$ContentPlaceHolder1$btnSubmit"
               value="Save Preferences"
-              onclick="clearGlobalValue();"
+              onclick="clearGlobalValu()"
               id="ContentPlaceHolder1_btnSubmit"
               class="btn btn-xs btn-primary"
             />
           </div>
-        </form>
+
       </div>
     </div>
     <p class="font-size-1">* Site preferences are saved as browser cookies.</p>
   </div>
 </div>
 </div>
+<Script>
+function clearGlobalValu(){
+  const checkbox = document.getElementById("ContentPlaceHolder1_chkDisqus");
+  const isChecked = checkbox.checked;
+
+  if (isChecked) {
+  window.localstorage.setItem("comments":true);
+
+  } else {
+    console.log("Checkbox is not checked!");
+    window.localstorage.setItem("comments":false);
+  }
+}
+</script>
