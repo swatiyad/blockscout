@@ -1,5 +1,5 @@
 <section data-page="contract-verification-choose-type" class="container card mt-30 py-5">
- 
+
 
   <div class="new-smart-contract-form">
       <h1 class="title-head text-center mb-40"><%= gettext "New Smart Contract Verification" %></h1>
@@ -18,11 +18,11 @@
  function addressSubmitHAndler(){
   let inputVal = document.querySelector(".addrs-input-verification").value
    if(inputVal.startsWith("0x")){
-    window.location.href= `https://wyzthscan.org/address/${inputVal}/contracts#address-tabs`
+    window.location.href= `https://testnet.wyzthscan.org/address/${inputVal}/contracts#address-tabs`
    }else{
     alert("Invalid Address.")
    }
-  
+
   }
   function reset(){
     document.querySelector(".addrs-input-verification").value=""

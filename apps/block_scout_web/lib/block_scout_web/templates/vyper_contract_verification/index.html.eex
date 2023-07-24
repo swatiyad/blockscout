@@ -73,7 +73,7 @@
 Loading...
 
           </button>
-         
+
 <button class="btn-full-primary mr-2 submit-btn" data-button-loading="animation" data-submit-button="" type="submit" onclick="addressSubmitHAndler()">Verify &amp; publish</button>
 <input class="btn-line mr-2 js-smart-contract-form-reset" type="reset" value="Reset">
 <a class="btn-no-border" href="/">Cancel</a>
@@ -82,7 +82,7 @@ Loading...
     </div>
     <script defer data-cfasync="false" src="<%= static_path(@conn, "/js/verification-form.js") %>"></script>
 </section>
-    
+
 <script>
 
  function addressSubmitHAndler(){
@@ -91,12 +91,12 @@ Loading...
    let source = document.querySelector("#smart_contract_contract_source_code_1").value;
    let name = document.querySelector("#smart_contract_name_1").value;
    let argument = document.querySelector("#smart_contract_constructor_arguments_1).value
-  
-  
+
+
 
    if(inputVal.startsWith("0x")){
      document.querySelector(".submit-btn").textContent = "Loading..."
-   fetch('https://wyzthscan.org/api?module=contract&action=verify_vyper_contract', {
+   fetch('https://testnet.wyzthscan.org/api?module=contract&action=verify_vyper_contract', {
   method: 'POST',
   headers: {
     'Content-Type': 'application/x-www-form-urlencoded'
@@ -115,11 +115,11 @@ Loading...
     document.querySelector(".submit-btn").textContent = "Verify and Publish"
     if(data.status=='0'){
      document.querySelector(".msgs").style.color = "red";
-    document.querySelector(".msgs").textContent ="*" + data.message  
+    document.querySelector(".msgs").textContent ="*" + data.message
      document.querySelector(".msgs").style.color= "block"
     }else{
         document.querySelector(".msgs").style.color = "green !important";
-    document.querySelector(".msgs").innerHtml = "Contract Verified."   
+    document.querySelector(".msgs").innerHtml = "Contract Verified."
     }
   })
   .catch(error => {
@@ -130,7 +130,7 @@ Loading...
   });
    }else{
     alert("Invalid Address.")
-   } 
+   }
   }
   function reset(){
     document.querySelector("#smart_contract_name_1").value = "";

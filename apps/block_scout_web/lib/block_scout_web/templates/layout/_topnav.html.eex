@@ -13,13 +13,13 @@
             </span>
             <span id="spanGasTooltip" class="ml-1 mr-1"> | <i class="fa fa-gas-pump text-secondary ml-1 "></i> <span class="text-secondary">
             Gas: </span><a href="/gastracker" class="text-info ml-1"><span>5</span> Gwei</a></span>
-          </div>     
+          </div>
       </div>
       <div class="col-lg-6 px-2">
-        <div class="header-searchbar" id="navbar_search">        
+        <div class="header-searchbar" id="navbar_search">
           <div class="col-md-12 p-0">
             <%= render BlockScoutWeb.LayoutView, "_search.html", conn: @conn, id: "main-search-autocomplete", additional_classes: ["mobile-search-hide--"] %>
-            <%#= render BlockScoutWeb.LayoutView, "_search.html", conn: @conn, id: "main-search-autocomplete", additional_classes: ["mobile-search-show"] %>          
+            <%#= render BlockScoutWeb.LayoutView, "_search.html", conn: @conn, id: "main-search-autocomplete", additional_classes: ["mobile-search-show"] %>
           </div>
         </div>
       </div>
@@ -27,9 +27,9 @@
   </div>
 </div>
 
-  <nav class="navbar navbar-dark navbar-expand-lg navbar-primary border-bottom shadow-sm custom_navbar py-1" data-selector="navbar" id="top-navbar">  
+  <nav class="navbar navbar-dark navbar-expand-lg navbar-primary border-bottom shadow-sm custom_navbar py-1" data-selector="navbar" id="top-navbar">
     <div class="container navbar-container">
-      <div class="clearfix logo_custom_img">     
+      <div class="clearfix logo_custom_img">
         <a href="/"> <div class="logo_img"></div> </a>
         <!-- <%= link to: webapp_url(@conn), class: "navbar-brand", "data-test": "header_logo" do %>
           <%= if logo() do %>
@@ -41,10 +41,10 @@
           <%= if Application.get_env(:block_scout_web, BlockScoutWeb.Chain)[:enable_testnet_label] do %>
             <%= render BlockScoutWeb.FormView, "_tag.html", text: Application.get_env(:block_scout_web, BlockScoutWeb.Chain)[:testnet_label_text], additional_classes: ["testnet-label", "ml-2"] %>
           <% end %>
-        <% end %>  
+        <% end %>
         -->
     </div>
-   
+
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="<%= gettext("Toggle navigation") %>">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -65,8 +65,8 @@
                 <a class="nav-link topnav-nav-link dropdown-toggle" href="#" id="navbarBlocksDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <%= gettext("Blockchain") %>
                 </a>
-                <div class="dropdown-menu fade-up" aria-labelledby="navbarBlockchainDropdown"> 
-                  
+                <div class="dropdown-menu fade-up" aria-labelledby="navbarBlockchainDropdown">
+
                   <% json_rpc_named_arguments = Application.fetch_env!(:indexer, :json_rpc_named_arguments)%>
                   <% variant = Keyword.fetch!(json_rpc_named_arguments, :variant) %>
                   <%= link(
@@ -83,14 +83,14 @@
                         to: pending_transaction_path(@conn, :index)
                       ) %>
                   <% end %>
-                
-                <a href="#" class="dropdown-item border-bottom">View Contract Internal Txns</a> 
-                
+
+                <a href="#" class="dropdown-item border-bottom">View Contract Internal Txns</a>
+
                   <%= link(
                     gettext("View Blocks"),
                     to: blocks_path(@conn, :index),
                     class: "dropdown-item #{tab_status("blocks", @conn.request_path)}")%>
-            
+
                   <%= link(gettext("Forked Blocks"),
                     to: reorg_path(@conn, :reorg),
                     class: "dropdown-item #{tab_status("reorgs", @conn.request_path)}")%>
@@ -113,7 +113,7 @@
               <li class="nav-item dropdown">
                 <a href="#" role="button" id="navbarTokensDropdown" class="nav-link topnav-nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <%= gettext("Tokens") %>
-                   
+
                 </a>
                 <div class="dropdown-menu fade-up" aria-labeledby="navbarTransactionsDropdown">
                   <%= link(
@@ -134,7 +134,7 @@
             <li class="nav-item dropdown">
                 <a href="#" role="button" id="navbarTokensDropdown" class="nav-link topnav-nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <%= gettext("NFTs") %>
-                   
+
                 </a>
                 <div class="dropdown-menu fade-up" aria-labeledby="navbarTransactionsDropdown">
                       <%= link(
@@ -153,15 +153,15 @@
                         gettext("Latest Mints"),
                         class: "dropdown-item #{tab_status("latest-mints", @conn.request_path)}",
                         to: "/latest-mint"
-                      ) %>                  
+                      ) %>
                 </div>
               </li>
 
 
-            <li class="nav-item dropdown">
+         <!--   <li class="nav-item dropdown">
                 <a href="#" role="button" id="navbarTokensDropdown" class="nav-link topnav-nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <%= gettext("Resources") %>
-                   
+
                 </a>
                 <div class="dropdown-menu fade-up" aria-labeledby="navbarTransactionsDropdown">
                 <%= link(
@@ -182,16 +182,16 @@
                         to: "/directories"
                       ) %>
 
-                   
+
                       <a class="dropdown-item" target="_blank" href="https://docs.wyzth.org/docs/Overview"> API Documentation</a>
-                  
+
                 </div>
-              </li>
+              </li> -->
 
           <li class="nav-item dropdown">
                 <a href="#" role="button" id="navbarTokensDropdown" class="nav-link topnav-nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <%= gettext("Developers") %>
-                   
+
                 </a>
                 <div class="dropdown-menu fade-up" aria-labeledby="navbarTransactionsDropdown">
                 <%= link(
@@ -229,14 +229,14 @@
                         class: "dropdown-item #{tab_status("Broadcast-Transaction", @conn.request_path)}",
                         to: "/pushTx"
                       ) %>
-                  
+
                 </div>
               </li>
 
                <li class="nav-item dropdown">
                 <a href="#" role="button" id="navbarTokensDropdown" class="nav-link topnav-nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <%= gettext("Explorer") %>
-                   
+
                 </a>
                 <div class="dropdown-menu fade-up" aria-labeledby="navbarTransactionsDropdown">
                       <%= link(
@@ -250,11 +250,11 @@
                         class: "dropdown-item #{tab_status("testnet", @conn.request_path)}",
                         to: "https://testnet.wyzthscan.org/"
                       ) %>
-                
+
                 </div>
               </li>
 
-        
+
         <!--  <li class="header-nav-separator mt-lg-2"></li>
           <li class="nav-item ">
             <a href="#" class="nav-link topnav-nav-link">
@@ -264,8 +264,8 @@
           </li>
           -->
 
-          <!-- Dark mode changer -->  
-          <li class="nav-item d-none d-lg-inline-block">       
+          <!-- Dark mode changer -->
+          <li class="nav-item d-none d-lg-inline-block">
             <button type="button" class="dark-mode-changer-btn nav-link topnav-nav-link border rounded ml-2 bg-white" style="padding: 0 10px;" id="dark-mode-changer">
             </button>
           </li>
@@ -276,8 +276,8 @@
               <div class="media_bg_icon" style="width: 18px; height: 21px"></div>
             </a>
           </li>
-      
-          
+
+
 
 
           <!-- <%= if Application.get_env(:block_scout_web, BlockScoutWeb.ApiRouter)[:reading_enabled] || Application.get_env(:block_scout_web, :api_url) do %>
@@ -363,19 +363,7 @@
         </ul>
       </div>
 
-      
+
     </div>
   </div>
 </nav>
-
-
-
-
-
-
-
-
-
-
-
-

@@ -169,6 +169,7 @@ end
   scope "/", BlockScoutWeb do
   pipe_through :browser
   get "/terms-of-service", TermsOfServiceController, :index
+  get "/privacy-policy", TermsOfServiceController, :privacy
 end
 
   scope "/", BlockScoutWeb do

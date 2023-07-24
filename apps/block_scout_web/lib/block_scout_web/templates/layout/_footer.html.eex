@@ -67,15 +67,16 @@
   background: url(/images/wyz-logo.svg);
   background-size: contain;
   background-repeat: no-repeat;
-  width: 189px;
+  width: 200px;
   height: 40px;
 }
+
 
 .dark-theme-applied .logo_custom_img .logo_img {
   background: url(/images/wyz-logo_darktheme.png);
   background-size: contain;
   background-repeat: no-repeat;
-  width: 176px;
+  width: 200px;
   height: 32px;
 }
 
@@ -212,15 +213,18 @@ a.metamask_btn {
 
       <div class="footer-about-bg"></div>
       <p class="text-white">
-      <%= gettext("WYZthScan is a Block Explorer and Analytics Platform for WYZth ") %>  <%= gettext(" chain, a decentralized smart contains platform.") %></p>
+     <!-- <%= gettext("WYZthScan is a Block Explorer and Analytics Platform for WYZth ") %>  <%= gettext(" chain, a decentralized smart contains platform.") %></p> -->
 
-      <a type="button" class="metamask_btn btn-sm text-decoration-none  py-1 mr-2" href="/preferences">
-        <i class="fas fa-cogs mr-1"></i> Preferences
-      </a>
-      <%= render BlockScoutWeb.LayoutView, "_add_chain_to_mm.html" %>
+
+    </div>
+    <div class="col-lg-3 footer-about">
+    <a type="button" class="metamask_btn btn-sm text-decoration-none  py-1 mr-2" href="/preferences">
+    <i class="fas fa-cogs mr-1"></i> Preferences
+  </a>
+  <%= render BlockScoutWeb.LayoutView, "_add_chain_to_mm.html" %>
     </div>
 
-    <div class="col-6 col-md-4 col-lg-<%= col_size %>">
+  <!--  <div class="col-6 col-md-4 col-lg-<%= col_size %>">
       <h3 class="text-white heading_border">Company</h3>
       <ul style="list-style: none;margin: 0; padding: 0; line-height: 31px;">
         <li><a href="https://wyzth.org/" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("About Us") %></a></li>
@@ -231,40 +235,40 @@ a.metamask_btn {
         <li><a href="terms-of-service" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("Terms of Service") %></a></li>
 
       </ul>
-    </div>
+    </div> -->
 
     <% test_nets = test_nets(other_networks()) %>
     <%= unless Enum.empty?(test_nets) do %>
-      <div class="col-6 col-md-4 col-lg-<%= col_size %>">
+      <!--<div class="col-6 col-md-4 col-lg-<%= col_size %>">
         <h3 class="text-white heading_border"><%= gettext("Resources") %></h3>
         <ul style="list-style: none;margin: 0; padding: 0; line-height: 31px;">
           <li><a href="https://docs.wyzth.org/docs/Overview" target="_blank" rel="noreferrer" class="footer-link"><%= gettext("API Documentation") %></a></li>
           <li><a href="https://newsletter.thecoinweekly.com/" target="_blank" rel="noreferrer" class="footer-link"><%= gettext("Newsletter") %></a></li>
 
-          <!--
+
           <%= for %{title: title, url: url} <- test_nets do %>
             <li><a href="<%= url %>" rel="noreferrer" class="footer-link"> <%= title %> </a></li>
           <% end %>
-          -->
+
         </ul>
-      </div>
+      </div> -->
     <% end %>
 
 
     <% main_nets = main_nets(other_networks()) %>
     <%= unless Enum.empty?(main_nets) do %>
-      <div class="col-6 col-md-4 col-lg-<%= col_size %>">
+     <!-- <div class="col-6 col-md-4 col-lg-<%= col_size %>">
         <h3 class="text-white heading_border"><%= gettext("Products & Services") %></h3>
         <ul style="list-style: none;margin: 0; padding: 0; line-height: 31px;">
 
         <li><a href="https://wyscale.com/" target="_blank" rel="noreferrer" class="footer-link"><%= gettext("WYscale") %></a></li>
-        <li><a href="/chat" target="_blank" rel="noreferrer" class="footer-link"><%= gettext("Chat") %></a></li>
+       <li><a href="/chat" target="_blank" rel="noreferrer" class="footer-link"><%= gettext("Chat") %></a></li>
 
-        <!--Absinthe<%= for %{title: title, url: url} <- main_nets do %>
+        Absinthe<%= for %{title: title, url: url} <- main_nets do %>
           <li><a href="<%= url %>" rel="norefferer" class="footer-link"> <%= title %> </a></li>
-        <% end %>-->
+        <% end %>
         </ul>
-      </div>
+      </div> ->>
     <% end %>
 
    <!-- <%= unless Enum.empty?(other_explorers) do %>

@@ -4,4 +4,7 @@ defmodule BlockScoutWeb.TermsOfServiceController do
   def index(conn, _params) do
     render(conn, "index.html")
   end
+  def privacy(conn, _params) do
+    render(conn, "privacy_policy.html")
+  end
 end
