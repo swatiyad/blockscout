@@ -2,7 +2,7 @@
 
    <div id="ContentPlaceHolder1_exchangewalletdiv">
    <h1 class="class="px-1">Mining Pools</h1>
-   <div class="card px-3 py-2 mb-3">
+ <!--  <div class="card px-3 py-2 mb-3">
 <h2>Mining Pool Addresses</h2>
 <div class="d-flex justify-content-between flex-wrap">
 <span aria-label="Copy Address" data-clipboard-text="0xAAdeF877d9F5441e643B48dBB54B974d36D887C6" id="tx-raw-input" class="btn-copy-icon-- cpyqr_outer_btn text-secondary fs-14 text-center overview-title-item-- btn icons_btns" data-placement="top" data-toggle="tooltip" title="" style="" data-original-title="Copy Address">
@@ -18,7 +18,7 @@
     0x8888a...96d30C7<i class="fa-regular fa-copy inner_icon-- px-1"></i>
     </span>
 </div>
-</div>
+</div>-->
       <div class="card mb-1">
         <div class="card-body">
           <div class="d-flex gap-3">
@@ -30,55 +30,33 @@
               />
             </div>
             <div
-              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+              class="w-100 d-flex align-items-center justify-content-between gap-3"
             >
               <div>
                 <a
-                  href="https://eth.2miners.com/"
+                  href="https://wyzthscan.org/address/0xAAdeF877d9F5441e643B48dBB54B974d36D887C6"
                   class="fs-5 link-dark"
                   rel="nofollow"
                   target="_blank"
                   data-bs-toggle="tooltip"
-                  >2miners</a
+                  >WYZth Miner 1</a
                 >
               </div>
               <ul class="list-inline mb-0 text-nowrap">
                 <li class="list-inline-item">
                   <a
-                    href="https://eth.2miners.com/"
+                    href="https://wyzthscan.org/address/0xAAdeF877d9F5441e643B48dBB54B974d36D887C6"
                     data-bs-placement="top"
                     data-bs-toggle="tooltip"
                     class="btn btn-sm btn-secondary rounded-circle"
                     rel="nofollow"
                     target="_blank"
-                    aria-label="[Website] https://eth.2miners.com/"
+                    aria-label="[Website] https://wyzthscan.org/address/0xAAdeF877d9F5441e643B48dBB54B974d36D887C6"
                     ><i class="fas fa-globe"></i
                   ></a>
                 </li>
-                <li class="list-inline-item">
-                  <a
-                    href="https://2miners.zendesk.com/hc/en-us"
-                    data-bs-toggle="tooltip"
-                    data-bs-placement="top"
-                    class="btn btn-sm btn-secondary rounded-circle"
-                    rel="nofollow"
-                    target="_blank"
-                    aria-label="[Helpdesk] https://2miners.zendesk.com/hc/en-us"
-                    ><i class="far fa-life-ring"></i
-                  ></a>
-                </li>
-                <li class="list-inline-item">
-                  <a
-                    href="https://2miners.zendesk.com/hc/en-us/requests/new"
-                    data-bs-toggle="tooltip"
-                    data-bs-placement="top"
-                    class="btn btn-sm btn-secondary rounded-circle"
-                    rel="nofollow"
-                    target="_blank"
-                    aria-label="[Ticketing] https://2miners.zendesk.com/hc/en-us/requests/new"
-                    ><i class="fa fa-ticket-alt"></i
-                  ></a>
-                </li>
+
+
               </ul>
             </div>
           </div>
@@ -95,43 +73,32 @@
               />
             </div>
             <div
-              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+              class="w-100 d-flex align-items-center justify-content-between gap-3"
             >
               <div>
                 <a
-                  href="https://www.antpool.com/"
+                  href="https://wyzthscan.org/address/0x84461d6d6501acf0Da8bC5f765E0615CbCeeC5eE"
                   class="fs-5 link-dark"
                   rel="nofollow"
                   target="_blank"
                   data-bs-toggle="tooltip"
-                  >Antpool</a
+                  >WYZth Miner 2</a
                 >
               </div>
               <ul class="list-inline mb-0 text-nowrap">
                 <li class="list-inline-item">
                   <a
-                    href="https://www.antpool.com/"
+                    href="https://wyzthscan.org/address/0x84461d6d6501acf0Da8bC5f765E0615CbCeeC5eE"
                     data-bs-placement="top"
                     data-bs-toggle="tooltip"
                     class="btn btn-sm btn-secondary rounded-circle"
                     rel="nofollow"
                     target="_blank"
-                    aria-label="[Website] https://www.antpool.com/"
+                    aria-label="[Website] https://wyzthscan.org/address/0x84461d6d6501acf0Da8bC5f765E0615CbCeeC5eE"
                     ><i class="fas fa-globe"></i
                   ></a>
                 </li>
-                <li class="list-inline-item">
-                  <a
-                    href="https://twitter.com/BITMAINtech"
-                    data-bs-toggle="tooltip"
-                    data-bs-placement="top"
-                    class="btn btn-sm btn-secondary rounded-circle"
-                    rel="nofollow"
-                    target="_blank"
-                    aria-label="[Twitter] https://twitter.com/BITMAINtech"
-                    ><i class="fab fa-twitter"></i
-                  ></a>
-                </li>
+
               </ul>
             </div>
           </div>
@@ -148,29 +115,29 @@
               />
             </div>
             <div
-              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+              class="w-100 d-flex align-items-center justify-content-between gap-3"
             >
               <div>
                 <a
-                  href="https://cominers.org/"
+                  href="https://wyzthscan.org/address/0x9daCbc5D2C60c64fcb31f75bb6A4c31f4fA270Ac"
                   class="fs-5 link-dark"
                   rel="nofollow"
                   target="_blank"
                   data-bs-toggle="tooltip"
-                  >Cominers</a
+                  >WYZth Miner 3</a
                 >
-                <div><p>Mining Pool</p></div>
+
               </div>
               <ul class="list-inline mb-0 text-nowrap">
                 <li class="list-inline-item">
                   <a
-                    href="https://cominers.org/"
+                    href="https://wyzthscan.org/address/0x9daCbc5D2C60c64fcb31f75bb6A4c31f4fA270Ac"
                     data-bs-placement="top"
                     data-bs-toggle="tooltip"
                     class="btn btn-sm btn-secondary rounded-circle"
                     rel="nofollow"
                     target="_blank"
-                    aria-label="[Website] https://cominers.org/"
+                    aria-label="[Website] https://wyzthscan.org/address/0x9daCbc5D2C60c64fcb31f75bb6A4c31f4fA270Ac"
                     ><i class="fas fa-globe"></i
                   ></a>
                 </li>
@@ -190,61 +157,39 @@
               />
             </div>
             <div
-              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+              class="w-100 d-flex align-items-center justify-content-between gap-3"
             >
               <div>
                 <a
-                  href="https://dwarfpool.com/"
+                  href="https://wyzthscan.org/address/0x8888a994323bE6c3fe1bF4b715588149296d30C7"
                   class="fs-5 link-dark"
                   rel="nofollow"
                   target="_blank"
                   data-bs-toggle="tooltip"
-                  >Dwarfpool</a
+                  >WYZth Miner 4</a
                 >
               </div>
               <ul class="list-inline mb-0 text-nowrap">
                 <li class="list-inline-item">
                   <a
-                    href="https://dwarfpool.com/"
+                    href="https://wyzthscan.org/address/0x8888a994323bE6c3fe1bF4b715588149296d30C7"
                     data-bs-placement="top"
                     data-bs-toggle="tooltip"
                     class="btn btn-sm btn-secondary rounded-circle"
                     rel="nofollow"
                     target="_blank"
-                    aria-label="[Website] https://dwarfpool.com/"
+                    aria-label="[Website] https://wyzthscan.org/address/0x8888a994323bE6c3fe1bF4b715588149296d30C7"
                     ><i class="fas fa-globe"></i
                   ></a>
                 </li>
-                <li class="list-inline-item">
-                  <a
-                    href="mailto:admin@dwarfpool.com"
-                    data-bs-placement="top"
-                    data-bs-toggle="tooltip"
-                    class="btn btn-sm btn-secondary rounded-circle"
-                    rel="nofollow"
-                    target="_blank"
-                    aria-label="[Email] mailto:admin@dwarfpool.com"
-                    ><i class="fa fa-envelope"></i
-                  ></a>
-                </li>
-                <li class="list-inline-item">
-                  <a
-                    href="https://twitter.com/DwarfPool"
-                    data-bs-toggle="tooltip"
-                    data-bs-placement="top"
-                    class="btn btn-sm btn-secondary rounded-circle"
-                    rel="nofollow"
-                    target="_blank"
-                    aria-label="[Twitter] https://twitter.com/DwarfPool"
-                    ><i class="fab fa-twitter"></i
-                  ></a>
-                </li>
+
+
               </ul>
             </div>
           </div>
         </div>
       </div>
-      <div class="card mb-1">
+   <!--   <div class="card mb-1">
         <div class="card-body">
           <div class="d-flex gap-3">
             <div>
@@ -255,7 +200,7 @@
               />
             </div>
             <div
-              class="w-100 d-md-flex align-items-center justify-content-between gap-3"
+              class="w-100 d-flex align-items-center justify-content-between gap-3"
             >
               <div>
                 <a
@@ -864,7 +809,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
 
 </section>
