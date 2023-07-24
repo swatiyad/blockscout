@@ -7,14 +7,14 @@
             <div
               class="d-flex flex-column flex-md-row justify-content-between gap-6"
             >
-          
+
               <div class="order-1 py-2">
                 <h1 class="h2 text-white text-print-dark">Terms of Service</h1>
-              
+
               </div>
             </div>
 
-           
+
           </div>
         </div>
 
@@ -424,7 +424,7 @@
 
             <p>
               Please see our detailed
-              <a href="/privacyPolicy"><strong>Privacy Policy</strong></a
+              <a href="/privacy-policy"><strong>Privacy Policy</strong></a
               >.
             </p>
           </div>
