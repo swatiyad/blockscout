@@ -1,31 +1,13 @@
 
 <div class="container-fluid search_backdrop">
-<div id="disqus_thread"></div>
-<script>
-    /**
-    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-    /*
-    var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    */
-    (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://https-wyzthscan-org.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
 
 
   <div class="search_backdrop_overlay py-5">
     <div class="container mb-4">
       <div class="row">
         <div class="col-sm-12 col-md-12 col-lg-7 col-md-6 mb-2" id="inner_page_searchbar">
-         <h3 class="text-white" style="font-size:21px;font-weight: 400;"> WYZth POA Blockchain Explorer </h3>
+         <h3 class="text-white wyzth-poa" style="font-size:21px;font-weight: 400;"> WYZth POA Blockchain Testnet Explorer </h3>
           <div class="search-form d-inline-block w-100">
             <%= render BlockScoutWeb.LayoutView, "_search.html", conn: @conn, id: "main-search-autocomplete-mobile", additional_classes: ["mobile-search-hide--"] %>
             <%#= render BlockScoutWeb.LayoutView, "_search.html", conn: @conn, id: "main-search-autocomplete-mobile", additional_classes: ["mobile-search-show"] %>
@@ -45,7 +27,7 @@
 
 
 <div class="container" style="position:relative; top:-50px;" data-page="chain-details">
-<div class="card shadow">
+<div class="card shadow d-none" >
   <div class="card-body px-md-2 py-3">
     <div class="">
       <div class="row">

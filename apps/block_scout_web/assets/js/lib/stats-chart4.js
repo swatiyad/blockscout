@@ -28,7 +28,7 @@ const chartOptions = {
 
   export const fetchApi = async () => {
     try {
-      const response = await axios.get('https://wyzthscan.org/node-api/transactions');
+      const response = await axios.get('https://testnet.wyzthscan.org/node-api/transactions');
       const data = response.data.data; // Assuming the response contains the desired data
       const categories = [];
       const values = [];

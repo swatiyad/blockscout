@@ -77,7 +77,7 @@ document.querySelector(".nav-link3").classList.add("active");
   document.querySelector(".nav-link2").classList.add("active")
   document.querySelector(".nav-link3").classList.remove("active") ;
   window.scrollTo({
-    top: document.body.scrollHeight - 1000,
+    top: document.body.scrollHeight - 700,
     behavior: 'smooth'
   });
   // window.scrollTo(0, document.body.scrollHeight-892);

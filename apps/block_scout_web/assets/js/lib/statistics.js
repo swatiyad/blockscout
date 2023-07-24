@@ -199,11 +199,11 @@ let token=
   document.querySelector("#ContentPlaceHolder1_Div1a_body_2").innerHTML = token;
   const [topsender, maxRecieverCount, maxSendCount, api, TopTokenApi] =
   await Promise.all([
-    axios.get("https://wyzthscan.org/node-api/topsender"),
-    axios.get("https://wyzthscan.org/node-api/max-count-reciever"),
-    axios.get("https://wyzthscan.org/node-api/max-count-sender"),
-    axios.get("https://wyzthscan.org/node-api/top-stats-data"),
-    axios.get("https://wyzthscan.org/node-api/token-data"),
+    axios.get("https://testnet.wyzthscan.org/node-api/topsender"),
+    axios.get("https://testnet.wyzthscan.org/node-api/max-count-reciever"),
+    axios.get("https://testnet.wyzthscan.org/node-api/max-count-sender"),
+    axios.get("https://testnet.wyzthscan.org/node-api/top-stats-data"),
+    axios.get("https://testnet.wyzthscan.org/node-api/token-data"),
   ]);
 
   const apiData = api.data;

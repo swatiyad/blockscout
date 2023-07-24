@@ -116,7 +116,7 @@
             <li class="nav-item tab-2-id" id="tab-2-id">
               <button class="nav-link nav-link2" style="color:#000">State</button>
             </li>
-            <li class="nav-item tab-3-id" id="tab-3-id">
+            <li class="nav-item tab-3-id" id="tab-3-id" style="display:none">
               <button class="nav-link nav-link3" style="color:#000" >Comment</button>
             </li>
           </ul>

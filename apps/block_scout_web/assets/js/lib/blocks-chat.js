@@ -9,7 +9,7 @@ const unreadCountButton = document.getElementById('unreadCountButton');
 const markAsReadButton = document.getElementById('markAsReadButton');
 const retrieveMessagesButton = document.getElementById('retrieveMessagesButton');
 
-const localhost = `https://wyzthscan.org/node-api`
+const localhost = `https://testnet.wyzthscan.org/node-api`
 if (typeof window.ethereum !== 'undefined') {
   const web3 = new Web3(window.ethereum);
 
