@@ -90,7 +90,7 @@ Loading...
    let compiler = document.querySelector("#smart_contract_compiler_version_1").value;
    let source = document.querySelector("#smart_contract_contract_source_code_1").value;
    let name = document.querySelector("#smart_contract_name_1").value;
-   let argument = document.querySelector("#smart_contract_constructor_arguments_1).value
+   let argument = document.querySelector("#smart_contract_constructor_arguments_1").value
 
 
 
