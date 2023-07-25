@@ -7,7 +7,7 @@
     <table class="table fixed-layout mb-0">
       <tbody class="table-group-divider validated_txns---">
         <!-- Color Block Transaction -->
-        <tr>        
+        <tr>
             <td class="show_for_hompage sno_col">
               <span class="btn-icon radius-50">
                 <span class="btn-icon-inner">
@@ -37,7 +37,7 @@
                 <div>
                   <span class="text-dark mr-2">From</span>
                 </div>
-                <div class="text-truncate text-success width135">
+                <div class="text-truncate text-green width135">
                   <%= @transaction |> BlockScoutWeb.AddressView.address_partial_selector(:from, assigns[:current_address]) |> BlockScoutWeb.RenderHelpers.render_partial() %>
                   &rarr;
                 </div>
@@ -47,7 +47,7 @@
                   <div>
                     <span class="text-dark mr-2">To</span>
                   </div>
-                  <div class="text-truncate text-success width135">
+                  <div class="text-truncate text-green width135">
                     <span>
                       <%= @transaction |> BlockScoutWeb.AddressView.address_partial_selector(:to, assigns[:current_address]) |> BlockScoutWeb.RenderHelpers.render_partial() %>
                     </span>
@@ -65,8 +65,8 @@
                   </span>
                 -->
               </span>
-            </td>       
-    
+            </td>
+
             <!--
             <td class="hide_for_homepage">
               <div class="tile-transaction-type-block">
@@ -113,15 +113,15 @@
                 <% end %>
               </span>
             </td>
-            
+
             <!-- Transaction Hash  -->
-            <td class="hide_for_homepage">                             
+            <td class="hide_for_homepage">
               <div class="text-truncate d-flex text-success width135">
                 <%= render "_link.html", transaction_hash: @transaction.hash, data_test: "address_hash_link" %>
-              </div>             
-            
-              <div class="text-truncate width135">       
-                <% method_name = Transaction.get_method_name(@transaction) %>        
+              </div>
+
+              <div class="text-truncate width135">
+                <% method_name = Transaction.get_method_name(@transaction) %>
               </div>
             </td>
 
@@ -133,19 +133,19 @@
               <%= if tx_tags.personal_tx_tag && tx_tags.personal_tx_tag.name !== :error do %>
                 <%= render BlockScoutWeb.FormView, "_tag.html", text: tx_tags.personal_tx_tag.name, additional_classes: [tag_name_to_label(tx_tags.personal_tx_tag.name), "ml-1"] %>
               <% end %>
-              <%= render BlockScoutWeb.AddressView, "_labels.html", tags: tx_tags %>            
+              <%= render BlockScoutWeb.AddressView, "_labels.html", tags: tx_tags %>
             </td>
-          
-          
-            <!-- Block info -->  
-            <td class="hide_for_homepage">        
+
+
+            <!-- Block info -->
+            <td class="hide_for_homepage">
                 <span class="">
                   <%= @transaction |> block_number() |> BlockScoutWeb.RenderHelpers.render_partial() %>
-                </span> 
+                </span>
                 <div class="show_for_hompage">
-          
+
               <!-- Transaction IN/OUT -->
-            
+
               <%= if from_or_to_address?(@transaction, assigns[:current_address]) do %>
                 <span class="mr-2 mr-md-0 ">
                   <%= if @transaction.from_address_hash == assigns[:current_address].hash do %>
@@ -158,11 +158,11 @@
                     </span>
                   <% end %>
                 </span>
-              <% end %>  
+              <% end %>
             </td>
 
             <!-- Age  -->
-            <td class="hide_for_homepage">  
+            <td class="hide_for_homepage">
               <div class="d-flex">
                 <div class="mr-2 order-2 text-truncate width100" in-tile data-from-now="<%= block_timestamp(@transaction) %>"></div>
                 <%= if from_or_to_address?(@transaction, assigns[:current_address]) do %>
@@ -178,36 +178,36 @@
                     <% end %>
                   </div>
                 <% end %>
-              </div>          
-             
+              </div>
+
             </td>
 
             <!-- From  -->
             <td class="hide_for_homepage">
-              <div class="">              
+              <div class="">
                 <div class="text-truncate width135">
                   <%= @transaction |> BlockScoutWeb.AddressView.address_partial_selector(:from, assigns[:current_address]) |> BlockScoutWeb.RenderHelpers.render_partial() %>
                   &rarr;
                 </div>
               </div>
-              <div>           
-            </td>  
-            
+              <div>
+            </td>
+
             <td class="hide_for_homepage" style="width:70px">
               <div class="btn btn-xs btn-teal rounded-circle">
                 <span class="fas fa-long-arrow-alt-right"></span>
               </div>
-            </td>                       
-            
+            </td>
+
             <!-- To  -->
             <td class="hide_for_homepage">
-              <div class="d-flex"> 
+              <div class="d-flex">
                 <div>
                   <span class="tile-label mr-2" data-test="transaction_type">
                       <%= transaction_display_type(@transaction) %>
                     </span>
-                </div>             
-                <div class="text-truncate width135">                  
+                </div>
+                <div class="text-truncate width135">
                   <span>
                     <%= @transaction |> BlockScoutWeb.AddressView.address_partial_selector(:to, assigns[:current_address]) |> BlockScoutWeb.RenderHelpers.render_partial() %>
                   </span>
@@ -217,20 +217,20 @@
 
 
             <!-- Value  -->
-            <td class="hide_for_homepage">        
+            <td class="hide_for_homepage">
               <span class="">
                 <%= value(@transaction, include_label: false) %> <%= Explorer.coin_name() %>
-              </span>         
+              </span>
             </td>
 
             <!-- Tx Fee  -->
 
-            <td class="hide_for_homepage">         
+            <td class="hide_for_homepage">
               <div class="text-truncate width100">
                 <span class="text-nowrap text-green">
                   <%= formatted_fee(@transaction, denomination: :ether, include_label: false) %>
                 </span>
-              </div>    
+              </div>
             </td>
             <!-- Transfer
             <td class="hide_for_homepage">
@@ -254,9 +254,9 @@
                   </div>
                 <% end %>
               <% end %>
-            </td>       
-            -->      
-          
+            </td>
+            -->
+
         </tr>
       </tbody>
     </table>
