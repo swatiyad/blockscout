@@ -228,7 +228,7 @@ a.metamask_btn {
 
         <li><a href="https://wyzth.org/careers" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("Careers") %>
         <sup class="join">Join Us</sup></a></li>
-        <li><a href="terms-of-service" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("Terms of Service") %></a></li>
+        <li><a href="/terms-of-service" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("Terms of Service") %></a></li>
 
       </ul>
     </div>
