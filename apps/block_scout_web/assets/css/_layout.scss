@@ -178,6 +178,7 @@ a {
     color: #20d0b2;
 }
 
+
 .dashboard-data {
     color: #2c2828;
     display: block;
@@ -1537,6 +1538,7 @@ input.nosubmit {
     .container {
         max-width: 100%;
     }
+ 
 }
 
 
@@ -1548,6 +1550,9 @@ input.nosubmit {
     }
     .header-searchbar .form-control {
       width:30%!important;
+    }
+    .footer-margin-30{
+        margin-bottom: 30px;
     }
     // .header-searchbar .main-search-autocomplete {
     //   width:30%!important;
@@ -1569,7 +1574,7 @@ input.nosubmit {
       right: 0;
     }
     .wyzth-poa{
-        font-size: 16px;
+        font-size: 16px !important;
     }
     .mb-sm {
         margin-bottom: 15px;
@@ -1600,6 +1605,7 @@ input.nosubmit {
     .title-head{
         font-size: 25px !important;
     }
+  
 }
 
 

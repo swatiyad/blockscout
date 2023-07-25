@@ -67,7 +67,7 @@
   background: url(/images/wyz-logo.svg);
   background-size: contain;
   background-repeat: no-repeat;
-  width: 200px;
+  width: 175px;
   height: 40px;
 }
 
@@ -76,8 +76,15 @@
   background: url(/images/wyz-logo_darktheme.png);
   background-size: contain;
   background-repeat: no-repeat;
-  width: 200px;
+  width: 175px;
   height: 32px;
+}
+.badge-color{
+  background: red;
+  position: relative;
+  left: 175px;
+  top: 5px;
+  font-size:12px
 }
 
 .navbar-image .media_bg_icon {
@@ -217,7 +224,7 @@ a.metamask_btn {
 
 
     </div>
-    <div class="col-lg-3 footer-about">
+    <div class="col-lg-3 footer-about footer-margin-30 d-flex justify-content-end align-items-start">
     <a type="button" class="metamask_btn btn-sm text-decoration-none  py-1 mr-2" href="/preferences">
     <i class="fas fa-cogs mr-1"></i> Preferences
   </a>

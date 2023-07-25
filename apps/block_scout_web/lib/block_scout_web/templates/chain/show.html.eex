@@ -13,7 +13,7 @@
             <%#= render BlockScoutWeb.LayoutView, "_search.html", conn: @conn, id: "main-search-autocomplete-mobile", additional_classes: ["mobile-search-show"] %>
 
           </div>
-          <p class="text-white mt-3"> A Web3 Crypto Mutual Fund, start with as low as $50 on <a href="https://wyscale.com/" target="_blank" class="text-green font-weight-bold">  WYscale </a>
+          <p class="text-white mt-3 d-none"> A Web3 Crypto Mutual Fund, start with as low as $50 on <a href="https://wyscale.com/" target="_blank" class="text-green font-weight-bold">  WYscale </a>
           </p>
         </div>
         <div class="col-sm-12 col-md-12 col-lg-5 col-md-6 mb-2 text-center py-3">

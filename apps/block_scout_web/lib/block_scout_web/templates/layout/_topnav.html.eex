@@ -30,7 +30,7 @@
   <nav class="navbar navbar-dark navbar-expand-lg navbar-primary border-bottom shadow-sm custom_navbar py-1" data-selector="navbar" id="top-navbar">
     <div class="container navbar-container">
       <div class="clearfix logo_custom_img">
-        <a href="/"> <div class="logo_img"></div> </a>
+        <a href="/"> <div class="logo_img"> <sup class="small"><span class="badge badge-pill badge-color">Testnet</span></sup></div> </a>
         <!-- <%= link to: webapp_url(@conn), class: "navbar-brand", "data-test": "header_logo" do %>
           <%= if logo() do %>
             <img class="navbar-logo" id="navbar-logo" style="width:175px" src="<%= static_path(@conn, logo()) %>" alt="<%= subnetwork_title() %>" />
