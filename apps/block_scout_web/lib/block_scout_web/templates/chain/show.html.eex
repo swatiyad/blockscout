@@ -7,7 +7,7 @@
     <div class="container mb-4">
       <div class="row">
         <div class="col-sm-12 col-md-12 col-lg-7 col-md-6 mb-2" id="inner_page_searchbar">
-         <h3 class="text-white wyzth-poa" style="font-size:21px;font-weight: 400;"> WYZth POA Blockchain Testnet Explorer </h3>
+         <h3 class="text-white wyzth-poa" style="font-size:21px;font-weight: 400;"> WYZth PoA Blockchain Testnet Explorer </h3>
           <div class="search-form d-inline-block w-100">
             <%= render BlockScoutWeb.LayoutView, "_search.html", conn: @conn, id: "main-search-autocomplete-mobile", additional_classes: ["mobile-search-hide--"] %>
             <%#= render BlockScoutWeb.LayoutView, "_search.html", conn: @conn, id: "main-search-autocomplete-mobile", additional_classes: ["mobile-search-show"] %>
