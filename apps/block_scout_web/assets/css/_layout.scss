@@ -889,7 +889,14 @@ a {
     color: #333!important;
     font-size: 13px!important;
 }
-
+.ad-text-homepage{
+    color:#000;
+    background: white;
+}
+.dark-theme-applied .ad-text-homepage{
+    color:#000;
+    background: white;
+}
 .dark-theme-applied .dashboard-data {
     color: #ffffff!important;
 }
