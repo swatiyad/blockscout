@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                    
                   </span>
                 </td>
-                <td class="hide_for_homepage">
+                <td class="hide_for_homepage text-center">
                   <div class="bs-label method ml-0 text-center">${detail.holder_count}</div>
                 </td>
               </tr>
@@ -275,7 +275,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                   ${detail.inserted_at}
                 </div>
             </td>
-              <td class="hide_for_homepage">
+              <td class="hide_for_homepage text-center">
                 <div class="bs-label method ml-0 text-center">${detail.holder_count}</div>
               </td>
              
