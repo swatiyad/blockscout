@@ -1027,6 +1027,9 @@ a {
     color: #919369;
     background-color: #4c4c46;
 }
+.navbar-image .dropdown-toggle::after {
+ display: none;
+}
 
 .chart_area_header .dropdown-toggle::after {
     display: none
