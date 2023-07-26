@@ -233,7 +233,7 @@
                 </div>
               </li>
 
-               <li class="nav-item dropdown">
+               <li class="nav-item dropdown d-lg-none d-block">
                 <a href="#" role="button" id="navbarTokensDropdown" class="nav-link topnav-nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <%= gettext("Explorer") %>
 
@@ -272,10 +272,32 @@
 
 
           <li class="nav-item d-none d-lg-inline-block">
-            <a href="#" class="nav-link topnav-nav-link  border rounded ml-2 navbar-image">
-              <div class="media_bg_icon" style="width: 18px; height: 21px"></div>
-            </a>
-          </li>
+          <!--<a href="#" class="nav-link topnav-nav-link  border rounded ml-2 navbar-image">
+
+          </a>-->
+
+          <div class="dropdown navbar-image">
+<button class="btn dropdown-toggle border" style="padding:6px 10px" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+<div class="media_bg_icon" style="width: 18px; height: 21px"></div>
+
+</button>
+<div class="dropdown-menu fade-up" aria-labeledby="navbarTransactionsDropdown">
+                    <%= link(
+                      gettext("Mainnet"),
+                      class: "dropdown-item #{tab_status("mainnet", @conn.request_path)}",
+                      to: "https://wyzthscan.org/"
+                    ) %>
+
+                    <%= link(
+                      gettext("Testnet"),
+                      class: "dropdown-item #{tab_status("testnet", @conn.request_path)}",
+                      to: "https://testnet.wyzthscan.org/"
+                    ) %>
+
+              </div>
+</div>
+
+        </li>
 
 
 
