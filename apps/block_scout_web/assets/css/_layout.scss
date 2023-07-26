@@ -209,10 +209,10 @@ a {
 .text-center{
     text-align: center;
 }
-// .dashboard-banner-chart canvas {
-//     -webkit-filter: brightness(0) invert(1) !important;
-//     filter: brightness(0) invert(1) !important;
-// }
+.dark-theme-applied .dashboard-banner-chart canvas {
+    -webkit-filter: brightness(0) invert(1) !important;
+    filter: brightness(0) invert(1) !important;
+}
 .btn-icon {
     display: inline-block;
     vertical-align: top;
@@ -892,6 +892,16 @@ a {
 .ad-text-homepage{
     color:#000;
     background: white;
+}
+
+ .navbar-image .dropdown-toggle:after{
+    display: none !important;
+}
+.text-darkgrey-green{
+    color: #a9ab3f!important;
+}
+.dark-theme-applied .text-darkgrey-green{
+    color: #8c96a5 !important;
 }
 .dark-theme-applied .ad-text-homepage{
     color:#000;
