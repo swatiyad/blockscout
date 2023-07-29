@@ -5,14 +5,16 @@
     <div>
       <h1> Blocks</h1>
     </div>
-    
+
   </div>
   <!--
   <div class="mt-2">
-    <p class="mb-0"><strong>Featured: </strong> Bridging tokens between Ethereum, Layer 2 and other chains? Browse through the Blockscan <a href="https://wyscale.com/" target="_blank"> bridges list. </a></p>
+    <!--<p class="mb-0"><strong>Featured: </strong> Bridging tokens between Ethereum, Layer 2 and other chains? Browse through the Blockscan <a href="https://wyscale.com/" target="_blank"> bridges list. </a></p>-->
+      <strong>Featured:</strong> Wallet-to-wallet instant messaging via <a href="/chat" target="_blank">Blockscan Chat</a>
+
   <div>
   <div class="row my-3">
-    <div class="col-sm-6 col-lg-3 mb-2">    
+    <div class="col-sm-6 col-lg-3 mb-2">
       <a class="card group text-decoration-none mb-0" href="#">
         <div class="card-body py-3">
           <div class="d-flex justify-content-between align-items-center mb-1">
@@ -60,7 +62,7 @@
       <a class="card group text-decoration-none mb-0" target="_blank" href="#">
         <div class="card-body py-3">
           <div class="d-flex justify-content-between align-items-center mb-1">
-            <p class="fs-14 mb-0 text-uppercase text-secondary">Total Transaformation</p>              
+            <p class="fs-14 mb-0 text-uppercase text-secondary">Total Transaformation</p>
             <i class="fa-solid fa-arrow-up-right-from-square group-hover"></i>
           </div>
           <div>
