@@ -174,22 +174,30 @@ a.metamask_btn {
   border-radius: 5px
 }
 .dark-mode-changer-btn::before {
-  content: " \002600";
+  content: "";
+  background: url(/images/sun.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position:center;
+    margin: 3px -6px;
+    width: 28px;
+    height: 28px;
   font-family:  unset!important
     font-weight: 400;
   font-size: 22px;
-  color:#778B3A
+  color:#778B3A;
 }
 
 .dark-theme-applied .dark-mode-changer-btn::before {
   content: "\f186";
   font-family: "Font Awesome 6 Free";
+  background:none;
     font-weight: 400;
+    margin: 1px -6px 4px -6px;
   font-size: 18px;
   padding: 3px 0;
   color: #fff;
 }
-
 .mw-100 {
   max-width: 100px !important;
 }
