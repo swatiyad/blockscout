@@ -281,7 +281,7 @@
 <div class="media_bg_icon" style="width: 18px; height: 21px"></div>
 
 </button>
-<div class="dropdown-menu fade-up" aria-labeledby="navbarTransactionsDropdown">
+<div class="dropdown-menu dropdown-menu-right fade-up" aria-labeledby="navbarTransactionsDropdown">
                     <%= link(
                       gettext("Mainnet"),
                       class: "dropdown-item #{tab_status("mainnet", @conn.request_path)}",
