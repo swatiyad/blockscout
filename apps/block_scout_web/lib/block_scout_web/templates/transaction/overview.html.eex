@@ -7,7 +7,7 @@
 <% base_fee_per_gas = if block, do: block.base_fee_per_gas, else: nil %>
 <% max_priority_fee_per_gas = @transaction.max_priority_fee_per_gas %>
 <% max_fee_per_gas = @transaction.max_fee_per_gas %>
-<% burned_fee = 
+<% burned_fee =
   if !is_nil(max_fee_per_gas) and !is_nil(@transaction.gas_used) and !is_nil(base_fee_per_gas) do
     if Decimal.compare(max_fee_per_gas.value, 0) == :eq do
       %Wei{value: Decimal.new(0)}
@@ -30,8 +30,8 @@
 <section class="fs-14" data-page="transaction-details" data-page-transaction-hash="<%= @transaction %>">
   <div class="row">
     <div class="col-md-12">
-      <!-- Transaction Details -->     
-          <div class="page-title display_flex">   
+      <!-- Transaction Details -->
+          <div class="page-title display_flex">
             <%= cond do %>
               <% Enum.member?(circles_addresses_list, address_hash_str) -> %>
                 <div class="custom-dapp-header-container">
@@ -43,16 +43,16 @@
                 </div>
               <% true -> %>
                 <%= nil %>
-            <% end %>            
+            <% end %>
               <div>
-                <h1><%= gettext "Transaction Details" %><h1>               
+                <h1><%= gettext "Transaction Details" %><h1>
                 <% personal_tx_tag = if assigns[:tx_tags], do: @tx_tags.personal_tx_tag, else: nil %>
                 <%= if personal_tx_tag && personal_tx_tag.name !== :error do %>
                   <%= render BlockScoutWeb.FormView, "_tag.html", text: personal_tx_tag.name, additional_classes: [tag_name_to_label(personal_tx_tag.name), "ml-1"] %>
                 <% end %>
-                <%= render BlockScoutWeb.AddressView, "_labels.html", tags: @tx_tags %>             
-            </div>            
-         
+                <%= render BlockScoutWeb.AddressView, "_labels.html", tags: @tx_tags %>
+            </div>
+
             <div class="d-flex flex-row">
               <%= if show_tenderly_link?() do %>
                 <div class="mr-4 mb-4">
@@ -62,7 +62,7 @@
                 </div>
               <% end %>
             </div>
-            
+
             <div class="d-flex">
               <div class="dropdown">
                 <button class="btn btn-primary btn-xs dropdown-toggle fs-12" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -152,7 +152,7 @@
                     <%= render BlockScoutWeb.FormView, "_tag.html", text: formatted_status, additional_classes: ["large"] %></span>
                   <% else %>
                     <%= render BlockScoutWeb.FormView, "_tag.html", text: formatted_status, additional_classes: ["success", "large"] %></span>
-                  <% end %>                
+                  <% end %>
                 <%= if confirmations > 0 do %>
                   <span class="bs-label large ml-2 confirmations-label border-0"><%= gettext "Confirmed by " %><span data-selector="block-confirmations"><%= confirmations %></span><%= " " <> confirmations_ds_name(confirmations) %></span>
                 <% end %>
@@ -194,7 +194,7 @@
               <%= if block do %>
                 <%= link(
                       block,
-                      class: "transaction__link text-info",
+                      class: "transaction__link ",
                       to: block_path(@conn, :show, block)
                     ) %>
               <% else %>
@@ -221,7 +221,7 @@
                   <% :unknown -> %>
                     <% nil %>
                   <% {:ok, interval_string} -> %>
-                   <span class="px-4 text-green"> | <span><span class="text-green"> <%= gettext("Confirmed within") %> <%= interval_string %></span>
+                   <span class="px-4 text-blue"> | <span><span class="text-blue"> <%= gettext("Confirmed within") %> <%= interval_string %></span>
                 <% end %>
               </dd>
             </dl>
@@ -273,8 +273,8 @@
                       <%= render BlockScoutWeb.AddressView, "_labels.html", tags: @to_tags %>
                       &nbsp;<%= gettext("created") %>]
                 </div>
-                                 
-                <div class="icon_align"> 
+
+                <div class="icon_align">
                   <%= render BlockScoutWeb.CommonComponentsView, "_btn_copy.html",
                     additional_classes: ["btn-copy-icon-small", "btn-copy-icon-custom", "btn-copy-icon-no-borders"],
                     clipboard_text: Address.checksum(recipient_address_hash),
@@ -283,7 +283,7 @@
                 <% recipient_address_hash -> %>
                   <%= render BlockScoutWeb.AddressView, "_link.html", address: to_address, contract: BlockScoutWeb.AddressView.contract?(to_address), use_custom_tooltip: false, trimmed: false %>
                   <%= render BlockScoutWeb.AddressView, "_labels.html", tags: @to_tags %>
-              
+
                 <span class="icon_align">
                     <%= render BlockScoutWeb.CommonComponentsView, "_btn_copy.html",
                       additional_classes: ["btn-copy-icon-small", "btn-copy-icon-custom", "btn-copy-icon-no-borders"],
@@ -412,12 +412,12 @@
         </div>
          <div class="card js-ad-dependant-mb-3 mt-4 fs-15">
           <div class="card-body">
-          <div style="display:none" id="decode_input">        
-          
+          <div style="display:none" id="decode_input">
+
             <!--
             <dl class="row py-2">
                 <dt class="col-sm-3 col-lg-2 text-muted fs-15">
-                  Click for details     
+                  Click for details
                 </dt>
                 <dd class="col-sm-9 col-lg-10">
                   <button class="btn btn-teal btn-sm my-2" id="toggle"> Decode Input Data</button>
@@ -435,7 +435,7 @@
                 <dd class="col-sm-9 col-lg-10"> <%= type %> </dd>
               </dl>
             <% end %>
-            
+
             <!-- Gas Limit -->
             <dl class="row py-2">
               <dt class="col-sm-3 col-lg-2  text-muted fs-15">
@@ -474,7 +474,7 @@
                 </dt>
                 <dd class="col-sm-9 col-lg-10"> <%= format_wei_value(priority_fee, :ether) %> </dd>
               </dl>
-            <% end %> 
+            <% end %>
            <%= if !is_nil(burned_fee) do %>
             <dl class="row py-2">
               <dt class="col-sm-3 col-lg-2  text-muted fs-15">
@@ -569,11 +569,11 @@
             </dl>
           <% end %>
           <hr class="divider_hr">
-          
-          
+
+
         </div>
          <dl class="row py-0">
-            <dt class="col-sm-3 col-lg-2  text-muted fs-15">               
+            <dt class="col-sm-3 col-lg-2  text-muted fs-15">
               <%= gettext "More Details:" %>
             </dt>
             <dd class="col-sm-9 col-lg-10">
@@ -584,10 +584,10 @@
       </div>
     </div>
 
-   
+
   </div>
   </div>
-  
+
 
   <%= render BlockScoutWeb.Advertisement.BannersAdView, "_banner_728.html", conn: @conn %>
 
@@ -641,4 +641,3 @@
     };
 
 </script>
-

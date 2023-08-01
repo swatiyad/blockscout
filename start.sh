@@ -7,9 +7,8 @@ export ETHEREUM_JSONRPC_WS_URL=ws://ec2-52-66-146-60.ap-south-1.compute.amazonaw
 export DATABASE_URL=postgres://postgres:wyzscan@localhost:5432/blockscout?ssl=false
 export ETHEREUM_JSONRPC_TRACE_URL=http://ec2-52-66-146-60.ap-south-1.compute.amazonaws.com/ 
 export NETWORK=Tarality Blockchain Explorer
-export SUBNETWORK="WYZth Scan"
-export LOGO=/images/wyz-logo.svg
-export LOGO_FOOTER=/images/wyz-footer-logo.svg
+export SUBNETWORK="MerkleScan Scan"
+export LOGO=/images/logo.svg
 #export ETHEREUM_JSONRPC_TRANSPORT=http
 #export ETHEREUM_JSONRPC_TRANSPORT=http
 export NETWORK_PATH=/
@@ -19,8 +18,8 @@ export BLOCKSCOUT_PROTOCOL=https
 SECRET_KEY_BASE=BASE=E/sdFN0JBURFmltKF+2BLp8JRqzPEJy9a3kwfDN7DooykJuAo3BKT0W7YFQ42d2/
 # export CHECK_ORIGIN=false
 # export PORT=4000
-export COIN=WYZ
-export COIN_NAME=WYZ
+export COIN=Merkle
+export COIN_NAME=Merkle
 
 export BLOCKSCOUT_VERSION=v4.1.5-beta
 export RELEASE_LINK=https://github.com/blockscout/blockscout/releases/tag/v4.1.5-beta

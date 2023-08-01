@@ -1,24 +1,24 @@
 
 <div class="container-fluid search_backdrop">
   <div class="search_backdrop_overlay py-5">
-    <div class="container mb-4">         
-      <div class="row">          
+    <div class="container mb-4">
+      <div class="row">
         <div class="col-sm-12 col-md-12 col-lg-7 col-md-6 mb-2" id="inner_page_searchbar">
          <h3 class="text-white" style="font-size:21px;font-weight: 400;"> <%= gettext(
-          " %{subnetwork}",          
+          " %{subnetwork}",
           subnetwork: BlockScoutWeb.LayoutView.subnetwork_title()
-        ) %> Explorer </h3>    
+        ) %> Explorer </h3>
           <div class="search-form d-inline-block w-100">
             <%= render BlockScoutWeb.LayoutView, "_search.html", conn: @conn, id: "main-search-autocomplete-mobile", additional_classes: ["mobile-search-hide--"] %>
             <%#= render BlockScoutWeb.LayoutView, "_search.html", conn: @conn, id: "main-search-autocomplete-mobile", additional_classes: ["mobile-search-show"] %>
-          
+
           </div>
-          <p class="text-white mt-3"> A Web3 Crypto Mutual Fund, start with as low as $50 on <a href="/" target="_blank" class="text-blue font-weight-bold">   <%= gettext( " %{subnetwork}", subnetwork: BlockScoutWeb.LayoutView.subnetwork_title()) %>  </a>
+          <p class="text-white mt-3 d-none"> A Web3 Crypto Mutual Fund, start with as low as $50 on <a href="/" target="_blank" class="text-blue font-weight-bold">   <%= gettext( " %{subnetwork}", subnetwork: BlockScoutWeb.LayoutView.subnetwork_title()) %>  </a>
           </p>
         </div>
-        <div class="col-sm-12 col-md-12 col-lg-5 col-md-6 mb-2 text-center py-3">
+        <div class="col-sm-12 col-md-12 col-lg-5 col-md-6 mb-2 text-center py-3 d-none">
         <a href="#" target="_blank"><img src="/images/header-advertisementR.png"  class="rounded"></a></div>
-      </div> 
+      </div>
     </div>
   </div>
 </div>
@@ -32,11 +32,11 @@
         <div class="col-sm-12 col-md-6 col-lg-4 border-right-sm1">
           <div class="media border-bottom mb-4 pb-4 dashboard_home">
           <!--<img class="mr-3 media_icon" src="images/a-04.svg" width="50" height="40"  style="width:50px;">-->
-            <div class="media_bg_icon mr-3" style="width: 32px; height: 32px; margin-left: 8px; margin-top: 5px;"></div>            
+            <div class="media_bg_icon mr-3" style="width: 32px; height: 32px; margin-left: 8px; margin-top: 5px;"></div>
             <div class="media-body">
               <span class="dashboard-banner-network-stats-label text-uppercase">
               <%= gettext(
-                " %{subnetwork}",          
+                " %{subnetwork}",
                 subnetwork: BlockScoutWeb.LayoutView.subnetwork_title()
               ) %>  Price
               </span>
@@ -118,7 +118,7 @@
             </div>
           </div>
 
-        </div>        
+        </div>
         <div class="col-sm-12 col-md-12 col-lg-4">
           <div class="dashboard-banner-chart mt-0">
           <script>
@@ -135,13 +135,13 @@
                 <i class="fa fa-ellipsis-v"></i>
                 </button>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item" href="#">View Detailed Chart</a>   
+                  <a class="dropdown-item" href="#">View Detailed Chart</a>
                 </div>
-              </div>            
+              </div>
             </div>-->
-          </div>      
+          </div>
 
-           
+
        <button data-chart-error-message class="alert alert-dangertext-left" style="display: none;">
             <span><%= gettext("There was a problem loading the chart.") %></span>
           </button>
@@ -163,8 +163,9 @@
   </div>
 </div>
 </div>
-
+<div class="d-none">
 <%= render BlockScoutWeb.Advertisement.BannersAdView, "_banner_728.html", conn: @conn %>
+</div>
 
 <section class="container">
 <div class="row home_page_tble">
@@ -173,7 +174,7 @@
       <div class="card-header">
         <span>Latest Blocks </span>
       </div>
-      <div class="card-body px-3 pt-0 pb-2 scroll_box">      
+      <div class="card-body px-3 pt-0 pb-2 scroll_box">
         <div data-selector="chain-block-list" data-url="<%= chain_blocks_path(@conn, :chain_blocks) %>">
             <button data-selector="error-message" class="alert alert-danger col-12 text-left" style="display: none;">
               <span class="alert-link">
