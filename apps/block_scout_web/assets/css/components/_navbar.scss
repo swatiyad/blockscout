@@ -1,6 +1,7 @@
 // Default variables
 $header-background-color: #fff !default;
-$header-links-color: #c6c6c6 !default;
+$header-links-color-dark: #c6c6c6 !default;
+$header-links-color: #666 !default;
 $header-links-color-active: #333 !default;
 $header-icon-color: $header-links-color !default;
 $header-icon-color-hover: $secondary !default;
@@ -191,6 +192,10 @@ $navbar-logo-width: 100% !default;
     //         background-color: $header-textfield-background-color;
     //     }
     // }
+}
+
+.dark-theme-applied .navbar.navbar-primary .navbar-nav .nav-link{
+    color:#c6c6c6 !important
 }
 
 .navbar-collapse.collapsing,

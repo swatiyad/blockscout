@@ -2,7 +2,8 @@
 
 .footer-about {
   position: relative;
-  z-index:5
+  z-index:5;
+  padding-bottom:25px
 }
 .footer-about-bg {
     background-image: url(/images/map.png);
