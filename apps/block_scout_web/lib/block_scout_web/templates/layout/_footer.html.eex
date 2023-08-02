@@ -19,13 +19,13 @@
     width: 100%;
     opacity: 0.3;
 }
-.dark-theme-applied .footer-about-bg {   
+.dark-theme-applied .footer-about-bg {
     filter: brightness(1);
-    opacity: 0.5;    
+    opacity: 0.5;
 }
 
 .search_backdrop {
-  background: #121e1d;
+  background: #6402c6;
   width: 100%;
   color: #fff;
 }
@@ -36,14 +36,14 @@
   background-position: left center;
 }
 
-.footer_backdrop {  
+.footer_backdrop {
   background-image: linear-gradient(to right top, #38b292, #32b796, #2bbc99, #22c29d, #14c7a1);
   width: 100%;
   color: #fff;
 }
 
 .footer_overlay {
-  background: #121e1d;
+  background: #6402c6;
   background-repeat: repeat;
   background-position: left center;
 }
@@ -69,11 +69,11 @@
 
 
 .navbar-image {
-  padding: 6px 10px!important;   
+  padding: 6px 10px!important;
 }
 
 .logo_custom_img .logo_img {
-  background: url(/images/xuv-logo.png);
+  background: url(/images/logo.svg);
   background-size: contain;
   background-repeat: no-repeat;
   width: 189px;
@@ -81,27 +81,27 @@
 }
 
 .dark-theme-applied .logo_custom_img .logo_img {
-  background: url(/images/xuv-logo.png);
+  background: url(/images/logo.svg);
   background-size: contain;
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
   width: 176px;
-  height: 32px; 
+  height: 32px;
 }
 
 .navbar-image .media_bg_icon {
   background: url(/images/xuv-icon.png);
   background-size: contain;
-  background-repeat: no-repeat;  
+  background-repeat: no-repeat;
 }
 
 .dark-theme-applied .navbar-image .media_bg_icon {
   background: url(/images/xuv-icon.png);
   background-size: contain;
-  background-repeat: no-repeat;  
+  background-repeat: no-repeat;
 }
 
 .dashboard_home .media_bg_icon {
-    background: url(/images/xuv-icon.png);  
+    background: url(/images/main_logo.svg);
     background-size: contain;
     background-position: 27% 4%;
     background-repeat: no-repeat;
@@ -111,7 +111,7 @@
   background: url(/images/xuv-icon.png);
   background-size: contain;
   background-repeat: no-repeat;
-} 
+}
 
 .metamask_btn {
   color: #f8f9fa;
@@ -127,12 +127,12 @@
 .metamask_btn:hover {
   color: #333!important;
   background:#fff;
-  
+
 }
 
 a.metamask_btn {
   color: #f8f9fa!important;
-  font-size: 12px  
+  font-size: 12px
 }
 
 
@@ -176,13 +176,13 @@ a.metamask_btn {
 }
 .dark-mode-changer-btn::before {
   content: " \002600";
-  font-family:  unset;!important 
+  font-family:  unset;!important
     font-weight: 400;
-  font-size: 22px; 
+  font-size: 22px;
   color:#db9a23
 }
 
-.dark-theme-applied .dark-mode-changer-btn::before {  
+.dark-theme-applied .dark-mode-changer-btn::before {
   content: "\f186";
   font-family: "Font Awesome 6 Free";
     font-weight: 400;
@@ -199,9 +199,9 @@ a.metamask_btn {
   border-color: #22AA86!important;
 }
 
-.media_icon {
-  filter:grayscale(1)
-}
+# .media_icon {
+#   filter:grayscale(1)
+# }
 
 </style>
 
@@ -229,21 +229,21 @@ a.metamask_btn {
 
       <div class="footer-about-bg"></div>
       <p class="text-white">
-     
+
       <%= gettext(
-        " %{subnetwork} Explorer",          
+        " %{subnetwork} Explorer",
         subnetwork: BlockScoutWeb.LayoutView.subnetwork_title()
       ) %>
 
-     
-      <%= gettext(" Scan is a Block Explorer and Analytics Platform for smart contracts that also includes an analytics platform and a block explorer ") %>  
+
+      <%= gettext(" Scan is a Block Explorer and Analytics Platform for smart contracts that also includes an analytics platform and a block explorer ") %>
     </p>
 
-      <a type="button" class="btn btn-xs btn-lighter text-nowrap mr-2" href="/preferences">
+     <!-- <a type="button" class="btn btn-xs btn-lighter text-nowrap mr-2" href="/preferences">
         <i class="fas fa-cogs mr-1"></i> Preferences
-      </a>
+      </a> -->
 
-      
+
 
       <%= render BlockScoutWeb.LayoutView, "_add_chain_to_mm.html" %>
     </div>
@@ -253,11 +253,11 @@ a.metamask_btn {
       <ul style="list-style: none;margin: 0; padding: 0; line-height: 31px;">
         <li><a href="#" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("About Us") %></a></li>
         <li><a href="#" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("Contact Us") %></a></li>
-        
+
         <li><a href="#" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("Careers") %>
         <sup class="join">Join Us</sup></a></li>
         <li><a href="terms-of-service" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("Terms of Service") %></a></li>
-       
+
       </ul>
     </div>
 
@@ -266,9 +266,9 @@ a.metamask_btn {
       <div class="col-6 col-md-4 col-lg-<%= col_size %>">
         <h3 class="text-white heading_border"><%= gettext("Resources") %></h3>
         <ul style="list-style: none;margin: 0; padding: 0; line-height: 31px;">
-          <li><a href="#" target="_blank" rel="noreferrer" class="footer-link"><%= gettext("API Documentation") %></a></li>         
+          <li><a href="#" target="_blank" rel="noreferrer" class="footer-link"><%= gettext("API Documentation") %></a></li>
           <li><a href="#" target="_blank" rel="noreferrer" class="footer-link"><%= gettext("Newsletter") %></a></li>
-       
+
           <!--
           <%= for %{title: title, url: url} <- test_nets do %>
             <li><a href="<%= url %>" rel="noreferrer" class="footer-link"> <%= title %> </a></li>
@@ -284,11 +284,11 @@ a.metamask_btn {
       <div class="col-6 col-md-4 col-lg-<%= col_size %>">
         <h3 class="text-white heading_border"><%= gettext("Products & Services") %></h3>
         <ul style="list-style: none;margin: 0; padding: 0; line-height: 31px;">
-        
+
         <li><a href="#" target="_blank" rel="noreferrer" class="footer-link"><%= gettext("Product & services 1") %></a></li>
         <li><a href="#" target="_blank" rel="noreferrer" class="footer-link"><%= gettext("Product 2") %></a></li>
         <li><a href="#" target="_blank" rel="noreferrer" class="footer-link"><%= gettext("Product 3") %></a></li>
-    
+
 
         <!--Absinthe<%= for %{title: title, url: url} <- main_nets do %>
           <li><a href="<%= url %>" rel="norefferer" class="footer-link"> <%= title %> </a></li>
@@ -324,26 +324,26 @@ a.metamask_btn {
     <div class="col-md-6 col-6 mb-sm">
       <div class="d-flex pt-1">
         <div>
-          <%= gettext( " %{subnetwork}", subnetwork: BlockScoutWeb.LayoutView.subnetwork_title()) %> 
-          <%= gettext(" &copy; 2023") %> 
+          <%= gettext( " %{subnetwork}", subnetwork: BlockScoutWeb.LayoutView.subnetwork_title()) %>
+          <%= gettext(" &copy; 2023") %>
         </div>
         <div class="ml-2"><span class="text-danger ms-2"> <i class="fa fa-heart"></i> </span></div>
       </div>
     </div>
     <div class="col-md-6 col-6">
-      <div class="footer-social float-right"> 
-      
+      <div class="footer-social float-right">
+
         <a href="#" rel="noreferrer" target="_blank" title="medium">
           <i class="fab fa-telegram"></i>
-        </a>    
+        </a>
         <a href="#" rel="noreferrer" target="_blank" title="reddit">
           <i class="fab fa-instagram"></i>
-        </a>     
-    
+        </a>
+
         <a href="#" rel="noreferrer" target="_blank" title="facebook">
           <i class="fab fa-linkedin"></i>
         </a>
-        <a href="#" rel="noreferrer" target="_blank" title="twitter"> 
+        <a href="#" rel="noreferrer" target="_blank" title="twitter">
           <i class="fab fa-twitter"></i>
         </a>
 
