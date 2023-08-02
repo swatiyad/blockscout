@@ -47,7 +47,7 @@
             </div>
           </div>
           <div class="media mb-lg-0 mb-md-4 pb-md-4 pb-lg-0 pb-sm mb-sm border-bottm-sm">
-            <img class="mr-3 media_icon" src="images/a-02.svg" width="50" height="40"  style="width:50px;">
+            <img class="mr-3 media_icon" src="images/market-cap2.svg" width="50" height="40"  style="width:50px;">
             <div class="media-body">
               <span class="dashboard-banner-network-stats-label text-uppercase">
                 <%= gettext "Market Cap" %>
@@ -84,7 +84,7 @@
         </div>
         <div class="col-sm-12 col-md-6 col-lg-4 border-right-sm2">
           <div class="media border-bottom mb-4 pb-4">
-            <img class="mr-3 media_icon" src="images/a-03.svg" width="50" height="40"  style="width:50px;">
+            <img class="mr-3 media_icon" src="images/transactionnew.svg" width="50" height="40"  style="width:50px;">
             <div class="media-body">
               <span class="dashboard-banner-network-stats-label text-uppercase">
                 <%= gettext "transactions" %>
@@ -98,7 +98,7 @@
             </div>
           </div>
           <div class="media mb-lg-0 mb-md-4 pb-md-4 pb-lg-0 pb-sm mb-sm border-bottm-sm">
-            <img class="mr-3 media_icon" src="images/a-01.svg" width="50" height="40"  style="width:50px;">
+            <img class="mr-3 media_icon" src="images/block-bg-slider2.svg" width="50" height="40"  style="width:50px;">
             <div class="media-body">
               <span class="dashboard-banner-network-stats-label text-uppercase">
                 Last <span class='hide_on_xs'>Finalized </span>block

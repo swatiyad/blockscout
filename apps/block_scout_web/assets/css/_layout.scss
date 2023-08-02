@@ -967,6 +967,7 @@ a {
 .dark-theme-applied .table th,
 .dark-theme-applied .table td {
     border-top: 1px solid #363a3c !important;
+    border-bottom: 1px solid #363a3c !important;
 }
 
 .dark-theme-applied .custom-select {
@@ -982,6 +983,12 @@ a {
 .dark-theme-applied .border-right-sm1,
 .dark-theme-applied .border-right-sm2 {
     border-right: 1px solid #424242;
+}
+// .sub-footer-top-border{
+//     background:#4a53d2
+// }
+.sub-footer-top-border-1{
+    background:#4d58ee !important
 }
 
 // .sub-footer-top-border {

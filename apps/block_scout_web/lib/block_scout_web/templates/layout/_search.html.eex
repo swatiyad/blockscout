@@ -21,10 +21,10 @@
 				type="text"
 				tabindex="1"
 				style="height:26px"
-			>			
+			>
 		</div>
 		<div class="input-group-append">
-			<button class="input-group-text bg-success rounded" id="search-icon">
+			<button class="input-group-text bg-success rounded" style="border:"none" id="search-icon">
 				<i class="fa fa-search text-white"></i>
 			</button>
 		</div>

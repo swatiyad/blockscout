@@ -230,6 +230,7 @@
                 <span class="text-nowrap text-green">
                   <%= formatted_fee(@transaction, denomination: :ether, include_label: false) %>
                 </span>
+
               </div>
             </td>
             <!-- Transfer

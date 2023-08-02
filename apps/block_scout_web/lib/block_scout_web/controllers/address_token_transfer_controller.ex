@@ -65,7 +65,6 @@ defmodule BlockScoutWeb.AddressTokenTransferController do
               conn,
               :index,
               address_hash_string,
-              token_hash_string,
               Map.delete(next_page_params, "type")
             )
         end

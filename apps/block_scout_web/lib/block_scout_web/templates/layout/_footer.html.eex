@@ -24,6 +24,16 @@
     opacity: 0.5;
 }
 
+.dark-theme-applied .logo_custom_img .logo_img {
+  -webkit-filter: brightness(0) invert(1) !important;
+  filter: brightness(0) invert(1) !important;
+}
+.dark-theme-applied .footer{
+  background-image: url(/images/bg_hero.png);
+  background-repeat: repeat;
+  background-position: left center;
+  color:#fff !important;
+}
 .search_backdrop {
   # background: #121e1d;
   background: url(/images/bg_hero.png);
@@ -32,7 +42,7 @@
 }
 
 .search_backdrop_overlay {
-  background-image: url(/images/backdrop-bg.svg);
+  background-image: url(/images/bg_hero.png);
   background-repeat: repeat;
   background-position: left center;
 }
@@ -75,7 +85,7 @@
 }
 
 .logo_custom_img .logo_img {
-  background: url(/images/logo.svg);
+   background: url(/images/logo.svg);
   background-size: contain;
   background-repeat: no-repeat;
   width: 189px;
@@ -83,7 +93,7 @@
 }
 
 .dark-theme-applied .logo_custom_img .logo_img {
-  background: url(/images/logo.svg);
+   background: url(/images/logo.svg);
   background-size: contain;
   background-repeat: no-repeat;
   width: 176px;
@@ -103,14 +113,14 @@
 }
 
 .dashboard_home .media_bg_icon {
-    background: url(/images/xuv-icon.png);
+    background: url(/images/merklescan-icon.svg);
     background-size: contain;
     background-position: 27% 4%;
     background-repeat: no-repeat;
 }
 
 .dark-theme-applied .dashboard_home .media_bg_icon{
-  background: url(/images/xuv-icon.png);
+  background: url(/images/merklescan-icon.svg);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -202,7 +212,7 @@ a.metamask_btn {
 }
 
 .media_icon {
-  filter:grayscale(1)
+  # filter:grayscale(1)
 }
 
 </style>
@@ -220,7 +230,7 @@ a.metamask_btn {
               <h2> Ecosystem</h2>
               <ul>
 
-                <li><a href="https://bigtycoon.io/" rel="noreferrer" class="footer-link text-white" target="_blank">Bigtycoon</a></li>
+                <li><a href="https://bigtycoon.co/" rel="noreferrer" class="footer-link text-white" target="_blank">Bigtycoon</a></li>
                 <li><a href="https://bigshot.games/" rel="noreferrer" class="footer-link text-white" target="_blank">Big Shot</a></li>
                 <li><a href="https://buzzbt.io/" rel="noreferrer" class="footer-link text-white" target="_blank">Buzzbt</a></li>
               </ul>
@@ -316,6 +326,7 @@ a.metamask_btn {
   -->
 </div>
 
+<div class="sub-footer-top-border-1">
 <div class="container sub-footer-top-border">
   <div class="row text-white py-2">
     <div class="col-md-6 col-6 mb-sm">
@@ -327,7 +338,7 @@ a.metamask_btn {
         <div class="ml-2"><span class="text-danger ms-2"> <i class="fa fa-heart"></i> </span></div>
       </div>
     </div>
-    <div class="col-md-6 col-6">
+    <div class="col-md-6 col-12">
       <div class="footer-social float-right">
 
         <a href="https://t.me/merklechainexplorer" rel="noreferrer" target="_blank" title="telegram">
@@ -355,6 +366,7 @@ a.metamask_btn {
     </div>
   </div>
   </div>
+  <div>
 </footer>
 
 <!-- Scroll top-->

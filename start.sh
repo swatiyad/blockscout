@@ -9,6 +9,7 @@ export ETHEREUM_JSONRPC_TRACE_URL=http://ec2-52-66-146-60.ap-south-1.compute.ama
 export NETWORK=Tarality Blockchain Explorer
 export SUBNETWORK="MerkleScan Scan"
 export LOGO=/images/logo.svg
+export LOGO_FOOTER=/images/footer-logo.svg
 #export ETHEREUM_JSONRPC_TRANSPORT=http
 #export ETHEREUM_JSONRPC_TRANSPORT=http
 export NETWORK_PATH=/

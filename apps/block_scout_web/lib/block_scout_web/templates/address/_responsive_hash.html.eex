@@ -24,7 +24,7 @@
       <%= BlockScoutWeb.AddressView.trimmed_hash(@address.hash) %>
     <% else %>
     <span data-toggle="tooltip" data-placement="left" title="<%= @address && @address.hash %>" data-custom-class="<%= if assigns[:custom_classes_tooltip], do: @custom_classes_tooltip |> Enum.join(" ") %>">
-      <span class="d-none d-md-none d-xl-inline text-blue width135"><%= @address %></span>
+      <span class="d-none d-md-none d-xl-inline text-blue width135 "><%= @address %></span>
       <span class="d-md-inline-block d-xl-none text-blue width135"><%= BlockScoutWeb.AddressView.trimmed_hash(@address.hash) %></span>
     </span>
     <% end %>
