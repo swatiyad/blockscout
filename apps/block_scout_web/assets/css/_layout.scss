@@ -487,6 +487,10 @@ a {
     font-weight: 400!important;
     height: 26px!important;
 }
+.dark-theme-applied .page-link{
+    background-color: transparent;
+    border: 1px solid transparent;
+}
 
 .page-link:focus {
     box-shadow: none!important;
