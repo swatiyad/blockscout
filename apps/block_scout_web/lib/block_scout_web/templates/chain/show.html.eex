@@ -24,7 +24,7 @@
 </div>
 
 
-<div class="container" style="position:relative; top:-50px;" data-page="chain-details">
+<div class="container" style="position:relative; top:-50px; display:none" data-page="chain-details">
 <div class="card shadow mb-3">
   <div class="card-body px-md-2 py-3">
     <div class="">
@@ -163,8 +163,9 @@
   </div>
 </div>
 </div>
-
+<div style="display:none">
 <%= render BlockScoutWeb.Advertisement.BannersAdView, "_banner_728.html", conn: @conn %>
+</div>
 
 <section class="container position-relative" style="top:-25px">
 <div class="row home_page_tble">
