@@ -26,13 +26,13 @@ const chartOptions = {
   };
 
   // export const fetchApi = async()=>{
-  //   const data = await axios.get('https://testnet.xuvscan.com/node-api/transactions')
+  //   const data = await axios.get('https://gcscan.io/node-api/transactions')
   //   return data
   // }
 
   export const fetchApi = async () => {
     try {
-      const response = await axios.get('https://testnet.xuvscan.com/node-api/transactions');
+      const response = await axios.get('https://gcscan.io/node-api/transactions');
       const data = response.data.data; // Assuming the response contains the desired data
       const categories = []; // Array to hold the categories
       const values = []; // Array to hold the data values

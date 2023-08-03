@@ -199,11 +199,11 @@ let token=
   document.querySelector("#ContentPlaceHolder1_Div1a_body_2").innerHTML = token;
   const [topsender, maxRecieverCount, maxSendCount, api, TopTokenApi] =
   await Promise.all([
-    axios.get("https://testnet.xuvscan.com/node-api/topsender"),
-    axios.get("https://testnet.xuvscan.com/node-api/max-count-reciever"),
-    axios.get("https://testnet.xuvscan.com/node-api/max-count-sender"),
-    axios.get("https://testnet.xuvscan.com/node-api/top-stats-data"),
-    axios.get("https://testnet.xuvscan.com/node-api/token-data"),
+    axios.get("https://gcscan.io/node-api/topsender"),
+    axios.get("https://gcscan.io/node-api/max-count-reciever"),
+    axios.get("https://gcscan.io/node-api/max-count-sender"),
+    axios.get("https://gcscan.io/node-api/top-stats-data"),
+    axios.get("https://gcscan.io/node-api/token-data"),
   ]);
 
   const apiData = api.data;

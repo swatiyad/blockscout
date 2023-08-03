@@ -8,8 +8,8 @@ export DATABASE_URL=postgres://postgres:wyzscan@localhost:5432/blockscout?ssl=fa
 export ETHEREUM_JSONRPC_TRACE_URL=http://ec2-52-66-146-60.ap-south-1.compute.amazonaws.com/ 
 export NETWORK=Tarality Blockchain Explorer
 export SUBNETWORK="WYZth Scan"
-export LOGO=/images/wyz-logo.svg
-export LOGO_FOOTER=/images/wyz-footer-logo.svg
+export LOGO=/images/logo.svg
+export LOGO_FOOTER=/images/footer-logo.png
 #export ETHEREUM_JSONRPC_TRANSPORT=http
 #export ETHEREUM_JSONRPC_TRANSPORT=http
 export NETWORK_PATH=/

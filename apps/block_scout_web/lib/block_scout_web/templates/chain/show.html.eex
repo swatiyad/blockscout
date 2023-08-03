@@ -13,10 +13,10 @@
             <%#= render BlockScoutWeb.LayoutView, "_search.html", conn: @conn, id: "main-search-autocomplete-mobile", additional_classes: ["mobile-search-show"] %>
 
           </div>
-          <p class="text-white mt-3"> A Web3 Crypto Mutual Fund, start with as low as $50 on <a href="/" target="_blank" class="text-blue font-weight-bold">   <%= gettext( " %{subnetwork}", subnetwork: BlockScoutWeb.LayoutView.subnetwork_title()) %>  </a>
+          <p class="text-white mt-3 d-none"> A Web3 Crypto Mutual Fund, start with as low as $50 on <a href="/" target="_blank" class="text-blue font-weight-bold">   <%= gettext( " %{subnetwork}", subnetwork: BlockScoutWeb.LayoutView.subnetwork_title()) %>  </a>
           </p>
         </div>
-        <div class="col-sm-12 col-md-12 col-lg-5 col-md-6 mb-2 text-center py-3">
+        <div class="col-sm-12 col-md-12 col-lg-5 col-md-6 mb-2 text-center py-3 d-none">
         <a href="#" target="_blank"><img src="/images/header-advertisementR.png"  class="rounded"></a></div>
       </div>
     </div>
@@ -47,7 +47,7 @@
             </div>
           </div>
           <div class="media mb-lg-0 mb-md-4 pb-md-4 pb-lg-0 pb-sm mb-sm border-bottm-sm">
-            <img class="mr-3 media_icon" src="images/a-02.svg" width="50" height="40"  style="width:50px;">
+            <img class="mr-3 media_icon" src="images/market-cap2.svg" width="50" height="40"  style="width:50px;">
             <div class="media-body">
               <span class="dashboard-banner-network-stats-label text-uppercase">
                 <%= gettext "Market Cap" %>
@@ -84,7 +84,7 @@
         </div>
         <div class="col-sm-12 col-md-6 col-lg-4 border-right-sm2">
           <div class="media border-bottom mb-4 pb-4">
-            <img class="mr-3 media_icon" src="images/a-03.svg" width="50" height="40"  style="width:50px;">
+            <img class="mr-3 media_icon" src="images/transactionnew.svg" width="50" height="40"  style="width:50px;">
             <div class="media-body">
               <span class="dashboard-banner-network-stats-label text-uppercase">
                 <%= gettext "transactions" %>
@@ -98,7 +98,7 @@
             </div>
           </div>
           <div class="media mb-lg-0 mb-md-4 pb-md-4 pb-lg-0 pb-sm mb-sm border-bottm-sm">
-            <img class="mr-3 media_icon" src="images/a-01.svg" width="50" height="40"  style="width:50px;">
+            <img class="mr-3 media_icon" src="images/block-bg-slider2.svg" width="50" height="40"  style="width:50px;">
             <div class="media-body">
               <span class="dashboard-banner-network-stats-label text-uppercase">
                 Last <span class='hide_on_xs'>Finalized </span>block
@@ -167,7 +167,7 @@
 <%= render BlockScoutWeb.Advertisement.BannersAdView, "_banner_728.html", conn: @conn %>
 </div>
 
-<section class="container" style="margin-top:-54px">
+<section class="container position-relative" style="top:-25px">
 <div class="row home_page_tble">
   <div class="col-lg-6">
     <div class="card card-chain-blocks js-ad-dependant-mb-3">

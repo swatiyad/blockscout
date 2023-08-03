@@ -28,34 +28,34 @@
             <% end %>
             <span class="card-title lg-card-title mb-2-desktop">
               <div class="title-with-label"><%= address_title(@address) %></div>
-              <%= render BlockScoutWeb.AddressView, "_labels.html", address_hash: @address.hash, tags: @tags %>           
-            </span> 
+              <%= render BlockScoutWeb.AddressView, "_labels.html", address_hash: @address.hash, tags: @tags %>
+            </span>
             <span class="card-title lg-card-title mb-2-desktop title-with-label text-secondary fs-16 <%= if BlockScoutWeb.AddressView.contract?(@address) do %>contract-address<% end %>" data-test="address_detail_hash"><%= @address %></span>
             <!-- buttons -->
               <span class="ml-2 overview-title-buttons-- add_icon_btns">
                 <%= render BlockScoutWeb.CommonComponentsView, "_btn_copy.html",
                   id: "tx-raw-input",
                   additional_classes: ["overview-title-item-- btn icons_btns"],
-                  clipboard_text: @address,                  
+                  clipboard_text: @address,
                   aria_label: gettext("Copy Address"),
-                  title: gettext("Copy Address") %>               
+                  title: gettext("Copy Address") %>
                 <%= render BlockScoutWeb.CommonComponentsView, "_btn_qr_code.html" %>
               </span>
             </div>
         </div>
-        
+
          <div>
-          <p class="text-secondary pt-3 fs-14">  
+          <p class="text-secondary pt-3 fs-14 d-none">
             <strong>Featured:</strong> Wallet-to-wallet instant messaging via <a href="#" target="_blank">Blockscan Chat</a>
-          </p>         
+          </p>
          </div>
           <div class="card-- js-ad-dependant-mb-2 mb-5">
             <div class="card-body-- fs-14" style="line-height: 31px;">
               <div class="row">
                 <div class="col-lg-6 mt-3">
-                  <div class="card">                  
-                    <div class="card-header py-2 px-4">Overview</div>                 
-                      <div class="card-body py-0 px-4">                    
+                  <div class="card">
+                    <div class="card-header py-2 px-4">Overview</div>
+                      <div class="card-body py-0 px-4">
                       <!-- Verify in other explorers -->
                       <!--
                       <%# <%= render "_verify_other_explorers.html", hash: @address.hash, type: "address" %> %>
@@ -77,7 +77,7 @@
                                 @address.hash),
                                 "data-test":
                                 "token_hash_link"
-                              ) 
+                              )
                               %>
                             </dd>
                           </dl>
@@ -122,9 +122,9 @@
                                 trimmed_hash(from_address_hash(@address)),
                                 to: address_path(@conn, :show, from_address_hash(@address))
                               ) %>
-            
+
                               <%= gettext "at" %>
-            
+
                               <%= link(
                                 trimmed_hash(transaction_hash(@address)),
                                 to: transaction_path(@conn, :show, transaction_hash(@address)),
@@ -152,7 +152,7 @@
                               (if name, do: name <> " | " <> implementation_address, else: implementation_address),
                               to: address_path(@conn, :show, implementation_address),
                               class: "contract-address"
-                            ) 
+                            )
                             %>
                           </dd>
                         </dl>
@@ -175,7 +175,7 @@
                                 data-placement="top"
                                 data-toggle="tooltip"
                                 data-html="true"
-                                title='<%= "@ " <> usd_value <> "/" <> Explorer.coin_name() %>'  
+                                title='<%= "@ " <> usd_value <> "/" <> Explorer.coin_name() %>'
                               >
                               </span>)
                             </span>
@@ -249,11 +249,11 @@
                       </dl>
                       </div>
                     </div>
-                </div>                
+                </div>
                 <div class="col-lg-6 mt-3">
                   <div class="card">
-                    <div class="card-header py-2 px-4">More Info</div> 
-                    <div class="card-body py-0 px-4">        
+                    <div class="card-header py-2 px-4">More Info</div>
+                    <div class="card-body py-0 px-4">
                     <!-- Gas used -->
                       <dl class="row address-gas-used-item">
                         <dt class="col-sm-6 col-lg-6 text-muted">
@@ -304,10 +304,10 @@
                     </div>
                   </div>
                 </div>
-                
-                
 
-              </div>          
+
+
+              </div>
           </div>
       </div>
     </div>
@@ -317,4 +317,4 @@
 <!-- Modal QR -->
 <%= render BlockScoutWeb.CommonComponentsView, "_modal_qr_code.html", qr_code: qr_code(@address), title: @address %>
 
-<%= render BlockScoutWeb.Advertisement.BannersAdView, "_banner_728.html", conn: @conn %> 
+<%= render BlockScoutWeb.Advertisement.BannersAdView, "_banner_728.html", conn: @conn %>

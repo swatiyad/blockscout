@@ -23,9 +23,9 @@
               >
               <div>
                 <p>
-                  The XUV Scan project seeks to support useful dapps and smart
-                  contracts on the Ethereum blockchain, and the goal of the
-                  Ethereum Foundation is to empower developers with
+                  The GCSCAN project seeks to support useful dapps and smart
+                  contracts on the GCSCAN blockchain, and the goal of the
+                  GCSCAN Foundation is to empower developers with
                   best-in-class R&amp;D, developer experience, and education.
                 </p>
               </div>
@@ -39,7 +39,7 @@
                   class="btn btn-sm btn-secondary rounded-circle"
                   rel="nofollow"
                   target="_blank"
-                 
+
                   ><i class="fas fa-globe btn-icon__inner"></i
                 ></a>
               </li>

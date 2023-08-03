@@ -25,7 +25,7 @@
 }
 
 .search_backdrop {
-  background: #121e1d;
+  background: #6402c6;
   width: 100%;
   color: #fff;
 }
@@ -43,7 +43,7 @@
 }
 
 .footer_overlay {
-  background: #121e1d;
+  background: #6402c6;
   background-repeat: repeat;
   background-position: left center;
 }
@@ -73,7 +73,7 @@
 }
 
 .logo_custom_img .logo_img {
-  background: url(/images/xuv-logo.png);
+  background: url(/images/logo.svg);
   background-size: contain;
   background-repeat: no-repeat;
   width: 189px;
@@ -81,24 +81,11 @@
 }
 
 .dark-theme-applied .logo_custom_img .logo_img {
-  background: url(/images/xuv-logo.png);
+  background: url(/images/logo.svg);
   background-size: contain;
   background-repeat: no-repeat;
   width: 176px;
   height: 32px;
-}
-.logo_custom_img .logo_img::after {
-  content: "Testnet";
-  display: inline-block;
-  position: relative;
-  border-radius: 7px;
-  border: 2px solid #00b9a0;
-  font-size: 10px;
-  padding: 2px;
-  background: #00b9a0;
-  color: #fff;
-  left: 195px;
-  font-weight: bolder;
 }
 
 .navbar-image .media_bg_icon {
@@ -114,7 +101,7 @@
 }
 
 .dashboard_home .media_bg_icon {
-    background: url(/images/xuv-icon.png);
+    background: url(/images/main_logo.svg);
     background-size: contain;
     background-position: 27% 4%;
     background-repeat: no-repeat;
@@ -212,9 +199,9 @@ a.metamask_btn {
   border-color: #22AA86!important;
 }
 
-.media_icon {
-  filter:grayscale(1)
-}
+# .media_icon {
+#   filter:grayscale(1)
+# }
 
 </style>
 
@@ -252,9 +239,9 @@ a.metamask_btn {
       <%= gettext(" Scan is a Block Explorer and Analytics Platform for smart contracts that also includes an analytics platform and a block explorer ") %>
     </p>
 
-      <a type="button" class="btn btn-xs btn-lighter text-nowrap mr-2" href="/preferences">
+     <!-- <a type="button" class="btn btn-xs btn-lighter text-nowrap mr-2" href="/preferences">
         <i class="fas fa-cogs mr-1"></i> Preferences
-      </a>
+      </a> -->
 
 
 
