@@ -293,7 +293,7 @@ a.metamask_btn {
       ) %>
 
 
-      <%= gettext(" Scan is a Block Explorer and Analytics Platform for smart contracts that also includes an analytics platform and a block explorer ") %>
+      <%= gettext(" is a Block Explorer and Analytics Platform for smart contracts that also includes an analytics platform and a block explorer ") %>
     </p>
 
     <!--  <a type="button" class="btn btn-xs btn-lighter text-nowrap mr-2" href="/preferences">

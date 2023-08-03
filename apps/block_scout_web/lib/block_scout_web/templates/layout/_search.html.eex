@@ -24,7 +24,7 @@
 			>
 		</div>
 		<div class="input-group-append">
-			<button class="input-group-text bg-success rounded" style="border:"none" id="search-icon">
+			<button class="input-group-text bg-success rounded" style="border:none" id="search-icon">
 				<i class="fa fa-search text-white"></i>
 			</button>
 		</div>
