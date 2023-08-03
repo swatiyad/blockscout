@@ -1,7 +1,7 @@
 @import '~@tarekraafat/autocomplete.js/dist/css/autoComplete.01.css';
 .layout-container {
     display: flex;
-    flex-direction: column;
+     flex-direction: column;
     min-height: 100vh;
     main {
         flex-grow: 1;
@@ -10,29 +10,29 @@
 }
 
 a {
-    color: #6402c6;
+     color: #6402c6;
     text-decoration: none;
     background-color: transparent;
 }
 
 .bg-white {
-    background-color: #fff!important;
+     background-color: #fff!important;
 }
 
 .text-blue {
-    color: #6402c6 !important;
-}
+     color: #6402c6 !important;
+} 
 .dark-theme-applied .text-blue {
-    color: #20C997 !important;
+     color: #20C997 !important;
 }
 .text-white{
-    color: #fff !important
+     color: #fff !important
 }
 .mb-40{
-    margin-bottom: 40px !important;
+     margin-bottom: 40px !important;
 }
 .mt-30{
-    margin-top: 30px !important;
+     margin-top: 30px !important;
 }
 .p-10{
     padding: 10px !important;
@@ -83,12 +83,12 @@ a {
 }
 
 .text-green {
-    color: #20C997!important;
+     color: #20C997!important;
 }
 
 .text_green_over {
-    color: #20C997!important;
-}
+     color: #20C997!important;
+} 
 .text_gray_over {
     color: gray !important;
 }
@@ -307,7 +307,7 @@ a {
     cursor: pointer;
   }
   .stats-tabs span:hover {
-    background-color: #6700c1;
+     background-color: #6700c1;
     color: #fff;
   }
  
@@ -406,7 +406,7 @@ a {
   
   .functionality-container button {
     padding: 5px 10px;
-    background-color: #007bff;
+     background-color: #007bff;
     color: white;
     border: none;
     cursor: pointer;
@@ -493,7 +493,7 @@ a {
 }
 
 .pagination-container .pagination .page-link:not(.no-hover):hover {
-    background-color: #6402c6!important;
+     background-color: #6402c6!important;
     border: 1px solid #6402c6!important;
     color: #333!important;
 }
@@ -509,13 +509,13 @@ a {
 }
 
 .btn-green {
-    background: #F4F5E7!important;
+     background: #F4F5E7!important;
     color: #20c997!important;
     font-size: 12.5px;
 }
 
 .btn-green:hover {
-    background: #acaf85!important;
+     background: #acaf85!important;
     color: #fff!important;
 }
 
@@ -636,7 +636,7 @@ a {
 }
 
 .label_warning {
-    color: #db9a04;
+     color: #db9a04;
     background-color: rgba(219, 154, 4, .1);
 }
 
@@ -883,7 +883,7 @@ a {
 }
 
 .card-tab.active {
-    color: #6402c6!important;
+     color: #6402c6!important;
     border-bottom: 2px solid #6402c6;
     background: transparent!important;
 }
@@ -904,7 +904,7 @@ a {
 }
 
 .dark-theme-applied .search_backdrop {
-    background: #6402c6;
+     background: #6402c6;
     color: #6402c6;
 }
 
@@ -971,7 +971,7 @@ a {
 
 .dark-theme-applied .table th,
 .dark-theme-applied .table td {
-    
+
     border-top: 1px solid #363a3c !important;
     border-bottom: 1px solid #363a3c !important;
 }
@@ -1374,7 +1374,7 @@ input.nosubmit {
   }
   .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
       color: #fff !important;
-      background-color: #6402c6!important;
+       background-color: #6402c6!important;
       border-color: #6402c6!important;
       box-shadow: none!important;
   }
@@ -1465,7 +1465,7 @@ input.nosubmit {
   
   .dark-theme-applied .navbar.navbar-primary .navbar-nav .nav-link.active:before,
   .dark-theme-applied .navbar.navbar-primary .navbar-nav .nav-link:hover:before {
-      background-color: #6402c6;
+       background-color: #6402c6;
   }
   
   .dark-theme-applied .tooltip .arrow:before {
@@ -1475,7 +1475,7 @@ input.nosubmit {
   
   .dark-theme-applied .bs-tooltip-left .arrow::before,
   .dark-theme-applied .bs-tooltip-auto[x-placement^=left] .arrow::before {   
-      border-left-color: #6402c6!important;
+       border-left-color: #6402c6!important;
   }
   
   .table-head {
@@ -1629,7 +1629,7 @@ input.nosubmit {
 @media only screen and (min-device-width: 991px) {
     .navbar .dropdown-menu {
         width: 250px;
-        border-top: 3px solid #6402c6 !important;
+         border-top: 3px solid #6402c6 !important;
     }
     .header-nav-separator {
         border-left: 1px solid #e7eaf3;
