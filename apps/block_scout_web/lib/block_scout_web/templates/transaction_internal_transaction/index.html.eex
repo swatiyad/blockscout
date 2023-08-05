@@ -1,7 +1,7 @@
 <section class="container">
-  <%= render BlockScoutWeb.TransactionView, "overview.html", assigns %>  
-  
-  <div class="card mt-3" style="display:none">
+  <%= render BlockScoutWeb.TransactionView, "overview.html", assigns %>
+
+  <div class="card mt-3">
     <%= render BlockScoutWeb.TransactionView, "_tabs.html", assigns %>
     <div class="card-body px-3"  data-async-load data-async-listing="<%= @current_path %>">
       <h1 class="card-title list-title-description"><%= gettext "Internal Transactions" %></h1>
@@ -9,25 +9,25 @@
       <div class="list-top-pagination-container-wrapper">
         <%= render BlockScoutWeb.CommonComponentsView, "_pagination_container.html", position: "top", cur_page_number: "1", show_pagination_limit: true, data_next_page_button: true, data_prev_page_button: true %>
       </div>
-       
+
       <div class="overflow-auto w-100">
 
         <button data-error-message class="alert alert-danger col-12 text-left" style="display: none;">
           <span href="#" class="alert-link"><%= gettext("Something went wrong, click to reload.") %></span>
         </button>
-        
+
 
         <div class="">
           <table class="table table-hover mb-0 fixed-layout">
               <thead>
                 <tr class="table-head">
-                 
-                  <th class="">Txn Hash</th>                 
+
+                  <th class="">Txn Hash</th>
                   <th class="screenRow">Block</th>
                   <th class="screenRow">Age</th>
                   <th class="">From</th>
                   <th class="" style="width:70px">&nbsp;</th>
-                  <th class="">To</th>               
+                  <th class="">To</th>
                   <th class="">Value</th>
                   <th class="">Type</th>
                 </tr>

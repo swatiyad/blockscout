@@ -216,12 +216,32 @@
             </td>
 
 
-            <!-- Value  -->
-            <td class="hide_for_homepage">
+            <!-- transfer  -->
+            <td class="hide_for_homepage text-truncate <%= if !involves_token_transfers?(@transaction) do %>empty-td<% end %>" >
               <span class="">
-                <%= value(@transaction, include_label: false) %> <%= Explorer.coin_name() %>
+               <!-- <%= value(@transaction, include_label: false) %> <%= Explorer.coin_name() %> -->
+                <%= if involves_token_transfers?(@transaction) do %>
+                <div class="">
+                  <% [first_token_transfer | remaining_token_transfers] = @transaction.token_transfers %>
+
+                  <%= render "token_transfers_new.html", address: assigns[:current_address], token_transfer: first_token_transfer %>
+
+                  <div class="collapse token-transfer-toggle" id="transaction-<%= @transaction.hash %>">
+                    <%= for token_transfer <- remaining_token_transfers do %>
+                      <%= render "token_transfers_new.html", address: assigns[:current_address], token_transfer: token_transfer, burn_address_hash: @burn_address_hash %>
+                    <% end %>
+                  </div>
+                </div>
+              <% end %>
               </span>
             </td>
+
+            <td class="hide_for_homepage">
+            <span class="">
+              <%= value(@transaction, include_label: false) %> <%= Explorer.coin_name() %>
+            </span>
+          </td>
+
 
             <!-- Tx Fee  -->
 
@@ -233,6 +253,7 @@
 
               </div>
             </td>
+
             <!-- Transfer
             <td class="hide_for_homepage">
               <%= if involves_token_transfers?(@transaction) do %>
@@ -257,7 +278,6 @@
               <% end %>
             </td>
             -->
-
         </tr>
       </tbody>
     </table>

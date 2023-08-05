@@ -9,7 +9,7 @@
   <div class="page-title display_flex border-bottom">
     <div>
       <h1>Transactions </h1>
-    </div>  
+    </div>
     <div>
     <!--
     <div class="d-flex">
@@ -23,7 +23,7 @@
           <a class="dropdown-item py-0" href="#">Something else here</a>
         </div>
       </div>
-   
+
       <div class="dropdown">
         <button class="btn btn-primary btn-xs dropdown-toggle ml-2 fs-12" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Gaming
@@ -33,20 +33,20 @@
           <a class="dropdown-item py-0" href="#">Another action</a>
           <a class="dropdown-item py-0" href="#">Something else here</a>
         </div>
-      </div>   
+      </div>
     </div>
     -->
-   </div>     
+   </div>
   </div>
 
-  
- <!--  
+
+ <!--
  <div class="mt-2">
    <p class="mb-0"><strong class="text-green">Sponsered <img src="/images/sponsered-next-img.png">: </strong> 10 ETH Give Away from MetaWin.<a href="#"> Free to Enter. </a></p>
-  </div>  
-  
+  </div>
+
   <div class="row my-3 ">
-    <div class="col-sm-6 col-lg-3 mb-2">    
+    <div class="col-sm-6 col-lg-3 mb-2">
       <a class="card group text-secondary text-decoration-none mb-0" href="#">
         <div class="card-body py-3">
           <div class="d-flex justify-content-between align-items-center mb-1">
@@ -94,7 +94,7 @@
       <a class="card group text-secondary text-decoration-none mb-0" target="_blank" href="#">
         <div class="card-body py-3">
           <div class="d-flex justify-content-between align-items-center mb-1">
-            <p class="fs-14 mb-0 text-uppercase">Average Transaction Fee</p>              
+            <p class="fs-14 mb-0 text-uppercase">Average Transaction Fee</p>
               <i class="fa-solid fa-arrow-up-right-from-square group-hover"></i>
           </div>
           <div>
@@ -106,7 +106,7 @@
   </div>-->
 
   <div class="card">
-    <div class="card-body px-3 validated_txns" data-async-listing="<%= @current_path %>">    
+    <div class="card-body px-3 validated_txns" data-async-listing="<%= @current_path %>">
       <div class="d-flex justify-content-between">
         <!--<h1 class="card-title list-title-description"><%= gettext "Validated Transactions" %></h1>-->
         <div>
@@ -122,7 +122,7 @@
           <div data-selector="reload-button" class="alert alert-info">
             <a href="#" class="alert-link"><span data-selector="channel-batching-count"></span> <%= gettext "More transactions have come in" %></a>
           </div>
-        </div>        
+        </div>
         <%= render BlockScoutWeb.CommonComponentsView, "_channel_disconnected_message.html", text: gettext("Connection Lost, click to load newer transactions") %>
 
         <button data-error-message class="alert alert-danger col-12 text-left" style="display: none;">
@@ -140,7 +140,7 @@
                   <th class="screenRow">Age</th>
                   <th class="">From</th>
                   <th class="" style="width:70px">&nbsp;</th>
-                  <th class="">To</th>               
+                  <th class="">To</th>
                   <th class="">Value</th>
                   <th class="">Txn Fee</th>
                 </tr>
@@ -154,7 +154,7 @@
               <%= gettext "There are no transactions." %>
             </span>
           </div>
-        </div>      
+        </div>
 
         <div data-selector="transactions-list" data-items>
           <%= render BlockScoutWeb.CommonComponentsView, "_tile-loader.html" %>
