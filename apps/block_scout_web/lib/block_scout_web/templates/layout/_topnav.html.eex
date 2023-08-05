@@ -357,7 +357,7 @@
               </div>
             </li>
         -->
-          <%#= render BlockScoutWeb.LayoutView, "_account_menu_item.html", conn: @conn, current_user: @current_user %>
+          <%#= render BlockScoutWeb.LayoutView, "_account_menu_item.html", conn: @conn, current_user:    %>
         </ul>
       </div>
 
