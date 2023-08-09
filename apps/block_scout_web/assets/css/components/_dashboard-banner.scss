@@ -15,6 +15,8 @@ $dashboard-stats-item-border-color: $primary !default;
 $dashboard-banner-network-plain-container-height: 205px;
 $dashboard-banner-chart-axis-font-color: $dashboard-stats-item-value-color !default;
 $dashboard-banner-chart-axis-font-color-alt: #333;
+ $dashboard-line-color-market-theme:rgb(32, 182, 112);
+ $dashboard-line-color-market-dark-theme: rgb(180, 25, 25);
 .dashboard-banner-container {
     @include gradient-container();
     margin-bottom: 3rem;

@@ -2,16 +2,16 @@
   <%= render BlockScoutWeb.Advertisement.TextAdView, "index.html", conn: @conn %>
 
   <h1 class="card-title list-title-description my-4">Top Accounts by <%= Explorer.coin_name() %> Balance </h1>
-  <div class="card">
+  <div class="card overflow-auto">
     <div class="card-body pt-3" data-async-load data-async-listing="<%= @current_path %>">
-     
+
 	<div class="list-top-pagination-container-wrapper">
     	<%= render BlockScoutWeb.CommonComponentsView, "_pagination_container.html", position: "top", cur_page_number: "1", show_pagination_limit: true, data_next_page_button: true, data_prev_page_button: true %>
 	</div>
 
     <div class="addresses-table-container">
       <div class="stakes-table-container">
-	<table class="table table-hover mb-0">
+	<table class="table table12 table-hover mb-0">
 	  <thead>
 	    <tr class="table-head">
 	     <th>
