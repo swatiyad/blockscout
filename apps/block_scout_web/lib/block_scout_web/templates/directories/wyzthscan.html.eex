@@ -1,6 +1,6 @@
    <section class="container mt-30 mb-3">
       <div id="ContentPlaceHolder1_exchangewalletdiv">
-      <h1 class="px-1">XUV</h1>
+      <h1 class="px-1">Merkle</h1>
         <div class="card mb-1">
           <div class="card-body">
             <div class="d-flex gap-3">
@@ -20,11 +20,11 @@
                     target="_blank"
                     rel="nofollow noopener"
                     class="fs-5 link-dark"
-                    >A beginner’s guide to XUV</a
+                    >A beginner’s guide to Merkle</a
                   >
                   <div>
                     <p>
-                      A beginners guide to XUV writen by Linda Xie posted
+                      A beginners guide to Merkle writen by Linda Xie posted
                       on Medium
                     </p>
                   </div>
@@ -112,14 +112,14 @@
                     target="_blank"
                     rel="nofollow noopener"
                     class="fs-5 link-dark"
-                    >An Introduction to XUV and Smart Contracts: a
+                    >An Introduction to Merkle and Smart Contracts: a
                     Programmable Blockchain</a
                   >
                   <div>
                     <p>
-                      An Introduction to XUV and Smart Contracts: a
+                      An Introduction to Merkle and Smart Contracts: a
                       Programmable Blockchain. Learn about verified, distributed
-                      computations in the cloud using XUV by Sebastián
+                      computations in the cloud using Merkle by Sebastián
                       Peyrott
                     </p>
                   </div>
@@ -207,10 +207,10 @@
                     target="_blank"
                     rel="nofollow noopener"
                     class="fs-5 link-dark"
-                    >Blockgeeks' guide to XUV</a
+                    >Blockgeeks' guide to Merkle</a
                   >
                   <div>
-                    <p>What is XUV? A Step-by-Step Beginners Guide</p>
+                    <p>What is Merkle? A Step-by-Step Beginners Guide</p>
                   </div>
                 </div>
                 <ul class="list-inline mb-0 text-nowrap">
@@ -253,7 +253,7 @@
                     >Capture the Ether</a
                   >
                   <div>
-                    <p>The game of XUV smart contract security.</p>
+                    <p>The game of Merkle smart contract security.</p>
                   </div>
                 </div>
                 <ul class="list-inline mb-0 text-nowrap">
@@ -298,7 +298,7 @@
                   >
                   <div>
                     <p>
-                      A useful list for learning solidity and XUV
+                      A useful list for learning solidity and Merkle
                       development curated by&nbsp;Indrek Lasn.
                     </p>
                   </div>
@@ -389,7 +389,7 @@
                     class="fs-5 link-dark"
                     >Cryptwerk</a
                   >
-                  <div><p>XUV merchants directory</p></div>
+                  <div><p>Merkle merchants directory</p></div>
                 </div>
                 <ul class="list-inline mb-0 text-nowrap">
                   <li class="list-inline-item">
@@ -516,7 +516,7 @@
                     class="fs-5 link-dark"
                     >District0x Educational Portal</a
                   >
-                  <div><p>Understanding XUV</p></div>
+                  <div><p>Understanding Merkle</p></div>
                 </div>
                 <ul class="list-inline mb-0 text-nowrap">
                   <li class="list-inline-item">
@@ -559,7 +559,7 @@
                   >
                   <div>
                     <p>
-                      Video &amp; Blog Tutorials for XUV &amp; Solidity
+                      Video &amp; Blog Tutorials for Merkle &amp; Solidity
                       Smart contract developers
                     </p>
                   </div>
@@ -601,11 +601,11 @@
                     target="_blank"
                     rel="nofollow noopener"
                     class="fs-5 link-dark"
-                    >XUV 101</a
+                    >Merkle 101</a
                   >
                   <div>
                     <p>
-                      B9Lab Academy : Introduction to XUV for Developers
+                      B9Lab Academy : Introduction to Merkle for Developers
                     </p>
                   </div>
                 </div>
@@ -650,10 +650,10 @@
                   >
                   <div>
                     <p>
-                      XUV Studio is a tool for developers who want to learn
-                      about building on XUV. The templates on the left side
+                      Merkle Studio is a tool for developers who want to learn
+                      about building on Merkle. The templates on the left side
                       will teach you how to write a smart contract, deploy it to
-                      XUV, and interact with the contracts through a
+                      Merkle, and interact with the contracts through a
                       web-based application.
                     </p>
                   </div>
@@ -695,9 +695,9 @@
                     target="_blank"
                     rel="nofollow noopener"
                     class="fs-5 link-dark"
-                    >XUV: A Visual Explanation</a
+                    >Merkle: A Visual Explanation</a
                   >
-                  <div><p>XUV: A Visual Explanation by Veenspace</p></div>
+                  <div><p>Merkle: A Visual Explanation by Veenspace</p></div>
                 </div>
                 <ul class="list-inline mb-0 text-nowrap">
                   <li class="list-inline-item">
@@ -741,7 +741,7 @@
                   <div>
                     <p>
                       The Ethernaut is a Web3/Solidity based wargame&nbsp;played
-                      in the XUV Virtual Machine. Each level is a smart
+                      in the Merkle Virtual Machine. Each level is a smart
                       contract that needs to be 'hacked'.
                     </p>
                   </div>
@@ -787,7 +787,7 @@
                   >
                   <div>
                     <p>
-                      Learn to Build on XUV with Kauri - Articles,
+                      Learn to Build on Merkle with Kauri - Articles,
                       Tutorials, Documentation and Best Practices
                     </p>
                   </div>
@@ -829,10 +829,10 @@
                     target="_blank"
                     rel="nofollow noopener"
                     class="fs-5 link-dark"
-                    >Library-of-XUV</a
+                    >Library-of-Merkle</a
                   >
                   <div>
-                    <p>Curated Collection of XUV Ecosystem Resources.</p>
+                    <p>Curated Collection of Merkle Ecosystem Resources.</p>
                   </div>
                 </div>
                 <ul class="list-inline mb-0 text-nowrap">
@@ -872,12 +872,12 @@
                     target="_blank"
                     rel="nofollow noopener"
                     class="fs-5 link-dark"
-                    >Mastering XUV</a
+                    >Mastering Merkle</a
                   >
                   <div>
                     <p>
-                      Mastering XUV is a book for developers, offering a
-                      guide to the operation and use of the XUV, XUV
+                      Mastering Merkle is a book for developers, offering a
+                      guide to the operation and use of the Merkle, Merkle
                       Classic, RootStock (RSK) and other compatible EVM-based
                       open blockchains.
                     </p>
@@ -925,7 +925,7 @@
                   <div>
                     <p>
                       Curated directory of Decentralized Applications (ÐApps) on
-                      the XUV Blockchain
+                      the Merkle Blockchain
                     </p>
                   </div>
                 </div>

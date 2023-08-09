@@ -13,7 +13,7 @@
       </span>
 
       <span class="tile-title">
-        <%= render BlockScoutWeb.TransactionView, "_total_transfers.html", Map.put(assigns, :transfer, @token_transfer) %>
+        <%= render BlockScoutWeb.TransactionView,"_total_transfers.html", Map.put(assigns, :transfer, @token_transfer) %>
       </span>
     </div>
   </div>

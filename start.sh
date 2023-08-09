@@ -7,9 +7,9 @@ export ETHEREUM_JSONRPC_WS_URL=ws://ec2-52-66-146-60.ap-south-1.compute.amazonaw
 export DATABASE_URL=postgres://postgres:wyzscan@localhost:5432/blockscout?ssl=false
 export ETHEREUM_JSONRPC_TRACE_URL=http://ec2-52-66-146-60.ap-south-1.compute.amazonaws.com/ 
 export NETWORK=Tarality Blockchain Explorer
-export SUBNETWORK="WYZth Scan"
-export LOGO=/images/wyz-logo.svg
-export LOGO_FOOTER=/images/wyz-footer-logo.svg
+export SUBNETWORK="MerkleScan"
+export LOGO=/images/logo.svg
+export LOGO_FOOTER=/images/footer-logo.svg
 #export ETHEREUM_JSONRPC_TRANSPORT=http
 #export ETHEREUM_JSONRPC_TRANSPORT=http
 export NETWORK_PATH=/
@@ -19,8 +19,8 @@ export BLOCKSCOUT_PROTOCOL=https
 SECRET_KEY_BASE=BASE=E/sdFN0JBURFmltKF+2BLp8JRqzPEJy9a3kwfDN7DooykJuAo3BKT0W7YFQ42d2/
 # export CHECK_ORIGIN=false
 # export PORT=4000
-export COIN=WYZ
-export COIN_NAME=WYZ
+export COIN=Merkle
+export COIN_NAME=Merkle
 
 export BLOCKSCOUT_VERSION=v4.1.5-beta
 export RELEASE_LINK=https://github.com/blockscout/blockscout/releases/tag/v4.1.5-beta
@@ -49,8 +49,8 @@ export SOURCIFY_SERVER_URL=https://sourcify.dev/server
 export SOURCIFY_REPO_URL=https://repo.sourcify.dev/contracts/
 export CHAIN_ID=303
 export DISPLAY_TOKEN_ICONS=true
-export RE_CAPTCHA_SECRET_KEY=6Ldd_O8hAAAAAG1yA9GmQYunRTpp40TOX_A8sa2y
-export RE_CAPTCHA_CLIENT_KEY=6Ldd_O8hAAAAANk3zRRCYpKTzUO4RcX9Pxv9n8_R
+export RE_CAPTCHA_SECRET_KEY=6LcQ24EnAAAAAFlQ-CcjwQ-E_1v9ggKM4wSUI2YT
+export RE_CAPTCHA_CLIENT_KEY=6LcQ24EnAAAAAP1yG9ZxkPw090hX-DOADQuDuCxM
 export JSON_RPC=https://rpc-mainnet3.wyzthchain.org
 #export ADMIN_PANEL_ENABLED=true
 # export METADATA_CONTRACT=

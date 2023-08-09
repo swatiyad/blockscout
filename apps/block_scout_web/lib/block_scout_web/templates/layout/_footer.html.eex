@@ -2,7 +2,8 @@
 
 .footer-about {
   position: relative;
-  z-index:5
+  z-index:5;
+  padding-bottom:25px
 }
 .footer-about-bg {
     background-image: url(/images/map.png);
@@ -24,26 +25,38 @@
     opacity: 0.5;
 }
 
+.dark-theme-applied .logo_custom_img .logo_img {
+  -webkit-filter: brightness(0) invert(1) !important;
+  filter: brightness(0) invert(1) !important;
+}
+.dark-theme-applied .footer{
+  background-image: url(/images/bg_hero.png);
+  background-repeat: repeat;
+  background-position: left center;
+  color:#fff !important;
+}
 .search_backdrop {
-  background: #121e1d;
+  # background: #121e1d;
+  background: url(/images/bg_hero.png);
   width: 100%;
   color: #fff;
 }
 
 .search_backdrop_overlay {
-  background-image: url(/images/backdrop-bg.svg);
+  background-image: url(/images/bg_hero.png);
   background-repeat: repeat;
   background-position: left center;
 }
 
 .footer_backdrop {
-  background-image: linear-gradient(to right top, #38b292, #32b796, #2bbc99, #22c29d, #14c7a1);
+  # background-image: linear-gradient(to right top, #38b292, #32b796, #2bbc99, #22c29d, #14c7a1);
+  background: url(/images/bg_hero.png);
   width: 100%;
   color: #fff;
 }
 
 .footer_overlay {
-  background: #121e1d;
+  # background: #121e1d;
   background-repeat: repeat;
   background-position: left center;
 }
@@ -73,7 +86,7 @@
 }
 
 .logo_custom_img .logo_img {
-  background: url(/images/xuv-logo.png);
+   background: url(/images/logo.svg);
   background-size: contain;
   background-repeat: no-repeat;
   width: 189px;
@@ -81,24 +94,11 @@
 }
 
 .dark-theme-applied .logo_custom_img .logo_img {
-  background: url(/images/xuv-logo.png);
+   background: url(/images/logo.svg);
   background-size: contain;
   background-repeat: no-repeat;
   width: 176px;
   height: 32px;
-}
-.logo_custom_img .logo_img::after {
-  content: "Testnet";
-  display: inline-block;
-  position: relative;
-  border-radius: 7px;
-  border: 2px solid #00b9a0;
-  font-size: 10px;
-  padding: 2px;
-  background: #00b9a0;
-  color: #fff;
-  left: 195px;
-  font-weight: bolder;
 }
 
 .navbar-image .media_bg_icon {
@@ -114,14 +114,14 @@
 }
 
 .dashboard_home .media_bg_icon {
-    background: url(/images/xuv-icon.png);
+    background: url(/images/merklescan-icon.svg);
     background-size: contain;
     background-position: 27% 4%;
     background-repeat: no-repeat;
 }
 
 .dark-theme-applied .dashboard_home .media_bg_icon{
-  background: url(/images/xuv-icon.png);
+  background: url(/images/merklescan-icon.svg);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -213,7 +213,7 @@ a.metamask_btn {
 }
 
 .media_icon {
-  filter:grayscale(1)
+  # filter:grayscale(1)
 }
 
 </style>
@@ -225,7 +225,51 @@ a.metamask_btn {
   <% col_size = if Enum.empty?(other_explorers), do: 2, else: 2 %>
 
   <div class="row justify-content-md-between py-2">
-    <div class="col-lg-3 footer-about">
+
+
+  <div class="col-xs-12 col-md-4 col-lg-4 footer-list">
+              <h2> Ecosystem</h2>
+              <ul>
+
+                <li><a href="https://bigtycoon.co/" rel="noreferrer" class="footer-link text-white" target="_blank">Bigtycoon</a></li>
+                <li><a href="https://bigshot.games/" rel="noreferrer" class="footer-link text-white" target="_blank">Big Shot</a></li>
+                <li><a href="https://buzzbt.io/" rel="noreferrer" class="footer-link text-white" target="_blank">Buzzbt</a></li>
+              </ul>
+            </div>
+
+    <% test_nets = test_nets(other_networks()) %>
+    <%= unless Enum.empty?(test_nets) do %>
+    <div class="col-xs-12 col-md-4 col-lg-4 footer-list">
+                <h2>Foundation</h2>
+                <ul>
+
+
+                  <li><a href="#" target="_blank" rel="noreferrer" class="footer-link text-white">Merkle Chain Venture</a></li>
+
+                </ul>
+              </div>
+    <% end %>
+
+
+  <!--  <% main_nets = main_nets(other_networks()) %>
+    <%= unless Enum.empty?(main_nets) do %>
+      <div class="col-6 col-md-4 col-lg-<%= col_size %>">
+        <h3 class="text-white heading_border"><%= gettext("Products & Services") %></h3>
+        <ul style="list-style: none;margin: 0; padding: 0; line-height: 31px;">
+
+        <li><a href="#" target="_blank" rel="noreferrer" class="footer-link"><%= gettext("Product & services 1") %></a></li>
+        <li><a href="#" target="_blank" rel="noreferrer" class="footer-link"><%= gettext("Product 2") %></a></li>
+        <li><a href="#" target="_blank" rel="noreferrer" class="footer-link"><%= gettext("Product 3") %></a></li>
+
+
+        Absinthe<%= for %{title: title, url: url} <- main_nets do %>
+          <li><a href="<%= url %>" rel="norefferer" class="footer-link"> <%= title %> </a></li>
+        <% end %>
+        </ul>
+      </div>
+    <% end %> -->
+
+    <div class="col-lg-4 footer-about">
     <!-- Logo -->
       <div class="row footer-logo-row">
         <div class="col-md-12">
@@ -249,66 +293,17 @@ a.metamask_btn {
       ) %>
 
 
-      <%= gettext(" Scan is a Block Explorer and Analytics Platform for smart contracts that also includes an analytics platform and a block explorer ") %>
+      <%= gettext(" is a Block Explorer and Analytics Platform for smart contracts that also includes an analytics platform and a block explorer ") %>
     </p>
 
-      <a type="button" class="btn btn-xs btn-lighter text-nowrap mr-2" href="/preferences">
+    <!--  <a type="button" class="btn btn-xs btn-lighter text-nowrap mr-2" href="/preferences">
         <i class="fas fa-cogs mr-1"></i> Preferences
-      </a>
+      </a> -->
 
 
 
       <%= render BlockScoutWeb.LayoutView, "_add_chain_to_mm.html" %>
     </div>
-
-    <div class="col-6 col-md-4 col-lg-<%= col_size %>">
-      <h3 class="text-white heading_border">Company</h3>
-      <ul style="list-style: none;margin: 0; padding: 0; line-height: 31px;">
-        <li><a href="#" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("About Us") %></a></li>
-        <li><a href="#" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("Contact Us") %></a></li>
-
-        <li><a href="#" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("Careers") %>
-        <sup class="join">Join Us</sup></a></li>
-        <li><a href="terms-of-service" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("Terms of Service") %></a></li>
-
-      </ul>
-    </div>
-
-    <% test_nets = test_nets(other_networks()) %>
-    <%= unless Enum.empty?(test_nets) do %>
-      <div class="col-6 col-md-4 col-lg-<%= col_size %>">
-        <h3 class="text-white heading_border"><%= gettext("Resources") %></h3>
-        <ul style="list-style: none;margin: 0; padding: 0; line-height: 31px;">
-          <li><a href="#" target="_blank" rel="noreferrer" class="footer-link"><%= gettext("API Documentation") %></a></li>
-          <li><a href="#" target="_blank" rel="noreferrer" class="footer-link"><%= gettext("Newsletter") %></a></li>
-
-          <!--
-          <%= for %{title: title, url: url} <- test_nets do %>
-            <li><a href="<%= url %>" rel="noreferrer" class="footer-link"> <%= title %> </a></li>
-          <% end %>
-          -->
-        </ul>
-      </div>
-    <% end %>
-
-
-    <% main_nets = main_nets(other_networks()) %>
-    <%= unless Enum.empty?(main_nets) do %>
-      <div class="col-6 col-md-4 col-lg-<%= col_size %>">
-        <h3 class="text-white heading_border"><%= gettext("Products & Services") %></h3>
-        <ul style="list-style: none;margin: 0; padding: 0; line-height: 31px;">
-
-        <li><a href="#" target="_blank" rel="noreferrer" class="footer-link"><%= gettext("Product & services 1") %></a></li>
-        <li><a href="#" target="_blank" rel="noreferrer" class="footer-link"><%= gettext("Product 2") %></a></li>
-        <li><a href="#" target="_blank" rel="noreferrer" class="footer-link"><%= gettext("Product 3") %></a></li>
-
-
-        <!--Absinthe<%= for %{title: title, url: url} <- main_nets do %>
-          <li><a href="<%= url %>" rel="norefferer" class="footer-link"> <%= title %> </a></li>
-        <% end %>-->
-        </ul>
-      </div>
-    <% end %>
 
    <!-- <%= unless Enum.empty?(other_explorers) do %>
       <div class="col-6 col-md-4 col-lg-<%= col_size %>">
@@ -332,32 +327,39 @@ a.metamask_btn {
   -->
 </div>
 
+<div class="sub-footer-top-border-1">
 <div class="container sub-footer-top-border">
   <div class="row text-white py-2">
     <div class="col-md-6 col-6 mb-sm">
       <div class="d-flex pt-1">
         <div>
           <%= gettext( " %{subnetwork}", subnetwork: BlockScoutWeb.LayoutView.subnetwork_title()) %>
-          <%= gettext(" &copy; 2023") %>
+          <%= gettext("Ⓒ 2023") %>
         </div>
         <div class="ml-2"><span class="text-danger ms-2"> <i class="fa fa-heart"></i> </span></div>
       </div>
     </div>
-    <div class="col-md-6 col-6">
+    <div class="col-md-6 col-12">
       <div class="footer-social float-right">
 
-        <a href="#" rel="noreferrer" target="_blank" title="medium">
+        <a href="https://t.me/merklechainexplorer" rel="noreferrer" target="_blank" title="telegram">
           <i class="fab fa-telegram"></i>
         </a>
-        <a href="#" rel="noreferrer" target="_blank" title="reddit">
+        <a href="https://www.instagram.com/merklescan/" rel="noreferrer" target="_blank" title="instagram">
           <i class="fab fa-instagram"></i>
         </a>
+        <a href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQGZeHu2vkPfxAAAAYmv2icoc-a9tsUonMlwa0m26BAxJ1Tel_L5-9pyse3eGOyrEDwngWoHtKUrXgdrNKRUQA3wFd2_O-X_5LwiJzwbpveZYiDWyafrJuVsclzOUVO6TgWbfxs=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fmerklechainexplorer%2F" rel="noreferrer" target="_blank" title="linkedin">
+        <i class="fab fa-linkedin"></i>
+      </a>
 
-        <a href="#" rel="noreferrer" target="_blank" title="facebook">
-          <i class="fab fa-linkedin"></i>
+        <a href="https://www.facebook.com/merklechainexplorer" rel="noreferrer" target="_blank" title="facebook">
+          <i class="fab fa-facebook"></i>
         </a>
-        <a href="#" rel="noreferrer" target="_blank" title="twitter">
+        <a href="https://twitter.com/merklechain" rel="noreferrer" target="_blank" title="twitter">
           <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://medium.com/@merklechainexplorer" rel="noreferrer" target="_blank" title="medium">
+          <i class="fab fa-medium"></i>
         </a>
 
       </div>
@@ -365,6 +367,7 @@ a.metamask_btn {
     </div>
   </div>
   </div>
+  <div>
 </footer>
 
 <!-- Scroll top-->
