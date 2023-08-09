@@ -1,4 +1,4 @@
-<ul id="transaction-tabs" class="nav nav-pills custom_pills card-tabs-- js-card-tabs--" style="display:none">
+<ul id="transaction-tabs" class="nav nav-pills custom_pills card-tabs-- js-card-tabs--">
   <%= if @show_token_transfers do %>
   <li class="nav-item">
     <%= link(
@@ -38,7 +38,7 @@
         gettext("State changes"),
         class: "nav-link #{tab_status("state", @conn.request_path)}",
         to: AccessHelpers.get_path(@conn, :transaction_state_path, :index, @transaction)
-      ) 
+      )
     %>
     </li>
 </ul>
