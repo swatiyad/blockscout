@@ -1,6 +1,6 @@
 <tr data-identifier-hash="<%= @contract.address_hash %>">
     <!-- Address -->
-    <td class="stakes-td">
+    <td class="stakes-td text-truncate">
     <%= render BlockScoutWeb.AddressView,
       "_link.html",
       address: @contract.address,

@@ -24,6 +24,7 @@
       <%= balance_percentage(@address, @total_supply) %>
     </td>
   <% end %>
+
   <td class="stakes-td">
     <span class="mr-4">
       <span data-test="transaction_count">

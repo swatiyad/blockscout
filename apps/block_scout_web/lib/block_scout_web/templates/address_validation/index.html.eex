@@ -30,7 +30,7 @@
                 <th class="tb_col_w200">Fee Recipient</th>
                 <th class="screenRow">Gas Used</th>
                 <th class="screenRow">Gas Limit</th>
-                <th class="screenRow">Base Fee</th>
+                <th class="screenRow 132243">Base Fee</th>
                 <th class="screenRow">Reward</th>
                 <!--<th class="screenRow">Burnt Fees (ETH)</th>-->
               </tr>

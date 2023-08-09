@@ -18,11 +18,11 @@
 	</div>
 
   <div class="card">
-    <div class="card-body pt-0" data-async-load data-async-listing="<%= @current_path %>" data-no-self-calls> 
+    <div class="card-body pt-0" data-async-load data-async-listing="<%= @current_path %>" data-no-self-calls>
 
     <div class="addresses-table-container">
       <div class="stakes-table-container">
-	<table class="table table-hover mb-0">
+	<table class="table table12 table-hover mb-0">
 	  <thead>
 	    <tr class="table-head">
 	      <th>

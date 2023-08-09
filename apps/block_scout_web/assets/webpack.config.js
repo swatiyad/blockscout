@@ -45,6 +45,7 @@ const appJs =
       'stats-chart3':'./js/lib/stats-chart3.js',
       'stats-chart4':'./js/lib/stats-chart4.js',
       'stats-chart5':'./js/lib/stats-chart5.js',
+      'internal_transaction':'./js/lib/internal_transaction.js',
       'statistics':'./js/lib/statistics.js',
       'diff-checker':'./js/lib/diff-checker.js',
       'nft-data':'./js/lib/nft-data.js',

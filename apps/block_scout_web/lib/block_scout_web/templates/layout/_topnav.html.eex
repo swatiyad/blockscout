@@ -84,7 +84,7 @@
                       ) %>
                   <% end %>
 
-                <a href="#" class="dropdown-item border-bottom">View Contract Internal Txns</a>
+                <a href="/internal-transactions" class="dropdown-item border-bottom">View Contract Internal Txns</a>
 
                   <%= link(
                     gettext("View Blocks"),
