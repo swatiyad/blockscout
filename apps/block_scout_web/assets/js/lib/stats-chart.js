@@ -45,7 +45,7 @@ const chartOptions = {
   
       // Update the chart options with the fetched data
 
-      console.log(categories,values,"valuesvalues");
+      // console.log(categories,values,"valuesvalues");
 
       chartOptions.xAxis.categories = categories;
       chartOptions.series[0].data = values;
