@@ -1035,6 +1035,12 @@ a {
     color: #bdbdbd;
 }
 
+.dark-theme-applied .table-hover tbody tr:hover {
+    color: #a9ab3f !important;
+}
+.dark-theme-applied .page-item-1{
+    background-color: #ccc !important;
+}
 .dark-theme-applied .page-title:after {
     border-bottom: 1px solid #484845;
 }
