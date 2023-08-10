@@ -28,8 +28,8 @@
 </div>
 
 <div class="pagination" style="padding-right:50px; padding-bottom:50px">
-  <button id="prevPage" class="btn page-item"><i class="fa-solid fa-arrow-left"></i></button>
-  <button id="nextPage" class="btn page-item"><i class="fa-solid fa-arrow-right"></i></button>
+  <button id="prevPage" class="btn page-item page-item-1"><i class="fa-solid fa-arrow-left"></i></button>
+  <button id="nextPage" class="btn page-item page-item-1"><i class="fa-solid fa-arrow-right"></i></button>
 </div>
 </div>
 

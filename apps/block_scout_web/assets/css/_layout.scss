@@ -738,6 +738,9 @@ a {
 .table-hover tbody tr:hover {
     background-color: rgba(0, 0, 0, 0.075);
 }
+.dark-theme-applied .table-hover tbody tr:hover {
+    color: #a9ab3f !important;
+}
 
 .table-active,
 .table-active>th,
@@ -1035,6 +1038,10 @@ a {
     color: #bdbdbd;
 }
 
+
+.dark-theme-applied .page-item-1{
+    background-color: #ccc !important;
+}
 .dark-theme-applied .page-title:after {
     border-bottom: 1px solid #484845;
 }
