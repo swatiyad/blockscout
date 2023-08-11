@@ -26,7 +26,7 @@ const chartOptions = {
   };
 
   // export const fetchApi = async()=>{
-  //   const data = await axios.get('https://wyzthscan.org/node-api/transactions')
+  //   const data = await axios.get('https://testnet.wyzthscan.org/node-api/transactions')
   //   return data
   // }
 
