@@ -29,7 +29,7 @@
           <td>
               <div class="text-truncate d-flex m-1 width150">
                     <span class="text-nowrap text-truncate">
-                      <%= link to: address_token_transfers_path(@conn, :index, Address.checksum(@token_transfer.from_address), Address.checksum(@token.contract_address_hash)), "data-test": "address_hash_link" do %>
+                      <%= link to: address_token_transfers_path(@conn, :index, Address.checksum(@token_transfer.from_address)), "data-test": "address_hash_link" do %>
                           <%= render(
                                 BlockScoutWeb.AddressView,
                                 "_responsive_hash.html",
@@ -47,7 +47,7 @@
           <td>
               <div class="text-truncate d-flex m-1 width150">
                   <span  class="text-nowrap text-truncate">
-                   <%= link to: address_token_transfers_path(@conn, :index, Address.checksum(@token_transfer.to_address), Address.checksum(@token.contract_address_hash)), "data-test": "address_hash_link" do %>
+                   <%= link to: address_token_transfers_path(@conn, :index, Address.checksum(@token_transfer.to_address)), "data-test": "address_hash_link" do %>
                       <%= render(
                             BlockScoutWeb.AddressView,
                             "_responsive_hash.html",

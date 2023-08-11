@@ -61,7 +61,11 @@ window.onload =  async function () {
   let url = window.location.href;
   // const addressHash = getAddressHashFromURL(url);
 
+  const commentsValue = window.localStorage.getItem("comments");
 
+  if (commentsValue === "false") {
+    tab3.style.display = "none";
+  } 
 var lastPart = getLastPartFromURL(url);
 console.log(lastPart,"lastPart")
 

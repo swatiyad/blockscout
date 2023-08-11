@@ -2,7 +2,7 @@
 <% priority_fee = if !is_nil(@block.base_fee_per_gas), do: BlockPriorityFeeCounter.fetch(@block.hash), else: nil %>
 <div class="tile-- tile-type-<%= String.downcase(@block_type) %> fade-up--" data-selector="block-tile" data-block-number="<%= to_string(@block.number) %>" data-block-hash="<%= @block.hash %>">
   <div class="">
-    <table class="table fixed-layout mb-0">    
+    <table class="table fixed-layout mb-0">
       <tbody class="table-group-divider">
         <tr>
           <td>
@@ -72,12 +72,12 @@
             <!-- Gas Limit -->
             <span> <%= formatted_gas(@block.gas_limit) %>  </span>
           </td>
-          <td>
+        <!--  <td>
             <%= if !is_nil(@block.base_fee_per_gas) do %>
               <!-- Priority Fee -->
               <span> <%= format_wei_value(%Wei{value: priority_fee}, :ether) %>  </span>
             <% end %>
-          </td>
+          </td> -->
           <td>
           <%= if show_reward?(@block.rewards) do %>
             <div class="text-nowrap text-truncate mt-3 mt-md-0">
@@ -92,7 +92,7 @@
           </td>
           <!-- Burnt Fees -->
           <!-- <td>
-         <%= if !is_nil(@block.base_fee_per_gas) do %>            
+         <%= if !is_nil(@block.base_fee_per_gas) do %>
               <div class="text-truncate width135">
             <span> <%= format_wei_value(burned_fee, :ether) %>  </span>
             </div>
