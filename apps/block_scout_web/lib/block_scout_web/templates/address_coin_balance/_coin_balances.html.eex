@@ -1,4 +1,4 @@
-<div class="tile tile-type-coin-balance fade-up" data-test="coin_balance" data-block-number="<%= to_string(@coin_balance.block_number) %>">
+<div class=" tile  tile-type-coin-balance tile-type-coin-balancess fade-up" data-test="coin_balance" data-block-number="<%= to_string(@coin_balance.block_number) %>">
   <!--<div class="row justify-content align-items-center">
     <div class="col-md-6 d-flex flex-column mt-3 mt-md-0">
       <%= link(
@@ -32,7 +32,7 @@
     <table class="w-100 table fixed-layout mb-0 mb-width-table" >
     <tbody>
       <tr>
-      <td class="hide_for_homepage">
+      <td class="hide_for_homepage" style="width:150px">
       <%= link(
         to: block_path(@conn, :show, @coin_balance.block_number),
         class: "tile-title-lg"
@@ -47,7 +47,7 @@
     <% end %>
   <% end %> -->
       </td>
-      <td class="hide_for_homepage text-truncate" style="max-width:200px">
+      <td class="hide_for_homepage text-truncate" style="width:200px">
       <%= if @coin_balance.transaction_hash do %>
       <%= link(
             to: transaction_path(@conn, :show, @coin_balance.transaction_hash)

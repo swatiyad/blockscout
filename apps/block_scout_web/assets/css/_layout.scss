@@ -1510,6 +1510,17 @@ input.nosubmit {
   .table-head {
     background-color: #f4f5e7;
   }
+  .tile-type-coin-balancess {
+   
+    border: none !important;
+    color: #6c757d;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    font-size: 12px;
+    line-height: 1rem;
+    padding: 0rem !important;
+}
   
   dl {
     margin-bottom: 12px;

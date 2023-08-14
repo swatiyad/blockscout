@@ -37,27 +37,27 @@
             <%= gettext "There is no coin history for this address." %>
           </div>
         </div>
-        <div class="stakes-table-container overflow-auto ">
+        <div class="" style="overflow-x: auto; overflow-y:hidden">
 
         <table class="w-100 table fixed-layout mb-0 mb-width-table">
             <thead>
                 <tr>
 
 
-                    <th class="hide_for_homepage">
-                        <div class="stakes-table-th-content " style="padding:12px">Block</div>
+                    <th class="hide_for_homepage" style="width:150px">
+                        Block
+                    </th>
+                    <th class="hide_for_homepage" style="width:200px">
+                      Txns
+                    </th>
+                    <th class="hide_for_homepage text-center">
+                       Age
                     </th>
                     <th class="hide_for_homepage">
-                        <div class="stakes-table-th-content" style="padding:12px">Txns</div>
-                    </th>
-                    <th class="hide_for_homepage  text-center">
-                        <div class="text-center" style="padding:12px">Age</div>
-                    </th>
-                    <th class="hide_for_homepage">
-                        <div class="stakes-table-th-content text-center" style="padding:12px">Change</div>
+                        Change
                     </th>
                     <th class="hide_for_homepage ">
-                        <div class="stakes-table-th-content" style="padding:12px">Amount</div>
+                       Amount
                     </th>
 
 
