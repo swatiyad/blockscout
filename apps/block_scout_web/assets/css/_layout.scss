@@ -192,6 +192,7 @@ a {
     color: #20d0b2;
 }
 
+
 .dashboard-data {
     color: #2c2828;
     display: block;
@@ -700,8 +701,9 @@ a {
 .table td {
     padding: 0.75rem;
     vertical-align: baseline;
-    border-top: 1px solid #eceeef!important;
+    // border-top: 1px solid #eceeef!important;
     white-space: nowrap;
+    border-top:none;
 }
 
 .table tbody+tbody {
@@ -1508,6 +1510,18 @@ input.nosubmit {
   .table-head {
     background-color: #f4f5e7;
   }
+  .tile-type-coin-balancess {
+   
+    border: none !important;
+    color: #6c757d;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    font-size: 12px;
+    line-height: 1rem;
+    padding: 0rem !important;
+    background: transparent !important
+}
   
   dl {
     margin-bottom: 12px;
@@ -1566,6 +1580,9 @@ input.nosubmit {
 @media screen and (max-device-width: 480px) {
     .hide_on_xs {
         display: none
+    }
+    .mb-width-table{
+        width:1358px !important
     }
    
   
