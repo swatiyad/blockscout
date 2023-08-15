@@ -58,9 +58,27 @@
             <%= gettext "Something went wrong, click to reload." %>
           </span>
         </button>
+        <div class="overflow-auto">
+        <table class="table table-hover mb-0 fixed-layout">
+            <thead>
+              <tr class="table-head">
+                <th style="width:40px"> </th>
+                <th class="">Txn Hash</th>
+                <th class="">Method</th>
+                <th class="screenRow">Block</th>
+                <th class="screenRow">Age</th>
+                <th class="">From</th>
+                <th class="" style="width:70px">&nbsp;</th>
+                <th class="">To</th>
+                <th class="">Value</th>
+                <th class="">Txn Fee</th>
+              </tr>
+            </thead>
+          </table>
 
         <div data-items>
           <%= render BlockScoutWeb.CommonComponentsView, "_tile-loader.html" %>
+        </div>
         </div>
 
         <div class="transaction-bottom-panel">
