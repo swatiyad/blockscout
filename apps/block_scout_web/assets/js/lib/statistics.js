@@ -403,7 +403,7 @@ token =`<div>
 </div>
 <div class="text-secondary text-right">
   <i class="fab fa-binance text-secondary mr-1" title=${Number(TopTokenApiData.data[0].amount)/10**Number(TopTokenApiData.data[0].decimals)}></i
-  >${Number(TopTokenApiData.data[0].amount)/10**Number(TopTokenApiData.data[0].decimals).toLocaleString("fullwide", { useGrouping: false })}
+  >${(Number(TopTokenApiData.data[0].amount)/10**Number(TopTokenApiData.data[0].decimals)).toLocaleString("fullwide", { useGrouping: false })}
 </div>
 </div>
 <hr class="pb-1 hr" />
