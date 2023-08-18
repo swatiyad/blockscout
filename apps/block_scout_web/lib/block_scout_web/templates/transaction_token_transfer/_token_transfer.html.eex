@@ -1,5 +1,5 @@
-<div class="tile tile-type-token-transfer fade-in">
-  <div class="row justify-content-end">
+<div class=" tile-type-token-transfer fade-in">
+  <!--<div class="row justify-content-end">
     <div class="col-12 col-md-4 col-lg-2 d-flex align-items-center justify-content-start justify-content-lg-center tile-label">
       <%= render(BlockScoutWeb.CommonComponentsView, "_token_transfer_type_display_name.html", type: Chain.get_token_transfer_type(@token_transfer)) %>
     </div>
@@ -16,5 +16,35 @@
         <%= render BlockScoutWeb.TransactionView, "_total_transfers.html", Map.put(assigns, :transfer, @token_transfer) %>
       </span>
     </div>
-  </div>
+  </div> -->
+
+  <table class="w-100 table fixed-layout mb-0 mb-width-table" >
+  <tbody>
+    <tr>
+
+    <td class="hide_for_homepage text-truncate" style="width:200px">
+    <%= render BlockScoutWeb.TransactionView, "_link.html", transaction_hash: @token_transfer.transaction_hash %>
+    </td>
+    <td class="hide_for_homepage text-truncate" style="width:150px">
+    <%= render(BlockScoutWeb.CommonComponentsView, "_token_transfer_type_display_name.html", type: Chain.get_token_transfer_type(@token_transfer)) %>
+    </td>
+    <td class="hide_for_homepage  text-truncate" >
+    <%= render BlockScoutWeb.AddressView, "_link.html", address: @token_transfer.from_address, contract: BlockScoutWeb.AddressView.contract?(@token_transfer.from_address), use_custom_tooltip: false %>
+    </td>
+
+    <td class="hide_for_homepage " style="width:70px">
+    <div class="btn btn-xs btn-teal rounded-circle">
+    <span class="fas fa-long-arrow-alt-right"></span>
+    </div>
+    </td>
+    <td class="hide_for_homepage  text-truncate">
+    <%= render BlockScoutWeb.AddressView, "_link.html", address: @token_transfer.to_address, contract: BlockScoutWeb.AddressView.contract?(@token_transfer.to_address), use_custom_tooltip: false %>
+    </td>
+    <td>
+    <%= render BlockScoutWeb.TransactionView, "_total_transfers.html", Map.put(assigns, :transfer, @token_transfer) %>
+    </td>
+    </tr>
+    <tbody>
+  </table>
+
 </div>
