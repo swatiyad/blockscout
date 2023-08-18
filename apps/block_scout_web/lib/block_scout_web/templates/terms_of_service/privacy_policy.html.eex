@@ -109,7 +109,7 @@
 </li>
 <li>(e) <strong>Web Server site visits logging</strong>
 <br>
-<p>The following is how we store the web server site visit logs (applicable to https://wyzthscan.org):</p>
+<p>The following is how we store the web server site visit logs (applicable to https://testnet.wyzthscan.org):</p>
 </li>
 <li>(i) To throttle the rate of requests and prevent certain types of attacks against us, we track the incoming IP addresses for very short periods of time and is then released.
 <br>

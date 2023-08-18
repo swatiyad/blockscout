@@ -197,13 +197,15 @@ let token=
 </div>`
   document.querySelector("#ContentPlaceHolder1_Div1a_body_1").innerHTML = trans;
   document.querySelector("#ContentPlaceHolder1_Div1a_body_2").innerHTML = token;
-  const [topsender, maxRecieverCount, maxSendCount, api, TopTokenApi] =
+  const mainnet = "https://testnet.wyzthscan.org/"
+  const testnet = "http://localhost:3000/"
+  const [maxRecieverCount,topsender, maxSendCount, api, TopTokenApi] =
   await Promise.all([
-    axios.get("https://testnet.wyzthscan.org/node-api/topsender"),
-    axios.get("https://testnet.wyzthscan.org/node-api/max-count-reciever"),
-    axios.get("https://testnet.wyzthscan.org/node-api/max-count-sender"),
-    axios.get("https://testnet.wyzthscan.org/node-api/top-stats-data"),
-    axios.get("https://testnet.wyzthscan.org/node-api/token-data"),
+    axios.get(mainnet+"node-api/max-count-reciever"),
+    axios.get(mainnet+"node-api/topsender"),
+    axios.get(mainnet+"node-api/max-count-sender"),
+    axios.get(mainnet+"node-api/top-stats-data"),
+    axios.get(mainnet+"node-api/token-data"),
   ]);
 
   const apiData = api.data;
@@ -211,15 +213,15 @@ let token=
   const maxRecieverCountDAta = maxRecieverCount?.data;
   const maxSendCountData = maxSendCount?.data;
   const TopTokenApiData =  TopTokenApi?.data
-  console.log(
-    apiData,
-    topSenderData,
-    maxRecieverCountDAta,
-    maxSendCountData,
-    "affg"
-  );
+  // console.log(
+  //   apiData,
+  //   topSenderData,
+  //   maxRecieverCountDAta,
+  //   maxSendCountData,
+  //   "affg"
+  // );
 
-  console.log(topSenderData.data[0].from_address, topSenderData.data[0],topSenderData.data[0].value / 1e18,TopTokenApiData, "trans12");
+  // console.log(topSenderData.data[0].from_address, topSenderData.data[0],topSenderData.data[0].value / 1e18,TopTokenApiData, "trans12");
 
 
 
@@ -231,13 +233,13 @@ let token=
     }</a></td>
     <td><a href=/address/${
       transaction.from_address
-    }>${transaction.from_address.slice(
+    }>${transaction.from_address?.slice(
       0,
       6
-    )}...${transaction.from_address.slice(-6)}</a></td>
+    )}...${transaction.from_address?.slice(-6)}</a></td>
     <td><a href=/address/${
       transaction.to_address
-    }>${transaction.to_address.slice(0, 6)}...${transaction.to_address.slice(
+    }>${transaction.to_address?.slice(0, 6)}...${transaction.to_address?.slice(
       -6
     )}</a></td>
     <td>${
@@ -255,10 +257,10 @@ let token=
       <td>${detail.symbol}</td>
       <td>${detail.name}</td>
       <td>${detail.type}</td>
-      <td><a href=/address/${detail.address}>${detail.address.slice(
+      <td><a href=/address/${detail.address}>${detail.address?.slice(
       0,
       6
-    )}...${detail.address.slice(-6)}</a></td>
+    )}...${detail.address?.slice(-6)}</a></td>
     `;
     topToken.appendChild(row);
   });
@@ -278,10 +280,10 @@ let token=
         data-original-title=${topSenderData.data[0].from_address}
         ><a
           href=/address/${topSenderData.data[0].from_address}
-          >${topSenderData.data[0].from_address.slice(
+          >${topSenderData.data[0].from_address?.slice(
             0,
             5
-          )}...${topSenderData.data[0].from_address.slice(-5)}</a
+          )}...${topSenderData.data[0].from_address?.slice(-5)}</a
         ></span
       >
     </div>
@@ -310,10 +312,10 @@ let token=
         data-original-title=${topSenderData.data[0].to_address}
         ><a
           href=/address/${topSenderData.data[0].to_address}
-          >${topSenderData.data[0].to_address.slice(
+          >${topSenderData.data[0].to_address?.slice(
             0,
             5
-          )}...${topSenderData.data[0].to_address.slice(-5)}</a
+          )}...${topSenderData.data[0].to_address?.slice(-5)}</a
         ></span
       >
     </div>
@@ -336,10 +338,10 @@ let token=
         data-original-title=${maxSendCountData.data[0].from_address}
         ><a
           href=/address/${maxSendCountData.data[0].from_address}
-          >${maxSendCountData.data[0].from_address.slice(
+          >${maxSendCountData.data[0].from_address?.slice(
             0,
             5
-          )}...${maxSendCountData.data[0].from_address.slice(-5)}</a
+          )}...${maxSendCountData.data[0].from_address?.slice(-5)}</a
         ></span
       >
     </div>
@@ -367,10 +369,10 @@ let token=
         data-original-title=${maxRecieverCountDAta.data[0].to_address}
         ><a
           href=/address/${maxRecieverCountDAta.data[0].to_address}
-          >${maxRecieverCountDAta.data[0].to_address.slice(
+          >${maxRecieverCountDAta.data[0].to_address?.slice(
             0,
             5
-          )}...${maxRecieverCountDAta.data[0].to_address.slice(-5)}</a
+          )}...${maxRecieverCountDAta.data[0].to_address?.slice(-5)}</a
         ></span
       >
     </div>
@@ -387,7 +389,7 @@ token =`<div>
 <div class="media-body">Top Tokens</div>
 <div class="text-right"> Transfer Amount</div>
 </div>
-<div class="media align-items-center mb-1">
+<div class="media  align-items-center mb-1">
 <div class="media-body">
   <span
     class="hash-tag text-truncate"
@@ -400,8 +402,8 @@ token =`<div>
   >
 </div>
 <div class="text-secondary text-right">
-  <i class="fab fa-binance text-secondary mr-1"></i
-  >${Number(TopTokenApiData.data[0].amount)/10**Number(TopTokenApiData.data[0].decimals)}
+  <i class="fab fa-binance text-secondary mr-1" title=${Number(TopTokenApiData.data[0].amount)/10**Number(TopTokenApiData.data[0].decimals)}></i
+  >${(Number(TopTokenApiData.data[0].amount)/10**Number(TopTokenApiData.data[0].decimals)).toLocaleString("fullwide", { useGrouping: false })}
 </div>
 </div>
 <hr class="pb-1 hr" />
@@ -409,7 +411,7 @@ token =`<div>
 <div class="media-body">Top Unique Sender</div>
 <div class="text-right"></div>
 </div>
-<div class="media align-items-center mb-1">
+<div class="media align-items-center text-truncate mb-1">
 <div class="media-body">
   <i
     class="far fa-file-alt text-secondary mr-1"
@@ -438,7 +440,7 @@ token =`<div>
 <div class="media-body">Top Unique Reciever</div>
 <div class="text-right"></div>
 </div>
-<div class="media align-items-center mb-1">
+<div class="media align-items-center text-truncate mb-1">
 <div class="media-body">
   <span
     class="hash-tag text-truncate"

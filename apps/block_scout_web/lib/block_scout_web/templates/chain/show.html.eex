@@ -39,7 +39,7 @@
               <span class="dashboard-banner-network-stats-label text-uppercase">
               WYZth Price
               </span>
-              <span class="dashboard-data fs-14 text-truncate width160">
+              <span class="dashboard-data fs-14  width160">
               <!-- <span id="price_usd"></span> -->
               $20
               </span>
@@ -116,7 +116,7 @@
           </script>
 
           <div class="d-flex justify-content-between align-items-center chart_area_header">
-            <p class="mb-0 text-green">WYZth Transaction history in 14 Days</p>
+            <p class="mb-0 text-darkgrey-green">WYZth Transaction history in 14 Days</p>
          <!--   <div class="position-relative float-right z-index-2">
             <div class="dropdown">
                 <button class="btn btn-light btn-xs dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -142,7 +142,7 @@
                 <% end %>
           <% end %>}'
           data-history_chart_config = '<%= @chart_config_json %>'
-          width="350" height="90">
+          width="350" height="">
   </canvas>
           </div>
         </div>

@@ -26,7 +26,7 @@ const chartOptions = {
   };
 
   // export const fetchApi = async()=>{
-  //   const data = await axios.get('https://wyzthscan.org/node-api/transactions')
+  //   const data = await axios.get('https://testnet.wyzthscan.org/node-api/transactions')
   //   return data
   // }
 
@@ -45,7 +45,7 @@ const chartOptions = {
   
       // Update the chart options with the fetched data
 
-      console.log(categories,values,"valuesvalues");
+      // console.log(categories,values,"valuesvalues");
 
       chartOptions.xAxis.categories = categories;
       chartOptions.series[0].data = values;

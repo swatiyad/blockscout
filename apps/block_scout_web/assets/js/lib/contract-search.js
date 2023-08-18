@@ -37,6 +37,7 @@ document.querySelector("#heroSubscribeButton").onclick = async function () {
             <i class="fa fa-file-alt text-muted me-1"></i
             ><a
               class="text-truncate text-primary"
+              style="padding-left:10px"
               href="/address/0x${Buffer.from(detail.address_hash).toString(
                 "hex"
               )}#code"
@@ -115,6 +116,7 @@ document.querySelector("#heroSubscribeButton-2").onclick = async function () {
               <i class="fa fa-file-alt text-muted me-1"></i
               ><a
                 class="text-truncate text-primary"
+                style="padding-left:10px"
                 href="/address/0x${Buffer.from(detail.address_hash).toString(
                   "hex"
                 )}#code"

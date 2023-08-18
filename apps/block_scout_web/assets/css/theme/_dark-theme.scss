@@ -437,8 +437,8 @@ $dark-stakes-banned-background: #313131;
         border-bottom-color: #424242!important;
     }
     // coin balance history chart
-    .chartjs-render-monitor[data-chart="coinBalanceHistoryChart"] {
-        filter: brightness(0) invert(1) !important;
+   .chartjs-render-monitor[data-chart="coinBalanceHistoryChart"] {
+    filter: brightness(0) invert(1) !important;
     }
     // logs search
     .logs-search-input,

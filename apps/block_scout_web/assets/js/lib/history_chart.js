@@ -21,9 +21,9 @@ const grid = {
 
 function getTxChartColor () {
   if (Cookies.get('chakra-ui-color-mode') === 'dark') {
-    return sassVariables.dashboardLineColorTransactionsDarkTheme
+    return "white"
   } else {
-    return sassVariables.dashboardLineColorTransactions
+    return "#000"
   }
 }
 
@@ -43,6 +43,7 @@ function getMarketCapChartColor () {
   }
 }
 
+
 function xAxe (fontColor) {
   return {
     grid,
@@ -60,6 +61,9 @@ function xAxe (fontColor) {
   }
 }
 
+
+
+
 const padding = {
   left: 0,
   right: 0
@@ -72,6 +76,27 @@ const legend = {
 function formatValue (val) {
   return `${numeral(val).format('0,0')}`
 }
+
+const isDarkMode = Cookies.get('chakra-ui-color-mode') ;
+
+const tooltipOptionsDark = {
+  backgroundColor: '#212529',
+  borderColor: 'rgba(255, 255, 255, 0.8)',
+  titleColor: 'rgba(255, 255, 255, 0.8)',
+  bodyColor: 'rgba(255, 255, 255, 0.8)',
+  
+};
+
+const tooltipOptionsLight = {
+  backgroundColor: '#f3f3f3',
+  borderColor: 'rgba(0, 0, 0, 0)',
+  titleColor: 'rgba(0, 0, 0, 0.8)',
+  bodyColor: 'rgb(0, 0, 0)'
+};
+
+const selectedTooltipOptions = isDarkMode === 'dark' ? tooltipOptionsDark : tooltipOptionsLight;
+
+
 
 const config = {
   type: 'line',
@@ -88,7 +113,8 @@ const config = {
       mode: 'index'
     },
     scales: {    
-      x: xAxe(sassVariables.dashboardBannerChartAxisFontColor),
+      x: xAxe(isDarkMode === 'dark'?"#fff":"#000"),
+   
       price: {
         display: false, 
         position: 'left',
@@ -96,7 +122,7 @@ const config = {
         ticks: {
           beginAtZero: false,
           callback: (value, _index, _values) => `$${numeral(value).format('0,0.00')}`,
-          maxTicksLimit: 4,
+          maxTicksLimit: 2,
           color: sassVariables.dashboardBannerChartAxisFontColor
         },
         // borderColor: 'transparent',
@@ -118,8 +144,8 @@ const config = {
         ticks: {
           // beginAtZero: false,
           callback: (value, _index, _values) => formatValue(value),
-          maxTicksLimit: 3,
-          color: sassVariables.dashboardBannerChartAxisFontColor
+          maxTicksLimit: 2,
+          color: isDarkMode === 'dark'?"#fff":"#000"
         }
       }
     },
@@ -134,7 +160,10 @@ const config = {
       },
       tooltip: {
         mode: 'index',
+     
         intersect: false,
+      
+        ...selectedTooltipOptions,
         callbacks: {
           label: (context) => {
             const { label } = context.dataset
@@ -149,7 +178,8 @@ const config = {
               return formattedValue
             }
           }
-        }
+        },
+       
       }
     }
   }
@@ -258,8 +288,8 @@ class MarketHistoryChart {
       fill: false,
       pointRadius: 0,
       backgroundColor: getTxChartColor(),
-      // borderColor: getTxChartColor(),
-      borderColor: 'rgba(0, 0, 0, 1)',
+       borderColor: getTxChartColor(),
+      // borderColor: 'rgba(0, 0, 0, 1)',
       borderWidth:1,
       //  lineTension: 0     
       

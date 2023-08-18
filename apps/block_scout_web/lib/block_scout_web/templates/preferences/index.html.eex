@@ -169,17 +169,26 @@
   </div>
 </div>
 </div>
-<Script>
-function clearGlobalValu(){
+<script>
+function clearGlobalValu() {
   const checkbox = document.getElementById("ContentPlaceHolder1_chkDisqus");
   const isChecked = checkbox.checked;
+  console.log("isChecked", isChecked);
 
   if (isChecked) {
-  window.localstorage.setItem("comments":true);
-
+    window.localStorage.setItem("comments", true);
   } else {
-    console.log("Checkbox is not checked!");
-    window.localstorage.setItem("comments":false);
+    window.localStorage.setItem("comments", false);
   }
 }
+window.addEventListener("load", function () {
+  const checkbox = document.getElementById("ContentPlaceHolder1_chkDisqus");
+  const commentsValue = window.localStorage.getItem("comments");
+
+  if (commentsValue === "true") {
+    checkbox.checked = true;
+  } else {
+    checkbox.checked = false;
+  }
+});
 </script>
