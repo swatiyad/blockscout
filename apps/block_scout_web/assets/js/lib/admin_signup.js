@@ -21,7 +21,7 @@ document.getElementById("admin-signup").onclick = async function(e) {
     document.querySelector(".confirm-password-alert").style.marginBottom = "20px";
   }else{
 
-  const apiUrl = "http://localhost:3000/node-api/register";
+  const apiUrl = "https://wyzthscan.org/node-api/register";
   const requestData = {
     username:user,
     email,

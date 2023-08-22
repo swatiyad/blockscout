@@ -6,7 +6,7 @@ document.querySelector("#add-token-icon").onclick = async function(e){
     console.log(taddress,imgUrl,"imgUrlimgUrl");
     try {
         const id = document.querySelector("#add-token-icon").getAttribute("data-id");
-        const apiUrl = "http://localhost:3000/node-api/add-icon";
+        const apiUrl = "https://wyzthscan.org/node-api/add-icon";
         const requestData = {
           username:id,
           imageurl: imgUrl.trim(),

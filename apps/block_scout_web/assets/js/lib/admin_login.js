@@ -5,7 +5,7 @@ document.querySelector("#admin-login").onclick = async function(e){
     console.log("hello");
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
-    const apiUrl = "http://localhost:3000/node-api/login";
+    const apiUrl = "https://wyzthscan.org/node-api/login";
     const requestData = {
       username:username,
       password: password,

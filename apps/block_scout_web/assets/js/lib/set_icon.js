@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", async function () {
   
     const addrs = dynamicIcon.getAttribute("data-address-hash");
   
-    let apiUrl = "http://localhost:3000/node-api/get-token-image";
+    let apiUrl = "https://wyzthscan.org/node-api/get-token-image";
     let requestData = {
       address: addrs
     };
