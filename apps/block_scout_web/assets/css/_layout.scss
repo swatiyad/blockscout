@@ -1640,6 +1640,10 @@ input.nosubmit {
     .mobile-view-col{
         flex-direction: column !important;
     }
+    .mobile-d-none{
+        display: none !important;
+    }
+
     .border-right-sm1,
     .border-right-sm2 {
         border-right: 0 !important;
@@ -1676,6 +1680,7 @@ input.nosubmit {
         width: 100%;
         box-shadow: none;
     }
+  
 }
 
 @media only screen and (min-device-width: 991px) {
@@ -1701,6 +1706,7 @@ input.nosubmit {
         border-left: 3px solid #a9ab3f;
         border-top: none!important;
     }
+ 
 }
 
 
