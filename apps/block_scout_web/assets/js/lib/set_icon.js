@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", async function () {
   
     let apiUrl = "https://wyzthscan.org/node-api/get-token-image";
     let requestData = {
-      address: addrs
+      address: addrs.toLowerCase()
     };
   
     try {

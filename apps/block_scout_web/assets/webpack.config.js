@@ -54,6 +54,7 @@ const appJs =
       'admin_signup':'./js/lib/admin_signup.js',
       'admin_verify':'./js/lib/admin_verify.js',
       'set_icon':'./js/lib/set_icon.js',
+      'reset_password':'./js/lib/reset_password.js',
       'embed':'./js/lib/embed.js',
       'broadcast-transaction':'./js/lib/broadcast-transaction.js',
       'contract-search':'./js/lib/contract-search.js',

@@ -14,4 +14,7 @@ defmodule BlockScoutWeb.AdminDashboardController do
     # Here you can use the "id" parameter to perform verification logic
     render(conn, "verification-successful.html", id: id)
   end
+  def forgetpassword(conn,_params) do
+    render(conn, "forget-password.html")
+  end
 end

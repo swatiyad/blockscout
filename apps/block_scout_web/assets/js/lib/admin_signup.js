@@ -23,8 +23,8 @@ document.getElementById("admin-signup").onclick = async function(e) {
 
   const apiUrl = "https://wyzthscan.org/node-api/register";
   const requestData = {
-    username:user,
-    email,
+    username:user.toLowerCase(),
+    email:email.toLowerCase(),
     password: pass,
   };
   

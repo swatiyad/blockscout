@@ -1,13 +1,13 @@
 import axios from "axios";
 
-document.querySelector("#admin-login").onclick = async function(e){
+document.querySelector("#admin-reset").onclick = async function(e){
     e.preventDefault()
-    const username = document.getElementById("username").value;
-    const password = document.getElementById("password").value;
-    const apiUrl = "https://wyzthscan.org/node-api/login";
+    const email = document.getElementById("reset-email").value;
+    const newPassword = document.getElementById("reset-password").value;
+    const apiUrl = "https://wyzthscan.org/node-api/forgot-password";
     const requestData = {
-      username:username.toLowerCase(),
-      password: password,
+        email:email.toLowerCase(),
+        newPassword: newPassword,
     };
     const data = await axios.post(apiUrl, requestData);
     console.log(data.data.status,"data")
@@ -19,8 +19,7 @@ document.querySelector("#admin-login").onclick = async function(e){
     }else{
         document.querySelector(".alert-msg").style.color = "green";
         document.querySelector(".alert-msg").textContent = data.data.message;
-        window.localStorage.setItem("username", username);
-        window.location.href = `/add-icon/${username}`;
+        window.location.href = `/signin`;
     }
 }
 

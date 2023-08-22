@@ -8,9 +8,9 @@ document.querySelector("#add-token-icon").onclick = async function(e){
         const id = document.querySelector("#add-token-icon").getAttribute("data-id");
         const apiUrl = "https://wyzthscan.org/node-api/add-icon";
         const requestData = {
-          username:id,
+          username:id.toLowerCase(),
           imageurl: imgUrl.trim(),
-          tokenaddress:taddress.trim()
+          tokenaddress:taddress.toLowerCase().trim()
         };
         const data = await axios.post(apiUrl, requestData);
         if(data.data.status==true){
