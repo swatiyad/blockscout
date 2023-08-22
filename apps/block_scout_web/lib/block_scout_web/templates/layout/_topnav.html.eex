@@ -252,6 +252,11 @@
 
               </div>
             </li>
+            <li>
+            <a class="nav-link" href="/signin">
+              <i class="fa fa-user-circle mx-1 mobile-d-none"></i> Sign In
+            </a>
+            </li>
 
 
         <!--  <li class="header-nav-separator mt-lg-2"></li>

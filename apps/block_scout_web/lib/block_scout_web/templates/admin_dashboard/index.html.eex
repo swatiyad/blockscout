@@ -1,0 +1,105 @@
+<style>
+
+
+.container1234 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ margin:50px auto;
+}
+
+.form-container {
+  width: 600px;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  color: #000;
+}
+
+.form-container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 36px;
+  color: #a9ab3f;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container label {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.form-container input {
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #000;
+  background-color: #767a2e1a
+}
+
+.form-container button {
+  padding: 10px;
+  background-color: #a9ab3f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.form-container button:hover {
+  background-color: #aaab4ba8;
+}
+
+.form-container a {
+  text-decoration: none;
+  color: #aaab4ba8;
+  font-size: 18px;
+  transition: color 0.2s ease-in-out;
+}
+
+.form-container a:hover {
+  color: #aaab4ba8;
+}
+
+.form-container p {
+  text-align: center;
+  margin: 8px;
+}
+
+.dark-theme-applied .form-container{
+  background-color: #000;
+  color: #fff;
+}
+.dark-theme-applied .form-container input {
+    border:1px solid #ccc;
+    border-radius:10px;
+    color: #fff;
+    background-color: ##ccc
+  }
+</style>
+<script defer src="<%= static_path(@conn, "/js/admin_login.js") %>"></script>
+<div class="container container1234">
+    <div class="form-container" id="login-form">
+      <h1>Login</h1>
+      <form>
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+        <span class="alert-msg text-center"></span>
+        <button type="submit" id="admin-login">Login</button>
+      </form>
+      <p>Don't have an account? <a href="/signup" id="signup-link">Sign up</a></p>
+    </div>
+
+  </div>

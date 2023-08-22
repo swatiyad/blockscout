@@ -81,7 +81,10 @@ defmodule BlockScoutWeb.Router do
 
   scope "/", BlockScoutWeb do
   pipe_through :browser
-  get "/hello", HelloController, :index
+  get "/signin", AdminDashboardController, :signin
+  get "/add-icon/:id", AdminDashboardController, :addIcon
+  get "/signup", AdminDashboardController, :signup
+  get "/verify/:id", AdminDashboardController, :verify
 end
 
   scope "/", BlockScoutWeb do

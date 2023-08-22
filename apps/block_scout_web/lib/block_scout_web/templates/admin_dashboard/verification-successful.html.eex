@@ -1,0 +1,16 @@
+<script defer src="<%= static_path(@conn, "/js/admin_verify.js") %>"></script>
+<div class="container">
+<div class ="row d-flex justify-content-center align-items-center my-4" style="height:300px">
+<div class="col-12 col-md-6">
+  <div class="card p-3">
+  <h2 class="text-center">
+  Confirm Your Email Address
+  </h2>
+  <p class="text-center">Tap the button below to confirm your email address.</p>
+  <button class=" bg-brown border-dark rounded text-white p-1 verifybutton" data-id="<%= @id %>">
+  Click here to Verify
+  </button>
+  </div>
+</div>
+</div>
+</div>
