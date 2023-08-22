@@ -85,6 +85,7 @@ defmodule BlockScoutWeb.Router do
   get "/add-icon/:id", AdminDashboardController, :addIcon
   get "/signup", AdminDashboardController, :signup
   get "/verify/:id", AdminDashboardController, :verify
+  get "/forget-password", AdminDashboardController, :forgetpassword
 end
 
   scope "/", BlockScoutWeb do
