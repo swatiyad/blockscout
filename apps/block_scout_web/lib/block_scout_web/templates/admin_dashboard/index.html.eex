@@ -87,7 +87,7 @@
     background-color: ##ccc
   }
 </style>
-<script defer src="<%= static_path(@conn, "/js/admin_login.js") %>"></script>
+<script defer src="<%= static_path(@conn, "/js/user_login.js") %>"></script>
 <div class="container container1234">
     <div class="form-container" id="login-form">
       <h1>Login</h1>
@@ -98,7 +98,7 @@
         <input type="password" id="password" name="password" required>
         <span><a href="/forget-password" class="text-end my-2 d-flex justify-content-end d-inline-block">Forget Password?</a></span>
         <span class="alert-msg text-center"></span>
-        <button type="submit" id="admin-login">Login</button>
+        <button type="submit" id="user-login">Login</button>
       </form>
       <p>Don't have an account? <a href="/signup" id="signup-link">Sign up</a></p>
     </div>

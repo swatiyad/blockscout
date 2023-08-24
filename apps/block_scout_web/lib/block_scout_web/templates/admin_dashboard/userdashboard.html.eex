@@ -1,0 +1,21 @@
+<div class="container mt-30">
+<script defer src="<%= static_path(@conn, "/js/userdashboard.js") %>"></script>
+<div class="overflow-auto dashboard-username" data-id="<%= @id %>">
+<h1>Registration Data</h1>
+<table class="table">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Username</th>
+      <th>Email</th>
+      <th>Verification status</th>
+      <th>Admin status</th>
+      <th>Date</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody id="data-body">
+  </tbody>
+</table>
+</div>
+</div>

@@ -13,8 +13,7 @@ document.querySelector(".verifybutton").onclick = async function(){
         const response = await axios.post(apiUrl, requestData);
         console.log("Signup Response:", response.data);
             if(response.data.status==true){
-                window.location.href = "/signin"
-               
+                window.location.href = "/signin"    
             }
     
         // Handle the response or perform further actions
