@@ -89,13 +89,13 @@
 
 <div class="container container1234">
 
-    <div class="form-container" id="add-icon-form">
+    <div class="form-container" id="add-icon-form" data-id="<%= @id %>">
       <h1>Add Icon</h1>
-    <form>
+    <form id="add-icon">
         <label for="taddress">Token Address</label>
         <input type="text" id="taddress" name="taddress" required>
         <label for="imgUrl">Image URL</label>
-        <input type="text" id="imgUrl" name="imgUrl" required>
+        <input type="file" id="imgUrl" name="imgUrl" required>
         <span class="alert-msg text-center"></span>
         <button type="submit" id="add-token-icon" data-id="<%= @id %>">Submit</button>
      </form>

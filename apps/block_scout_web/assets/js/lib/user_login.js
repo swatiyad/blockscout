@@ -1,10 +1,10 @@
 import axios from "axios";
 
-document.querySelector("#admin-login").onclick = async function(e){
+document.querySelector("#user-login").onclick = async function(e){
     e.preventDefault()
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
-    const apiUrl = "https://wyzthscan.org/node-api/admin-login";
+    const apiUrl = "https://wyzthscan.org/node-api/login";
     const requestData = {
       username:username.toLowerCase(),
       password: password,
@@ -20,7 +20,7 @@ document.querySelector("#admin-login").onclick = async function(e){
         document.querySelector(".alert-msg").style.color = "green";
         document.querySelector(".alert-msg").textContent = data.data.message;
         window.localStorage.setItem("username", username);
-        window.location.href = `/admin-dashboard/${username}`;
+        window.location.href = `/add-icon/${username}`;
     }
 }
 

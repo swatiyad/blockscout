@@ -36,6 +36,9 @@ document.getElementById("admin-signup").onclick = async function(e) {
         document.querySelector(".signup-form").style.display="none";
         document.querySelector(".signup-notification").innerHTML="Check Email for Verification.";
 
+        }else if(response.data.status==false){
+          document.querySelector(".signup-error").style.color="red"
+          document.querySelector(".signup-error").innerHTML=response.data.message;
         }
 
     // Handle the response or perform further actions

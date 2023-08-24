@@ -75,6 +75,7 @@
   text-align: center;
   margin: 8px;
 }
+
 .dark-theme-applied .form-container{
   background-color: #000;
   color: #fff;
@@ -85,34 +86,21 @@
     color: #fff;
     background-color: ##ccc
   }
-
-
 </style>
-<script defer src="<%= static_path(@conn, "/js/admin_signup.js") %>"></script>
-
+<script defer src="<%= static_path(@conn, "/js/admin_login.js") %>"></script>
 <div class="container container1234">
-<div class="form-container" id="signup-form" >
-<h1>Sign Up</h1>
-<form class="signup-form">
-  <label for="new-username">Username</label>
-  <input type="text" id="new-username" name="new-username" required>
-  <label for="new-email">Email</label>
-  <input type="email" id="new-email" name="new-email" required>
-  <span class="confirm-email-alert"></span>
-  <label for="comfirm-email">Confirm Email</label>
-  <input type="email" id="comfirm-email" name="confirm-email" required>
-  <label for="new-password">Password</label>
-  <input type="password" id="new-password" name="new-password" required>
-  <span class="confirm-password-alert"></span>
-  <label for="confirm-password">Confirm Password</label>
-  <input type="password" id="confirm-password" name="confirm-password" required>
-  <span class="confirm-password-alert"></span>
-  <span class="signup-error text-center"></span>
-  <button type="submit" id="admin-signup">Sign Up</button>
-  </form>
+    <div class="form-container" id="login-form">
+      <h1>Login</h1>
+      <form>
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+        <span><a href="/forget-password" class="text-end my-2 d-flex justify-content-end d-inline-block">Forget Password?</a></span>
+        <span class="alert-msg text-center"></span>
+        <button type="submit" id="admin-login">Login</button>
+      </form>
+      <p>Don't have an account? <a href="/signup" id="signup-link">Sign up</a></p>
+    </div>
 
-<p>Already have an account? <a href="/signin" id="login-link">Sign In</a></p>
-<div class="signup-notification text-center"></div>
-</div>
-
-</div>
+  </div>
