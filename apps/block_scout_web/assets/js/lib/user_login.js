@@ -19,7 +19,7 @@ document.querySelector("#user-login").onclick = async function(e){
     }else{
         document.querySelector(".alert-msg").style.color = "green";
         document.querySelector(".alert-msg").textContent = data.data.message;
-        window.localStorage.setItem("username", username);
+        window.sessionStorage.setItem("username", username);
         window.location.href = `/add-icon/${username}`;
     }
 }
