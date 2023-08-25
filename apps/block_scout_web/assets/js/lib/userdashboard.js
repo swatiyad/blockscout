@@ -3,7 +3,8 @@ import axios from "axios";
 
 document.addEventListener("DOMContentLoaded", () => {
   const dataBody = document.getElementById("data-body");
-  const username=document.querySelector(".dashboard-username").getAttribute("data-id");
+  // const username=document.querySelector(".dashboard-username").getAttribute("data-id");
+ const username = window.sessionStorage.getItem("username")
 
 
   // Function to fetch and display registration data
