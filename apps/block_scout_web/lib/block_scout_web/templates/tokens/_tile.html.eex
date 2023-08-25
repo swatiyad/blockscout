@@ -5,7 +5,7 @@
         <%= @index %>
       </span>
   </td>
-  <td class="token-icon">
+  <td class="stakes-td token-icon">
     <%= if System.get_env("DISPLAY_TOKEN_ICONS") === "true" do %>
       <% chain_id_for_token_icon = Application.get_env(:block_scout_web, :chain_id) %>
       <% foreign_token_contract_address_hash = nil %>
