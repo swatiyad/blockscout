@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 
                 <td class="hide_for_hompage">
                   <span class=" rounded-sm p-1">
-                    <span class="fs-12"> ${detail.type} </span>
+                    <span class="fs-12"> ${detail.type=="ERC-721"?"WRC-721":"WRC-20"} </span>
                    
                   </span>
                 </td>
@@ -261,7 +261,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 
               <td class="hide_for_hompage">
                 <span class=" rounded-sm p-1">
-                  <span class="fs-12"> ${detail.type} </span>
+                  <span class="fs-12"> ${detail.type=="ERC-721"?"WRC-721":"WRC-20"} </span>
                  
                 </span>
               </td>
