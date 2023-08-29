@@ -2,6 +2,7 @@
 <% other_nets = dropdown_other_nets() %>
 <% test_nets = test_nets(dropdown_nets()) %>
 <% main_nets = dropdown_head_main_nets() %>
+<script defer src="<%= static_path(@conn, "/js/nav.js") %>"></script>
 <div class="sticky-top border-bottom" id="abc">
   <div class="container">
     <div class="row topbar_search align-items-center py-2">
@@ -253,17 +254,18 @@
               </div>
             </li>
             <li>
-            <a class="nav-link" href="/signin">
+            <a class="nav-link sign-in-text" href="/signin">
               <i class="fa fa-user-circle mx-1 mobile-d-none"></i> Sign In
             </a>
-            </li>
+          </li>
 
 
         <!--  <li class="header-nav-separator mt-lg-2"></li>
           <li class="nav-item ">
             <a href="#" class="nav-link topnav-nav-link">
               <i class="fa fa-user-circle mr-2 text-green"></i>
-              <%= gettext("Sign In") %>
+              # <%= gettext("Sign In") %>
+              <span class="sign-in-text">Sign In</span>
             </a>
           </li>
           -->
