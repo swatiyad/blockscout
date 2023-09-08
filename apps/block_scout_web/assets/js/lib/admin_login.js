@@ -4,7 +4,7 @@ document.querySelector("#admin-login").onclick = async function(e){
     e.preventDefault()
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
-    const apiUrl = "https://wyzthscan.org/node-api/admin-login";
+    const apiUrl = "https://dotblox.com/node-api/admin-login";
     const requestData = {
       username:username.toLowerCase(),
       password: password,
