@@ -6112,7 +6112,7 @@ defmodule Explorer.Chain do
         "100" ->
           "xdai"
 
-          "303" ->
+          "304" ->
             "wyz"
 
         _ ->
