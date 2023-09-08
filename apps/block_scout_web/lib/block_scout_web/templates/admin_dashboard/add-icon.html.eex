@@ -20,7 +20,7 @@
   text-align: center;
   margin-bottom: 30px;
   font-size: 36px;
-  color: #a9ab3f;
+  color: #a14f9d;
 }
 
 .form-container form {
@@ -45,7 +45,7 @@
 
 .form-container button {
   padding: 10px;
-  background-color: #a9ab3f;
+  background-color: #a14f9d;
   color: #fff;
   border: none;
   border-radius: 5px;

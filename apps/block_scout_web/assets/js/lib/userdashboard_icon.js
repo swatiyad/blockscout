@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     dataBody.innerHTML = ""; // Clear existing data
 
     try {
-      const response = await axios.post("https://wyzthscan.org/node-api/get-user-icon-data/"+username);
+      const response = await axios.post("https://dotblox.com/node-api/get-user-icon-data/"+username);
       const data = response.data.data;
 
       if (data.length == 0) {
@@ -102,7 +102,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   async function updateData(id, newData) {
     try {
-      const response = await axios.put(`https://wyzthscan.org/node-api/update-user-icon-data/${id}`, newData);
+      const response = await axios.put(`https://dotblox.com/node-api/update-user-icon-data/${id}`, newData);
 
       if (response.status === 200) {
         displayData();
@@ -116,7 +116,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   async function deleteData(id) {
     try {
-      const response = await axios.delete(`https://wyzthscan.org/node-api/delete-user-icon-data/${id}`);
+      const response = await axios.delete(`https://dotblox.com/de-api/delete-user-icon-data/${id}`);
 
       if (response.status === 200) {
         displayData();

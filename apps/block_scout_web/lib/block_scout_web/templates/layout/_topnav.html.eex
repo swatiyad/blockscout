@@ -8,7 +8,7 @@
     <div class="row topbar_search align-items-center py-2">
       <div class="col-lg-6 pl-4">
           <div class="d-none d-lg-inline-block m text-nowrap fs-12">
-            <span class="text-secondary"> WYZth Price :</span> <span class="text-info"> $20</span>
+            <span class="text-secondary"> DotBlox Price :</span> <span class="text-info"> $20</span>
             <span data-toggle="tooltip" data-placement="top" data-title="Changes in the last 24 hours" data-original-title="" title="">
               <span class="text-success d-none"> (+1.27%)</span>
             </span>
@@ -118,7 +118,7 @@
                 </a>
                 <div class="dropdown-menu fade-up" aria-labeledby="navbarTransactionsDropdown">
                   <%= link(
-                        gettext("Top Tokens WRC20"),
+                        gettext("Top Tokens"),
                         class: "dropdown-item #{tab_status("tokens", @conn.request_path)}",
                         to: tokens_path(@conn, :index)
                       ) %>
@@ -184,7 +184,7 @@
                       ) %>
 
 
-                      <a class="dropdown-item" target="_blank" href="https://docs.wyzth.org/docs/Overview"> API Documentation</a>
+                      <a class="dropdown-item" target="_blank" href="#"> API Documentation</a>
 
                 </div>
               </li>
@@ -242,13 +242,13 @@
                     <%= link(
                       gettext("Mainnet"),
                       class: "dropdown-item #{tab_status("mainnet", @conn.request_path)}",
-                      to: "https://wyzthscan.org/"
+                      to: "#"
                     ) %>
 
                     <%= link(
                       gettext("Testnet"),
                       class: "dropdown-item #{tab_status("testnet", @conn.request_path)}",
-                      to: "https://testnet.wyzthscan.org/"
+                      to: "#"
                     ) %>
 
               </div>
@@ -291,13 +291,13 @@
                       <%= link(
                         gettext("Mainnet"),
                         class: "dropdown-item #{tab_status("mainnet", @conn.request_path)}",
-                        to: "https://wyzthscan.org/"
+                        to: "#"
                       ) %>
 
                       <%= link(
                         gettext("Testnet"),
                         class: "dropdown-item #{tab_status("testnet", @conn.request_path)}",
-                        to: "https://testnet.wyzthscan.org/"
+                        to: "#"
                       ) %>
 
                 </div>

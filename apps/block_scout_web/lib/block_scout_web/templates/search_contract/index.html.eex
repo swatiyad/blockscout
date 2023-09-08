@@ -1,4 +1,4 @@
- 
+
  <section class="container">
  <script defer src="<%= static_path(@conn, "/js/contract-search.js") %>"></script>
 
@@ -18,7 +18,7 @@
 <i class="fa fa-file-lines fs-4" style="font-size:40px"></i>
 </span>
 </div>
-<p class="fs-base mb-4">Search Smart Contract source codes on WyzthScan and filter by contract &amp; deployer addresses, creation date, block number and more.</p>
+<p class="fs-base mb-4">Search Smart Contract source codes onDotbloxScan and filter by contract &amp; deployer addresses, creation date, block number and more.</p>
 <form class="mb-3">
 <div class="search-panel-container d-flex">
 <div class="flex-grow-1 position-relative auto-search-max-height ">
@@ -105,18 +105,18 @@
             </div>
 
             <div class="contract-list-search text-center py-2"></div>
-            
+
             <div id="ContentPlaceHolder1_pageRecords">
               <form
-               
+
                 id="ctl00"
               >
-            
-              
+
+
                 </div>
-              
+
                 <!-- <div class="d-md-flex justify-content-between my-3">
-                
+
         <ul class="pagination pagination-sm mb-0">
           <li class="page-item disabled">
             <span class="page-link">First</span>
@@ -159,5 +159,3 @@
 
 
     </section>
-
-
