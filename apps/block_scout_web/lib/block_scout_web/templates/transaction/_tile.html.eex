@@ -217,7 +217,7 @@
 
 
             <!-- Value  -->
-            <td class="hide_for_homepage">
+            <td class="hide_for_homepage text-truncate width100">
               <span class="">
                 <%= value(@transaction, include_label: false) %> <%= Explorer.coin_name() %>
               </span>

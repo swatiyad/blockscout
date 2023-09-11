@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", async function () {
   
     const addrs = dynamicIcon.getAttribute("data-address-hash");
   
-    let apiUrl = "https://dotblox.com/node-api/get-token-image";
+    let apiUrl = "https://explorer.dotblox.io/node-api/get-token-image";
     let requestData = {
       address: addrs.toLowerCase()
     };

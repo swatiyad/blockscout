@@ -28,7 +28,7 @@ const chartOptions = {
 
   export const fetchApi = async () => {
     try {
-      const response = await axios.get('https://dotblox.com/node-api/average-block-size');
+      const response = await axios.get('https://explorer.dotblox.io/node-api/average-block-size');
       const data = response.data.data; // Assuming the response contains the desired data
       const categories = [];
       const values = [];
