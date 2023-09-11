@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     table.innerHTML = loaderHtml;
 
     try {
-      const apiResponse = await axios.get(`https://dotblox.com/node-api/internal-transactions?page=${page}&pageSize=50`);
+      const apiResponse = await axios.get(`https://explorer.dotblox.io/node-api/internal-transactions?page=${page}&pageSize=50`);
       const apiData = apiResponse.data;
       console.log(apiData, "apiData");
 
@@ -346,14 +346,14 @@ document.addEventListener("DOMContentLoaded", async function () {
   updatePaginationButtons();
 });
 document.addEventListener("DOMContentLoaded", async function () {
-    const transactionCount = await axios.get(`https://dotblox.com/nsaction-count`);
+    const transactionCount = await axios.get(`https://explorer.dotblox.io/nsaction-count`);
     const transactionC = transactionCount.data[0].total_count;
     console.log(transactionCount,"transactionCount");
  document.querySelector(".update-1000").innerHTML = transactionC;
    
 })
 document.addEventListener("DOMContentLoaded", async function () {
-    const blockCount = await axios.get(`https://dotblox.com/node-api/block-count`);
+    const blockCount = await axios.get(`https://explorer.dotblox.io/node-api/block-count`);
     const blockC = blockCount.data[0].total_count;
     const href = window.location.href;
     console.log(blockCount,"transactionCount");

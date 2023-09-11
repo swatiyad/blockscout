@@ -197,7 +197,7 @@ let token=
 </div>`
   document.querySelector("#ContentPlaceHolder1_Div1a_body_1").innerHTML = trans;
   document.querySelector("#ContentPlaceHolder1_Div1a_body_2").innerHTML = token;
-  const mainnet = "https://dotblox.com/"
+  const mainnet = "https://explorer.dotblox.io/"
   const testnet = "http://localhost:3000/"
   const [maxRecieverCount,topsender, maxSendCount, api, TopTokenApi] =
   await Promise.all([
