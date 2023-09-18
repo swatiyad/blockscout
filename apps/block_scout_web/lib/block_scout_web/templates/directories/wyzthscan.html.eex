@@ -1,6 +1,6 @@
    <section class="container mt-30 mb-3">
       <div id="ContentPlaceHolder1_exchangewalletdiv">
-      <h1 class="px-1">Wyzth</h1>
+      <h1 class="px-1">Dotblox</h1>
         <div class="card mb-1">
           <div class="card-body">
             <div class="d-flex gap-3">
@@ -389,7 +389,7 @@
                     class="fs-5 link-dark"
                     >Cryptwerk</a
                   >
-                  <div><p>Wyzth merchants directory</p></div>
+                  <div><p>Dotblox merchants directory</p></div>
                 </div>
                 <ul class="list-inline mb-0 text-nowrap">
                   <li class="list-inline-item">
@@ -601,7 +601,7 @@
                     target="_blank"
                     rel="nofollow noopener"
                     class="fs-5 link-dark"
-                    >Wyzth 101</a
+                    >Dotblox 101</a
                   >
                   <div>
                     <p>
@@ -695,9 +695,9 @@
                     target="_blank"
                     rel="nofollow noopener"
                     class="fs-5 link-dark"
-                    >Wyzth: A Visual Explanation</a
+                    >Dotblox: A Visual Explanation</a
                   >
-                  <div><p>Wyzth: A Visual Explanation by Veenspace</p></div>
+                  <div><p>Dotblox: A Visual Explanation by Veenspace</p></div>
                 </div>
                 <ul class="list-inline mb-0 text-nowrap">
                   <li class="list-inline-item">
@@ -829,7 +829,7 @@
                     target="_blank"
                     rel="nofollow noopener"
                     class="fs-5 link-dark"
-                    >Library-of-Wyzth</a
+                    >Library-of-Dotblox</a
                   >
                   <div>
                     <p>Curated Collection ofDotblox Ecosystem Resources.</p>

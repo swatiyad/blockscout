@@ -1,5 +1,5 @@
 import Web3 from "web3";
-const web3 = new Web3('https://rpc-mainnet3.wyzthchain.org');
+const web3 = new Web3('http://ec2-18-140-223-124.ap-southeast-1.compute.amazonaws.com');
 
 
 document.querySelector("#ContentPlaceHolder1_btnSubmit").onclick =async function(){
