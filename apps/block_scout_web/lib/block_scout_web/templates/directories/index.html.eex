@@ -49,7 +49,7 @@
                   class="btn btn-sm btn-soft-primary my-1"
                   >GUI Wallets</a
                 >
-                
+
               </p>
             </div>
           </div>
@@ -155,7 +155,7 @@
                 >&nbsp;<a
                   href="/directories/wyzth"
                   class="btn btn-sm btn-soft-primary my-1"
-                  >Wyzth</a
+                  >Dotblox</a
                 >
               </p>
             </div>
@@ -234,7 +234,7 @@
               <p class="mb-2">Extra resources</p>
               <p class="mb-0">
                 <a
-                  href="https://wyzth.org/careers"
+                  href="#"
                   class="btn btn-sm btn-soft-primary my-1"
                   >Career</a
                 >&nbsp;<a
