@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     dataBody.innerHTML = ""; // Clear existing data
 
     try {
-      const response = await axios.post(`https://wyzthscan.org/node-api/get-all-user-data/${username}`);
+      const response = await axios.post(`https://testnet.wyzthscan.org/node-api/get-all-user-data/${username}`);
       const data = response.data.data;
       console.log(data, "data");
       if (data.length === 0) {
@@ -123,7 +123,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   async function updateData(id, newUsername, newEmail, newIsVerify, newIsAdmin) {
     try {
-      const response = await axios.put(`https://wyzthscan.org/node-api/get-all-user-data/${id}`, {
+      const response = await axios.put(`https://testnet.wyzthscan.org/node-api/get-all-user-data/${id}`, {
         username: newUsername,
         email: newEmail,
         isverified: newIsVerify,
@@ -142,7 +142,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   async function deleteData(id) {
     try {
-      const response = await axios.delete(`https://wyzthscan.org/node-api/get-all-user-data/${id}`);
+      const response = await axios.delete(`https://testnet.wyzthscan.org/node-api/get-all-user-data/${id}`);
 
       if (response.status === 200) {
         displayData();
