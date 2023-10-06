@@ -86,6 +86,13 @@
   top: 5px;
   font-size:12px
 }
+.dark-theme-applied  .badge-color{
+  background: red;
+  position: relative;
+  left: 145px !important;
+  top: 5px;
+  font-size:12px
+}
 
 .navbar-image .media_bg_icon {
   background: url(/images/small-logo-icon.svg);
