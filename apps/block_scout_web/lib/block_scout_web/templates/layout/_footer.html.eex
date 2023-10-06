@@ -69,7 +69,7 @@
 }
 
 .dark-theme-applied .logo_custom_img .logo_img {
-  background: url(/images/wyz-logo_darktheme.png);
+  background: url(/images/wyz-logo-dark.svg);
   background-size: contain;
   background-repeat: no-repeat;
   width: 176px;
@@ -81,26 +81,26 @@
 .navbar-image {margin:0 10px;}
 
 .navbar-image .media_bg_icon {
-  background: url(/images/small-logo-icon.png);
+  background: url(/images/small-logo-icon.svg);
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .dark-theme-applied .navbar-image .media_bg_icon {
-  background: url(/images/small-logo-icon-dark.png);
+  background: url(/images/small-logo-icon.svg);
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .dashboard_home .media_bg_icon {
-    background: url(/images/small-logo-icon.png);
+    background: url(/images/small-logo-icon.svg);
     background-size: contain;
     background-position: 27% 4%;
     background-repeat: no-repeat;
 }
 
 .dark-theme-applied .dashboard_home .media_bg_icon{
-  background: url(/images/small-logo-icon-dark.png);
+  background: url(/images/small-logo-icon.svg);
   background-size: contain;
   background-repeat: no-repeat;
 }
