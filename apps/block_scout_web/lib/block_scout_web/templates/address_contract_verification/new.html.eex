@@ -62,7 +62,7 @@
               b) otherwise you will be asked to upload source files and JSON metadata file(s).<br/>
             4. Verification of Vyper contract.
             </div>
-              
+
           </div>
         </div>
 
@@ -80,14 +80,14 @@
             gettext("Next"),
             to: address_verify_contract_via_flattened_code_path(@conn, :new, @address_hash),
             id: "verify_via_flattened_code_button",
-            class: "btn-full-primary mr-2",
+            class: "btn-full-primary mr-2 text-white",
             "data-button-loading": "animation"
           ) %>
           <%= link(
             gettext("Next"),
             to: address_verify_contract_via_json_path(@conn, :new, @address_hash),
             id: "verify_via_sourcify_button",
-            class: "btn-full-primary mr-2",
+            class: "btn-full-primary mr-2 text-white",
             style: "display: none;",
             "data-button-loading": "animation"
           ) %>
@@ -95,7 +95,7 @@
             gettext("Next"),
             to: address_verify_vyper_contract_path(@conn, :new, @address_hash),
             id: "verify_vyper_contract_button",
-            class: "btn-full-primary mr-2",
+            class: "btn-full-primary mr-2 text-white",
             style: "display: none;",
             "data-button-loading": "animation"
           ) %>
@@ -103,7 +103,7 @@
             gettext("Next"),
             to: address_verify_contract_via_standard_json_input_path(@conn, :new, @address_hash),
             id: "verify_via_standard_json_input_button",
-            class: "btn-full-primary mr-2",
+            class: "btn-full-primary mr-2 text-white",
             style: "display: none;",
             "data-button-loading": "animation"
           ) %>
@@ -111,7 +111,7 @@
             gettext("Next"),
             to: address_verify_contract_via_multi_part_files_path(@conn, :new, @address_hash),
             id: "verify_via_multi_part_files_button",
-            class: "btn-full-primary mr-2",
+            class: "btn-full-primary mr-2 text-white",
             style: "display: none;",
             "data-button-loading": "animation"
           ) %>
