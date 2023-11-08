@@ -74,6 +74,10 @@ a {
     max-width: 100%;
     height: auto;
 }
+.banner-staking{
+    width:600px;
+    height:115px;
+}
 .pagination-container .pagination .active{
     background-color: #e2e6bf !important;
 }
@@ -1608,6 +1612,10 @@ input.nosubmit {
     }
     .header-searchbar .form-control {
       width:30%!important;
+    }
+    .banner-staking{
+        width:100%;
+       
     }
     // .header-searchbar .main-search-autocomplete {
     //   width:30%!important;
