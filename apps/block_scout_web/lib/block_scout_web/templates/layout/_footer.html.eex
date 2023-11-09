@@ -29,7 +29,7 @@
 }
 
 .search_backdrop {
-  background-image: linear-gradient(to right,  #864982, #f085ea, #c573c0, #a14f9d, #a14f9d);
+  background-image: linear-gradient(to right,#8A1B00, #8A1B00, #8A1B00, #8A1B18, #cc7674);
   width: 100%;
   color: #fff;
 }
@@ -41,7 +41,7 @@
 }
 
 .footer_backdrop {
-  background-image: linear-gradient(to right,  #864982, #f085ea, #c573c0, #a14f9d, #a14f9d)
+  background-image: linear-gradient(to right,#8A1B00, #8A1B00, #8A1B00, #8A1B18, #cc7674);
   width: 100%;
   color: #fff;
 }
@@ -61,19 +61,20 @@
 
 
 .logo_custom_img .logo_img {
-  background: url(/images/dotblox.png);
+  background: url(/images/helper_world_logo.svg);
   background-size: contain;
   background-repeat: no-repeat;
   width: 189px;
-  height: 40px;
+  height: 45px;
 }
 
 .dark-theme-applied .logo_custom_img .logo_img {
-  background: url(/images/dotblox.png);
+  background: url(/images/helper_world_logo.svg);
   background-size: contain;
   background-repeat: no-repeat;
   width: 176px;
-  height: 32px;
+  height: 45px;
+  filter: brightness(0) invert(1);
 }
 .navbar-image .btn {
   padding: 6px 8px!important;
@@ -178,7 +179,7 @@ a.metamask_btn {
   font-family:  unset!important
     font-weight: 400;
   font-size: 22px;
-  color:#a14f9d;
+  color:#901f1f;
 }
 
 .dark-theme-applied .dark-mode-changer-btn::before {
@@ -222,7 +223,7 @@ a.metamask_btn {
 
       <div class="footer-about-bg"></div>
       <p class="text-white">
-      <%= gettext("DotBlox is a Block Explorer and Analytics Platform for DotBlox ") %>  <%= gettext(" chain, a decentralized smart contracts platform.") %></p>
+      <%= gettext("Helper world is a Block Explorer and Analytics Platform for Helper world ") %>  <%= gettext(" chain, a decentralized smart contracts platform.") %></p>
 
       <a type="button" class="metamask_btn btn-sm text-decoration-none  py-1 mr-2" href="/preferences">
         <i class="fas fa-cogs mr-1"></i> Preferences
@@ -267,7 +268,7 @@ a.metamask_btn {
         <h3 class="text-white heading_border"><%= gettext("Products & Services") %></h3>
         <ul style="list-style: none;margin: 0; padding: 0; line-height: 31px;">
 
-        <li><a href="#" target="_blank" rel="noreferrer" class="footer-link"><%= gettext("DotBox") %></a></li>
+        <li><a href="#" target="_blank" rel="noreferrer" class="footer-link"><%= gettext("Helper Chain") %></a></li>
         <li><a href="/chat" target="_blank" rel="noreferrer" class="footer-link"><%= gettext("Blockscan Chat") %></a></li>
 
         <!--Absinthe<%= for %{title: title, url: url} <- main_nets do %>
@@ -303,7 +304,7 @@ a.metamask_btn {
   <div class="row text-white py-2">
     <div class="col-md-6 col-6 mb-sm">
       <div class="d-flex pt-1">
-        <div>Dotblox &copy; 2023 </div>
+        <div>Helper world &copy; 2023 </div>
         <div class="ml-2"><span class="text-danger ms-2"> <i class="fa fa-heart"></i> </span></div>
       </div>
     </div>

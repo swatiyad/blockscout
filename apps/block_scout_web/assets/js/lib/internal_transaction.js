@@ -141,7 +141,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                 </td>
                 <td class="show_for_hompage text-right">
                   <span class="border rounded-sm p-1">
-                    <span class="fs-10 font-weight-bold"> ${detail.value / 1e18} DTBX </span>
+                    <span class="fs-10 font-weight-bold"> ${detail.value / 1e18} HLPR </span>
       
                   </span>
                 </td>
@@ -289,7 +289,7 @@ document.addEventListener("DOMContentLoaded", async function () {
       
                 <!-- Value  -->
                 <td class="hide_for_homepage">
-                  <span class="">${detail.value / 1e18} DTBX </span>
+                  <span class="">${detail.value / 1e18} HLPR </span>
                 </td>
       
                 <!-- Tx Fee  -->
