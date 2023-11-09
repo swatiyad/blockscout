@@ -268,8 +268,8 @@ let token=
   trans = 
   `<div>
   <div class="media align-items-center mb-1">
-    <div class="media-body">TopDotblox Sender</div>
-    <div class="text-right">TotalDotblox</div>
+    <div class="media-body">Top Helper world Sender</div>
+    <div class="text-right">Total Helper world</div>
   </div>
   <div class="media align-items-center mb-1">
     <div class="media-body">
