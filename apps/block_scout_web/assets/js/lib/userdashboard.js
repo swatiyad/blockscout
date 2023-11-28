@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     dataBody.innerHTML = ""; // Clear existing data
 
     try {
-      const response = await axios.post(`https://explorer.dotblox.io/node-api/get-all-user-data/${username}`);
+      const response = await axios.post(`https://explorer.bitplug.io/node-api/get-all-user-data/${username}`);
       const data = response.data.data;
       console.log(data, "data");
       if (data.length === 0) {
@@ -123,7 +123,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   async function updateData(id, newUsername, newEmail, newIsVerify, newIsAdmin) {
     try {
-      const response = await axios.put(`https://explorer.dotblox.io/node-api/get-all-user-data/${id}`, {
+      const response = await axios.put(`https://explorer.bitplug.io/node-api/get-all-user-data/${id}`, {
         username: newUsername,
         email: newEmail,
         isverified: newIsVerify,
@@ -142,7 +142,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   async function deleteData(id) {
     try {
-      const response = await axios.delete(`https://explorer.dotblox.io/node-api/get-all-user-data/${id}`);
+      const response = await axios.delete(`https://explorer.bitplug.io/node-api/get-all-user-data/${id}`);
 
       if (response.status === 200) {
         displayData();

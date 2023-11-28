@@ -2,7 +2,7 @@ $body-dark: #252525; // body background
 $dark-bg: #333; // hero shade
 $dark-light-bg: #242424; // pills bg shade
 $dark-light: #333; // tile light top share
-$labels-dark: #a14f9d; // header nav, labels
+$labels-dark: #ff54a6; // header nav, labels
 $dark-stakes-banned-background: #313131;
 // Switcher
 .dark-mode-changer {
@@ -690,7 +690,7 @@ $dark-stakes-banned-background: #313131;
     .dark-theme-applied .table td,
     .dark-theme-applied .table th,
     .dark-theme-applied hr {
-        border-top-color: darken($labels-dark, 30);
+        border-top-color: transparent !important
     }
     .btn-copy-ico svg path {
         fill: #fff;
