@@ -5,8 +5,8 @@ document.addEventListener("DOMContentLoaded", async function () {
 
 //   let trans = `<div>
 //     <div class="media align-items-center mb-1">
-//       <div class="media-body">TopDotbloxx Sender</div>
-//       <div class="text-right">TotalDotblox</div>
+//       <div class="media-body">TopBITPLUGx Sender</div>
+//       <div class="text-right">TotalBTP</div>
 //     </div>
 //     <div class="media align-items-center mb-1">
 //       <div class="media-body">
@@ -28,8 +28,8 @@ document.addEventListener("DOMContentLoaded", async function () {
 //     </div>
 //     <hr class="pb-1 hr" />
 //     <div class="media align-items-center mb-1">
-//       <div class="media-body">TopDotblox Receiver</div>
-//       <div class="text-right">TotalDotblox</div>
+//       <div class="media-body">TopBTP Receiver</div>
+//       <div class="text-right">TotalBTP</div>
 //     </div>
 //     <div class="media align-items-center mb-1">
 //       <div class="media-body">
@@ -197,7 +197,7 @@ let token=
 </div>`
   document.querySelector("#ContentPlaceHolder1_Div1a_body_1").innerHTML = trans;
   document.querySelector("#ContentPlaceHolder1_Div1a_body_2").innerHTML = token;
-  const mainnet = "https://explorer.dotblox.io/"
+  const mainnet = "https://explorer.bitplug.io/"
   const testnet = "http://localhost:3000/"
   const [maxRecieverCount,topsender, maxSendCount, api, TopTokenApi] =
   await Promise.all([
@@ -268,8 +268,8 @@ let token=
   trans = 
   `<div>
   <div class="media align-items-center mb-1">
-    <div class="media-body">TopDotblox Sender</div>
-    <div class="text-right">TotalDotblox</div>
+    <div class="media-body">Top BTP Sender</div>
+    <div class="text-right">Total BTP</div>
   </div>
   <div class="media align-items-center mb-1">
     <div class="media-body">
@@ -294,8 +294,8 @@ let token=
   </div>
   <hr class="pb-1 hr" />
   <div class="media align-items-center mb-1">
-    <div class="media-body">TopDotblox Receiver</div>
-    <div class="text-right">TotalDotblox</div>
+    <div class="media-body">Top BTP Receiver</div>
+    <div class="text-right">Total BTP</div>
   </div>
   <div class="media align-items-center mb-1">
     <div class="media-body">

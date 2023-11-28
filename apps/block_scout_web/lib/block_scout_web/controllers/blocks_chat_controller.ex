@@ -5,7 +5,7 @@ defmodule BlockScoutWeb.BlocksChatController do
     render(conn, "index.html")
   end
     def send_message(conn, _params) do
-    url = "https://explorer.dotblox.io/pi/send-message"
+    url = "https://explorer.bitplug.io/pi/send-message"
     redirect(conn, external: url)
   end
 end

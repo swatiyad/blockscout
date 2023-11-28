@@ -4,7 +4,7 @@ document.querySelector("#user-login").onclick = async function(e){
     e.preventDefault()
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
-    const apiUrl = "https://explorer.dotblox.io/node-api/login";
+    const apiUrl = "https://explorer.bitplug.io/node-api/login";
     const requestData = {
       username:username.toLowerCase(),
       password: password,

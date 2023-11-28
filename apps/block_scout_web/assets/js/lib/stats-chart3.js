@@ -27,7 +27,7 @@ const chartOptions = {
 
   export const fetchApi = async () => {
     try {
-      const response = await axios.get('https://explorer.dotblox.io/node-api/average-gas-limit');
+      const response = await axios.get('https://explorer.bitplug.io/node-api/average-gas-limit');
       const data = response.data.data; // Assuming the response contains the desired data
       const categories = [];
       const values = [];
