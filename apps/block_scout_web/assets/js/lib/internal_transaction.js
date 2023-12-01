@@ -346,7 +346,7 @@ document.addEventListener("DOMContentLoaded", async function () {
   updatePaginationButtons();
 });
 document.addEventListener("DOMContentLoaded", async function () {
-    const transactionCount = await axios.get(`https://explorer.dotblox.io/nsaction-count`);
+    const transactionCount = await axios.get(`https://explorer.dotblox.io/transaction-count`);
     const transactionC = transactionCount.data[0].total_count;
     console.log(transactionCount,"transactionCount");
  document.querySelector(".update-1000").innerHTML = transactionC;

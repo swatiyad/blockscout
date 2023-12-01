@@ -29,7 +29,7 @@
 }
 
 .search_backdrop {
-  background-image: linear-gradient(to right,  #864982, #f085ea, #c573c0, #a14f9d, #a14f9d);
+  background-image: linear-gradient(to right,  #ff383f, #ff383f, #ff383f, #ff383f, #ff383f);
   width: 100%;
   color: #fff;
 }
@@ -41,7 +41,7 @@
 }
 
 .footer_backdrop {
-  background-image: linear-gradient(to right,  #864982, #f085ea, #c573c0, #a14f9d, #a14f9d)
+  background-image: linear-gradient(to right,  #ff383f, #ff383f, #ff383f, #ff383f, #ff383f);
   width: 100%;
   color: #fff;
 }
@@ -61,19 +61,26 @@
 
 
 .logo_custom_img .logo_img {
-  background: url(/images/dotblox.png);
+  # background: url(/images/dotblox.png);
   background-size: contain;
   background-repeat: no-repeat;
-  width: 189px;
-  height: 40px;
+  width: 160px;
+  height: 50px;
+  position:relative;
+  left:-35px
+}
+.main-logo{
+  width:100%;
 }
 
 .dark-theme-applied .logo_custom_img .logo_img {
-  background: url(/images/dotblox.png);
+  # background: url(/images/dotblox.png);
   background-size: contain;
   background-repeat: no-repeat;
-  width: 176px;
-  height: 32px;
+  width: 160px;
+  height: 50px;
+  position:relative;
+  left:-35px
 }
 .navbar-image .btn {
   padding: 6px 8px!important;
@@ -107,7 +114,7 @@
 
 .metamask_btn {
   color: #f8f9fa;
-  background: rgba(248, 249, 250, 0.1);
+  background: rgb(231 127 120 / 74%);
   cursor: pointer;
   padding: 6px 10px;
   border-radius: 5px;
@@ -178,7 +185,7 @@ a.metamask_btn {
   font-family:  unset!important
     font-weight: 400;
   font-size: 22px;
-  color:#a14f9d;
+  color:#ff383f;
 }
 
 .dark-theme-applied .dark-mode-changer-btn::before {
@@ -204,7 +211,7 @@ a.metamask_btn {
     <% other_explorers = other_explorers() %>
   <% col_size = if Enum.empty?(other_explorers), do: 2, else: 2 %>
 
-  <div class="row justify-content-md-between py-2">
+  <div class="row justify-content-md-between py-3">
     <div class="col-lg-3 footer-about">
     <!-- Logo -->
       <div class="row footer-logo-row">

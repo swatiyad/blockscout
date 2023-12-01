@@ -4,10 +4,10 @@ $footer-text-color: rgba(#fff, 0.7) !default;
 $footer-link-color: $footer-text-color !default;
 $footer-item-disc-color: $primary !default;
 $footer-social-icon-color: $footer-text-color !default;
-$footer-logo-height: 28px !default;
+$footer-logo-height: 48px !default;
 $footer-logo-width: auto !default;
 .footer {
-    background: #a14f9d;
+    background: #ff383f;
     color: $footer-text-color;
     font-size: 12px;
     line-height: 1.67;
@@ -20,12 +20,15 @@ $footer-logo-width: auto !default;
 }
 
 .footer-logo-row {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 .footer-logo {
     max-height: $footer-logo-height;
     width: $footer-logo-width;
+    position:relative;
+    left:-15px
+
 }
 
 .footer-info-text {
