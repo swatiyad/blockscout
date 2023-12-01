@@ -268,8 +268,8 @@ let token=
   trans = 
   `<div>
   <div class="media align-items-center mb-1">
-    <div class="media-body">TopDotblox Sender</div>
-    <div class="text-right">TotalDotblox</div>
+    <div class="media-body">Top Dotblox Sender</div>
+    <div class="text-right">Total Dotblox</div>
   </div>
   <div class="media align-items-center mb-1">
     <div class="media-body">
@@ -294,8 +294,8 @@ let token=
   </div>
   <hr class="pb-1 hr" />
   <div class="media align-items-center mb-1">
-    <div class="media-body">TopDotblox Receiver</div>
-    <div class="text-right">TotalDotblox</div>
+    <div class="media-body">Top Dotblox Receiver</div>
+    <div class="text-right">Total Dotblox</div>
   </div>
   <div class="media align-items-center mb-1">
     <div class="media-body">
