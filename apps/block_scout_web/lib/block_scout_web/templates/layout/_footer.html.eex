@@ -62,6 +62,7 @@
 
 .logo_custom_img .logo_img {
   # background: url(/images/dotblox.png);
+   # background: url(/images/dotblox.png);
   background-size: contain;
   background-repeat: no-repeat;
   width: 160px;
