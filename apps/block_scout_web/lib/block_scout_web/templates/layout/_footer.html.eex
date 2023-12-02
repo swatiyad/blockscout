@@ -29,7 +29,7 @@
 }
 
 .search_backdrop {
-  background-image: linear-gradient(to right,  #ff383f, #ff383f, #ff383f, #ff383f, #ff383f);
+  background-image: linear-gradient(to right,  #f46166, #f46166, #f46166, #f46166, #f46166);
   width: 100%;
   color: #fff;
 }
@@ -41,7 +41,7 @@
 }
 
 .footer_backdrop {
-  background-image: linear-gradient(to right,  #ff383f, #ff383f, #ff383f, #ff383f, #ff383f);
+  background-image: linear-gradient(to right,  #f46166, #f46166, #f46166, #f46166, #f46166);
   width: 100%;
   color: #fff;
 }
@@ -185,7 +185,7 @@ a.metamask_btn {
   font-family:  unset!important
     font-weight: 400;
   font-size: 22px;
-  color:#ff383f;
+  color:#f46166;
 }
 
 .dark-theme-applied .dark-mode-changer-btn::before {
