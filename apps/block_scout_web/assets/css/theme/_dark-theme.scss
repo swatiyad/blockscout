@@ -32,7 +32,7 @@ $dark-stakes-banned-background: #313131;
 }
 
 .dark-theme-applied {
-    color: #fff;
+    color: #fff !important;
     // navbar
     .navbar.navbar-primary {
         background-color: $dark-light-bg;
@@ -49,7 +49,7 @@ $dark-stakes-banned-background: #313131;
         filter: brightness(40) contrast(2);
     }
     .navbar.navbar-primary .navbar-nav .nav-link {
-        color: $labels-dark;
+        color: #fff !important;
         .nav-link-icon {
             svg path {
                 fill: $labels-dark;
@@ -141,7 +141,7 @@ $dark-stakes-banned-background: #313131;
         box-shadow: 0 0 30px 0 rgba(23, 24, 41, 0.5);
     }
     .card-header {
-        border-bottom-color: darken($labels-dark, 30);
+        // border-bottom-color: darken($labels-dark, 30);
     }
     .address-detail-hash-title {
         color: #fff;
