@@ -32,7 +32,7 @@
     <div class="container navbar-container">
       <div class="clearfix logo_custom_img">
         <a href="/"> <div class="logo_img">
-        <img alt="DotBox Logo" src="/images/dotblox.png" class="main-logo">
+        <img alt="DotBox Logo" src="/images/logo-gcscan.svg" class="main-logo">
 
         </div> </a>
         <!-- <%= link to: webapp_url(@conn), class: "navbar-brand", "data-test": "header_logo" do %>
