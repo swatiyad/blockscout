@@ -29,7 +29,7 @@
 }
 
 .search_backdrop {
-  background-image: linear-gradient(to right,  #000, #000, #000, #000, #000);
+  background-image: linear-gradient(to right,  #032c58, #032c58, #032c58, #032c58, #032c58);
   width: 100%;
   color: #fff;
 }
@@ -41,7 +41,7 @@
 }
 
 .footer_backdrop {
-  background-image: linear-gradient(to right,  #000, #000, #000, #000, #000);
+  background-image: linear-gradient(to right,  #032c58, #032c58, #032c58, #032c58, #032c58);
   width: 100%;
   color: #fff;
 }
