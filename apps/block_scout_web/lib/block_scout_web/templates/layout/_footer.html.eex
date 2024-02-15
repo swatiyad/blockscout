@@ -29,7 +29,7 @@
 }
 
 .search_backdrop {
-  background-image: linear-gradient(to right,  #f46166, #f46166, #f46166, #f46166, #f46166);
+  background-image: linear-gradient(to right,  #000, #000, #000, #000, #000);
   width: 100%;
   color: #fff;
 }
@@ -41,7 +41,7 @@
 }
 
 .footer_backdrop {
-  background-image: linear-gradient(to right,  #f46166, #f46166, #f46166, #f46166, #f46166);
+  background-image: linear-gradient(to right,  #000, #000, #000, #000, #000);
   width: 100%;
   color: #fff;
 }
@@ -115,7 +115,7 @@
 
 .metamask_btn {
   color: #f8f9fa;
-  background: rgb(231 127 120 / 74%);
+  background: #888;
   cursor: pointer;
   padding: 6px 10px;
   border-radius: 5px;
