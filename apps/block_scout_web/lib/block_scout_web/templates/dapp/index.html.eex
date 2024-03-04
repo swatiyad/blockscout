@@ -1,66 +1,92 @@
 
 
-<main class="css-1ki3iar   dappContainer">
-<div class="css-xocobk">
-    <div class="css-1tbm7ke">
-        <div class="css-1ac63iw">
-            <div class="chakra-skeleton css-ysy7fe">
-                <h1 class="chakra-heading css-knret1"
+<main class="css-1ki3iar     ">
+<div class="css-xocobk ">
+    <div class="css-1tbm7ke  dappContainer2">
+        <div class="css-1ac63iw ">
+            <div class="chakra-skeleton css-ysy7fe " >
+                <h1 class="chakra-heading css-knret1 "
                     style="-webkit-line-clamp: 1; -webkit-box-orient: vertical; display: -webkit-box;">
                     <span>DAppscout</span>
                 </h1>
             </div>
         </div>
-        <div class="css-1y4kgfw"><a target="_blank" class="chakra-link css-10x783k"
-                href="https://airtable.com/appiy5yijZpMMSKjT/shr6uMGPKjj1DK7NL">Submit app<div
-                    class="chakra-skeleton css-vpy2do"><svg class="css-uwwqev">
-                        <use href="/icons/sprite.svg#arrows/north-east"></use>
-                    </svg></div></a></div>
+        <div class="css-1y4kgfw  dappContainer3" >
+         <a target="_blank" class="text-center "
+                href="https://airtable.com/appiy5yijZpMMSKjT/shr6uMGPKjj1DK7NL">Submit app
+                <div class="chakra-skeleton css-vpy2do">
+
+                    </a>
+        </div>
     </div>
 </div>
-<div class="css-1u1bt4g">
-    <div class="chakra-tabs css-jliwnj">
-        <div role="tablist" aria-orientation="horizontal" class="chakra-tabs__tablist css-1y63ll7"><button
-                type="button" id="tabs-:rl5:--tab-0" role="tab" tabindex="-1" aria-selected="false"
-                aria-controls="tabs-:rl5:--tabpanel-0" class="chakra-tabs__tab css-pdq2sg" data-index="0">
-                <div class="chakra-skeleton css-1hr8mqs"><svg class="css-uwwqev">
-                        <use href="/icons/sprite.svg#star_outline"></use>
-                    </svg></div>
-            </button><button type="button" id="tabs-:rl5:--tab-1" role="tab" tabindex="0" aria-selected="true"
-                aria-controls="tabs-:rl5:--tabpanel-1" class="chakra-tabs__tab css-pdq2sg"
-                data-index="1">All<span class="css-1gmkdg3">34</span></button><button type="button"
-                id="tabs-:rl5:--tab-2" role="tab" tabindex="-1" aria-selected="false"
-                aria-controls="tabs-:rl5:--tabpanel-2" class="chakra-tabs__tab css-pdq2sg"
-                data-index="2">Swaps<span class="css-1gmkdg3">12</span></button><button type="button"
+
+
+<hr>
+
+<div class=" showBorder p-1">
+    <div class=" showBorder p-1 container">
+    <div role="" aria-orientation="" class="showBorder p-1 dAppContainer4">
+        <button type="button" id="" role="tab" tabindex="-1" aria-selected="false" aria-controls="" class="transparent-button" data-index="0">
+           <div class="showBorder p-1">
+            <i class="fa-regular fa-star"></i>
+           </div>
+        </button>
+
+            <button type="button" id="" role="tab" tabindex="0" aria-selected="true"
+                aria-controls="tabs-:rl5:--tabpanel-1" class="transparent-button showBorder p-1"
+                data-index="1">All<span class="showBorder p-1">34</span>
+            </button>
+                <button type="button"
+                 id="tabs-:rl5:--tab-2" role="tab" tabindex="-1" aria-selected="false"
+                 aria-controls="tabs-:rl5:--tabpanel-2" class="transparent-button showBorder p-1"
+                 data-index="2">Swaps<span class="showBorder p-1">12</span>
+                </button>
+                <button type="button"
                 id="tabs-:rl5:--tab-3" role="tab" tabindex="-1" aria-selected="false"
-                aria-controls="tabs-:rl5:--tabpanel-3" class="chakra-tabs__tab css-pdq2sg"
-                data-index="3">Bridges<span class="css-1gmkdg3">5</span></button><button type="button"
+                aria-controls="tabs-:rl5:--tabpanel-3" class="transparent-button  showBorder p-1"
+                data-index="3">Bridges<span class="showBorder p-1">5</span>
+                </button>
+                <button type="button"
                 id="tabs-:rl5:--tab-4" role="tab" tabindex="-1" aria-selected="false"
-                aria-controls="tabs-:rl5:--tabpanel-4" class="chakra-tabs__tab css-pdq2sg" data-index="4">Liquid
-                Staking<span class="css-1gmkdg3">10</span></button><button type="button" id="tabs-:rl5:--tab-5"
+                aria-controls="tabs-:rl5:--tabpanel-4" class="transparent-button " data-index="4">Liquid
+                Staking<span class="showBorder p-1">10</span>
+                </button>
+                <button type="button" id="tabs-:rl5:--tab-5"
                 role="tab" tabindex="-1" aria-selected="false" aria-controls="tabs-:rl5:--tabpanel-5"
-                class="chakra-tabs__tab css-pdq2sg" data-index="5">Lending<span
-                    class="css-1gmkdg3">1</span></button><button type="button" id="tabs-:rl5:--tab-6" role="tab"
+                class="transparent-button " data-index="5">Lending<span
+                    class="showBorder p-1">1</span>
+                    </button>
+                    <button type="button" id="tabs-:rl5:--tab-6" role="tab"
                 tabindex="-1" aria-selected="false" aria-controls="tabs-:rl5:--tabpanel-6"
-                class="chakra-tabs__tab css-pdq2sg" data-index="6">Yield Aggregators<span
-                    class="css-1gmkdg3">4</span></button><button type="button" id="tabs-:rl5:--tab-7" role="tab"
+                class="transparent-button " data-index="6">Yield Aggregators<span
+                    class="showBorder p-1">4</span>
+                    </button>
+                    <button type="button" id="tabs-:rl5:--tab-7" role="tab"
                 tabindex="-1" aria-selected="false" aria-controls="tabs-:rl5:--tabpanel-7"
-                class="chakra-tabs__tab css-pdq2sg" data-index="7">CDP<span
-                    class="css-1gmkdg3">1</span></button><button type="button" id="tabs-:rl5:--tab-8" role="tab"
+                class="transparent-button " data-index="7">CDP<span
+                    class="showBorder p-1">1</span>
+                    </button>
+                    <button type="button" id="tabs-:rl5:--tab-8" role="tab"
                 tabindex="-1" aria-selected="false" aria-controls="tabs-:rl5:--tabpanel-8"
-                class="chakra-tabs__tab css-pdq2sg" data-index="8">NFT<span
-                    class="css-1gmkdg3">4</span></button><button type="button" id="tabs-:rl5:--tab-9" role="tab"
+                class="transparent-button " data-index="8">NFT<span
+                    class="showBorder p-1">4</span>
+                    </button>
+                    <button type="button" id="tabs-:rl5:--tab-9" role="tab"
                 tabindex="-1" aria-selected="false" aria-controls="tabs-:rl5:--tabpanel-9"
-                class="chakra-tabs__tab css-pdq2sg" data-index="9">Wallets<span
-                    class="css-1gmkdg3">1</span></button><button type="button" id="tabs-:rl5:--tab-10"
+                class="transparent-button " data-index="9">Wallets<span
+                    class="showBorder p-1">1</span>
+                    </button>
+                    <button type="button" id="tabs-:rl5:--tab-10"
                 role="tab" tabindex="-1" aria-selected="false" aria-controls="tabs-:rl5:--tabpanel-10"
-                class="chakra-tabs__tab css-1xf32o6" data-index="10">Dev tooling<span
-                    class="css-1gmkdg3">14</span></button><button type="button" id="tabs-:rl5:--tab-11"
+                class="transparent-button" data-index="10">Dev tooling<span
+                    class="showBorder p-1">14</span>
+                    </button>
+                    <button type="button" id="tabs-:rl5:--tab-11"
                 role="tab" tabindex="-1" aria-selected="false" aria-controls="tabs-:rl5:--tabpanel-11"
-                class="chakra-tabs__tab css-1xf32o6" data-index="11">Data &amp; Analytics<span
-                    class="css-1gmkdg3">7</span></button><button type="button" class="chakra-button css-1bpjoc7"
-                id="popover-trigger-:rp5:" aria-haspopup="dialog" aria-expanded="false"
-                aria-controls="popover-content-:rp5:">···</button>
+                class="transparent-button" data-index="11">Data &amp; Analytics<span
+                    class="showBorder p-1">7</span>
+                    </button>
             <div class="chakra-popover__popper css-iy22zq"
                 style="visibility: hidden; position: absolute; min-width: max-content; inset: 0px auto auto 0px;">
                 <section id="popover-content-:rp5:" tabindex="-1" role="dialog"
@@ -99,40 +125,74 @@
         </div>
     </div>
 </div>
-<div class="chakra-skeleton css-xo2g7t">
-    <div class="chakra-input__group css-bx0blc" data-group="true">
-        <div class="chakra-input__left-element css-k7whms">
-            <div class="chakra-skeleton css-jp0eh7"><svg class="css-uwwqev">
-                    <use href="/icons/sprite.svg#search"></use>
-                </svg></div>
-        </div><input placeholder="Find app" class="chakra-input css-18gn793" value="">
+
+<hr>
+
+
+
+
+<div class="custom-search-container mb-3">
+    <div class="custom-search-wrapper container">
+        <i class="custom-search-icon fas fa-search"></i>
+        <input type="text" placeholder="Find app" class="custom-search-input">
     </div>
 </div>
-<div class="css-12lpf8r">
-    <div role="group" class="chakra-linkbox css-3t0csz">
-        <div class="css-15wcdop">
+
+
+
+
+
+
+<div class="showBorder p-1">
+
+
+<div class="custom-card showBorder p-1">
+    <div class="card-content showBorder p-4 col-2 rounded-lg">
+        <div class="card-image">
+            <img alt="Pods Yield app icon" src="https://blockscout-content.s3.amazonaws.com/PodsYield.png" class="card-img">
+        </div>
+        <div class="card-details">
+            <h3 class="card-title"><a href="/apps/pods-yield">Pods Yield</a></h3>
+            <div class="card-category">Liquid Staking</div>
+            <div class="card-description">1-click-deposit investment product, making it easy to invest in complex derivatives strategies</div>
+            <div class="card-actions">
+                <a href="#" class="btn btn-info text-white">More info</a>
+                <button type="button" class="btn btn-outline-warning" aria-label="Mark as favorite" title="Mark as favorite">
+                    <i class="far fa-star"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+    <div role="group" class="showBorder p-1">
+        <div class="showBorder p-1">
             <div class="chakra-skeleton css-3b2m0u"><img alt="Pods Yield app icon"
                     src="https://blockscout-content.s3.amazonaws.com/PodsYield.png"
                     class="chakra-image css-rl6otz"></div>
             <h3 class="chakra-skeleton css-1al2f01"><a href="/apps/pods-yield"
                     class="chakra-linkbox__overlay css-wbqga2">Pods Yield</a>
-                <div class="chakra-skeleton css-1rj6qa3"><svg class="css-uwwqev">
-                        <use href="/icons/sprite.svg#integration/full"></use>
-                    </svg></div>
+
             </h3>
             <div class="chakra-skeleton css-i7am8w"><span>Liquid Staking</span></div>
             <div class="chakra-skeleton css-1kseng2">1-click-deposit investment product, making it easy to
-                invest in complex derivatives strategies</div>
-            <div class="css-11hwxkg"><a class="chakra-link css-1o0tpsu" href="#">More info</a></div><button
+                invest in complex derivatives strategies
+            </div>
+            <div class="css-11hwxkg"><a class="chakra-link css-1o0tpsu" href="#">More info</a></div>
+             <button
                 type="button" class="chakra-button css-vhh3ud" aria-label="Mark as favorite"
                 title="Mark as favorite">
-                <div class="chakra-skeleton css-6yxffx" aria-hidden="true" focusable="false"><svg
-                        class="css-uwwqev">
-                        <use href="/icons/sprite.svg#star_outline"></use>
-                    </svg></div>
-            </button>
+                <i class="fa-regular fa-star"></i>
+             </button>
         </div>
     </div>
+
+
     <div role="group" class="chakra-linkbox css-3t0csz">
         <div class="css-15wcdop">
             <div class="chakra-skeleton css-3b2m0u"><img alt="Jumper Exchange app icon"
@@ -960,4 +1020,154 @@
         </div>
     </div>
 </div>
+
+
+
+
+
+
+
 </main>
+
+<style>
+.dappContainer{
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+}
+
+.dappContainer2{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.dappContainer3{
+    display: flex;
+    align-items: center;
+}
+
+.transparent-button {
+    background-color: rgba(248, 237, 75, 0.48);
+    border-radius: 4px;
+    border: none;
+    padding: 4px;
+}
+
+.dAppContainer4{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+#search input
+
+.custom-search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-search-wrapper {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.custom-search-icon {
+    color: #666;
+    margin-right: 5px;
+}
+
+.custom-search-input {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 4px;
+    font-size: 16px;
+}
+
+# card styling
+.custom-card {
+    width: 100%;
+    max-width: 400px; /* Adjust max-width as needed */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.card-image {
+    width: 100px; /* Adjust image width as needed */
+    margin-right: 20px;
+}
+
+.card-image img {
+    width: 100%;
+    height: auto;
+}
+
+.card-details {
+    flex-grow: 1;
+}
+
+.card-title {
+    margin-bottom: 10px;
+}
+
+.card-category {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card-description {
+    margin-bottom: 10px;
+}
+
+.card-actions {
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.btn-info {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+}
+
+.btn-outline-warning {
+    background-color: transparent;
+    color: #ffc107;
+    border: 1px solid #ffc107;
+    margin-left: 10px;
+}
+
+.btn-outline-warning:hover {
+    background-color: #ffc107;
+    color: #fff;
+}
+
+
+
+</style>
