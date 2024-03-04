@@ -1,0 +1,963 @@
+
+
+<main class="css-1ki3iar   dappContainer">
+<div class="css-xocobk">
+    <div class="css-1tbm7ke">
+        <div class="css-1ac63iw">
+            <div class="chakra-skeleton css-ysy7fe">
+                <h1 class="chakra-heading css-knret1"
+                    style="-webkit-line-clamp: 1; -webkit-box-orient: vertical; display: -webkit-box;">
+                    <span>DAppscout</span>
+                </h1>
+            </div>
+        </div>
+        <div class="css-1y4kgfw"><a target="_blank" class="chakra-link css-10x783k"
+                href="https://airtable.com/appiy5yijZpMMSKjT/shr6uMGPKjj1DK7NL">Submit app<div
+                    class="chakra-skeleton css-vpy2do"><svg class="css-uwwqev">
+                        <use href="/icons/sprite.svg#arrows/north-east"></use>
+                    </svg></div></a></div>
+    </div>
+</div>
+<div class="css-1u1bt4g">
+    <div class="chakra-tabs css-jliwnj">
+        <div role="tablist" aria-orientation="horizontal" class="chakra-tabs__tablist css-1y63ll7"><button
+                type="button" id="tabs-:rl5:--tab-0" role="tab" tabindex="-1" aria-selected="false"
+                aria-controls="tabs-:rl5:--tabpanel-0" class="chakra-tabs__tab css-pdq2sg" data-index="0">
+                <div class="chakra-skeleton css-1hr8mqs"><svg class="css-uwwqev">
+                        <use href="/icons/sprite.svg#star_outline"></use>
+                    </svg></div>
+            </button><button type="button" id="tabs-:rl5:--tab-1" role="tab" tabindex="0" aria-selected="true"
+                aria-controls="tabs-:rl5:--tabpanel-1" class="chakra-tabs__tab css-pdq2sg"
+                data-index="1">All<span class="css-1gmkdg3">34</span></button><button type="button"
+                id="tabs-:rl5:--tab-2" role="tab" tabindex="-1" aria-selected="false"
+                aria-controls="tabs-:rl5:--tabpanel-2" class="chakra-tabs__tab css-pdq2sg"
+                data-index="2">Swaps<span class="css-1gmkdg3">12</span></button><button type="button"
+                id="tabs-:rl5:--tab-3" role="tab" tabindex="-1" aria-selected="false"
+                aria-controls="tabs-:rl5:--tabpanel-3" class="chakra-tabs__tab css-pdq2sg"
+                data-index="3">Bridges<span class="css-1gmkdg3">5</span></button><button type="button"
+                id="tabs-:rl5:--tab-4" role="tab" tabindex="-1" aria-selected="false"
+                aria-controls="tabs-:rl5:--tabpanel-4" class="chakra-tabs__tab css-pdq2sg" data-index="4">Liquid
+                Staking<span class="css-1gmkdg3">10</span></button><button type="button" id="tabs-:rl5:--tab-5"
+                role="tab" tabindex="-1" aria-selected="false" aria-controls="tabs-:rl5:--tabpanel-5"
+                class="chakra-tabs__tab css-pdq2sg" data-index="5">Lending<span
+                    class="css-1gmkdg3">1</span></button><button type="button" id="tabs-:rl5:--tab-6" role="tab"
+                tabindex="-1" aria-selected="false" aria-controls="tabs-:rl5:--tabpanel-6"
+                class="chakra-tabs__tab css-pdq2sg" data-index="6">Yield Aggregators<span
+                    class="css-1gmkdg3">4</span></button><button type="button" id="tabs-:rl5:--tab-7" role="tab"
+                tabindex="-1" aria-selected="false" aria-controls="tabs-:rl5:--tabpanel-7"
+                class="chakra-tabs__tab css-pdq2sg" data-index="7">CDP<span
+                    class="css-1gmkdg3">1</span></button><button type="button" id="tabs-:rl5:--tab-8" role="tab"
+                tabindex="-1" aria-selected="false" aria-controls="tabs-:rl5:--tabpanel-8"
+                class="chakra-tabs__tab css-pdq2sg" data-index="8">NFT<span
+                    class="css-1gmkdg3">4</span></button><button type="button" id="tabs-:rl5:--tab-9" role="tab"
+                tabindex="-1" aria-selected="false" aria-controls="tabs-:rl5:--tabpanel-9"
+                class="chakra-tabs__tab css-pdq2sg" data-index="9">Wallets<span
+                    class="css-1gmkdg3">1</span></button><button type="button" id="tabs-:rl5:--tab-10"
+                role="tab" tabindex="-1" aria-selected="false" aria-controls="tabs-:rl5:--tabpanel-10"
+                class="chakra-tabs__tab css-1xf32o6" data-index="10">Dev tooling<span
+                    class="css-1gmkdg3">14</span></button><button type="button" id="tabs-:rl5:--tab-11"
+                role="tab" tabindex="-1" aria-selected="false" aria-controls="tabs-:rl5:--tabpanel-11"
+                class="chakra-tabs__tab css-1xf32o6" data-index="11">Data &amp; Analytics<span
+                    class="css-1gmkdg3">7</span></button><button type="button" class="chakra-button css-1bpjoc7"
+                id="popover-trigger-:rp5:" aria-haspopup="dialog" aria-expanded="false"
+                aria-controls="popover-content-:rp5:">···</button>
+            <div class="chakra-popover__popper css-iy22zq"
+                style="visibility: hidden; position: absolute; min-width: max-content; inset: 0px auto auto 0px;">
+                <section id="popover-content-:rp5:" tabindex="-1" role="dialog"
+                    class="chakra-popover__content css-89zcca"
+                    style="transform-origin: var(--popper-transform-origin); opacity: 0; visibility: hidden; transform: scale(0.95) translateZ(0px);">
+                </section>
+            </div>
+        </div>
+        <div class="chakra-tabs__tab-panels css-8atqhb">
+            <div tabindex="0" role="tabpanel" aria-labelledby="tabs-:rl5:--tab-0" hidden=""
+                id="tabs-:rl5:--tabpanel-0" class="chakra-tabs__tab-panel css-1qbr3jw"></div>
+            <div tabindex="0" role="tabpanel" aria-labelledby="tabs-:rl5:--tab-1" id="tabs-:rl5:--tabpanel-1"
+                class="chakra-tabs__tab-panel css-1qbr3jw"></div>
+            <div tabindex="0" role="tabpanel" aria-labelledby="tabs-:rl5:--tab-2" hidden=""
+                id="tabs-:rl5:--tabpanel-2" class="chakra-tabs__tab-panel css-1qbr3jw"></div>
+            <div tabindex="0" role="tabpanel" aria-labelledby="tabs-:rl5:--tab-3" hidden=""
+                id="tabs-:rl5:--tabpanel-3" class="chakra-tabs__tab-panel css-1qbr3jw"></div>
+            <div tabindex="0" role="tabpanel" aria-labelledby="tabs-:rl5:--tab-4" hidden=""
+                id="tabs-:rl5:--tabpanel-4" class="chakra-tabs__tab-panel css-1qbr3jw"></div>
+            <div tabindex="0" role="tabpanel" aria-labelledby="tabs-:rl5:--tab-5" hidden=""
+                id="tabs-:rl5:--tabpanel-5" class="chakra-tabs__tab-panel css-1qbr3jw"></div>
+            <div tabindex="0" role="tabpanel" aria-labelledby="tabs-:rl5:--tab-6" hidden=""
+                id="tabs-:rl5:--tabpanel-6" class="chakra-tabs__tab-panel css-1qbr3jw"></div>
+            <div tabindex="0" role="tabpanel" aria-labelledby="tabs-:rl5:--tab-7" hidden=""
+                id="tabs-:rl5:--tabpanel-7" class="chakra-tabs__tab-panel css-1qbr3jw"></div>
+            <div tabindex="0" role="tabpanel" aria-labelledby="tabs-:rl5:--tab-8" hidden=""
+                id="tabs-:rl5:--tabpanel-8" class="chakra-tabs__tab-panel css-1qbr3jw"></div>
+            <div tabindex="0" role="tabpanel" aria-labelledby="tabs-:rl5:--tab-9" hidden=""
+                id="tabs-:rl5:--tabpanel-9" class="chakra-tabs__tab-panel css-1qbr3jw"></div>
+            <div tabindex="0" role="tabpanel" aria-labelledby="tabs-:rl5:--tab-10" id="tabs-:rl5:--tabpanel-10"
+                class="chakra-tabs__tab-panel css-1qbr3jw" hidden=""></div>
+            <div tabindex="0" role="tabpanel" aria-labelledby="tabs-:rl5:--tab-11" id="tabs-:rl5:--tabpanel-11"
+                class="chakra-tabs__tab-panel css-1qbr3jw" hidden=""></div>
+            <div tabindex="0" role="tabpanel" aria-labelledby="tabs-:rl5:--tab-12" hidden=""
+                id="tabs-:rl5:--tabpanel-12" class="chakra-tabs__tab-panel css-1qbr3jw"></div>
+        </div>
+    </div>
+</div>
+<div class="chakra-skeleton css-xo2g7t">
+    <div class="chakra-input__group css-bx0blc" data-group="true">
+        <div class="chakra-input__left-element css-k7whms">
+            <div class="chakra-skeleton css-jp0eh7"><svg class="css-uwwqev">
+                    <use href="/icons/sprite.svg#search"></use>
+                </svg></div>
+        </div><input placeholder="Find app" class="chakra-input css-18gn793" value="">
+    </div>
+</div>
+<div class="css-12lpf8r">
+    <div role="group" class="chakra-linkbox css-3t0csz">
+        <div class="css-15wcdop">
+            <div class="chakra-skeleton css-3b2m0u"><img alt="Pods Yield app icon"
+                    src="https://blockscout-content.s3.amazonaws.com/PodsYield.png"
+                    class="chakra-image css-rl6otz"></div>
+            <h3 class="chakra-skeleton css-1al2f01"><a href="/apps/pods-yield"
+                    class="chakra-linkbox__overlay css-wbqga2">Pods Yield</a>
+                <div class="chakra-skeleton css-1rj6qa3"><svg class="css-uwwqev">
+                        <use href="/icons/sprite.svg#integration/full"></use>
+                    </svg></div>
+            </h3>
+            <div class="chakra-skeleton css-i7am8w"><span>Liquid Staking</span></div>
+            <div class="chakra-skeleton css-1kseng2">1-click-deposit investment product, making it easy to
+                invest in complex derivatives strategies</div>
+            <div class="css-11hwxkg"><a class="chakra-link css-1o0tpsu" href="#">More info</a></div><button
+                type="button" class="chakra-button css-vhh3ud" aria-label="Mark as favorite"
+                title="Mark as favorite">
+                <div class="chakra-skeleton css-6yxffx" aria-hidden="true" focusable="false"><svg
+                        class="css-uwwqev">
+                        <use href="/icons/sprite.svg#star_outline"></use>
+                    </svg></div>
+            </button>
+        </div>
+    </div>
+    <div role="group" class="chakra-linkbox css-3t0csz">
+        <div class="css-15wcdop">
+            <div class="chakra-skeleton css-3b2m0u"><img alt="Jumper Exchange app icon"
+                    src="https://blockscout-content.s3.amazonaws.com/JumperExchange.jpg"
+                    class="chakra-image css-rl6otz"></div>
+            <h3 class="chakra-skeleton css-1al2f01"><a href="/apps/jumper-exchange"
+                    class="chakra-linkbox__overlay css-wbqga2">Jumper Exchange</a>
+                <div class="chakra-skeleton css-1rj6qa3"><svg class="css-uwwqev">
+                        <use href="/icons/sprite.svg#integration/full"></use>
+                    </svg></div>
+            </h3>
+            <div class="chakra-skeleton css-i7am8w"><span>Swaps, Bridges</span></div>
+            <div class="chakra-skeleton css-1kseng2">Multi-chain bridging &amp;amp; swapping, powered by LI.FI
+            </div>
+            <div class="css-11hwxkg"><a class="chakra-link css-1o0tpsu" href="#">More info</a></div><button
+                type="button" class="chakra-button css-vhh3ud" aria-label="Mark as favorite"
+                title="Mark as favorite">
+                <div class="chakra-skeleton css-6yxffx" aria-hidden="true" focusable="false"><svg
+                        class="css-uwwqev">
+                        <use href="/icons/sprite.svg#star_outline"></use>
+                    </svg></div>
+            </button>
+        </div>
+    </div>
+    <div role="group" class="chakra-linkbox css-3t0csz">
+        <div class="css-15wcdop">
+            <div class="chakra-skeleton css-3b2m0u"><img alt="Smol app icon"
+                    src="https://blockscout-content.s3.amazonaws.com/Smol.jpg" class="chakra-image css-rl6otz">
+            </div>
+            <h3 class="chakra-skeleton css-1al2f01"><a href="/apps/smol"
+                    class="chakra-linkbox__overlay css-wbqga2">Smol</a>
+                <div class="chakra-skeleton css-1rj6qa3"><svg class="css-uwwqev">
+                        <use href="/icons/sprite.svg#integration/full"></use>
+                    </svg></div>
+            </h3>
+            <div class="chakra-skeleton css-i7am8w"><span>Dev tooling</span></div>
+            <div class="chakra-skeleton css-1kseng2">The easiest way to migrate your tokens from one wallet to
+                another.</div>
+            <div class="css-11hwxkg"><a class="chakra-link css-1o0tpsu" href="#">More info</a></div><button
+                type="button" class="chakra-button css-vhh3ud" aria-label="Mark as favorite"
+                title="Mark as favorite">
+                <div class="chakra-skeleton css-6yxffx" aria-hidden="true" focusable="false"><svg
+                        class="css-uwwqev">
+                        <use href="/icons/sprite.svg#star_outline"></use>
+                    </svg></div>
+            </button>
+        </div>
+    </div>
+    <div role="group" class="chakra-linkbox css-3t0csz">
+        <div class="css-15wcdop">
+            <div class="chakra-skeleton css-3b2m0u"><img alt="Base Name Service app icon"
+                    src="https://blockscout-content.s3.amazonaws.com/basenameservice-app.png"
+                    class="chakra-image css-rl6otz"></div>
+            <h3 class="chakra-skeleton css-1al2f01"><a href="/apps/base-name-service"
+                    class="chakra-linkbox__overlay css-wbqga2">Base Name Service</a>
+                <div class="chakra-skeleton css-1rj6qa3"><svg class="css-uwwqev">
+                        <use href="/icons/sprite.svg#integration/full"></use>
+                    </svg></div>
+            </h3>
+            <div class="chakra-skeleton css-i7am8w"><span>NFT, Dev tooling</span></div>
+            <div class="chakra-skeleton css-1kseng2">Web3 naming (.base) for the next billion+ users on Base.
+                Native Name Service</div>
+            <div class="css-11hwxkg"><a class="chakra-link css-1o0tpsu" href="#">More info</a></div><button
+                type="button" class="chakra-button css-vhh3ud" aria-label="Mark as favorite"
+                title="Mark as favorite">
+                <div class="chakra-skeleton css-6yxffx" aria-hidden="true" focusable="false"><svg
+                        class="css-uwwqev">
+                        <use href="/icons/sprite.svg#star_outline"></use>
+                    </svg></div>
+            </button>
+        </div>
+    </div>
+    <div role="group" class="chakra-linkbox css-3t0csz">
+        <div class="css-15wcdop">
+            <div class="chakra-skeleton css-3b2m0u"><img alt="BaseSwap app icon"
+                    src="https://blockscout-content.s3.amazonaws.com/baseswap.png"
+                    class="chakra-image css-rl6otz"></div>
+            <h3 class="chakra-skeleton css-1al2f01"><a href="/apps/base-swap"
+                    class="chakra-linkbox__overlay css-wbqga2">BaseSwap</a>
+                <div class="chakra-skeleton css-1rj6qa3"><svg class="css-uwwqev">
+                        <use href="/icons/sprite.svg#integration/full"></use>
+                    </svg></div>
+            </h3>
+            <div class="chakra-skeleton css-i7am8w"><span>Liquid Staking, Swaps</span></div>
+            <div class="chakra-skeleton css-1kseng2">The Native leading DEX on Base Chain. By Based team, for
+                Based People.</div>
+            <div class="css-11hwxkg"><a class="chakra-link css-1o0tpsu" href="#">More info</a></div><button
+                type="button" class="chakra-button css-vhh3ud" aria-label="Mark as favorite"
+                title="Mark as favorite">
+                <div class="chakra-skeleton css-6yxffx" aria-hidden="true" focusable="false"><svg
+                        class="css-uwwqev">
+                        <use href="/icons/sprite.svg#star_outline"></use>
+                    </svg></div>
+            </button>
+        </div>
+    </div>
+    <div role="group" class="chakra-linkbox css-3t0csz">
+        <div class="css-15wcdop">
+            <div class="chakra-skeleton css-3b2m0u"><img alt="Aerodrome app icon"
+                    src="https://blockscout-content.s3.amazonaws.com/Aerodrome.svg"
+                    class="chakra-image css-rl6otz"></div>
+            <h3 class="chakra-skeleton css-1al2f01"><a href="/apps/aerodrome"
+                    class="chakra-linkbox__overlay css-wbqga2">Aerodrome</a>
+                <div class="chakra-skeleton css-1rj6qa3"><svg class="css-uwwqev">
+                        <use href="/icons/sprite.svg#integration/full"></use>
+                    </svg></div>
+            </h3>
+            <div class="chakra-skeleton css-i7am8w"><span>Yield Aggregators, Liquid Staking, Swaps</span></div>
+            <div class="chakra-skeleton css-1kseng2">Aerodrome Finance is a next-generation AMM that combines
+                the best of Curve, Convex and Uniswap, designed to serve as the central liquidity hub on Base
+                network. Aerodrome NFTs vote on token emissions and receive incentives and fees generated by the
+                protocol.</div>
+            <div class="css-11hwxkg"><a class="chakra-link css-1o0tpsu" href="#">More info</a></div><button
+                type="button" class="chakra-button css-vhh3ud" aria-label="Mark as favorite"
+                title="Mark as favorite">
+                <div class="chakra-skeleton css-6yxffx" aria-hidden="true" focusable="false"><svg
+                        class="css-uwwqev">
+                        <use href="/icons/sprite.svg#star_outline"></use>
+                    </svg></div>
+            </button>
+        </div>
+    </div>
+    <div role="group" class="chakra-linkbox css-3t0csz">
+        <div class="css-15wcdop">
+            <div class="chakra-skeleton css-3b2m0u"><img alt="Dackie Swap app icon"
+                    src="https://blockscout-content.s3.amazonaws.com/dackie-swap.png"
+                    class="chakra-image css-rl6otz"></div>
+            <h3 class="chakra-skeleton css-1al2f01"><a href="/apps/dackie-swap"
+                    class="chakra-linkbox__overlay css-wbqga2">Dackie Swap</a>
+                <div class="chakra-skeleton css-1rj6qa3"><svg class="css-uwwqev">
+                        <use href="/icons/sprite.svg#integration/full"></use>
+                    </svg></div>
+            </h3>
+            <div class="chakra-skeleton css-i7am8w"><span>Swaps</span></div>
+            <div class="chakra-skeleton css-1kseng2">DackieSwap allows you to earn more rewards through
+                Concentrated Liquidity Market Maker (CLMM). Swap and earn with the most trusted DEX on BASE
+            </div>
+            <div class="css-11hwxkg"><a class="chakra-link css-1o0tpsu" href="#">More info</a></div><button
+                type="button" class="chakra-button css-vhh3ud" aria-label="Mark as favorite"
+                title="Mark as favorite">
+                <div class="chakra-skeleton css-6yxffx" aria-hidden="true" focusable="false"><svg
+                        class="css-uwwqev">
+                        <use href="/icons/sprite.svg#star_outline"></use>
+                    </svg></div>
+            </button>
+        </div>
+    </div>
+    <div role="group" class="chakra-linkbox css-3t0csz">
+        <div class="css-15wcdop">
+            <div class="chakra-skeleton css-3b2m0u"><img alt="Revoke.cash app icon"
+                    src="https://blockscout-content.s3.amazonaws.com/revokecash.png"
+                    class="chakra-image css-rl6otz"></div>
+            <h3 class="chakra-skeleton css-1al2f01"><a href="/apps/revoke-cash"
+                    class="chakra-linkbox__overlay css-wbqga2">Revoke.cash</a>
+                <div class="chakra-skeleton css-1rj6qa3"><svg class="css-uwwqev">
+                        <use href="/icons/sprite.svg#integration/full"></use>
+                    </svg></div>
+            </h3>
+            <div class="chakra-skeleton css-i7am8w"><span>Dev tooling</span></div>
+            <div class="chakra-skeleton css-1kseng2">Manage and revoke your token allowances with Revoke.cash
+            </div>
+            <div class="css-11hwxkg"><a class="chakra-link css-1o0tpsu" href="#">More info</a></div><button
+                type="button" class="chakra-button css-vhh3ud" aria-label="Mark as favorite"
+                title="Mark as favorite">
+                <div class="chakra-skeleton css-6yxffx" aria-hidden="true" focusable="false"><svg
+                        class="css-uwwqev">
+                        <use href="/icons/sprite.svg#star_outline"></use>
+                    </svg></div>
+            </button>
+        </div>
+    </div>
+    <div role="group" class="chakra-linkbox css-3t0csz">
+        <div class="css-15wcdop">
+            <div class="chakra-skeleton css-3b2m0u"><img alt="Mai Finance app icon"
+                    src="https://blockscout-content.s3.amazonaws.com/mai-finance.png"
+                    class="chakra-image css-rl6otz"></div>
+            <h3 class="chakra-skeleton css-1al2f01"><a href="/apps/mai-finance"
+                    class="chakra-linkbox__overlay css-wbqga2">Mai Finance</a>
+                <div class="chakra-skeleton css-1rj6qa3"><svg class="css-uwwqev">
+                        <use href="/icons/sprite.svg#integration/full"></use>
+                    </svg></div>
+            </h3>
+            <div class="chakra-skeleton css-i7am8w"><span>CDP, Bridges, Liquid Staking</span></div>
+            <div class="chakra-skeleton css-1kseng2">Mint stablecoins against your crypto assets at 0% interest.
+            </div>
+            <div class="css-11hwxkg"><a class="chakra-link css-1o0tpsu" href="#">More info</a></div><button
+                type="button" class="chakra-button css-vhh3ud" aria-label="Mark as favorite"
+                title="Mark as favorite">
+                <div class="chakra-skeleton css-6yxffx" aria-hidden="true" focusable="false"><svg
+                        class="css-uwwqev">
+                        <use href="/icons/sprite.svg#star_outline"></use>
+                    </svg></div>
+            </button>
+        </div>
+    </div>
+    <div role="group" class="chakra-linkbox css-3t0csz">
+        <div class="css-15wcdop">
+            <div class="chakra-skeleton css-3b2m0u"><img alt="Uniswap app icon"
+                    src="https://blockscout-content.s3.amazonaws.com/uniswap.png"
+                    class="chakra-image css-rl6otz"></div>
+            <h3 class="chakra-skeleton css-1al2f01"><a href="/apps/uniswap"
+                    class="chakra-linkbox__overlay css-wbqga2">Uniswap</a>
+                <div class="chakra-skeleton css-1rj6qa3"><svg class="css-uwwqev">
+                        <use href="/icons/sprite.svg#integration/full"></use>
+                    </svg></div>
+            </h3>
+            <div class="chakra-skeleton css-i7am8w"><span>Swaps, Liquid Staking</span></div>
+            <div class="chakra-skeleton css-1kseng2">A fully decentralized protocol for automated liquidity
+                provision on Ethereum.</div>
+            <div class="css-11hwxkg"><a class="chakra-link css-1o0tpsu" href="#">More info</a></div><button
+                type="button" class="chakra-button css-vhh3ud" aria-label="Mark as favorite"
+                title="Mark as favorite">
+                <div class="chakra-skeleton css-6yxffx" aria-hidden="true" focusable="false"><svg
+                        class="css-uwwqev">
+                        <use href="/icons/sprite.svg#star_outline"></use>
+                    </svg></div>
+            </button>
+        </div>
+    </div>
+    <div role="group" class="chakra-linkbox css-3t0csz">
+        <div class="css-15wcdop">
+            <div class="chakra-skeleton css-3b2m0u"><img alt="Balancer app icon"
+                    src="https://blockscout-content.s3.amazonaws.com/balancer_light.png"
+                    class="chakra-image css-rl6otz"></div>
+            <h3 class="chakra-skeleton css-1al2f01"><a href="/apps/balancer"
+                    class="chakra-linkbox__overlay css-wbqga2">Balancer</a>
+                <div class="chakra-skeleton css-1rj6qa3"><svg class="css-uwwqev">
+                        <use href="/icons/sprite.svg#integration/full"></use>
+                    </svg></div>
+            </h3>
+            <div class="chakra-skeleton css-i7am8w"><span>Swaps, Liquid Staking</span></div>
+            <div class="chakra-skeleton css-1kseng2">Balancer is a protocol for programmable liquidity.</div>
+            <div class="css-11hwxkg"><a class="chakra-link css-1o0tpsu" href="#">More info</a></div><button
+                type="button" class="chakra-button css-vhh3ud" aria-label="Mark as favorite"
+                title="Mark as favorite">
+                <div class="chakra-skeleton css-6yxffx" aria-hidden="true" focusable="false"><svg
+                        class="css-uwwqev">
+                        <use href="/icons/sprite.svg#star_outline"></use>
+                    </svg></div>
+            </button>
+        </div>
+    </div>
+    <div role="group" class="chakra-linkbox css-3t0csz">
+        <div class="css-15wcdop">
+            <div class="chakra-skeleton css-3b2m0u"><img alt="Mean Finance app icon"
+                    src="https://blockscout-content.s3.amazonaws.com/meanfi.png"
+                    class="chakra-image css-rl6otz"></div>
+            <h3 class="chakra-skeleton css-1al2f01"><a href="/apps/mean-finance"
+                    class="chakra-linkbox__overlay css-wbqga2">Mean Finance</a>
+                <div class="chakra-skeleton css-1rj6qa3"><svg class="css-uwwqev">
+                        <use href="/icons/sprite.svg#integration/full"></use>
+                    </svg></div>
+            </h3>
+            <div class="chakra-skeleton css-i7am8w"><span>Liquid Staking, Yield Aggregators, Swaps</span></div>
+            <div class="chakra-skeleton css-1kseng2">Mean Finance is your home for accessing decentralized
+                finance as it was meant to be: safe, open and intuitive. Swap your assets at the best price and
+                create recurring investments (DCA) into your favorite tokens with ease — One place for
+                everything you need to take control of your financial future.</div>
+            <div class="css-11hwxkg"><a class="chakra-link css-1o0tpsu" href="#">More info</a></div><button
+                type="button" class="chakra-button css-vhh3ud" aria-label="Mark as favorite"
+                title="Mark as favorite">
+                <div class="chakra-skeleton css-6yxffx" aria-hidden="true" focusable="false"><svg
+                        class="css-uwwqev">
+                        <use href="/icons/sprite.svg#star_outline"></use>
+                    </svg></div>
+            </button>
+        </div>
+    </div>
+    <div role="group" class="chakra-linkbox css-3t0csz">
+        <div class="css-15wcdop">
+            <div class="chakra-skeleton css-3b2m0u"><img alt="Furucombo app icon"
+                    src="https://blockscout-content.s3.amazonaws.com/furucombo.webp"
+                    class="chakra-image css-rl6otz"></div>
+            <h3 class="chakra-skeleton css-1al2f01"><a href="/apps/furucombo"
+                    class="chakra-linkbox__overlay css-wbqga2">Furucombo</a>
+                <div class="chakra-skeleton css-1rj6qa3"><svg class="css-uwwqev">
+                        <use href="/icons/sprite.svg#integration/full"></use>
+                    </svg></div>
+            </h3>
+            <div class="chakra-skeleton css-i7am8w"><span>Dev tooling, Yield Aggregators, Swaps</span></div>
+            <div class="chakra-skeleton css-1kseng2">Furucombo is a DeFi aggregator that allows a user to
+                perform trading actions from our easy-to-use drag-and-drop interface. This includes multi-swap,
+                multi-send, or managing their positions using our flashloan functionality.</div>
+            <div class="css-11hwxkg"><a class="chakra-link css-1o0tpsu" href="#">More info</a></div><button
+                type="button" class="chakra-button css-vhh3ud" aria-label="Mark as favorite"
+                title="Mark as favorite">
+                <div class="chakra-skeleton css-6yxffx" aria-hidden="true" focusable="false"><svg
+                        class="css-uwwqev">
+                        <use href="/icons/sprite.svg#star_outline"></use>
+                    </svg></div>
+            </button>
+        </div>
+    </div>
+    <div role="group" class="chakra-linkbox css-3t0csz">
+        <div class="css-15wcdop">
+            <div class="chakra-skeleton css-3b2m0u"><img alt="Aave app icon"
+                    src="https://blockscout-content.s3.amazonaws.com/aave.png" class="chakra-image css-rl6otz">
+            </div>
+            <h3 class="chakra-skeleton css-1al2f01"><a href="/apps/aave"
+                    class="chakra-linkbox__overlay css-wbqga2">Aave</a>
+                <div class="chakra-skeleton css-1rj6qa3"><svg class="css-uwwqev">
+                        <use href="/icons/sprite.svg#integration/full"></use>
+                    </svg></div>
+            </h3>
+            <div class="chakra-skeleton css-i7am8w"><span>Lending, Liquid Staking</span></div>
+            <div class="chakra-skeleton css-1kseng2">Aave is a decentralised non-custodial liquidity market
+                protocol where users can participate as suppliers or borrowers. Suppliers provide liquidity to
+                the market to earn a passive income, while borrowers are able to borrow in an overcollateralised
+                (perpetually) or undercollateralised (one-block liquidity) fashion.</div>
+            <div class="css-11hwxkg"><a class="chakra-link css-1o0tpsu" href="#">More info</a></div><button
+                type="button" class="chakra-button css-vhh3ud" aria-label="Mark as favorite"
+                title="Mark as favorite">
+                <div class="chakra-skeleton css-6yxffx" aria-hidden="true" focusable="false"><svg
+                        class="css-uwwqev">
+                        <use href="/icons/sprite.svg#star_outline"></use>
+                    </svg></div>
+            </button>
+        </div>
+    </div>
+    <div role="group" class="chakra-linkbox css-3t0csz">
+        <div class="css-15wcdop">
+            <div class="chakra-skeleton css-3b2m0u"><img alt="Quick Intel app icon"
+                    src="https://blockscout-content.s3.amazonaws.com/quick_intel_light.png"
+                    class="chakra-image css-rl6otz"></div>
+            <h3 class="chakra-skeleton css-1al2f01"><a href="/apps/quick-intel"
+                    class="chakra-linkbox__overlay css-wbqga2">Quick Intel</a>
+                <div class="chakra-skeleton css-1rj6qa3"><svg class="css-uwwqev">
+                        <use href="/icons/sprite.svg#integration/full"></use>
+                    </svg></div>
+            </h3>
+            <div class="chakra-skeleton css-i7am8w"><span>Dev tooling, Data &amp; Analytics</span></div>
+            <div class="chakra-skeleton css-1kseng2">Quick Intel is a hub of AI research and security tools.
+                Most notably, an innovative token and NFT smart contract scanner to proactively avoid scams and
+                rugs.</div>
+            <div class="css-11hwxkg"><a class="chakra-link css-1o0tpsu" href="#">More info</a></div><button
+                type="button" class="chakra-button css-vhh3ud" aria-label="Mark as favorite"
+                title="Mark as favorite">
+                <div class="chakra-skeleton css-6yxffx" aria-hidden="true" focusable="false"><svg
+                        class="css-uwwqev">
+                        <use href="/icons/sprite.svg#star_outline"></use>
+                    </svg></div>
+            </button>
+        </div>
+    </div>
+    <div role="group" class="chakra-linkbox css-3t0csz">
+        <div class="css-15wcdop">
+            <div class="chakra-skeleton css-3b2m0u"><img alt="Nether app icon"
+                    src="https://blockscout-content.s3.amazonaws.com/nether_light.png"
+                    class="chakra-image css-rl6otz"></div>
+            <h3 class="chakra-skeleton css-1al2f01"><a href="/apps/nether"
+                    class="chakra-linkbox__overlay css-wbqga2">Nether</a>
+                <div class="chakra-skeleton css-1gdj5a7"><svg class="css-uwwqev">
+                        <use href="/icons/sprite.svg#integration/partial"></use>
+                    </svg></div>
+            </h3>
+            <div class="chakra-skeleton css-i7am8w"><span>Swaps, Bridges</span></div>
+            <div class="chakra-skeleton css-1kseng2">A blockchain-based virtual world platform, enabling users
+                to create, explore, and trade digital assets and experiences.</div>
+            <div class="css-11hwxkg"><a class="chakra-link css-1o0tpsu" href="#">More info</a></div><button
+                type="button" class="chakra-button css-vhh3ud" aria-label="Mark as favorite"
+                title="Mark as favorite">
+                <div class="chakra-skeleton css-6yxffx" aria-hidden="true" focusable="false"><svg
+                        class="css-uwwqev">
+                        <use href="/icons/sprite.svg#star_outline"></use>
+                    </svg></div>
+            </button>
+        </div>
+    </div>
+    <div role="group" class="chakra-linkbox css-3t0csz">
+        <div class="css-15wcdop">
+            <div class="chakra-skeleton css-3b2m0u"><img alt="Base Name Service app icon"
+                    src="https://blockscout-content.s3.amazonaws.com/base-name-service-.png"
+                    class="chakra-image css-rl6otz"></div>
+            <h3 class="chakra-skeleton css-1al2f01"><a href="/apps/basens"
+                    class="chakra-linkbox__overlay css-wbqga2">Base Name Service</a>
+                <div class="chakra-skeleton css-1gdj5a7"><svg class="css-uwwqev">
+                        <use href="/icons/sprite.svg#integration/partial"></use>
+                    </svg></div>
+            </h3>
+            <div class="chakra-skeleton css-i7am8w"><span>NFT</span></div>
+            <div class="chakra-skeleton css-1kseng2">BaseNS, the 1st DID on the Base Mainnet. Secure your
+                distinctive Web3 domain on all blockchains today.</div>
+            <div class="css-11hwxkg"><a class="chakra-link css-1o0tpsu" href="#">More info</a></div><button
+                type="button" class="chakra-button css-vhh3ud" aria-label="Mark as favorite"
+                title="Mark as favorite">
+                <div class="chakra-skeleton css-6yxffx" aria-hidden="true" focusable="false"><svg
+                        class="css-uwwqev">
+                        <use href="/icons/sprite.svg#star_outline"></use>
+                    </svg></div>
+            </button>
+        </div>
+    </div>
+    <div role="group" class="chakra-linkbox css-3t0csz">
+        <div class="css-15wcdop">
+            <div class="chakra-skeleton css-3b2m0u"><img alt="Fileverse app icon"
+                    src="https://blockscout-content.s3.amazonaws.com/fileverse.png"
+                    class="chakra-image css-rl6otz"></div>
+            <h3 class="chakra-skeleton css-1al2f01"><a href="/apps/fileverse"
+                    class="chakra-linkbox__overlay css-wbqga2">Fileverse</a>
+                <div class="chakra-skeleton css-1gdj5a7"><svg class="css-uwwqev">
+                        <use href="/icons/sprite.svg#integration/partial"></use>
+                    </svg></div>
+            </h3>
+            <div class="chakra-skeleton css-i7am8w"><span>Data &amp; Analytics, Dev tooling</span></div>
+            <div class="chakra-skeleton css-1kseng2">Your onchain space for collaboration and productivity. Use
+                it to write, create a knowledge-base, sketch ideas, share files, make a public webpage and more
+                - individually or as a group.</div>
+            <div class="css-11hwxkg"><a class="chakra-link css-1o0tpsu" href="#">More info</a></div><button
+                type="button" class="chakra-button css-vhh3ud" aria-label="Mark as favorite"
+                title="Mark as favorite">
+                <div class="chakra-skeleton css-6yxffx" aria-hidden="true" focusable="false"><svg
+                        class="css-uwwqev">
+                        <use href="/icons/sprite.svg#star_outline"></use>
+                    </svg></div>
+            </button>
+        </div>
+    </div>
+    <div role="group" class="chakra-linkbox css-3t0csz">
+        <div class="css-15wcdop">
+            <div class="chakra-skeleton css-3b2m0u"><img alt="SushiSwap app icon"
+                    src="https://blockscout-content.s3.amazonaws.com/sushi_swap.png"
+                    class="chakra-image css-rl6otz"></div>
+            <h3 class="chakra-skeleton css-1al2f01"><a href="/apps/sushiswap"
+                    class="chakra-linkbox__overlay css-wbqga2">SushiSwap</a>
+                <div class="chakra-skeleton css-1gdj5a7"><svg class="css-uwwqev">
+                        <use href="/icons/sprite.svg#integration/partial"></use>
+                    </svg></div>
+            </h3>
+            <div class="chakra-skeleton css-i7am8w"><span>Swaps, Liquid Staking</span></div>
+            <div class="chakra-skeleton css-1kseng2">A fully decentralized protocol for automated liquidity
+                provision on Ethereum.</div>
+            <div class="css-11hwxkg"><a class="chakra-link css-1o0tpsu" href="#">More info</a></div><button
+                type="button" class="chakra-button css-vhh3ud" aria-label="Mark as favorite"
+                title="Mark as favorite">
+                <div class="chakra-skeleton css-6yxffx" aria-hidden="true" focusable="false"><svg
+                        class="css-uwwqev">
+                        <use href="/icons/sprite.svg#star_outline"></use>
+                    </svg></div>
+            </button>
+        </div>
+    </div>
+    <div role="group" class="chakra-linkbox css-3t0csz">
+        <div class="css-15wcdop">
+            <div class="chakra-skeleton css-3b2m0u"><img alt="Fileverse Portal app icon"
+                    src="https://blockscout-content.s3.amazonaws.com/fileverse.png"
+                    class="chakra-image css-rl6otz"></div>
+            <h3 class="chakra-skeleton css-1al2f01"><a href="/apps/fileverse-portal"
+                    class="chakra-linkbox__overlay css-wbqga2">Fileverse Portal</a>
+                <div class="chakra-skeleton css-1gdj5a7"><svg class="css-uwwqev">
+                        <use href="/icons/sprite.svg#integration/partial"></use>
+                    </svg></div>
+            </h3>
+            <div class="chakra-skeleton css-i7am8w"><span>Data &amp; Analytics, Dev tooling</span></div>
+            <div class="chakra-skeleton css-1kseng2">Fileverse Portal is a web3 alternative to Google Workspace,
+                Notion, or any centralized collaboration platform. It is customizable, private by design, and
+                focuses on the healthier side of the internet where users are not the product.</div>
+            <div class="css-11hwxkg"><a class="chakra-link css-1o0tpsu" href="#">More info</a></div><button
+                type="button" class="chakra-button css-vhh3ud" aria-label="Mark as favorite"
+                title="Mark as favorite">
+                <div class="chakra-skeleton css-6yxffx" aria-hidden="true" focusable="false"><svg
+                        class="css-uwwqev">
+                        <use href="/icons/sprite.svg#star_outline"></use>
+                    </svg></div>
+            </button>
+        </div>
+    </div>
+    <div role="group" class="chakra-linkbox css-3t0csz">
+        <div class="css-15wcdop">
+            <div class="chakra-skeleton css-3b2m0u"><img alt="Mellow Protocol app icon"
+                    src="https://blockscout-content.s3.amazonaws.com/mellowprotocol.png"
+                    class="chakra-image css-rl6otz"></div>
+            <h3 class="chakra-skeleton css-1al2f01"><a href="/apps/mellowprotocol"
+                    class="chakra-linkbox__overlay css-wbqga2">Mellow Protocol</a>
+                <div class="chakra-skeleton css-1gdj5a7"><svg class="css-uwwqev">
+                        <use href="/icons/sprite.svg#integration/partial"></use>
+                    </svg></div>
+            </h3>
+            <div class="chakra-skeleton css-i7am8w"><span>Yield Aggregators</span></div>
+            <div class="chakra-skeleton css-1kseng2">Mellow Protocol is a generalized infrastructure for
+                building asset management and complex DeFi strategies.</div>
+            <div class="css-11hwxkg"><a class="chakra-link css-1o0tpsu" href="#">More info</a></div><button
+                type="button" class="chakra-button css-vhh3ud" aria-label="Mark as favorite"
+                title="Mark as favorite">
+                <div class="chakra-skeleton css-6yxffx" aria-hidden="true" focusable="false"><svg
+                        class="css-uwwqev">
+                        <use href="/icons/sprite.svg#star_outline"></use>
+                    </svg></div>
+            </button>
+        </div>
+    </div>
+    <div role="group" class="chakra-linkbox css-3t0csz">
+        <div class="css-15wcdop">
+            <div class="chakra-skeleton css-3b2m0u"><img alt="Celer cBridge app icon"
+                    src="https://blockscout-content.s3.amazonaws.com/celer.png" class="chakra-image css-rl6otz">
+            </div>
+            <h3 class="chakra-skeleton css-1al2f01"><a href="/apps/celer-cbridge"
+                    class="chakra-linkbox__overlay css-wbqga2">Celer cBridge</a>
+                <div class="chakra-skeleton css-1gdj5a7"><svg class="css-uwwqev">
+                        <use href="/icons/sprite.svg#integration/partial"></use>
+                    </svg></div>
+            </h3>
+            <div class="chakra-skeleton css-i7am8w"><span>Bridges, Liquid Staking, NFT</span></div>
+            <div class="chakra-skeleton css-1kseng2">Celer cBridge is a decentralized and non-custodial asset
+                bridge that supports 130+ different tokens across 30+ blockchains and layer-2 rollups.</div>
+            <div class="css-11hwxkg"><a class="chakra-link css-1o0tpsu" href="#">More info</a></div><button
+                type="button" class="chakra-button css-vhh3ud" aria-label="Mark as favorite"
+                title="Mark as favorite">
+                <div class="chakra-skeleton css-6yxffx" aria-hidden="true" focusable="false"><svg
+                        class="css-uwwqev">
+                        <use href="/icons/sprite.svg#star_outline"></use>
+                    </svg></div>
+            </button>
+        </div>
+    </div>
+    <div role="group" class="chakra-linkbox css-3t0csz">
+        <div class="css-15wcdop">
+            <div class="chakra-skeleton css-3b2m0u"><img alt="Subsquid app icon"
+                    src="https://blockscout-content.s3.amazonaws.com/subsquid.svg"
+                    class="chakra-image css-rl6otz"></div>
+            <h3 class="chakra-skeleton css-1al2f01"><a href="https://subsquid.io?utm_source=Blockscout"
+                    class="chakra-linkbox__overlay css-wbqga2" rel="noopener noreferrer"
+                    target="_blank">Subsquid</a>
+                <div class="chakra-skeleton css-1gdj5a7"><svg class="css-uwwqev">
+                        <use href="/icons/sprite.svg#arrows/north-east"></use>
+                    </svg></div>
+            </h3>
+            <div class="chakra-skeleton css-i7am8w"><span>Dev tooling, Data &amp; Analytics</span></div>
+            <div class="chakra-skeleton css-1kseng2">Subsquid Network is a decentralized data lake and query
+                engine designed to provide developers with performant and permissionless access to on-chain
+                data.</div>
+            <div class="css-11hwxkg"><a class="chakra-link css-1o0tpsu" href="#">More info</a></div><button
+                type="button" class="chakra-button css-vhh3ud" aria-label="Mark as favorite"
+                title="Mark as favorite">
+                <div class="chakra-skeleton css-6yxffx" aria-hidden="true" focusable="false"><svg
+                        class="css-uwwqev">
+                        <use href="/icons/sprite.svg#star_outline"></use>
+                    </svg></div>
+            </button>
+        </div>
+    </div>
+    <div role="group" class="chakra-linkbox css-3t0csz">
+        <div class="css-15wcdop">
+            <div class="chakra-skeleton css-3b2m0u"><img alt="Etherspot app icon"
+                    src="https://blockscout-content.s3.amazonaws.com/etherspot.png"
+                    class="chakra-image css-rl6otz"></div>
+            <h3 class="chakra-skeleton css-1al2f01"><a href="https://etherspot.io/?utm_source=Blockscout"
+                    class="chakra-linkbox__overlay css-wbqga2" rel="noopener noreferrer"
+                    target="_blank">Etherspot</a>
+                <div class="chakra-skeleton css-1gdj5a7"><svg class="css-uwwqev">
+                        <use href="/icons/sprite.svg#arrows/north-east"></use>
+                    </svg></div>
+            </h3>
+            <div class="chakra-skeleton css-i7am8w"><span>Dev tooling</span></div>
+            <div class="chakra-skeleton css-1kseng2">Etherspot is a multi-chain ERC-4337 development platform
+                that provides solutions for dApps, wallets, games, operating EVM-compatible rollups, or L1/L2
+                chains to deliver frictionless Web3 UX by removing usability pain points.</div>
+            <div class="css-11hwxkg"><a class="chakra-link css-1o0tpsu" href="#">More info</a></div><button
+                type="button" class="chakra-button css-vhh3ud" aria-label="Mark as favorite"
+                title="Mark as favorite">
+                <div class="chakra-skeleton css-6yxffx" aria-hidden="true" focusable="false"><svg
+                        class="css-uwwqev">
+                        <use href="/icons/sprite.svg#star_outline"></use>
+                    </svg></div>
+            </button>
+        </div>
+    </div>
+    <div role="group" class="chakra-linkbox css-3t0csz">
+        <div class="css-15wcdop">
+            <div class="chakra-skeleton css-3b2m0u"><img alt="MetaSleuth app icon"
+                    src="https://blockscout-content.s3.amazonaws.com/metasleuth.jpg"
+                    class="chakra-image css-rl6otz"></div>
+            <h3 class="chakra-skeleton css-1al2f01"><a href="https://metasleuth.io/?utm_source=Blockscout"
+                    class="chakra-linkbox__overlay css-wbqga2" rel="noopener noreferrer"
+                    target="_blank">MetaSleuth</a>
+                <div class="chakra-skeleton css-1gdj5a7"><svg class="css-uwwqev">
+                        <use href="/icons/sprite.svg#arrows/north-east"></use>
+                    </svg></div>
+            </h3>
+            <div class="chakra-skeleton css-i7am8w"><span>Data &amp; Analytics, Dev tooling</span></div>
+            <div class="chakra-skeleton css-1kseng2">MetaSleuth is a crypto tracking and investigation platform.
+                It can help monitor market movements, track fund flow of criminal activities, and DYOR to avoid
+                scams.</div>
+            <div class="css-11hwxkg"><a class="chakra-link css-1o0tpsu" href="#">More info</a></div><button
+                type="button" class="chakra-button css-vhh3ud" aria-label="Mark as favorite"
+                title="Mark as favorite">
+                <div class="chakra-skeleton css-6yxffx" aria-hidden="true" focusable="false"><svg
+                        class="css-uwwqev">
+                        <use href="/icons/sprite.svg#star_outline"></use>
+                    </svg></div>
+            </button>
+        </div>
+    </div>
+    <div role="group" class="chakra-linkbox css-3t0csz">
+        <div class="css-15wcdop">
+            <div class="chakra-skeleton css-3b2m0u"><img alt="Base Bridge app icon"
+                    src="https://blockscout-content.s3.amazonaws.com/base_bridge_light.png"
+                    class="chakra-image css-rl6otz"></div>
+            <h3 class="chakra-skeleton css-1al2f01"><a href="https://bridge.base.org/?utm_source=Blockscout"
+                    class="chakra-linkbox__overlay css-wbqga2" rel="noopener noreferrer" target="_blank">Base
+                    Bridge</a>
+                <div class="chakra-skeleton css-1gdj5a7"><svg class="css-uwwqev">
+                        <use href="/icons/sprite.svg#arrows/north-east"></use>
+                    </svg></div>
+            </h3>
+            <div class="chakra-skeleton css-i7am8w"><span>Bridges</span></div>
+            <div class="chakra-skeleton css-1kseng2">Bridge your assets securely with Base. This project is in
+                testing. You can bridge whitelisted ERC-20 tokens from Goerli (Ethereum testnet) to Base Goerli
+                Testnet. Ethereum mainnet tokens are not yet supported.</div>
+            <div class="css-11hwxkg"><a class="chakra-link css-1o0tpsu" href="#">More info</a></div><button
+                type="button" class="chakra-button css-vhh3ud" aria-label="Mark as favorite"
+                title="Mark as favorite">
+                <div class="chakra-skeleton css-6yxffx" aria-hidden="true" focusable="false"><svg
+                        class="css-uwwqev">
+                        <use href="/icons/sprite.svg#star_outline"></use>
+                    </svg></div>
+            </button>
+        </div>
+    </div>
+    <div role="group" class="chakra-linkbox css-3t0csz">
+        <div class="css-15wcdop">
+            <div class="chakra-skeleton css-3b2m0u"><img alt="Mintpad app icon"
+                    src="https://blockscout-content.s3.amazonaws.com/mintpad.png"
+                    class="chakra-image css-rl6otz"></div>
+            <h3 class="chakra-skeleton css-1al2f01"><a href="https://mintpad.co/?utm_source=Blockscout"
+                    class="chakra-linkbox__overlay css-wbqga2" rel="noopener noreferrer"
+                    target="_blank">Mintpad</a>
+                <div class="chakra-skeleton css-1gdj5a7"><svg class="css-uwwqev">
+                        <use href="/icons/sprite.svg#arrows/north-east"></use>
+                    </svg></div>
+            </h3>
+            <div class="chakra-skeleton css-i7am8w"><span>NFT</span></div>
+            <div class="chakra-skeleton css-1kseng2">Mintpad, your go-to free-to-use, NFT launchpad, simplifies
+                the process of introducing your unique collection to the digital world. With just your artwork
+                and a cryptocurrency wallet, you are ready to go!</div>
+            <div class="css-11hwxkg"><a class="chakra-link css-1o0tpsu" href="#">More info</a></div><button
+                type="button" class="chakra-button css-vhh3ud" aria-label="Mark as favorite"
+                title="Mark as favorite">
+                <div class="chakra-skeleton css-6yxffx" aria-hidden="true" focusable="false"><svg
+                        class="css-uwwqev">
+                        <use href="/icons/sprite.svg#star_outline"></use>
+                    </svg></div>
+            </button>
+        </div>
+    </div>
+    <div role="group" class="chakra-linkbox css-3t0csz">
+        <div class="css-15wcdop">
+            <div class="chakra-skeleton css-3b2m0u"><img alt="Coinbase Wallet app icon"
+                    src="https://blockscout-content.s3.amazonaws.com/CoinbaseWallet.png"
+                    class="chakra-image css-rl6otz"></div>
+            <h3 class="chakra-skeleton css-1al2f01"><a href="https://wallet.coinbase.com/?utm_source=Blockscout"
+                    class="chakra-linkbox__overlay css-wbqga2" rel="noopener noreferrer"
+                    target="_blank">Coinbase Wallet</a>
+                <div class="chakra-skeleton css-1gdj5a7"><svg class="css-uwwqev">
+                        <use href="/icons/sprite.svg#arrows/north-east"></use>
+                    </svg></div>
+            </h3>
+            <div class="chakra-skeleton css-i7am8w"><span>Wallets</span></div>
+            <div class="chakra-skeleton css-1kseng2">The secure app to store crypto yourself Store all your
+                crypto and NFTs in one place, trade 500+ assets on DEXes and earn interest. No Coinbase account
+                required.</div>
+            <div class="css-11hwxkg"><a class="chakra-link css-1o0tpsu" href="#">More info</a></div><button
+                type="button" class="chakra-button css-vhh3ud" aria-label="Mark as favorite"
+                title="Mark as favorite">
+                <div class="chakra-skeleton css-6yxffx" aria-hidden="true" focusable="false"><svg
+                        class="css-uwwqev">
+                        <use href="/icons/sprite.svg#star_outline"></use>
+                    </svg></div>
+            </button>
+        </div>
+    </div>
+    <div role="group" class="chakra-linkbox css-3t0csz">
+        <div class="css-15wcdop">
+            <div class="chakra-skeleton css-3b2m0u"><img alt="0x app icon"
+                    src="https://blockscout-content.s3.amazonaws.com/0x_light.png"
+                    class="chakra-image css-rl6otz"></div>
+            <h3 class="chakra-skeleton css-1al2f01"><a href="https://dashboard.0x.org/?utm_source=Blockscout"
+                    class="chakra-linkbox__overlay css-wbqga2" rel="noopener noreferrer" target="_blank">0x</a>
+                <div class="chakra-skeleton css-1gdj5a7"><svg class="css-uwwqev">
+                        <use href="/icons/sprite.svg#arrows/north-east"></use>
+                    </svg></div>
+            </h3>
+            <div class="chakra-skeleton css-i7am8w"><span>Dev tooling</span></div>
+            <div class="chakra-skeleton css-1kseng2">0x is an open-source, decentralized exchange infrastructure
+                that enables the exchange of tokenized assets on multiple blockchains.</div>
+            <div class="css-11hwxkg"><a class="chakra-link css-1o0tpsu" href="#">More info</a></div><button
+                type="button" class="chakra-button css-vhh3ud" aria-label="Mark as favorite"
+                title="Mark as favorite">
+                <div class="chakra-skeleton css-6yxffx" aria-hidden="true" focusable="false"><svg
+                        class="css-uwwqev">
+                        <use href="/icons/sprite.svg#star_outline"></use>
+                    </svg></div>
+            </button>
+        </div>
+    </div>
+    <div role="group" class="chakra-linkbox css-3t0csz">
+        <div class="css-15wcdop">
+            <div class="chakra-skeleton css-3b2m0u"><img alt="Catapulta app icon"
+                    src="https://blockscout-content.s3.amazonaws.com/catapulta.png"
+                    class="chakra-image css-rl6otz"></div>
+            <h3 class="chakra-skeleton css-1al2f01"><a href="https://catapulta.sh?utm_source=Blockscout"
+                    class="chakra-linkbox__overlay css-wbqga2" rel="noopener noreferrer"
+                    target="_blank">Catapulta</a>
+                <div class="chakra-skeleton css-1gdj5a7"><svg class="css-uwwqev">
+                        <use href="/icons/sprite.svg#arrows/north-east"></use>
+                    </svg></div>
+            </h3>
+            <div class="chakra-skeleton css-i7am8w"><span>Data &amp; Analytics, Dev tooling</span></div>
+            <div class="chakra-skeleton css-1kseng2">A plug-n-play, multi-chain Web3 deployment platform for
+                teams. Deploy with Foundry or Hardhat scripts to more than 10 networks with zero configs, get
+                instantly verified in block explorers and share your deployment reports with your team, or your
+                community.</div>
+            <div class="css-11hwxkg"><a class="chakra-link css-1o0tpsu" href="#">More info</a></div><button
+                type="button" class="chakra-button css-vhh3ud" aria-label="Mark as favorite"
+                title="Mark as favorite">
+                <div class="chakra-skeleton css-6yxffx" aria-hidden="true" focusable="false"><svg
+                        class="css-uwwqev">
+                        <use href="/icons/sprite.svg#star_outline"></use>
+                    </svg></div>
+            </button>
+        </div>
+    </div>
+    <div role="group" class="chakra-linkbox css-3t0csz">
+        <div class="css-15wcdop">
+            <div class="chakra-skeleton css-3b2m0u"><img alt="1inch app icon"
+                    src="https://blockscout-content.s3.amazonaws.com/1inch.png" class="chakra-image css-rl6otz">
+            </div>
+            <h3 class="chakra-skeleton css-1al2f01"><a href="https://app.1inch.io/#/8453/simple/swap/ETH"
+                    class="chakra-linkbox__overlay css-wbqga2" rel="noopener noreferrer"
+                    target="_blank">1inch</a>
+                <div class="chakra-skeleton css-1gdj5a7"><svg class="css-uwwqev">
+                        <use href="/icons/sprite.svg#arrows/north-east"></use>
+                    </svg></div>
+            </h3>
+            <div class="chakra-skeleton css-i7am8w"><span>Swaps</span></div>
+            <div class="chakra-skeleton css-1kseng2">DeFi / DEX aggregator with the most liquidity and the best
+                rates.</div>
+            <div class="css-11hwxkg"><a class="chakra-link css-1o0tpsu" href="#">More info</a></div><button
+                type="button" class="chakra-button css-vhh3ud" aria-label="Mark as favorite"
+                title="Mark as favorite">
+                <div class="chakra-skeleton css-6yxffx" aria-hidden="true" focusable="false"><svg
+                        class="css-uwwqev">
+                        <use href="/icons/sprite.svg#star_outline"></use>
+                    </svg></div>
+            </button>
+        </div>
+    </div>
+    <div role="group" class="chakra-linkbox css-3t0csz">
+        <div class="css-15wcdop">
+            <div class="chakra-skeleton css-3b2m0u"><img alt="Coinbase Faucet app icon"
+                    src="https://blockscout-content.s3.amazonaws.com/base_goerli_eth_faucet_light.png"
+                    class="chakra-image css-rl6otz"></div>
+            <h3 class="chakra-skeleton css-1al2f01"><a
+                    href="https://www.coinbase.com/faucets?utm_source=Blockscout"
+                    class="chakra-linkbox__overlay css-wbqga2" rel="noopener noreferrer"
+                    target="_blank">Coinbase Faucet</a>
+                <div class="chakra-skeleton css-1gdj5a7"><svg class="css-uwwqev">
+                        <use href="/icons/sprite.svg#arrows/north-east"></use>
+                    </svg></div>
+            </h3>
+            <div class="chakra-skeleton css-i7am8w"><span>Dev tooling</span></div>
+            <div class="chakra-skeleton css-1kseng2">Coinbase Faucet | Base is the easiest way to get some ETH
+                for Base.</div>
+            <div class="css-11hwxkg"><a class="chakra-link css-1o0tpsu" href="#">More info</a></div><button
+                type="button" class="chakra-button css-vhh3ud" aria-label="Mark as favorite"
+                title="Mark as favorite">
+                <div class="chakra-skeleton css-6yxffx" aria-hidden="true" focusable="false"><svg
+                        class="css-uwwqev">
+                        <use href="/icons/sprite.svg#star_outline"></use>
+                    </svg></div>
+            </button>
+        </div>
+    </div>
+    <div role="group" class="chakra-linkbox css-3t0csz">
+        <div class="css-15wcdop">
+            <div class="chakra-skeleton css-3b2m0u"><img alt="PRINT3R app icon"
+                    src="https://blockscout-content.s3.amazonaws.com/print3r-logo.jpeg"
+                    class="chakra-image css-rl6otz"></div>
+            <h3 class="chakra-skeleton css-1al2f01"><a
+                    href="https://app.print3r.xyz/#/trade?utm_source=Blockscout"
+                    class="chakra-linkbox__overlay css-wbqga2" rel="noopener noreferrer"
+                    target="_blank">PRINT3R</a>
+                <div class="chakra-skeleton css-1gdj5a7"><svg class="css-uwwqev">
+                        <use href="/icons/sprite.svg#arrows/north-east"></use>
+                    </svg></div>
+            </h3>
+            <div class="chakra-skeleton css-i7am8w"><span>Swaps</span></div>
+            <div class="chakra-skeleton css-1kseng2">PRINT3R aims to shake-up the existing derivatives market by
+                fully gamifying the trading experience, creating an immersive and addictive experience for
+                traders at any level</div>
+            <div class="css-11hwxkg"><a class="chakra-link css-1o0tpsu" href="#">More info</a></div><button
+                type="button" class="chakra-button css-vhh3ud" aria-label="Mark as favorite"
+                title="Mark as favorite">
+                <div class="chakra-skeleton css-6yxffx" aria-hidden="true" focusable="false"><svg
+                        class="css-uwwqev">
+                        <use href="/icons/sprite.svg#star_outline"></use>
+                    </svg></div>
+            </button>
+        </div>
+    </div>
+    <div role="group" class="chakra-linkbox css-3t0csz">
+        <div class="css-15wcdop">
+            <div class="chakra-skeleton css-3b2m0u"><img alt="Phalcon app icon"
+                    src="https://blockscout-content.s3.amazonaws.com/phalcon.jpg"
+                    class="chakra-image css-rl6otz"></div>
+            <h3 class="chakra-skeleton css-1al2f01"><a href="https://phalcon.xyz/explorer?utm_source=Blockscout"
+                    class="chakra-linkbox__overlay css-wbqga2" rel="noopener noreferrer"
+                    target="_blank">Phalcon</a>
+                <div class="chakra-skeleton css-1gdj5a7"><svg class="css-uwwqev">
+                        <use href="/icons/sprite.svg#arrows/north-east"></use>
+                    </svg></div>
+            </h3>
+            <div class="chakra-skeleton css-i7am8w"><span>Data &amp; Analytics, Dev tooling</span></div>
+            <div class="chakra-skeleton css-1kseng2"># Dive into Transactions to Act Wisely Phalcon Explorer
+                helps developers, traders, and researchers intuitively understand complicated transactions to
+                make better descisions. Trusted by 30K users from 160+ countries and regions, it analyzes more
+                than 500K transactions per month.</div>
+            <div class="css-11hwxkg"><a class="chakra-link css-1o0tpsu" href="#">More info</a></div><button
+                type="button" class="chakra-button css-vhh3ud" aria-label="Mark as favorite"
+                title="Mark as favorite">
+                <div class="chakra-skeleton css-6yxffx" aria-hidden="true" focusable="false"><svg
+                        class="css-uwwqev">
+                        <use href="/icons/sprite.svg#star_outline"></use>
+                    </svg></div>
+            </button>
+        </div>
+    </div>
+</div>
+</main>

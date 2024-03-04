@@ -182,12 +182,19 @@
                         class: "dropdown-item #{tab_status("Directory", @conn.request_path)}",
                         to: "/directories"
                       ) %>
+                      <%= link(
+                        gettext("DeployedApps"),
+                        class: "dropdown-item #{tab_status("Directory", @conn.request_path)}",
+                        to: "/deployed-apps"
+                      ) %>
 
 
                       <a class="dropdown-item" target="_blank" href="https://docs.wyzth.org/docs/Overview"> API Documentation</a>
 
                 </div>
               </li>
+
+
 
           <li class="nav-item dropdown">
                 <a href="#" role="button" id="navbarTokensDropdown" class="nav-link topnav-nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -233,6 +240,50 @@
 
                 </div>
               </li>
+
+              <li class="nav-item dropdown">
+              <a href="#" role="button" id="navbarTokensDropdown" class="nav-link topnav-nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <%= gettext("Tools") %>
+              <div class="dropdown-menu fade-up" aria-labeledby="navbarTransactionsDropdown">
+              <%= link(
+                      gettext("Encoding Converter"),
+                     class: "dropdown-item #{tab_status("api-docs", @conn.request_path)}",
+                  to: api_url() <> api_docs_path(@conn, :index)
+                    ) %>
+
+                <%= link(
+                      gettext("Verify Contract"),
+                      class: "dropdown-item #{tab_status("contract-verify", @conn.request_path)}",
+                      to: "/contract-verify"
+                    ) %>
+
+                    <%= link(
+                      gettext("Smart Contract Search"),
+                      class: "dropdown-item #{tab_status("contract-search", @conn.request_path)}",
+                      to: "/contract-search"
+                    ) %>
+
+                    <%= link(
+                      gettext("Contract Diff Checker"),
+                      class: "dropdown-item border-bottom #{tab_status("contract-diff-checker", @conn.request_path)}",
+                      to: "/diff-checker"
+                    ) %>
+
+                    <%= link(
+                      gettext("Vyper Online Compiler"),
+                      class: "dropdown-item #{tab_status("vyper-verification", @conn.request_path)}",
+                      to: "/vyper-verification"
+                    ) %>
+
+                    <%= link(
+                      gettext("Broadcast Transaction"),
+                      class: "dropdown-item #{tab_status("Broadcast-Transaction", @conn.request_path)}",
+                      to: "/pushTx"
+                    ) %>
+
+              </div>
+              </a>
+              </li>
               <li class="nav-item dropdown d-lg-none d-block">
               <a href="#" role="button" id="navbarTokensDropdown" class="nav-link topnav-nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <%= gettext("Explorer") %>
@@ -258,6 +309,9 @@
               <i class="fa fa-user-circle mx-1 mobile-d-none"></i> Sign In
             </a>
           </li>
+
+
+
 
 
         <!--  <li class="header-nav-separator mt-lg-2"></li>

@@ -4,7 +4,8 @@ defmodule BlockScoutWeb.BlocksChatController do
   def index(conn, _params) do
     render(conn, "index.html")
   end
-    def send_message(conn, _params) do
+
+  def send_message(conn, _params) do
     url = "https://wyzthscan.org/node-api/send-message"
     redirect(conn, external: url)
   end

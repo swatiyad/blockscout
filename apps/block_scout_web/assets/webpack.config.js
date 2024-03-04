@@ -100,6 +100,7 @@ const appJs =
       'blocks-chat':'./js/lib/blocks-chat.js',
       'transactions-tab':'./js/lib/transactions-tab.js',
       'nav':'./js/lib/nav.js',
+      'tools':'./js/lib/tool-converter.js'
     },
     output: {
       filename: '[name].js',

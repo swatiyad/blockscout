@@ -77,116 +77,118 @@ defmodule BlockScoutWeb.Router do
     end
   end
 
-
+  scope "/", BlockScoutWeb do
+    pipe_through(:browser)
+    get("/signin", AdminDashboardController, :signin)
+    get("/add-icon/:id", AdminDashboardController, :addIcon)
+    get("/signup", AdminDashboardController, :signup)
+    get("/verify/:id", AdminDashboardController, :verify)
+    get("/forget-password", AdminDashboardController, :forgetpassword)
+    get("/admin-login", AdminDashboardController, :adminsignin)
+    get("/admin-dashboard/:id", AdminDashboardController, :userdashboard)
+    get("/user-dashboard/icon/:id", AdminDashboardController, :userdashboardicon)
+  end
 
   scope "/", BlockScoutWeb do
-  pipe_through :browser
-  get "/signin", AdminDashboardController, :signin
-  get "/add-icon/:id", AdminDashboardController, :addIcon
-  get "/signup", AdminDashboardController, :signup
-  get "/verify/:id", AdminDashboardController, :verify
-  get "/forget-password", AdminDashboardController, :forgetpassword
-  get "/admin-login", AdminDashboardController, :adminsignin
-  get "/admin-dashboard/:id", AdminDashboardController, :userdashboard
-  get "/user-dashboard/icon/:id", AdminDashboardController, :userdashboardicon
-end
+    pipe_through(:browser)
+    get("/contract-verify", ContractVerifyController, :index)
+  end
 
   scope "/", BlockScoutWeb do
-  pipe_through :browser
-  get "/contract-verify", ContractVerifyController, :index
-end
+    pipe_through(:browser)
+    get("/charts", ChartController, :index)
+    get("/charts/tx", ChartController, :tx)
+    get("/charts/blocksize", ChartController, :blocksize)
+    get("/charts/bep2etxns", ChartController, :bep2etxns)
+    get("/charts/gasused", ChartController, :blocktime)
+    get("/charts/gasprice", ChartController, :gasprice)
+    get("/charts/gaslimit", ChartController, :gaslimit)
+    get("/charts/uniqueaddress", ChartController, :uniqueaddress)
+  end
 
   scope "/", BlockScoutWeb do
-  pipe_through :browser
-  get "/charts", ChartController, :index
-   get("/charts/tx", ChartController, :tx)
-   get("/charts/blocksize", ChartController, :blocksize)
-   get("/charts/bep2etxns", ChartController, :bep2etxns)
- get("/charts/gasused", ChartController, :blocktime)
-  get("/charts/gasprice", ChartController, :gasprice)
-   get("/charts/gaslimit", ChartController, :gaslimit)
-   get("/charts/uniqueaddress", ChartController, :uniqueaddress)
-end
-
+    pipe_through(:browser)
+    get("/statistics", StatisticsController, :index)
+  end
 
   scope "/", BlockScoutWeb do
-  pipe_through :browser
-  get "/statistics", StatisticsController, :index
-
-end
-
-  scope "/", BlockScoutWeb do
-  pipe_through :browser
-  get "/vyper-verification", VyperContractVerificationController, :index
-
-end
-  scope "/", BlockScoutWeb do
-  pipe_through :browser
-  get "/diff-checker", DiffCheckerController, :index
-
-end
-  scope "/", BlockScoutWeb do
-  pipe_through :browser
-  get "/preferences", PreferencesController, :index
-
-end
-scope "/tx", BlockScoutWeb do
-  get "/:id/disqus", DisqusController, :index
-end
-  scope "/", BlockScoutWeb do
-  pipe_through :browser
-  get "/top-nft", NftDataController, :index
-   get "/latest-nft-transactions", NftDataController, :nft_token_transfer
-   get "/latest-mint", NftDataController, :nft_mint
-end
+    pipe_through(:browser)
+    get("/vyper-verification", VyperContractVerificationController, :index)
+  end
 
   scope "/", BlockScoutWeb do
-  pipe_through :browser
-  get "/pushTx", BroadcastTransactionController, :index
-
-end
-
-  scope "/", BlockScoutWeb do
-  pipe_through :browser
-  get "/contract-search", SearchContractController, :index
-end
-
+    pipe_through(:browser)
+    get("/diff-checker", DiffCheckerController, :index)
+  end
 
   scope "/", BlockScoutWeb do
-  pipe_through :browser
-  get "/directories", DirectoriesController, :index
-  get "/directories/dex", DirectoriesController, :dex
-  get "/directories/crypto-exchange", DirectoriesController, :crypto_exchange
-   get "/directories/fiat-exchanges", DirectoriesController, :fiat_exchanges
-   get "/directories/gui-wallets", DirectoriesController, :guiwallet
-    get "/directories/benchmark-listing", DirectoriesController, :benchmark_listing
-    get "/directories/price-watch", DirectoriesController, :pricewatch
-    get "/directories/forum", DirectoriesController, :forum
-     get "/directories/blockchain", DirectoriesController, :blockchain
-      get "/directories/wyzth", DirectoriesController, :wyzthscan
-     get "/directories/services", DirectoriesController, :directoriesservices
-     get "/directories/smart-contract-audit", DirectoriesController, :smart_contract_audit
-      get "/directories/smart-contracts-factory", DirectoriesController, :smart_contracts_factory
-       get "/directories/mining-pool", DirectoriesController, :miningpools
-       get "/directories/mining-talk", DirectoriesController, :mining
-     get "/directories/grants", DirectoriesController, :directories_grants
-     get "/directories/tools", DirectoriesController, :tools
-end
+    pipe_through(:browser)
+    get("/preferences", PreferencesController, :index)
+  end
+
+  scope "/tx", BlockScoutWeb do
+    get("/:id/disqus", DisqusController, :index)
+  end
 
   scope "/", BlockScoutWeb do
-  pipe_through :browser
-  get "/terms-of-service", TermsOfServiceController, :index
-  get "/privacy-policy", TermsOfServiceController, :privacy
-end
+    pipe_through(:browser)
+    get("/top-nft", NftDataController, :index)
+    get("/latest-nft-transactions", NftDataController, :nft_token_transfer)
+    get("/latest-mint", NftDataController, :nft_mint)
+  end
 
   scope "/", BlockScoutWeb do
-  pipe_through :browser
-  get "/chat", BlocksChatController, :index
-   post "/node-api/send-message", BlocksChatController, :send_message
-end
+    pipe_through(:browser)
+    get("/pushTx", BroadcastTransactionController, :index)
+  end
 
+  scope "/", BlockScoutWeb do
+    pipe_through(:browser)
+    get("/contract-search", SearchContractController, :index)
+  end
 
+  scope "/", BlockScoutWeb do
+    pipe_through(:browser)
+    get("/directories", DirectoriesController, :index)
+    get("/directories/dex", DirectoriesController, :dex)
+    get("/directories/crypto-exchange", DirectoriesController, :crypto_exchange)
+    get("/directories/fiat-exchanges", DirectoriesController, :fiat_exchanges)
+    get("/directories/gui-wallets", DirectoriesController, :guiwallet)
+    get("/directories/benchmark-listing", DirectoriesController, :benchmark_listing)
+    get("/directories/price-watch", DirectoriesController, :pricewatch)
+    get("/directories/forum", DirectoriesController, :forum)
+    get("/directories/blockchain", DirectoriesController, :blockchain)
+    get("/directories/wyzth", DirectoriesController, :wyzthscan)
+    get("/directories/services", DirectoriesController, :directoriesservices)
+    get("/directories/smart-contract-audit", DirectoriesController, :smart_contract_audit)
+    get("/directories/smart-contracts-factory", DirectoriesController, :smart_contracts_factory)
+    get("/directories/mining-pool", DirectoriesController, :miningpools)
+    get("/directories/mining-talk", DirectoriesController, :mining)
+    get("/directories/grants", DirectoriesController, :directories_grants)
+    get("/directories/tools", DirectoriesController, :tools)
+  end
 
+  scope "/", BlockScoutWeb do
+    pipe_through(:browser)
+    get("/test", TestController, :index)
+  end
+
+  scope "/", BlockScoutWeb do
+    pipe_through(:browser)
+    get("/dapps", DappController, :index)
+  end
+
+  scope "/", BlockScoutWeb do
+    pipe_through(:browser)
+    get("/terms-of-service", TermsOfServiceController, :index)
+    get("/privacy-policy", TermsOfServiceController, :privacy)
+  end
+
+  scope "/", BlockScoutWeb do
+    pipe_through(:browser)
+    get("/chat", BlocksChatController, :index)
+    post("/node-api/send-message", BlocksChatController, :send_message)
+  end
 
   if Application.compile_env(:block_scout_web, WebRouter)[:enabled] do
     forward("/", BlockScoutWeb.WebRouter)
@@ -195,7 +197,6 @@ end
       pipe_through(:browser)
 
       forward("/", APIDocsController, :index)
-
     end
   end
 end

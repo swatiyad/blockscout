@@ -146,6 +146,7 @@ defmodule BlockScoutWeb.TransactionController do
         set_not_found_view(conn, transaction_hash_string)
     end
   end
+
   def internal(conn, _params) do
     render(conn, "internal_transaction.html")
   end

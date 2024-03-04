@@ -1,0 +1,82 @@
+<script defer src="<%= static_path(@conn, "/js/tool-converter.js") %>"></script>
+<div id="mainContent ">
+
+<div class="container header-overlap tron-convert-tool-wrapper  px-5 mt-4">
+    <div class="">
+
+        <span class="">
+          <span class="encodingTitle ">Encoding Converter</span>
+
+        </span>
+    </div>
+    <div class=" d-flex flex-column " >
+    <div class="new-list-style-body ">
+        <div class="card-header list-style-body__header ">
+            <ul class="nav nav-tabs card-header-tabs ">
+                <li class="nav-item selectedTab"><a class="nav-link text-dark showBorder" aria-current="page"
+                        href="#/tools/code-converter/tron-ethereum-address">TRON - EVM Address</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="tool-content ">
+        <div class="code-conversion-wrapper  converter1  mx-auto col-12">
+            <div class="main input-wrapper  col-5 ">
+                <div class="label my-2">TRON Address</div>
+                <div class=" ">
+                    <div class="  ">
+                       <textarea rows="9"
+                            style="resize: none"
+                            placeholder="Enter one or more TRON addresses with each address on a separate line, starting with the letter T"
+                            class=" col-12 rounded-lg toolAddressInput">
+
+                       </textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="action-button-list col-2 text-center convertButtons ">
+                <div class=" p-2 " >
+                           <button id="toolBtn1" type="button" class="py-1 px-3   converterButtonStyle">
+                            <span class=" mx-2"> Convert </span>
+                            <span class="">
+                            <i class="fa-solid fa-arrow-right"></i>
+                            </span>
+
+                           </button>
+                </div>
+                <div class="p-2">
+                <button type="button" id="toolBtn2" class="py-1 px-3  converterButtonStyle" >
+                <span class="">
+                      <i class="fa-solid fa-arrow-left"></i>
+                </span>
+                       <span class=" mx-2"> Convert </span>
+                        </button>
+
+                        </div>
+                <div class= "p-2">
+                <button type="button" class="py-1 resetBtnConvt converterButtonStyle">
+                   Reset
+                </button>
+                </div>
+            </div>
+
+            <div class="main input-wrapper col-5  ">
+                <div class="label my-2">Ethereum Virtual Machine (EVM) Address</div>
+                <div class="">
+                    <div class="">
+                    <textarea rows="9"
+                    style="resize: none"
+
+                            placeholder="Enter one or more EVM addresses with each address on a separate line, starting with 0x"
+                            class="col-12 rounded-lg toolAddressInput">
+                    </textarea>
+                            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+</div>

@@ -6112,16 +6112,15 @@ defmodule Explorer.Chain do
         "100" ->
           "xdai"
 
-          "303" ->
-            "wyz"
+        "303" ->
+          "wyz"
 
         _ ->
           nil
       end
 
     if chain_name do
-      try_url =
-        "https://raw.githubusercontent.com/wyzthscan/wyzthscan-image/master/assets/#{address_hash}/logo.png"
+      try_url = "https://raw.githubusercontent.com/wyzthscan/wyzthscan-image/master/assets/#{address_hash}/logo.png"
 
       try_url
     else
