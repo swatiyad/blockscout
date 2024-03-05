@@ -184,8 +184,8 @@
                       ) %>
                       <%= link(
                         gettext("DeployedApps"),
-                        class: "dropdown-item #{tab_status("Directory", @conn.request_path)}",
-                        to: "/deployed-apps"
+                        class: "dropdown-item #{tab_status("DeployedApps", @conn.request_path)}",
+                        to: "/dapps"
                       ) %>
 
 

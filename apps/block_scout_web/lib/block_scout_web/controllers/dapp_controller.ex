@@ -1,4 +1,4 @@
-defmodule BlockScoutWeb.DappController do
+defmodule BlockScoutWeb.DappsController do
   use BlockScoutWeb, :controller
 
   def index(conn, _params) do

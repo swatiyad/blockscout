@@ -175,7 +175,7 @@ defmodule BlockScoutWeb.Router do
 
   scope "/", BlockScoutWeb do
     pipe_through(:browser)
-    get("/dapps", DappController, :index)
+    get("/dapps", DappsController, :index)
   end
 
   scope "/", BlockScoutWeb do

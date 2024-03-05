@@ -1,3 +1,3 @@
-defmodule BlockScoutWeb.DappView do
+defmodule BlockScoutWeb.DappsView do
   use BlockScoutWeb, :view
 end
