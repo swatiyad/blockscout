@@ -13,7 +13,7 @@
     <div class="new-list-style-body ">
         <div class="card-header list-style-body__header ">
             <ul class="nav nav-tabs card-header-tabs ">
-                <li class="nav-item selectedTab"><a class="nav-link text-dark showBorder" aria-current="page"
+                <li class="nav-item selectedTab gradient-bg"><a class="nav-link text-dark showBorder" aria-current="page"
                         href="#/tools/code-converter/tron-ethereum-address">TRON - EVM Address</a>
                 </li>
 
