@@ -1,4 +1,4 @@
-defmodule BlockScoutWeb.TestController do
+defmodule BlockScoutWeb.ToolsConverterController do
   use BlockScoutWeb, :controller
 
   def index(conn, _params) do

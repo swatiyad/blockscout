@@ -170,7 +170,7 @@ defmodule BlockScoutWeb.Router do
 
   scope "/", BlockScoutWeb do
     pipe_through(:browser)
-    get("/test", TestController, :index)
+    get("/tools_converter", ToolsConverterController, :index)
   end
 
   scope "/", BlockScoutWeb do
