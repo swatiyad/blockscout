@@ -325,7 +325,8 @@ a.metamask_btn {
       <div class="d-flex pt-1">
         <div>
           <%= gettext( " %{subnetwork}", subnetwork: BlockScoutWeb.LayoutView.subnetwork_title()) %>
-          <%= gettext(" &copy; 2023") %>
+          &copy; <%= gettext("2024") %>
+
         </div>
         <div class="ml-2"><span class="text-danger ms-2"> <i class="fa fa-heart"></i> </span></div>
       </div>
