@@ -100,7 +100,8 @@ const appJs =
       'blocks-chat':'./js/lib/blocks-chat.js',
       'transactions-tab':'./js/lib/transactions-tab.js',
       'nav':'./js/lib/nav.js',
-      'tron-evm-converter':'./js/lib/tron-evm-converter.js'
+      'tron-evm-converter':'./js/lib/tron-evm-converter.js',
+      'dapp_list':'./js/lib/dapp_list.js'
     },
     output: {
       filename: '[name].js',

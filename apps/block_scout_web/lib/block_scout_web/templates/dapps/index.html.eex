@@ -1,3 +1,4 @@
+<script defer src="<%= static_path(@conn, "/js/dapp_list.js") %>"></script>
 
 
 <main class="   ">
@@ -37,7 +38,7 @@
                 data-index="1">All<span class=" p-1">34</span>
             </button>
                 <button type="button"
-                 id="tabs-:rl5:--tab-2" role="tab" tabindex="-1" aria-selected="false"
+                 id="punchIt" role="tab" tabindex="-1" aria-selected="false"
                  aria-controls="tabs-:rl5:--tabpanel-2" class="transparent-button  p-1 py-1 px-2"
                  data-index="2">Swaps<span class=" p-1">12</span>
                 </button>
@@ -273,7 +274,7 @@
 
 </div>
 
-
+<div id="product-list" ></div>
 
 
 
