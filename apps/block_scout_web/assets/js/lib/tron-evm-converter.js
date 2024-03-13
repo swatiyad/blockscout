@@ -1,4 +1,6 @@
 
+
+
 document.addEventListener("DOMContentLoaded", async function () {
   const toolBtn1 = document.getElementById("toolBtn1");
   const toolBtn2 = document.getElementById("toolBtn2");
@@ -8,9 +10,10 @@ document.addEventListener("DOMContentLoaded", async function () {
 
   const bs58 = require("bs58");
 
-  const ethereumToTronAddress = async (ethereumAddress) => {
+  const ethereumToTronAddress =  (ethereumAddress) => {
       // Remove the '0x' prefix from the Ethereum address
       const hex = ethereumAddress.slice(2);
+      console.log('I am in');
     
       // Convert the hexadecimal string back into a byte array
       // Prepend the Tron-specific prefix (0x41) to the byte array
@@ -18,21 +21,37 @@ document.addEventListener("DOMContentLoaded", async function () {
       
       // Encode the byte array into Base58 to get the Tron address
       const tronAddress = bs58.encode(bytes);
+      console.log("tron tron", tronAddress);
       
       return tronAddress;
 
   };
 
+  const tronToEthereumAddress = (tronAddress)=> {
+    // Decode the Base58 encoded Tron address
+    const decoded = bs58.decode(tronAddress);
+    
+    // Convert the decoded buffer to a hexadecimal string
+    const hex = Array.from(decoded, byte => byte.toString(16).padStart(2, '0')).join('');
+    
+    // Properly format the hex string as an Ethereum address by adding the '0x' prefix
+    const ethereumAddress = '0x' + hex.slice(2); // Slice off the Tron network prefix (0x41)
+    console.log('eth eth', ethereumAddress);
+    return ethereumAddress;
+}
+
   toolBtn1.addEventListener("click", () => {
     const ethereumAddress = "0x63bD0d5ae4E76AB501E3bD03A03c52Db8D3429CF";
-    ethereumToTronAddress(ethereumAddress)
-      .then((tronAddress) => console.log("tronAddresssss", tronAddress))
-      .catch((err) => console.log("err", err));
-
+   const result1 = ethereumToTronAddress(ethereumAddress);
+   console.log("tron address: ", result1);
+      
   });
 
   toolBtn2.addEventListener("click", () => {
-    console.log("tool bton 2 clicked!");
+    const tronAddress = "TDUiUScimQNfmD1F76Uq6YaXbofCVuAvxH";
+   const result2 = tronToEthereumAddress(tronAddress)
+   console.log("eth address: ",result2);
+      
   });
 
   tron_address.addEventListener("click", () => {
