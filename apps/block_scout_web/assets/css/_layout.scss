@@ -1944,6 +1944,11 @@ dl {
         padding-left: 24px;
     }
 }
+@media (max-width:875px){
+    .cardContainer{
+        justify-content: space-evenly !important;
+    }
+}
 
 @media (max-width: 460px) {
     .converterButtonStyle {
@@ -2066,3 +2071,215 @@ textarea {
 
 
 //code for dapp page
+.dappContainer{
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+}
+
+.dappContainer2{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.dappContainer3{
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    padding: 5px 10px;
+    background-color: #0C359E ;
+
+}
+
+.dappContainer3 a{
+    text-decoration: none;
+    color: #fff !important;
+}
+
+.dappContainer3 a:hover{
+    text-decoration: underline;
+
+}
+
+.transparent-button {
+
+    border-radius: 4px;
+    border: none;
+    padding: 4px;
+    background: linear-gradient(135deg, #efef00, #ccff99);
+    background: -webkit-linear-gradient(135deg, #efef00, #ccff99);
+    background: -moz-linear-gradient(135deg, #efef00, #ccff99);
+    background: -o-linear-gradient(135deg, #efef00, #ccff99);
+    background: -ms-linear-gradient(135deg, #efef00, #ccff99);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.8s ease-in-out;
+}
+.transparent-button:hover{
+
+    background: linear-gradient(135deg, #ccff99, #efef00);
+    background: -webkit-linear-gradient(135deg, #ccff99, #efef00);
+    background: -moz-linear-gradient(135deg, #ccff99, #efef00);
+    background: -o-linear-gradient(135deg, #ccff99, #efef00);
+    background: -ms-linear-gradient(135deg, #ccff99, #efef00);
+
+
+
+}
+
+.dAppContainer4{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+
+
+.custom-search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-search-wrapper {
+    display: flex;
+    align-items: center;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.custom-search-icon {
+    color: #666;
+    margin-right: 5px;
+}
+
+.custom-search-input {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 4px;
+    font-size: 16px;
+}
+
+
+
+.cardContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap:20px;
+    padding-left:0px !important;
+    padding-right:0px !important;
+
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width:22%;
+    min-width: 16rem;
+    margin:10px;
+    border: 1px solid #ccc;
+
+
+}
+
+.card-content:hover{
+    box-shadow: rgba(204, 204, 204, 0.5)
+    0px 8px 24px;
+    cursor:pointer;
+}
+
+.card-image {
+    width: 100px; /* Adjust image width as needed */
+    margin-right: 20px;
+}
+
+.card-image img {
+    width: 100%;
+    height: auto;
+}
+
+.card-details {
+    flex-grow: 1;
+}
+
+.card-title {
+    margin-bottom: 10px;
+    margin-top:10px;
+}
+
+.card-title a{
+    text-decoration:none;
+    font-weight: semi-bold;
+
+    margin-bottom: 10px;
+}
+
+.card-category {
+    font-weight: bold;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.card-description {
+    margin-bottom: 10px;
+}
+
+.card-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.moreInfoBtn{
+    background-color: transparent;
+    color: #4a90e2 !important;
+}
+
+.btn {
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.btn-info {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+}
+
+.btn-outline-warning {
+    background-color: transparent;
+    color: #ffc107;
+    border: 1px solid #ffc107;
+    margin-left: 10px;
+}
+
+.btn-outline-warning:hover {
+    background-color: #ffc107;
+    color: #fff;
+}
+
+
+hr {
+    margin: 10px 0
+}
+
+.dapp-title{
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+
