@@ -180,6 +180,11 @@ defmodule BlockScoutWeb.Router do
 
   scope "/", BlockScoutWeb do
     pipe_through(:browser)
+    get("/multi_chain_address_finder", MultiChainAddressFinderController, :index)
+  end
+
+  scope "/", BlockScoutWeb do
+    pipe_through(:browser)
     get("/terms-of-service", TermsOfServiceController, :index)
     get("/privacy-policy", TermsOfServiceController, :privacy)
   end
