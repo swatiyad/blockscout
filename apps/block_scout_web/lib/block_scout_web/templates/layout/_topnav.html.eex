@@ -255,6 +255,19 @@
 
               </li>
 
+              <li class="nav-item dropdown">
+              <a href="#" role="button" id="navbarTokensDropdown" class="nav-link topnav-nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <%= gettext("WYZ Zk ETH") %>
+              </a>
+              <div class="dropdown-menu fade-up" aria-labeledby="navbarTransactionsDropdown">
+              <%= link(
+                      gettext("L2 Explorer"),
+                     class: "dropdown-item #{tab_status("l2_explorer", @conn.request_path)}",
+                  to: "/l2_explorer"
+                    ) %>
+              </div>
+
+              </li>
 
               <li class="nav-item dropdown">
               <a href="#" role="button" id="navbarTokensDropdown" class="nav-link topnav-nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -340,6 +353,7 @@
                         class: "dropdown-item #{tab_status("testnet", @conn.request_path)}",
                         to: "https://testnet.wyzthscan.org/"
                       ) %>
+
 
                 </div>
 </div>

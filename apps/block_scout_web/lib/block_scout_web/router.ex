@@ -182,6 +182,15 @@ defmodule BlockScoutWeb.Router do
     pipe_through(:browser)
     get("/multi_chain_address_finder", MultiChainAddressFinderController, :index)
   end
+  scope "/", BlockScoutWeb do
+    pipe_through(:browser)
+    get("/address", FoundedAddressController, :index)
+  end
+
+  scope "/", BlockScoutWeb do
+    pipe_through(:browser)
+    get("/l2_explorer", L2ExplorerController, :index)
+  end
 
   scope "/", BlockScoutWeb do
     pipe_through(:browser)

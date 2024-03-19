@@ -200,11 +200,11 @@ a.metamask_btn {
 
 <footer class="footer pb-0 pt-0 footer_backdrop">
   <div class="footer_overlay">
-  <div class="footer-body container pt-3">
+  <div class="footer-body container pt-3 ">
     <% other_explorers = other_explorers() %>
   <% col_size = if Enum.empty?(other_explorers), do: 2, else: 2 %>
 
-  <div class="row justify-content-md-between py-2">
+  <div class="row justify-content-md-between py-2   container-fluid">
     <div class="col-lg-3 footer-about">
     <!-- Logo -->
       <div class="row footer-logo-row">
@@ -300,7 +300,7 @@ a.metamask_btn {
 </div>
 
 <div class="container sub-footer-top-border">
-  <div class="row text-white py-2">
+  <div class="row text-white py-2   container-fluid">
     <div class="col-md-6 col-6 mb-sm">
       <div class="d-flex pt-1">
         <div>WYZthScan &copy; 2023 </div>
