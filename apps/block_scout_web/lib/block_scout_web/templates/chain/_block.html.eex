@@ -7,7 +7,7 @@
         <td class="sno_col">
           <span class="btn-icon radius-50">
             <span class="btn-icon-inner">
-            Bk
+            <img src="/images/cube.png" style="width: 19px; height: 19px" class="invert-image"/>
             </span>
           </span>
         </td>
@@ -39,8 +39,8 @@
           <div class="text-truncate width135 text-green">
             <%= gettext "Reward" %> <%= BlockScoutWeb.BlockView.combined_rewards_value(@block) %>
           </div>
-          <% end %>  
-          -->       
+          <% end %>
+          -->
 
           <div class="tile-transactions text-green">
             <span class="mr-2"><%= gettext("%{count} txns", count: Enum.count(@block.transactions)) %></span>

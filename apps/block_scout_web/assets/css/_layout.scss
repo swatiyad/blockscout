@@ -231,6 +231,13 @@ a {
     color: #8c96a5 !important;
 }
 
+.invert-image{
+    filter: invert(0%) !important;
+  }
+  .dark-theme-applied .invert-image{
+    filter: invert(100%) !important;
+  }
+
 .fixed-layout {
     table-layout: fixed;
 }

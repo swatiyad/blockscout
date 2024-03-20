@@ -135,6 +135,8 @@ a.metamask_btn {
   animation-timing-function: ease;
 }
 
+
+
 @media all and (min-width: 992px) {
 	.navbar .nav-item .dropdown-menu{  display:block; opacity: 0;  visibility: hidden; transition:.3s; margin-top:0;  }
 	.navbar .dropdown-menu.fade-down{ top:80%; transform: rotateX(-75deg); transform-origin: 0% 0%; }
@@ -195,6 +197,17 @@ a.metamask_btn {
 .mw-100 {
   max-width: 100px !important;
 }
+.footerTitle{
+  color: #fff;
+  font-weight: 600;
+  font-size: 17px;
+  padding-left: 5px;
+}
+@media screen and (max-width: 1047px) and (min-width: 990px) {
+  .footerTitle {
+      font-size: 15px;
+  }
+}
 
 </style>
 
@@ -205,13 +218,13 @@ a.metamask_btn {
   <% col_size = if Enum.empty?(other_explorers), do: 2, else: 2 %>
 
   <div class="row justify-content-md-between py-2   container-fluid">
-    <div class="col-lg-3 footer-about">
+    <div class="col-lg-4  footer-about">
     <!-- Logo -->
       <div class="row footer-logo-row">
         <div class="col-md-12">
           <%= link to: webapp_url(@conn), class: "footer-brand" do %>
             <%= if logo_footer() do %>
-              <img class="footer-logo" src="<%= static_path(@conn, logo_footer()) %>" alt="<%= subnetwork_title() %>" />
+              <img class="" src="/images/small-logo-icon-dark.png" style="width:25px; height: 28px" /><span class="footerTitle">Powered by WYZth PoA L1 Chain</span>
             <% end %>
             <%= if logo_text() do %>
               <span class="logo-text in-footer <%= unless logo_footer(), do: "no-logo" %>"> <%= logo_text() %> </span>
@@ -303,7 +316,7 @@ a.metamask_btn {
   <div class="row text-white py-2   container-fluid">
     <div class="col-md-6 col-6 mb-sm">
       <div class="d-flex pt-1">
-        <div>WYZthScan &copy; 2023 </div>
+        <div>WYZthScan &copy; 2024 </div>
         <div class="ml-2"><span class="text-danger ms-2"> <i class="fa fa-heart"></i> </span></div>
       </div>
     </div>

@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", async function () {
               <tr>
                 <td class="show_for_hompage sno_col">
                   <span class="btn-icon radius-50">
-                    <span class="btn-icon-inner"> Tx </span>
+                    <span class="btn-icon-inner"> <img src="/images/page-icon.png" style="width: 19px; height: 19px" class="invert-image" /></span>
                   </span>
                 </td>
                 <td class="show_for_hompage">
