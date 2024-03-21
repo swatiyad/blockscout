@@ -243,7 +243,7 @@ a.metamask_btn {
       <%= render BlockScoutWeb.LayoutView, "_add_chain_to_mm.html" %>
     </div>
 
-    <div class="col-6 col-md-4 col-lg-<%= col_size %>">
+    <div class="col-6 col-md-4 col-lg-<%= col_size %>" >
       <h3 class="text-white heading_border">Company</h3>
       <ul style="list-style: none;margin: 0; padding: 0; line-height: 31px;">
         <li><a href="https://wyzth.org/" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("About Us") %></a></li>
