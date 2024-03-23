@@ -4,7 +4,10 @@ document.querySelector("#admin-login").onclick = async function(e){
     e.preventDefault()
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
-    const apiUrl = "https://wyzthscan.org/node-api/admin-login";
+    const apiUrl = "http://localhost:3000/node-api/admin-login";
+    const dummyUrl = "http://localhost:3000/node-api/testing";
+    const dummyData = await axios.get(dummyUrl);
+    console.log('------dumb-------->',dummyData);
     const requestData = {
       username:username.toLowerCase(),
       password: password,

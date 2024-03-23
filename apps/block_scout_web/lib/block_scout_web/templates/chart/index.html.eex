@@ -1,45 +1,46 @@
 <section data-page="contract-verification-choose-type" class="container card mt-30">
-<h2>WyzthScan Charts & Statistics</h2>
+<h2 class="mb-4 mt-3">WyzthScan Charts & Statistics</h2>
+<hr class="hr_tag my-0 ">
 
-<div class="row ">
-<div class="col-lg-4 col-md-6 col-sm-12 p-20">
-<a href="/charts/tx">
-<div class="chart-blocscout-title">Daily Transaction Chart</div>
+<div class="d-flex align-items-start justify-content-center flex-wrap   p-2 ">
+<div  class="  chart-max-width w-25 chart-height mx-5 my-3 p-2 chartBorder">
+<a href="/charts/tx" class="chartBox">
+<div class="chartTitles">Daily Transaction Chart</div>
 
 <img src="/images/chart/transactionhistory.svg" class="img-fluid" style="height:215px"/>
 </a>
 </div>
-<div class="col-lg-4 col-md-6 col-sm-12 p-20">
-<a href="/charts/bep2etxns">
-<div class="chart-blocscout-title">Daily Transfer Chart</div>
+<div class="  chart-max-width chart-height w-25 mx-5 my-3 p-2 chartBorder">
+<a href="/charts/bep2etxns" class="chartBox">
+<div class="chartTitles">Daily Transfer Chart</div>
 <img src="/images/chart/transactionhistory.svg" class="img-fluid" style="height:215px"/>
 </a>
 </div>
 
-<div class="col-lg-4 col-md-6 col-sm-12 p-20">
-<a href="/charts/blocksize">
-<div class="chart-blocscout-title">Average Block Size Chart</div>
+<div class="  chart-max-width chart-height w-25 mx-5 my-3 p-2 chartBorder">
+<a href="/charts/blocksize" class="chartBox">
+<div class="chartTitles">Average Block Size Chart</div>
 <img src="/images/chart/blocksize.svg" class="img-fluid" style="height:215px"/>
 </a>
 </div>
 
-<div class="col-lg-4 col-md-6 col-sm-12 p-20">
-<a href="/charts/gasprice">
-<div class="chart-blocscout-title">Average Gas Price Chart</div>
+<div class="  chart-max-width chart-height w-25 mx-5 my-3 p-2 chartBorder">
+<a href="/charts/gasprice" class="chartBox">
+<div class="chartTitles">Average Gas Price Chart</div>
 <img src="/images/chart/gasprice.svg" class="img-fluid" style="height:215px"/>
 </a>
 </div>
 
-<div class="col-lg-4 col-md-6 col-sm-12 p-20">
-<a href="/charts/gaslimit">
-<div class="chart-blocscout-title">Average Gas Limit Chart</div>
+<div class="  chart-max-width chart-height w-25 mx-5 my-3 p-2 chartBorder" >
+<a href="/charts/gaslimit" class="chartBox">
+<div class="chartTitles">Average Gas Limit Chart</div>
 <img src="/images/chart/gaslimit.svg" class="img-fluid" style="height:215px"/>
 </a>
 </div>
 
-<div class="col-lg-4 col-md-6 col-sm-12 p-20" style="height:215px">
-<a href="/charts/gasused">
-<div class="chart-blocscout-title">Daily Gas Used Chart</div>
+<div class="  chart-max-width chart-height w-25 mx-5 my-3 p-2 chartBorder" style="height:215px">
+<a href="/charts/gasused" class="chartBox">
+<div class="chartTitles">Daily Gas Used Chart</div>
 <img src="/images/chart/gasused.svg" class="img-fluid" style="height:215px"/>
 <a/>
 </div>
@@ -56,3 +57,35 @@
 
 
 </section>
+
+
+<style>
+
+.chartBorder{
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.chartTitles{
+  font-size: 15px;
+
+}
+
+.chartBox{
+  color: black !important;
+}
+.chartBox:hover{
+  text-decoration: none;
+color: #a9ab3f !important;
+
+}
+
+.chart-max-width:{
+  width: 3rem;
+}
+
+.chart-height{
+  height: 14rem;
+}
+
+</style>

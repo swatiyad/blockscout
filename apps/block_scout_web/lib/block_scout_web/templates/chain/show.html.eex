@@ -14,10 +14,10 @@
           <p class="text-white mt-3"> A Web3 Crypto Mutual Fund, start with as low as $50 on <a href="https://wyscale.com/" target="_blank" class="text-green font-weight-bold">  WYscale </a>
           </p>
         </div>
-        <div class="col-sm-12 col-md-12 col-lg-5 col-md-6 mb-2 text-center py-3 showBorder">
-        <a href="https://wyscale.com/" target="_blank" class="showBorder">
+        <div class="col-sm-12 col-md-12 col-lg-5 col-md-6 mb-2 text-center py-3 ">
+        <a href="https://wyscale.com/" target="_blank" class="">
         <span class="position-absolute ad-text-homepage shadow-sm rounded-sm fs-12 px-1" style="left: 71%; top: 0.5rem;">Ad</span>
-        <img src="/images/header-advertisement.gif"  class="rounded"></a></div>
+        <img src="/images/header-advertisement.gif"  class="rounded "></a></div>
       </div>
     </div>
   </div>
@@ -44,7 +44,7 @@
             </div>
 
           </div>
-          <hr style="border: none; height: 1px; background-color: rgba(0, 0, 0, 0.1); margin-top: 20px; margin-bottom: 20px;" class="invert-image">
+          <hr style=" margin-top: 20px; margin-bottom: 20px;" class="invert-image hr_tag">
 
           <div class="media mb-lg-0 mb-md-4 pb-md-4 pb-lg-0 pb-sm mb-sm border-bottm-sm ">
             <img class="mr-3 media_icon" src="images/a-02.svg" width="50" height="40"  style="width:50px;">

@@ -2282,6 +2282,12 @@ hr {
     margin: 10px 0
 }
 
+.hr_tag{
+    border: none;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
 .dapp-title{
     font-size: 3rem;
     text-transform: uppercase;
