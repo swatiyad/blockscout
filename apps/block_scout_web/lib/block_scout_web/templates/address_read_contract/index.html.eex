@@ -1,4 +1,4 @@
-<section class="container showBorder">
+<section class="container ">
 
   <% is_proxy = BlockScoutWeb.AddressView.smart_contract_is_proxy?(@address) %>
 
@@ -7,12 +7,12 @@
   <div class="card tttttttttt ">
     <%= render BlockScoutWeb.AddressView, "_tabs.html", address: @address, is_proxy: is_proxy, conn: @conn %>
     <%= if @need_wallet do %>
-      <div class="card-misc-container showBorder">
+      <div class="card-misc-container ">
         <%= render BlockScoutWeb.SmartContractView, "_connect_container.html" %>
       </div>
     <% end %>
     <%= if @non_custom_abi && assigns[:custom_abi] do %>
-      <ul class="card-misc-container nav nav-pills showBorder" id="functions-tab" role="tablist">
+      <ul class="card-misc-container nav nav-pills " id="functions-tab" role="tablist">
         <li class="nav-item" role="presentation">
           <a class="nav-link active" id="verified-tab" data-toggle="pill" href="#verified" role="tab" aria-controls="pills-verified" aria-selected="true"><%= gettext "Verified" %></a>
         </li>
@@ -22,7 +22,7 @@
       </ul>
     <% else %>
       <%= if assigns[:custom_abi] do %>
-        <h2 class="card-misc-container showBorder"><%= gettext "Custom ABI from account" %></h2>
+        <h2 class="card-misc-container "><%= gettext "Custom ABI from account" %></h2>
       <% end %>
     <% end %>
     <%=
@@ -32,7 +32,7 @@
     %>
     <%= render BlockScoutWeb.SmartContractView, "_pending_contract_write.html" %>
     <%= if @non_custom_abi && assigns[:custom_abi] do %>
-      <div class="tab-content showBorder" id="pills-tabContent">
+      <div class="tab-content " id="pills-tabContent">
     <% end %>
     <%= if @non_custom_abi do %>
       <!-- loaded via AJAX -->
