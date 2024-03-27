@@ -97,8 +97,13 @@
                 <% end %>
 
                 <%= if status_class(@transaction) == "tile-status--success" do %>
-                  <span class="text-muted" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Txn is successful"><strong><i class="fa fa-check-circle"></i></strong></span>
-                <% end %>
+  <span class="" data-toggle="tooltip" data-placement="bottom" title="<div style='font-size: 14px;'>Txn is successful</div><div style='font-size: 12px;'>Additional information goes here</div>" data-html="true">
+    <strong class=" p-1" style="border:1px solid #DDDDDD; border-radius:6px;">
+      <i class="fa-regular fa-eye"></i>
+    </strong>
+  </span>
+<% end %>
+
 
                 <%= if status_class(@transaction) == "tile-status--awaiting-internal-transactions" do %>
                 <span class="text-danger" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Internal Transaction"><strong><i class="fa fa-exclamation-circle"></i></strong></span>
