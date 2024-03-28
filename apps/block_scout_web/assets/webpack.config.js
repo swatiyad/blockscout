@@ -101,7 +101,8 @@ const appJs =
       'transactions-tab':'./js/lib/transactions-tab.js',
       'nav':'./js/lib/nav.js',
       'tron-evm-converter':'./js/lib/tron-evm-converter.js',
-      'dapp_list':'./js/lib/dapp_list.js'
+      'dapp_list':'./js/lib/dapp_list.js',
+      'txn_eye_btn':'/js/lib/txn_eye_btn.js'
     },
     output: {
       filename: '[name].js',

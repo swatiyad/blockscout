@@ -97,12 +97,12 @@
                 <% end %>
 
                 <%= if status_class(@transaction) == "tile-status--success" do %>
-  <span class="" data-toggle="tooltip" data-placement="bottom" title="<div style='font-size: 14px;'>Txn is successful</div><div style='font-size: 12px;'>Additional information goes here</div>" data-html="true">
-    <strong class=" p-1" style="border:1px solid #DDDDDD; border-radius:6px;">
-      <i class="fa-regular fa-eye"></i>
-    </strong>
-  </span>
-<% end %>
+                 <span class="" data-toggle="tooltip" data-placement="bottom" title="<div style='font-size: 14px;'>Txn is successful</div>" data-html="true">
+                  <strong class=" p-1 eyeBtn" style="border:1px solid #DDDDDD; border-radius:6px;">
+                    <i class="fa-regular fa-eye"></i>
+                  </strong>
+                 </span>
+                <% end %>
 
 
                 <%= if status_class(@transaction) == "tile-status--awaiting-internal-transactions" do %>
@@ -267,3 +267,11 @@
     </table>
 
 </div>
+
+
+<style>
+.eyeBtn:hover{
+  background-color: #EEEEEE;
+  cursor: pointer;
+}
+</style>
