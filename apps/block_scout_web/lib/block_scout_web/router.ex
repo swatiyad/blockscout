@@ -189,6 +189,11 @@ defmodule BlockScoutWeb.Router do
 
   scope "/", BlockScoutWeb do
     pipe_through(:browser)
+    get("/admin-dashboard/:id/advertisement", AdvertisementDashboardController, :index)
+  end
+
+  scope "/", BlockScoutWeb do
+    pipe_through(:browser)
     get("/l2_explorer", L2ExplorerController, :index)
   end
 

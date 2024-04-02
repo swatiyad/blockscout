@@ -1,3 +1,5 @@
+
+
 <% status = transaction_status(@transaction) %>
 <% error_in_internal_tx = @transaction.has_error_in_internal_txs %>
 <% current_user = AuthController.current_user(@conn) %>
@@ -97,7 +99,7 @@
                 <% end %>
 
                 <%= if status_class(@transaction) == "tile-status--success" do %>
-                 <span class="" data-toggle="tooltip" data-placement="bottom" title="<div style='font-size: 14px;'>Txn is successful</div>" data-html="true">
+                 <span class="" data-toggle="tooltip" data-placement="bottom" title="<div style='font-size: 14px; background-color:white'>Txn is successful</div>" data-html="true">
                   <strong class=" p-1 eyeBtn" style="border:1px solid #DDDDDD; border-radius:6px;">
                     <i class="fa-regular fa-eye"></i>
                   </strong>
@@ -275,3 +277,9 @@
   cursor: pointer;
 }
 </style>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  console.log("hello duniya kaise ho")
+})
+</script>

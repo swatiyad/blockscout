@@ -7,13 +7,13 @@
 
   <section>
 
-      <div class="card overflow-auto mt-3">
+      <div class=" overflow-auto mt-3 ">
       <%= render BlockScoutWeb.AddressView, "_tabs.html", address: @address, is_proxy: is_proxy, conn: @conn %>
-      <div class="card-body py-0" data-async-listing="<%= @current_path %>">
+      <div class=" py-0 contract_data_body mb-5" data-async-listing="<%= @current_path %>">
 
         <%= render BlockScoutWeb.CommonComponentsView, "_channel_disconnected_message.html", text: gettext("Connection Lost, click to load newer blocks") %>
 
-        <h2 class="card-title"><%= gettext "Balances" %></h2>
+        <h2 class="card-title ml-2"><%= gettext "Balances" %></h2>
 
         <!-- Chart -->
         <div data-chart-loading-message class="tile tile-muted text-center mt-3 mb-4">
@@ -76,3 +76,12 @@
     <script defer data-cfasync="false" src="<%= static_path(@conn, "/js/address-coin-balances.js") %>"></script>
   </section>
 </section>
+
+<style>
+.contract_data_body{
+  border: 1px solid #eeeeee;
+  border-radius:8px;
+  padding:2px;
+  box-shadow: 0 7px 15px 0 rgba(0, 0, 0, .13), 0 1px 4px 0 rgba(0, 0, 0, .11);
+}
+</style>

@@ -2,130 +2,207 @@
 <% dark_forest_addresses_list_0_5 = CustomContractsHelpers.get_custom_addresses_list(:dark_forest_addresses_v_0_5) %>
 <% dark_forest_addresses_list = dark_forest_addresses_list_0_4 ++ dark_forest_addresses_list_0_5 %>
 <% current_address = "0x" <> Base.encode16(@address.hash.bytes, case: :lower) %>
-<div id="address-tabs" class="nav nav-pills custom_pills-- card-tabs js-card-tabs mb-3">
-  <li class="nav-item">  
+<div id="address-tabs " class="navigationMainContainer" style="margin-bottom: 12px; ">
+    <div class="navListContainer " >
+  <li class="navItem " >
+
+
     <%= link(
           gettext("Transactions"),
-          class: "nav-link #{tab_status("transactions", @conn.request_path)}",
+          class: "navItemLink #{tab_status("transactions", @conn.request_path)}",
           to: AccessHelpers.get_path(@conn, :address_transaction_path, :index, @address.hash)
         ) %>
+
   </li>
   <%= if Chain.check_if_token_transfers_at_address(@address.hash) do %>
-    
-    <li class="nav-item"> 
+
+    <li class="navItem ">
     <%= link(
         gettext("Token Transfers"),
-        class: "nav-link #{tab_status("token-transfers", @conn.request_path)}",
+        class: "navItemLink #{tab_status("token-transfers", @conn.request_path)}",
         "data-test": "token_transfers_tab_link",
         to: AccessHelpers.get_path(@conn, :address_token_transfers_path, :index, @address.hash)
         ) %>
       </li>
   <% end %>
   <%= if Chain.check_if_tokens_at_address(@address.hash) do %>
-  <li class="nav-item"> 
+  <li class="navItem ">
     <%= link(
           gettext("Tokens"),
-          class: "nav-link #{tab_status("tokens", @conn.request_path)}",
+          class: "navItemLink #{tab_status("tokens", @conn.request_path)}",
           to: AccessHelpers.get_path(@conn, :address_token_path, :index, @address.hash),
           "data-test": "tokens_tab_link"
         ) %>
     <% end %>
   </li>
-  <li class="nav-item"> 
+  <li class="navItem ">
       <%= link(
         gettext("Internal Transactions"),
-        class: "nav-link #{tab_status("internal-transactions", @conn.request_path)}",
+        class: "navItemLink #{tab_status("internal-transactions", @conn.request_path)}",
         "data-test": "internal_transactions_tab_link",
         to: AccessHelpers.get_path(@conn, :address_internal_transaction_path, :index, @address.hash)
       ) %>
       </li>
-<li class="nav-item"> 
+<li class="navItem ">
   <%= link(
         gettext("Coin Balance History"),
-        class: "nav-link #{tab_status("coin-balances", @conn.request_path)}",
+        class: "navItemLink #{tab_status("coin-balances", @conn.request_path)}",
         "data-test": "coin_balance_tab_link",
         to: AccessHelpers.get_path(@conn, :address_coin_balance_path, :index, @address.hash)
       ) %>
     </li>
 
   <%= if Chain.check_if_logs_at_address(@address.hash) do %>
-  <li class="nav-item"> 
+  <li class="navItem ">
     <%= link(
         gettext("Logs"),
-        class: "nav-link #{tab_status("logs", @conn.request_path)}",
+        class: "navItemLink #{tab_status("logs", @conn.request_path)}",
         to: AccessHelpers.get_path(@conn, :address_logs_path, :index, @address.hash)
         ) %>
     </li>
   <% end %>
   <%= if Chain.check_if_validated_blocks_at_address(@address.hash) do %>
-  <li class="nav-item"> 
+  <li class="navItem ">
     <%= link(
       gettext("Blocks Validated"),
-      class: "nav-link #{tab_status("validations", @conn.request_path)}",
+      class: "navItemLink #{tab_status("validations", @conn.request_path)}",
       "data-test": "validations_tab_link",
       to: AccessHelpers.get_path(@conn, :address_validation_path, :index, @address.hash)
     ) %>
     </li>
   <% end %>
-  <li class="nav-item"> 
-    <%= if contract?(@address) do %> 
+  <li class="navItem " >
+    <%= if contract?(@address) do %>
       <%= link(
           to: AccessHelpers.get_path(@conn, :address_contract_path, :index, @address.hash),
-          class: "nav-link #{tab_status("contracts", @conn.request_path)}") do %>
+          class: "navItemLink  #{tab_status("contracts", @conn.request_path)}") do %>
           <%= gettext("Code") %>
-          </li>
+
         <%= if smart_contract_verified?(@address) do %>
           <%= cond do %>
             <% Enum.member?(dark_forest_addresses_list, current_address) -> %>
-              <i class="check_dark_forest_icon">
+              <i class="check_dark_forest_icon ">
                 <%= render BlockScoutWeb.IconsView, "_check_dark_forest_icon.html" %>
               </i>
             <% true -> %>
-              <i class="fa-regular fa-check-circle"></i>
+              <i class="fa-regular fa-check-circle ml-1" ></i>
           <% end %>
         <% end %>
       <% end %>
     <% end %>
   </li>
-  <li class="nav-item"> 
+
+  <%= if has_decompiled_code?(@address) do %>
+  <li class="navItem ">
     <%= if has_decompiled_code?(@address) do %>
       <%= link(
           to: AccessHelpers.get_path(@conn, :address_decompiled_contract_path, :index, @address.hash),
-          class: "nav-link #{tab_status("decompiled-contracts", @conn.request_path)}") do %>
+          class: "navItemLink #{tab_status("decompiled-contracts", @conn.request_path)}") do %>
           <%= gettext("Decompiled code") %>
           <i class="fa-regular fa-check-circle"></i>
       <% end %>
     <% end %>
   </li>
-  <li class="nav-item"> 
+  <% end %>
+  <li class="navItem ">
     <%= if smart_contract_with_read_only_functions?(@address) || has_address_custom_abi_with_read_functions?(@conn, @address.hash) do %>
       <%= link(
           gettext("Read Contract"),
           to: AccessHelpers.get_path(@conn, :address_read_contract_path, :index, @address.hash),
-          class: "nav-link #{tab_status("read-contract", @conn.request_path)}")
+          class: "navItemLink #{tab_status("read-contract", @conn.request_path)}")
           %>
     <% end %>
   </li>
-  <li class="nav-item"> 
+  <li class="navItem ">
     <%= if @is_proxy do %>
       <%= link(
           gettext("Read Proxy"),
           to: AccessHelpers.get_path(@conn, :address_read_proxy_path, :index, @address.hash),
-          class: "nav-link #{tab_status("read-proxy", @conn.request_path)}")
+          class: "navItemLink #{tab_status("read-proxy", @conn.request_path)}")
           %>
     <% end %>
     <%= if smart_contract_with_write_functions?(@address) || has_address_custom_abi_with_write_functions?(@conn, @address.hash) do %>
     <%= link(
         gettext("Write Contract"),
         to: AccessHelpers.get_path(@conn, :address_write_contract_path, :index, @address.hash),
-        class: "nav-link #{tab_status("write-contract", @conn.request_path)}")
+        class: "navItemLink #{tab_status("write-contract", @conn.request_path)}")
         %>
   <% end %>
   <%= if smart_contract_with_write_functions?(@address) && @is_proxy do %>
     <%= link(
         gettext("Write Proxy"),
         to: AccessHelpers.get_path(@conn, :address_write_proxy_path, :index, @address.hash),
-        class: "nav-link #{tab_status("write-proxy", @conn.request_path)}")
+        class: "navItemLink #{tab_status("write-proxy", @conn.request_path)}")
         %>
-  <% end %>                         
+  <% end %>
+  </div>
 </div>
+
+<style>
+
+
+.navigationMainContainer {
+  list-style-type: none;
+  display:flex;
+  align-items:center;
+  justify-content:flex-start;
+
+}
+.navListContainer{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  width: 60%;
+}
+.navItem{
+
+
+}
+.navItemLink{
+  border: 1px solid #eeeeee;
+  background-color:#E9ECEF;
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-size: 13px;
+  font-family: "Roboto", sans-serif;
+  font-weight:550;
+}
+.navItemLink:hover{
+  background-color:#D1D1D1;
+  cursor:pointer;
+
+
+}
+.navItem a{
+  color: black !important;
+
+}
+.navItem a:hover{
+  text-decoration: none;
+}
+
+.active,.active:hover{
+  background-color:#B7B26D;
+
+}
+
+
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+      console.log("hello duniya")
+        const navItems = document.querySelectorAll(".navItemLink");
+
+        navItems.forEach(function(item) {
+            item.addEventListener("click", function() {
+              console.log("clicked fucking")
+                navItems.forEach(function(navItem) {
+                    navItem.classList.remove("active");
+                });
+
+                item.classList.add("active");
+            });
+        });
+    });
+</script>

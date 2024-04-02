@@ -2,6 +2,35 @@
 import axios from "axios";
 
 document.addEventListener("DOMContentLoaded", () => {
+
+//code for modal starts
+
+const openModalButton = document.getElementById('open-modal-button');
+const closeModalButton = document.getElementById('close-modal-button');
+
+
+  const modal = document.getElementById('modal');
+
+  openModalButton.addEventListener('click', function() {
+    modal.style.display = 'flex';
+  });
+
+  // Close modal when clicking outside of it
+  closeModalButton.addEventListener('click', function(event) {
+    
+      modal.style.display = 'none';
+ 
+  });
+
+  
+
+//code for modal ends
+
+
+
+
+
+
   const dataBody = document.getElementById("data-body");
   // const username=document.querySelector(".dashboard-username").getAttribute("data-id");
  const username = window.sessionStorage.getItem("username")

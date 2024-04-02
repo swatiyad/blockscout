@@ -1,8 +1,16 @@
-<div class="container mt-30">
+<div class="container mt-30 ">
 <script defer src="<%= static_path(@conn, "/js/userdashboard.js") %>"></script>
-<div class="overflow-auto dashboard-username" data-id="<%= @id %>">
-<h1>Registration Data</h1>
-<table class="table">
+
+<nav class=" navbar">
+<ul class="">
+<li class="active dash-menu">Registration Data
+    </li>
+    <li class="dash-menu">Advertisement
+    </li>
+</ul>
+</nav>
+<div class="overflow-auto dashboard-username " data-id="<%= @id %>">
+<table class="table ">
   <thead>
     <tr>
       <th>ID</th>
@@ -18,4 +26,85 @@
   </tbody>
 </table>
 </div>
+
+
+<div class="">
+
 </div>
+
+
+
+</div>
+
+
+<style>
+
+.navbar{
+  width:100%;
+  height: 3rem;
+  display:flex;
+  justify-content:flex-start;
+  padding-left: 0;
+}
+.navbar ul{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:0 ;
+  width: 18rem;
+
+}
+.navbar ul li{
+  list-style: none;
+
+}
+.navbar ul li:hover{
+  cursor:pointer
+}
+
+.dash-menu{
+  border: 1px solid #eeeeee;
+  background-color: #eeeeee;
+  color:black;
+  border-radius: 8px;
+  padding: 5px 10px !important;
+}
+.dash-menu:hover{
+  cursor:pointer;
+}
+
+.active {
+  background-color: #B4B4B8;
+color: black !important;
+}
+</style>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const menuItems = document.querySelectorAll('.dash-menu');
+    const currentURL = window.location.href;
+    console.log("-----xxxxxxxxxx---------",currentURL)
+
+    menuItems.forEach(function(item) {
+      item.addEventListener('click', function() {
+        menuItems.forEach(function(item) {
+          item.classList.remove('active');
+        });
+
+        this.classList.add('active');
+
+        if (this.textContent.trim() === 'Advertisement') {
+
+          const currentURL = window.location.href;
+
+
+          const newURL = currentURL.endsWith('/') ? currentURL + 'advertisement' : currentURL + '/advertisement';
+
+
+          window.location.href = newURL;
+        }
+      });
+    });
+  });
+</script>

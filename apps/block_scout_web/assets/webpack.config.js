@@ -94,6 +94,7 @@ const appJs =
       'set_icon':'./js/lib/set_icon.js',
       'reset_password':'./js/lib/reset_password.js',
       'userdashboard':'./js/lib/userdashboard.js',
+      'advertisement_dash':'/js/lib/advertisement_dash.js',
       'userdashboard_icon':'./js/lib/userdashboard_icon.js',
       'broadcast-transaction':'./js/lib/broadcast-transaction.js',
       'contract-search':'./js/lib/contract-search.js',

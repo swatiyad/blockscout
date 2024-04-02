@@ -1,18 +1,18 @@
-<section class="container">
+<section class="container ">
 
   <% is_proxy = BlockScoutWeb.AddressView.smart_contract_is_proxy?(@address) %>
 
   <%= render BlockScoutWeb.AddressView, "overview.html", address: @address, is_proxy: is_proxy, conn: @conn, exchange_rate: @exchange_rate, coin_balance_status: @coin_balance_status, counters_path: @counters_path, tags: @tags %>
 
-  <section data-page="address-transactions" id="txs"> 
-      <div class="card mt-3">
+  <section data-page="address-transactions" class="" id="txs">
+      <div class=" mt-5 " >
       <%= render BlockScoutWeb.AddressView, "_tabs.html", address: @address, is_proxy: is_proxy, conn: @conn %>
-      <div class="card-body pt-0 px-2" data-async-listing="<%= @current_path %>">        
+      <div class="card-body pt-0 px-2 mb-3  contract_data_body" style="border-radius:12px" data-async-listing="<%= @current_path %>">
         <%= render BlockScoutWeb.CommonComponentsView, "_channel_disconnected_message.html", text: gettext("Connection Lost, click to load newer transactions") %>
         <div class="clearfix mb-2 py-1">
         <h5 class="float-left mb-2 font-weight-normal text-gray"  data-test="address_transaction_count">
         <span> <i class="fa-solid fa-arrow-down-wide-short"></i> Latest from a total of </span>
-        
+
         <%= if @conn.request_path |> String.contains?("/transactions") do %>
             <a href="#txs" class="" data-selector="transaction-count">
               <%= if @address.transactions_count do %>
@@ -31,7 +31,7 @@
             </a>
           <% end %>
          </h5>
-          <div class="top-pagination-outer-container float-right">         
+          <div class="top-pagination-outer-container float-right mt-3 mr-3">
             <div class="dropdown">
               <button data-test="filter_dropdown" class="btn btn-light btn-xs dropdown-toggle custom_drpdwn" type="button"
                 id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -70,7 +70,7 @@
           <span href="#" class="alert-link"><%= gettext("Something went wrong, click to reload.") %></span>
         </button>
 
-        <div class="overflow-auto w-100">         
+        <div class="overflow-auto w-100">
           <table class="table table-hover mb-0 fixed-layout">
             <thead>
               <tr class="table-head">
@@ -81,7 +81,7 @@
                 <th class="screenRow">Age</th>
                 <th class="">From</th>
                 <th class="" style="width:70px">&nbsp;</th>
-                <th class="">To</th>               
+                <th class="">To</th>
                 <th class="">Value</th>
                 <th class="">Txn Fee</th>
               </tr>
@@ -110,3 +110,12 @@
     <script defer data-cfasync="false" src="<%= static_path(@conn, "/js/address-transactions.js") %>"></script>
   </section>
 </section>
+
+<style>
+.contract_data_body{
+  border: 1px solid #eeeeee;
+  border-radius:8px;
+  padding:2px;
+  box-shadow: 0 7px 15px 0 rgba(0, 0, 0, .13), 0 1px 4px 0 rgba(0, 0, 0, .11);
+}
+</style>
