@@ -1,5 +1,7 @@
 <div class="container mt-30 ">
 <script defer src="<%= static_path(@conn, "/js/userdashboard.js") %>"></script>
+<script defer src="<%= static_path(@conn, "/js/advertisement_dash.js") %>"></script>
+
 
 <nav class=" navbar">
 <ul class="">
@@ -84,7 +86,7 @@ color: black !important;
   document.addEventListener("DOMContentLoaded", function() {
     const menuItems = document.querySelectorAll('.dash-menu');
     const currentURL = window.location.href;
-    console.log("-----xxxxxxxxxx---------",currentURL)
+
 
     menuItems.forEach(function(item) {
       item.addEventListener('click', function() {

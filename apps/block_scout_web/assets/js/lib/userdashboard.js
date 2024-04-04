@@ -5,24 +5,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
 //code for modal starts
 
+
 const openModalButton = document.getElementById('open-modal-button');
 const closeModalButton = document.getElementById('close-modal-button');
 
 
   const modal = document.getElementById('modal');
 
-  openModalButton.addEventListener('click', function() {
+  openModalButton?.addEventListener('click', function() {
     modal.style.display = 'flex';
   });
 
   // Close modal when clicking outside of it
-  closeModalButton.addEventListener('click', function(event) {
+  closeModalButton?.addEventListener('click', function(event) {
     
       modal.style.display = 'none';
  
   });
 
-  
+
 
 //code for modal ends
 
@@ -43,7 +44,6 @@ const closeModalButton = document.getElementById('close-modal-button');
     try {
       const response = await axios.post(`http://localhost:3000/node-api/get-all-user-data/${username}`);
       const data = response.data.data;
-      console.log(data, "data");
       if (data.length === 0) {
         const noDataRow = document.createElement("tr");
         noDataRow.innerHTML = `<td colspan="7" style="text-align: center;">No data found</td>`;

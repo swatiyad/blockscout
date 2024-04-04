@@ -1,8 +1,26 @@
 import axios from "axios";
-
+const deleteBanner = async (bannerId)=>{
+  console.log(bannerId)
+  try {
+    const res = await axios.post("http://localhost:3000/node-api/delete-banner",{bannerId},{
+    headers: {
+      "Content-Type": "application/json",
+    },
+  })
+  if(res.status === 200){
+    console.log(res.data);
+  }
+  } catch (error) {
+    console.log(error);
+  }
+  
+}
 document.addEventListener("DOMContentLoaded", function () {
   const menuItems = document.querySelectorAll(".dash-menu");
   const tableBody = document.getElementById("bannerTableBody");
+  const modal = document.getElementById('modal');
+
+
 
   const getBannerData = async ()=>{
     const res = await axios.get("http://localhost:3000/node-api/get-adv-banners");
@@ -10,16 +28,25 @@ document.addEventListener("DOMContentLoaded", function () {
       let banners = res.data;
       banners.forEach((banner, index) => {
         const newRow = document.createElement("tr");
+        const link = banner.link.startsWith('http://') || banner.link.startsWith('https://') ? banner.link : `https://${banner.link}`;
+
         newRow.innerHTML = `
-          <td>${index + 1}</td>
-          <td><img src="${banner.file_path}" alt="Banner" style="max-width: 100px;" /></td>
-          <td>${banner.banner_name}</td>
-          <td>${banner.location}</td>
-          <td><button class="btn btn-danger btn-sm py-2 px-3" onclick="deleteBanner(${banner.id})"><i class="fas fa-trash-alt "></i></button></td>
+            <td>${index + 1}</td>
+            <td><a href="${link}" target="_blank"><img src="${banner.file_path}" class="fixed-aspect-ratio" alt="Banner" /></a></td>
+            <td>${banner.banner_name}</td>
+            <td>${banner.location}</td>
+            <td><button class="btn btn-danger btn-sm py-2 px-3 delete-banner-btn" data-banner-id="${banner.id}"><i class="fas fa-trash-alt"></i></button></td>
         `;
         tableBody.appendChild(newRow);
+    });
+    
+    const deleteBannerButtons = document.querySelectorAll(".delete-banner-btn");
+    deleteBannerButtons.forEach(button => {
+      button.addEventListener("click", () => {
+        const bannerId = button.getAttribute("data-banner-id");
+        deleteBanner(bannerId);
       });
-
+    });
     }
     
   }
@@ -78,8 +105,12 @@ document.addEventListener("DOMContentLoaded", function () {
           },
         }
       );
+      if(res.status ===200){
 
-      console.log("Banner uploaded successfully:", res.data);
+        modal.style.display = "none";
+       
+      }
+
     } catch (error) {
       console.log("Error uploading banner:", error);
     }
