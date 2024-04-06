@@ -18,6 +18,7 @@ defmodule BlockScoutWeb.ChainController do
 
   def show(conn, _params) do
     transaction_estimated_count = TransactionCache.estimated_count()
+
     total_gas_usage = GasUsage.total()
     block_count = BlockCache.estimated_count()
     address_count = Chain.address_estimated_count()
@@ -42,6 +43,8 @@ defmodule BlockScoutWeb.ChainController do
 
     chart_config = Application.get_env(:block_scout_web, :chart_config, %{})
 
+    market_cap = calculate_market_cap(block_count)
+
     render(
       conn,
       "show.html",
@@ -57,12 +60,19 @@ defmodule BlockScoutWeb.ChainController do
       transactions_path: recent_transactions_path(conn, :index),
       transaction_stats: transaction_stats,
       block_count: block_count,
+      market_cap: market_cap,
       gas_price: Application.get_env(:block_scout_web, :gas_price)
     )
   end
 
   def search(conn, %{"q" => ""}) do
     show(conn, [])
+  end
+
+  defp calculate_market_cap(block_count) do
+
+    (block_count * 2 + 50_000_000) * 20
+
   end
 
   def search(conn, %{"q" => query}) do

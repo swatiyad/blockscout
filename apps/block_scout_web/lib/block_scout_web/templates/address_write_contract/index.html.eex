@@ -4,8 +4,9 @@
 
   <%= render BlockScoutWeb.AddressView, "overview.html", address: @address, is_proxy: is_proxy, conn: @conn, exchange_rate: @exchange_rate, coin_balance_status: @coin_balance_status, counters_path: @counters_path, tags: @tags %>
 
-  <div class="card iiiiii">
+  <div class="">
     <%= render BlockScoutWeb.AddressView, "_tabs.html", address: @address, is_proxy: is_proxy, conn: @conn %>
+    <div class="mb-5 contract_data_body" >
     <div class="card-misc-container">
       <%= render BlockScoutWeb.SmartContractView, "_connect_container.html" %>
     </div>
@@ -34,7 +35,7 @@
     <% end %>
     <%= if @non_custom_abi do %>
       <!-- loaded via AJAX -->
-      <div class="card-body tab-pane fade show active" id="verified" role="tabpanel" aria-labelledby="verified-tab" data-smart-contract-functions data-hash="<%= to_string(@address.hash) %>" data-type="<%= @type %>" data-action="<%= @action %>" data-url="<%= smart_contract_path(@conn, :index) %>">
+      <div class="card-body tab-pane fade show " id="verified" role="tabpanel" aria-labelledby="verified-tab" data-smart-contract-functions data-hash="<%= to_string(@address.hash) %>" data-type="<%= @type %>" data-action="<%= @action %>" data-url="<%= smart_contract_path(@conn, :index) %>">
         <div>
           <%= render BlockScoutWeb.CommonComponentsView, "_loading_spinner.html", loading_text: gettext("Loading...") %>
         </div>
@@ -51,6 +52,18 @@
     <%= if @non_custom_abi && assigns[:custom_abi] do %>
       </div>
     <% end %>
+    </div>
   </div>
   <script defer data-cfasync="false" src="<%= static_path(@conn, "/js/smart-contract-helpers.js") %>"></script>
 </section>
+
+<style>
+
+.contract_data_body{
+  border: 1px solid #eeeeee;
+  border-radius:8px;
+  padding:2px;
+  box-shadow: 0 7px 15px 0 rgba(0, 0, 0, .13), 0 1px 4px 0 rgba(0, 0, 0, .11);
+}
+
+</style>

@@ -2,6 +2,36 @@
 import axios from "axios";
 
 document.addEventListener("DOMContentLoaded", () => {
+
+//code for modal starts
+
+
+const openModalButton = document.getElementById('open-modal-button');
+const closeModalButton = document.getElementById('close-modal-button');
+
+
+  const modal = document.getElementById('modal');
+
+  openModalButton?.addEventListener('click', function() {
+    modal.style.display = 'flex';
+  });
+
+  // Close modal when clicking outside of it
+  closeModalButton?.addEventListener('click', function(event) {
+    
+      modal.style.display = 'none';
+ 
+  });
+
+
+
+//code for modal ends
+
+
+
+
+
+
   const dataBody = document.getElementById("data-body");
   // const username=document.querySelector(".dashboard-username").getAttribute("data-id");
  const username = window.sessionStorage.getItem("username")
@@ -12,9 +42,8 @@ document.addEventListener("DOMContentLoaded", () => {
     dataBody.innerHTML = ""; // Clear existing data
 
     try {
-      const response = await axios.post(`https://wyzthscan.org/node-api/get-all-user-data/${username}`);
+      const response = await axios.post(`http://localhost:3000/node-api/get-all-user-data/${username}`);
       const data = response.data.data;
-      console.log(data, "data");
       if (data.length === 0) {
         const noDataRow = document.createElement("tr");
         noDataRow.innerHTML = `<td colspan="7" style="text-align: center;">No data found</td>`;
@@ -123,7 +152,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   async function updateData(id, newUsername, newEmail, newIsVerify, newIsAdmin) {
     try {
-      const response = await axios.put(`https://wyzthscan.org/node-api/get-all-user-data/${id}`, {
+      const response = await axios.put(`http://localhost:3000/node-api/get-all-user-data/${id}`, {
         username: newUsername,
         email: newEmail,
         isverified: newIsVerify,
@@ -142,7 +171,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   async function deleteData(id) {
     try {
-      const response = await axios.delete(`https://wyzthscan.org/node-api/get-all-user-data/${id}`);
+      const response = await axios.delete(`http://localhost:3000/node-api/get-all-user-data/${id}`);
 
       if (response.status === 200) {
         displayData();

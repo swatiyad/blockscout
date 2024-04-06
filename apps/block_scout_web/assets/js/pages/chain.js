@@ -403,7 +403,8 @@ export function placeHolderBlock(blockNumber) {
             <div class="mr-2">
                 <span class="btn-icon radius-50">
                     <span class="btn-icon-inner">
-                    Bk
+                    <img src="/images/cube.png" style="width: 19px; height: 19px" class="invert-image"/>
+
                     </span>
                 </span>
             </div>

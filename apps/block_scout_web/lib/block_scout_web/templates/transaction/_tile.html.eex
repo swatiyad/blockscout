@@ -1,3 +1,5 @@
+
+
 <% status = transaction_status(@transaction) %>
 <% error_in_internal_tx = @transaction.has_error_in_internal_txs %>
 <% current_user = AuthController.current_user(@conn) %>
@@ -11,7 +13,7 @@
             <td class="show_for_hompage sno_col">
               <span class="btn-icon radius-50">
                 <span class="btn-icon-inner">
-                Tx
+                <img src="/images/page-icon.png" style="width: 19px; height: 19px" class="invert-image" />
                 </span>
               </div>
             </td>
@@ -30,6 +32,7 @@
               <div>
                 <span class="mr-2 mr-md-0 order-2 text-gray-over fs-12" in-tile data-from-now="<%= block_timestamp(@transaction) %>"></span>
               </div>
+
             </td>
 
             <td class="show_for_hompage">
@@ -52,6 +55,7 @@
                       <%= @transaction |> BlockScoutWeb.AddressView.address_partial_selector(:to, assigns[:current_address]) |> BlockScoutWeb.RenderHelpers.render_partial() %>
                     </span>
                   </div>
+                </div>
                 </div>
             </td>
             <td class="show_for_hompage text-right">
@@ -97,19 +101,24 @@
                 <% end %>
 
                 <%= if status_class(@transaction) == "tile-status--success" do %>
-                  <span class="text-muted" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Txn is successful"><strong><i class="fa fa-check-circle"></i></strong></span>
+                 <span class=" eyeSpanBtn" data-toggle="tooltip" data-placement="bottom" title="<div style='font-size: 14px; background-color:white'>Txn is successful</div>" data-html="true">
+                  <strong class="p-1 eyeBtn" style="border:1px solid #DDDDDD; border-radius:6px;">
+                    <i class="fa-regular fa-eye"></i>
+                  </strong>
+                 </span>
                 <% end %>
 
+
                 <%= if status_class(@transaction) == "tile-status--awaiting-internal-transactions" do %>
-                <span class="text-danger" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Internal Transaction"><strong><i class="fa fa-exclamation-circle"></i></strong></span>
+                <span class="text-danger " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Internal Transaction"><strong><i class="fa fa-exclamation-circle"></i></strong></span>
                 <% end %>
 
                 <%= if status_class(@transaction) == "tile-status--error--awaiting-internal-transactions" do %>
-                <span class="text-danger" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Error: Internal Transaction"><strong><i class="fa fa-exclamation-circle"></i></strong></span>
+                <span class="text-danger " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Error: Internal Transaction"><strong><i class="fa fa-exclamation-circle"></i></strong></span>
                 <% end %>
 
                 <%= if status_class(@transaction) == "tile-status--error--reason" do %>
-                <span class="text-danger" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Error in Txn"><strong><i class="fa fa-exclamation-circle"></i></strong></span>
+                <span class="text-danger " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Error in Txn"><strong><i class="fa fa-exclamation-circle"></i></strong></span>
                 <% end %>
               </span>
             </td>
@@ -159,6 +168,7 @@
                   <% end %>
                 </span>
               <% end %>
+              </div>
             </td>
 
             <!-- Age  -->
@@ -190,7 +200,7 @@
                   &rarr;
                 </div>
               </div>
-              <div>
+
             </td>
 
             <td class="hide_for_homepage" style="width:70px">
@@ -262,3 +272,13 @@
     </table>
 
 </div>
+
+
+
+<style>
+.eyeBtn:hover{
+  background-color: #EEEEEE;
+  cursor: pointer;
+}
+
+</style>

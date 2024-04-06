@@ -2,7 +2,7 @@
 <div class="tile-- tile-type-internal-transaction fade-in <%= if error, do: "tile-status--error--reason"%>" data-test="internal_transaction" data-key="<%= @internal_transaction.transaction_hash %>_<%= @internal_transaction.index %>" data-internal-transaction-transaction-hash="<%= @internal_transaction.transaction_hash %>" data-internal-transaction-index="<%= @internal_transaction.index %>">
 
 
-  <table class="table fixed-layout mb-0">
+  <table class="table fixed-layout mb-0 ">
     <tbody class="table-group-divider validated_txns---">
       <tr>
         <td>
@@ -17,7 +17,7 @@
             gettext("%{number}", number: to_string(@internal_transaction.block_number)),
             to: block_path(BlockScoutWeb.Endpoint, :show, @internal_transaction.block_number)
           ) %>
-          </span>  
+          </span>
         </td>
 
         <td>
@@ -35,23 +35,23 @@
 
         <!-- From  -->
         <td class="hide_for_homepage">
-          <div class="">              
+          <div class="">
             <div class="text-truncate width135">
             <%= @internal_transaction |> BlockScoutWeb.AddressView.address_partial_selector(:from, assigns[:current_address]) |> (&(if is_list(&1), do: Keyword.put(&1, :ignore_implementation_name, true), else: &1)).() |> BlockScoutWeb.RenderHelpers.render_partial() %>
             </div>
           </div>
-          <div>           
-        </td>  
-          
+          <div>
+        </td>
+
         <td class="hide_for_homepage" style="width:70px">
           <div class="btn btn-xs btn-teal rounded-circle">
             <span class="fas fa-long-arrow-alt-right"></span>
           </div>
         </td>
-          
+
         <!-- To  -->
         <td class="hide_for_homepage">
-          <div class="">              
+          <div class="">
             <div class="text-truncate width135">
               <span>
               <%= @internal_transaction |> BlockScoutWeb.AddressView.address_partial_selector(:to, assigns[:current_address]) |> (&(if is_list(&1), do: Keyword.put(&1, :ignore_implementation_name, true), else: &1)).() |> BlockScoutWeb.RenderHelpers.render_partial() %>
@@ -66,18 +66,18 @@
               <%= BlockScoutWeb.TransactionView.value(@internal_transaction, include_label: false) %> <%= Explorer.coin_name() %>
             </span>
           </span>
-        </td>     
+        </td>
 
         <!-- Color Block or txns type -->
-        <td>       
-          <div class="">        
+        <td>
+          <div class="">
             <span class="tile-status-label" data-internal-transaction-type="<%= type(@internal_transaction) %>"><%= type(@internal_transaction) %></span>
             <%= if error do %>
               <span class="tile-status-label ml-2 ml-md-0"><%= gettext "Error" %>: <%= error %></span>
             <% end %>
           </div>
         </td>
-      </tr>   
+      </tr>
      </tbody>
   </table>
 </div>

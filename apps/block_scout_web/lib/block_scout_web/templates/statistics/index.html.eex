@@ -34,7 +34,7 @@
                 >
               </div>
               <div id="ContentPlaceHolder1_Div1a_body_2" class="card-body">
-              
+
             </div>
           </div>
         </div>
@@ -56,16 +56,16 @@
                               </tr>
                             </thead>
                             <tbody id="tableBody">
-                           
+
                             </tbody>
                           </table>
                       </div>
                   </div>
-              </div>    
+              </div>
           </div>
         </div>
-        
-  
+
+
       <div class="tok-container">
         <div class="card">
         <h2 class="p-10">Top Tokens</h2>
@@ -80,7 +80,7 @@
                               </tr>
                             </thead>
                             <tbody id="top-token">
-                            
+
                             </tbody>
                           </table>
                     </div>
@@ -111,6 +111,6 @@ document.querySelector(".tok-container").style.display = "block "
 }
 
 
-    
-       
+
+
     </script>

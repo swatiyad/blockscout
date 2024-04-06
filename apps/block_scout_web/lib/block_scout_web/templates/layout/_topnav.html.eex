@@ -28,9 +28,9 @@
   </div>
 </div>
 
-  <nav class="navbar navbar-dark navbar-expand-lg navbar-primary border-bottom shadow-sm custom_navbar py-1" data-selector="navbar" id="top-navbar">
-    <div class="container navbar-container">
-      <div class="clearfix logo_custom_img">
+  <nav class="navbar navbar-dark navbar-expand-lg navbar-primary border-bottom shadow-sm custom_navbar py-1 " data-selector="navbar" id="top-navbar">
+    <div class="container navbar-container ">
+      <div class="clearfix logo_custom_img ">
         <a href="/"> <div class="logo_img"></div> </a>
         <!-- <%= link to: webapp_url(@conn), class: "navbar-brand", "data-test": "header_logo" do %>
           <%= if logo() do %>
@@ -44,15 +44,15 @@
           <% end %>
         <% end %>
         -->
-    </div>
+      </div>
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="<%= gettext("Toggle navigation") %>">
+    <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="<%= gettext("Toggle navigation") %>">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="col-md-8">
-      <div class="collapse navbar-collapse order-md-2" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto width_full">
+    <div class="col-md-8 " style="padding-left:0px; padding:right:0px">
+      <div class="collapse navbar-collapse order-md-2 " id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto col-12 ">
           <li class="nav-item">
           <%= link(
               gettext("Home"),
@@ -112,7 +112,7 @@
               </li>
 
               <li class="nav-item dropdown">
-                <a href="#" role="button" id="navbarTokensDropdown" class="nav-link topnav-nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a href="#" role="button" id="navbarTokensDropdown" class="nav-link topnav-nav-link dropdown-toggle " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <%= gettext("Tokens") %>
 
                 </a>
@@ -182,6 +182,11 @@
                         class: "dropdown-item #{tab_status("Directory", @conn.request_path)}",
                         to: "/directories"
                       ) %>
+                      <%= link(
+                        gettext("DeployedApps"),
+                        class: "dropdown-item #{tab_status("DeployedApps", @conn.request_path)}",
+                        to: "/dapps"
+                      ) %>
 
 
                       <a class="dropdown-item" target="_blank" href="https://docs.wyzth.org/docs/Overview"> API Documentation</a>
@@ -189,7 +194,9 @@
                 </div>
               </li>
 
-          <li class="nav-item dropdown">
+
+
+          <li class="nav-item dropdown ">
                 <a href="#" role="button" id="navbarTokensDropdown" class="nav-link topnav-nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <%= gettext("Developers") %>
 
@@ -233,6 +240,50 @@
 
                 </div>
               </li>
+
+              <li class="nav-item dropdown ">
+              <a href="#" role="button" id="navbarTokensDropdown" class="nav-link topnav-nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <%= gettext("Tools") %>
+              </a>
+              <div class="dropdown-menu fade-up" aria-labeledby="navbarTransactionsDropdown">
+              <%= link(
+                      gettext("Encoding Converter"),
+                     class: "dropdown-item #{tab_status("tools_converter", @conn.request_path)}",
+                  to: "/tools_converter"
+                    ) %>
+              </div>
+
+              </li>
+
+              <li class="nav-item dropdown">
+              <a href="#" role="button" id="navbarTokensDropdown" class="nav-link topnav-nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <%= gettext("WYZ Zk ETH") %>
+              </a>
+              <div class="dropdown-menu fade-up" aria-labeledby="navbarTransactionsDropdown">
+              <%= link(
+                      gettext("L2 Explorer"),
+                     class: "dropdown-item #{tab_status("l2_explorer", @conn.request_path)}",
+                  to: "/l2_explorer"
+                    ) %>
+              </div>
+
+              </li>
+
+              <li class="nav-item dropdown">
+              <a href="#" role="button" id="navbarTokensDropdown" class="nav-link topnav-nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <%= gettext("More") %>
+              </a>
+              <div class="dropdown-menu fade-up" aria-labeledby="navbarTransactionsDropdown">
+              <%= link(
+                      gettext("Multi-chain Address Finder"),
+                     class: "dropdown-item #{tab_status("multi_chain_address_finder", @conn.request_path)}",
+                  to: "/multi_chain_address_finder"
+                    ) %>
+              </div>
+
+              </li>
+
+
               <li class="nav-item dropdown d-lg-none d-block">
               <a href="#" role="button" id="navbarTokensDropdown" class="nav-link topnav-nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <%= gettext("Explorer") %>
@@ -258,6 +309,9 @@
               <i class="fa fa-user-circle mx-1 mobile-d-none"></i> Sign In
             </a>
           </li>
+
+
+
 
 
         <!--  <li class="header-nav-separator mt-lg-2"></li>
@@ -299,6 +353,7 @@
                         class: "dropdown-item #{tab_status("testnet", @conn.request_path)}",
                         to: "https://testnet.wyzthscan.org/"
                       ) %>
+
 
                 </div>
 </div>

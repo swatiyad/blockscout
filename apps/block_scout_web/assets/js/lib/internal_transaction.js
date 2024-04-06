@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     table.innerHTML = loaderHtml;
 
     try {
-      const apiResponse = await axios.get(`https://wyzthscan.org/node-api/internal-transactions?page=${page}&pageSize=50`);
+      const apiResponse = await axios.get(`http://localhost:3000/internal-transactions?page=${page}&pageSize=50`);
       const apiData = apiResponse.data;
       console.log(apiData, "apiData");
 
@@ -37,29 +37,29 @@ document.addEventListener("DOMContentLoaded", async function () {
           data-selector="token-transfers-toggle"
           data-test="chain_transaction"
         >
-          <table class="table fixed-layout mb-0">
+          <table class="table fixed-layout mb-0 ">
             <tbody class="table-group-divider validated_txns---">
               <!-- Color Block Transaction -->
               <tr>
                 <td class="show_for_hompage sno_col">
                   <span class="btn-icon radius-50">
-                    <span class="btn-icon-inner"> Tx </span>
+                    <span class="btn-icon-inner"> <img src="/images/page-icon.png" style="width: 19px; height: 19px" class="invert-image" /></span>
                   </span>
                 </td>
                 <td class="show_for_hompage">
-                  <div class="text-truncate width135">
+                  <div class="text-truncate width135 ">
                     <a
-                      class="text-truncate text-green"
+                      class="text-truncate text-green "
                       data-test="transaction_hash_link"
                       href="/tx/${"0x"+Buffer.from(detail.transaction_hash).toString("hex")}"
                       >${"0x"+Buffer.from(detail.transaction_hash).toString("hex")}</a
                     >
       
-                    <div class="bs-label method ml-1">${detail.call_type}</div>
+                    <div class="bs-label method ml-1 ">${detail.call_type}</div>
                   </div>
                   <div>
                     <span
-                      class="mr-2 mr-md-0 order-2 text-gray-over fs-12"
+                      class="mr-2 mr-md-0 order-2 text-gray-over fs-12 "
                       in-tile=""
                       data-from-now=${detail.inserted_at}"
                       >${detail.inserted_at}</span
@@ -147,7 +147,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                 </td>
       
       
-                <td class="hide_for_homepage" style="width: 40px">
+                <td class="hide_for_homepage " style="width: 40px">
                   <span
                     class="tile-status-label ml-md-0"
                     data-test="transaction_status"
@@ -346,14 +346,14 @@ document.addEventListener("DOMContentLoaded", async function () {
   updatePaginationButtons();
 });
 document.addEventListener("DOMContentLoaded", async function () {
-    const transactionCount = await axios.get(`https://wyzthscan.org/node-api/transaction-count`);
+    const transactionCount = await axios.get(`http://localhost:3000/transaction-count`);
     const transactionC = transactionCount.data[0].total_count;
     console.log(transactionCount,"transactionCount");
  document.querySelector(".update-1000").innerHTML = transactionC;
    
 })
 document.addEventListener("DOMContentLoaded", async function () {
-    const blockCount = await axios.get(`https://wyzthscan.org/node-api/block-count`);
+    const blockCount = await axios.get(`http://localhost:3000/block-count`);
     const blockC = blockCount.data[0].total_count;
     const href = window.location.href;
     console.log(blockCount,"transactionCount");

@@ -1,0 +1,201 @@
+
+<div id="multi_add_finder_container  " class=" p-1">
+<div class="multi-chain-address-finder-wrapper  p-1">
+
+    <div class="search-engine-wrapper mt-5">
+        <h1 class="text-center mainTitle">Multi-Chain Address Finder</h1>
+        <div class="search-engine-illustrate text-center  d-flex  justify-content-center ">
+            <span class="finder-statement">This
+                finder can automatically retrieve EVM addresses and
+                their data on BTTC from TRON addresses.
+            </span>
+            <a href="tools_converter" class="converterBtn">
+                <div class="flex-start  more-link pl-1">
+                    <span>TRON - EVM address converter</span>
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+            </a>
+        </div>
+        <div class="search-wrapper  ">
+            <div class="container  d-flex justify-content-center mt-4">
+                <input placeholder="Search by TRON address here, starting with letter T" class="ant-input col-6  my-1"
+                    type="text" value="" />
+                <span class="search-btn flex-center  d-flex align-items-center justify-content-center my-1 px-3">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                </span>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="search-result-wrapper  p-1 mt-5">
+    <div class="search-result  container ">
+        <div class="search-result-top  ">
+            <div class="flex-start search-result-top-l ">
+
+                    <span>
+                        Address:
+                    </span>
+
+                <a target="_blank"
+                    href="/address"
+                    class=""
+                    >TQopP5GM68QoqLzpz8YReDfSoCMkvwcZYd
+
+                </a>
+            </div>
+
+                <span class="">
+                    Found on <b>1</b> different chain(s)
+                </span>
+
+        </div>
+
+        <hr class="hrTag">
+
+        <div class="search-result-list  mb-4 ">
+            <div class="search-result-item">
+                <div class="flex-start item-top  search-result-top-l">
+                    <a target="_blank" href="/address">
+                        <b>TRONSCAN</b>
+                        <div class="flex-start result-item-address ">
+                            <img src="https://static.tronscan.org/production/upload/logo/new/chain/tron.svg">
+                            TRON：
+                            <em>TQopP5GM68QoqLzpz8YReDfSoCMkvwcZYd</em>
+                        </div>
+                    </a>
+                    <div class="flex-start result-item-tags"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<style>
+.ant-input{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    outline:none;
+    border: none;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+}
+.ant-input:focus{
+outline: 1px solid #bcac4b;
+}
+
+.search-btn{
+    background-color: #d5cf36;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+
+.search-btn:hover{
+    cursor: pointer;
+
+    background-color: #bcac4b;
+
+}
+
+.search-btn i{
+    color: #fff;
+    font-size: 20px;
+}
+
+.converterBtn:hover{
+    text-decoration: none;
+    color: #d5cf36 !important ;
+}
+
+.mainTitle{
+    font-weight: 550;
+    font-size: 25px;
+}
+.search-result-top{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+
+
+.hrTag {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.1), transparent);
+  }
+
+  .search-result {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 15px;
+  }
+
+  .finder-statement {
+    font-size: 16px;
+}
+
+.search-result-top-l {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.search-result-top-l a {
+    text-decoration: none;
+    color: #333;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.result-item-address{
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+  @media (max-width: 768px) {
+    .mainTitle {
+        font-size: 20px;
+    }
+    .finder-statement {
+        font-size: 14px;
+    }
+    .search-result-top {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .mainTitle {
+        font-size: 18px;
+    }
+    .ant-input {
+        padding: 10px;
+        font-size: 14px;
+    }
+    .search-btn i {
+        font-size: 16px;
+    }
+    .more-link{
+font-size: 12px;
+    }
+}
+
+</style>

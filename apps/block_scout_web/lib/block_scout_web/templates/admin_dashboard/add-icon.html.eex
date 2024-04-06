@@ -89,7 +89,7 @@
 
 <div class="container container1234">
 
-    <div class="form-container" id="add-icon-form" data-id="<%= @id %>">
+    <div class="form-container " id="add-icon-form" data-id="<%= @id %>">
       <h1>Add Icon</h1>
     <form id="add-icon">
         <label for="taddress">Token Address</label>

@@ -3,10 +3,10 @@
 
   <%= render BlockScoutWeb.AddressView, "overview.html", address: @address, is_proxy: is_proxy, conn: @conn, exchange_rate: @exchange_rate, coin_balance_status: @coin_balance_status, counters_path: @counters_path, tags: @tags %>
   <section data-page="address-logs">
-  <div class="card">
+  <div class="">
     <%= render BlockScoutWeb.AddressView, "_tabs.html", address: @address, is_proxy: is_proxy, conn: @conn %>
 
-    <div class="card-body" data-async-load data-async-listing="<%= @current_path %>" data-no-self-calls>
+    <div class="contract_data_body " data-async-load data-async-listing="<%= @current_path %>" data-no-self-calls>
       <h2 class="card-title"><%= gettext "Logs" %></h2>
       <div class="logs-topbar">
 
@@ -44,3 +44,12 @@
   <script defer data-cfasync="false" src="<%= static_path(@conn, "/js/address-logs.js") %>"></script>
   </section>
 </section>
+
+<style>
+.contract_data_body{
+  border: 1px solid #eeeeee;
+  border-radius:8px;
+  padding:8px;
+  box-shadow: 0 7px 15px 0 rgba(0, 0, 0, .13), 0 1px 4px 0 rgba(0, 0, 0, .11);
+}
+</style>

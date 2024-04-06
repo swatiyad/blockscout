@@ -14,11 +14,11 @@ config :logger, :account,
   path: Path.absname("logs/dev/account.log"),
   metadata_filter: [fetcher: :account]
 
- config :block_scout_web, BlockScoutWeb.Endpoint,
-    http: [port: 4000],
-    https: [
-      port: 4001,
-      cipher_suite: :strong,
-      certfile: "priv/cert/selfsigned.pem",
-      keyfile: "priv/cert/selfsigned_key.pem"
-    ]
+config :block_scout_web, BlockScoutWeb.Endpoint,
+  http: [port: 4000],
+  https: [
+    port: 4001,
+    cipher_suite: :strong,
+    certfile: "priv/cert/selfsigned.pem",
+    keyfile: "priv/cert/selfsigned_key.pem"
+  ]
