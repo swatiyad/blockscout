@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", async function () {
           data-selector="token-transfers-toggle"
           data-test="chain_transaction"
         >
-          <table class="table fixed-layout mb-0">
+          <table class="table fixed-layout mb-0 ">
             <tbody class="table-group-divider validated_txns---">
               <!-- Color Block Transaction -->
               <tr>
@@ -47,19 +47,19 @@ document.addEventListener("DOMContentLoaded", async function () {
                   </span>
                 </td>
                 <td class="show_for_hompage">
-                  <div class="text-truncate width135">
+                  <div class="text-truncate width135 ">
                     <a
-                      class="text-truncate text-green"
+                      class="text-truncate text-green "
                       data-test="transaction_hash_link"
                       href="/tx/${"0x"+Buffer.from(detail.transaction_hash).toString("hex")}"
                       >${"0x"+Buffer.from(detail.transaction_hash).toString("hex")}</a
                     >
       
-                    <div class="bs-label method ml-1">${detail.call_type}</div>
+                    <div class="bs-label method ml-1 ">${detail.call_type}</div>
                   </div>
                   <div>
                     <span
-                      class="mr-2 mr-md-0 order-2 text-gray-over fs-12"
+                      class="mr-2 mr-md-0 order-2 text-gray-over fs-12 "
                       in-tile=""
                       data-from-now=${detail.inserted_at}"
                       >${detail.inserted_at}</span
@@ -147,7 +147,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                 </td>
       
       
-                <td class="hide_for_homepage" style="width: 40px">
+                <td class="hide_for_homepage " style="width: 40px">
                   <span
                     class="tile-status-label ml-md-0"
                     data-test="transaction_status"

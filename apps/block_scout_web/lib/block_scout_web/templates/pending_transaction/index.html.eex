@@ -4,7 +4,7 @@
   <div class="page-title display_flex">
     <div>
       <h1>Pending Transactions </h1>
-    </div>  
+    </div>
   </div>
 
   <!--<div class="mt-2">
@@ -14,15 +14,15 @@
   <div class="card">
     <div class="card-body px-3 validated_txns" data-async-listing="<%= @current_path %>">
         <!--<h1 class="card-title list-title-description"><%= gettext "Pending Transactions" %></h1>-->
-        <div class="d-flex justify-content-between">     
+        <div class="d-flex justify-content-between">
           <div><p class="text-secondary fs-14">A  total of 000 pending txns found</p></div>
           <div class="list-top-pagination-container-wrapper">
           <%= render BlockScoutWeb.CommonComponentsView, "_pagination_container.html", position: "top", cur_page_number: "1", show_pagination_limit: true, data_next_page_button: true, data_prev_page_button: true %>
         </div>
-      </div> 
-      
-      <div class="overflow-auto w-100">
- 
+      </div>
+
+      <div class="overflow-auto w-100 showBorde">
+
         <div data-selector="channel-batching-message" style="display: none;">
           <div data-selector="reload-button" class="alert alert-info">
             <a href="#" class="alert-link"><span data-selector="channel-batching-count"></span> <%= gettext "More transactions have come in" %></a>
@@ -49,13 +49,13 @@
                 <th class="screenRow">Age</th>
                 <th class="">From</th>
                 <th class="" style="width:70px">&nbsp;</th>
-                <th class="">To</th>               
+                <th class="">To</th>
                 <th class="">Value</th>
                 <th class="">Txn Fee</th>
               </tr>
             </thead>
           </table>
-        </div>        
+        </div>
         <div data-items data-selector="transactions-pending-list">
           <%= render BlockScoutWeb.CommonComponentsView, "_tile-loader.html" %>
         </div>

@@ -2,19 +2,28 @@
 <% dark_forest_addresses_list_0_5 = CustomContractsHelpers.get_custom_addresses_list(:dark_forest_addresses_v_0_5) %>
 <% dark_forest_addresses_list = dark_forest_addresses_list_0_4 ++ dark_forest_addresses_list_0_5 %>
 <% current_address = "0x" <> Base.encode16(@address.hash.bytes, case: :lower) %>
-<div id="address-tabs " class="navigationMainContainer  p-1" style="margin-bottom: 12px; ">
-<div class="navListContainer  p-1" >
-  <li class="navItem " >
+<div id="address-tabs " class="navigationMainContainer  " style="margin-bottom: 12px; ">
+<div class="navListContainer  p-1 " >
+    <li class="navItem " >
 
 
-    <%= link(
-          gettext("Transactions"),
-          class: "navItemLink #{tab_status("transactions", @conn.request_path)}",
-          to: AccessHelpers.get_path(@conn, :address_transaction_path, :index, @address.hash),
-          style: "width:100px !important; display:block "
-        ) %>
+      <%= link(
+            gettext("Transactions"),
+            class: "navItemLink #{tab_status("transactions", @conn.request_path)}",
+            to: AccessHelpers.get_path(@conn, :address_transaction_path, :index, @address.hash),
+            style: "width:100px !important; display:block "
+          ) %>
 
-  </li>
+    </li>
+
+
+
+
+
+
+
+
+
   <%= if Chain.check_if_token_transfers_at_address(@address.hash) do %>
 
     <li class="navItem ">
@@ -79,6 +88,7 @@
     ) %>
     </li>
   <% end %>
+
   <li class="navItem " >
     <%= if contract?(@address) do %>
       <%= link(
@@ -156,6 +166,8 @@
 
         )%>
   <% end %>
+
+
   </div>
 </div>
 

@@ -56,6 +56,7 @@
                     </span>
                   </div>
                 </div>
+                </div>
             </td>
             <td class="show_for_hompage text-right">
               <span class="border rounded-sm p-1">
@@ -109,15 +110,15 @@
 
 
                 <%= if status_class(@transaction) == "tile-status--awaiting-internal-transactions" do %>
-                <span class="text-danger" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Internal Transaction"><strong><i class="fa fa-exclamation-circle"></i></strong></span>
+                <span class="text-danger " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Internal Transaction"><strong><i class="fa fa-exclamation-circle"></i></strong></span>
                 <% end %>
 
                 <%= if status_class(@transaction) == "tile-status--error--awaiting-internal-transactions" do %>
-                <span class="text-danger" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Error: Internal Transaction"><strong><i class="fa fa-exclamation-circle"></i></strong></span>
+                <span class="text-danger " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Error: Internal Transaction"><strong><i class="fa fa-exclamation-circle"></i></strong></span>
                 <% end %>
 
                 <%= if status_class(@transaction) == "tile-status--error--reason" do %>
-                <span class="text-danger" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Error in Txn"><strong><i class="fa fa-exclamation-circle"></i></strong></span>
+                <span class="text-danger " data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Error in Txn"><strong><i class="fa fa-exclamation-circle"></i></strong></span>
                 <% end %>
               </span>
             </td>
@@ -167,6 +168,7 @@
                   <% end %>
                 </span>
               <% end %>
+              </div>
             </td>
 
             <!-- Age  -->
@@ -198,7 +200,7 @@
                   &rarr;
                 </div>
               </div>
-              <div>
+
             </td>
 
             <td class="hide_for_homepage" style="width:70px">
@@ -272,9 +274,11 @@
 </div>
 
 
+
 <style>
 .eyeBtn:hover{
   background-color: #EEEEEE;
   cursor: pointer;
 }
+
 </style>

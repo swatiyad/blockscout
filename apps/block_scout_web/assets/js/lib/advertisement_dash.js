@@ -9,6 +9,8 @@ const deleteBanner = async (bannerId)=>{
   })
   if(res.status === 200){
     console.log(res.data);
+    window.location.reload();
+
   }
   } catch (error) {
     console.log(error);
@@ -108,6 +110,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if(res.status ===200){
 
         modal.style.display = "none";
+        window.location.reload();
        
       }
 

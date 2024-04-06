@@ -4,6 +4,9 @@ defmodule BlockScoutWeb.Router do
   alias BlockScoutWeb.Plug.GraphQL
   alias BlockScoutWeb.{ApiRouter, WebRouter}
 
+
+
+
   if Application.compile_env(:block_scout_web, ApiRouter)[:wobserver_enabled] do
     forward("/wobserver", Wobserver.Web.Router)
   end
@@ -177,6 +180,7 @@ defmodule BlockScoutWeb.Router do
     pipe_through(:browser)
     get("/dapps", DappsController, :index)
   end
+
 
   scope "/", BlockScoutWeb do
     pipe_through(:browser)
