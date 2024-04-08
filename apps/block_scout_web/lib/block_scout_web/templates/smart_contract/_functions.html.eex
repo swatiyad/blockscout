@@ -39,7 +39,7 @@
 
 
 <div class="accordion" id="accordionExample">
-<div class="card showBorder " data-function<%= if assigns[:custom_abi], do: "-custom" %>>
+<div class="card  " data-function<%= if assigns[:custom_abi], do: "-custom" %>>
 
     <div class="card-header" id="heading<%= counter + 1 %>" >
       <h2 class="mb-0">
