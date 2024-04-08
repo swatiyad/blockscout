@@ -39,9 +39,9 @@
 
 
 <div class="accordion" id="accordionExample">
-<div class="card">
+<div class="card  " data-function<%= if assigns[:custom_abi], do: "-custom" %>>
 
-    <div class="card-header" id="heading<%= counter + 1 %>">
+    <div class="card-header" id="heading<%= counter + 1 %>" >
       <h2 class="mb-0">
       <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse<%= counter + 1 %>" aria-expanded="true" aria-controls="collapse<%= counter + 1 %>">
       <%= counter %>.

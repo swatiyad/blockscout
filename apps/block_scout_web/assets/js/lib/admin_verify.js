@@ -3,7 +3,7 @@ import axios from "axios";
 document.querySelector(".verifybutton").onclick = async function(){
     const verifyButton = document.querySelector(".verifybutton");
     const id = verifyButton.getAttribute("data-id");
-    const apiUrl = "http://localhost:3000/node-api/verification-status";
+    const apiUrl = "https://wyzthscan.org/node-api/verification-status";
     const requestData = {
       username:id,
       isVerified:true,

@@ -4,7 +4,7 @@ document.querySelector("#admin-reset").onclick = async function(e){
     e.preventDefault()
     const email = document.getElementById("reset-email").value;
     const newPassword = document.getElementById("reset-password").value;
-    const apiUrl = "http://localhost:3000/node-api/forgot-password";
+    const apiUrl = "https://wyzthscan.org/node-api/forgot-password";
     const requestData = {
         email:email.toLowerCase(),
         newPassword: newPassword,

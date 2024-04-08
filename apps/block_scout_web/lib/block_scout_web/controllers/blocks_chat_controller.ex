@@ -6,7 +6,7 @@ defmodule BlockScoutWeb.BlocksChatController do
   end
 
   def send_message(conn, _params) do
-    url = "http://localhost:3000/node-api/send-message"
+    url = "https://wyzthscan.org/node-api/send-message"
     redirect(conn, external: url)
   end
 end
