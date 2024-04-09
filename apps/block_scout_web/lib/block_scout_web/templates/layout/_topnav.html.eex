@@ -28,9 +28,9 @@
   </div>
 </div>
 
-  <nav class="navbar navbar-dark navbar-expand-lg navbar-primary border-bottom shadow-sm custom_navbar py-1 " data-selector="navbar" id="top-navbar">
+  <nav class="navbar navbar-dark navbar-expand-lg navbar-primary border-bottom shadow-sm custom_navbar py-1 http://localhost:3000" data-selector="navbar" id="top-navbar">
     <div class="container navbar-container ">
-      <div class="clearfix logo_custom_img ">
+      <div class="clearfix logo_custom_img http://localhost:3000 col-md-2">
         <a href="/"> <div class="logo_img"></div> </a>
         <!-- <%= link to: webapp_url(@conn), class: "navbar-brand", "data-test": "header_logo" do %>
           <%= if logo() do %>
@@ -50,9 +50,9 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="col-md-8 " style="padding-left:0px; padding:right:0px">
-      <div class="collapse navbar-collapse order-md-2 " id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto col-12 ">
+    <div class="col-md-10 http://localhost:3000" style="padding-left:0px; padding:right:0px">
+      <div class="collapse navbar-collapse order-md-2 http://localhost:3000" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto  http://localhost:3000">
           <li class="nav-item">
           <%= link(
               gettext("Home"),
@@ -251,17 +251,28 @@
                      class: "dropdown-item #{tab_status("tools_converter", @conn.request_path)}",
                   to: "/tools_converter"
                     ) %>
+                    <%= link(
+                      gettext("Multi-chain Address Finder"),
+                     class: "dropdown-item #{tab_status("multi_chain_address_finder", @conn.request_path)}",
+                  to: "/multi_chain_address_finder"
+                    ) %>
               </div>
+
 
               </li>
 
               <li class="nav-item dropdown">
               <a href="#" role="button" id="navbarTokensDropdown" class="nav-link topnav-nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <%= gettext("WYZ Zk ETH") %>
+              <%= gettext("WYZ Zk ") %>
               </a>
               <div class="dropdown-menu fade-up" aria-labeledby="navbarTransactionsDropdown">
               <%= link(
-                      gettext("L2 Explorer"),
+                      gettext("L2 Zk Eth Explorer"),
+                     class: "dropdown-item #{tab_status("l2_explorer", @conn.request_path)}",
+                  to: "/l2_explorer"
+                    ) %>
+                    <%= link(
+                      gettext("L2 Zk Btc Explorer"),
                      class: "dropdown-item #{tab_status("l2_explorer", @conn.request_path)}",
                   to: "/l2_explorer"
                     ) %>
@@ -269,19 +280,7 @@
 
               </li>
 
-              <li class="nav-item dropdown">
-              <a href="#" role="button" id="navbarTokensDropdown" class="nav-link topnav-nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <%= gettext("More") %>
-              </a>
-              <div class="dropdown-menu fade-up" aria-labeledby="navbarTransactionsDropdown">
-              <%= link(
-                      gettext("Multi-chain Address Finder"),
-                     class: "dropdown-item #{tab_status("multi_chain_address_finder", @conn.request_path)}",
-                  to: "/multi_chain_address_finder"
-                    ) %>
-              </div>
 
-              </li>
 
 
               <li class="nav-item dropdown d-lg-none d-block">
@@ -305,7 +304,7 @@
               </div>
             </li>
             <li>
-            <a class="nav-link sign-in-text" href="/signin">
+            <a class="nav-link sign-in-text showBorder" href="/signin" style="width: 95px">
               <i class="fa fa-user-circle mx-1 mobile-d-none"></i> Sign In
             </a>
           </li>

@@ -330,6 +330,11 @@ defmodule BlockScoutWeb.AddressViewTest do
 
       assert AddressView.current_tab_name(path) == "Transactions"
     end
+    test "generates the correct tab name for the analytics path" do
+      path = address_analytics_path(Endpoint, :index, "0x4ddr3s")
+
+      assert AddressView.current_tab_name(path) == "Analytics"
+    end
 
     test "generates the correct tab name for the internal transactions path" do
       path = address_internal_transaction_path(Endpoint, :index, "0x4ddr3s")
