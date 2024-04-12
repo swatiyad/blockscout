@@ -9,15 +9,15 @@
     <table class="table fixed-layout mb-0">
       <tbody class="table-group-divider validated_txns---">
         <!-- Color Block Transaction -->
-        <tr>
-            <td class="show_for_hompage sno_col">
+        <tr class="">
+            <td class="show_for_hompage sno_col ">
               <span class="btn-icon radius-50">
-                <span class="btn-icon-inner">
+                <span class="btn-icon-inner ">
                 <img src="/images/page-icon.png" style="width: 19px; height: 19px" class="invert-image" />
                 </span>
               </div>
             </td>
-            <td class="show_for_hompage">
+            <td class="show_for_hompage ">
               <div class="text-truncate width135">
                 <%= render "_link.html", transaction_hash: @transaction.hash, data_test: "address_hash_link" %>
                 <% method_name = Transaction.get_method_name(@transaction) %>
