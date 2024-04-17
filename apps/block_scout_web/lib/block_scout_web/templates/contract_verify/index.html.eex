@@ -18,7 +18,7 @@
  function addressSubmitHAndler(){
   let inputVal = document.querySelector(".addrs-input-verification").value
    if(inputVal.startsWith("0x")){
-    window.location.href= `http://localhost:3000/address/${inputVal}/contracts#address-tabs`
+    window.location.href= `https://wyzthscan.org/address/${inputVal}/contracts#address-tabs`
    }else{
     alert("Invalid Address.")
    }

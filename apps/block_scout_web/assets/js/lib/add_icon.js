@@ -24,7 +24,7 @@ async function connectWallet() {
 async function getAdminAddress(tokenAddress, contractAddress) {
   try {
     const response = await axios.post(
-      "http://localhost:3000/node-api/get-token-creator",
+      "https://wyzthscan.org/node-api/get-token-creator",
       { tokenAddress }
     );
     if (response.data.status) {
@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
           formData.append("username", id);
           try {
             const response = await axios.post(
-              "http://localhost:3000/node-api/add-icon",
+              "https://wyzthscan.org/node-api/add-icon",
               formData,
               {
                 headers: {
