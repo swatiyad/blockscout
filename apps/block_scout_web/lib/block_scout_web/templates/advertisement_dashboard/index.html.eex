@@ -90,11 +90,11 @@ Add Advertisement Banner
   align-items: center;
   justify-content: space-between;
   padding:0 ;
-  width: 18rem;
 
 }
 .navbar ul li{
   list-style: none;
+  margin-left: 15px;
 
 }
 .navbar ul li:hover{

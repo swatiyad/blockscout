@@ -1,5 +1,5 @@
 <section data-page="contract-verification-choose-type" class="container card mt-30 py-5">
- 
+
 
   <div class="new-smart-contract-form">
       <h1 class="title-head text-center mb-40"><%= gettext "New Smart Contract Verification" %></h1>
@@ -22,7 +22,7 @@
    }else{
     alert("Invalid Address.")
    }
-  
+
   }
   function reset(){
     document.querySelector(".addrs-input-verification").value=""

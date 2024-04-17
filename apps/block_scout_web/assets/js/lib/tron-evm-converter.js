@@ -7,90 +7,80 @@ document.addEventListener("DOMContentLoaded", async function () {
   const tron_address = document.getElementById("tron_address");
   const evm_address = document.getElementById("evm_address");
   const bs58 = require("bs58");
+  const crypto = require('crypto');
+
 
   tron_address.value = "";
   evm_address.value = "";
 
   const ethereumToTronAddress = (ethereumAddress) => {
+    console.log("Converting to Tron address");
     try {
-      if (
-        !ethereumAddress ||
-        typeof ethereumAddress !== "string" ||
-        !ethereumAddress.startsWith("0x") ||
-        ethereumAddress.length !== 42
-      ) {
-        throw new Error(
-          'Invalid input: Ethereum address must be a valid hexadecimal string with "0x" prefix and length of 42 characters'
-        );
-      }
-      // Remove the '0x' prefix from the Ethereum address
-      console.log("------------ethtotron-->", ethereumAddress);
-      const hex = ethereumAddress.slice(2);
-      if (hex.length !== 40) {
-        throw new Error(
-          'Invalid input: Ethereum address must be a valid hexadecimal string with length of 40 characters (excluding "0x" prefix)'
-        );
-      }
+        if (!ethereumAddress || typeof ethereumAddress !== "string" || ethereumAddress.length !== 42 || !ethereumAddress.startsWith('0x')) {
+            throw new Error("Invalid input: Ethereum address must be a non-empty string starting with '0x' and have a length of 42 characters");
+        }
 
-      // Prepend the Tron-specific prefix (0x41) to the byte array
-      const bytes = Buffer.from("41" + hex, "hex");
+        const hex = ethereumAddress.slice(2); // Remove the '0x' prefix
+        if (hex.length !== 40) {
+            throw new Error("Invalid input: Ethereum address must be a valid hexadecimal string with length of 40 characters (excluding '0x' prefix)");
+        }
 
-      // Encode the byte array into Base58 to get the Tron address
-      const tronAddress = bs58.encode(bytes);
-      console.log("tron tron", tronAddress);
+        // Convert the hex string into a byte array and prepend the Tron-specific prefix '41'
+        const addressBytes = Buffer.from('41' + hex, 'hex');
 
-      return tronAddress;
+        // Double SHA-256 hash
+        const hashOne = crypto.createHash('sha256').update(addressBytes).digest();
+        const hashTwo = crypto.createHash('sha256').update(hashOne).digest();
+
+        // Take the first 4 bytes of the second hash as the checksum
+        const checksum = hashTwo.slice(0, 4);
+
+        // Append the checksum to the original byte array
+        const fullAddress = Buffer.concat([addressBytes, checksum]);
+
+        // Base58 encode the result
+        const tronAddress = bs58.encode(fullAddress);
+   
+        return tronAddress;
     } catch (error) {
       evm_address.style.outline = "none";
       evm_address.style.borderColor = "red";
       invalidInput2.style.display = "block";
-
-      console.log(error);
-      console.error(
-        "Error converting Ethereum address to Tron address:",
-        error.message
-      );
-      
+        console.error("Error converting Ethereum address to Tron address:", error.message);
+        throw error;
     }
-  };
+};
+
+
 
   const tronToEthereumAddress = (tronAddress) => {
     try {
-      if (
-        !tronAddress ||
-        typeof tronAddress !== "string" ||
-        tronAddress.length !== 34
-      ) {
-        throw new Error(
-          "Invalid input: Tron address must be a non-empty string with length of 34 characters"
-        );
-      }
-      // Decode the Base58 encoded Tron address
-      console.log("------------------", tronAddress);
-      const decoded = bs58.decode(tronAddress);
+        if (!tronAddress || typeof tronAddress !== "string" || tronAddress.length !== 34 || !tronAddress.startsWith('T')) {
+            throw new Error("Invalid input: Tron address must be a non-empty string starting with 'T' and have a length of 34 characters");
+        }
 
-      // Convert the decoded buffer to a hexadecimal string
-      const hex = Array.from(decoded, (byte) =>
-        byte.toString(16).padStart(2, "0")
-      ).join("");
+        const decoded = bs58.decode(tronAddress);
+        let hex = Buffer.from(decoded).toString('hex');
 
-      // Properly format the hex string as an Ethereum address by adding the '0x' prefix
-      const ethereumAddress = "0x" + hex.slice(2); // Slice off the Tron network prefix (0x41)
-      console.log("eth eth", ethereumAddress);
-      return ethereumAddress;
+        // Remove the first 2 characters (1 byte network prefix) from the hexadecimal string
+        hex = hex.slice(2);
+
+        // We want only the address part which typically comes after the first byte and is 20 bytes long
+        // As each byte translates to two hex characters, take the next 40 characters
+        hex = hex.slice(0, 40);
+
+        // Properly format the hex string as an Ethereum address by adding the '0x' prefix and converting to lowercase
+        const ethereumAddress = "0x" + hex.toLowerCase();
+
+        return ethereumAddress;
     } catch (error) {
       tron_address.style.outline = "none";
       tron_address.style.borderColor = "red";
       invalidInput1.style.display = "block";
-
-      console.log(error);
-      console.error(
-        "Error converting Ethereum address to Tron address:",
-        error.message
-      );
-      
+        console.error("Error converting TRON address to Ethereum address:", error.message);
+        throw error; 
     }
-  };
+};
 
   toolBtn1.addEventListener("click", () => {
     // const tronAddress = "TDUiUScimQNfmD1F76Uq6YaXbofCVuAvxH";
