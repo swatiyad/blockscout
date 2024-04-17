@@ -4,43 +4,7 @@ document.addEventListener("DOMContentLoaded", async function () {
   const punchIt = document.getElementById("punchIt");
   const product_list = document.getElementById("product-list");
 
-  // const products = [
-  //   {
-  //     image: "https://blockscout-content.s3.amazonaws.com/PodsYield.png",
-  //     title: "pods",
-  //     description:
-  //       "1-click-deposit investment product, making it easy to invest in complex derivatives strategies",
-  //     link: "https://blockscout-content.s3.amazonaws.com/PodsYield.png",
-  //   },
-  //   {
-  //     image: "https://blockscout-content.s3.amazonaws.com/PodsYield.png",
-  //     title: "pods",
-  //     description:
-  //       "1-click-deposit investment product, making it easy to invest in complex derivatives strategies",
-  //     link: "https://blockscout-content.s3.amazonaws.com/PodsYield.png",
-  //   },
-  //   {
-  //     image: "https://blockscout-content.s3.amazonaws.com/PodsYield.png",
-  //     title: "pods",
-  //     description:
-  //       "1-click-deposit investment product, making it easy to invest in complex derivatives strategies",
-  //     link: "https://blockscout-content.s3.amazonaws.com/PodsYield.png",
-  //   },
-  //   {
-  //     image: "https://blockscout-content.s3.amazonaws.com/PodsYield.png",
-  //     title: "pods",
-  //     description:
-  //       "1-click-deposit investment product, making it easy to invest in complex derivatives strategies",
-  //     link: "https://blockscout-content.s3.amazonaws.com/PodsYield.png",
-  //   },
-  //   {
-  //     image: "https://blockscout-content.s3.amazonaws.com/PodsYield.png",
-  //     title: "pods",
-  //     description:
-  //       "1-click-deposit investment product, making it easy to invest in complex derivatives strategies",
-  //     link: "https://blockscout-content.s3.amazonaws.com/PodsYield.png",
-  //   },
-  // ];
+  
   const getProductsList = async () => {
     try {
         const res = await axios.get(
@@ -51,7 +15,7 @@ document.addEventListener("DOMContentLoaded", async function () {
             //     }
             //   }
               );
-          console.log("---------->",res.data);
+         
 
           return res.data;
     } catch (error) {
@@ -76,12 +40,19 @@ document.addEventListener("DOMContentLoaded", async function () {
     productList.forEach((product) => {
       const card = document.createElement("div");
       card.classList.add("card-content", "p-4", "rounded-lg");
+      card.style.width="19.5rem";
       const cardImage = document.createElement("div");
       cardImage.classList.add("card-image");
       const image = document.createElement("img");
       image.classList.add("card-img");
       image.setAttribute("alt", "Product Image");
         image.setAttribute("src", product.image);
+        image.style.height = "170px";
+        image.style.width = "261px";
+        image.style.backgroundColor="#F0EBE3"
+        image.style.padding="10px"
+
+        
         cardImage.appendChild(image);
       
         //Creating card details
@@ -103,7 +74,7 @@ document.addEventListener("DOMContentLoaded", async function () {
         cardActions.classList.add("card-actions");
         const moreInfoBtn = document.createElement("a");
         moreInfoBtn.classList.add("moreInfoBtn");
-        moreInfoBtn.setAttribute("href", "https://www.google.com/");
+        moreInfoBtn.setAttribute("href", "https://wyscale.com/");
         moreInfoBtn.setAttribute("target", "_blank");
         moreInfoBtn.textContent = "More info";
 

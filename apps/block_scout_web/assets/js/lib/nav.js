@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
     const username = window.sessionStorage.getItem("username");
-    console.log(username,"username");
     const signInTextElement = document.querySelector(".sign-in-text");
   
     if (username !== null && username !== undefined) {

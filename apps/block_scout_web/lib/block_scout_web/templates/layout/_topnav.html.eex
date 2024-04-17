@@ -30,7 +30,7 @@
 
   <nav class=" navbar navbar-dark navbar-expand-lg navbar-primary border-bottom shadow-sm custom_navbar py-1 " data-selector="navbar" id="top-navbar">
     <div class="container navbar-container ">
-      <div class="clearfix logo_custom_img col-md-2 col-sm-3 col-1 " style="">
+      <div class="clearfix logo_custom_img col-md-2 col-sm-3 col-1 mt-0 " style="">
         <a href="/"> <div class="logo_img"></div> </a>
         <!-- <%= link to: webapp_url(@conn), class: "navbar-brand", "data-test": "header_logo" do %>
           <%= if logo() do %>
@@ -329,7 +329,7 @@
 
           <!-- Dark mode changer -->
           <li class="nav-item d-none d-lg-inline-block">
-            <button type="button" class="dark-mode-changer-btn nav-link topnav-nav-link border rounded ml-2 bg-white" style="padding: 0 10px;" id="dark-mode-changer">
+            <button type="button" class="dark-mode-changer-btn nav-link topnav-nav-link border rounded  bg-white" style="padding: 0 10px;" id="dark-mode-changer">
             </button>
           </li>
 

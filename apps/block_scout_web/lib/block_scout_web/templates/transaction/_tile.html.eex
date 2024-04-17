@@ -103,7 +103,7 @@
                 <%= if status_class(@transaction) == "tile-status--success" do %>
                  <span class=" eyeSpanBtn" data-toggle="tooltip" data-placement="bottom" title="<div style='font-size: 14px; background-color:white'>Txn is successful</div>" data-html="true">
                   <strong class="p-1 eyeBtn" style="border:1px solid #DDDDDD; border-radius:6px;">
-         <i class="fa-regular fa-eye"></i>
+                    <i class="fa-regular fa-eye"></i>
                   </strong>
 
                  </span>

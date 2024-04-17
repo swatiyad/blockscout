@@ -358,6 +358,13 @@ a.metamask_btn {
   position: relative;
   display: inline-block;
   margin-top: 3px;
+  transition: color 0.4s ease;
+
+}
+
+.arrow-up:hover {
+  color: black;
+
 }
 
 .arrow-up::before {
@@ -369,8 +376,13 @@ a.metamask_btn {
   width: 15px;
   height: 2px;
   background-color: #ffffff;
-
+  transition: background-color 0.4s ease;
 }
+
+.arrow-up:hover::before {
+  background-color: black;
+}
+
 @media (max-width: 460px) {
   .footerTop span {
       font-size: 12px !important;

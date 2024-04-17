@@ -16,12 +16,6 @@
 
     </li>
 
-
-
-
-
-
-
   <%= if Chain.check_if_token_transfers_at_address(@address.hash) do %>
 
     <li class="navItem ">

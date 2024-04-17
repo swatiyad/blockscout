@@ -40,9 +40,12 @@ document.addEventListener("DOMContentLoaded", async function () {
 
         // Base58 encode the result
         const tronAddress = bs58.encode(fullAddress);
-
+   
         return tronAddress;
     } catch (error) {
+      evm_address.style.outline = "none";
+      evm_address.style.borderColor = "red";
+      invalidInput2.style.display = "block";
         console.error("Error converting Ethereum address to Tron address:", error.message);
         throw error;
     }
@@ -71,6 +74,9 @@ document.addEventListener("DOMContentLoaded", async function () {
 
         return ethereumAddress;
     } catch (error) {
+      tron_address.style.outline = "none";
+      tron_address.style.borderColor = "red";
+      invalidInput1.style.display = "block";
         console.error("Error converting TRON address to Ethereum address:", error.message);
         throw error; 
     }
