@@ -2,7 +2,7 @@ import axios from "axios";
 const deleteBanner = async (bannerId)=>{
   console.log(bannerId)
   try {
-    const res = await axios.post("https://wyzthscan.org/node-api/delete-banner",{bannerId},{
+    const res = await axios.post("http://localhost:3000/node-api/delete-banner",{bannerId},{
     headers: {
       "Content-Type": "application/json",
     },
@@ -25,9 +25,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
   const getBannerData = async ()=>{
-    const res = await axios.get("https://wyzthscan.org/node-api/get-adv-banners");
+    const res = await axios.get("http://localhost:3000/node-api/get-adv-banners");
     if(res.status === 200){
       let banners = res.data;
+      console.log('--->>', banners);
       banners.forEach((banner, index) => {
         const newRow = document.createElement("tr");
         const link = banner.link.startsWith('http://') || banner.link.startsWith('https://') ? banner.link : `https://${banner.link}`;
@@ -99,7 +100,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     try {
       const res = await axios.post(
-        "https://wyzthscan.org/node-api/upload-banner",
+        "http://localhost:3000/node-api/upload-banner",
         formData,
         {
           headers: {
