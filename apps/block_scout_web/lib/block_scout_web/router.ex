@@ -186,6 +186,15 @@ defmodule BlockScoutWeb.Router do
     pipe_through(:browser)
     get("/charts/unique-address", UniqueAddressChartController, :index)
   end
+  scope "/", BlockScoutWeb do
+    pipe_through(:browser)
+    get("/charts/avg-block-time", AverageBlockTimeController, :index)
+  end
+
+  scope "/", BlockScoutWeb do
+    pipe_through(:browser)
+    get("/charts/daily-wyz-burnt", DailyEthBurntController, :index)
+  end
 
 
   scope "/", BlockScoutWeb do

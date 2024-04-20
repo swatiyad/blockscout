@@ -105,7 +105,9 @@ const appJs =
       'dapp_list':'./js/lib/dapp_list.js',
       'txn_eye_btn':'/js/lib/txn_eye_btn.js',
       'fetch_advertisement':'/js/lib/fetch_advertisement.js',
-      'unique_address_chart':'/js/lib/unique_address_chart.js'
+      'unique_address_chart':'/js/lib/unique_address_chart.js',
+      'avg_block_time':'/js/lib/avg_block_time.js',
+      'daily_eth_burnt':'/js/lib/daily_eth_burnt.js'
 
     },
     output: {
