@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const res = await axios.get("http://localhost:3000/node-api/get-adv-banners");
     if(res.status === 200){
       let banners = res.data;
-      console.log('--->>', banners);
+     
       banners.forEach((banner, index) => {
         const newRow = document.createElement("tr");
         const link = banner.link.startsWith('http://') || banner.link.startsWith('https://') ? banner.link : `https://${banner.link}`;

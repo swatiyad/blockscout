@@ -42,7 +42,7 @@ Add Advertisement Banner
       <p class="text-center" style="color: #808080;font-size: 20px">CHOOSE BANNER FROM YOUR DEVICE!</p>
       <div class="d-flex flex-column mb-2">
       <label class="">Select Image</label>
-      <input id="advImg" type="file" accept="image/jpeg, image/jpg" class="form-control mb-3 rounded-sm">
+      <input id="advImg" type="file" accept="image/jpeg, image/jpg, image/png" class="form-control mb-3 rounded-sm">
 
       </div>
       <div class="d-flex flex-column mb-2">
