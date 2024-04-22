@@ -66,6 +66,13 @@
 <a/>
 </div>
 
+<div class="  chart-max-width chart-height w-25  mx-md-5 mx-3  my-3  p-2 chartBorder " style="height:215px">
+<a href="/charts/daily-block-rewards" class="chartBox">
+<div class="">WYZ Daily Block Rewards Chart</div>
+<img src="/images/chart/daily-block-rewards.svg" class="img-fluid" style="height:215px"/>
+<a/>
+</div>
+
 
 
 </div>

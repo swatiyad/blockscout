@@ -1,0 +1,15 @@
+
+<script defer src="<%= static_path(@conn, "/js/daily-block-rewards.js") %>"></script>
+<section data-page="contract-verification-choose-type" class="container new-smart-contract-container mt-30">
+
+ <div class="card">
+<div id="chartContainer11"></div>
+
+</div>
+
+
+</section>
+
+<script>
+
+</script>

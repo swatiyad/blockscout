@@ -196,6 +196,11 @@ defmodule BlockScoutWeb.Router do
     get("/charts/daily-wyz-burnt", DailyEthBurntController, :index)
   end
 
+  scope "/", BlockScoutWeb do
+    pipe_through(:browser)
+    get("/charts/daily-block-rewards", DailyBlockRewardsController, :index)
+  end
+
 
   scope "/", BlockScoutWeb do
     pipe_through(:browser)
