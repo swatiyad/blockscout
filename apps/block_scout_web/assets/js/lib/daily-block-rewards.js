@@ -41,7 +41,7 @@ const chartOptions = {
 
 export const fetchApi = async () => {
   try {
-    const res = await axios.get('http://localhost:3000/node-api/get-block-rewards');
+    const res = await axios.get('https://wyzthscan.org/node-api/get-block-rewards');
     const dataArray = res.data; // Assuming the response contains the desired data
 
     // Prepare data for chart

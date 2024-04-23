@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 
 
   try {
-    const res = await axios.get("http://localhost:3000/node-api/get-adv-banners");
+    const res = await axios.get("https://wyzthscan.org/node-api/get-adv-banners");
     
     // Filter the array to get objects with desired location
     const homeLocationFilteredData = res.data.filter(obj => obj.location === "home");

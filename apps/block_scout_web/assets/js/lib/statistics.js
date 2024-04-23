@@ -197,8 +197,8 @@ let token=
 </div>`
   document.querySelector("#ContentPlaceHolder1_Div1a_body_1").innerHTML = trans;
   document.querySelector("#ContentPlaceHolder1_Div1a_body_2").innerHTML = token;
-  const mainnet = "http://localhost:3000/"
-  const testnet = "http://localhost:3000/"
+  const mainnet = "https://wyzthscan.org/"
+  const testnet = "https://wyzthscan.org/"
   const [maxRecieverCount,topsender, maxSendCount, api, TopTokenApi] =
   await Promise.all([
     axios.get(mainnet+"node-api/max-count-reciever"),

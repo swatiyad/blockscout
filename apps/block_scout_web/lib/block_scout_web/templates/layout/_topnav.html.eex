@@ -296,7 +296,7 @@
                     <%= link(
                       gettext("Mainnet"),
                       class: "dropdown-item #{tab_status("mainnet", @conn.request_path)}",
-                      to: "http://localhost:3000/"
+                      to: "https://wyzthscan.org/"
                     ) %>
 
                     <%= link(
@@ -348,7 +348,7 @@
                       <%= link(
                         gettext("Mainnet"),
                         class: "dropdown-item #{tab_status("mainnet", @conn.request_path)}",
-                        to: "http://localhost:3000/"
+                        to: "https://wyzthscan.org/"
                       ) %>
 
                       <%= link(
