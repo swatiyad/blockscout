@@ -1,9 +1,11 @@
 <!-- Coinzilla Banner 728x90 -->
 <script async src="https://coinzillatag.com/lib/display.js"></script>
+<script defer src="<%= static_path(@conn, "/js/fetch_advertisement.js") %>"></script>
+
 <div class="ad-container mb-2" style="display: none;">
     <div class="coinzilla" data-zone="C-26660bf627543e46851"></div>
 </div>
 <script defer data-cfasync="false" src="<%= static_path(@conn, "/js/banner.js") %>"></script>
-<div class="text-center mb-4">
-<a href="https://wyscale.com/" target="_blank"> <img src="/images/banner-advertisement.jpg"  class="img-responsive banner-staking"></a>
+<div class="text-center mb-4 ">
+<a  href="https://wyscale.com/" target="_blank"> <img id="txnAd" src="/images/banner-advertisement.jpg"  class="img-responsive banner-staking"></a>
 </div>

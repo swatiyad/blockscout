@@ -106,7 +106,8 @@ defmodule BlockScoutWeb.Router do
     get("/charts/gasused", ChartController, :blocktime)
     get("/charts/gasprice", ChartController, :gasprice)
     get("/charts/gaslimit", ChartController, :gaslimit)
-    get("/charts/uniqueaddress", ChartController, :uniqueaddress)
+
+
   end
 
   scope "/", BlockScoutWeb do
@@ -179,6 +180,25 @@ defmodule BlockScoutWeb.Router do
   scope "/", BlockScoutWeb do
     pipe_through(:browser)
     get("/dapps", DappsController, :index)
+  end
+
+  scope "/", BlockScoutWeb do
+    pipe_through(:browser)
+    get("/charts/unique-address", UniqueAddressChartController, :index)
+  end
+  scope "/", BlockScoutWeb do
+    pipe_through(:browser)
+    get("/charts/avg-block-time", AverageBlockTimeController, :index)
+  end
+
+  scope "/", BlockScoutWeb do
+    pipe_through(:browser)
+    get("/charts/daily-wyz-burnt", DailyEthBurntController, :index)
+  end
+
+  scope "/", BlockScoutWeb do
+    pipe_through(:browser)
+    get("/charts/daily-block-rewards", DailyBlockRewardsController, :index)
   end
 
 

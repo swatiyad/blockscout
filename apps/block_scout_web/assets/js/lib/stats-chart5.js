@@ -55,7 +55,6 @@ const chartOptions = {
   (async()=>{
 
     const d = await fetchApi()
-    console.log(d,"dddd",chartOptions);
   
     const chartContainer = document.getElementById('chartContainer5');
     Highcharts.chart(chartContainer, chartOptions);

@@ -1,0 +1,15 @@
+
+<script defer src="<%= static_path(@conn, "/js/avg_block_time.js") %>"></script>
+<section data-page="contract-verification-choose-type" class="container new-smart-contract-container mt-30">
+
+ <div class="card">
+<div id="chartContainer8"></div>
+
+</div>
+
+
+</section>
+
+<script>
+
+</script>

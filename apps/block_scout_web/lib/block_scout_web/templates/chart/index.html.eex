@@ -38,15 +38,40 @@
 </a>
 </div>
 
-<div class="  chart-max-width chart-height w-25  mx-md-5 mx-3  my-3  p-2 chartBorder" style="height:215px">
+<div class="  chart-max-width chart-height w-25  mx-md-5 mx-3  my-3  p-2 chartBorder " style="height:215px">
 <a href="/charts/gasused" class="chartBox">
 <div class="chartTitles">Daily Gas Used Chart</div>
 <img src="/images/chart/gasused.svg" class="img-fluid" style="height:215px"/>
 <a/>
 </div>
 
+<div class="  chart-max-width chart-height w-25  mx-md-5 mx-3  my-3  p-2 chartBorder " style="height:215px">
+<a href="/charts/unique-address" class="chartBox">
+<div class="">Unique Address Chart</div>
+<img src="/images/chart/unique-address.svg" class="img-fluid" style="height:215px"/>
+<a/>
+</div>
 
+<div class="  chart-max-width chart-height w-25  mx-md-5 mx-3  my-3  p-2 chartBorder " style="height:215px">
+<a href="/charts/avg-block-time" class="chartBox">
+<div class="">Average Block Time Chart</div>
+<img src="/images/chart/avg-block-time.svg" class="img-fluid" style="height:215px"/>
+<a/>
+</div>
 
+<div class="  chart-max-width chart-height w-25  mx-md-5 mx-3  my-3  p-2 chartBorder " style="height:215px">
+<a href="/charts/daily-wyz-burnt" class="chartBox">
+<div class="">Daily WYZ Burnt Chart</div>
+<img src="/images/chart/daily-eth-burnt.svg" class="img-fluid" style="height:215px"/>
+<a/>
+</div>
+
+<div class="  chart-max-width chart-height w-25  mx-md-5 mx-3  my-3  p-2 chartBorder " style="height:215px">
+<a href="/charts/daily-block-rewards" class="chartBox">
+<div class="">WYZ Daily Block Rewards Chart</div>
+<img src="/images/chart/daily-block-rewards.svg" class="img-fluid" style="height:215px"/>
+<a/>
+</div>
 
 
 

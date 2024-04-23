@@ -28,6 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const res = await axios.get("https://wyzthscan.org/node-api/get-adv-banners");
     if(res.status === 200){
       let banners = res.data;
+     
       banners.forEach((banner, index) => {
         const newRow = document.createElement("tr");
         const link = banner.link.startsWith('http://') || banner.link.startsWith('https://') ? banner.link : `https://${banner.link}`;

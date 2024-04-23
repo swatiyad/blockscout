@@ -58,7 +58,6 @@ const chartOptions = {
   (async()=>{
 
     const d = await fetchApi()
-    console.log(d,"dddd",chartOptions);
   
     const chartContainer = document.getElementById('chartContainer3');
     Highcharts.chart(chartContainer, chartOptions);
