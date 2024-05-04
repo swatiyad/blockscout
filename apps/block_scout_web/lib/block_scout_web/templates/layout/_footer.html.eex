@@ -290,7 +290,7 @@ a.metamask_btn {
         <h3 class="text-white heading_border"><%= gettext("Resources") %></h3>
         <ul style="list-style: none;margin: 0; padding: 0; line-height: 31px;">
           <li><a href="https://docs.wyzth.org/docs/Overview" target="_blank" rel="noreferrer" class="footer-link"><%= gettext("API Documentation") %></a></li>
-          <li><a href="https://newsletter.thecoinweekly.com/" target="_blank" rel="noreferrer" class="footer-link"><%= gettext("Newsletter") %></a></li>
+          <li><a href="https://news.wyscale.com/" target="_blank" rel="noreferrer" class="footer-link"><%= gettext("Newsletter") %></a></li>
 
           <!--
           <%= for %{title: title, url: url} <- test_nets do %>

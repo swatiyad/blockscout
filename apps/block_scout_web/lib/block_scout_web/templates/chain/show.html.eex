@@ -50,7 +50,7 @@
           <hr style=" margin-top: 20px; margin-bottom: 20px;" class="invert-image hr_tag">
 
           <div class="media mb-lg-0 mb-md-4 pb-md-4 pb-lg-0 pb-sm mb-sm border-bottm-sm ">
-            <img class="mr-3 media_icon" src="images/globe.png"  height="34"  style="width:34px;">
+            <img class="mr-3 media_icon invert-image" src="images/globe.png"  height="34"  style="width:34px;">
             <div class="media-body">
               <span class="dashboard-banner-network-stats-label text-uppercase ">
                 <%= gettext "Market Cap" %>
