@@ -6113,7 +6113,7 @@ defmodule Explorer.Chain do
           "xdai"
 
           "304" ->
-            "DTBX"
+            "ZAK"
 
         _ ->
           nil

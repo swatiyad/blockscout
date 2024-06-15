@@ -22,7 +22,7 @@ document.querySelector("#heroSubscribeButton").onclick = async function () {
     document.querySelector(".Output_section_contract_search").style.display =
       "block";
     const apiData = await axios.get(
-      `https://explorer.dotblox.io/node-api/search-in-code?query=${input}`
+      `https://zakscan.io/node-api/search-in-code?query=${input}`
     );
 
     apiData.data.data==0?
@@ -101,7 +101,7 @@ document.querySelector("#heroSubscribeButton-2").onclick = async function () {
       document.querySelector(".Output_section_contract_search").style.display =
         "block";
       const apiData = await axios.get(
-        `https://explorer.dotblox.io/node-api/search-in-code?query=${input}`
+        `https://zakscan.io/node-api/search-in-code?query=${input}`
       );
   
       apiData.data.data==0?

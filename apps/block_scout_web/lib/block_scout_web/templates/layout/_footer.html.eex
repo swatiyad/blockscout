@@ -62,25 +62,35 @@
 
 .logo_custom_img .logo_img {
   # background: url(/images/dotblox.png);
+   # background: url(/images/dotblox.png);
   background-size: contain;
   background-repeat: no-repeat;
-  width: 160px;
-  height: 50px;
+  width: 90px;
+  height: 90px;
   position:relative;
-  left:-35px
+  padding:10px;
+  # left:-35px
 }
 .main-logo{
   width:100%;
+  height:100%
 }
 
 .dark-theme-applied .logo_custom_img .logo_img {
   # background: url(/images/dotblox.png);
   background-size: contain;
   background-repeat: no-repeat;
-  width: 160px;
-  height: 50px;
-  position:relative;
-  left:-35px
+  width: 90px;
+  height: 90px;
+  padding:10px;
+  # position:relative;
+  # left:-35px
+}
+.dark-theme-applied .main-logo {
+  width: 100%;
+  height: 100%;
+  filter: brightness(0) invert(1);
+
 }
 .navbar-image .btn {
   padding: 6px 8px!important;
@@ -88,28 +98,30 @@
 .navbar-image {margin:0 10px;}
 
 .navbar-image .media_bg_icon {
-  background: url(/images/small-logo-icon.png);
+  background: url(/images/small_logo_icon.svg);
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .dark-theme-applied .navbar-image .media_bg_icon {
-  background: url(/images/small-logo-icon.png);
+  background: url(/images/small_logo_icon.svg);
   background-size: contain;
   background-repeat: no-repeat;
+  filter: invert(1) brightness(2);
 }
 
 .dashboard_home .media_bg_icon {
-    background: url(/images/small-logo-icon.png);
+  background: url(/images/small_logo_icon.svg);
     background-size: contain;
     background-position: 27% 4%;
     background-repeat: no-repeat;
 }
 
 .dark-theme-applied .dashboard_home .media_bg_icon{
-  background: url(/images/small-logo-icon.png);
+  background: url(/images/small_logo_icon.svg);
   background-size: contain;
   background-repeat: no-repeat;
+  filter: brightness(0) invert(1);
 }
 
 .metamask_btn {
@@ -229,7 +241,7 @@ a.metamask_btn {
 
       <div class="footer-about-bg"></div>
       <p class="text-white">
-      <%= gettext("DotBlox is a Block Explorer and Analytics Platform for DotBlox ") %>  <%= gettext(" chain, a decentralized smart contracts platform.") %></p>
+      <%= gettext("Zakchain is a Block Explorer and Analytics Platform for ZAK ") %>  <%= gettext(" chain, a decentralized smart contracts platform.") %></p>
 
       <a type="button" class="metamask_btn btn-sm text-decoration-none  py-1 mr-2" href="/preferences">
         <i class="fas fa-cogs mr-1"></i> Preferences
@@ -274,7 +286,7 @@ a.metamask_btn {
         <h3 class="text-white heading_border"><%= gettext("Products & Services") %></h3>
         <ul style="list-style: none;margin: 0; padding: 0; line-height: 31px;">
 
-        <li><a href="#" target="_blank" rel="noreferrer" class="footer-link"><%= gettext("DotBox") %></a></li>
+        <li><a href="#" target="_blank" rel="noreferrer" class="footer-link"><%= gettext("Zakchain") %></a></li>
         <li><a href="/chat" target="_blank" rel="noreferrer" class="footer-link"><%= gettext("Blockscan Chat") %></a></li>
 
         <!--Absinthe<%= for %{title: title, url: url} <- main_nets do %>
@@ -310,7 +322,7 @@ a.metamask_btn {
   <div class="row text-white py-2">
     <div class="col-md-6 col-6 mb-sm">
       <div class="d-flex pt-1">
-        <div>Dotblox &copy; 2023 </div>
+        <div>Zakchain &copy; 2024 </div>
         <div class="ml-2"><span class="text-danger ms-2"> <i class="fa fa-heart"></i> </span></div>
       </div>
     </div>
