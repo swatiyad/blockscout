@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     table.innerHTML = loaderHtml;
 
     try {
-      const apiResponse = await axios.get(`https://explorer.dotblox.io/node-api/internal-transactions?page=${page}&pageSize=50`);
+      const apiResponse = await axios.get(`https://zakscan.io/node-api/internal-transactions?page=${page}&pageSize=50`);
       const apiData = apiResponse.data;
       console.log(apiData, "apiData");
 
@@ -141,7 +141,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                 </td>
                 <td class="show_for_hompage text-right">
                   <span class="border rounded-sm p-1">
-                    <span class="fs-10 font-weight-bold"> ${detail.value / 1e18} DTBX </span>
+                    <span class="fs-10 font-weight-bold"> ${detail.value / 1e18} ZAK </span>
       
                   </span>
                 </td>
@@ -289,7 +289,7 @@ document.addEventListener("DOMContentLoaded", async function () {
       
                 <!-- Value  -->
                 <td class="hide_for_homepage">
-                  <span class="">${detail.value / 1e18} DTBX </span>
+                  <span class="">${detail.value / 1e18} ZAK </span>
                 </td>
       
                 <!-- Tx Fee  -->
@@ -346,14 +346,14 @@ document.addEventListener("DOMContentLoaded", async function () {
   updatePaginationButtons();
 });
 document.addEventListener("DOMContentLoaded", async function () {
-    const transactionCount = await axios.get(`https://explorer.dotblox.io/transaction-count`);
+    const transactionCount = await axios.get(`https://zakscan.io/transaction-count`);
     const transactionC = transactionCount.data[0].total_count;
     console.log(transactionCount,"transactionCount");
  document.querySelector(".update-1000").innerHTML = transactionC;
    
 })
 document.addEventListener("DOMContentLoaded", async function () {
-    const blockCount = await axios.get(`https://explorer.dotblox.io/node-api/block-count`);
+    const blockCount = await axios.get(`https://zakscan.io/node-api/block-count`);
     const blockC = blockCount.data[0].total_count;
     const href = window.location.href;
     console.log(blockCount,"transactionCount");

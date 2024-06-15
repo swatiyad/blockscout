@@ -1,7 +1,7 @@
 <div class="container space-bottom-2">
   <div class="w-md-75 w-lg-50 text-center mx-md-auto space-top-2 py-3">
     <h1 class="h3">Site Preferences</h1>
-    <p>This page allows you to set up your browsing experience such as language, advanced view etc. onDotbloxscan</p>
+    <p>This page allows you to set up your browsing experience such as language, advanced view etc. on Zakchain</p>
     </div>
     <div class="row">
   <div class="w-md-75 w-lg-50 mx-md-auto col-md-6 col-12">
@@ -60,7 +60,7 @@
               <h3 class="h6 font-weight-bold mb-1">Disqus Comments</h3>
               <span
                 >Enable Disqus comments tab (Note: This affect all Disqus
-                comments onDotbloxscan)</span
+                comments on Zakchain)</span
               >
             </label>
             <label class="checkbox-switch ml-3 mb-0">

@@ -197,7 +197,7 @@ let token=
 </div>`
   document.querySelector("#ContentPlaceHolder1_Div1a_body_1").innerHTML = trans;
   document.querySelector("#ContentPlaceHolder1_Div1a_body_2").innerHTML = token;
-  const mainnet = "https://explorer.dotblox.io/"
+  const mainnet = "https://zakscan.io/"
   const testnet = "http://localhost:3000/"
   const [maxRecieverCount,topsender, maxSendCount, api, TopTokenApi] =
   await Promise.all([
@@ -268,8 +268,8 @@ let token=
   trans = 
   `<div>
   <div class="media align-items-center mb-1">
-    <div class="media-body">Top Dotblox Sender</div>
-    <div class="text-right">Total Dotblox</div>
+    <div class="media-body">Top ZAK Sender</div>
+    <div class="text-right">Total ZAK</div>
   </div>
   <div class="media align-items-center mb-1">
     <div class="media-body">
@@ -294,8 +294,8 @@ let token=
   </div>
   <hr class="pb-1 hr" />
   <div class="media align-items-center mb-1">
-    <div class="media-body">Top Dotblox Receiver</div>
-    <div class="text-right">Total Dotblox</div>
+    <div class="media-body">Top ZAK Receiver</div>
+    <div class="text-right">Total ZAK</div>
   </div>
   <div class="media align-items-center mb-1">
     <div class="media-body">

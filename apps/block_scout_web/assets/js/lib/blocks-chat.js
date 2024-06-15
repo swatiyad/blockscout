@@ -9,7 +9,7 @@ const unreadCountButton = document.getElementById('unreadCountButton');
 const markAsReadButton = document.getElementById('markAsReadButton');
 const retrieveMessagesButton = document.getElementById('retrieveMessagesButton');
 
-const localhost = `https://explorer.dotblox.io/de-api`
+const localhost = `https://zakscan.io/de-api`
 if (typeof window.ethereum !== 'undefined') {
   const web3 = new Web3(window.ethereum);
 
