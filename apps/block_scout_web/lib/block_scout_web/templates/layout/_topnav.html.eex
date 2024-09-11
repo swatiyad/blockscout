@@ -3,12 +3,15 @@
 <% test_nets = test_nets(dropdown_nets()) %>
 <% main_nets = dropdown_head_main_nets() %>
 <script defer src="<%= static_path(@conn, "/js/nav.js") %>"></script>
+<script defer src="<%= static_path(@conn, "/js/fetch_advertisement.js") %>"></script>
+
+
 <div class="sticky-top border-bottom" id="abc">
   <div class="container">
     <div class="row topbar_search align-items-center py-2">
       <div class="col-lg-6 pl-4">
           <div class="d-none d-lg-inline-block m text-nowrap fs-12">
-            <span class="text-secondary"> WYZth Price :</span> <span class="text-info"> $20</span>
+            <span class="text-secondary"> WYZth Price :</span> <span class="text-info"> $<span id="topNavLivePrice">0.0708</span></span>
             <span data-toggle="tooltip" data-placement="top" data-title="Changes in the last 24 hours" data-original-title="" title="">
               <span class="text-success d-none"> (+1.27%)</span>
             </span>

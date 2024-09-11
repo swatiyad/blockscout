@@ -9,6 +9,7 @@ import '../lib/async_listing_load'
 import '../app'
 import Swal from 'sweetalert2'
 import { compareChainIDs, formatError } from '../lib/smart_contract/common_helpers'
+import axios from 'axios'
 
 export const initialState = {
   blockNumber: null,
@@ -354,3 +355,17 @@ $(function () {
 // console.log("Address Hash:", addressHash);
 // window.location.href = `http://localhost:4000/tx/${addressHash}/discus`
 // }
+
+
+document.addEventListener("DOMContentLoaded", async function () {
+
+  let livePrice = 0;
+  const response = await axios.get('https://wyzthscan.org/node-api/get-wyz-live-price');  // Call your server API or proxy endpoint
+  console.log("live price of wyz is:::", response.data);
+  livePrice = response.data.data.price;
+
+  document.getElementById("valueTxDetailLivePrice").innerText = Number(livePrice).toFixed(4);
+  
+
+  
+})

@@ -29,4 +29,28 @@ document.addEventListener("DOMContentLoaded", async function () {
   } catch (error) {
     console.error("Error fetching data:", error);
   }
+
+//   console.log("live price of wyz is got bro")
+
+  // async function fetchLivePrice() {
+    let livePrice = 0;
+    const response = await axios.get('https://wyzthscan.org/node-api/get-wyz-live-price');  // Call your server API or proxy endpoint
+    console.log("live price of wyz is:::", response.data);
+    livePrice = response.data.data.price;
+
+    document.getElementById("wyz_price").innerText = Number(livePrice).toFixed(4);
+    // document.getElementById("topNavLivePrice").innerText = Number(livePrice).toFixed(4);
+    
+    document.getElementById("valueLivePrice").innerText = Number(livePrice).toFixed(4);
+    console.log("runned")
+
+
+
+    // document.getElementById('live-price').innerText = `Live price: $${data.price}`;
+//   }
+
+// fetchLivePrice()
+
+
+
 });
