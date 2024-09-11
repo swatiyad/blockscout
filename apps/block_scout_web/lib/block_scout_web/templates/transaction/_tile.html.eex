@@ -1,5 +1,6 @@
 
 
+
 <% status = transaction_status(@transaction) %>
 <% error_in_internal_tx = @transaction.has_error_in_internal_txs %>
 <% current_user = AuthController.current_user(@conn) %>
@@ -231,7 +232,7 @@
             <!-- Value  -->
             <td class="hide_for_homepage">
               <span class="">
-                <%= value(@transaction, include_label: false) %> <%= Explorer.coin_name() %>
+                <span id="valueLivePrice">0</span>
               </span>
             </td>
 
@@ -284,3 +285,5 @@
 }
 
 </style>
+
+<script  defer src="<%= static_path(@conn, "/js/nav.js") %>"></script>

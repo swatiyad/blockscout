@@ -346,14 +346,14 @@ document.addEventListener("DOMContentLoaded", async function () {
   updatePaginationButtons();
 });
 document.addEventListener("DOMContentLoaded", async function () {
-    const transactionCount = await axios.get(`https://wyzthscan.org/transaction-count`);
+    const transactionCount = await axios.get(`https://wyzthscan.org/node-api/transaction-count`);
     const transactionC = transactionCount.data[0].total_count;
     console.log(transactionCount,"transactionCount");
  document.querySelector(".update-1000").innerHTML = transactionC;
    
 })
 document.addEventListener("DOMContentLoaded", async function () {
-    const blockCount = await axios.get(`https://wyzthscan.org/block-count`);
+    const blockCount = await axios.get(`https://wyzthscan.org/node-api/block-count`);
     const blockC = blockCount.data[0].total_count;
     const href = window.location.href;
     console.log(blockCount,"transactionCount");
