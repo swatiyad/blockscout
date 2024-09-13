@@ -34,12 +34,16 @@ document.addEventListener("DOMContentLoaded", async function () {
 
   // async function fetchLivePrice() {
     let livePrice = 0;
+    let dil_market_cap = 0;
     const response = await axios.get('https://wyzthscan.org/node-api/get-wyz-live-price');  // Call your server API or proxy endpoint
     console.log("live price of wyz is:::", response.data);
     livePrice = response.data.data.price;
+    dil_market_cap = response.data.data.diluted_market_cap
+
 
     document.getElementById("wyz_price").innerText = Number(livePrice).toFixed(4);
-    // document.getElementById("topNavLivePrice").innerText = Number(livePrice).toFixed(4);
+    document.getElementById("showMarketCap").innerText = Number(dil_market_cap).toFixed(2);
+
     
     document.getElementById("valueLivePrice").innerText = Number(livePrice).toFixed(4);
     console.log("runned")
