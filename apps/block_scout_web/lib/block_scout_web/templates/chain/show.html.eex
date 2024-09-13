@@ -19,7 +19,7 @@
         <div class="col-sm-12 col-md-12 col-lg-5 col-md-6 mb-2 text-center py-3 ">
         <a href="https://wyscale.com/" target="_blank" class="">
         <span class="position-absolute ad-text-homepage shadow-sm rounded-sm fs-12 px-1" style="left: 71%; top: 0.5rem;">Ad</span>
-        <img id="home" src="/images/header-advertisement.gif"  class="rounded "></a>
+        <img id="home" src="/images/homeDefault.png"  class="rounded "></a>
         </div>
       </div>
     </div>
@@ -59,7 +59,7 @@
 
               <span class="dashboard-data" data-selector="market-cap">
 
-              $<%= BlockScoutWeb.Cldr.Number.to_string!(@market_cap, format: "#,###") %>
+            <!--  $<%= BlockScoutWeb.Cldr.Number.to_string!(@market_cap, format: "#,###") %>
 
 
 
@@ -70,11 +70,17 @@
                   <%# This is done so that when people add a new chart source, x, %>
                   <%# They wont just access @chart_config.x w/o first checking if x exists%>
 
-                <% end %>
+                <% end %> -->
+
+
+
               </span>
               <!--<span class="dashboard-data" data-selector="address-count">
                 <%= BlockScoutWeb.Cldr.Number.to_string!(@address_count, format: "#,###") %>
+
               </span>-->
+
+                <span >$<span id="showMarketCap">4212596.77</span></span>
             </div>
           </div>
         </div>
