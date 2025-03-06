@@ -308,7 +308,7 @@ a.metamask_btn {
         <h3 class="text-white heading_border"><%= gettext("Products & Services") %></h3>
         <ul style="list-style: none;margin: 0; padding: 0; line-height: 31px;">
 
-        <li><a href="#" target="_blank" rel="noreferrer" class="footer-link"><%= gettext("WYscale") %></a></li>
+        <li><a href="#" target="_blank" rel="noreferrer" class="footer-link"><%= gettext("Inertia") %></a></li>
         <li><a href="/chat" target="_blank" rel="noreferrer" class="footer-link"><%= gettext("Blockscan Chat") %></a></li>
 
         <!--Absinthe<%= for %{title: title, url: url} <- main_nets do %>
