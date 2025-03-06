@@ -6,7 +6,7 @@ const chartOptions = {
     type: 'area',
   },
   title: {
-    text: 'Daily WYZ Burnt',
+    text: 'Daily IRTA Burnt',
   },
   xAxis: {
     type: 'datetime',
@@ -21,7 +21,7 @@ const chartOptions = {
   },
   yAxis: {
     title: {
-      text: 'Daily WYZ Burnt',
+      text: 'Daily IRTA Burnt',
     },
   },
   tooltip: {
@@ -32,7 +32,7 @@ const chartOptions = {
   },
   series: [
     {
-      name: 'Daily WYZ Burnt',
+      name: 'Daily IRTA Burnt',
       data: [],
       color: "#bdc54a80"
     },

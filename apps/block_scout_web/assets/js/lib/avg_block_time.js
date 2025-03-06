@@ -6,7 +6,7 @@ const chartOptions = {
     type: 'area',
   },
   title: {
-    text: 'WYZ Average Block Time',
+    text: 'IRTA Average Block Time',
   },
   xAxis: {
     type: 'datetime',

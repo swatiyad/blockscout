@@ -6,7 +6,7 @@ const chartOptions = {
     type: 'area',
   },
   title: {
-    text: 'WYZ Unique Address Chart',
+    text: 'IRTA Unique Address Chart',
   },
   xAxis: {
     type: 'datetime',
@@ -19,7 +19,7 @@ const chartOptions = {
   },
   yAxis: {
     title: {
-      text: 'WYZ Cumulative Address Growth',
+      text: 'IRTA Cumulative Address Growth',
     },
   },
   series: [

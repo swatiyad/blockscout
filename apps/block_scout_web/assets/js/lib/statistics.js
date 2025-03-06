@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 
 //   let trans = `<div>
 //     <div class="media align-items-center mb-1">
-//       <div class="media-body">Top WYZth Sender</div>
+//       <div class="media-body">Top IRTA  Sender</div>
 //       <div class="text-right">Total WYZth</div>
 //     </div>
 //     <div class="media align-items-center mb-1">
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 //     </div>
 //     <hr class="pb-1 hr" />
 //     <div class="media align-items-center mb-1">
-//       <div class="media-body">Top WYZTH Receiver</div>
+//       <div class="media-body">Top IRTA  Receiver</div>
 //       <div class="text-right">Total WYZTH</div>
 //     </div>
 //     <div class="media align-items-center mb-1">
@@ -268,7 +268,7 @@ let token=
   trans = 
   `<div>
   <div class="media align-items-center mb-1">
-    <div class="media-body">Top WYZth Sender</div>
+    <div class="media-body">Top IRTA  Sender</div>
     <div class="text-right">Total WYZth</div>
   </div>
   <div class="media align-items-center mb-1">
@@ -294,7 +294,7 @@ let token=
   </div>
   <hr class="pb-1 hr" />
   <div class="media align-items-center mb-1">
-    <div class="media-body">Top WYZTH Receiver</div>
+    <div class="media-body">Top IRTA  Receiver</div>
     <div class="text-right">Total WYZTH</div>
   </div>
   <div class="media align-items-center mb-1">

@@ -106,7 +106,7 @@
                 </div>
               <% end %>
           </div>
-          <p class=""> A Web3 Crypto Mutual Fund, start with as low as $50 on <a href="https://wyscale.com/" target="_blank" class="text-green font-weight-bold">  WYscale </a>
+          <p class="d-none"> A Web3 Crypto Mutual Fund, start with as low as $50 on <a href="https://wyscale.com/" target="_blank" class="text-green font-weight-bold">  WYscale </a>
           </p>
           <div class="card my-1 p-1 w-100">
           <ul id="transaction-tabs" class="nav nav-pills custom_pills card-tabs-- js-card-tabs-- my-2">
