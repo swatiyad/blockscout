@@ -216,17 +216,17 @@ a.metamask_btn {
        <div class="col-md-9 col-6  ml-0">
           <div class="footer-social float-left ">
 
-            <a href="https://t.me/officialwyzth" rel="noreferrer" target="_blank" title="medium">
+            <a href="#" rel="noreferrer" target="_blank" title="medium">
               <i class="fab fa-telegram"></i>
              </a>
-              <a href="https://instagram.com/officialwyzth" rel="noreferrer" target="_blank" title="reddit">
+              <a href="#" rel="noreferrer" target="_blank" title="reddit">
              <i class="fab fa-instagram"></i>
                </a>
 
-             <a href="https://www.linkedin.com/company/wyzth/" rel="noreferrer" target="_blank" title="facebook">
+             <a href="#" rel="noreferrer" target="_blank" title="facebook">
               <i class="fab fa-linkedin"></i>
               </a>
-            <a href="https://twitter.com/wyzthofficial" rel="noreferrer" target="_blank" title="twitter">
+            <a href="#" rel="noreferrer" target="_blank" title="twitter">
             <i class="fab fa-twitter"></i>
              </a>
           </div>
