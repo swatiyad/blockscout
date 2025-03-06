@@ -4,9 +4,9 @@ defmodule BlockScoutWeb.SocialMedia do
   """
 
   @services %{
-    facebook: "https://www.facebook.com/",
-    instagram: "https://www.instagram.com/",
-    twitter: "https://www.twitter.com/",
+    facebook: "#",
+    instagram: "#",
+    twitter: "#",
     telegram: "https://t.me/"
   }
 
