@@ -125,7 +125,7 @@
                 </a>
                 <div class="dropdown-menu fade-up" aria-labeledby="navbarTransactionsDropdown">
                   <%= link(
-                        gettext("Top Tokens WRC20"),
+                        gettext("Top Tokens"),
                         class: "dropdown-item #{tab_status("tokens", @conn.request_path)}",
                         to: tokens_path(@conn, :index)
                       ) %>
