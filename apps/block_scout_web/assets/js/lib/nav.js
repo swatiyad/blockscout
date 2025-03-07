@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", async() => {
     });
 
     let livePrice = 0;
-    const response = await axios.get('https://wyzthscan.org/node-api/get-wyz-live-price');  // Call your server API or proxy endpoint
+    const response = await axios.get('https://inertiascan.com/node-api/get-wyz-live-price');  // Call your server API or proxy endpoint
     console.log("live price of wyz is:::", response.data);
     livePrice = response.data.data.price;
 

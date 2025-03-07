@@ -41,7 +41,7 @@ const chartOptions = {
 
 export const fetchApi = async () => {
   try {
-    const res = await axios.get('https://wyzthscan.org/node-api/average-block-time');
+    const res = await axios.get('https://inertiascan.com/node-api/average-block-time');
     const dataArray = res.data; // Assuming the response contains the desired data
 
     // Prepare data for chart

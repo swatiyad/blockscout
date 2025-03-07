@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 
 
   try {
-    const res = await axios.get("https://wyzthscan.org/node-api/get-adv-banners");
+    const res = await axios.get("https://inertiascan.com/node-api/get-adv-banners");
     
     // Filter the array to get objects with desired location
     const homeLocationFilteredData = res.data.filter(obj => obj.location === "home");
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", async function () {
   // async function fetchLivePrice() {
     let livePrice = 0;
     let dil_market_cap = 0;
-    const response = await axios.get('https://wyzthscan.org/node-api/get-wyz-live-price');  // Call your server API or proxy endpoint
+    const response = await axios.get('https://inertiascan.com/node-api/get-wyz-live-price');  // Call your server API or proxy endpoint
     console.log("live price of wyz is:::", response.data);
     livePrice = response.data.data.price;
     dil_market_cap = response.data.data.diluted_market_cap
