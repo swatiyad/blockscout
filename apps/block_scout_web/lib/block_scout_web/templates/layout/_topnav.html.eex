@@ -342,12 +342,12 @@
 
             </a>-->
 
-            <div class="dropdown navbar-image">
+            <div class="dropdown navbar-image d-none">
   <button class="btn dropdown-toggle border px-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
   <div class="media_bg_icon" style="width: 18px; height: 21px"></div>
 
   </button>
-  <div class="dropdown-menu dropdown-menu-right fade-up" aria-labeledby="navbarTransactionsDropdown">
+  <div class="dropdown-menu dropdown-menu-right fade-up d-none" aria-labeledby="navbarTransactionsDropdown">
                       <%= link(
                         gettext("Mainnet"),
                         class: "dropdown-item #{tab_status("mainnet", @conn.request_path)}",
