@@ -86,7 +86,7 @@
           <div class="card h-100">
             <div class="card-body text-center p-8">
               <figure class="u-avatar mx-auto mb-3">
-                <a href="https://www.thecoinweekly.com/" target="_blank"
+                <a href="https://www.cointelegraph.com/" target="_blank"
                   ><img src="/images/directory/icon-newsforum.svg" style="width:70px" alt=""
                 /></a>
               </figure>
@@ -98,7 +98,7 @@
               <p class="mb-2">Get close to the community</p>
               <p class="mb-0">
                 <a
-                  href="https://www.thecoinweekly.com/"
+                  href="https://www.cointelegraph.com/"
                   class="btn btn-sm btn-soft-primary my-1"
                   target="_blank"
                   >Crypto News</a
@@ -120,12 +120,12 @@
                 /></a>
               </figure>
               <h2 class="h5 mb-0">
-                <a class="text-dark" href="https://www.thecoinweekly.com/events">Events</a>
+                <a class="text-dark" href="https://www.coinmarketcap.com/events">Events</a>
               </h2>
               <p class="mb-2">Find the events near you</p>
               <p class="mb-0">
                 <a
-                  href="https://www.thecoinweekly.com/events"
+                  href="https://www.coinmarketcap.com/events"
                   class="btn btn-sm btn-soft-primary my-1"
                   >Upcoming Events</a
                 >
