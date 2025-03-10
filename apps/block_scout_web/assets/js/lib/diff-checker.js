@@ -12,7 +12,7 @@ document.querySelector('.txtContAddresbtn1').onclick = async function() {
   const val1 = document.querySelector('#txtContAddres1').value;
   const sourceDest = document.querySelector('.src-1');
   const divdiff = document.querySelector('.divDiff');
- const sourceCode =  await axios.get(`https://inertiascan.com/getSourceCode?address=${val1}`);
+ const sourceCode =  await axios.get(`https://inertiascan.com/node-api/getSourceCode?address=${val1}`);
  const code = sourceCode.data.data;
  
  if(code.length==0){
