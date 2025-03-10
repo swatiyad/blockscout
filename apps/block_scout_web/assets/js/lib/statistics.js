@@ -269,7 +269,7 @@ let token=
   `<div>
   <div class="media align-items-center mb-1">
     <div class="media-body">Top IRTA  Sender</div>
-    <div class="text-right">Total WYZth</div>
+    <div class="text-right">Total IRTA</div>
   </div>
   <div class="media align-items-center mb-1">
     <div class="media-body">
@@ -295,7 +295,7 @@ let token=
   <hr class="pb-1 hr" />
   <div class="media align-items-center mb-1">
     <div class="media-body">Top IRTA  Receiver</div>
-    <div class="text-right">Total WYZTH</div>
+    <div class="text-right">Total IRTA</div>
   </div>
   <div class="media align-items-center mb-1">
     <div class="media-body">

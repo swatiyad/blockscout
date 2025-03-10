@@ -1,6 +1,6 @@
    <section class="container mt-30 mb-3">
       <div id="ContentPlaceHolder1_exchangewalletdiv">
-      <h1 class="px-1">Wyzth</h1>
+      <h1 class="px-1">Inertia</h1>
         <div class="card mb-1">
           <div class="card-body">
             <div class="d-flex gap-3">
@@ -20,7 +20,7 @@
                     target="_blank"
                     rel="nofollow noopener"
                     class="fs-5 link-dark"
-                    >A beginner’s guide to Wyzth</a
+                    >A beginner’s guide to Inertia</a
                   >
                   <div>
                     <p>
@@ -207,10 +207,10 @@
                     target="_blank"
                     rel="nofollow noopener"
                     class="fs-5 link-dark"
-                    >Blockgeeks' guide to Wyzth</a
+                    >Blockgeeks' guide to Inertia</a
                   >
                   <div>
-                    <p>What is Wyzth? A Step-by-Step Beginners Guide</p>
+                    <p>What is Inertia? A Step-by-Step Beginners Guide</p>
                   </div>
                 </div>
                 <ul class="list-inline mb-0 text-nowrap">
@@ -298,7 +298,7 @@
                   >
                   <div>
                     <p>
-                      A useful list for learning solidity and Wyzth
+                      A useful list for learning solidity and Inertia
                       development curated by&nbsp;Indrek Lasn.
                     </p>
                   </div>
@@ -516,7 +516,7 @@
                     class="fs-5 link-dark"
                     >District0x Educational Portal</a
                   >
-                  <div><p>Understanding Wyzth</p></div>
+                  <div><p>Understanding Inertia</p></div>
                 </div>
                 <ul class="list-inline mb-0 text-nowrap">
                   <li class="list-inline-item">
@@ -651,9 +651,9 @@
                   <div>
                     <p>
                       IRTA  Studio is a tool for developers who want to learn
-                      about building on Wyzth. The templates on the left side
+                      about building on Inertia. The templates on the left side
                       will teach you how to write a smart contract, deploy it to
-                      Wyzth, and interact with the contracts through a
+                      Inertia, and interact with the contracts through a
                       web-based application.
                     </p>
                   </div>
@@ -695,9 +695,9 @@
                     target="_blank"
                     rel="nofollow noopener"
                     class="fs-5 link-dark"
-                    >Wyzth: A Visual Explanation</a
+                    >Inertia: A Visual Explanation</a
                   >
-                  <div><p>Wyzth: A Visual Explanation by Veenspace</p></div>
+                  <div><p>Inertia: A Visual Explanation by Veenspace</p></div>
                 </div>
                 <ul class="list-inline mb-0 text-nowrap">
                   <li class="list-inline-item">
@@ -829,7 +829,7 @@
                     target="_blank"
                     rel="nofollow noopener"
                     class="fs-5 link-dark"
-                    >Library-of-Wyzth</a
+                    >Library-of-Inertia</a
                   >
                   <div>
                     <p>Curated Collection of IRTA  Ecosystem Resources.</p>
@@ -872,12 +872,12 @@
                     target="_blank"
                     rel="nofollow noopener"
                     class="fs-5 link-dark"
-                    >Mastering Wyzth</a
+                    >Mastering INertia</a
                   >
                   <div>
                     <p>
                       Mastering IRTA  is a book for developers, offering a
-                      guide to the operation and use of the Wyzth, Wyzth
+                      guide to the operation and use of the Inertia, Inertia
                       Classic, RootStock (RSK) and other compatible EVM-based
                       open blockchains.
                     </p>
