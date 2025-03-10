@@ -252,7 +252,7 @@ a.metamask_btn {
         <div class="col-md-12">
           <%= link to: webapp_url(@conn), class: "footer-brand" do %>
             <%= if logo_footer() do %>
-              <img class="" src="/images/small-logo-icon.png" style="width:35px; height: 35px" /><span class="footerTitle">Powered by IRTA  PoA L1 Chain</span>
+              <img class="" src="/images/small-logo-icon.png" style="width:35px; height: 35px" /><span class="footerTitle">Powered by IRTA  PoS L1 Chain</span>
             <% end %>
             <%= if logo_text() do %>
               <span class="logo-text in-footer <%= unless logo_footer(), do: "no-logo" %>"> <%= logo_text() %> </span>
@@ -274,11 +274,11 @@ a.metamask_btn {
     <div class="col-6 col-md-4 col-lg-<%= col_size %>" >
       <h3 class="text-white heading_border">Company</h3>
       <ul style="list-style: none;margin: 0; padding: 0; line-height: 31px;">
-        <li><a href="#" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("About Us") %></a></li>
-        <li><a href="#" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("Contact Us") %></a></li>
+        <li><a href="https://irta.io/about-us" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("About Us") %></a></li>
+        <li><a href="https://irta.io/contact-us" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("Contact Us") %></a></li>
 
-        <li><a href="#" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("Careers") %>
-        <sup class="join">Join Us</sup></a></li>
+        <!--<li><a href="#" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("Careers") %>
+        <sup class="join">Join Us</sup></a></li>-->
         <li><a href="/terms-of-service" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("Terms of Service") %></a></li>
 
       </ul>
@@ -289,8 +289,8 @@ a.metamask_btn {
       <div class="col-6 col-md-4 col-lg-<%= col_size %>">
         <h3 class="text-white heading_border"><%= gettext("Resources") %></h3>
         <ul style="list-style: none;margin: 0; padding: 0; line-height: 31px;">
-          <li><a href="#" target="_blank" rel="noreferrer" class="footer-link"><%= gettext("API Documentation") %></a></li>
-          <li><a href="#" target="_blank" rel="noreferrer" class="footer-link"><%= gettext("Newsletter") %></a></li>
+          <li><a href="/api-docs" target="_blank" rel="noreferrer" class="footer-link"><%= gettext("API Documentation") %></a></li>
+          <li><a href="https://blog.layeredge.io/" target="_blank" rel="noreferrer" class="footer-link"><%= gettext("Newsletter") %></a></li>
 
           <!--
           <%= for %{title: title, url: url} <- test_nets do %>
@@ -308,8 +308,8 @@ a.metamask_btn {
         <h3 class="text-white heading_border"><%= gettext("Products & Services") %></h3>
         <ul style="list-style: none;margin: 0; padding: 0; line-height: 31px;">
 
-        <li><a href="#" target="_blank" rel="noreferrer" class="footer-link"><%= gettext("Inertia") %></a></li>
-        <li><a href="/chat" target="_blank" rel="noreferrer" class="footer-link"><%= gettext("Blockscan Chat") %></a></li>
+        <li><a href="https://irta.io" target="_blank" rel="noreferrer" class="footer-link"><%= gettext("Inertia") %></a></li>
+       <!-- <li><a href="/chat" target="_blank" rel="noreferrer" class="footer-link"><%= gettext("Blockscan Chat") %></a></li> -->
 
         <!--Absinthe<%= for %{title: title, url: url} <- main_nets do %>
           <li><a href="<%= url %>" rel="norefferer" class="footer-link"> <%= title %> </a></li>

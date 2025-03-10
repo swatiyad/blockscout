@@ -78,7 +78,7 @@
                 <th class="">Txn Hash</th>
                 <th class="">Method</th>
                 <th class="screenRow">Block</th>
-                <th class="screenRow">Age</th>
+                <th class="screenRow">Date & Time</th>
                 <th class="">From</th>
                 <th class="" style="width:70px">&nbsp;</th>
                 <th class="">To</th>

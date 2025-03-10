@@ -25,7 +25,7 @@
             <thead>
               <tr class="table-head">
                 <th class="screenRow">Block</th>
-                <th class="screenRow">Age</th>
+                <th class="screenRow">Date & Time</th>
                 <th class="smallRow">Txns</th>
                 <th class="tb_col_w200">Fee Recipient</th>
                 <th class="screenRow">Gas Used</th>

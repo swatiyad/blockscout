@@ -244,7 +244,8 @@ document.addEventListener("DOMContentLoaded", async function () {
       
                 <td class="hide_for_homepage" style="width: 70px">
                   <div class="btn btn-xs btn-teal rounded-circle">
-                    <span class="fas fa-long-arrow-alt-right"></span>
+                   <!-- <span class="fas fa-long-arrow-alt-right"></span> -->
+                   <span>Out</span>
                   </div>
                 </td>
       

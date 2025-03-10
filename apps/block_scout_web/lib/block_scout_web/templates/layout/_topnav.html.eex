@@ -92,7 +92,7 @@
                       ) %>
                   <% end %>
 
-                <a href="/internal-transactions" class="dropdown-item border-bottom">View Contract Internal Txns</a>
+                <a href="/internal-transactions" class="dropdown-item border-bottom d-none">View Contract Internal Txns</a>
 
                   <%= link(
                     gettext("View Blocks"),
@@ -254,11 +254,11 @@
                      class: "dropdown-item #{tab_status("tools_converter", @conn.request_path)}",
                   to: "/tools_converter"
                     ) %>
-                    <%= link(
+                  <!--  <%= link(
                       gettext("Multi-chain Address Finder"),
                      class: "dropdown-item #{tab_status("multi_chain_address_finder", @conn.request_path)}",
                   to: "/multi_chain_address_finder"
-                    ) %>
+                    ) %> -->
               </div>
 
 
@@ -301,7 +301,7 @@
                     <%= link(
                       gettext("Testnet"),
                       class: "dropdown-item #{tab_status("testnet", @conn.request_path)}",
-                      to: "https://testnet.wyzthscan.org/"
+                      to: "https://testnet.inertiascan.org/"
                     ) %>
 
               </div>
@@ -353,7 +353,7 @@
                       <%= link(
                         gettext("Testnet"),
                         class: "dropdown-item #{tab_status("testnet", @conn.request_path)}",
-                        to: "https://testnet.wyzthscan.org/"
+                        to: "https://testnet.inertiascan.org/"
                       ) %>
 
 

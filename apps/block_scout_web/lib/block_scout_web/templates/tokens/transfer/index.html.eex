@@ -24,7 +24,7 @@
                     <tr class="table-head">
                       <th>Hash</th>
                       <th>Block</th>
-                      <th>Age</th>
+                      <th>Date & Time</th>
                       <th>From</th>
                       <th class="" style="width:36px"></th>
                       <th>To</th>
