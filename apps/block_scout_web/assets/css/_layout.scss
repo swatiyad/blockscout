@@ -8,6 +8,7 @@
     main {
         flex-grow: 1;
         background-color: #fbfafc;
+        overflow-x: hidden;
     }
 }
 
@@ -90,7 +91,7 @@ a {
 }
 
 .pagination-container .pagination .active {
-    background-color: #e2e6bf !important;
+    background-color: #bedef8 !important;
 }
 
 .width135 {
@@ -98,7 +99,7 @@ a {
 }
 
 .bg-light-green {
-    background-color: #f4f5e7 !important;
+    background-color: #fff !important;
 }
 
 .bg-gray {
@@ -560,9 +561,9 @@ a {
 }
 
 .pagination-container .pagination .page-link {
-    color: #696a39 !important;
-    background-color: #e4e6cc !important;
-    border: 1px solid #e4e6cc !important;
+    color: #ffffff !important;
+    background-color: #9f9bd5 !important;
+    border: 1px solid #908bd3 !important;
     font-weight: 400 !important;
     height: 26px !important;
 }
@@ -588,13 +589,13 @@ a {
 }
 
 .btn-green {
-    background: #F4F5E7 !important;
+    background: #f8f9fa !important;
     color: #3745c0 !important;
     font-size: 12.5px;
 }
 
 .btn-green:hover {
-    background: #acaf85 !important;
+    background: #e2edf8 !important;
     color: #fff !important;
 }
 
@@ -650,6 +651,17 @@ a {
 
 .footer-social ul li a {
     color: #eee;
+}
+.table-group-divider{
+    // border-top: 1px solid #dee2e6;
+    border-bottom: 1px solid #e2e5ec;
+ 
+}
+
+.dark-theme-applied .table-group-divider{
+    // border-top: 1px solid #dee2e6;
+    border-bottom: 1px solid #676565 !important;
+ 
 }
 
 .footer-social ul li a:hover {
@@ -922,7 +934,7 @@ a {
 }
 
 // .table-head {
-//     background-color: #f4f5e7;
+//     background-color: #f8f9fa;
 // }
 
 .btn-teal {
@@ -1410,7 +1422,7 @@ dl:last-child {
 }
 
 .dark-theme-applied dl {
-    border-bottom: 1px solid #303030;
+    // border-bottom: 1px solid #303030;
 }
 
 .badge-warning {
@@ -1599,7 +1611,7 @@ dl:last-child {
 }
 
 .table-head {
-    background-color: #f4f5e7;
+    background-color: #f8f9fa;
 }
 
 .tile-type-coin-balancess {
@@ -1618,7 +1630,7 @@ dl:last-child {
 dl {
     margin-bottom: 12px;
     padding-bottom: 10px;
-    border-bottom: 1px solid #eee;
+    // border-bottom: 1px solid #eee;
 }
 
 
@@ -1650,6 +1662,7 @@ dl {
 
 .dark-theme-applied .bs-label {
     border: 1px solid #5a5a5a !important;
+
 }
 
 #chart {
@@ -2075,8 +2088,8 @@ textarea {
 
     .container,
     .container-fluid {
-        padding-right: 0;
-        padding-left: 0;
+        padding-right: 10px !important;
+        padding-left: 10px !important;
     }
 }
 
