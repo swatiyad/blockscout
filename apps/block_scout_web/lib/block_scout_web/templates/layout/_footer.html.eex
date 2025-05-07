@@ -29,7 +29,7 @@
 }
 
 .search_backdrop {
-  background-image:  linear-gradient(to right, #685793, #685793, #685793, #685793, #685793);
+  background-image:  linear-gradient(to right, #a63e7f, #e84c81, #b14180, #e84c81, #a73f7f);
   width: 100%;
   color: #fff;
 }
@@ -41,7 +41,7 @@
 }
 
 .footer_backdrop {
-  background-image: linear-gradient(to right, #685793, #685793, #685793, #685793, #685793);A
+  background-image: linear-gradient(to right, #a63e7f, #a63e7f, #b14180, #ad4080, #a73f7f);
   width: 100%;
   color: #fff;
 }
@@ -61,7 +61,7 @@
 
 
 .logo_custom_img .logo_img {
-  background: url(/images/inertia.png);
+  background: url(/images/libra-light.png);
   background-size: contain;
   background-repeat: no-repeat;
   width: 189px;
@@ -69,7 +69,7 @@
 }
 
 .dark-theme-applied .logo_custom_img .logo_img {
-  background: url(/images/inertia-dark.png);
+  background: url(/images/libra-dark.png);
   background-size: contain;
   background-repeat: no-repeat;
   width: 176px;
@@ -252,7 +252,7 @@ a.metamask_btn {
         <div class="col-md-12">
           <%= link to: webapp_url(@conn), class: "footer-brand" do %>
             <%= if logo_footer() do %>
-              <img class="" src="/images/small-logo-icon.png" style="width:35px; height: 35px" /><span class="footerTitle">Powered by IRTA  PoS L1 Chain</span>
+              <img class="" src="/images/small-logo-icon.png" style="width:35px; height: 35px" /><span class="footerTitle">Powered by Libra Smartchain</span>
             <% end %>
             <%= if logo_text() do %>
               <span class="logo-text in-footer <%= unless logo_footer(), do: "no-logo" %>"> <%= logo_text() %> </span>
@@ -263,7 +263,7 @@ a.metamask_btn {
 
       <div class="footer-about-bg"></div>
       <p class="text-white">
-      <%= gettext("Inertia Scan  is a Block Explorer and Analytics Platform for IRTA  ") %>  <%= gettext(" chain, a decentralized smart contracts platform.") %></p>
+      <%= gettext("Libra Scan  is a Block Explorer and Analytics Platform for LIBRA  ") %>  <%= gettext(" chain, a decentralized smart contracts platform.") %></p>
 
       <a type="button" class="metamask_btn btn-sm text-decoration-none  py-1 mr-2" href="/preferences">
         <i class="fas fa-cogs mr-1"></i> Preferences
@@ -274,8 +274,8 @@ a.metamask_btn {
     <div class="col-6 col-md-4 col-lg-<%= col_size %>" >
       <h3 class="text-white heading_border">Company</h3>
       <ul style="list-style: none;margin: 0; padding: 0; line-height: 31px;">
-        <li><a href="https://irta.io/about-us" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("About Us") %></a></li>
-        <li><a href="https://irta.io/contact-us" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("Contact Us") %></a></li>
+        <li><a href="https://libra.io/about-us" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("About Us") %></a></li>
+        <li><a href="https://libra.io/contact-us" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("Contact Us") %></a></li>
 
         <!--<li><a href="#" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("Careers") %>
         <sup class="join">Join Us</sup></a></li>-->
@@ -308,7 +308,7 @@ a.metamask_btn {
         <h3 class="text-white heading_border"><%= gettext("Products & Services") %></h3>
         <ul style="list-style: none;margin: 0; padding: 0; line-height: 31px;">
 
-        <li><a href="https://irta.io" target="_blank" rel="noreferrer" class="footer-link"><%= gettext("Inertia") %></a></li>
+        <li><a href="https://libra.io" target="_blank" rel="noreferrer" class="footer-link"><%= gettext("Libra") %></a></li>
        <!-- <li><a href="/chat" target="_blank" rel="noreferrer" class="footer-link"><%= gettext("Blockscan Chat") %></a></li> -->
 
         <!--Absinthe<%= for %{title: title, url: url} <- main_nets do %>

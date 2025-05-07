@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 
 //   let trans = `<div>
 //     <div class="media align-items-center mb-1">
-//       <div class="media-body">Top IRTA  Sender</div>
+//       <div class="media-body">Top LIBRA  Sender</div>
 //       <div class="text-right">Total WYZth</div>
 //     </div>
 //     <div class="media align-items-center mb-1">
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 //     </div>
 //     <hr class="pb-1 hr" />
 //     <div class="media align-items-center mb-1">
-//       <div class="media-body">Top IRTA  Receiver</div>
+//       <div class="media-body">Top LIBRA  Receiver</div>
 //       <div class="text-right">Total WYZTH</div>
 //     </div>
 //     <div class="media align-items-center mb-1">
@@ -197,8 +197,8 @@ let token=
 </div>`
   document.querySelector("#ContentPlaceHolder1_Div1a_body_1").innerHTML = trans;
   document.querySelector("#ContentPlaceHolder1_Div1a_body_2").innerHTML = token;
-  const mainnet = "https://inertiascan.com/"
-  const testnet = "https://inertiascan.com/"
+  const mainnet = "https://librascan.com/"
+  const testnet = "https://librascan.com/"
   const [maxRecieverCount,topsender, maxSendCount, api, TopTokenApi] =
   await Promise.all([
     axios.get(mainnet+"node-api/max-count-reciever"),
@@ -268,8 +268,8 @@ let token=
   trans = 
   `<div>
   <div class="media align-items-center mb-1">
-    <div class="media-body">Top IRTA  Sender</div>
-    <div class="text-right">Total IRTA</div>
+    <div class="media-body">Top LIBRA  Sender</div>
+    <div class="text-right">Total LIBRA</div>
   </div>
   <div class="media align-items-center mb-1">
     <div class="media-body">
@@ -294,8 +294,8 @@ let token=
   </div>
   <hr class="pb-1 hr" />
   <div class="media align-items-center mb-1">
-    <div class="media-body">Top IRTA  Receiver</div>
-    <div class="text-right">Total IRTA</div>
+    <div class="media-body">Top LIBRA  Receiver</div>
+    <div class="text-right">Total LIBRA</div>
   </div>
   <div class="media align-items-center mb-1">
     <div class="media-body">

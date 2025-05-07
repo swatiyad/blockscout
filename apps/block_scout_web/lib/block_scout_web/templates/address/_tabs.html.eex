@@ -225,7 +225,7 @@
 }
 
 .active,.active:hover{
-  background-color:#B7B26D;
+  background-color:#a63e7fa6;
 
 }
 

@@ -6,7 +6,7 @@ const chartOptions = {
     type: 'area',
   },
   title: {
-    text: 'IRTA Unique Address Chart',
+    text: 'LIBRA Unique Address Chart',
   },
   xAxis: {
     type: 'datetime',
@@ -19,7 +19,7 @@ const chartOptions = {
   },
   yAxis: {
     title: {
-      text: 'IRTA Cumulative Address Growth',
+      text: 'LIBRA Cumulative Address Growth',
     },
   },
   series: [
@@ -33,7 +33,7 @@ const chartOptions = {
 
 export const fetchApi = async () => {
   try {
-    const res = await axios.get('https://inertiascan.com/node-api/get-all-addresses');
+    const res = await axios.get('https://librascan.com/node-api/get-all-addresses');
     const addressArray = res.data; // Assuming the response contains the desired data
 
     // Create an object to store the count of addresses for each month

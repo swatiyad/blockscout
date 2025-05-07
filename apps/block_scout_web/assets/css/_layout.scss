@@ -13,7 +13,7 @@
 }
 
 a {
-    color: #3745c0 !important;
+    color: #03a9f4 !important;
     text-decoration: none;
     background-color: transparent;
 }
@@ -107,15 +107,15 @@ a {
 }
 
 .text-green {
-    color: #3745c0 !important;
+    color: #03a9f4 !important;
 }
 
 .text-truncate {
-    color: #3745c0 !important;
+    color: #03a9f4 !important;
 }
 
 .text_green_over {
-    color: #3745c0 !important;
+    color: #03a9f4 !important;
 }
 
 .text_gray_over {
@@ -223,7 +223,7 @@ a {
 }
 
 .dashboard-banner-network-stats-label {
-    color: #3745c0 !important;
+    color: #03a9f4 !important;
     display: block;
     white-space: nowrap;
 }
@@ -573,8 +573,8 @@ a {
 }
 
 .pagination-container .pagination .page-link:not(.no-hover):hover {
-    background-color: #3745c0 !important;
-    border: 1px solid #3745c0 !important;
+    background-color: #03a9f4 !important;
+    border: 1px solid #03a9f4 !important;
     color: #333 !important;
 }
 
@@ -590,7 +590,7 @@ a {
 
 .btn-green {
     background: #f8f9fa !important;
-    color: #3745c0 !important;
+    color: #03a9f4 !important;
     font-size: 12.5px;
 }
 
@@ -701,7 +701,7 @@ a {
 
 .page-title {
     font-size: 1.3rem;
-    // color: #3745c0;
+    // color: #03a9f4;
     line-height: 2rem;
     padding: 20px 0;
     position: relative;
@@ -819,7 +819,7 @@ a {
 }
 
 .dark-theme-applied .table-hover tbody tr:hover {
-    color: #3745c0 !important;
+    color: #03a9f4 !important;
 }
 
 .table-active,
@@ -977,8 +977,8 @@ a {
 }
 
 .card-tab.active {
-    color: #3745c0 !important;
-    border-bottom: 2px solid #3745c0;
+    color: #03a9f4 !important;
+    border-bottom: 2px solid #03a9f4;
     background: transparent !important;
 }
 
@@ -997,7 +997,7 @@ a {
 }
 
 .text-darkgrey-green {
-    color: #3745c0 !important;
+    color: #03a9f4 !important;
 }
 
 .dark-theme-applied .text-darkgrey-green {
@@ -1015,7 +1015,7 @@ a {
 
 .dark-theme-applied .search_backdrop {
     background: #111111;
-    color: #3745c0;
+    color: #03a9f4;
 }
 
 .dark-theme-applied .card {
@@ -1072,7 +1072,7 @@ a {
 
 .dark-theme-applied .btn-green {
     background: #2f3e7f3b !important;
-    color: #3745c0 !important;
+    color: #03a9f4 !important;
 }
 
 .dark-theme-applied .btn-green:hover {
@@ -1197,7 +1197,7 @@ a {
 }
 
 .dark-theme-applied .bg-brown {
-    background-color: #6f701c !important;
+    background-color: #b14180 !important;
 }
 
 .dark-theme-applied .card-tab {
@@ -1292,19 +1292,19 @@ a.footer-link:hover {
 }
 
 input::placeholder {
-    color: #3745c0 !important;
+    color: #03a9f4 !important;
     font-size: 0.9rem !important;
     font-weight: 400;
 }
 
 input:-moz-placeholder {
-    color: #3745c0;
+    color: #03a9f4;
     font-size: 0.9rem !important;
     font-weight: 400;
 }
 
 input::-moz-placeholder {
-    color: #3745c0;
+    color: #03a9f4;
     font-size: 0.9rem !important;
     font-weight: 400;
 }
@@ -1530,7 +1530,7 @@ dl:last-child {
 }
 
 //   .custom_pills.nav-pills .nav-link.active {
-//       background-color: #3745c0;
+//       background-color: #03a9f4;
 //       color:#fff!important;
 //   }
 
@@ -1597,7 +1597,7 @@ dl:last-child {
 
 .dark-theme-applied .navbar.navbar-primary .navbar-nav .nav-link.active:before,
 .dark-theme-applied .navbar.navbar-primary .navbar-nav .nav-link:hover:before {
-    background-color: #3745c0;
+    background-color: #03a9f4;
 }
 
 .dark-theme-applied .tooltip .arrow:before {
@@ -1607,7 +1607,7 @@ dl:last-child {
 
 .dark-theme-applied .bs-tooltip-left .arrow::before,
 .dark-theme-applied .bs-tooltip-auto[x-placement^=left] .arrow::before {
-    border-left-color: #3745c0 !important;
+    border-left-color: #03a9f4 !important;
 }
 
 .table-head {
@@ -1814,7 +1814,7 @@ dl {
 @media only screen and (min-device-width: 991px) {
     .navbar .dropdown-menu {
         width: 250px;
-        border-top: 3px solid #3745c0 !important;
+        border-top: 3px solid #03a9f4 !important;
     }
 
     .header-nav-separator {
@@ -1834,7 +1834,7 @@ dl {
     }
 
     .navbar .dropdown-menu {
-        border-left: 3px solid #3745c0;
+        border-left: 3px solid #03a9f4;
         border-top: none !important;
     }
 
@@ -1860,7 +1860,7 @@ dl {
     }
 
     .dashboard-banner-network-stats-label {
-        color: #3745c0 !important;
+        color: #03a9f4 !important;
         display: block;
         white-space: normal;
         font-size: 12px;
@@ -2277,7 +2277,7 @@ textarea {
 }
 
 .btn-info {
-    background-color: #007bff;
+    background-color: #03a9f4;
     color: #fff;
     border: none;
 }

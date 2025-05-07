@@ -6,7 +6,7 @@ const chartOptions = {
     type: 'area',
   },
   title: {
-    text: 'IRTA Average Block Time',
+    text: 'LIBRA Average Block Time',
   },
   xAxis: {
     type: 'datetime',
@@ -41,7 +41,7 @@ const chartOptions = {
 
 export const fetchApi = async () => {
   try {
-    const res = await axios.get('https://inertiascan.com/node-api/average-block-time');
+    const res = await axios.get('https://librascan.com/node-api/average-block-time');
     const dataArray = res.data; // Assuming the response contains the desired data
 
     // Prepare data for chart

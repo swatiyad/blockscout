@@ -21,7 +21,7 @@ document.getElementById("admin-signup").onclick = async function(e) {
     document.querySelector(".confirm-password-alert").style.marginBottom = "20px";
   }else{
 
-  const apiUrl = "https://inertiascan.com/node-api/register";
+  const apiUrl = "https://librascan.com/node-api/register";
   const requestData = {
     username:user.toLowerCase(),
     email:email.toLowerCase(),
