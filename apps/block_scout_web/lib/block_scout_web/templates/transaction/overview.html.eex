@@ -403,7 +403,7 @@
                 data-usd-exchange-rate=<%= @exchange_rate.usd_value %>>
               </span>)
             <% end %> -->
-            <span>$<span id="valueTxDetailLivePrice">0.12</span></span>
+            <span>$<span id="valueTxDetailLivePrice">3</span></span>
             </dd>
           </dl>
           <!-- Transaction Fee -->
