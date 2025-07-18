@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     table.innerHTML = loaderHtml;
 
     try {
-      const apiResponse = await axios.get(`https://inertiascan.com/internal-transactions?page=${page}&pageSize=50`);
+      const apiResponse = await axios.get(`https://TokenPAYscan.com/internal-transactions?page=${page}&pageSize=50`);
       const apiData = apiResponse.data;
       console.log(apiData, "apiData");
 
@@ -141,7 +141,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                 </td>
                 <td class="show_for_hompage text-right">
                   <span class="border rounded-sm p-1">
-                    <span class="fs-10 font-weight-bold"> ${detail.value / 1e18} IRTA </span>
+                    <span class="fs-10 font-weight-bold"> ${detail.value / 1e18} TPAY </span>
       
                   </span>
                 </td>
@@ -290,7 +290,7 @@ document.addEventListener("DOMContentLoaded", async function () {
       
                 <!-- Value  -->
                 <td class="hide_for_homepage">
-                  <span class="">${detail.value / 1e18} IRTA </span>
+                  <span class="">${detail.value / 1e18} TPAY </span>
                 </td>
       
                 <!-- Tx Fee  -->
@@ -347,14 +347,14 @@ document.addEventListener("DOMContentLoaded", async function () {
   updatePaginationButtons();
 });
 document.addEventListener("DOMContentLoaded", async function () {
-    const transactionCount = await axios.get(`https://inertiascan.com/node-api/transaction-count`);
+    const transactionCount = await axios.get(`https://TokenPAYscan.com/node-api/transaction-count`);
     const transactionC = transactionCount.data[0].total_count;
     console.log(transactionCount,"transactionCount");
  document.querySelector(".update-1000").innerHTML = transactionC;
    
 })
 document.addEventListener("DOMContentLoaded", async function () {
-    const blockCount = await axios.get(`https://inertiascan.com/node-api/block-count`);
+    const blockCount = await axios.get(`https://TokenPAYscan.com/node-api/block-count`);
     const blockC = blockCount.data[0].total_count;
     const href = window.location.href;
     console.log(blockCount,"transactionCount");

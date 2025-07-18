@@ -8,7 +8,7 @@ defmodule Explorer.Account.PublicTagsRequest do
   alias Explorer.Account.Identity
   alias Explorer.Chain.Hash
   alias Explorer.Repo
-  alias Explorer.ThirdPartyIntegrations.AirTable
+  alias Explorer.ThirdPartyIntegrations.ATPAYble
 
   import Ecto.Changeset
 
@@ -76,7 +76,7 @@ defmodule Explorer.Account.PublicTagsRequest do
     %__MODULE__{}
     |> changeset(Map.put(attrs, :request_type, "add"))
     |> Repo.account_repo().insert()
-    |> AirTable.submit()
+    |> ATPAYble.submit()
   end
 
   defp trim_empty_addresses(%{addresses: addresses} = attrs) when is_list(addresses) do
@@ -218,7 +218,7 @@ defmodule Explorer.Account.PublicTagsRequest do
          false <- is_nil(public_tags_request),
          {:ok, changeset} <-
            public_tags_request |> changeset(Map.put(attrs, :request_type, "edit")) |> Repo.account_repo().update() do
-      AirTable.submit({:ok, changeset})
+      ATPAYble.submit({:ok, changeset})
     else
       true ->
         {:error, %{reason: :item_not_found}}
@@ -235,7 +235,7 @@ defmodule Explorer.Account.PublicTagsRequest do
            public_tags_request
            |> changeset_without_constraints(%{request_type: "delete", remove_reason: remove_reason})
            |> Repo.account_repo().update() do
-      case AirTable.submit({:ok, changeset}) do
+      case ATPAYble.submit({:ok, changeset}) do
         {:error, changeset} ->
           changeset
 

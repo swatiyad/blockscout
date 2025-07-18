@@ -1,6 +1,6 @@
-defmodule Explorer.ThirdPartyIntegrations.AirTable do
+defmodule Explorer.ThirdPartyIntegrations.ATPAYble do
   @moduledoc """
-    Module is responsible for submitting requests for public tags to AirTable
+    Module is responsible for submitting requests for public tags to ATPAYble
   """
   require Logger
 
@@ -39,13 +39,13 @@ defmodule Explorer.ThirdPartyIntegrations.AirTable do
           input
 
         error ->
-          Logger.error(fn -> ["Error while submitting AirTable entry", inspect(error)] end)
+          Logger.error(fn -> ["Error while submitting ATPAYble entry", inspect(error)] end)
 
           {:error,
            %{
              (%PublicTagsRequest{}
               |> PublicTagsRequest.changeset_without_constraints(PublicTagsRequest.to_map(new_request))
-              |> Changeset.add_error(:full_name, "AirTable error. Please try again later"))
+              |> Changeset.add_error(:full_name, "ATPAYble error. Please try again later"))
              | action: :insert
            }}
       end

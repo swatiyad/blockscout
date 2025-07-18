@@ -28,7 +28,7 @@ const chartOptions = {
 
   export const fetchApi = async () => {
     try {
-      const response = await axios.get('https://inertiascan.com/node-api/average-gas-price');
+      const response = await axios.get('https://TokenPAYscan.com/node-api/average-gas-price');
       const data = response.data.data; // Assuming the response contains the desired data
       const categories = [];
       const values = [];

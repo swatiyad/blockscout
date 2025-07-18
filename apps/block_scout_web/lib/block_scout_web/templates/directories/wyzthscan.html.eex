@@ -1,6 +1,6 @@
    <section class="container mt-30 mb-3">
       <div id="ContentPlaceHolder1_exchangewalletdiv">
-      <h1 class="px-1">Inertia</h1>
+      <h1 class="px-1">TokenPAY</h1>
         <div class="card mb-1">
           <div class="card-body">
             <div class="d-flex gap-3">
@@ -20,11 +20,11 @@
                     target="_blank"
                     rel="nofollow noopener"
                     class="fs-5 link-dark"
-                    >A beginner’s guide to Inertia</a
+                    >A beginner’s guide to TokenPAY</a
                   >
                   <div>
                     <p>
-                      A beginners guide to IRTA  writen by Linda Xie posted
+                      A beginners guide to TPAY  writen by Linda Xie posted
                       on Medium
                     </p>
                   </div>
@@ -112,14 +112,14 @@
                     target="_blank"
                     rel="nofollow noopener"
                     class="fs-5 link-dark"
-                    >An Introduction to IRTA  and Smart Contracts: a
+                    >An Introduction to TPAY  and Smart Contracts: a
                     Programmable Blockchain</a
                   >
                   <div>
                     <p>
-                      An Introduction to IRTA  and Smart Contracts: a
+                      An Introduction to TPAY  and Smart Contracts: a
                       Programmable Blockchain. Learn about verified, distributed
-                      computations in the cloud using IRTA  by Sebastián
+                      computations in the cloud using TPAY  by Sebastián
                       Peyrott
                     </p>
                   </div>
@@ -207,10 +207,10 @@
                     target="_blank"
                     rel="nofollow noopener"
                     class="fs-5 link-dark"
-                    >Blockgeeks' guide to Inertia</a
+                    >Blockgeeks' guide to TokenPAY</a
                   >
                   <div>
-                    <p>What is Inertia? A Step-by-Step Beginners Guide</p>
+                    <p>What is TokenPAY? A Step-by-Step Beginners Guide</p>
                   </div>
                 </div>
                 <ul class="list-inline mb-0 text-nowrap">
@@ -253,7 +253,7 @@
                     >Capture the Ether</a
                   >
                   <div>
-                    <p>The game of IRTA  smart contract security.</p>
+                    <p>The game of TPAY  smart contract security.</p>
                   </div>
                 </div>
                 <ul class="list-inline mb-0 text-nowrap">
@@ -298,7 +298,7 @@
                   >
                   <div>
                     <p>
-                      A useful list for learning solidity and Inertia
+                      A useful list for learning solidity and TokenPAY
                       development curated by&nbsp;Indrek Lasn.
                     </p>
                   </div>
@@ -389,7 +389,7 @@
                     class="fs-5 link-dark"
                     >Cryptwerk</a
                   >
-                  <div><p>IRTA  merchants directory</p></div>
+                  <div><p>TPAY  merchants directory</p></div>
                 </div>
                 <ul class="list-inline mb-0 text-nowrap">
                   <li class="list-inline-item">
@@ -516,7 +516,7 @@
                     class="fs-5 link-dark"
                     >District0x Educational Portal</a
                   >
-                  <div><p>Understanding Inertia</p></div>
+                  <div><p>Understanding TokenPAY</p></div>
                 </div>
                 <ul class="list-inline mb-0 text-nowrap">
                   <li class="list-inline-item">
@@ -559,7 +559,7 @@
                   >
                   <div>
                     <p>
-                      Video &amp; Blog Tutorials for IRTA  &amp; Solidity
+                      Video &amp; Blog Tutorials for TPAY  &amp; Solidity
                       Smart contract developers
                     </p>
                   </div>
@@ -601,11 +601,11 @@
                     target="_blank"
                     rel="nofollow noopener"
                     class="fs-5 link-dark"
-                    >IRTA  101</a
+                    >TPAY  101</a
                   >
                   <div>
                     <p>
-                      B9Lab Academy : Introduction to IRTA  for Developers
+                      B9Lab Academy : Introduction to TPAY  for Developers
                     </p>
                   </div>
                 </div>
@@ -650,10 +650,10 @@
                   >
                   <div>
                     <p>
-                      IRTA  Studio is a tool for developers who want to learn
-                      about building on Inertia. The templates on the left side
+                      TPAY  Studio is a tool for developers who want to learn
+                      about building on TokenPAY. The templates on the left side
                       will teach you how to write a smart contract, deploy it to
-                      Inertia, and interact with the contracts through a
+                      TokenPAY, and interact with the contracts through a
                       web-based application.
                     </p>
                   </div>
@@ -695,9 +695,9 @@
                     target="_blank"
                     rel="nofollow noopener"
                     class="fs-5 link-dark"
-                    >Inertia: A Visual Explanation</a
+                    >TokenPAY: A Visual Explanation</a
                   >
-                  <div><p>Inertia: A Visual Explanation by Veenspace</p></div>
+                  <div><p>TokenPAY: A Visual Explanation by Veenspace</p></div>
                 </div>
                 <ul class="list-inline mb-0 text-nowrap">
                   <li class="list-inline-item">
@@ -741,7 +741,7 @@
                   <div>
                     <p>
                       The Ethernaut is a Web3/Solidity based wargame&nbsp;played
-                      in the IRTA  Virtual Machine. Each level is a smart
+                      in the TPAY  Virtual Machine. Each level is a smart
                       contract that needs to be 'hacked'.
                     </p>
                   </div>
@@ -787,7 +787,7 @@
                   >
                   <div>
                     <p>
-                      Learn to Build on IRTA  with Kauri - Articles,
+                      Learn to Build on TPAY  with Kauri - Articles,
                       Tutorials, Documentation and Best Practices
                     </p>
                   </div>
@@ -829,10 +829,10 @@
                     target="_blank"
                     rel="nofollow noopener"
                     class="fs-5 link-dark"
-                    >Library-of-Inertia</a
+                    >Library-of-TokenPAY</a
                   >
                   <div>
-                    <p>Curated Collection of IRTA  Ecosystem Resources.</p>
+                    <p>Curated Collection of TPAY  Ecosystem Resources.</p>
                   </div>
                 </div>
                 <ul class="list-inline mb-0 text-nowrap">
@@ -872,12 +872,12 @@
                     target="_blank"
                     rel="nofollow noopener"
                     class="fs-5 link-dark"
-                    >Mastering INertia</a
+                    >Mastering TokenPAY</a
                   >
                   <div>
                     <p>
-                      Mastering IRTA  is a book for developers, offering a
-                      guide to the operation and use of the Inertia, Inertia
+                      Mastering TPAY  is a book for developers, offering a
+                      guide to the operation and use of the TokenPAY, TokenPAY
                       Classic, RootStock (RSK) and other compatible EVM-based
                       open blockchains.
                     </p>
@@ -925,7 +925,7 @@
                   <div>
                     <p>
                       Curated directory of Decentralized Applications (ÐApps) on
-                      the IRTA  Blockchain
+                      the TPAY  Blockchain
                     </p>
                   </div>
                 </div>

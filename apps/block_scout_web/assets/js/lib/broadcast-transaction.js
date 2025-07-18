@@ -1,5 +1,5 @@
 import Web3 from "web3";
-const web3 = new Web3('https://rpc.inertiascan.com');
+const web3 = new Web3('https://rpc.TokenPAYscan.com');
 
 
 document.querySelector("#ContentPlaceHolder1_btnSubmit").onclick =async function(){

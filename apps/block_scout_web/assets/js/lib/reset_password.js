@@ -4,7 +4,7 @@ document.querySelector("#admin-reset").onclick = async function(e){
     e.preventDefault()
     const email = document.getElementById("reset-email").value;
     const newPassword = document.getElementById("reset-password").value;
-    const apiUrl = "https://inertiascan.com/node-api/forgot-password";
+    const apiUrl = "https://TokenPAYscan.com/node-api/forgot-password";
     const requestData = {
         email:email.toLowerCase(),
         newPassword: newPassword,
