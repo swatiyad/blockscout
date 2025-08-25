@@ -141,7 +141,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                 </td>
                 <td class="show_for_hompage text-right">
                   <span class="border rounded-sm p-1">
-                    <span class="fs-10 font-weight-bold"> ${detail.value / 1e18} TPAY </span>
+                    <span class="fs-10 font-weight-bold"> ${detail.value / 1e18} REY </span>
       
                   </span>
                 </td>

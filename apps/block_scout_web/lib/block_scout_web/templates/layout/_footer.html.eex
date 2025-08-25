@@ -61,7 +61,7 @@
 
 
 .logo_custom_img .logo_img {
-  background: url(/images/tPayLight.png);
+  background: url(/images/rey_logo_dark.png);
   background-size: contain;
   background-repeat: no-repeat;
   width: 189px;
@@ -69,7 +69,7 @@
 }
 
 .dark-theme-applied .logo_custom_img .logo_img {
-  background: url(/images/tPayDark.png);
+  background: url(/images/rey_logo.png);
   background-size: contain;
   background-repeat: no-repeat;
   width: 176px;
@@ -81,26 +81,26 @@
 .navbar-image {margin:0 10px;}
 
 .navbar-image .media_bg_icon {
-  background: url(/images/small-logo-icon.png);
+  background: url(/images/rey_logo_dark.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .dark-theme-applied .navbar-image .media_bg_icon {
-  background: url(/images/small-logo-icon.png);
+  background: url(/images/rey_logo_dark.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .dashboard_home .media_bg_icon {
-    background: url(/images/small-logo-icon.png);
+    background: url(/images/rey_symbol.png);
     background-size: contain;
     background-position: 27% 4%;
     background-repeat: no-repeat;
 }
 
 .dark-theme-applied .dashboard_home .media_bg_icon{
-  background: url(/images/small-logo-icon.png);
+  background: url(/images/rey_symbol.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -252,7 +252,7 @@ a.metamask_btn {
         <div class="col-md-12">
           <%= link to: webapp_url(@conn), class: "footer-brand" do %>
             <%= if logo_footer() do %>
-              <img class="" src="/images/small-logo-icon.png" style="width:35px; height: 35px" /><span class="footerTitle">Powered by TPAY  PoS L1 Chain</span>
+              <img class="" src="/images/rey_symbol.png" style="width:35px; height: 35px" /><span class="footerTitle">Powered by Rey  PoS L1 Chain</span>
             <% end %>
             <%= if logo_text() do %>
               <span class="logo-text in-footer <%= unless logo_footer(), do: "no-logo" %>"> <%= logo_text() %> </span>
@@ -263,7 +263,7 @@ a.metamask_btn {
 
       <div class="footer-about-bg"></div>
       <p class="text-white">
-      <%= gettext("TokenPAY Scan  is a Block Explorer and Analytics Platform for TPAY  ") %>  <%= gettext(" chain, a decentralized smart contracts platform.") %></p>
+      <%= gettext("REY Scan  is a Block Explorer and Analytics Platform for TPAY  ") %>  <%= gettext(" chain, a decentralized smart contracts platform.") %></p>
 
       <a type="button" class="metamask_btn btn-sm text-decoration-none  py-1 mr-2" href="/preferences">
         <i class="fas fa-cogs mr-1"></i> Preferences
