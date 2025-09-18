@@ -2,28 +2,34 @@
 #export MIX_ENV=prod\
 sudo chmod -R 777 ../blockscout
 export ETHEREUM_JSONRPC_VARIANT=besu
-export ETHEREUM_JSONRPC_HTTP_URL=http://ec2-52-66-146-60.ap-south-1.compute.amazonaws.com/
-export ETHEREUM_JSONRPC_WS_URL=ws://ec2-52-66-146-60.ap-south-1.compute.amazonaws.com/ws
-export DATABASE_URL=postgres://postgres:wyzscan@localhost:5432/blockscout?ssl=false
-export ETHEREUM_JSONRPC_TRACE_URL=http://ec2-52-66-146-60.ap-south-1.compute.amazonaws.com/ 
-export NETWORK=Tarality Blockchain Explorer
-export SUBNETWORK="WYZth Scan"
+export ETHEREUM_JSONRPC_HTTP_URL=http://161.97.89.79/
+export ETHEREUM_JSONRPC_WS_URL=ws://161.97.89.79/ws
+export DATABASE_URL=postgres://dotbloxowner:SRTrDKSqeH@localhost:5432/explorer?ssl=false
+export ETHEREUM_JSONRPC_TRACE_URL=http://161.97.89.79/
+export NETWORK= Blockchain Explorer
+export SUBNETWORK="Tan"
 export LOGO=/images/wyz-logo.svg
 export LOGO_FOOTER=/images/wyz-footer-logo.svg
 #export ETHEREUM_JSONRPC_TRANSPORT=http
 #export ETHEREUM_JSONRPC_TRANSPORT=http
 export NETWORK_PATH=/
 export API_PATH=/
-export BLOCKSCOUT_HOST=
+export BLOCKSCOUT_HOST=tanscan.io
 export BLOCKSCOUT_PROTOCOL=https
 SECRET_KEY_BASE=BASE=E/sdFN0JBURFmltKF+2BLp8JRqzPEJy9a3kwfDN7DooykJuAo3BKT0W7YFQ42d2/
 # export CHECK_ORIGIN=false
 # export PORT=4000
-export COIN=WYZ
-export COIN_NAME=WYZ
+export COIN=Tan
+export COIN_NAME=Tan
+
+
+
 
 export BLOCKSCOUT_VERSION=v4.1.5-beta
 export RELEASE_LINK=https://github.com/blockscout/blockscout/releases/tag/v4.1.5-beta
+
+
+
 
 export LINK_TO_OTHER_EXPLORERS=false
 export DISABLE_EXCHANGE_RATES=true
@@ -44,14 +50,14 @@ export APPS_MENU=true
 export TOKEN_METADATA_UPDATE_INTERVAL=1800
 export CACHE_TOKEN_EXCHANGE_RATE_PERIOD=3600000
 # export EXTERNAL_APPS='[{ "title": "Ana Bridge", "url": "https://bridge.inrx.io/" } ]'
-export ENABLE_SOURCIFY_INTEGRATION=true 
+export ENABLE_SOURCIFY_INTEGRATION=true
 export SOURCIFY_SERVER_URL=https://sourcify.dev/server
 export SOURCIFY_REPO_URL=https://repo.sourcify.dev/contracts/
-export CHAIN_ID=303
+export CHAIN_ID=2363
 export DISPLAY_TOKEN_ICONS=true
 export RE_CAPTCHA_SECRET_KEY=6Ldd_O8hAAAAAG1yA9GmQYunRTpp40TOX_A8sa2y
 export RE_CAPTCHA_CLIENT_KEY=6Ldd_O8hAAAAANk3zRRCYpKTzUO4RcX9Pxv9n8_R
-export JSON_RPC=https://rpc-mainnet3.wyzthchain.org
+export JSON_RPC=http://161.97.89.79/
 #export ADMIN_PANEL_ENABLED=true
 # export METADATA_CONTRACT=
 export VALIDATORS_CONTRACT=0x874967F5Fe0b75Ee6592D981E5E47a2D11E3E2Bf
@@ -74,9 +80,19 @@ export API_RATE_LIMIT_BY_IP=30
 export INDEXER_MEMORY_LIMIT=7
 
 
-# /bin/mix ecto.drop
-# /bin/mix ecto.create 
-# /bin/mix ecto.migrate
-/bin/mix phx.digest.clean 
-/bin/mix phx.digest
-/bin/mix phx.server
+
+
+
+
+
+
+# /home/user/.asdf/shims/mix ecto.drop
+# /home/user/.asdf/shims/mix ecto.create
+# /home/user/.asdf/shims/mix ecto.migrate
+/home/user/.asdf/shims/mix phx.digest.clean
+/home/user/.asdf/shims/mix phx.digest
+/home/user/.asdf/shims/mix phx.server
+
+
+
+
