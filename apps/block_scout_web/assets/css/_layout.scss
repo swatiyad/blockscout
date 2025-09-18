@@ -111,11 +111,11 @@ a {
 }
 
 .text-truncate {
-    color: #3745c0 !important;
+    color: #ffa300b8 !important;
 }
 
 .text_green_over {
-    color: #3745c0 !important;
+    color: #ffa300b8 !important;
 }
 
 .text_gray_over {
@@ -223,7 +223,7 @@ a {
 }
 
 .dashboard-banner-network-stats-label {
-    color: #3745c0 !important;
+    color: #ffa300b8 !important;
     display: block;
     white-space: nowrap;
 }
@@ -573,8 +573,8 @@ a {
 }
 
 .pagination-container .pagination .page-link:not(.no-hover):hover {
-    background-color: #3745c0 !important;
-    border: 1px solid #3745c0 !important;
+    background-color: #ffa300b8 !important;
+    border: 1px solid #ffa300b8 !important;
     color: #333 !important;
 }
 
@@ -590,7 +590,7 @@ a {
 
 .btn-green {
     background: #f8f9fa !important;
-    color: #3745c0 !important;
+    color: #ffa300b8 !important;
     font-size: 12.5px;
 }
 
@@ -819,7 +819,7 @@ a {
 }
 
 .dark-theme-applied .table-hover tbody tr:hover {
-    color: #3745c0 !important;
+    color: #ffa300b8 !important;
 }
 
 .table-active,
@@ -977,7 +977,7 @@ a {
 }
 
 .card-tab.active {
-    color: #3745c0 !important;
+    color: #ffa300b8 !important;
     border-bottom: 2px solid #3745c0;
     background: transparent !important;
 }
@@ -997,7 +997,7 @@ a {
 }
 
 .text-darkgrey-green {
-    color: #3745c0 !important;
+    color: #ffa300b8 !important;
 }
 
 .dark-theme-applied .text-darkgrey-green {
@@ -1072,7 +1072,7 @@ a {
 
 .dark-theme-applied .btn-green {
     background: #2f3e7f3b !important;
-    color: #3745c0 !important;
+    color: #ffa300b8 !important;
 }
 
 .dark-theme-applied .btn-green:hover {
@@ -1292,7 +1292,7 @@ a.footer-link:hover {
 }
 
 input::placeholder {
-    color: #3745c0 !important;
+    color: #ffa300b8 !important;
     font-size: 0.9rem !important;
     font-weight: 400;
 }
@@ -1388,7 +1388,7 @@ dl:last-child {
     border-bottom: none !important
 }
 
-.text-grey {
+.text-gTan{
     color: #ccc;
 }
 
@@ -1607,7 +1607,7 @@ dl:last-child {
 
 .dark-theme-applied .bs-tooltip-left .arrow::before,
 .dark-theme-applied .bs-tooltip-auto[x-placement^=left] .arrow::before {
-    border-left-color: #3745c0 !important;
+    border-left-color: #ffa300b8 !important;
 }
 
 .table-head {
@@ -1814,7 +1814,7 @@ dl {
 @media only screen and (min-device-width: 991px) {
     .navbar .dropdown-menu {
         width: 250px;
-        border-top: 3px solid #3745c0 !important;
+        border-top: 3px solid #ffa300b8 !important;
     }
 
     .header-nav-separator {
@@ -1860,7 +1860,7 @@ dl {
     }
 
     .dashboard-banner-network-stats-label {
-        color: #3745c0 !important;
+        color: #ffa300b8 !important;
         display: block;
         white-space: normal;
         font-size: 12px;

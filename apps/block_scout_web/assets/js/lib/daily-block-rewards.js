@@ -6,7 +6,7 @@ const chartOptions = {
     type: 'area',
   },
   title: {
-    text: 'Daily TPAY Supply',
+    text: 'Daily TanSupply',
   },
   xAxis: {
     type: 'datetime',
@@ -21,7 +21,7 @@ const chartOptions = {
   },
   yAxis: {
     title: {
-      text: 'New TPAY Supply per Day',
+      text: 'New TanSupply per Day',
     },
   },
   tooltip: {
@@ -32,7 +32,7 @@ const chartOptions = {
   },
   series: [
     {
-      name: 'Daily TPAY Supply',
+      name: 'Daily TanSupply',
       data: [],
       color: "#bdc54a80"
     },
@@ -41,7 +41,7 @@ const chartOptions = {
 
 export const fetchApi = async () => {
   try {
-    const res = await axios.get('https://TokenPAYscan.com/node-api/get-block-rewards');
+    const res = await axios.get('https://Tanscan.com/node-api/get-block-rewards');
     const dataArray = res.data; // Assuming the response contains the desired data
 
     // Prepare data for chart

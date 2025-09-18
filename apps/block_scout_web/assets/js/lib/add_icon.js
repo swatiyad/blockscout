@@ -24,7 +24,7 @@ async function connectWallet() {
 async function getAdminAddress(tokenAddress, contractAddress) {
   try {
     const response = await axios.post(
-      "https://TokenPAYscan.com/node-api/get-token-creator",
+      "https://Tanscan.com/node-api/get-token-creator",
       { tokenAddress }
     );
     if (response.data.status) {
@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
           formData.append("username", id);
           try {
             const response = await axios.post(
-              "https://TokenPAYscan.com/node-api/add-icon",
+              "https://Tanscan.com/node-api/add-icon",
               formData,
               {
                 headers: {

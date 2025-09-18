@@ -18,7 +18,7 @@
  function addressSubmitHAndler(){
   let inputVal = document.querySelector(".addrs-input-verification").value
    if(inputVal.startsWith("0x")){
-    window.location.href= `https://TokenPAYscan.com/address/${inputVal}/contracts#address-tabs`
+    window.location.href= `https://Tanscan.com/address/${inputVal}/contracts#address-tabs`
    }else{
     alert("Invalid Address.")
    }

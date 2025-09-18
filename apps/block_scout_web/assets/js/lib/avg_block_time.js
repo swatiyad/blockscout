@@ -6,7 +6,7 @@ const chartOptions = {
     type: 'area',
   },
   title: {
-    text: 'TPAY Average Block Time',
+    text: 'TanAverage Block Time',
   },
   xAxis: {
     type: 'datetime',
@@ -41,7 +41,7 @@ const chartOptions = {
 
 export const fetchApi = async () => {
   try {
-    const res = await axios.get('https://TokenPAYscan.com/node-api/average-block-time');
+    const res = await axios.get('https://Tanscan.com/node-api/average-block-time');
     const dataArray = res.data; // Assuming the response contains the desired data
 
     // Prepare data for chart

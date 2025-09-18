@@ -42,7 +42,7 @@ const closeModalButton = document.getElementById('close-modal-button');
     dataBody.innerHTML = ""; // Clear existing data
 
     try {
-      const response = await axios.post(`https://TokenPAYscan.com/node-api/get-all-user-data/${username}`);
+      const response = await axios.post(`https://Tanscan.com/node-api/get-all-user-data/${username}`);
       const data = response.data.data;
       if (data.length === 0) {
         const noDataRow = document.createElement("tr");
@@ -152,7 +152,7 @@ const closeModalButton = document.getElementById('close-modal-button');
 
   async function updateData(id, newUsername, newEmail, newIsVerify, newIsAdmin) {
     try {
-      const response = await axios.put(`https://TokenPAYscan.com/node-api/get-all-user-data/${id}`, {
+      const response = await axios.put(`https://Tanscan.com/node-api/get-all-user-data/${id}`, {
         username: newUsername,
         email: newEmail,
         isverified: newIsVerify,
@@ -171,7 +171,7 @@ const closeModalButton = document.getElementById('close-modal-button');
 
   async function deleteData(id) {
     try {
-      const response = await axios.delete(`https://TokenPAYscan.com/node-api/get-all-user-data/${id}`);
+      const response = await axios.delete(`https://Tanscan.com/node-api/get-all-user-data/${id}`);
 
       if (response.status === 200) {
         displayData();

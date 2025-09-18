@@ -29,7 +29,7 @@
 }
 
 .search_backdrop {
-  background-image:  linear-gradient(to right, #685793, #685793, #685793, #685793, #685793);
+  background-image:  linear-gradient(to right, #000000, #0e0919, #17161b, #201e19, #000000);
   width: 100%;
   color: #fff;
 }
@@ -41,7 +41,7 @@
 }
 
 .footer_backdrop {
-  background-image: linear-gradient(to right, #685793, #685793, #685793, #685793, #685793);A
+  background-image: linear-gradient(to right, #000000, #0e0919, #17161b, #201e19, #000000);A
   width: 100%;
   color: #fff;
 }
@@ -61,7 +61,7 @@
 
 
 .logo_custom_img .logo_img {
-  background: url(/images/rey_logo_dark.png);
+  background: url(/images/tan_dark.png);
   background-size: contain;
   background-repeat: no-repeat;
   width: 189px;
@@ -69,7 +69,7 @@
 }
 
 .dark-theme-applied .logo_custom_img .logo_img {
-  background: url(/images/rey_logo.png);
+  background: url(/images/tanMain.png);
   background-size: contain;
   background-repeat: no-repeat;
   width: 176px;
@@ -81,26 +81,26 @@
 .navbar-image {margin:0 10px;}
 
 .navbar-image .media_bg_icon {
-  background: url(/images/rey_logo_dark.png);
+  background: url(/images/tan_dark.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .dark-theme-applied .navbar-image .media_bg_icon {
-  background: url(/images/rey_logo_dark.png);
+  background: url(/images/tan_dark.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .dashboard_home .media_bg_icon {
-    background: url(/images/rey_symbol.png);
+    background: url(/images/tanFav.png);
     background-size: contain;
     background-position: 27% 4%;
     background-repeat: no-repeat;
 }
 
 .dark-theme-applied .dashboard_home .media_bg_icon{
-  background: url(/images/rey_symbol.png);
+  background: url(/images/tanFav.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -252,7 +252,7 @@ a.metamask_btn {
         <div class="col-md-12">
           <%= link to: webapp_url(@conn), class: "footer-brand" do %>
             <%= if logo_footer() do %>
-              <img class="" src="/images/rey_symbol.png" style="width:35px; height: 35px" /><span class="footerTitle">Powered by Rey  PoS L1 Chain</span>
+              <img class="" src="/images/tanFav.png" style="width:35px; height: 35px" /><span class="footerTitle">Powered by Tan PoS L1 Chain</span>
             <% end %>
             <%= if logo_text() do %>
               <span class="logo-text in-footer <%= unless logo_footer(), do: "no-logo" %>"> <%= logo_text() %> </span>
@@ -263,7 +263,7 @@ a.metamask_btn {
 
       <div class="footer-about-bg"></div>
       <p class="text-white">
-      <%= gettext("REY Scan  is a Block Explorer and Analytics Platform for TPAY  ") %>  <%= gettext(" chain, a decentralized smart contracts platform.") %></p>
+      <%= gettext("TanScan  is a Block Explorer and Analytics Platform for Tan ") %>  <%= gettext(" chain, a decentralized smart contracts platform.") %></p>
 
       <a type="button" class="metamask_btn btn-sm text-decoration-none  py-1 mr-2" href="/preferences">
         <i class="fas fa-cogs mr-1"></i> Preferences
@@ -274,8 +274,8 @@ a.metamask_btn {
     <div class="col-6 col-md-4 col-lg-<%= col_size %>" >
       <h3 class="text-white heading_border">Company</h3>
       <ul style="list-style: none;margin: 0; padding: 0; line-height: 31px;">
-        <li><a href="https://TPAY.io/about-us" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("About Us") %></a></li>
-        <li><a href="https://TPAY.io/contact-us" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("Contact Us") %></a></li>
+        <li><a href="https:// Tan.io/about-us" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("About Us") %></a></li>
+        <li><a href="https:// Tan.io/contact-us" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("Contact Us") %></a></li>
 
         <!--<li><a href="#" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("Careers") %>
         <sup class="join">Join Us</sup></a></li>-->
@@ -308,7 +308,7 @@ a.metamask_btn {
         <h3 class="text-white heading_border"><%= gettext("Products & Services") %></h3>
         <ul style="list-style: none;margin: 0; padding: 0; line-height: 31px;">
 
-        <li><a href="https://TPAY.io" target="_blank" rel="noreferrer" class="footer-link"><%= gettext("TokenPAY") %></a></li>
+        <li><a href="https:// Tan.io" target="_blank" rel="noreferrer" class="footer-link"><%= gettext("Tan") %></a></li>
        <!-- <li><a href="/chat" target="_blank" rel="noreferrer" class="footer-link"><%= gettext("Blockscan Chat") %></a></li> -->
 
         <!--Absinthe<%= for %{title: title, url: url} <- main_nets do %>

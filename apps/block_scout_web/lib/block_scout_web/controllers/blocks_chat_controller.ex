@@ -6,7 +6,7 @@ defmodule BlockScoutWeb.BlocksChatController do
   end
 
   def send_message(conn, _params) do
-    url = "https://TokenPAYscan.com/node-api/send-message"
+    url = "https://Tanscan.com/node-api/send-message"
     redirect(conn, external: url)
   end
 end

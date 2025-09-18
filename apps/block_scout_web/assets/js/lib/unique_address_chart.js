@@ -6,7 +6,7 @@ const chartOptions = {
     type: 'area',
   },
   title: {
-    text: 'TPAY Unique Address Chart',
+    text: 'TanUnique Address Chart',
   },
   xAxis: {
     type: 'datetime',
@@ -19,7 +19,7 @@ const chartOptions = {
   },
   yAxis: {
     title: {
-      text: 'TPAY Cumulative Address Growth',
+      text: 'TanCumulative Address Growth',
     },
   },
   series: [
@@ -33,7 +33,7 @@ const chartOptions = {
 
 export const fetchApi = async () => {
   try {
-    const res = await axios.get('https://TokenPAYscan.com/node-api/get-all-addresses');
+    const res = await axios.get('https://Tanscan.com/node-api/get-all-addresses');
     const addressArray = res.data; // Assuming the response contains the desired data
 
     // Create an object to store the count of addresses for each month

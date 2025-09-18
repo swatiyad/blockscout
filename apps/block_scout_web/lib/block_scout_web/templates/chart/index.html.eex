@@ -1,5 +1,5 @@
 <section data-page="contract-verification-choose-type" class="container card mt-30">
-<h2 class="mb-4 mt-3">TokenPAY Charts & Statistics</h2>
+<h2 class="mb-4 mt-3">Tan Charts & Statistics</h2>
 <hr class="hr_tag my-0 ">
 
 <div class="d-flex align-items-start justify-content-center flex-wrap   p-2 ">
@@ -61,14 +61,14 @@
 
 <div class="  chart-max-width chart-height w-25  mx-md-5 mx-3  my-3  p-2 chartBorder " style="height:215px">
 <a href="/charts/daily-wyz-burnt" class="chartBox">
-<div class="">Daily TPAY Burnt Chart</div>
+<div class="">Daily TanBurnt Chart</div>
 <img src="/images/chart/daily-eth-burnt.svg" class="img-fluid" style="height:215px"/>
 <a/>
 </div>
 
 <div class="  chart-max-width chart-height w-25  mx-md-5 mx-3  my-3  p-2 chartBorder " style="height:215px">
 <a href="/charts/daily-block-rewards" class="chartBox">
-<div class="">TPAY Daily Block Rewards Chart</div>
+<div class="">TanDaily Block Rewards Chart</div>
 <img src="/images/chart/daily-block-rewards.svg" class="img-fluid" style="height:215px"/>
 <a/>
 </div>

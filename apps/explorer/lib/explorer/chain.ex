@@ -6120,7 +6120,7 @@ defmodule Explorer.Chain do
       end
 
     if chain_name do
-      try_url = "https://raw.githubusercontent.com/TokenPAY/wyzthscan-image/master/assets/#{address_hash}/logo.png"
+      try_url = "https://raw.githubusercontent.com/Tan/wyzthscan-image/master/assets/#{address_hash}/logo.png"
 
       try_url
     else
